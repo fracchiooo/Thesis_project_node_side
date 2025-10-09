@@ -1,0 +1,3 @@
+dependencies:
+  espressif/onewire_bus:
+    version: "^1.0.0"

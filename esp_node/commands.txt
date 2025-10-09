@@ -1,0 +1,9 @@
+in windows powershell per collegare l usb dell esp a wsl:
+
+usbipd attach --wsl --busid 1-4 --auto-attach
+
+su wsl dentro il progetto:
+
+sudo chmod 777 /dev/ttyUSB0
+idf.py set-target esp32s3
+idf.py -p /dev/ttyUSB0 flash monitor
