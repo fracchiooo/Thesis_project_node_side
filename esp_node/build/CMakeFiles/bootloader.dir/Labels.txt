@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/fracchio/Thesis_project_node_side/esp_node/build/CMakeFiles/bootloader
+/home/fracchio/Thesis_project_node_side/esp_node/build/CMakeFiles/bootloader.rule
+/home/fracchio/Thesis_project_node_side/esp_node/build/CMakeFiles/bootloader-complete.rule
+/home/fracchio/Thesis_project_node_side/esp_node/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/fracchio/Thesis_project_node_side/esp_node/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/fracchio/Thesis_project_node_side/esp_node/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/fracchio/Thesis_project_node_side/esp_node/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/fracchio/Thesis_project_node_side/esp_node/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/fracchio/Thesis_project_node_side/esp_node/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/fracchio/Thesis_project_node_side/esp_node/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

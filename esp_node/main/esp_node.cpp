@@ -15,6 +15,8 @@
 #include "nvs_flash.h"
 #include "sensor.hpp"
 #include "actuator.hpp"
+#include "wifi_wrapper.hpp"
+
 
 static const char* TAG = "MAIN";
 
@@ -41,6 +43,7 @@ bool isParsableInt(const std::string &s) {
 
 // TODO cambiare con uso protocollo wifi + mqtt
 
+/*
 void loraTask(void* param) {
 
     esp_task_wdt_config_t config= {
@@ -99,7 +102,7 @@ void loraTask(void* param) {
     esp_task_wdt_reset();
     vTaskDelay(pdMS_TO_TICKS(100)); // Delay di 100ms invece di 10ms
     }
-}
+}*/
 
 
 extern "C" void app_main(void)
@@ -113,6 +116,17 @@ extern "C" void app_main(void)
     pwm_burst.init();
 
     PWMchannels pwm_channels = {pwm, pwm_burst};
+
+
+
+    // Inizializza WiFi
+
+    Wifi_wrapper* wifi = Wifi_wrapper::getWifiInstance();
+
+    wifi->wifi_init_sta();
+    vTaskDelay(pdMS_TO_TICKS(60000));
+    wifi->destroyInstance();
+
 
     
     // utilizzo sensore temperatura DS18B20
@@ -134,7 +148,7 @@ extern "C" void app_main(void)
     }*/
 
 
-
+/*
 
     //utilizzo temperature actuator
     Actuator_temperature actuator;
@@ -161,10 +175,10 @@ extern "C" void app_main(void)
 
     actuator.stop_warm();
 
-
+*/
 
     // cambia con wifi + mqtt
-    xTaskCreate(loraTask, "loraTask", 4096, (void*)&pwm_channels, 2, NULL);
+    //xTaskCreate(loraTask, "loraTask", 4096, (void*)&pwm_channels, 2, NULL);
 
 
 
