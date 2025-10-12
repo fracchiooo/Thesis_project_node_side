@@ -439,6 +439,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("/home/fracchio/Thesis_project_node_side/esp_node/build/esp-idf/mqtts/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("/home/fracchio/Thesis_project_node_side/esp_node/build/esp-idf/main/cmake_install.cmake")
 endif()
 

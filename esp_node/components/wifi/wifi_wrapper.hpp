@@ -61,6 +61,7 @@ private:
     bool _connected = false;
     esp_event_handler_instance_t _instance_any_id;
     esp_event_handler_instance_t _instance_got_ip;
+    esp_netif_t* _esp_netif_sta;
 
 public:
 

@@ -67,3 +67,27 @@ menu "WiFi Configuration"
     endchoice
 
 endmenu
+
+
+menu "Example Configuration"
+
+    config BROKER_URI
+        string "Broker URL"
+        default "mqtts://mqtt.eclipseprojects.io:8883"
+        help
+            URL of the mqtt broker to connect.
+
+    config BROKER_USERNAME
+        string "Broker authentication username"
+        default "admin"
+        help
+            Username set on the broker side.
+
+    config BROKER_PASSWORD
+        string "Broker authentication password"
+        default "admin"
+        help
+            Password set on the broker side.
+
+
+endmenu

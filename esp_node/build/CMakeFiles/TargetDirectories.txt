@@ -674,6 +674,13 @@
 /home/fracchio/Thesis_project_node_side/esp_node/build/esp-idf/wifi/CMakeFiles/install.dir
 /home/fracchio/Thesis_project_node_side/esp_node/build/esp-idf/wifi/CMakeFiles/install/local.dir
 /home/fracchio/Thesis_project_node_side/esp_node/build/esp-idf/wifi/CMakeFiles/install/strip.dir
+/home/fracchio/Thesis_project_node_side/esp_node/build/esp-idf/mqtts/CMakeFiles/__idf_mqtts.dir
+/home/fracchio/Thesis_project_node_side/esp_node/build/esp-idf/mqtts/CMakeFiles/edit_cache.dir
+/home/fracchio/Thesis_project_node_side/esp_node/build/esp-idf/mqtts/CMakeFiles/rebuild_cache.dir
+/home/fracchio/Thesis_project_node_side/esp_node/build/esp-idf/mqtts/CMakeFiles/list_install_components.dir
+/home/fracchio/Thesis_project_node_side/esp_node/build/esp-idf/mqtts/CMakeFiles/install.dir
+/home/fracchio/Thesis_project_node_side/esp_node/build/esp-idf/mqtts/CMakeFiles/install/local.dir
+/home/fracchio/Thesis_project_node_side/esp_node/build/esp-idf/mqtts/CMakeFiles/install/strip.dir
 /home/fracchio/Thesis_project_node_side/esp_node/build/esp-idf/main/CMakeFiles/__idf_main.dir
 /home/fracchio/Thesis_project_node_side/esp_node/build/esp-idf/main/CMakeFiles/edit_cache.dir
 /home/fracchio/Thesis_project_node_side/esp_node/build/esp-idf/main/CMakeFiles/rebuild_cache.dir

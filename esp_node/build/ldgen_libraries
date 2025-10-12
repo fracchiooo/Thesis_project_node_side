@@ -67,4 +67,5 @@
 /home/fracchio/Thesis_project_node_side/esp_node/build/esp-idf/pwmController/libpwmController.a
 /home/fracchio/Thesis_project_node_side/esp_node/build/esp-idf/temperature/libtemperature.a
 /home/fracchio/Thesis_project_node_side/esp_node/build/esp-idf/wifi/libwifi.a
+/home/fracchio/Thesis_project_node_side/esp_node/build/esp-idf/mqtts/libmqtts.a
 /home/fracchio/Thesis_project_node_side/esp_node/build/esp-idf/main/libmain.a

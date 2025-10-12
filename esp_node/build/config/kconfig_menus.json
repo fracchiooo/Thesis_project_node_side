@@ -6179,6 +6179,44 @@
     {
         "children": [
             {
+                "children": [],
+                "depends_on": null,
+                "help": "URL of the mqtt broker to connect.",
+                "id": "BROKER_URI",
+                "name": "BROKER_URI",
+                "range": null,
+                "title": "Broker URL",
+                "type": "string"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": "Username set on the broker side.",
+                "id": "BROKER_USERNAME",
+                "name": "BROKER_USERNAME",
+                "range": null,
+                "title": "Broker authentication username",
+                "type": "string"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": "Password set on the broker side.",
+                "id": "BROKER_PASSWORD",
+                "name": "BROKER_PASSWORD",
+                "range": null,
+                "title": "Broker authentication password",
+                "type": "string"
+            }
+        ],
+        "depends_on": null,
+        "id": "example-configuration",
+        "title": "Example Configuration",
+        "type": "menu"
+    },
+    {
+        "children": [
+            {
                 "children": [
                     {
                         "children": [],
