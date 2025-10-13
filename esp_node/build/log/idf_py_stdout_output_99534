@@ -1295,4 +1295,42 @@ DATA={"frequency":40.0,"duty_frequency":0.16,"temperature":25.0,"finish_after":0
 [0;32mI (1183049) mqtts: MQTT_EVENT_PUBLISHED, msg_id=38307[0m
 [0;32mI (1192719) mqtts: Enqueued to 4827E2E2E5E4/uplink, msg_id=46873[0m
 [0;32mI (1192719) MAIN: MQTT message sent![0m
-[0;32mI (1193389) mqtts: MQTT_EVE
+[0;32mI (1193389) mqtts: MQTT_EVENT_PUBLISHED, msg_id=46873[0m
+[0;32mI (1202719) mqtts: Enqueued to 4827E2E2E5E4/uplink, msg_id=18969[0m
+[0;32mI (1202719) MAIN: MQTT message sent![0m
+[0;32mI (1203729) mqtts: MQTT_EVENT_PUBLISHED, msg_id=18969[0m
+[0;32mI (1212719) mqtts: Enqueued to 4827E2E2E5E4/uplink, msg_id=4452[0m
+[0;32mI (1212719) MAIN: MQTT message sent![0m
+[0;32mI (1213149) mqtts: MQTT_EVENT_PUBLISHED, msg_id=4452[0m
+[0;32mI (1222719) mqtts: Enqueued to 4827E2E2E5E4/uplink, msg_id=32726[0m
+[0;32mI (1222719) MAIN: MQTT message sent![0m
+[0;32mI (1223389) mqtts: MQTT_EVENT_PUBLISHED, msg_id=32726[0m
+[0;32mI (1232719) mqtts: Enqueued to 4827E2E2E5E4/uplink, msg_id=52616[0m
+[0;32mI (1232719) MAIN: MQTT message sent![0m
+[0;32mI (1233839) mqtts: MQTT_EVENT_PUBLISHED, msg_id=52616[0m
+[0;32mI (1242719) mqtts: Enqueued to 4827E2E2E5E4/uplink, msg_id=43361[0m
+[0;32mI (1242719) MAIN: MQTT message sent![0m
+[0;32mI (1243149) mqtts: MQTT_EVENT_PUBLISHED, msg_id=43361[0m
+[0;32mI (1252719) mqtts: Enqueued to 4827E2E2E5E4/uplink, msg_id=26063[0m
+[0;32mI (1252719) MAIN: MQTT message sent![0m
+[0;32mI (1253499) mqtts: MQTT_EVENT_PUBLISHED, msg_id=26063[0m
+[0;32mI (1262719) mqtts: Enqueued to 4827E2E2E5E4/uplink, msg_id=49142[0m
+[0;32mI (1262719) MAIN: MQTT message sent![0m
+[0;32mI (1263939) mqtts: MQTT_EVENT_PUBLISHED, msg_id=49142[0m
+[0;32mI (1272719) mqtts: Enqueued to 4827E2E2E5E4/uplink, msg_id=39811[0m
+[0;32mI (1272719) MAIN: MQTT message sent![0m
+[0;32mI (1273359) mqtts: MQTT_EVENT_PUBLISHED, msg_id=39811[0m
+[0;32mI (1282719) mqtts: Enqueued to 4827E2E2E5E4/uplink, msg_id=36229[0m
+[0;32mI (1282719) MAIN: MQTT message sent![0m
+[0;32mI (1283599) mqtts: MQTT_EVENT_PUBLISHED, msg_id=36229[0m
+[0;32mI (1292719) mqtts: Enqueued to 4827E2E2E5E4/uplink, msg_id=51139[0m
+[0;32mI (1292719) MAIN: MQTT message sent![0m
+[0;32mI (1293009) mqtts: MQTT_EVENT_PUBLISHED, msg_id=51139[0m
+[0;32mI (1302719) mqtts: Enqueued to 4827E2E2E5E4/uplink, msg_id=43616[0m
+[0;32mI (1302719) MAIN: MQTT message sent![0m
+[0;32mI (1303499) mqtts: MQTT_EVENT_PUBLISHED, msg_id=43616[0m
+[0;32mI (1312719) mqtts: Enqueued to 4827E2E2E5E4/uplink, msg_id=19057[0m
+[0;32mI (1312719) MAIN: MQTT message sent![0m
+[0;32mI (1314009) mqtts: MQTT_EVENT_PUBLISHED, msg_id=19057[0m
+[0;32mI (1322719) mqtts: Enqueued to 4827E2E2E5E4/uplink, msg_id=12373[0m
+[0;32mI (1322719) MAIN: MQTT message sent![0m
