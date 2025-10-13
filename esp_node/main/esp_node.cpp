@@ -44,12 +44,20 @@ static DeviceState_t device_state = {
 static SemaphoreHandle_t state_mutex = NULL;
 static esp_timer_handle_t schedule_timer = NULL;
 static esp_timer_handle_t expiry_timer = NULL;
+static Actuator_temperature actuator;
+static TaskHandle_t mantain_temperatureTask_handle = NULL;
+static Sensor_temperature sensor;
+static PwmController* pwm_input = NULL;
+static PwmController* pwm_burst = NULL;
 
-
-typedef struct {
-    PwmController pwm_input;
-    PwmController pwm_burst;
-} PWMchannels;
+DeviceState_t get_device_state() {
+    DeviceState_t state;
+    if (xSemaphoreTake(state_mutex, portMAX_DELAY) == pdTRUE) {
+        state = device_state;
+        xSemaphoreGive(state_mutex);
+    }
+    return state;
+}
 
 void initialize_sntp(void) {
     ESP_LOGI(TAG, "Initializing SNTP");
@@ -73,12 +81,65 @@ void initialize_sntp(void) {
     }
 }
 
+void mantain_temperature(void* temperature_target){
+    //histeresys cycle
+    float* temp = (float*) temperature_target;
+    float temp_target = *temp;
+    float temp_current = sensor.readTemperature(0);
+
+    while(1){
+        vTaskDelay(pdMS_TO_TICKS(3000));
+        printf("histeresys cycle active...");
+    }
+
+ /*actuator.set_duty(100.0f);
+    vTaskDelay(pdMS_TO_TICKS(1000));
+
+    actuator.init_cool();
+    actuator.get_status();
+    vTaskDelay(pdMS_TO_TICKS(600000));
+
+    actuator.init_warm();
+    actuator.get_status();
+    vTaskDelay(pdMS_TO_TICKS(10000));
+
+
+    actuator.set_duty(50.0f);
+    vTaskDelay(pdMS_TO_TICKS(1000));
+
+
+    actuator.set_duty(15.0f);
+    vTaskDelay(pdMS_TO_TICKS(1000));*/
+
+}
+
 void scheduled_action(void* arg) {
-    ESP_LOGI(TAG, "⏰ Timer triggered! Executing scheduled action...");
+    ESP_LOGI(TAG, "Timer triggered! Executing scheduled action...");
+    DeviceState_t state = get_device_state();
+    // TODO start irradiation
+    float temp = state.temperature;
+    xTaskCreate(mantain_temperature, "mantain_temperatureTask", 4096, (void*)&temp, 2, &mantain_temperatureTask_handle);
+
+    pwm_input->setFrequency(state.frequency);
+    pwm_input->setDuty(50.0f);
+    pwm_burst->setFrequency(5000);
+    pwm_burst->setDuty(state.duty_frequency);
 }
 
 void expiry_action(void* arg) {
-    ESP_LOGI(TAG, "⏳ Expiry timer triggered! Schedule has expired!");
+    ESP_LOGI(TAG, "Expiry timer triggered! Schedule has expired!");
+
+    if (mantain_temperatureTask_handle != NULL) {
+        vTaskDelete(mantain_temperatureTask_handle);
+        mantain_temperatureTask_handle = NULL;
+    }
+    actuator.stop_warm();
+    actuator.stop_cool();
+    actuator.set_duty(0.0f);
+
+    pwm_input->setDuty(0.0f);
+    pwm_burst->setDuty(0.0f);
+
 }
 
 void schedule_timer_command(uint32_t start_timestamp, float expiry_hours) {
@@ -212,14 +273,6 @@ void onMqttMessage(const char* topic, int topic_len, const char* data, int data_
     }
 }
 
-DeviceState_t get_device_state() {
-    DeviceState_t state;
-    if (xSemaphoreTake(state_mutex, portMAX_DELAY) == pdTRUE) {
-        state = device_state;
-        xSemaphoreGive(state_mutex);
-    }
-    return state;
-}
 
 
 bool isParsableInt(const std::string &s) {
@@ -276,83 +329,24 @@ char* encodePayload(float current_temperature) {
 
 
 
-// TODO cambiare con uso protocollo wifi + mqtt
-
-/*
-void loraTask(void* param) {
-
-    esp_task_wdt_config_t config= {
-        .timeout_ms = 30000,
-        .idle_core_mask = 0,
-        .trigger_panic = false
-    };
-
-    esp_task_wdt_init(&config); // 10s timeout
-    esp_task_wdt_add(NULL);      // add current task
-    PWMchannels* pwm_channels = (PWMchannels*) param;
-    PwmController pwm = (*pwm_channels).pwm_input;
-    PwmController pwm_burst = (*pwm_channels).pwm_burst;
-
-    init_lora();
-
-
-    while(true) {
-    char message[256];
-    if (receive_lora_data(message)) {
-        printf("Received message: %s\n", message);
-        int value = -1;
-
-        bool burst_freq = false;
-
-        if(strncmp(message, "_", 1) == 0){
-            burst_freq = true;
-            // Rimuovi il carattere di underscore per la parsificazione
-            std::string msg_str(message);
-            msg_str = msg_str.substr(1); // Rimuovi il primo carattere
-            strncpy(message, msg_str.c_str(), sizeof(message));
-            message[sizeof(message) - 1] = '\0'; // Assicurati che sia null-terminated
-            printf("Burst mode activated");
-        }
-
-        if(isParsableInt(message)){
-            value = std::stoi(message);
-            printf("Parsed integer: %d\n", value);
-            if(!burst_freq && value >= 10 && value <= 60000){
-                pwm.setFrequency(value);
-                pwm.setDuty(50.0f);
-            } else if(burst_freq && value >= 0 and value <= 100){
-                pwm_burst.setFrequency(5000);
-                pwm_burst.setDuty((float) value);
-            } else{
-                printf("Value out of range. Shutting down the PWMs.\n");
-                pwm.setDuty(0.0f);
-                pwm_burst.setDuty(0.0f);
-            }
-
-        } else {
-            printf("Message is not a valid integer.\n");
-        }
-    }
-
-    esp_task_wdt_reset();
-    vTaskDelay(pdMS_TO_TICKS(100)); // Delay di 100ms invece di 10ms
-    }
-}*/
-
 
 extern "C" void app_main(void)
 {
     state_mutex = xSemaphoreCreateMutex();
 
     // Inizializza controller PWM
-    PwmController pwm(GPIO_NUM_2, LEDC_CHANNEL_0, LEDC_TIMER_0, false);
-    pwm.init();
+    pwm_input = new PwmController(GPIO_NUM_2, LEDC_CHANNEL_0, LEDC_TIMER_0, false);
+    pwm_input->init();
    
-    PwmController pwm_burst(GPIO_NUM_20, LEDC_CHANNEL_1, LEDC_TIMER_1, false);
-    pwm_burst.init();
+    pwm_burst = new PwmController(GPIO_NUM_20, LEDC_CHANNEL_1, LEDC_TIMER_1, false);
+    pwm_burst->init();
 
-    PWMchannels pwm_channels = {pwm, pwm_burst};
 
+    actuator.begin(GPIO_NUM_7, GPIO_NUM_6, GPIO_NUM_5, LEDC_CHANNEL_2, LEDC_TIMER_2);
+    sensor.begin();
+    int new_slots[MAX_SENSORS];
+    int num = sensor.scan(new_slots);
+    ESP_LOGI(TAG, "Inizializzati %d sensori", num);
 
     // Inizializza WiFi
 
@@ -405,6 +399,9 @@ extern "C" void app_main(void)
         ESP_LOGI(TAG, "MQTT message sent!");
         vTaskDelay(pdMS_TO_TICKS(10000));
     }
+
+    delete pwm_input;
+    delete pwm_burst;
 
     //vTaskDelete(NULL);
 
