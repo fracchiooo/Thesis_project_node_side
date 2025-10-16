@@ -14,7 +14,6 @@
 #include "esp_random.h" 
 #include "nvs_flash.h"
 #include "sensor.hpp"
-#include "actuator.hpp"
 #include "wifi_wrapper.hpp"
 #include "mqtt_wrapper.hpp"
 #include "cJSON.h"
@@ -45,10 +44,13 @@ static SemaphoreHandle_t state_mutex = NULL;
 static esp_timer_handle_t schedule_timer = NULL;
 static esp_timer_handle_t expiry_timer = NULL;
 static Actuator_temperature actuator;
-static TaskHandle_t mantain_temperatureTask_handle = NULL;
+//static TaskHandle_t mantain_temperatureTask_handle = NULL;
 static Sensor_temperature sensor;
-static PwmController* pwm_input = NULL;
-static PwmController* pwm_burst = NULL;
+static PwmController* pwm_input_40 = NULL;
+static PwmController* pwm_input_20 = NULL;
+
+static PwmController* pwm_burst_20 = NULL;
+static PwmController* pwm_burst_40 = NULL;
 
 DeviceState_t get_device_state() {
     DeviceState_t state;
@@ -81,64 +83,92 @@ void initialize_sntp(void) {
     }
 }
 
+/*
 void mantain_temperature(void* temperature_target){
     //histeresys cycle
+    const float HYSTERESIS = 0.5;  // isteresi di ±0.5°C
+    const float TOLERANCE = 0.2;
+    const unsigned long DELAY_MS = 5000;
+
     float* temp = (float*) temperature_target;
     float temp_target = *temp;
-    float temp_current = sensor.readTemperature(0);
 
-    while(1){
-        vTaskDelay(pdMS_TO_TICKS(3000));
-        printf("histeresys cycle active...");
+    while (true) {
+        float currentTemp = sensor.readTemperature(0);
+        if(currentTemp==-127.0){
+            printf("error in reading temperature in control function");
+            actuator.stop_cool();
+            actuator.stop_warm();
+            mantain_temperatureTask_handle=NULL;
+            return;
+        }
+        float error = temp_target - currentTemp;
+        
+        if (abs(error) < TOLERANCE) {
+            actuator.stop_cool();
+            actuator.stop_warm();
+            vTaskDelay(pdMS_TO_TICKS(DELAY_MS));
+        }
+        
+        else if (error > HYSTERESIS) {
+            actuator.init_warm(100.0);
+        } 
+        else if (error < -HYSTERESIS) {
+            actuator.init_cool(100.0);
+        }
+        
+        vTaskDelay(pdMS_TO_TICKS(DELAY_MS));
+    
     }
-
- /*actuator.set_duty(100.0f);
-    vTaskDelay(pdMS_TO_TICKS(1000));
-
-    actuator.init_cool();
-    actuator.get_status();
-    vTaskDelay(pdMS_TO_TICKS(600000));
-
-    actuator.init_warm();
-    actuator.get_status();
-    vTaskDelay(pdMS_TO_TICKS(10000));
-
-
-    actuator.set_duty(50.0f);
-    vTaskDelay(pdMS_TO_TICKS(1000));
-
-
-    actuator.set_duty(15.0f);
-    vTaskDelay(pdMS_TO_TICKS(1000));*/
-
-}
+}*/
 
 void scheduled_action(void* arg) {
     ESP_LOGI(TAG, "Timer triggered! Executing scheduled action...");
     DeviceState_t state = get_device_state();
     // TODO start irradiation
-    float temp = state.temperature;
-    xTaskCreate(mantain_temperature, "mantain_temperatureTask", 4096, (void*)&temp, 2, &mantain_temperatureTask_handle);
+    /*float temp = state.temperature;
+    xTaskCreate(mantain_temperature, "mantain_temperatureTask", 4096, (void*)&temp, 2, &mantain_temperatureTask_handle);*/
 
-    pwm_input->setFrequency(state.frequency);
-    pwm_input->setDuty(50.0f);
-    pwm_burst->setFrequency(5000);
-    pwm_burst->setDuty(state.duty_frequency);
+    if(state.frequency==40.0){
+        pwm_input_20->setDuty(0.0f);
+        pwm_burst_20->setDuty(0.0f);
+
+        pwm_input_40->setFrequency(39300);
+        pwm_input_40->setDuty(50.0f);
+        pwm_burst_40->setDuty(state.duty_frequency);
+
+    } else if(state.frequency==20.0){
+        pwm_burst_40->setDuty(0.0f);
+        pwm_input_40->setDuty(0.0f);
+
+        pwm_input_20->setFrequency(21700);
+        pwm_input_20->setDuty(50.0f);
+        pwm_burst_20->setDuty(state.duty_frequency);
+
+    } else {
+        pwm_input_20->setDuty(0.0f);    
+        pwm_input_40->setDuty(0.0f);
+        pwm_burst_20->setDuty(0.0f);
+        pwm_burst_40->setDuty(0.0f);
+
+    }
 }
 
 void expiry_action(void* arg) {
     ESP_LOGI(TAG, "Expiry timer triggered! Schedule has expired!");
 
-    if (mantain_temperatureTask_handle != NULL) {
+    /*if (mantain_temperatureTask_handle != NULL) {
         vTaskDelete(mantain_temperatureTask_handle);
         mantain_temperatureTask_handle = NULL;
     }
     actuator.stop_warm();
-    actuator.stop_cool();
-    actuator.set_duty(0.0f);
+    actuator.stop_cool();*/
 
-    pwm_input->setDuty(0.0f);
-    pwm_burst->setDuty(0.0f);
+    pwm_input_20->setDuty(0.0f);
+    pwm_input_40->setDuty(0.0f);
+
+    pwm_burst_20->setDuty(0.0f);
+    pwm_burst_40->setDuty(0.0f);
 
 }
 
@@ -154,6 +184,7 @@ void schedule_timer_command(uint32_t start_timestamp, float expiry_hours) {
     if (expiry_timer != NULL) {
         esp_timer_stop(expiry_timer);
         esp_timer_delete(expiry_timer);
+        expiry_action(NULL);
         expiry_timer = NULL;
         ESP_LOGI(TAG, "Previous expiry timer deleted");
     }
@@ -261,12 +292,12 @@ void onMqttMessage(const char* topic, int topic_len, const char* data, int data_
 
                 }
             }
+            xSemaphoreGive(state_mutex);
             //triggers the time clock for start and stop the actuators
             schedule_timer_command(device_state.start_time, device_state.finish_after);
             ESP_LOGI(TAG, "status updated and timer started");
         }
 
-        xSemaphoreGive(state_mutex);
         cJSON_Delete(json);
     } else {
         ESP_LOGW(TAG, "Failed to parse JSON");
@@ -275,15 +306,6 @@ void onMqttMessage(const char* topic, int topic_len, const char* data, int data_
 
 
 
-bool isParsableInt(const std::string &s) {
-    try {
-        size_t pos;
-        std::stoi(s, &pos);           // tenta la conversione
-        return pos == s.size();       // controlla che tutta la stringa sia stata consumata
-    } catch (std::invalid_argument& exception) {
-        return false;                 // eccezione → non parsabile
-    }
-}
 
 
 char* encodePayload(float current_temperature) {
@@ -335,14 +357,22 @@ extern "C" void app_main(void)
     state_mutex = xSemaphoreCreateMutex();
 
     // Inizializza controller PWM
-    pwm_input = new PwmController(GPIO_NUM_2, LEDC_CHANNEL_0, LEDC_TIMER_0, false);
-    pwm_input->init();
+    pwm_input_40 = new PwmController(GPIO_NUM_2, LEDC_CHANNEL_0, LEDC_TIMER_0, false);
+    pwm_input_40->init();
+
+    pwm_input_20 = new PwmController(GPIO_NUM_3, LEDC_CHANNEL_3, LEDC_TIMER_3, false);
+    pwm_input_20->init();
    
-    pwm_burst = new PwmController(GPIO_NUM_20, LEDC_CHANNEL_1, LEDC_TIMER_1, false);
-    pwm_burst->init();
+    pwm_burst_20 = new PwmController(GPIO_NUM_4, LEDC_CHANNEL_1, LEDC_TIMER_1, false);
+    pwm_burst_20->init();
+    pwm_burst_40 = new PwmController(GPIO_NUM_1, LEDC_CHANNEL_2, LEDC_TIMER_1, false);
+    pwm_burst_40->init();
+
+    pwm_burst_40->setFrequency(1000);
+    pwm_burst_20->setFrequency(1000);
 
 
-    actuator.begin(GPIO_NUM_7, GPIO_NUM_6, GPIO_NUM_5, LEDC_CHANNEL_2, LEDC_TIMER_2);
+    //actuator.begin(GPIO_NUM_6, GPIO_NUM_5, LEDC_CHANNEL_2, LEDC_TIMER_2);
     sensor.begin();
     int new_slots[MAX_SENSORS];
     int num = sensor.scan(new_slots);
@@ -392,30 +422,21 @@ extern "C" void app_main(void)
 
 
     while(1){
-        char* payload = encodePayload(777.0f);
+        sensor.scan(new_slots);
+        float curr_temp = sensor.readTemperature(0);
+        char* payload = encodePayload(curr_temp);
         mqtt.send_message(nullptr, payload);
         delete[] payload;
-
         ESP_LOGI(TAG, "MQTT message sent!");
         vTaskDelay(pdMS_TO_TICKS(10000));
     }
 
-    delete pwm_input;
-    delete pwm_burst;
+    delete pwm_input_40;
+    delete pwm_input_20;
+    delete pwm_burst_20;
+    delete pwm_burst_40;
 
     //vTaskDelete(NULL);
-
-    /*
-    if (schedule_timer != NULL) {
-        esp_timer_stop(schedule_timer);
-        esp_timer_delete(schedule_timer);
-        schedule_timer = NULL;
-    }
-    if (expiry_timer != NULL) {
-        esp_timer_stop(expiry_timer);
-        esp_timer_delete(expiry_timer);
-        expiry_timer = NULL;
-    }*/
 
 
     
@@ -438,37 +459,6 @@ extern "C" void app_main(void)
     }*/
 
 
-/*
-
-    //utilizzo temperature actuator
-    Actuator_temperature actuator;
-    actuator.begin(GPIO_NUM_7, GPIO_NUM_6, GPIO_NUM_5, LEDC_CHANNEL_2, LEDC_TIMER_2);
-
-    actuator.set_duty(100.0f);
-    vTaskDelay(pdMS_TO_TICKS(1000));
-
-    actuator.init_cool();
-    actuator.get_status();
-    vTaskDelay(pdMS_TO_TICKS(600000));
-
-    actuator.init_warm();
-    actuator.get_status();
-    vTaskDelay(pdMS_TO_TICKS(10000));
-
-
-    actuator.set_duty(50.0f);
-    vTaskDelay(pdMS_TO_TICKS(1000));
-
-
-    actuator.set_duty(15.0f);
-    vTaskDelay(pdMS_TO_TICKS(1000));
-
-    actuator.stop_warm();
-
-*/
-
-    // cambia con wifi + mqtt
-    //xTaskCreate(loraTask, "loraTask", 4096, (void*)&pwm_channels, 2, NULL);
 
 
 

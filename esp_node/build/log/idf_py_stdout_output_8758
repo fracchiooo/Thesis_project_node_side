@@ -1,0 +1,735 @@
+������b0530h (722224) map[0m�ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d9c
+entry 0x403c9914
+[0;32mI (27) boot: ESP-IDF v5.2.2 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Oct 13 2025 19:48:30[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=2f514h (193812) map[0m
+[0;32mI (134) esp_image: segment 1: paddr=0003f53c vaddr=3fc9a400 size=00adch (  2780) load[0m
+[0;32mI (135) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=b0530h (722224) map[0m
+[0;32mI (269) esp_image: segment 3: paddr=000f0558 vaddr=3fc9aedc size=03cf4h ( 15604) load[0m
+[0;32mI (273) esp_image: segment 4: paddr=000f4254 vaddr=40374000 size=16378h ( 91000) load[0m
+[0;32mI (304) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (304) boot: Disabling RNG early entropy source...[0m
+[0;32mI (316) cpu_start: Multicore app[0m
+[0;32mI (325) cpu_start: Pro cpu start user code[0m
+[0;32mI (325) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (325) cpu_start: Application information:[0m
+[0;32mI (328) cpu_start: Project name:     esp_node[0m
+[0;32mI (333) cpu_start: App version:      649058a-dirty[0m
+[0;32mI (339) cpu_start: Compile time:     Oct 13 2025 19:52:51[0m
+[0;32mI (345) cpu_start: ELF file SHA256:  39ea4dce5...[0m
+[0;32mI (350) cpu_start: ESP-IDF:          v5.2.2[0m
+[0;32mI (355) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (360) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (365) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (369) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (377) heap_init: At 3FCA2DC8 len 00046948 (282 KiB): RAM[0m
+[0;32mI (383) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (389) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (395) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (402) spi_flash: detected chip: gd[0m
+[0;32mI (405) spi_flash: flash io: dio[0m
+[0;33mW (409) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (423) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (429) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (437) main_task: Started on CPU0[0m
+[0;32mI (447) main_task: Calling app_main()[0m
+[0;32mI (447) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (457) PWM: PWM inizializzato: GPIO 2, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (467) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (467) PWM: PWM inizializzato: GPIO 3, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (477) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (487) PWM: PWM inizializzato: GPIO 4, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (497) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (497) PWM: PWM inizializzato: GPIO 1, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (507) PWM: Cambio frequenza: 40000 -> 1000 Hz, risoluzione: 8 -> 14 bit[0m
+[0;32mI (517) PWM: Timer riconfigurato: 1000 Hz, 14 bit (16384 livelli)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (527) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (537) PWM: Cambio frequenza: 40000 -> 1000 Hz, risoluzione: 8 -> 14 bit[0m
+[0;32mI (547) PWM: Timer riconfigurato: 1000 Hz, 14 bit (16384 livelli)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (557) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (567) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (567) PWM: PWM inizializzato: GPIO 5, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (577) PWM: Cambio frequenza: 40000 -> 25000 Hz, risoluzione: 8 -> 9 bit[0m
+[0;32mI (587) PWM: Timer riconfigurato: 25000 Hz, 9 bit (512 livelli)[0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (597) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (607) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+[0;32mI (617) Temperature actuator: Set the actuator connectors succesfully[0m
+[0;32mI (617) gpio: GPIO[26]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (627) gpio: GPIO[26]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (637) Temperature sensor: Bus inizializzato su GPIO 26[0m
+[0;32mI (757) Temperature sensor: Slot 0: BA00000046755428[0m
+[0;32mI (757) Temperature sensor: Trovati 1 nuovi (totale 1)[0m
+[0;32mI (757) MAIN: Inizializzati 1 sensori[0m
+[0;32mI (787) wifi: ESP_WIFI_MODE_STA[0m
+[0;32mI (787) pp: pp rom version: e7ae62f[0m
+[0;32mI (787) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (797) wifi:wifi driver task: 3fcad99c, prio:23, stack:6656, core=0[0m
+[0;32mI (807) wifi:wifi firmware version: 3e0076f[0m
+[0;32mI (807) wifi:wifi certification version: v7.0[0m
+[0;32mI (807) wifi:config NVS flash: enabled[0m
+[0;32mI (807) wifi:config nano formating: disabled[0m
+[0;32mI (817) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (817) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (827) wifi:Init management short buffer num: 32[0m
+[0;32mI (827) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (827) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (837) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (837) wifi:Init static rx buffer num: 10[0m
+[0;32mI (847) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (847) wifi_init: rx ba win: 6[0m
+[0;32mI (847) wifi_init: tcpip mbox: 32[0m
+[0;32mI (857) wifi_init: udp mbox: 6[0m
+[0;32mI (857) wifi_init: tcp mbox: 6[0m
+[0;32mI (867) wifi_init: tcp tx win: 5760[0m
+[0;32mI (867) wifi_init: tcp rx win: 5760[0m
+[0;32mI (867) wifi_init: tcp mss: 1440[0m
+[0;32mI (877) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (877) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (887) phy_init: phy_version 670,b7bc9b9,Apr 30 2024,10:54:13[0m
+[0;32mI (927) wifi:mode : sta (34:b7:da:54:35:28)[0m
+[0;32mI (927) wifi:enable tsf[0m
+[0;32mI (937) wifi: wifi_init_sta finished.[0m
+[0;32mI (937) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (937) wifi:state: init -> auth (b0)[0m
+[0;32mI (1937) wifi:state: auth -> init (200)[0m
+[0;32mI (1947) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (1947) wifi: retry to connect to the AP[0m
+[0;32mI (1947) wifi: connect to the AP fail[0m
+[0;32mI (4357) wifi: retry to connect to the AP[0m
+[0;32mI (4357) wifi: connect to the AP fail[0m
+[0;32mI (4357) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (4357) wifi:state: init -> auth (b0)[0m
+[0;32mI (4377) wifi:state: auth -> assoc (0)[0m
+[0;32mI (4407) wifi:state: assoc -> run (10)[0m
+[0;32mI (4437) wifi:connected with Oneplus, aid = 7, channel 1, BW20, bssid = ba:7e:6d:57:2c:9d[0m
+[0;32mI (4437) wifi:security: WPA2-PSK, phy: bgn, rssi: -47[0m
+[0;32mI (4437) wifi:pm start, type: 1[0m
+
+[0;32mI (4437) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (4447) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (4457) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (4457) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (4477) wifi:<ba-add>idx:0 (ifx:0, ba:7e:6d:57:2c:9d), tid:0, ssn:0, winSize:64[0m
+[0;32mI (5467) esp_netif_handlers: sta ip: 10.121.56.118, mask: 255.255.255.0, gw: 10.121.56.100[0m
+[0;32mI (5467) wifi: got ip:10.121.56.118[0m
+[0;32mI (5467) wifi: connected to ap SSID:Oneplus password:123456789[0m
+[0;32mI (5477) MAIN: WIFI connected![0m
+[0;32mI (5477) mqtts: MqttWrapper created with client_id: 34B7DA543528[0m
+[0;32mI (5487) mqtts: [APP] Free memory: 278020 bytes[0m
+[0;32mI (5487) mqtts: Other event id:7[0m
+[0;32mI (6707) mqtts: MQTT_EVENT_CONNECTED[0m
+[0;32mI (6707) mqtts: Subscribed to 34B7DA543528/downlink, msg_id=32281[0m
+[0;32mI (6747) mqtts: MQTT_EVENT_SUBSCRIBED, msg_id=32281[0m
+[0;32mI (7177) MAIN: MQTT connected! System running in background...[0m
+[0;32mI (7177) MAIN: Initializing SNTP[0m
+[0;32mI (7177) MAIN: Waiting for time sync... (1/10)[0m
+[0;32mI (8177) MAIN: Waiting for time sync... (2/10)[0m
+[0;32mI (9177) MAIN: Waiting for time sync... (3/10)[0m
+[0;32mI (10177) MAIN: Waiting for time sync... (4/10)[0m
+[0;32mI (11177) MAIN: Waiting for time sync... (5/10)[0m
+[0;32mI (11207) mqtts: MQTT_EVENT_DATA[0m
+TOPIC=34B7DA543528/downlink
+DATA={"frequency":0.0,"duty_frequency":100.0,"temperature":27.5,"finish_after":0.011,"startTime":null}
+[0;32mI (11207) MAIN: === Message received in MAIN ===[0m
+[0;32mI (11217) MAIN: Topic: 34B7DA543528/downlink[0m
+[0;32mI (11217) MAIN: Data: {"frequency":0.0,"duty_frequency":100.0,"temperature":27.5,"finish_after":0.011,"startTime":null}[0m
+[0;32mI (11227) MAIN: Start timestamp is 0 or past, executing immediately[0m
+[0;32mI (11237) MAIN: Timer triggered! Executing scheduled action...[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+Imposto duty: 256 / 512 (risoluzione: 9 bit)
+[0;32mI (11247) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+[0;32mI (11247) PWM: Hardware PWM duty: 50.00% richiesto -> 50.10% effettivo (256/512)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (11267) Temperature actuator: Set duty cycle with value: 50.000000[0m
+[0;32mI (11267) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (11287) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (11307) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (11307) MAIN: Expiry timer set for 0.01 hours (total 39 seconds from now)[0m
+[0;32mI (11317) MAIN: status updated and timer started[0m
+[0;32mI (12097) Temperature sensor: Slot 0: 25.31 °C[0m
+[0;32mI (12097) Temperature actuator: Started to warm[0m
+[0;32mI (12177) MAIN: Waiting for time sync... (6/10)[0m
+[0;32mI (13177) MAIN: Time synchronized: Tue Oct 14 17:33:47 2025
+[0m
+[0;32mI (13177) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=61196[0m
+[0;32mI (13177) MAIN: MQTT message sent![0m
+[0;32mI (13557) mqtts: MQTT_EVENT_PUBLISHED, msg_id=61196[0m
+[0;32mI (14917) Temperature sensor: Slot 0: 25.25 °C[0m
+[0;32mI (17737) Temperature sensor: Slot 0: 25.12 °C[0m
+[0;32mI (20557) Temperature sensor: Slot 0: 25.00 °C[0m
+[0;32mI (23177) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=28103[0m
+[0;32mI (23177) MAIN: MQTT message sent![0m
+[0;32mI (23377) Temperature sensor: Slot 0: 24.94 °C[0m
+[0;32mI (24007) mqtts: MQTT_EVENT_PUBLISHED, msg_id=28103[0m
+[0;32mI (26197) Temperature sensor: Slot 0: 24.88 °C[0m
+[0;32mI (29017) Temperature sensor: Slot 0: 24.75 °C[0m
+[0;32mI (31837) Temperature sensor: Slot 0: 24.69 °C[0m
+[0;32mI (33177) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=43455[0m
+[0;32mI (33177) MAIN: MQTT message sent![0m
+[0;32mI (34037) mqtts: MQTT_EVENT_DATA[0m
+TOPIC=34B7DA543528/downlink
+DATA={"frequency":0.0,"duty_frequency":100.0,"temperature":27.5,"finish_after":0.011,"startTime":null}
+[0;32mI (34047) MAIN: === Message received in MAIN ===[0m
+[0;32mI (34047) MAIN: Topic: 34B7DA543528/downlink[0m
+[0;32mI (34057) MAIN: Data: {"frequency":0.0,"duty_frequency":100.0,"temperature":27.5,"finish_after":0.011,"startTime":null}[0m
+[0;32mI (34067) MAIN: Previous expiry timer deleted[0m
+[0;32mI (34067) MAIN: Start timestamp is 0 or past, executing immediately[0m
+[0;32mI (34077) MAIN: Timer triggered! Executing scheduled action...[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+Imposto duty: 256 / 512 (risoluzione: 9 bit)
+[0;32mI (34087) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+[0;32mI (34087) PWM: Hardware PWM duty: 50.00% richiesto -> 50.10% effettivo (256/512)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (34107) Temperature actuator: Set duty cycle with value: 50.000000[0m
+[0;32mI (34107) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (34127) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (34137) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (34147) MAIN: Expiry timer set for 0.01 hours (total 39 seconds from now)[0m
+[0;32mI (34157) MAIN: status updated and timer started[0m
+[0;32mI (34497) mqtts: MQTT_EVENT_PUBLISHED, msg_id=43455[0m
+[0;32mI (34657) Temperature sensor: Slot 0: 24.62 °C[0m
+[0;32mI (34937) Temperature sensor: Slot 0: 24.62 °C[0m
+[0;32mI (37477) Temperature sensor: Slot 0: 24.56 °C[0m
+[0;32mI (37757) Temperature sensor: Slot 0: 24.56 °C[0m
+[0;32mI (40297) Temperature sensor: Slot 0: 24.50 °C[0m
+[0;32mI (40577) Temperature sensor: Slot 0: 24.50 °C[0m
+[0;32mI (43117) Temperature sensor: Slot 0: 24.44 °C[0m
+[0;32mI (43177) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=43332[0m
+[0;32mI (43177) MAIN: MQTT message sent![0m
+[0;32mI (43397) Temperature sensor: Slot 0: 24.44 °C[0m
+[0;32mI (44077) mqtts: MQTT_EVENT_PUBLISHED, msg_id=43332[0m
+[0;32mI (45937) Temperature sensor: Slot 0: 24.44 °C[0m
+[0;32mI (46217) Temperature sensor: Slot 0: 24.44 °C[0m
+[0;32mI (48757) Temperature sensor: Slot 0: 24.38 °C[0m
+[0;32mI (49037) Temperature sensor: Slot 0: 24.38 °C[0m
+[0;32mI (51577) Temperature sensor: Slot 0: 24.31 °C[0m
+[0;32mI (51857) Temperature sensor: Slot 0: 24.31 °C[0m
+[0;32mI (53177) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=41338[0m
+[0;32mI (53177) MAIN: MQTT message sent![0m
+[0;32mI (54397) Temperature sensor: Slot 0: 24.31 °C[0m
+[0;32mI (54517) mqtts: MQTT_EVENT_PUBLISHED, msg_id=41338[0m
+[0;32mI (54587) mqtts: MQTT_EVENT_DATA[0m
+TOPIC=34B7DA543528/downlink
+DATA={"frequency":0.0,"duty_frequency":100.0,"temperature":27.5,"finish_after":0.011,"startTime":null}
+[0;32mI (54597) MAIN: === Message received in MAIN ===[0m
+[0;32mI (54597) MAIN: Topic: 34B7DA543528/downlink[0m
+[0;32mI (54607) MAIN: Data: {"frequency":0.0,"duty_frequency":100.0,"temperature":27.5,"finish_after":0.011,"startTime":null}[0m
+[0;32mI (54617) MAIN: Previous expiry timer deleted[0m
+[0;32mI (54627) MAIN: Start timestamp is 0 or past, executing immediately[0m
+[0;32mI (54627) MAIN: Timer triggered! Executing scheduled action...[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+Imposto duty: 256 / 512 (risoluzione: 9 bit)
+[0;32mI (54647) PWM: Hardware PWM duty: 50.00% richiesto -> 50.10% effettivo (256/512)[0m
+[0;32mI (54637) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+[0;32mI (54647) Temperature actuator: Set duty cycle with value: 50.000000[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (54667) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (54687) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (54687) Temperature sensor: Slot 0: 24.31 °C[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (54697) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (54707) MAIN: Expiry timer set for 0.01 hours (total 39 seconds from now)[0m
+[0;32mI (54717) MAIN: status updated and timer started[0m
+[0;32mI (55487) Temperature sensor: Slot 0: 24.25 °C[0m
+[0;32mI (57217) Temperature sensor: Slot 0: 24.25 °C[0m
+[0;32mI (57517) Temperature sensor: Slot 0: 24.25 °C[0m
+[0;32mI (58307) Temperature sensor: Slot 0: 24.25 °C[0m
+[0;32mI (60037) Temperature sensor: Slot 0: 24.25 °C[0m
+[0;32mI (60337) Temperature sensor: Slot 0: 24.25 °C[0m
+[0;32mI (61127) Temperature sensor: Slot 0: 24.19 °C[0m
+[0;32mI (62857) Temperature sensor: Slot 0: 24.25 °C[0m
+[0;32mI (63157) Temperature sensor: Slot 0: 24.25 °C[0m
+[0;32mI (63177) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=60736[0m
+[0;32mI (63177) MAIN: MQTT message sent![0m
+[0;32mI (63947) Temperature sensor: Slot 0: 24.19 °C[0m
+[0;32mI (64147) mqtts: MQTT_EVENT_PUBLISHED, msg_id=60736[0m
+[0;32mI (65677) Temperature sensor: Slot 0: 24.19 °C[0m
+[0;32mI (65977) Temperature sensor: Slot 0: 24.19 °C[0m
+[0;32mI (66767) Temperature sensor: Slot 0: 24.12 °C[0m
+[0;32mI (67937) mqtts: MQTT_EVENT_DATA[0m
+TOPIC=34B7DA543528/downlink
+DATA={"frequency":0.0,"duty_frequency":100.0,"temperature":27.5,"finish_after":0.011,"startTime":null}
+[0;32mI (67937) MAIN: === Message received in MAIN ===[0m
+[0;32mI (67947) MAIN: Topic: 34B7DA543528/downlink[0m
+[0;32mI (67947) MAIN: Data: {"frequency":0.0,"duty_frequency":100.0,"temperature":27.5,"finish_after":0.011,"startTime":null}[0m
+[0;32mI (67967) MAIN: Previous expiry timer deleted[0m
+[0;32mI (67967) MAIN: Start timestamp is 0 or past, executing immediately[0m
+[0;32mI (67977) MAIN: Timer triggered! Executing scheduled action...[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+Imposto duty: 256 / 512 (risoluzione: 9 bit)
+[0;32mI (67987) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+[0;32mI (67987) PWM: Hardware PWM duty: 50.00% richiesto -> 50.10% effettivo (256/512)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (68007) Temperature actuator: Set duty cycle with value: 50.000000[0m
+[0;32mI (68007) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (68027) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (68037) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (68047) MAIN: Expiry timer set for 0.01 hours (total 39 seconds from now)[0m
+[0;32mI (68057) MAIN: status updated and timer started[0m
+[0;32mI (68497) Temperature sensor: Slot 0: 24.19 °C[0m
+[0;32mI (68797) Temperature sensor: Slot 0: 24.19 °C[0m
+[0;32mI (68837) Temperature sensor: Slot 0: 24.19 °C[0m
+[0;32mI (69587) Temperature sensor: Slot 0: 24.12 °C[0m
+[0;32mI (71317) Temperature sensor: Slot 0: 24.12 °C[0m
+[0;32mI (71617) Temperature sensor: Slot 0: 24.12 °C[0m
+[0;32mI (71657) Temperature sensor: Slot 0: 24.12 °C[0m
+[0;32mI (72407) Temperature sensor: Slot 0: 24.12 °C[0m
+[0;32mI (73177) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=39616[0m
+[0;32mI (73177) MAIN: MQTT message sent![0m
+[0;32mI (74137) Temperature sensor: Slot 0: 24.12 °C[0m
+[0;32mI (74377) mqtts: MQTT_EVENT_PUBLISHED, msg_id=39616[0m
+[0;32mI (74437) Temperature sensor: Slot 0: 24.12 °C[0m
+[0;32mI (74477) Temperature sensor: Slot 0: 24.12 °C[0m
+[0;32mI (75227) Temperature sensor: Slot 0: 24.06 °C[0m
+[0;32mI (76957) Temperature sensor: Slot 0: 24.06 °C[0m
+[0;32mI (77257) Temperature sensor: Slot 0: 24.06 °C[0m
+[0;32mI (77297) Temperature sensor: Slot 0: 24.06 °C[0m
+[0;32mI (78047) Temperature sensor: Slot 0: 24.06 °C[0m
+[0;32mI (79777) Temperature sensor: Slot 0: 24.06 °C[0m
+[0;32mI (80077) Temperature sensor: Slot 0: 24.06 °C[0m
+[0;32mI (80117) Temperature sensor: Slot 0: 24.06 °C[0m
+[0;32mI (80867) Temperature sensor: Slot 0: 24.06 °C[0m
+[0;32mI (82597) Temperature sensor: Slot 0: 24.00 °C[0m
+[0;32mI (82897) Temperature sensor: Slot 0: 24.00 °C[0m
+[0;32mI (82937) Temperature sensor: Slot 0: 24.00 °C[0m
+[0;32mI (83177) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=24032[0m
+[0;32mI (83177) MAIN: MQTT message sent![0m
+[0;32mI (83597) mqtts: MQTT_EVENT_PUBLISHED, msg_id=24032[0m
+[0;32mI (83687) Temperature sensor: Slot 0: 24.00 °C[0m
+[0;32mI (85417) Temperature sensor: Slot 0: 24.00 °C[0m
+[0;32mI (85717) Temperature sensor: Slot 0: 24.00 °C[0m
+[0;32mI (85757) Temperature sensor: Slot 0: 24.00 °C[0m
+[0;32mI (86507) Temperature sensor: Slot 0: 24.00 °C[0m
+[0;32mI (88237) Temperature sensor: Slot 0: 24.00 °C[0m
+[0;32mI (88537) Temperature sensor: Slot 0: 24.00 °C[0m
+[0;32mI (88577) Temperature sensor: Slot 0: 24.00 °C[0m
+[0;32mI (89327) Temperature sensor: Slot 0: 23.94 °C[0m
+[0;32mI (91057) Temperature sensor: Slot 0: 24.00 °C[0m
+[0;32mI (91357) Temperature sensor: Slot 0: 24.00 °C[0m
+[0;32mI (91397) Temperature sensor: Slot 0: 24.00 °C[0m
+[0;32mI (92147) Temperature sensor: Slot 0: 23.94 °C[0m
+[0;32mI (93177) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=56073[0m
+[0;32mI (93177) MAIN: MQTT message sent![0m
+[0;32mI (93877) Temperature sensor: Slot 0: 23.94 °C[0m
+[0;32mI (94047) mqtts: MQTT_EVENT_PUBLISHED, msg_id=56073[0m
+[0;32mI (94177) Temperature sensor: Slot 0: 23.94 °C[0m
+[0;32mI (94217) Temperature sensor: Slot 0: 23.94 °C[0m
+[0;32mI (94967) Temperature sensor: Slot 0: 23.94 °C[0m
+[0;32mI (96697) Temperature sensor: Slot 0: 23.94 °C[0m
+[0;32mI (96997) Temperature sensor: Slot 0: 23.94 °C[0m
+[0;32mI (97037) Temperature sensor: Slot 0: 23.94 °C[0m
+[0;32mI (97787) Temperature sensor: Slot 0: 23.94 °C[0m
+[0;32mI (99517) Temperature sensor: Slot 0: 23.94 °C[0m
+[0;32mI (99817) Temperature sensor: Slot 0: 23.94 °C[0m
+[0;32mI (99857) Temperature sensor: Slot 0: 23.94 °C[0m
+[0;32mI (100607) Temperature sensor: Slot 0: 23.94 °C[0m
+[0;32mI (102337) Temperature sensor: Slot 0: 23.94 °C[0m
+[0;32mI (102637) Temperature sensor: Slot 0: 23.94 °C[0m
+[0;32mI (102677) Temperature sensor: Slot 0: 23.94 °C[0m
+[0;32mI (103177) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=5511[0m
+[0;32mI (103177) MAIN: MQTT message sent![0m
+[0;32mI (103427) Temperature sensor: Slot 0: 23.88 °C[0m
+[0;32mI (104487) mqtts: MQTT_EVENT_PUBLISHED, msg_id=5511[0m
+[0;32mI (105157) Temperature sensor: Slot 0: 23.88 °C[0m
+[0;32mI (105457) Temperature sensor: Slot 0: 23.88 °C[0m
+[0;32mI (105497) Temperature sensor: Slot 0: 23.88 °C[0m
+[0;32mI (106247) Temperature sensor: Slot 0: 23.88 °C[0m
+[0;32mI (107047) MAIN: Expiry timer triggered! Schedule has expired![0m
+[0;32mI (107977) Temperature sensor: Slot 0: 23.88 °C[0m
+[0;32mI (107977) Temperature actuator: Started to warm[0m
+[0;32mI (108047) Temperature actuator: Stopped to warm[0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (108047) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+[0;32mI (108047) Temperature actuator: Set duty cycle with value: 0.000000[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (108057) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (108067) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (108087) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (108097) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (108277) Temperature sensor: Slot 0: 23.88 °C[0m
+[0;32mI (109067) Temperature sensor: Slot 0: 23.88 °C[0m
+[0;32mI (110797) Temperature sensor: Slot 0: 23.88 °C[0m
+[0;32mI (111097) Temperature sensor: Slot 0: 23.88 °C[0m
+[0;32mI (111887) Temperature sensor: Slot 0: 23.88 °C[0m
+[0;32mI (113177) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=48302[0m
+[0;32mI (113177) MAIN: MQTT message sent![0m
+[0;32mI (113617) Temperature sensor: Slot 0: 23.81 °C[0m
+[0;32mI (113697) mqtts: MQTT_EVENT_PUBLISHED, msg_id=48302[0m
+[0;32mI (113917) Temperature sensor: Slot 0: 23.81 °C[0m
+[0;32mI (114707) Temperature sensor: Slot 0: 23.88 °C[0m
+[0;32mI (116437) Temperature sensor: Slot 0: 23.81 °C[0m
+[0;32mI (116737) Temperature sensor: Slot 0: 23.81 °C[0m
+[0;32mI (117527) Temperature sensor: Slot 0: 23.81 °C[0m
+[0;32mI (119257) Temperature sensor: Slot 0: 23.81 °C[0m
+[0;32mI (119557) Temperature sensor: Slot 0: 23.81 °C[0m
+[0;32mI (120347) Temperature sensor: Slot 0: 23.81 °C[0m
+[0;32mI (122077) Temperature sensor: Slot 0: 23.81 °C[0m
+[0;32mI (122377) Temperature sensor: Slot 0: 23.81 °C[0m
+[0;32mI (123167) Temperature sensor: Slot 0: 23.81 °C[0m
+[0;32mI (123177) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=29989[0m
+[0;32mI (123177) MAIN: MQTT message sent![0m
+[0;32mI (124147) mqtts: MQTT_EVENT_PUBLISHED, msg_id=29989[0m
+[0;32mI (124897) Temperature sensor: Slot 0: 23.81 °C[0m
+[0;32mI (125197) Temperature sensor: Slot 0: 23.81 °C[0m
+[0;32mI (125987) Temperature sensor: Slot 0: 23.81 °C[0m
+[0;32mI (127717) Temperature sensor: Slot 0: 23.75 °C[0m
+[0;32mI (128017) Temperature sensor: Slot 0: 23.75 °C[0m
+[0;32mI (128807) Temperature sensor: Slot 0: 23.81 °C[0m
+[0;32mI (130537) Temperature sensor: Slot 0: 23.75 °C[0m
+[0;32mI (130837) Temperature sensor: Slot 0: 23.75 °C[0m
+[0;32mI (131627) Temperature sensor: Slot 0: 23.75 °C[0m
+[0;32mI (133177) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=33615[0m
+[0;32mI (133177) MAIN: MQTT message sent![0m
+[0;32mI (133357) Temperature sensor: Slot 0: 23.75 °C[0m
+[0;32mI (133657) Temperature sensor: Slot 0: 23.75 °C[0m
+[0;32mI (133777) mqtts: MQTT_EVENT_PUBLISHED, msg_id=33615[0m
+[0;32mI (134447) Temperature sensor: Slot 0: 23.75 °C[0m
+[0;32mI (136177) Temperature sensor: Slot 0: 23.75 °C[0m
+[0;32mI (136477) Temperature sensor: Slot 0: 23.75 °C[0m
+[0;32mI (137267) Temperature sensor: Slot 0: 23.75 °C[0m
+[0;32mI (138997) Temperature sensor: Slot 0: 23.75 °C[0m
+[0;32mI (139297) Temperature sensor: Slot 0: 23.75 °C[0m
+[0;32mI (140087) Temperature sensor: Slot 0: 23.75 °C[0m
+[0;32mI (141817) Temperature sensor: Slot 0: 23.75 °C[0m
+[0;32mI (142117) Temperature sensor: Slot 0: 23.75 °C[0m
+[0;32mI (142907) Temperature sensor: Slot 0: 23.75 °C[0m
+[0;32mI (143177) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=27585[0m
+[0;32mI (143177) MAIN: MQTT message sent![0m
+[0;32mI (144007) mqtts: MQTT_EVENT_PUBLISHED, msg_id=27585[0m
+[0;32mI (144637) Temperature sensor: Slot 0: 23.75 °C[0m
+[0;32mI (144937) Temperature sensor: Slot 0: 23.75 °C[0m
+[0;32mI (145727) Temperature sensor: Slot 0: 23.75 °C[0m
+[0;32mI (147457) Temperature sensor: Slot 0: 23.75 °C[0m
+[0;32mI (147757) Temperature sensor: Slot 0: 23.75 °C[0m
+[0;32mI (148547) Temperature sensor: Slot 0: 23.69 °C[0m
+[0;32mI (150277) Temperature sensor: Slot 0: 23.69 °C[0m
+[0;32mI (150577) Temperature sensor: Slot 0: 23.69 °C[0m
+[0;32mI (151367) Temperature sensor: Slot 0: 23.69 °C[0m
+[0;32mI (153027) mqtts: MQTT_EVENT_DATA[0m
+TOPIC=34B7DA543528/downlink
+DATA={"frequency":0.0,"duty_frequency":100.0,"temperature":27.5,"finish_after":0.011,"startTime":null}
+[0;32mI (153027) MAIN: === Message received in MAIN ===[0m
+[0;32mI (153037) MAIN: Topic: 34B7DA543528/downlink[0m
+[0;32mI (153037) MAIN: Data: {"frequency":0.0,"duty_frequency":100.0,"temperature":27.5,"finish_after":0.011,"startTime":null}[0m
+[0;32mI (153047) MAIN: Previous expiry timer deleted[0m
+[0;32mI (153057) MAIN: Start timestamp is 0 or past, executing immediately[0m
+[0;32mI (153057) MAIN: Timer triggered! Executing scheduled action...[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+Imposto duty: 256 / 512 (risoluzione: 9 bit)
+[0;32mI (153077) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (153077) PWM: Hardware PWM duty: 50.00% richiesto -> 50.10% effettivo (256/512)[0m
+[0;32mI (153087) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+[0;32mI (153097) Temperature actuator: Set duty cycle with value: 50.000000[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (153107) Temperature sensor: Slot 0: 23.69 °C[0m
+[0;32mI (153117) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (153137) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (153137) MAIN: Expiry timer set for 0.01 hours (total 39 seconds from now)[0m
+[0;32mI (153147) MAIN: status updated and timer started[0m
+[0;32mI (153177) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=8656[0m
+[0;32mI (153177) MAIN: MQTT message sent![0m
+[0;32mI (153397) Temperature sensor: Slot 0: 23.69 °C[0m
+[0;32mI (153927) Temperature sensor: Slot 0: 23.69 °C[0m
+[0;32mI (154187) Temperature sensor: Slot 0: 23.69 °C[0m
+[0;32mI (155947) Temperature sensor: Slot 0: 23.69 °C[0m
+[0;32mI (156217) Temperature sensor: Slot 0: 23.69 °C[0m
+[0;32mI (156507) mqtts: MQTT_EVENT_PUBLISHED, msg_id=8656[0m
+[0;32mI (156747) Temperature sensor: Slot 0: 23.75 °C[0m
+[0;32mI (157007) Temperature sensor: Slot 0: 23.75 °C[0m
+[0;32mI (158767) Temperature sensor: Slot 0: 23.69 °C[0m
+[0;32mI (159037) Temperature sensor: Slot 0: 23.69 °C[0m
+[0;32mI (159567) Temperature sensor: Slot 0: 23.69 °C[0m
+[0;32mI (159827) Temperature sensor: Slot 0: 23.69 °C[0m
+[0;32mI (161587) Temperature sensor: Slot 0: 23.69 °C[0m
+[0;32mI (161857) Temperature sensor: Slot 0: 23.69 °C[0m
+[0;32mI (162387) Temperature sensor: Slot 0: 23.69 °C[0m
+[0;32mI (162647) Temperature sensor: Slot 0: 23.69 °C[0m
+[0;32mI (163177) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=34922[0m
+[0;32mI (163177) MAIN: MQTT message sent![0m
+[0;32mI (163877) mqtts: MQTT_EVENT_PUBLISHED, msg_id=34922[0m
+[0;32mI (164407) Temperature sensor: Slot 0: 23.69 °C[0m
+[0;32mI (164677) Temperature sensor: Slot 0: 23.69 °C[0m
+[0;32mI (165207) Temperature sensor: Slot 0: 23.69 °C[0m
+[0;32mI (165467) Temperature sensor: Slot 0: 23.69 °C[0m
+[0;32mI (167227) Temperature sensor: Slot 0: 23.62 °C[0m
+[0;32mI (167497) Temperature sensor: Slot 0: 23.62 °C[0m
+[0;32mI (168027) Temperature sensor: Slot 0: 23.69 °C[0m
+[0;32mI (168287) Temperature sensor: Slot 0: 23.69 °C[0m
+[0;32mI (170047) Temperature sensor: Slot 0: 23.62 °C[0m
+[0;32mI (170317) Temperature sensor: Slot 0: 23.62 °C[0m
+[0;32mI (170847) Temperature sensor: Slot 0: 23.62 °C[0m
+[0;32mI (171107) Temperature sensor: Slot 0: 23.62 °C[0m
+[0;32mI (172867) Temperature sensor: Slot 0: 23.62 °C[0m
+[0;32mI (173137) Temperature sensor: Slot 0: 23.62 °C[0m
+[0;32mI (173177) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=26287[0m
+[0;32mI (173177) MAIN: MQTT message sent![0m
+[0;32mI (173667) Temperature sensor: Slot 0: 23.62 °C[0m
+[0;32mI (173927) Temperature sensor: Slot 0: 23.62 °C[0m
+[0;32mI (174117) mqtts: MQTT_EVENT_PUBLISHED, msg_id=26287[0m
+[0;32mI (175687) Temperature sensor: Slot 0: 23.62 °C[0m
+[0;32mI (175957) Temperature sensor: Slot 0: 23.62 °C[0m
+[0;32mI (176487) Temperature sensor: Slot 0: 23.62 °C[0m
+[0;32mI (176747) Temperature sensor: Slot 0: 23.62 °C[0m
+[0;32mI (178507) Temperature sensor: Slot 0: 23.62 °C[0m
+[0;32mI (178777) Temperature sensor: Slot 0: 23.62 °C[0m
+[0;32mI (179307) Temperature sensor: Slot 0: 23.62 °C[0m
+[0;32mI (179567) Temperature sensor: Slot 0: 23.62 °C[0m
+[0;32mI (181327) Temperature sensor: Slot 0: 23.62 °C[0m
+[0;32mI (181597) Temperature sensor: Slot 0: 23.62 °C[0m
+[0;32mI (182127) Temperature sensor: Slot 0: 23.62 °C[0m
+[0;32mI (182387) Temperature sensor: Slot 0: 23.62 °C[0m
+[0;32mI (183177) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=2584[0m
+[0;32mI (183177) MAIN: MQTT message sent![0m
+[0;32mI (183537) mqtts: MQTT_EVENT_PUBLISHED, msg_id=2584[0m
+[0;32mI (184147) Temperature sensor: Slot 0: 23.62 °C[0m
+[0;32mI (184417) Temperature sensor: Slot 0: 23.62 °C[0m
+[0;32mI (184947) Temperature sensor: Slot 0: 23.62 °C[0m
+[0;32mI (185207) Temperature sensor: Slot 0: 23.62 °C[0m
+[0;32mI (186967) Temperature sensor: Slot 0: 23.62 °C[0m
+[0;32mI (187237) Temperature sensor: Slot 0: 23.62 °C[0m
+[0;32mI (187767) Temperature sensor: Slot 0: 23.62 °C[0m
+[0;32mI (188027) Temperature sensor: Slot 0: 23.62 °C[0m
+[0;32mI (189787) Temperature sensor: Slot 0: 23.62 °C[0m
+[0;32mI (190057) Temperature sensor: Slot 0: 23.62 °C[0m
+[0;32mI (190587) Temperature sensor: Slot 0: 23.62 °C[0m
+[0;32mI (190847) Temperature sensor: Slot 0: 23.62 °C[0m
+[0;32mI (192137) MAIN: Expiry timer triggered! Schedule has expired![0m
+[0;32mI (192607) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (192607) Temperature actuator: Started to warm[0m
+[0;32mI (192877) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (193137) Temperature actuator: Stopped to warm[0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (193137) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+[0;32mI (193137) Temperature actuator: Set duty cycle with value: 0.000000[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (193147) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (193157) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (193177) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (193187) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (193197) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=55094[0m
+[0;32mI (193197) MAIN: MQTT message sent![0m
+[0;32mI (193667) Temperature sensor: Slot 0: 23.62 °C[0m
+[0;32mI (194187) mqtts: MQTT_EVENT_PUBLISHED, msg_id=55094[0m
+[0;32mI (195427) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (195697) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (196487) Temperature sensor: Slot 0: 23.62 °C[0m
+[0;32mI (198247) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (198517) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (199307) Temperature sensor: Slot 0: 23.62 °C[0m
+[0;32mI (201067) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (201337) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (202127) Temperature sensor: Slot 0: 23.62 °C[0m
+[0;32mI (203207) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=64274[0m
+[0;32mI (203207) MAIN: MQTT message sent![0m
+[0;32mI (203607) mqtts: MQTT_EVENT_PUBLISHED, msg_id=64274[0m
+[0;32mI (203887) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (204157) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (204947) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (206707) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (206977) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (207767) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (209527) Temperature sensor: Slot 0: 23.62 °C[0m
+[0;32mI (209797) Temperature sensor: Slot 0: 23.62 °C[0m
+[0;32mI (210587) Temperature sensor: Slot 0: 23.62 °C[0m
+[0;32mI (212347) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (212617) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (213207) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=2702[0m
+[0;32mI (213207) MAIN: MQTT message sent![0m
+[0;32mI (213407) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (214257) mqtts: MQTT_EVENT_PUBLISHED, msg_id=2702[0m
+[0;32mI (215167) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (215437) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (216227) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (217987) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (218257) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (219047) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (220807) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (221077) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (221867) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (223207) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=39385[0m
+[0;32mI (223207) MAIN: MQTT message sent![0m
+[0;32mI (223627) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (223677) mqtts: MQTT_EVENT_PUBLISHED, msg_id=39385[0m
+[0;32mI (223897) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (224687) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (226447) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (226717) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (227507) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (227777) mqtts: MQTT_EVENT_DATA[0m
+TOPIC=34B7DA543528/downlink
+DATA={"frequency":0.0,"duty_frequency":100.0,"temperature":27.5,"finish_after":0.011,"startTime":null}
+[0;32mI (227777) MAIN: === Message received in MAIN ===[0m
+[0;32mI (227787) MAIN: Topic: 34B7DA543528/downlink[0m
+[0;32mI (227787) MAIN: Data: {"frequency":0.0,"duty_frequency":100.0,"temperature":27.5,"finish_after":0.011,"startTime":null}[0m
+[0;32mI (227797) MAIN: Previous expiry timer deleted[0m
+[0;32mI (227807) MAIN: Start timestamp is 0 or past, executing immediately[0m
+[0;32mI (227807) MAIN: Timer triggered! Executing scheduled action...[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+Imposto duty: 256 / 512 (risoluzione: 9 bit)
+[0;32mI (227827) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+[0;32mI (227827) PWM: Hardware PWM duty: 50.00% richiesto -> 50.10% effettivo (256/512)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (227847) Temperature actuator: Set duty cycle with value: 50.000000[0m
+[0;32mI (227847) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (227867) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (227877) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (227887) MAIN: Expiry timer set for 0.01 hours (total 39 seconds from now)[0m
+[0;32mI (227897) MAIN: status updated and timer started[0m
+[0;32mI (228667) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (229267) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (229537) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (230327) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (231487) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (232087) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (232357) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (233147) Temperature sensor: Slot 0: 23.50 °C[0m
+[0;32mI (233207) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=4526[0m
+[0;32mI (233207) MAIN: MQTT message sent![0m
+[0;32mI (234117) mqtts: MQTT_EVENT_PUBLISHED, msg_id=4526[0m
+[0;32mI (234307) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (234907) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (235177) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (235967) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (237127) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (237727) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (237997) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (238787) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (239947) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (240547) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (240817) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (241607) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (242767) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (243207) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=30471[0m
+[0;32mI (243207) MAIN: MQTT message sent![0m
+[0;32mI (243367) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (243537) mqtts: MQTT_EVENT_PUBLISHED, msg_id=30471[0m
+[0;32mI (243637) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (244427) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (245587) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (246187) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (246457) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (247247) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (248407) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (249007) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (249277) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (250067) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (251227) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (251827) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (252097) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (252887) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (253207) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=55926[0m
+[0;32mI (253207) MAIN: MQTT message sent![0m
+[0;32mI (254047) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (254087) mqtts: MQTT_EVENT_PUBLISHED, msg_id=55926[0m
+[0;32mI (254647) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (254917) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (255707) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (256867) Temperature sensor: Slot 0: 23.50 °C[0m
+[0;32mI (257467) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (257737) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (258527) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (259687) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (260287) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (260557) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (261347) Temperature sensor: Slot 0: 23.50 °C[0m
+[0;32mI (262507) Temperature sensor: Slot 0: 23.50 °C[0m
+[0;32mI (263107) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (263207) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=38517[0m
+[0;32mI (263207) MAIN: MQTT message sent![0m
+[0;32mI (263377) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (264167) Temperature sensor: Slot 0: 23.50 °C[0m
+[0;32mI (264327) mqtts: MQTT_EVENT_PUBLISHED, msg_id=38517[0m
+[0;32mI (265327) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (265927) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (266197) Temperature sensor: Slot 0: 23.56 °C[0m
+[0;32mI (266887) MAIN: Expiry timer triggered! Schedule has expired![0m
+[0;32mI (266987) Temperature sensor: Slot 0: 23.50 °C[0m
+[0;32mI (266987) Temperature actuator: Started to warm[0m
+[0;32mI (267887) Temperature actuator: Stopped to warm[0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (267887) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+[0;32mI (267887) Temperature actuator: Set duty cycle with value: 0.000000[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (267897) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (267907) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (267927) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (267937) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (268747) Temperature sensor: Slot 0: 23.50 °C[0m
+[0;32mI (269017) Temperature sensor: Slot 0: 23.50 °C[0m
+[0;32mI (269807) Temperature sensor: Slot 0: 23.50 °C[0m
+[0;32mI (271567) Temperature sensor: Slot 0: 23.50 °C[0m
+[0;32mI (271837) Temperature sensor: Slot 0: 23.50 °C[0m
+[0;32mI (272627) Temperature sensor: Slot 0: 23.50 °C[0m
+[0;32mI (273207) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=19038[0m
+[0;32mI (273207) MAIN: MQTT message sent![0m
+[0;32mI (273857) mqtts: MQTT_EVENT_PUBLISHED, msg_id=19038[0m
+[0;32mI (274387) Temperature sensor: Slot 0: 23.50 °C[0m
+[0;32mI (274657) Temperature sensor: Slot 0: 23.50 °C[0m
+[0;32mI (275447) Temperature sensor: Slot 0: 23.50 °C[0m
+[0;32mI (277207) Temperature sensor: Slot 0: 23.50 °C[0m
+[0;32mI (277477) Temperature sensor: Slot 0: 23.50 °C[0m
+[0;32mI (278267) Temperature sensor: Slot 0: 23.50 °C[0m
+[0;32mI (280027) Temperature sensor: Slot 0: 23.50 °C[0m
+[0;32mI (280297) Temperature sensor: Slot 0: 23.50 °C[0m
+[0;32mI (281087) Temperature sensor: Slot 0: 23.50 °C[0m
+[0;32mI (282847) Temperature sensor: Slot 0: 23.50 °C[0m
+[0;32mI (283117) Temperature sensor: Slot 0: 23.50 °C[0m
+[0;32mI (283207) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=27227[0m
+[0;32mI (283207) MAIN: MQTT message sent![0m
+[0;32mI (283907) Temperature sensor: Slot 0: 23.50 °C[0m
+[0;32mI (284307) mqtts: MQTT_EVENT_PUBLISHED, msg_id=27227[0m
+[0;32mI (285667) Temperature sensor: Slot 0: 23.50 °C[0m
+[0;32mI (285937) Temperature sensor: Slot 0: 23.50 °C[0m
+[0;32mI (286727) Temperature sensor: Slot 0: 23.50 °C[0m
+[0;32mI (288487) Temperature sensor: Slot 0: 23.50 °C[0m
+[0;32mI (288757) Temperature sensor: Slot 0: 23.50 °C[0m
+[0;32mI (289547) Temperature sensor: Slot 0: 23.50 °C[0m
+[0;32mI (291307) Temperature sensor: Slot 0: 23.50 °C[0m
+[0;32mI (291577) Temperature sensor: Slot 0: 23.50 °C[0m
+[0;32mI (292367) Temperature sensor: Slot 0: 23.50 °C[0m
+[0;32mI (293207) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=49461[0m
+[0;32mI (293207) MAIN: MQTT message sent![0m

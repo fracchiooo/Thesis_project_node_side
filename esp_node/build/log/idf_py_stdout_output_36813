@@ -1,0 +1,1054 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d9c
+entry 0x403c9914
+[0;32mI (27) boot: ESP-IDF v5.2.2 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Oct 13 2025 19:48:30[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=2f514h (193812) map[0m
+[0;32mI (134) esp_image: segment 1: paddr=0003f53c vaddr=3fc9a400 size=00adch (  2780) load[0m
+[0;32mI (135) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=b0534h (722228) map[0m
+[0;32mI (269) esp_image: segment 3: paddr=000f055c vaddr=3fc9aedc size=03cf4h ( 15604) load[0m
+[0;32mI (273) esp_image: segment 4: paddr=000f4258 vaddr=40374000 size=16378h ( 91000) load[0m
+[0;32mI (304) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (304) boot: Disabling RNG early entropy source...[0m
+[0;32mI (316) cpu_start: Multicore app[0m
+[0;32mI (325) cpu_start: Pro cpu start user code[0m
+[0;32mI (325) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (325) cpu_start: Application information:[0m
+[0;32mI (328) cpu_start: Project name:     esp_node[0m
+[0;32mI (333) cpu_start: App version:      649058a-dirty[0m
+[0;32mI (339) cpu_start: Compile time:     Oct 13 2025 19:52:51[0m
+[0;32mI (345) cpu_start: ELF file SHA256:  e81c41c9d...[0m
+[0;32mI (350) cpu_start: ESP-IDF:          v5.2.2[0m
+[0;32mI (355) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (360) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (365) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (369) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (377) heap_init: At 3FCA2DC8 len 00046948 (282 KiB): RAM[0m
+[0;32mI (383) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (389) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (395) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (402) spi_flash: detected chip: gd[0m
+[0;32mI (405) spi_flash: flash io: dio[0m
+[0;33mW (409) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (423) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (429) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (437) main_task: Started on CPU0[0m
+[0;32mI (447) main_task: Calling app_main()[0m
+[0;32mI (447) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (457) PWM: PWM inizializzato: GPIO 2, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (467) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (467) PWM: PWM inizializzato: GPIO 3, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (477) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (487) PWM: PWM inizializzato: GPIO 4, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (497) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (497) PWM: PWM inizializzato: GPIO 1, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (507) PWM: Cambio frequenza: 40000 -> 1000 Hz, risoluzione: 8 -> 14 bit[0m
+[0;32mI (517) PWM: Timer riconfigurato: 1000 Hz, 14 bit (16384 livelli)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (527) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (537) PWM: Cambio frequenza: 40000 -> 1000 Hz, risoluzione: 8 -> 14 bit[0m
+[0;32mI (547) PWM: Timer riconfigurato: 1000 Hz, 14 bit (16384 livelli)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (557) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (567) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (567) PWM: PWM inizializzato: GPIO 5, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (577) PWM: Cambio frequenza: 40000 -> 25000 Hz, risoluzione: 8 -> 9 bit[0m
+[0;32mI (587) PWM: Timer riconfigurato: 25000 Hz, 9 bit (512 livelli)[0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (597) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (607) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+[0;32mI (617) Temperature actuator: Set the actuator connectors succesfully[0m
+[0;32mI (627) gpio: GPIO[26]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (627) gpio: GPIO[26]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (637) Temperature sensor: Bus inizializzato su GPIO 26[0m
+[0;32mI (757) Temperature sensor: Slot 0: BA00000046755428[0m
+[0;32mI (757) Temperature sensor: Trovati 1 nuovi (totale 1)[0m
+[0;32mI (757) MAIN: Inizializzati 1 sensori[0m
+[0;32mI (787) wifi: ESP_WIFI_MODE_STA[0m
+[0;32mI (787) pp: pp rom version: e7ae62f[0m
+[0;32mI (787) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (797) wifi:wifi driver task: 3fcad99c, prio:23, stack:6656, core=0[0m
+[0;32mI (807) wifi:wifi firmware version: 3e0076f[0m
+[0;32mI (807) wifi:wifi certification version: v7.0[0m
+[0;32mI (807) wifi:config NVS flash: enabled[0m
+[0;32mI (807) wifi:config nano formating: disabled[0m
+[0;32mI (817) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (817) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (827) wifi:Init management short buffer num: 32[0m
+[0;32mI (827) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (827) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (837) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (837) wifi:Init static rx buffer num: 10[0m
+[0;32mI (847) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (847) wifi_init: rx ba win: 6[0m
+[0;32mI (847) wifi_init: tcpip mbox: 32[0m
+[0;32mI (857) wifi_init: udp mbox: 6[0m
+[0;32mI (857) wifi_init: tcp mbox: 6[0m
+[0;32mI (867) wifi_init: tcp tx win: 5760[0m
+[0;32mI (867) wifi_init: tcp rx win: 5760[0m
+[0;32mI (867) wifi_init: tcp mss: 1440[0m
+[0;32mI (877) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (877) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (887) phy_init: phy_version 670,b7bc9b9,Apr 30 2024,10:54:13[0m
+[0;32mI (937) wifi:mode : sta (34:b7:da:54:35:28)[0m
+[0;32mI (937) wifi:enable tsf[0m
+[0;32mI (937) wifi: wifi_init_sta finished.[0m
+[0;32mI (947) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (947) wifi:state: init -> auth (b0)[0m
+[0;32mI (1947) wifi:state: auth -> init (200)[0m
+[0;32mI (1947) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (1947) wifi: retry to connect to the AP[0m
+[0;32mI (1947) wifi: connect to the AP fail[0m
+[0;32mI (4357) wifi: retry to connect to the AP[0m
+[0;32mI (4357) wifi: connect to the AP fail[0m
+[0;32mI (4367) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (4367) wifi:state: init -> auth (b0)[0m
+[0;32mI (4377) wifi:state: auth -> assoc (0)[0m
+[0;32mI (4407) wifi:state: assoc -> run (10)[0m
+[0;32mI (4437) wifi:connected with Oneplus, aid = 9, channel 1, BW20, bssid = ba:7e:6d:57:2c:9d[0m
+[0;32mI (4437) wifi:security: WPA2-PSK, phy: bgn, rssi: -41[0m
+[0;32mI (4437) wifi:pm start, type: 1[0m
+
+[0;32mI (4437) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (4447) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (4467) wifi:<ba-add>idx:0 (ifx:0, ba:7e:6d:57:2c:9d), tid:0, ssn:0, winSize:64[0m
+[0;32mI (4497) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (4497) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (5457) esp_netif_handlers: sta ip: 10.121.56.118, mask: 255.255.255.0, gw: 10.121.56.100[0m
+[0;32mI (5457) wifi: got ip:10.121.56.118[0m
+[0;32mI (5457) wifi: connected to ap SSID:Oneplus password:123456789[0m
+[0;32mI (5467) MAIN: WIFI connected![0m
+[0;32mI (5467) mqtts: MqttWrapper created with client_id: 34B7DA543528[0m
+[0;32mI (5477) mqtts: [APP] Free memory: 278020 bytes[0m
+[0;32mI (5477) mqtts: Other event id:7[0m
+[0;32mI (6357) mqtts: MQTT_EVENT_CONNECTED[0m
+[0;32mI (6357) mqtts: Subscribed to 34B7DA543528/downlink, msg_id=44370[0m
+[0;32mI (6397) mqtts: MQTT_EVENT_SUBSCRIBED, msg_id=44370[0m
+[0;32mI (6487) MAIN: MQTT connected! System running in background...[0m
+[0;32mI (6487) MAIN: Initializing SNTP[0m
+[0;32mI (6487) MAIN: Waiting for time sync... (1/10)[0m
+[0;32mI (7487) MAIN: Time synchronized: Tue Oct 14 17:46:38 2025
+[0m
+[0;32mI (7487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=130[0m
+[0;32mI (7487) MAIN: MQTT message sent![0m
+[0;32mI (8697) mqtts: MQTT_EVENT_PUBLISHED, msg_id=130[0m
+[0;32mI (17487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=44016[0m
+[0;32mI (17487) MAIN: MQTT message sent![0m
+[0;32mI (17847) mqtts: MQTT_EVENT_DATA[0m
+TOPIC=34B7DA543528/downlink
+DATA={"frequency":0.0,"duty_frequency":100.0,"temperature":27.5,"finish_after":0.011,"startTime":null}
+[0;32mI (17857) MAIN: === Message received in MAIN ===[0m
+[0;32mI (17857) MAIN: Topic: 34B7DA543528/downlink[0m
+[0;32mI (17867) MAIN: Data: {"frequency":0.0,"duty_frequency":100.0,"temperature":27.5,"finish_after":0.011,"startTime":null}[0m
+[0;32mI (17877) MAIN: Start timestamp is 0 or past, executing immediately[0m
+[0;32mI (17877) MAIN: Timer triggered! Executing scheduled action...[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+Imposto duty: 256 / 512 (risoluzione: 9 bit)
+[0;32mI (17887) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+[0;32mI (17897) PWM: Hardware PWM duty: 50.00% richiesto -> 50.10% effettivo (256/512)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (17907) Temperature actuator: Set duty cycle with value: 50.000000[0m
+[0;32mI (17917) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (17937) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (17947) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (17957) MAIN: Expiry timer set for 0.01 hours (total 39 seconds from now)[0m
+[0;32mI (17957) MAIN: status updated and timer started[0m
+[0;32mI (17977) mqtts: MQTT_EVENT_PUBLISHED, msg_id=44016[0m
+[0;32mI (18737) Temperature sensor: Slot 0: 23.38 °C[0m
+[0;32mI (18737) Temperature actuator: Started to warm[0m
+[0;32mI (24557) Temperature sensor: Slot 0: 23.31 °C[0m
+[0;32mI (27487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=36974[0m
+[0;32mI (27487) MAIN: MQTT message sent![0m
+[0;32mI (28357) mqtts: MQTT_EVENT_PUBLISHED, msg_id=36974[0m
+[0;32mI (30377) Temperature sensor: Slot 0: 23.38 °C[0m
+[0;32mI (36197) Temperature sensor: Slot 0: 23.31 °C[0m
+[0;32mI (37487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=26139[0m
+[0;32mI (37487) MAIN: MQTT message sent![0m
+[0;32mI (38807) mqtts: MQTT_EVENT_PUBLISHED, msg_id=26139[0m
+[0;32mI (42017) Temperature sensor: Slot 0: 23.31 °C[0m
+[0;32mI (47487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=37414[0m
+[0;32mI (47487) MAIN: MQTT message sent![0m
+[0;32mI (47837) Temperature sensor: Slot 0: 23.38 °C[0m
+[0;32mI (48017) mqtts: MQTT_EVENT_PUBLISHED, msg_id=37414[0m
+[0;32mI (53657) Temperature sensor: Slot 0: 23.38 °C[0m
+[0;32mI (56957) MAIN: Expiry timer triggered! Schedule has expired![0m
+[0;32mI (57237) mqtts: MQTT_EVENT_DATA[0m
+TOPIC=34B7DA543528/downlink
+DATA={"frequency":0.0,"duty_frequency":100.0,"temperature":27.5,"finish_after":0.011,"startTime":null}
+[0;32mI (57247) MAIN: === Message received in MAIN ===[0m
+[0;32mI (57247) MAIN: Topic: 34B7DA543528/downlink[0m
+[0;32mI (57257) MAIN: Data: {"frequency":0.0,"duty_frequency":100.0,"temperature":27.5,"finish_after":0.011,"startTime":null}[0m
+[0;32mI (57267) MAIN: Expiry timer triggered! Schedule has expired![0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (57277) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+[0;32mI (57287) Temperature actuator: Set duty cycle with value: 0.000000[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (57297) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (57307) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (57317) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (57327) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (57337) MAIN: Previous expiry timer deleted[0m
+[0;32mI (57337) MAIN: Start timestamp is 0 or past, executing immediately[0m
+[0;32mI (57347) MAIN: Timer triggered! Executing scheduled action...[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+Imposto duty: 256 / 512 (risoluzione: 9 bit)
+[0;32mI (57357) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+[0;32mI (57367) PWM: Hardware PWM duty: 50.00% richiesto -> 50.10% effettivo (256/512)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (57377) Temperature actuator: Set duty cycle with value: 50.000000[0m
+[0;32mI (57387) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (57397) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (57417) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (57417) MAIN: Expiry timer set for 0.01 hours (total 39 seconds from now)[0m
+[0;32mI (57427) MAIN: status updated and timer started[0m
+[0;32mI (57487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=20426[0m
+[0;32mI (57487) MAIN: MQTT message sent![0m
+[0;32mI (57957) Temperature actuator: Stopped to warm[0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (57957) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+[0;32mI (57957) Temperature actuator: Set duty cycle with value: 0.000000[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (57967) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (57977) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (57997) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (58007) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (58207) Temperature sensor: Slot 0: 23.38 °C[0m
+[0;32mI (58207) Temperature actuator: Started to warm[0m
+[0;32mI (58667) mqtts: MQTT_EVENT_PUBLISHED, msg_id=20426[0m
+[0;32mI (64027) Temperature sensor: Slot 0: 23.38 °C[0m
+[0;32mI (67487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=63276[0m
+[0;32mI (67487) MAIN: MQTT message sent![0m
+[0;32mI (68507) mqtts: MQTT_EVENT_PUBLISHED, msg_id=63276[0m
+[0;32mI (69847) Temperature sensor: Slot 0: 23.31 °C[0m
+[0;32mI (75667) Temperature sensor: Slot 0: 23.31 °C[0m
+[0;32mI (77487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=55104[0m
+[0;32mI (77487) MAIN: MQTT message sent![0m
+[0;32mI (77917) mqtts: MQTT_EVENT_PUBLISHED, msg_id=55104[0m
+[0;32mI (81487) Temperature sensor: Slot 0: 23.31 °C[0m
+[0;32mI (87307) Temperature sensor: Slot 0: 23.38 °C[0m
+[0;32mI (87487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=49137[0m
+[0;32mI (87487) MAIN: MQTT message sent![0m
+[0;32mI (88377) mqtts: MQTT_EVENT_PUBLISHED, msg_id=49137[0m
+[0;32mI (93127) Temperature sensor: Slot 0: 23.31 °C[0m
+[0;32mI (94107) mqtts: MQTT_EVENT_DATA[0m
+TOPIC=34B7DA543528/downlink
+DATA={"frequency":0.0,"duty_frequency":100.0,"temperature":27.5,"finish_after":0.011,"startTime":null}
+[0;32mI (94107) MAIN: === Message received in MAIN ===[0m
+[0;32mI (94117) MAIN: Topic: 34B7DA543528/downlink[0m
+[0;32mI (94117) MAIN: Data: {"frequency":0.0,"duty_frequency":100.0,"temperature":27.5,"finish_after":0.011,"startTime":null}[0m
+[0;32mI (94127) MAIN: Expiry timer triggered! Schedule has expired![0m
+[0;32mI (95137) Temperature actuator: Stopped to warm[0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (95137) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+[0;32mI (95137) Temperature actuator: Set duty cycle with value: 0.000000[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (95147) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (95157) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (95177) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (95187) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (95197) MAIN: Previous expiry timer deleted[0m
+[0;32mI (95197) MAIN: Start timestamp is 0 or past, executing immediately[0m
+[0;32mI (95207) MAIN: Timer triggered! Executing scheduled action...[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+Imposto duty: 256 / 512 (risoluzione: 9 bit)
+[0;32mI (95217) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+[0;32mI (95217) PWM: Hardware PWM duty: 50.00% richiesto -> 50.10% effettivo (256/512)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (95237) Temperature actuator: Set duty cycle with value: 50.000000[0m
+[0;32mI (95237) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (95257) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (95267) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (95277) MAIN: Expiry timer set for 0.01 hours (total 39 seconds from now)[0m
+[0;32mI (95287) MAIN: status updated and timer started[0m
+[0;32mI (96067) Temperature sensor: Slot 0: 23.31 °C[0m
+[0;32mI (96067) Temperature actuator: Started to warm[0m
+[0;32mI (97487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=8136[0m
+[0;32mI (97487) MAIN: MQTT message sent![0m
+[0;32mI (98607) mqtts: MQTT_EVENT_PUBLISHED, msg_id=8136[0m
+[0;32mI (101887) Temperature sensor: Slot 0: 23.31 °C[0m
+[0;32mI (107487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=49816[0m
+[0;32mI (107487) MAIN: MQTT message sent![0m
+[0;32mI (107707) Temperature sensor: Slot 0: 23.38 °C[0m
+[0;32mI (108027) mqtts: MQTT_EVENT_PUBLISHED, msg_id=49816[0m
+[0;32mI (113527) Temperature sensor: Slot 0: 23.31 °C[0m
+[0;32mI (117487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=45743[0m
+[0;32mI (117487) MAIN: MQTT message sent![0m
+[0;32mI (118267) mqtts: MQTT_EVENT_PUBLISHED, msg_id=45743[0m
+[0;32mI (119347) Temperature sensor: Slot 0: 23.31 °C[0m
+[0;32mI (125167) Temperature sensor: Slot 0: 23.31 °C[0m
+[0;32mI (127487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=42376[0m
+[0;32mI (127487) MAIN: MQTT message sent![0m
+[0;32mI (127887) mqtts: MQTT_EVENT_PUBLISHED, msg_id=42376[0m
+[0;32mI (130987) Temperature sensor: Slot 0: 23.38 °C[0m
+[0;32mI (134277) MAIN: Expiry timer triggered! Schedule has expired![0m
+[0;32mI (135277) Temperature actuator: Stopped to warm[0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (135277) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+[0;32mI (135277) Temperature actuator: Set duty cycle with value: 0.000000[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (135287) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (135297) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (135317) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (135327) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (137487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=16885[0m
+[0;32mI (137487) MAIN: MQTT message sent![0m
+[0;32mI (138337) mqtts: MQTT_EVENT_PUBLISHED, msg_id=16885[0m
+[0;32mI (147487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=14547[0m
+[0;32mI (147487) MAIN: MQTT message sent![0m
+[0;32mI (148887) mqtts: MQTT_EVENT_PUBLISHED, msg_id=14547[0m
+[0;32mI (157487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=3390[0m
+[0;32mI (157487) MAIN: MQTT message sent![0m
+[0;32mI (158407) mqtts: MQTT_EVENT_PUBLISHED, msg_id=3390[0m
+[0;32mI (167487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=56849[0m
+[0;32mI (167487) MAIN: MQTT message sent![0m
+[0;32mI (167617) mqtts: MQTT_EVENT_PUBLISHED, msg_id=56849[0m
+[0;32mI (177487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=44321[0m
+[0;32mI (177487) MAIN: MQTT message sent![0m
+[0;32mI (178067) mqtts: MQTT_EVENT_PUBLISHED, msg_id=44321[0m
+[0;32mI (180317) mqtts: MQTT_EVENT_DATA[0m
+TOPIC=34B7DA543528/downlink
+DATA={"frequency":0.0,"duty_frequency":100.0,"temperature":26.5,"finish_after":0.011,"startTime":null}
+[0;32mI (180327) MAIN: === Message received in MAIN ===[0m
+[0;32mI (180327) MAIN: Topic: 34B7DA543528/downlink[0m
+[0;32mI (180337) MAIN: Data: {"frequency":0.0,"duty_frequency":100.0,"temperature":26.5,"finish_after":0.011,"startTime":null}[0m
+[0;32mI (180347) MAIN: Expiry timer triggered! Schedule has expired![0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (180357) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+[0;32mI (180367) Temperature actuator: Set duty cycle with value: 0.000000[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (180377) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (180387) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (180397) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (180417) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (180417) MAIN: Previous expiry timer deleted[0m
+[0;32mI (180427) MAIN: Start timestamp is 0 or past, executing immediately[0m
+[0;32mI (180437) MAIN: Timer triggered! Executing scheduled action...[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+Imposto duty: 256 / 512 (risoluzione: 9 bit)
+[0;32mI (180447) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+[0;32mI (180447) PWM: Hardware PWM duty: 50.00% richiesto -> 50.10% effettivo (256/512)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (180467) Temperature actuator: Set duty cycle with value: 50.000000[0m
+[0;32mI (180467) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (180487) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (180497) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (180507) MAIN: Expiry timer set for 0.01 hours (total 39 seconds from now)[0m
+[0;32mI (180517) MAIN: status updated and timer started[0m
+[0;32mI (181287) Temperature sensor: Slot 0: 23.31 °C[0m
+[0;32mI (181287) Temperature actuator: Started to warm[0m
+[0;32mI (187107) Temperature sensor: Slot 0: 24.00 °C[0m
+[0;32mI (187487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=24675[0m
+[0;32mI (187487) MAIN: MQTT message sent![0m
+[0;32mI (187897) mqtts: MQTT_EVENT_PUBLISHED, msg_id=24675[0m
+[0;32mI (192927) Temperature sensor: Slot 0: 25.62 °C[0m
+[0;32mI (197487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=51368[0m
+[0;32mI (197487) MAIN: MQTT message sent![0m
+[0;32mI (198747) Temperature sensor: Slot 0: 26.88 °C[0m
+[0;32mI (198757) mqtts: MQTT_EVENT_PUBLISHED, msg_id=51368[0m
+[0;32mI (204567) Temperature sensor: Slot 0: 27.81 °C[0m
+[0;32mI (204567) Temperature actuator: Stop warming ...[0m
+[0;32mI (205567) Temperature actuator: Stopped to warm[0m
+[0;32mI (205567) Temperature actuator: Started to cool[0m
+[0;32mI (207487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=27039[0m
+[0;32mI (207487) MAIN: MQTT message sent![0m
+[0;32mI (207967) mqtts: MQTT_EVENT_PUBLISHED, msg_id=27039[0m
+[0;32mI (211387) Temperature sensor: Slot 0: 28.69 °C[0m
+[0;32mI (217207) Temperature sensor: Slot 0: 28.31 °C[0m
+[0;32mI (217487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=49209[0m
+[0;32mI (217487) MAIN: MQTT message sent![0m
+[0;32mI (218407) mqtts: MQTT_EVENT_PUBLISHED, msg_id=49209[0m
+[0;32mI (219507) MAIN: Expiry timer triggered! Schedule has expired![0m
+[0;32mI (220507) Temperature actuator: Stopped to cool[0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (220507) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+[0;32mI (220507) Temperature actuator: Set duty cycle with value: 0.000000[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (220517) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (220527) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (220547) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (220557) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (227487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=7089[0m
+[0;32mI (227487) MAIN: MQTT message sent![0m
+[0;32mI (227827) mqtts: MQTT_EVENT_PUBLISHED, msg_id=7089[0m
+[0;32mI (237487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=23296[0m
+[0;32mI (237487) MAIN: MQTT message sent![0m
+[0;32mI (238067) mqtts: MQTT_EVENT_PUBLISHED, msg_id=23296[0m
+[0;32mI (247487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=28596[0m
+[0;32mI (247487) MAIN: MQTT message sent![0m
+[0;32mI (248517) mqtts: MQTT_EVENT_PUBLISHED, msg_id=28596[0m
+[0;32mI (257487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=8316[0m
+[0;32mI (257487) MAIN: MQTT message sent![0m
+[0;32mI (258147) mqtts: MQTT_EVENT_DATA[0m
+TOPIC=34B7DA543528/downlink
+DATA={"frequency":0.0,"duty_frequency":100.0,"temperature":26.5,"finish_after":0.011,"startTime":null}
+[0;32mI (258147) MAIN: === Message received in MAIN ===[0m
+[0;32mI (258157) MAIN: Topic: 34B7DA543528/downlink[0m
+[0;32mI (258157) MAIN: Data: {"frequency":0.0,"duty_frequency":100.0,"temperature":26.5,"finish_after":0.011,"startTime":null}[0m
+[0;32mI (258167) MAIN: Expiry timer triggered! Schedule has expired![0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (258177) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+[0;32mI (258187) Temperature actuator: Set duty cycle with value: 0.000000[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (258197) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (258207) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (258227) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (258237) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (258247) MAIN: Previous expiry timer deleted[0m
+[0;32mI (258247) MAIN: Start timestamp is 0 or past, executing immediately[0m
+[0;32mI (258257) MAIN: Timer triggered! Executing scheduled action...[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+Imposto duty: 256 / 512 (risoluzione: 9 bit)
+[0;32mI (258267) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+[0;32mI (258267) PWM: Hardware PWM duty: 50.00% richiesto -> 50.10% effettivo (256/512)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (258287) Temperature actuator: Set duty cycle with value: 50.000000[0m
+[0;32mI (258287) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (258307) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (258317) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (258327) MAIN: Expiry timer set for 0.01 hours (total 39 seconds from now)[0m
+[0;32mI (258337) MAIN: status updated and timer started[0m
+[0;32mI (258347) mqtts: MQTT_EVENT_PUBLISHED, msg_id=8316[0m
+[0;32mI (259117) Temperature sensor: Slot 0: 32.50 °C[0m
+[0;32mI (259117) Temperature actuator: Started to cool[0m
+[0;32mI (264937) Temperature sensor: Slot 0: 33.12 °C[0m
+[0;32mI (267487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=11071[0m
+[0;32mI (267487) MAIN: MQTT message sent![0m
+[0;32mI (268787) mqtts: MQTT_EVENT_PUBLISHED, msg_id=11071[0m
+[0;32mI (270757) Temperature sensor: Slot 0: 33.56 °C[0m
+[0;32mI (276577) Temperature sensor: Slot 0: 33.94 °C[0m
+[0;32mI (277487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=4373[0m
+[0;32mI (277487) MAIN: MQTT message sent![0m
+[0;32mI (278207) mqtts: MQTT_EVENT_PUBLISHED, msg_id=4373[0m
+[0;32mI (282397) Temperature sensor: Slot 0: 34.19 °C[0m
+[0;32mI (287487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=7984[0m
+[0;32mI (287487) MAIN: MQTT message sent![0m
+[0;32mI (288217) Temperature sensor: Slot 0: 34.44 °C[0m
+[0;32mI (288657) mqtts: MQTT_EVENT_PUBLISHED, msg_id=7984[0m
+[0;32mI (294037) Temperature sensor: Slot 0: 34.62 °C[0m
+[0;32mI (297327) MAIN: Expiry timer triggered! Schedule has expired![0m
+[0;32mI (297487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=48881[0m
+[0;32mI (297487) MAIN: MQTT message sent![0m
+[0;32mI (297827) mqtts: MQTT_EVENT_PUBLISHED, msg_id=48881[0m
+[0;32mI (298327) Temperature actuator: Stopped to cool[0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (298327) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+[0;32mI (298327) Temperature actuator: Set duty cycle with value: 0.000000[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (298337) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (298347) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (298367) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (298377) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (302987) mqtts: MQTT_EVENT_DATA[0m
+TOPIC=34B7DA543528/downlink
+DATA={"frequency":0.0,"duty_frequency":100.0,"temperature":26.5,"finish_after":0.011,"startTime":null}
+[0;32mI (302997) MAIN: === Message received in MAIN ===[0m
+[0;32mI (302997) MAIN: Topic: 34B7DA543528/downlink[0m
+[0;32mI (303007) MAIN: Data: {"frequency":0.0,"duty_frequency":100.0,"temperature":26.5,"finish_after":0.011,"startTime":null}[0m
+[0;32mI (303017) MAIN: Expiry timer triggered! Schedule has expired![0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (303027) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+[0;32mI (303037) Temperature actuator: Set duty cycle with value: 0.000000[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (303047) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (303057) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (303067) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (303077) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (303087) MAIN: Previous expiry timer deleted[0m
+[0;32mI (303097) MAIN: Start timestamp is 0 or past, executing immediately[0m
+[0;32mI (303107) MAIN: Timer triggered! Executing scheduled action...[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+Imposto duty: 256 / 512 (risoluzione: 9 bit)
+[0;32mI (303117) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+[0;32mI (303117) PWM: Hardware PWM duty: 50.00% richiesto -> 50.10% effettivo (256/512)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (303137) Temperature actuator: Set duty cycle with value: 50.000000[0m
+[0;32mI (303137) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (303157) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (303167) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (303177) MAIN: Expiry timer set for 0.01 hours (total 39 seconds from now)[0m
+[0;32mI (303187) MAIN: status updated and timer started[0m
+[0;32mI (303957) Temperature sensor: Slot 0: 34.94 °C[0m
+[0;32mI (303957) Temperature actuator: Started to cool[0m
+[0;32mI (307487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=1375[0m
+[0;32mI (307487) MAIN: MQTT message sent![0m
+[0;32mI (308517) mqtts: MQTT_EVENT_PUBLISHED, msg_id=1375[0m
+[0;32mI (309777) Temperature sensor: Slot 0: 35.06 °C[0m
+[0;32mI (315597) Temperature sensor: Slot 0: 35.19 °C[0m
+[0;32mI (317487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=51128[0m
+[0;32mI (317487) MAIN: MQTT message sent![0m
+[0;32mI (318147) mqtts: MQTT_EVENT_PUBLISHED, msg_id=51128[0m
+[0;32mI (321417) Temperature sensor: Slot 0: 35.31 °C[0m
+[0;32mI (327237) Temperature sensor: Slot 0: 35.38 °C[0m
+[0;32mI (327487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=56839[0m
+[0;32mI (327487) MAIN: MQTT message sent![0m
+[0;32mI (328797) mqtts: MQTT_EVENT_PUBLISHED, msg_id=56839[0m
+[0;32mI (333057) Temperature sensor: Slot 0: 35.44 °C[0m
+[0;32mI (337487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=36522[0m
+[0;32mI (337487) MAIN: MQTT message sent![0m
+[0;32mI (338217) mqtts: MQTT_EVENT_PUBLISHED, msg_id=36522[0m
+[0;32mI (338877) Temperature sensor: Slot 0: 35.50 °C[0m
+[0;32mI (342177) MAIN: Expiry timer triggered! Schedule has expired![0m
+[0;32mI (343177) Temperature actuator: Stopped to cool[0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (343177) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+[0;32mI (343177) Temperature actuator: Set duty cycle with value: 0.000000[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (343187) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (343197) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (343217) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (343227) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (347487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=12932[0m
+[0;32mI (347487) MAIN: MQTT message sent![0m
+[0;32mI (348867) mqtts: MQTT_EVENT_PUBLISHED, msg_id=12932[0m
+[0;32mI (354397) mqtts: MQTT_EVENT_DATA[0m
+TOPIC=34B7DA543528/downlink
+DATA={"frequency":0.0,"duty_frequency":100.0,"temperature":26.5,"finish_after":0.011,"startTime":null}
+[0;32mI (354397) MAIN: === Message received in MAIN ===[0m
+[0;32mI (354407) MAIN: Topic: 34B7DA543528/downlink[0m
+[0;32mI (354407) MAIN: Data: {"frequency":0.0,"duty_frequency":100.0,"temperature":26.5,"finish_after":0.011,"startTime":null}[0m
+[0;32mI (354417) MAIN: Expiry timer triggered! Schedule has expired![0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (354427) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+[0;32mI (354437) Temperature actuator: Set duty cycle with value: 0.000000[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (354447) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (354457) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (354477) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (354487) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (354497) MAIN: Previous expiry timer deleted[0m
+[0;32mI (354497) MAIN: Start timestamp is 0 or past, executing immediately[0m
+[0;32mI (354507) MAIN: Timer triggered! Executing scheduled action...[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+Imposto duty: 256 / 512 (risoluzione: 9 bit)
+[0;32mI (354517) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+[0;32mI (354517) PWM: Hardware PWM duty: 50.00% richiesto -> 50.10% effettivo (256/512)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (354537) Temperature actuator: Set duty cycle with value: 50.000000[0m
+[0;32mI (354537) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (354557) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (354567) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (354577) MAIN: Expiry timer set for 0.01 hours (total 39 seconds from now)[0m
+[0;32mI (354587) MAIN: status updated and timer started[0m
+[0;32mI (355367) Temperature sensor: Slot 0: 35.69 °C[0m
+[0;32mI (355367) Temperature actuator: Started to cool[0m
+[0;32mI (357487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=54727[0m
+[0;32mI (357487) MAIN: MQTT message sent![0m
+[0;32mI (357767) mqtts: MQTT_EVENT_PUBLISHED, msg_id=54727[0m
+[0;32mI (361187) Temperature sensor: Slot 0: 35.75 °C[0m
+[0;32mI (367007) Temperature sensor: Slot 0: 35.75 °C[0m
+[0;32mI (367487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=1901[0m
+[0;32mI (367487) MAIN: MQTT message sent![0m
+[0;32mI (368117) mqtts: MQTT_EVENT_PUBLISHED, msg_id=1901[0m
+[0;32mI (372827) Temperature sensor: Slot 0: 35.81 °C[0m
+[0;32mI (377487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=41007[0m
+[0;32mI (377487) MAIN: MQTT message sent![0m
+[0;32mI (378557) mqtts: MQTT_EVENT_PUBLISHED, msg_id=41007[0m
+[0;32mI (378647) Temperature sensor: Slot 0: 35.88 °C[0m
+[0;32mI (384467) Temperature sensor: Slot 0: 35.88 °C[0m
+[0;32mI (387487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=516[0m
+[0;32mI (387487) MAIN: MQTT message sent![0m
+[0;32mI (387777) mqtts: MQTT_EVENT_PUBLISHED, msg_id=516[0m
+[0;32mI (390287) Temperature sensor: Slot 0: 35.94 °C[0m
+[0;32mI (393577) MAIN: Expiry timer triggered! Schedule has expired![0m
+[0;32mI (394577) Temperature actuator: Stopped to cool[0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (394577) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+[0;32mI (394577) Temperature actuator: Set duty cycle with value: 0.000000[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (394587) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (394597) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (394617) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (394627) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (397487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=52934[0m
+[0;32mI (397487) MAIN: MQTT message sent![0m
+[0;32mI (398217) mqtts: MQTT_EVENT_PUBLISHED, msg_id=52934[0m
+[0;32mI (406617) mqtts: MQTT_EVENT_DATA[0m
+TOPIC=34B7DA543528/downlink
+DATA={"frequency":0.0,"duty_frequency":100.0,"temperature":26.5,"finish_after":0.011,"startTime":null}
+[0;32mI (406617) MAIN: === Message received in MAIN ===[0m
+[0;32mI (406627) MAIN: Topic: 34B7DA543528/downlink[0m
+[0;32mI (406627) MAIN: Data: {"frequency":0.0,"duty_frequency":100.0,"temperature":26.5,"finish_after":0.011,"startTime":null}[0m
+[0;32mI (406647) MAIN: Expiry timer triggered! Schedule has expired![0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (406657) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+[0;32mI (406657) Temperature actuator: Set duty cycle with value: 0.000000[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (406667) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (406687) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (406697) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (406707) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (406717) MAIN: Previous expiry timer deleted[0m
+[0;32mI (406717) MAIN: Start timestamp is 0 or past, executing immediately[0m
+[0;32mI (406727) MAIN: Timer triggered! Executing scheduled action...[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+Imposto duty: 256 / 512 (risoluzione: 9 bit)
+[0;32mI (406737) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+[0;32mI (406747) PWM: Hardware PWM duty: 50.00% richiesto -> 50.10% effettivo (256/512)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (406757) Temperature actuator: Set duty cycle with value: 50.000000[0m
+[0;32mI (406757) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (406777) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (406797) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (406797) MAIN: Expiry timer set for 0.01 hours (total 39 seconds from now)[0m
+[0;32mI (406807) MAIN: status updated and timer started[0m
+[0;32mI (407487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=29047[0m
+[0;32mI (407487) MAIN: MQTT message sent![0m
+[0;32mI (407587) Temperature sensor: Slot 0: 36.00 °C[0m
+[0;32mI (407587) Temperature actuator: Started to cool[0m
+[0;32mI (408047) mqtts: MQTT_EVENT_PUBLISHED, msg_id=29047[0m
+[0;32mI (413407) Temperature sensor: Slot 0: 36.00 °C[0m
+[0;32mI (417487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=9124[0m
+[0;32mI (417487) MAIN: MQTT message sent![0m
+[0;32mI (418497) mqtts: MQTT_EVENT_PUBLISHED, msg_id=9124[0m
+[0;32mI (419227) Temperature sensor: Slot 0: 36.06 °C[0m
+[0;32mI (425047) Temperature sensor: Slot 0: 36.12 °C[0m
+[0;32mI (427487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=11896[0m
+[0;32mI (427487) MAIN: MQTT message sent![0m
+[0;32mI (427917) mqtts: MQTT_EVENT_PUBLISHED, msg_id=11896[0m
+[0;32mI (430867) Temperature sensor: Slot 0: 36.12 °C[0m
+[0;32mI (436687) Temperature sensor: Slot 0: 36.12 °C[0m
+[0;32mI (437487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=11100[0m
+[0;32mI (437487) MAIN: MQTT message sent![0m
+[0;32mI (438357) mqtts: MQTT_EVENT_PUBLISHED, msg_id=11100[0m
+[0;32mI (442507) Temperature sensor: Slot 0: 36.19 °C[0m
+[0;32mI (445797) MAIN: Expiry timer triggered! Schedule has expired![0m
+[0;32mI (446797) Temperature actuator: Stopped to cool[0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (446797) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+[0;32mI (446797) Temperature actuator: Set duty cycle with value: 0.000000[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (446807) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (446817) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (446837) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (446847) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (447487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=42365[0m
+[0;32mI (447487) MAIN: MQTT message sent![0m
+[0;32mI (448597) mqtts: MQTT_EVENT_PUBLISHED, msg_id=42365[0m
+[0;32mI (450647) mqtts: MQTT_EVENT_DATA[0m
+TOPIC=34B7DA543528/downlink
+DATA={"frequency":0.0,"duty_frequency":100.0,"temperature":26.5,"finish_after":0.011,"startTime":null}
+[0;32mI (450657) MAIN: === Message received in MAIN ===[0m
+[0;32mI (450657) MAIN: Topic: 34B7DA543528/downlink[0m
+[0;32mI (450667) MAIN: Data: {"frequency":0.0,"duty_frequency":100.0,"temperature":26.5,"finish_after":0.011,"startTime":null}[0m
+[0;32mI (450677) MAIN: Expiry timer triggered! Schedule has expired![0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (450687) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+[0;32mI (450697) Temperature actuator: Set duty cycle with value: 0.000000[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (450707) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (450717) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (450727) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (450737) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (450747) MAIN: Previous expiry timer deleted[0m
+[0;32mI (450757) MAIN: Start timestamp is 0 or past, executing immediately[0m
+[0;32mI (450757) MAIN: Timer triggered! Executing scheduled action...[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+Imposto duty: 256 / 512 (risoluzione: 9 bit)
+[0;32mI (450767) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+[0;32mI (450777) PWM: Hardware PWM duty: 50.00% richiesto -> 50.10% effettivo (256/512)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (450787) Temperature actuator: Set duty cycle with value: 50.000000[0m
+[0;32mI (450797) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (450817) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (450827) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (450837) MAIN: Expiry timer set for 0.01 hours (total 39 seconds from now)[0m
+[0;32mI (450837) MAIN: status updated and timer started[0m
+[0;32mI (451617) Temperature sensor: Slot 0: 36.19 °C[0m
+[0;32mI (451617) Temperature actuator: Started to cool[0m
+[0;32mI (457437) Temperature sensor: Slot 0: 36.19 °C[0m
+[0;32mI (457487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=41390[0m
+[0;32mI (457487) MAIN: MQTT message sent![0m
+[0;32mI (458227) mqtts: MQTT_EVENT_PUBLISHED, msg_id=41390[0m
+[0;32mI (463257) Temperature sensor: Slot 0: 36.19 °C[0m
+[0;32mI (467487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=63126[0m
+[0;32mI (467487) MAIN: MQTT message sent![0m
+[0;32mI (468667) mqtts: MQTT_EVENT_PUBLISHED, msg_id=63126[0m
+[0;32mI (469077) Temperature sensor: Slot 0: 36.25 °C[0m
+[0;32mI (474897) Temperature sensor: Slot 0: 36.25 °C[0m
+[0;32mI (477487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=40737[0m
+[0;32mI (477487) MAIN: MQTT message sent![0m
+[0;32mI (477887) mqtts: MQTT_EVENT_PUBLISHED, msg_id=40737[0m
+[0;32mI (480717) Temperature sensor: Slot 0: 36.25 °C[0m
+[0;32mI (486537) Temperature sensor: Slot 0: 36.25 °C[0m
+[0;32mI (487487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=9949[0m
+[0;32mI (487487) MAIN: MQTT message sent![0m
+[0;32mI (488327) mqtts: MQTT_EVENT_PUBLISHED, msg_id=9949[0m
+[0;32mI (489837) MAIN: Expiry timer triggered! Schedule has expired![0m
+[0;32mI (490837) Temperature actuator: Stopped to cool[0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (490837) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+[0;32mI (490837) Temperature actuator: Set duty cycle with value: 0.000000[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (490847) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (490857) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (490877) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (490887) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (494067) mqtts: MQTT_EVENT_DATA[0m
+TOPIC=34B7DA543528/downlink
+DATA={"frequency":0.0,"duty_frequency":100.0,"temperature":26.5,"finish_after":0.011,"startTime":null}
+[0;32mI (494067) MAIN: === Message received in MAIN ===[0m
+[0;32mI (494077) MAIN: Topic: 34B7DA543528/downlink[0m
+[0;32mI (494077) MAIN: Data: {"frequency":0.0,"duty_frequency":100.0,"temperature":26.5,"finish_after":0.011,"startTime":null}[0m
+[0;32mI (494087) MAIN: Expiry timer triggered! Schedule has expired![0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (494097) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+[0;32mI (494107) Temperature actuator: Set duty cycle with value: 0.000000[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (494117) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (494127) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (494147) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (494157) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (494167) MAIN: Previous expiry timer deleted[0m
+[0;32mI (494167) MAIN: Start timestamp is 0 or past, executing immediately[0m
+[0;32mI (494177) MAIN: Timer triggered! Executing scheduled action...[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+Imposto duty: 256 / 512 (risoluzione: 9 bit)
+[0;32mI (494187) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+[0;32mI (494187) PWM: Hardware PWM duty: 50.00% richiesto -> 50.10% effettivo (256/512)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (494207) Temperature actuator: Set duty cycle with value: 50.000000[0m
+[0;32mI (494207) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (494227) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (494237) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (494247) MAIN: Expiry timer set for 0.01 hours (total 39 seconds from now)[0m
+[0;32mI (494257) MAIN: status updated and timer started[0m
+[0;32mI (495037) Temperature sensor: Slot 0: 36.31 °C[0m
+[0;32mI (495037) Temperature actuator: Started to cool[0m
+[0;32mI (497487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=12693[0m
+[0;32mI (497487) MAIN: MQTT message sent![0m
+[0;32mI (498567) mqtts: MQTT_EVENT_PUBLISHED, msg_id=12693[0m
+[0;32mI (500857) Temperature sensor: Slot 0: 36.31 °C[0m
+[0;32mI (506677) Temperature sensor: Slot 0: 36.31 °C[0m
+[0;32mI (507487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=52693[0m
+[0;32mI (507487) MAIN: MQTT message sent![0m
+[0;32mI (507987) mqtts: MQTT_EVENT_PUBLISHED, msg_id=52693[0m
+[0;32mI (512497) Temperature sensor: Slot 0: 36.38 °C[0m
+[0;32mI (517487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=65190[0m
+[0;32mI (517487) MAIN: MQTT message sent![0m
+[0;32mI (518317) Temperature sensor: Slot 0: 36.38 °C[0m
+[0;32mI (518447) mqtts: MQTT_EVENT_PUBLISHED, msg_id=65190[0m
+[0;32mI (524137) Temperature sensor: Slot 0: 35.88 °C[0m
+[0;32mI (527487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=8094[0m
+[0;32mI (527487) MAIN: MQTT message sent![0m
+[0;32mI (527857) mqtts: MQTT_EVENT_PUBLISHED, msg_id=8094[0m
+[0;32mI (529957) Temperature sensor: Slot 0: 35.19 °C[0m
+[0;32mI (533247) MAIN: Expiry timer triggered! Schedule has expired![0m
+[0;32mI (534247) Temperature actuator: Stopped to cool[0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (534247) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+[0;32mI (534247) Temperature actuator: Set duty cycle with value: 0.000000[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (534257) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (534267) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (534287) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (534297) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (537487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=28569[0m
+[0;32mI (537487) MAIN: MQTT message sent![0m
+[0;32mI (538297) mqtts: MQTT_EVENT_PUBLISHED, msg_id=28569[0m
+[0;32mI (547487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=52947[0m
+[0;32mI (547487) MAIN: MQTT message sent![0m
+[0;32mI (548747) mqtts: MQTT_EVENT_PUBLISHED, msg_id=52947[0m
+[0;32mI (557487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=13606[0m
+[0;32mI (557487) MAIN: MQTT message sent![0m
+[0;32mI (558367) mqtts: MQTT_EVENT_PUBLISHED, msg_id=13606[0m
+[0;32mI (567487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=52324[0m
+[0;32mI (567487) MAIN: MQTT message sent![0m
+[0;32mI (568607) mqtts: MQTT_EVENT_PUBLISHED, msg_id=52324[0m
+[0;32mI (577487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=33813[0m
+[0;32mI (577487) MAIN: MQTT message sent![0m
+[0;32mI (577817) mqtts: MQTT_EVENT_PUBLISHED, msg_id=33813[0m
+[0;32mI (587487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=30866[0m
+[0;32mI (587487) MAIN: MQTT message sent![0m
+[0;32mI (588057) mqtts: MQTT_EVENT_PUBLISHED, msg_id=30866[0m
+[0;32mI (597487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=9538[0m
+[0;32mI (597487) MAIN: MQTT message sent![0m
+[0;32mI (598507) mqtts: MQTT_EVENT_PUBLISHED, msg_id=9538[0m
+[0;32mI (607487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=9873[0m
+[0;32mI (607487) MAIN: MQTT message sent![0m
+[0;32mI (607927) mqtts: MQTT_EVENT_PUBLISHED, msg_id=9873[0m
+[0;32mI (617487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=18515[0m
+[0;32mI (617487) MAIN: MQTT message sent![0m
+[0;32mI (618577) mqtts: MQTT_EVENT_PUBLISHED, msg_id=18515[0m
+[0;32mI (627487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=3830[0m
+[0;32mI (627487) MAIN: MQTT message sent![0m
+[0;32mI (628007) mqtts: MQTT_EVENT_PUBLISHED, msg_id=3830[0m
+[0;32mI (637487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=32065[0m
+[0;32mI (637487) MAIN: MQTT message sent![0m
+[0;32mI (638447) mqtts: MQTT_EVENT_PUBLISHED, msg_id=32065[0m
+[0;32mI (647487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=56942[0m
+[0;32mI (647487) MAIN: MQTT message sent![0m
+[0;32mI (648067) mqtts: MQTT_EVENT_PUBLISHED, msg_id=56942[0m
+[0;32mI (657487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=2915[0m
+[0;32mI (657487) MAIN: MQTT message sent![0m
+[0;32mI (658517) mqtts: MQTT_EVENT_PUBLISHED, msg_id=2915[0m
+[0;32mI (667487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=61498[0m
+[0;32mI (667487) MAIN: MQTT message sent![0m
+[0;32mI (667727) mqtts: MQTT_EVENT_PUBLISHED, msg_id=61498[0m
+[0;32mI (677487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=53435[0m
+[0;32mI (677487) MAIN: MQTT message sent![0m
+[0;32mI (678177) mqtts: MQTT_EVENT_PUBLISHED, msg_id=53435[0m
+[0;32mI (687487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=43828[0m
+[0;32mI (687487) MAIN: MQTT message sent![0m
+[0;32mI (688617) mqtts: MQTT_EVENT_PUBLISHED, msg_id=43828[0m
+[0;32mI (697487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=48438[0m
+[0;32mI (697487) MAIN: MQTT message sent![0m
+[0;32mI (698037) mqtts: MQTT_EVENT_PUBLISHED, msg_id=48438[0m
+[0;32mI (707487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=1076[0m
+[0;32mI (707487) MAIN: MQTT message sent![0m
+[0;32mI (708487) mqtts: MQTT_EVENT_PUBLISHED, msg_id=1076[0m
+[0;32mI (717487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=3503[0m
+[0;32mI (717487) MAIN: MQTT message sent![0m
+[0;32mI (717907) mqtts: MQTT_EVENT_PUBLISHED, msg_id=3503[0m
+[0;32mI (727487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=61186[0m
+[0;32mI (727487) MAIN: MQTT message sent![0m
+[0;32mI (728347) mqtts: MQTT_EVENT_PUBLISHED, msg_id=61186[0m
+[0;32mI (737487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=27566[0m
+[0;32mI (737487) MAIN: MQTT message sent![0m
+[0;32mI (737977) mqtts: MQTT_EVENT_PUBLISHED, msg_id=27566[0m
+[0;32mI (747487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=44450[0m
+[0;32mI (747487) MAIN: MQTT message sent![0m
+[0;32mI (748317) mqtts: MQTT_EVENT_PUBLISHED, msg_id=44450[0m
+[0;32mI (757487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=27917[0m
+[0;32mI (757487) MAIN: MQTT message sent![0m
+[0;32mI (758657) mqtts: MQTT_EVENT_PUBLISHED, msg_id=27917[0m
+[0;32mI (767487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=21953[0m
+[0;32mI (767487) MAIN: MQTT message sent![0m
+[0;32mI (768087) mqtts: MQTT_EVENT_PUBLISHED, msg_id=21953[0m
+[0;32mI (777487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=10658[0m
+[0;32mI (777487) MAIN: MQTT message sent![0m
+[0;32mI (778527) mqtts: MQTT_EVENT_PUBLISHED, msg_id=10658[0m
+[0;32mI (787487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=29586[0m
+[0;32mI (787487) MAIN: MQTT message sent![0m
+[0;32mI (787737) mqtts: MQTT_EVENT_PUBLISHED, msg_id=29586[0m
+[0;32mI (797487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=59815[0m
+[0;32mI (797487) MAIN: MQTT message sent![0m
+[0;32mI (798187) mqtts: MQTT_EVENT_PUBLISHED, msg_id=59815[0m
+[0;32mI (807487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=26655[0m
+[0;32mI (807487) MAIN: MQTT message sent![0m
+[0;32mI (808837) mqtts: MQTT_EVENT_PUBLISHED, msg_id=26655[0m
+[0;32mI (817487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=26435[0m
+[0;32mI (817487) MAIN: MQTT message sent![0m
+[0;32mI (818257) mqtts: MQTT_EVENT_PUBLISHED, msg_id=26435[0m
+[0;32mI (827487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=65150[0m
+[0;32mI (827487) MAIN: MQTT message sent![0m
+[0;32mI (828697) mqtts: MQTT_EVENT_PUBLISHED, msg_id=65150[0m
+[0;32mI (837487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=29708[0m
+[0;32mI (837487) MAIN: MQTT message sent![0m
+[0;32mI (837907) mqtts: MQTT_EVENT_PUBLISHED, msg_id=29708[0m
+[0;32mI (847487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=18241[0m
+[0;32mI (847487) MAIN: MQTT message sent![0m
+[0;32mI (848567) mqtts: MQTT_EVENT_PUBLISHED, msg_id=18241[0m
+[0;32mI (857487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=13814[0m
+[0;32mI (857487) MAIN: MQTT message sent![0m
+[0;32mI (858187) mqtts: MQTT_EVENT_PUBLISHED, msg_id=13814[0m
+[0;32mI (867487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=25071[0m
+[0;32mI (867487) MAIN: MQTT message sent![0m
+[0;32mI (868427) mqtts: MQTT_EVENT_PUBLISHED, msg_id=25071[0m
+[0;32mI (877487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=52327[0m
+[0;32mI (877487) MAIN: MQTT message sent![0m
+[0;32mI (877847) mqtts: MQTT_EVENT_PUBLISHED, msg_id=52327[0m
+[0;32mI (887487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=4404[0m
+[0;32mI (887487) MAIN: MQTT message sent![0m
+[0;32mI (888297) mqtts: MQTT_EVENT_PUBLISHED, msg_id=4404[0m
+[0;32mI (897487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=24550[0m
+[0;32mI (897487) MAIN: MQTT message sent![0m
+[0;32mI (898737) mqtts: MQTT_EVENT_PUBLISHED, msg_id=24550[0m
+[0;32mI (907487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=40267[0m
+[0;32mI (907487) MAIN: MQTT message sent![0m
+[0;32mI (908367) mqtts: MQTT_EVENT_PUBLISHED, msg_id=40267[0m
+[0;32mI (917487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=38862[0m
+[0;32mI (917487) MAIN: MQTT message sent![0m
+[0;32mI (917887) mqtts: MQTT_EVENT_PUBLISHED, msg_id=38862[0m
+[0;32mI (927487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=59570[0m
+[0;32mI (927487) MAIN: MQTT message sent![0m
+[0;32mI (928237) mqtts: MQTT_EVENT_PUBLISHED, msg_id=59570[0m
+[0;32mI (937487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=28655[0m
+[0;32mI (937487) MAIN: MQTT message sent![0m
+[0;32mI (938677) mqtts: MQTT_EVENT_PUBLISHED, msg_id=28655[0m
+[0;32mI (947487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=45460[0m
+[0;32mI (947487) MAIN: MQTT message sent![0m
+[0;32mI (947887) mqtts: MQTT_EVENT_PUBLISHED, msg_id=45460[0m
+[0;32mI (957487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=54651[0m
+[0;32mI (957487) MAIN: MQTT message sent![0m
+[0;32mI (958127) mqtts: MQTT_EVENT_PUBLISHED, msg_id=54651[0m
+[0;32mI (967487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=19194[0m
+[0;32mI (967487) MAIN: MQTT message sent![0m
+[0;32mI (968367) mqtts: MQTT_EVENT_PUBLISHED, msg_id=19194[0m
+[0;32mI (977487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=42865[0m
+[0;32mI (977487) MAIN: MQTT message sent![0m
+[0;32mI (977617) mqtts: MQTT_EVENT_PUBLISHED, msg_id=42865[0m
+[0;32mI (987487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=34244[0m
+[0;32mI (987487) MAIN: MQTT message sent![0m
+[0;32mI (988027) mqtts: MQTT_EVENT_PUBLISHED, msg_id=34244[0m
+[0;32mI (997487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=29512[0m
+[0;32mI (997487) MAIN: MQTT message sent![0m
+[0;32mI (998477) mqtts: MQTT_EVENT_PUBLISHED, msg_id=29512[0m
+[0;32mI (1007487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=17547[0m
+[0;32mI (1007487) MAIN: MQTT message sent![0m
+[0;32mI (1008097) mqtts: MQTT_EVENT_PUBLISHED, msg_id=17547[0m
+[0;32mI (1017487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=50869[0m
+[0;32mI (1017487) MAIN: MQTT message sent![0m
+[0;32mI (1018547) mqtts: MQTT_EVENT_PUBLISHED, msg_id=50869[0m
+[0;32mI (1027487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=1313[0m
+[0;32mI (1027487) MAIN: MQTT message sent![0m
+[0;32mI (1027757) mqtts: MQTT_EVENT_PUBLISHED, msg_id=1313[0m
+[0;32mI (1037487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=57604[0m
+[0;32mI (1037487) MAIN: MQTT message sent![0m
+[0;32mI (1038207) mqtts: MQTT_EVENT_PUBLISHED, msg_id=57604[0m
+[0;32mI (1047487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=33729[0m
+[0;32mI (1047487) MAIN: MQTT message sent![0m
+[0;32mI (1047827) mqtts: MQTT_EVENT_PUBLISHED, msg_id=33729[0m
+[0;32mI (1057487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=31547[0m
+[0;32mI (1057487) MAIN: MQTT message sent![0m
+[0;32mI (1058477) mqtts: MQTT_EVENT_PUBLISHED, msg_id=31547[0m
+[0;32mI (1067487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=7238[0m
+[0;32mI (1067487) MAIN: MQTT message sent![0m
+[0;32mI (1067897) mqtts: MQTT_EVENT_PUBLISHED, msg_id=7238[0m
+[0;32mI (1077487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=62597[0m
+[0;32mI (1077487) MAIN: MQTT message sent![0m
+[0;32mI (1078337) mqtts: MQTT_EVENT_PUBLISHED, msg_id=62597[0m
+[0;32mI (1087487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=59011[0m
+[0;32mI (1087487) MAIN: MQTT message sent![0m
+[0;32mI (1088787) mqtts: MQTT_EVENT_PUBLISHED, msg_id=59011[0m
+[0;32mI (1097487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=38210[0m
+[0;32mI (1097487) MAIN: MQTT message sent![0m
+[0;32mI (1098207) mqtts: MQTT_EVENT_PUBLISHED, msg_id=38210[0m
+[0;32mI (1107487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=52725[0m
+[0;32mI (1107487) MAIN: MQTT message sent![0m
+[0;32mI (1108857) mqtts: MQTT_EVENT_PUBLISHED, msg_id=52725[0m
+[0;32mI (1117487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=44633[0m
+[0;32mI (1117487) MAIN: MQTT message sent![0m
+[0;32mI (1118277) mqtts: MQTT_EVENT_PUBLISHED, msg_id=44633[0m
+[0;32mI (1127487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=61680[0m
+[0;32mI (1127487) MAIN: MQTT message sent![0m
+[0;32mI (1128727) mqtts: MQTT_EVENT_PUBLISHED, msg_id=61680[0m
+[0;32mI (1137487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=488[0m
+[0;32mI (1137487) MAIN: MQTT message sent![0m
+[0;32mI (1138147) mqtts: MQTT_EVENT_PUBLISHED, msg_id=488[0m
+[0;32mI (1147487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=697[0m
+[0;32mI (1147487) MAIN: MQTT message sent![0m
+[0;32mI (1148497) mqtts: MQTT_EVENT_PUBLISHED, msg_id=697[0m
+[0;32mI (1157487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=21412[0m
+[0;32mI (1157487) MAIN: MQTT message sent![0m
+[0;32mI (1157907) mqtts: MQTT_EVENT_PUBLISHED, msg_id=21412[0m
+[0;32mI (1167487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=35849[0m
+[0;32mI (1167487) MAIN: MQTT message sent![0m
+[0;32mI (1168457) mqtts: MQTT_EVENT_PUBLISHED, msg_id=35849[0m
+[0;32mI (1177487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=4149[0m
+[0;32mI (1177487) MAIN: MQTT message sent![0m
+[0;32mI (1178077) mqtts: MQTT_EVENT_PUBLISHED, msg_id=4149[0m
+[0;32mI (1187487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=34939[0m
+[0;32mI (1187487) MAIN: MQTT message sent![0m
+[0;32mI (1188527) mqtts: MQTT_EVENT_PUBLISHED, msg_id=34939[0m
+[0;32mI (1197487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=61035[0m
+[0;32mI (1197487) MAIN: MQTT message sent![0m
+[0;32mI (1197737) mqtts: MQTT_EVENT_PUBLISHED, msg_id=61035[0m
+[0;32mI (1207487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=55652[0m
+[0;32mI (1207487) MAIN: MQTT message sent![0m
+[0;32mI (1208187) mqtts: MQTT_EVENT_PUBLISHED, msg_id=55652[0m
+[0;32mI (1217487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=36486[0m
+[0;32mI (1217487) MAIN: MQTT message sent![0m
+[0;32mI (1218627) mqtts: MQTT_EVENT_PUBLISHED, msg_id=36486[0m
+[0;32mI (1227487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=4026[0m
+[0;32mI (1227487) MAIN: MQTT message sent![0m
+[0;32mI (1228047) mqtts: MQTT_EVENT_PUBLISHED, msg_id=4026[0m
+[0;32mI (1237487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=28240[0m
+[0;32mI (1237487) MAIN: MQTT message sent![0m
+[0;32mI (1238497) mqtts: MQTT_EVENT_PUBLISHED, msg_id=28240[0m
+[0;32mI (1247487) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=2506[0m
+[0;32mI (1247487) MAIN: MQTT message sent![0m
+[0;32mI (1247917) mqtts: MQTT_EVENT_PUBLISHED, msg_id=2506[0m

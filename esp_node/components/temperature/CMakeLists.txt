@@ -1,5 +1,5 @@
 idf_component_register(
-    SRCS "sensor.cpp" "actuator.cpp"
+    SRCS "sensor.cpp"
     INCLUDE_DIRS "."
     REQUIRES onewire_bus driver pwmController
 )

@@ -2,9 +2,7 @@
  * (null byte appended)
  */
 .data
-#if !defined (__APPLE__) && !defined (__linux__)
 .section .rodata.embedded
-#endif
 
 .global emqxsl_ca_crt
 emqxsl_ca_crt:
@@ -99,8 +97,4 @@ _binary_emqxsl_ca_crt_end: /* for objcopy compatibility */
 
 .global emqxsl_ca_crt_length
 emqxsl_ca_crt_length: /* not including null byte */
-.long 1294
-
-#if defined (__linux__)
-.section .note.GNU-stack,"",@progbits
-#endif
+.word 1294

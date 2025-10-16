@@ -1,5 +1,6 @@
 dependencies:
   espressif/onewire_bus:
     version: "^1.0.0"
+  espressif/esp-dsp: "*"
   lvgl/lvgl: "9.2.0"
   esp_lcd_sh1107: "^1"
