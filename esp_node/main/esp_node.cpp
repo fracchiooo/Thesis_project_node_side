@@ -19,6 +19,7 @@
 #include "cJSON.h"
 #include "esp_timer.h"
 #include "esp_sntp.h"
+#include "fft_wrapper.hpp"
 
 
 static const char* TAG = "MAIN";
@@ -43,7 +44,7 @@ static DeviceState_t device_state = {
 static SemaphoreHandle_t state_mutex = NULL;
 static esp_timer_handle_t schedule_timer = NULL;
 static esp_timer_handle_t expiry_timer = NULL;
-static Actuator_temperature actuator;
+//static Actuator_temperature actuator;
 //static TaskHandle_t mantain_temperatureTask_handle = NULL;
 static Sensor_temperature sensor;
 static PwmController* pwm_input_40 = NULL;
@@ -419,11 +420,18 @@ extern "C" void app_main(void)
     
     ESP_LOGI(TAG, "MQTT connected! System running in background...");
     initialize_sntp();
-
+    FFT_ultrasonic fft;
+    fft.begin(ADC_CHANNEL_9, ADC_UNIT_2, 90000, 900); // sampling at 90 khz in order to sample signals till 45 khz, taking 900 samples, so sampling with steps of 100 hz
+    // the sampling rate should be always <= of MAX_SAMPLING_FREQUENCY
+    fft.read_and_get_data_fixed_samples();
 
     while(1){
         sensor.scan(new_slots);
         float curr_temp = sensor.readTemperature(0);
+
+        fft.read_and_get_data_fixed_samples();
+        float max_freq = fft.getMaxFrequencyFFT();
+
         char* payload = encodePayload(curr_temp);
         mqtt.send_message(nullptr, payload);
         delete[] payload;
@@ -435,7 +443,6 @@ extern "C" void app_main(void)
     delete pwm_input_20;
     delete pwm_burst_20;
     delete pwm_burst_40;
-
     //vTaskDelete(NULL);
 
 

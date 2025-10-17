@@ -1,0 +1,334 @@
+[1/419] Performing build step for 'bootloader'
+[1/1] cd /home/fracchio/Thesis_project_node_side/esp_node/build/bootloader/esp-idf/esptool_py && /home/fracchio/.espressif/python_env/idf5.2_py3.10_env/bin/python /home/fracchio/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/fracchio/Thesis_project_node_side/esp_node/build/bootloader/bootloader.bin
+Bootloader binary size 0x5250 bytes. 0x2db0 bytes (36%) free.
+[2/417] Linking C static library esp-idf/espressif__esp-dsp/libespressif__esp-dsp.a
+[3/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/layouts/lv_layout.c.obj
+[4/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/misc/lv_anim_timeline.c.obj
+[5/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/layouts/grid/lv_grid.c.obj
+[6/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/fsdrv/lv_fs_win32.c.obj
+[7/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/fsdrv/lv_fs_stdio.c.obj
+[8/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/barcode/lv_barcode.c.obj
+[9/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/font/lv_font_unscii_8.c.obj
+[10/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/font/lv_font_montserrat_8.c.obj
+[11/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/barcode/code128.c.obj
+[12/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/font/lv_font_unscii_16.c.obj
+[13/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/ffmpeg/lv_ffmpeg.c.obj
+[14/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/font/lv_font_montserrat_32.c.obj
+[15/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/font/lv_font_montserrat_36.c.obj
+[16/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/font/lv_font_montserrat_38.c.obj
+[17/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/font/lv_font_montserrat_34.c.obj
+[18/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/freetype/lv_freetype.c.obj
+[19/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/font/lv_font_montserrat_40.c.obj
+[20/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/font/lv_font_montserrat_42.c.obj
+[21/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/font/lv_font_montserrat_44.c.obj
+[22/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/font/lv_font_montserrat_48.c.obj
+[23/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/font/lv_font_montserrat_46.c.obj
+[24/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/font/lv_font_simsun_14_cjk.c.obj
+[25/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/font/lv_font_simsun_16_cjk.c.obj
+[26/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/thorvg/tvgRawLoader.cpp.obj
+[27/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/thorvg/tvgRender.cpp.obj
+[28/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/bin_decoder/lv_bin_decoder.c.obj
+[29/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/thorvg/tvgPicture.cpp.obj
+[30/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/bmp/lv_bmp.c.obj
+[31/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/gif/gifdec.c.obj
+[32/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/gif/lv_gif.c.obj
+[33/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/lz4/lz4.c.obj
+[34/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/thorvg/tvgAccessor.cpp.obj
+[35/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/rle/lv_rle.c.obj
+[36/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/thorvg/tvgAnimation.cpp.obj
+[37/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/thorvg/tvgCanvas.cpp.obj
+[38/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/freetype/lv_ftsystem.c.obj
+[39/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/thorvg/tvgCompressor.cpp.obj
+[40/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/thorvg/tvgFill.cpp.obj
+[41/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/freetype/lv_freetype_glyph.c.obj
+[42/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/thorvg/tvgCapi.cpp.obj
+[43/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/freetype/lv_freetype_outline.c.obj
+[44/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/qrcode/lv_qrcode.c.obj
+[45/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/fsdrv/lv_fs_littlefs.c.obj
+[46/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/freetype/lv_freetype_image.c.obj
+[47/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/thorvg/tvgGlCanvas.cpp.obj
+[48/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/thorvg/tvgLoader.cpp.obj
+[49/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/thorvg/tvgLottieAnimation.cpp.obj
+[50/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/thorvg/tvgInitializer.cpp.obj
+[51/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/thorvg/tvgLines.cpp.obj
+[52/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/thorvg/tvgLottieBuilder.cpp.obj
+[53/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/thorvg/tvgLottieInterpolator.cpp.obj
+[54/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/fsdrv/lv_fs_fatfs.c.obj
+[55/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/thorvg/tvgLottieExpressions.cpp.obj
+[56/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/thorvg/tvgLottieLoader.cpp.obj
+[57/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/thorvg/tvgLottieModel.cpp.obj
+[58/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/fsdrv/lv_fs_arduino_esp_littlefs.cpp.obj
+[59/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/fsdrv/lv_fs_posix.c.obj
+[60/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/thorvg/tvgLottieParser.cpp.obj
+[61/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/fsdrv/lv_fs_arduino_sd.cpp.obj
+[62/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/fsdrv/lv_fs_memfs.c.obj
+[63/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/libpng/lv_libpng.c.obj
+[64/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/thorvg/tvgLottieParserHandler.cpp.obj
+[65/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/thorvg/tvgMath.cpp.obj
+[66/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/thorvg/tvgScene.cpp.obj
+[67/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/thorvg/tvgShape.cpp.obj
+[68/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/thorvg/tvgSaver.cpp.obj
+[69/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/thorvg/tvgSvgUtil.cpp.obj
+[70/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/thorvg/tvgSvgCssStyle.cpp.obj
+[71/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/thorvg/tvgPaint.cpp.obj
+[72/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/thorvg/tvgSwCanvas.cpp.obj
+[73/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/thorvg/tvgStr.cpp.obj
+[74/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/libjpeg_turbo/lv_libjpeg_turbo.c.obj
+[75/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/lodepng/lv_lodepng.c.obj
+[76/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/lodepng/lodepng.c.obj
+[77/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/thorvg/tvgSvgSceneBuilder.cpp.obj
+[78/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/thorvg/tvgSwImage.cpp.obj
+[79/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/thorvg/tvgSvgLoader.cpp.obj
+[80/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/thorvg/tvgSwMath.cpp.obj
+[81/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/thorvg/tvgSwFill.cpp.obj
+[82/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/thorvg/tvgSvgPath.cpp.obj
+[83/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/thorvg/tvgSwRaster.cpp.obj
+[84/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/thorvg/tvgSwRenderer.cpp.obj
+[85/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/thorvg/tvgSwRle.cpp.obj
+[86/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/thorvg/tvgSwMemPool.cpp.obj
+[87/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/thorvg/tvgSwShape.cpp.obj
+[88/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/thorvg/tvgSwStroke.cpp.obj
+[89/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/thorvg/tvgTaskScheduler.cpp.obj
+[90/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/thorvg/tvgWgCanvas.cpp.obj
+[91/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/thorvg/tvgText.cpp.obj
+[92/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/thorvg/tvgXmlParser.cpp.obj
+[93/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/tjpgd/tjpgd.c.obj
+[94/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/misc/lv_log.c.obj
+[95/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/rlottie/lv_rlottie.c.obj
+[96/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/qrcode/qrcodegen.c.obj
+[97/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/misc/cache/lv_cache.c.obj
+[98/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/misc/cache/lv_cache_entry.c.obj
+[99/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/misc/lv_bidi.c.obj
+[100/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/misc/lv_color_op.c.obj
+[101/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/misc/lv_async.c.obj
+[102/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/misc/lv_lru.c.obj
+[103/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/misc/lv_array.c.obj
+[104/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/misc/lv_matrix.c.obj
+[105/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/misc/cache/lv_image_cache.c.obj
+[106/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/misc/cache/lv_image_header_cache.c.obj
+[107/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/misc/lv_palette.c.obj
+[108/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/misc/cache/lv_cache_lru_rb.c.obj
+[109/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/misc/lv_ll.c.obj
+[110/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/misc/lv_color.c.obj
+[111/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/lv_init.c.obj
+[112/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/misc/lv_text_ap.c.obj
+[113/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/misc/lv_event.c.obj
+[114/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/osal/lv_cmsis_rtos2.c.obj
+[115/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/osal/lv_mqx.c.obj
+[116/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/osal/lv_freertos.c.obj
+[117/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/misc/lv_utils.c.obj
+[118/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/osal/lv_os_none.c.obj
+[119/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/tjpgd/lv_tjpgd.c.obj
+[120/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/misc/lv_math.c.obj
+[121/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/osal/lv_rtthread.c.obj
+[122/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/osal/lv_pthread.c.obj
+[123/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/misc/lv_rb.c.obj
+[124/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/libs/tiny_ttf/lv_tiny_ttf.c.obj
+[125/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/misc/lv_area.c.obj
+[126/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/misc/lv_anim.c.obj
+[127/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/misc/lv_fs.c.obj
+[128/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/osal/lv_os.c.obj
+[129/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/osal/lv_windows.c.obj
+[130/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/misc/lv_timer.c.obj
+[131/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/misc/lv_text.c.obj
+[132/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/button/lv_button.c.obj
+[133/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/others/monkey/lv_monkey.c.obj
+[134/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/examples/widgets/image/lv_example_image_2.c.obj
+[135/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/others/vg_lite_tvg/vg_lite_matrix.c.obj
+[136/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/others/fragment/lv_fragment_manager.c.obj
+[137/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/misc/lv_style_gen.c.obj
+[138/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/others/gridnav/lv_gridnav.c.obj
+[139/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/others/fragment/lv_fragment.c.obj
+[140/417] Building CXX object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/others/vg_lite_tvg/vg_lite_tvg.cpp.obj
+[141/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/misc/lv_style.c.obj
+[142/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/stdlib/clib/lv_sprintf_clib.c.obj
+[143/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/misc/lv_profiler_builtin.c.obj
+[144/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/others/ime/lv_ime_pinyin.c.obj
+[145/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/stdlib/clib/lv_string_clib.c.obj
+[146/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/stdlib/rtthread/lv_sprintf_rtthread.c.obj
+[147/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/stdlib/clib/lv_mem_core_clib.c.obj
+[148/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/others/file_explorer/lv_file_explorer.c.obj
+[149/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/others/snapshot/lv_snapshot.c.obj
+[150/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/stdlib/rtthread/lv_mem_core_rtthread.c.obj
+[151/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/stdlib/rtthread/lv_string_rtthread.c.obj
+[152/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/others/sysmon/lv_sysmon.c.obj
+[153/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/stdlib/micropython/lv_mem_core_micropython.c.obj
+[154/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/bar/lv_bar.c.obj
+[155/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/stdlib/lv_mem.c.obj
+[156/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/stdlib/builtin/lv_string_builtin.c.obj
+[157/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/stdlib/builtin/lv_sprintf_builtin.c.obj
+[158/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/stdlib/builtin/lv_mem_core_builtin.c.obj
+[159/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/tick/lv_tick.c.obj
+[160/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/others/imgfont/lv_imgfont.c.obj
+[161/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/calendar/lv_calendar_header_dropdown.c.obj
+[162/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/calendar/lv_calendar_header_arrow.c.obj
+[163/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/stdlib/builtin/lv_tlsf.c.obj
+[164/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/animimage/lv_animimage.c.obj
+[165/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/arc/lv_arc.c.obj
+[166/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/calendar/lv_calendar_chinese.c.obj
+[167/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/msgbox/lv_msgbox.c.obj
+[168/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/lottie/lv_lottie.c.obj
+[169/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/themes/mono/lv_theme_mono.c.obj
+[170/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/checkbox/lv_checkbox.c.obj
+[171/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/themes/lv_theme.c.obj
+[172/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/imagebutton/lv_imagebutton.c.obj
+[173/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/canvas/lv_canvas.c.obj
+[174/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/themes/simple/lv_theme_simple.c.obj
+[175/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/led/lv_led.c.obj
+[176/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/list/lv_list.c.obj
+[177/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/calendar/lv_calendar.c.obj
+[178/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/keyboard/lv_keyboard.c.obj
+[179/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/others/observer/lv_observer.c.obj
+[180/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/property/lv_dropdown_properties.c.obj
+[181/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/line/lv_line.c.obj
+[182/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/buttonmatrix/lv_buttonmatrix.c.obj
+[183/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/property/lv_keyboard_properties.c.obj
+[184/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/image/lv_image.c.obj
+[185/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/menu/lv_menu.c.obj
+[186/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/property/lv_image_properties.c.obj
+[187/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/property/lv_style_properties.c.obj
+[188/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/property/lv_label_properties.c.obj
+[189/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/property/lv_obj_properties.c.obj
+[190/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/property/lv_roller_properties.c.obj
+[191/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/dropdown/lv_dropdown.c.obj
+[192/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/property/lv_textarea_properties.c.obj
+[193/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/label/lv_label.c.obj
+[194/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/examples/assets/img_caret_down.c.obj
+[195/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/chart/lv_chart.c.obj
+[196/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/examples/assets/emoji/img_emoji_F617.c.obj
+[197/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/spinbox/lv_spinbox.c.obj
+[198/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/slider/lv_slider.c.obj
+[199/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/switch/lv_switch.c.obj
+[200/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/tileview/lv_tileview.c.obj
+[201/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/themes/default/lv_theme_default.c.obj
+[202/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/spinner/lv_spinner.c.obj
+[203/417] Building CXX object esp-idf/frequency/CMakeFiles/__idf_frequency.dir/fft_wrapper.cpp.obj
+FAILED: esp-idf/frequency/CMakeFiles/__idf_frequency.dir/fft_wrapper.cpp.obj 
+/home/fracchio/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32s3-elf-g++ -DESP_PLATFORM -DIDF_VER=\"v5.2.2\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/fracchio/Thesis_project_node_side/esp_node/build/config -I/home/fracchio/Thesis_project_node_side/esp_node/components/frequency -I/home/fracchio/esp/esp-idf/components/newlib/platform_include -I/home/fracchio/esp/esp-idf/components/freertos/config/include -I/home/fracchio/esp/esp-idf/components/freertos/config/include/freertos -I/home/fracchio/esp/esp-idf/components/freertos/config/xtensa/include -I/home/fracchio/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/fracchio/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/fracchio/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -I/home/fracchio/esp/esp-idf/components/freertos/esp_additions/include -I/home/fracchio/esp/esp-idf/components/esp_hw_support/include -I/home/fracchio/esp/esp-idf/components/esp_hw_support/include/soc -I/home/fracchio/esp/esp-idf/components/esp_hw_support/include/soc/esp32s3 -I/home/fracchio/esp/esp-idf/components/esp_hw_support/port/esp32s3/. -I/home/fracchio/esp/esp-idf/components/heap/include -I/home/fracchio/esp/esp-idf/components/log/include -I/home/fracchio/esp/esp-idf/components/soc/include -I/home/fracchio/esp/esp-idf/components/soc/esp32s3 -I/home/fracchio/esp/esp-idf/components/soc/esp32s3/include -I/home/fracchio/esp/esp-idf/components/hal/platform_port/include -I/home/fracchio/esp/esp-idf/components/hal/esp32s3/include -I/home/fracchio/esp/esp-idf/components/hal/include -I/home/fracchio/esp/esp-idf/components/esp_rom/include -I/home/fracchio/esp/esp-idf/components/esp_rom/include/esp32s3 -I/home/fracchio/esp/esp-idf/components/esp_rom/esp32s3 -I/home/fracchio/esp/esp-idf/components/esp_common/include -I/home/fracchio/esp/esp-idf/components/esp_system/include -I/home/fracchio/esp/esp-idf/components/esp_system/port/soc -I/home/fracchio/esp/esp-idf/components/esp_system/port/include/private -I/home/fracchio/esp/esp-idf/components/xtensa/esp32s3/include -I/home/fracchio/esp/esp-idf/components/xtensa/include -I/home/fracchio/esp/esp-idf/components/xtensa/deprecated_include -I/home/fracchio/esp/esp-idf/components/lwip/include -I/home/fracchio/esp/esp-idf/components/lwip/include/apps -I/home/fracchio/esp/esp-idf/components/lwip/include/apps/sntp -I/home/fracchio/esp/esp-idf/components/lwip/lwip/src/include -I/home/fracchio/esp/esp-idf/components/lwip/port/include -I/home/fracchio/esp/esp-idf/components/lwip/port/freertos/include -I/home/fracchio/esp/esp-idf/components/lwip/port/esp32xx/include -I/home/fracchio/esp/esp-idf/components/lwip/port/esp32xx/include/arch -I/home/fracchio/esp/esp-idf/components/lwip/port/esp32xx/include/sys -I/home/fracchio/esp/esp-idf/components/driver/include -I/home/fracchio/esp/esp-idf/components/driver/deprecated -I/home/fracchio/esp/esp-idf/components/driver/analog_comparator/include -I/home/fracchio/esp/esp-idf/components/driver/dac/include -I/home/fracchio/esp/esp-idf/components/driver/gpio/include -I/home/fracchio/esp/esp-idf/components/driver/gptimer/include -I/home/fracchio/esp/esp-idf/components/driver/i2c/include -I/home/fracchio/esp/esp-idf/components/driver/i2s/include -I/home/fracchio/esp/esp-idf/components/driver/ledc/include -I/home/fracchio/esp/esp-idf/components/driver/mcpwm/include -I/home/fracchio/esp/esp-idf/components/driver/parlio/include -I/home/fracchio/esp/esp-idf/components/driver/pcnt/include -I/home/fracchio/esp/esp-idf/components/driver/rmt/include -I/home/fracchio/esp/esp-idf/components/driver/sdio_slave/include -I/home/fracchio/esp/esp-idf/components/driver/sdmmc/include -I/home/fracchio/esp/esp-idf/components/driver/sigma_delta/include -I/home/fracchio/esp/esp-idf/components/driver/spi/include -I/home/fracchio/esp/esp-idf/components/driver/temperature_sensor/include -I/home/fracchio/esp/esp-idf/components/driver/touch_sensor/include -I/home/fracchio/esp/esp-idf/components/driver/twai/include -I/home/fracchio/esp/esp-idf/components/driver/uart/include -I/home/fracchio/esp/esp-idf/components/driver/usb_serial_jtag/include -I/home/fracchio/esp/esp-idf/components/driver/touch_sensor/esp32s3/include -I/home/fracchio/esp/esp-idf/components/esp_pm/include -I/home/fracchio/esp/esp-idf/components/esp_ringbuf/include -I/home/fracchio/Thesis_project_node_side/esp_node/managed_components/espressif__esp-dsp/modules/dotprod/include -I/home/fracchio/Thesis_project_node_side/esp_node/managed_components/espressif__esp-dsp/modules/support/include -I/home/fracchio/Thesis_project_node_side/esp_node/managed_components/espressif__esp-dsp/modules/support/mem/include -I/home/fracchio/Thesis_project_node_side/esp_node/managed_components/espressif__esp-dsp/modules/windows/include -I/home/fracchio/Thesis_project_node_side/esp_node/managed_components/espressif__esp-dsp/modules/windows/hann/include -I/home/fracchio/Thesis_project_node_side/esp_node/managed_components/espressif__esp-dsp/modules/windows/blackman/include -I/home/fracchio/Thesis_project_node_side/esp_node/managed_components/espressif__esp-dsp/modules/windows/blackman_harris/include -I/home/fracchio/Thesis_project_node_side/esp_node/managed_components/espressif__esp-dsp/modules/windows/blackman_nuttall/include -I/home/fracchio/Thesis_project_node_side/esp_node/managed_components/espressif__esp-dsp/modules/windows/nuttall/include -I/home/fracchio/Thesis_project_node_side/esp_node/managed_components/espressif__esp-dsp/modules/windows/flat_top/include -I/home/fracchio/Thesis_project_node_side/esp_node/managed_components/espressif__esp-dsp/modules/iir/include -I/home/fracchio/Thesis_project_node_side/esp_node/managed_components/espressif__esp-dsp/modules/fir/include -I/home/fracchio/Thesis_project_node_side/esp_node/managed_components/espressif__esp-dsp/modules/math/include -I/home/fracchio/Thesis_project_node_side/esp_node/managed_components/espressif__esp-dsp/modules/math/add/include -I/home/fracchio/Thesis_project_node_side/esp_node/managed_components/espressif__esp-dsp/modules/math/sub/include -I/home/fracchio/Thesis_project_node_side/esp_node/managed_components/espressif__esp-dsp/modules/math/mul/include -I/home/fracchio/Thesis_project_node_side/esp_node/managed_components/espressif__esp-dsp/modules/math/addc/include -I/home/fracchio/Thesis_project_node_side/esp_node/managed_components/espressif__esp-dsp/modules/math/mulc/include -I/home/fracchio/Thesis_project_node_side/esp_node/managed_components/espressif__esp-dsp/modules/math/sqrt/include -I/home/fracchio/Thesis_project_node_side/esp_node/managed_components/espressif__esp-dsp/modules/matrix/mul/include -I/home/fracchio/Thesis_project_node_side/esp_node/managed_components/espressif__esp-dsp/modules/matrix/add/include -I/home/fracchio/Thesis_project_node_side/esp_node/managed_components/espressif__esp-dsp/modules/matrix/addc/include -I/home/fracchio/Thesis_project_node_side/esp_node/managed_components/espressif__esp-dsp/modules/matrix/mulc/include -I/home/fracchio/Thesis_project_node_side/esp_node/managed_components/espressif__esp-dsp/modules/matrix/sub/include -I/home/fracchio/Thesis_project_node_side/esp_node/managed_components/espressif__esp-dsp/modules/matrix/include -I/home/fracchio/Thesis_project_node_side/esp_node/managed_components/espressif__esp-dsp/modules/fft/include -I/home/fracchio/Thesis_project_node_side/esp_node/managed_components/espressif__esp-dsp/modules/dct/include -I/home/fracchio/Thesis_project_node_side/esp_node/managed_components/espressif__esp-dsp/modules/conv/include -I/home/fracchio/Thesis_project_node_side/esp_node/managed_components/espressif__esp-dsp/modules/common/include -I/home/fracchio/Thesis_project_node_side/esp_node/managed_components/espressif__esp-dsp/modules/matrix/mul/test/include -I/home/fracchio/Thesis_project_node_side/esp_node/managed_components/espressif__esp-dsp/modules/kalman/ekf/include -I/home/fracchio/Thesis_project_node_side/esp_node/managed_components/espressif__esp-dsp/modules/kalman/ekf_imu13states/include -I/home/fracchio/esp/esp-idf/components/esp_adc/include -I/home/fracchio/esp/esp-idf/components/esp_adc/interface -I/home/fracchio/esp/esp-idf/components/esp_adc/esp32s3/include -I/home/fracchio/esp/esp-idf/components/esp_adc/deprecated/include -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=/home/fracchio/Thesis_project_node_side/esp_node=. -fmacro-prefix-map=/home/fracchio/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu++2b -fexceptions -fno-rtti -MD -MT esp-idf/frequency/CMakeFiles/__idf_frequency.dir/fft_wrapper.cpp.obj -MF esp-idf/frequency/CMakeFiles/__idf_frequency.dir/fft_wrapper.cpp.obj.d -o esp-idf/frequency/CMakeFiles/__idf_frequency.dir/fft_wrapper.cpp.obj -c /home/fracchio/Thesis_project_node_side/esp_node/components/frequency/fft_wrapper.cpp
+In file included from /home/fracchio/Thesis_project_node_side/esp_node/components/frequency/fft_wrapper.cpp:1:
+/home/fracchio/Thesis_project_node_side/esp_node/components/frequency/fft_wrapper.hpp:34:18: error: 'uint32_t FFT_ultrasonic::get_max_cali_value(adc_cali_handle_t)' cannot be overloaded with 'uint32_t FFT_ultrasonic::get_max_cali_value(adc_cali_handle_t)'
+   34 |         uint32_t get_max_cali_value(adc_cali_handle_t calibration);
+      |                  ^~~~~~~~~~~~~~~~~~
+/home/fracchio/Thesis_project_node_side/esp_node/components/frequency/fft_wrapper.hpp:31:18: note: previous declaration 'uint32_t FFT_ultrasonic::get_max_cali_value(adc_cali_handle_t)'
+   31 |         uint32_t get_max_cali_value(adc_cali_handle_t calibration);
+      |                  ^~~~~~~~~~~~~~~~~~
+/home/fracchio/Thesis_project_node_side/esp_node/components/frequency/fft_wrapper.hpp: In constructor 'FFT_ultrasonic::FFT_ultrasonic()':
+/home/fracchio/Thesis_project_node_side/esp_node/components/frequency/fft_wrapper.hpp:45:14: error: 'FFT_ultrasonic::_calibrated' will be initialized after [-Werror=reorder]
+   45 |         bool _calibrated;
+      |              ^~~~~~~~~~~
+/home/fracchio/Thesis_project_node_side/esp_node/components/frequency/fft_wrapper.hpp:43:19: error:   'uint32_t* FFT_ultrasonic::_fft_result' [-Werror=reorder]
+   43 |         uint32_t* _fft_result;
+      |                   ^~~~~~~~~~~
+/home/fracchio/Thesis_project_node_side/esp_node/components/frequency/fft_wrapper.cpp:6:1: error:   when initialized here [-Werror=reorder]
+    6 | FFT_ultrasonic::FFT_ultrasonic() : _ADC_channel(-1), _ADC_unit(-1), _sampling_freq(0), _num_samples(0), _handle(nullptr), _calibrated(false), _fft_result(nullptr), _cali_handle(nullptr)
+      | ^~~~~~~~~~~~~~
+/home/fracchio/Thesis_project_node_side/esp_node/components/frequency/fft_wrapper.cpp: In destructor 'FFT_ultrasonic::~FFT_ultrasonic()':
+/home/fracchio/Thesis_project_node_side/esp_node/components/frequency/fft_wrapper.cpp:16:9: error: 'adc_calibration_deinit' was not declared in this scope
+   16 |         adc_calibration_deinit(_cali_handle);
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+/home/fracchio/Thesis_project_node_side/esp_node/components/frequency/fft_wrapper.cpp: In member function 'void FFT_ultrasonic::begin(uint8_t, uint8_t, uint32_t, int)':
+/home/fracchio/Thesis_project_node_side/esp_node/components/frequency/fft_wrapper.cpp:43:5: warning: missing initializer for member 'adc_continuous_handle_cfg_t::flags' [-Wmissing-field-initializers]
+   43 |     };
+      |     ^
+/home/fracchio/Thesis_project_node_side/esp_node/components/frequency/fft_wrapper.cpp:61:5: warning: missing initializer for member 'adc_continuous_config_t::pattern_num' [-Wmissing-field-initializers]
+   61 |     };
+      |     ^
+/home/fracchio/Thesis_project_node_side/esp_node/components/frequency/fft_wrapper.cpp:61:5: warning: missing initializer for member 'adc_continuous_config_t::adc_pattern' [-Wmissing-field-initializers]
+/home/fracchio/Thesis_project_node_side/esp_node/components/frequency/fft_wrapper.cpp:61:5: error: designator order for field 'adc_continuous_config_t::adc_pattern' does not match declaration order in 'adc_continuous_config_t'
+/home/fracchio/Thesis_project_node_side/esp_node/components/frequency/fft_wrapper.cpp:69:5: warning: missing initializer for member 'adc_continuous_evt_cbs_t::on_pool_ovf' [-Wmissing-field-initializers]
+   69 |     };
+      |     ^
+/home/fracchio/Thesis_project_node_side/esp_node/components/frequency/fft_wrapper.cpp: In member function 'uint32_t* FFT_ultrasonic::read_and_get_data_fixed_samples()':
+/home/fracchio/Thesis_project_node_side/esp_node/components/frequency/fft_wrapper.cpp:85:34: error: 'adc_calibration_init' was not declared in this scope
+   85 |     bool do_calibration1_chan0 = adc_calibration_init();
+      |                                  ^~~~~~~~~~~~~~~~~~~~
+In file included from /home/fracchio/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h:12,
+                 from /home/fracchio/esp/esp-idf/components/esp_hw_support/include/esp_cpu.h:20,
+                 from /home/fracchio/esp/esp-idf/components/esp_hw_support/include/spinlock.h:11,
+                 from /home/fracchio/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:49,
+                 from /home/fracchio/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/portable.h:57,
+                 from /home/fracchio/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h:69,
+                 from /home/fracchio/Thesis_project_node_side/esp_node/components/frequency/fft_wrapper.hpp:3:
+/home/fracchio/Thesis_project_node_side/esp_node/components/frequency/fft_wrapper.cpp:104:77: error: invalid conversion from 'uint32_t*' {aka 'long unsigned int*'} to 'int*' [-fpermissive]
+  104 |                 ESP_ERROR_CHECK(adc_cali_raw_to_voltage(_cali_handle, data, &_fft_result[ii])); //converts raw data to calibrated voltage
+      |                                                                             ^~~~~~~~~~~~~~~~
+      |                                                                             |
+      |                                                                             uint32_t* {aka long unsigned int*}
+/home/fracchio/esp/esp-idf/components/esp_common/include/esp_err.h:117:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  117 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+In file included from /home/fracchio/Thesis_project_node_side/esp_node/components/frequency/fft_wrapper.hpp:9:
+/home/fracchio/esp/esp-idf/components/esp_adc/include/esp_adc/adc_cali.h:54:75: note:   initializing argument 3 of 'esp_err_t adc_cali_raw_to_voltage(adc_cali_handle_t, int, int*)'
+   54 | esp_err_t adc_cali_raw_to_voltage(adc_cali_handle_t handle, int raw, int *voltage);
+      |                                                                      ~~~~~^~~~~~~
+/home/fracchio/Thesis_project_node_side/esp_node/components/frequency/fft_wrapper.cpp:85:10: warning: unused variable 'do_calibration1_chan0' [-Wunused-variable]
+   85 |     bool do_calibration1_chan0 = adc_calibration_init();
+      |          ^~~~~~~~~~~~~~~~~~~~~
+/home/fracchio/Thesis_project_node_side/esp_node/components/frequency/fft_wrapper.cpp: In member function 'int FFT_ultrasonic::getMaxFrequencyFFT()':
+/home/fracchio/Thesis_project_node_side/esp_node/components/frequency/fft_wrapper.cpp:155:41: error: 'num_samples' was not declared in this scope; did you mean '_num_samples'?
+  155 |     float signal_real_normalized_vector[num_samples];
+      |                                         ^~~~~~~~~~~
+      |                                         _num_samples
+/home/fracchio/Thesis_project_node_side/esp_node/components/frequency/fft_wrapper.cpp:156:12: error: 'signal_real_normalized_vector' was not declared in this scope
+  156 |     memcpy(signal_real_normalized_vector, _fft_result, _num_samples * 32); // copies the _num_samples elements in the vector
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/fracchio/Thesis_project_node_side/esp_node/components/frequency/fft_wrapper.cpp: In member function 'uint32_t FFT_ultrasonic::get_max_cali_value(adc_cali_handle_t)':
+/home/fracchio/Thesis_project_node_side/esp_node/components/frequency/fft_wrapper.cpp:213:73: error: invalid conversion from 'uint32_t*' {aka 'long unsigned int*'} to 'int*' [-fpermissive]
+  213 |     ESP_ERROR_CHECK(adc_cali_raw_to_voltage(calibration, max_raw_value, &t));
+      |                                                                         ^~
+      |                                                                         |
+      |                                                                         uint32_t* {aka long unsigned int*}
+/home/fracchio/esp/esp-idf/components/esp_common/include/esp_err.h:117:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  117 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+/home/fracchio/esp/esp-idf/components/esp_adc/include/esp_adc/adc_cali.h:54:75: note:   initializing argument 3 of 'esp_err_t adc_cali_raw_to_voltage(adc_cali_handle_t, int, int*)'
+   54 | esp_err_t adc_cali_raw_to_voltage(adc_cali_handle_t handle, int raw, int *voltage);
+      |                                                                      ~~~~~^~~~~~~
+/home/fracchio/Thesis_project_node_side/esp_node/components/frequency/fft_wrapper.cpp: In function 'void adc_calibration_init()':
+/home/fracchio/Thesis_project_node_side/esp_node/components/frequency/fft_wrapper.cpp:221:5: error: '_calibrated' was not declared in this scope
+  221 |     _calibrated = false;
+      |     ^~~~~~~~~~~
+/home/fracchio/Thesis_project_node_side/esp_node/components/frequency/fft_wrapper.cpp:226:10: error: 'calibrated' was not declared in this scope
+  226 |     if (!calibrated) {
+      |          ^~~~~~~~~~
+/home/fracchio/Thesis_project_node_side/esp_node/components/frequency/fft_wrapper.cpp:228:24: error: '_ADC_unit' was not declared in this scope
+  228 |             .unit_id = _ADC_unit,
+      |                        ^~~~~~~~~
+/home/fracchio/Thesis_project_node_side/esp_node/components/frequency/fft_wrapper.cpp:229:21: error: '_ADC_channel' was not declared in this scope
+  229 |             .chan = _ADC_channel,
+      |                     ^~~~~~~~~~~~
+/home/fracchio/Thesis_project_node_side/esp_node/components/frequency/fft_wrapper.cpp:233:67: error: '_cali_handle' was not declared in this scope; did you mean 's_task_handle'?
+  233 |         ret = adc_cali_create_scheme_curve_fitting(&cali_config, &_cali_handle);
+      |                                                                   ^~~~~~~~~~~~
+      |                                                                   s_task_handle
+/home/fracchio/Thesis_project_node_side/esp_node/components/frequency/fft_wrapper.cpp:219:23: warning: unused variable 'handle' [-Wunused-variable]
+  219 |     adc_cali_handle_t handle = NULL;
+      |                       ^~~~~~
+/home/fracchio/Thesis_project_node_side/esp_node/components/frequency/fft_wrapper.cpp: In function 'void adc_calibration_deinit(adc_cali_handle_t)':
+/home/fracchio/Thesis_project_node_side/esp_node/components/frequency/fft_wrapper.cpp:267:5: error: '_cali_handle' was not declared in this scope; did you mean 's_task_handle'?
+  267 |     _cali_handle= nullptr;
+      |     ^~~~~~~~~~~~
+      |     s_task_handle
+cc1plus: some warnings being treated as errors
+[204/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/roller/lv_roller.c.obj
+[205/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/win/lv_win.c.obj
+[206/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/span/lv_span.c.obj
+[207/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/examples/anim/lv_example_anim_1.c.obj
+[208/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/tabview/lv_tabview.c.obj
+[209/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/examples/anim/lv_example_anim_timeline_1.c.obj
+[210/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/examples/assets/imgbtn_right.c.obj
+[211/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/scale/lv_scale.c.obj
+[212/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/textarea/lv_textarea.c.obj
+[213/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/examples/assets/animimg003.c.obj
+[214/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/src/widgets/table/lv_table.c.obj
+[215/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/examples/anim/lv_example_anim_3.c.obj
+[216/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/examples/assets/img_cogwheel_indexed16.c.obj
+[217/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/examples/assets/imgbtn_mid.c.obj
+[218/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/examples/anim/lv_example_anim_2.c.obj
+[219/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/examples/assets/img_skew_strip.c.obj
+[220/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/examples/assets/img_cogwheel_argb.c.obj
+[221/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/examples/assets/img_hand.c.obj
+[222/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/examples/assets/img_cogwheel_rgb.c.obj
+[223/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/examples/assets/animimg001.c.obj
+[224/417] Building C object esp-idf/lvgl__lvgl/CMakeFiles/__idf_lvgl__lvgl.dir/examples/assets/animimg002.c.obj
+ninja: build stopped: subcommand failed.

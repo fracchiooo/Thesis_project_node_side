@@ -68,6 +68,8 @@ $<TARGET_FILE:__idf_pwmController>
 $<TARGET_FILE:__idf_temperature>
 $<TARGET_FILE:__idf_wifi>
 $<TARGET_FILE:__idf_mqtts>
+$<TARGET_FILE:__idf_espressif__esp-dsp>
+$<TARGET_FILE:__idf_frequency>
 $<TARGET_FILE:__idf_espressif__esp_lcd_sh1107>
 $<TARGET_FILE:__idf_lvgl__lvgl>
 $<TARGET_FILE:__idf_main>

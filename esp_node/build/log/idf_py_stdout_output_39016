@@ -1,0 +1,13 @@
+[0/1] cd /home/fracchio/Thesis_project_node_side/esp_node/build && /usr/bin/cmake -D "IDF_SIZE_TOOL=/home/fracchio/.espressif/python_env/idf5.2_py3.10_env/bin/python;-m;esp_idf_size" -D MAP_FILE=/home/fracchio/Thesis_project_node_side/esp_node/build/esp_node.map -D OUTPUT_JSON= -P /home/fracchio/esp/esp-idf/tools/cmake/run_size_tool.cmake
+Total sizes:
+Used static IRAM:   16383 bytes (      1 remain, 100.0% used)
+      .text size:   15356 bytes
+   .vectors size:    1027 bytes
+Used stat D/IRAM:  113899 bytes ( 231957 remain, 32.9% used)
+      .data size:   18560 bytes
+      .bss  size:   16912 bytes
+      .text size:   78427 bytes
+Used Flash size :  959331 bytes
+           .text:  741739 bytes
+         .rodata:  217336 bytes
+Total image size: 1072701 bytes (.bin may be padded larger)

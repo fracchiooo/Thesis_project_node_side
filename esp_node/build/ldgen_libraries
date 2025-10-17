@@ -68,6 +68,8 @@
 /home/fracchio/Thesis_project_node_side/esp_node/build/esp-idf/temperature/libtemperature.a
 /home/fracchio/Thesis_project_node_side/esp_node/build/esp-idf/wifi/libwifi.a
 /home/fracchio/Thesis_project_node_side/esp_node/build/esp-idf/mqtts/libmqtts.a
+/home/fracchio/Thesis_project_node_side/esp_node/build/esp-idf/espressif__esp-dsp/libespressif__esp-dsp.a
+/home/fracchio/Thesis_project_node_side/esp_node/build/esp-idf/frequency/libfrequency.a
 /home/fracchio/Thesis_project_node_side/esp_node/build/esp-idf/espressif__esp_lcd_sh1107/libespressif__esp_lcd_sh1107.a
 /home/fracchio/Thesis_project_node_side/esp_node/build/esp-idf/lvgl__lvgl/liblvgl__lvgl.a
 /home/fracchio/Thesis_project_node_side/esp_node/build/esp-idf/main/libmain.a

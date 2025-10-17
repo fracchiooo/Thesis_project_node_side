@@ -1,0 +1,14 @@
+[0/1] Re-running CMake...
+-- Building ESP-IDF components for target esp32s3
+NOTICE: Manifest files have changed, solving dependencies.
+.......NOTICE: Updating lock file at /home/fracchio/Thesis_project_node_side/esp_node/dependencies.lock
+NOTICE: Processing 5 dependencies:
+NOTICE: [1/5] espressif/esp-dsp (1.7.0)
+NOTICE: [2/5] espressif/esp_lcd_sh1107 (1.1.0)
+NOTICE: [3/5] espressif/onewire_bus (1.0.4)
+NOTICE: [4/5] lvgl/lvgl (9.2.0)
+NOTICE: [5/5] idf (5.2.2)
+-- Configuring incomplete, errors occurred!
+See also "/home/fracchio/Thesis_project_node_side/esp_node/build/CMakeFiles/CMakeOutput.log".
+FAILED: build.ninja 
+/usr/bin/cmake --regenerate-during-build -S/home/fracchio/Thesis_project_node_side/esp_node -B/home/fracchio/Thesis_project_node_side/esp_node/build
