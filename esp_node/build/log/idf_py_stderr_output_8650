@@ -1,0 +1,120 @@
+[0;33m--- esp-idf-monitor 1.7.0 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x4037b77a: [0;33mxt_utils_compare_and_set[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/xtensa/include/xt_utils.h[0m[0m:[1;31m215[0m
+[0m--- (inlined by) [0;33mesp_cpu_compare_and_set[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m491[0m
+[0m--- 0x400570e8: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x400570f3: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x4037b777: [0;33mxt_utils_compare_and_set[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/xtensa/include/xt_utils.h[0m[0m:[1;31m215[0m
+[0m--- (inlined by) [0;33mesp_cpu_compare_and_set[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m491[0m
+[0m--- 0x4037ef42: [0;33mspinlock_acquire[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m121[0m
+[0m--- (inlined by) [0;33mxPortEnterCriticalTimeout[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m473[0m
+[0m--- 0x4037eb4c: [0;33mvPortEnterCritical[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h[0m[0m:[1;31m571[0m
+[0m--- (inlined by) [0;33mxQueueSemaphoreTake[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c[0m[0m:[1;31m1727[0m
+[0m--- 0x42003599: [0;33mpthread_mutex_lock_internal[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/pthread/pthread.c[0m[0m:[1;31m614[0m
+[0m--- 0x42003753: [0;33mpthread_mutex_lock[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/pthread/pthread.c[0m[0m:[1;31m644[0m
+[0m--- 0x42088b81: [0;33m__gnu_cxx::__mutex::lock()[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/build/build-cc-gcc-final/xtensa-esp-elf/esp32s3/no-rtti/libstdc++-v3/include/xtensa-esp-elf/bits/gthr-default.h[0m[0m:[1;31m749[0m
+[0m--- (inlined by) [0;33m__gnu_cxx::__mutex::lock()[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/build/build-cc-gcc-final/xtensa-esp-elf/esp32s3/no-rtti/libstdc++-v3/include/ext/concurrence.h[0m[0m:[1;31m149[0m
+[0m--- 0x42088c4e: [0;33m__gnu_cxx::__scoped_lock::__scoped_lock(__gnu_cxx::__mutex&)[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/build/build-cc-gcc-final/xtensa-esp-elf/esp32s3/no-rtti/libstdc++-v3/include/ext/concurrence.h[0m[0m:[1;31m241[0m
+[0m--- (inlined by) [0;33mallocate[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/libstdc++-v3/libsupc++/eh_alloc.cc[0m[0m:[1;31m259[0m
+[0m--- 0x42088cae: [0;33m__cxa_allocate_exception[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/libstdc++-v3/libsupc++/eh_alloc.cc[0m[0m:[1;31m408[0m
+[0m--- 0x42088689: [0;33moperator new(unsigned int)[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/libstdc++-v3/libsupc++/new_op.cc[0m[0m:[1;31m54[0m
+[0m--- 0x42011ae1: [0;33mstd::__new_allocator<FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak>::allocate(unsigned int, void const*)[0m[0m at [0;32m/home/fracchio/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/new_allocator.h[0m[0m:[1;31m147[0m
+[0m--- 0x42011e0e: [0;33mvoid std::vector<FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak, std::allocator<FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak> >::_M_realloc_insert<FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak const&>(__gnu_cxx::__normal_iterator<FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak*, std::vector<FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak, std::allocator<FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak> > >, FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak const&)[0m[0m at [0;32m/home/fracchio/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/allocator.h[0m[0m:[1;31m198[0m
+[0m--- (inlined by) [0;33mallocate[0m[0m at [0;32m/home/fracchio/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/alloc_traits.h[0m[0m:[1;31m482[0m
+[0m--- (inlined by) [0;33m_M_allocate[0m[0m at [0;32m/home/fracchio/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/stl_vector.h[0m[0m:[1;31m378[0m
+[0m--- (inlined by) [0;33m_M_realloc_insert<const FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak&>[0m[0m at [0;32m/home/fracchio/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/vector.tcc[0m[0m:[1;31m459[0m
+[0m--- 0x42011e9e: [0;33mstd::vector<FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak, std::allocator<FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak> >::push_back(FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak const&)[0m[0m at [0;32m/home/fracchio/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/stl_vector.h[0m[0m:[1;31m1289[0m
+[0m--- 0x420126e9: [0;33mFFT_ultrasonic::getMaxFrequencyFFT()[0m[0m at [0;32m/home/fracchio/Thesis_project_node_side/esp_node/components/frequency/fft_wrapper.cpp[0m[0m:[1;31m293[0m
+[0m--- 0x4200ba06: [0;33mapp_main[0m[0m at [0;32m/home/fracchio/Thesis_project_node_side/esp_node/main/esp_node.cpp[0m[0m:[1;31m438[0m
+[0m--- 0x420b53eb: [0;33mmain_task[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x4037ed1d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m134[0m
+[0m--- 0x40375b24: [0;33mesp_restart_noos[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m159[0m
+[0m--- 0x4037b77a: [0;33mxt_utils_compare_and_set[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/xtensa/include/xt_utils.h[0m[0m:[1;31m215[0m
+[0m--- (inlined by) [0;33mesp_cpu_compare_and_set[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m491[0m
+[0m--- 0x400570e8: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x400570f3: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x4037b777: [0;33mxt_utils_compare_and_set[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/xtensa/include/xt_utils.h[0m[0m:[1;31m215[0m
+[0m--- (inlined by) [0;33mesp_cpu_compare_and_set[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m491[0m
+[0m--- 0x4037ef42: [0;33mspinlock_acquire[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m121[0m
+[0m--- (inlined by) [0;33mxPortEnterCriticalTimeout[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m473[0m
+[0m--- 0x4037eb4c: [0;33mvPortEnterCritical[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h[0m[0m:[1;31m571[0m
+[0m--- (inlined by) [0;33mxQueueSemaphoreTake[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c[0m[0m:[1;31m1727[0m
+[0m--- 0x42003599: [0;33mpthread_mutex_lock_internal[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/pthread/pthread.c[0m[0m:[1;31m614[0m
+[0m--- 0x42003753: [0;33mpthread_mutex_lock[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/pthread/pthread.c[0m[0m:[1;31m644[0m
+[0m--- 0x42088b81: [0;33m__gnu_cxx::__mutex::lock()[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/build/build-cc-gcc-final/xtensa-esp-elf/esp32s3/no-rtti/libstdc++-v3/include/xtensa-esp-elf/bits/gthr-default.h[0m[0m:[1;31m749[0m
+[0m--- (inlined by) [0;33m__gnu_cxx::__mutex::lock()[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/build/build-cc-gcc-final/xtensa-esp-elf/esp32s3/no-rtti/libstdc++-v3/include/ext/concurrence.h[0m[0m:[1;31m149[0m
+[0m--- 0x42088c4e: [0;33m__gnu_cxx::__scoped_lock::__scoped_lock(__gnu_cxx::__mutex&)[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/build/build-cc-gcc-final/xtensa-esp-elf/esp32s3/no-rtti/libstdc++-v3/include/ext/concurrence.h[0m[0m:[1;31m241[0m
+[0m--- (inlined by) [0;33mallocate[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/libstdc++-v3/libsupc++/eh_alloc.cc[0m[0m:[1;31m259[0m
+[0m--- 0x42088cae: [0;33m__cxa_allocate_exception[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/libstdc++-v3/libsupc++/eh_alloc.cc[0m[0m:[1;31m408[0m
+[0m--- 0x42088689: [0;33moperator new(unsigned int)[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/libstdc++-v3/libsupc++/new_op.cc[0m[0m:[1;31m54[0m
+[0m--- 0x42011ae1: [0;33mstd::__new_allocator<FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak>::allocate(unsigned int, void const*)[0m[0m at [0;32m/home/fracchio/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/new_allocator.h[0m[0m:[1;31m147[0m
+[0m--- 0x42011e0e: [0;33mvoid std::vector<FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak, std::allocator<FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak> >::_M_realloc_insert<FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak const&>(__gnu_cxx::__normal_iterator<FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak*, std::vector<FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak, std::allocator<FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak> > >, FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak const&)[0m[0m at [0;32m/home/fracchio/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/allocator.h[0m[0m:[1;31m198[0m
+[0m--- (inlined by) [0;33mallocate[0m[0m at [0;32m/home/fracchio/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/alloc_traits.h[0m[0m:[1;31m482[0m
+[0m--- (inlined by) [0;33m_M_allocate[0m[0m at [0;32m/home/fracchio/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/stl_vector.h[0m[0m:[1;31m378[0m
+[0m--- (inlined by) [0;33m_M_realloc_insert<const FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak&>[0m[0m at [0;32m/home/fracchio/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/vector.tcc[0m[0m:[1;31m459[0m
+[0m--- 0x42011e9e: [0;33mstd::vector<FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak, std::allocator<FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak> >::push_back(FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak const&)[0m[0m at [0;32m/home/fracchio/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/stl_vector.h[0m[0m:[1;31m1289[0m
+[0m--- 0x420126e9: [0;33mFFT_ultrasonic::getMaxFrequencyFFT()[0m[0m at [0;32m/home/fracchio/Thesis_project_node_side/esp_node/components/frequency/fft_wrapper.cpp[0m[0m:[1;31m293[0m
+[0m--- 0x4200ba06: [0;33mapp_main[0m[0m at [0;32m/home/fracchio/Thesis_project_node_side/esp_node/main/esp_node.cpp[0m[0m:[1;31m438[0m
+[0m--- 0x420b53eb: [0;33mmain_task[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x4037ed1d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m134[0m
+[0m--- 0x40375b24: [0;33mesp_restart_noos[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m159[0m
+[0m--- 0x4037b77a: [0;33mxt_utils_compare_and_set[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/xtensa/include/xt_utils.h[0m[0m:[1;31m215[0m
+[0m--- (inlined by) [0;33mesp_cpu_compare_and_set[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m491[0m
+[0m--- 0x400570e8: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x400570f3: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x4037b777: [0;33mxt_utils_compare_and_set[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/xtensa/include/xt_utils.h[0m[0m:[1;31m215[0m
+[0m--- (inlined by) [0;33mesp_cpu_compare_and_set[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m491[0m
+[0m--- 0x4037ef42: [0;33mspinlock_acquire[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m121[0m
+[0m--- (inlined by) [0;33mxPortEnterCriticalTimeout[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m473[0m
+[0m--- 0x4037eb4c: [0;33mvPortEnterCritical[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h[0m[0m:[1;31m571[0m
+[0m--- (inlined by) [0;33mxQueueSemaphoreTake[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c[0m[0m:[1;31m1727[0m
+[0m--- 0x42003599: [0;33mpthread_mutex_lock_internal[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/pthread/pthread.c[0m[0m:[1;31m614[0m
+[0m--- 0x42003753: [0;33mpthread_mutex_lock[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/pthread/pthread.c[0m[0m:[1;31m644[0m
+[0m--- 0x42088b81: [0;33m__gnu_cxx::__mutex::lock()[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/build/build-cc-gcc-final/xtensa-esp-elf/esp32s3/no-rtti/libstdc++-v3/include/xtensa-esp-elf/bits/gthr-default.h[0m[0m:[1;31m749[0m
+[0m--- (inlined by) [0;33m__gnu_cxx::__mutex::lock()[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/build/build-cc-gcc-final/xtensa-esp-elf/esp32s3/no-rtti/libstdc++-v3/include/ext/concurrence.h[0m[0m:[1;31m149[0m
+[0m--- 0x42088c4e: [0;33m__gnu_cxx::__scoped_lock::__scoped_lock(__gnu_cxx::__mutex&)[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/build/build-cc-gcc-final/xtensa-esp-elf/esp32s3/no-rtti/libstdc++-v3/include/ext/concurrence.h[0m[0m:[1;31m241[0m
+[0m--- (inlined by) [0;33mallocate[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/libstdc++-v3/libsupc++/eh_alloc.cc[0m[0m:[1;31m259[0m
+[0m--- 0x42088cae: [0;33m__cxa_allocate_exception[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/libstdc++-v3/libsupc++/eh_alloc.cc[0m[0m:[1;31m408[0m
+[0m--- 0x42088689: [0;33moperator new(unsigned int)[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/libstdc++-v3/libsupc++/new_op.cc[0m[0m:[1;31m54[0m
+[0m--- 0x42011ae1: [0;33mstd::__new_allocator<FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak>::allocate(unsigned int, void const*)[0m[0m at [0;32m/home/fracchio/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/new_allocator.h[0m[0m:[1;31m147[0m
+[0m--- 0x42011e0e: [0;33mvoid std::vector<FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak, std::allocator<FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak> >::_M_realloc_insert<FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak const&>(__gnu_cxx::__normal_iterator<FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak*, std::vector<FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak, std::allocator<FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak> > >, FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak const&)[0m[0m at [0;32m/home/fracchio/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/allocator.h[0m[0m:[1;31m198[0m
+[0m--- (inlined by) [0;33mallocate[0m[0m at [0;32m/home/fracchio/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/alloc_traits.h[0m[0m:[1;31m482[0m
+[0m--- (inlined by) [0;33m_M_allocate[0m[0m at [0;32m/home/fracchio/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/stl_vector.h[0m[0m:[1;31m378[0m
+[0m--- (inlined by) [0;33m_M_realloc_insert<const FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak&>[0m[0m at [0;32m/home/fracchio/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/vector.tcc[0m[0m:[1;31m459[0m
+[0m--- 0x42011e9e: [0;33mstd::vector<FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak, std::allocator<FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak> >::push_back(FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak const&)[0m[0m at [0;32m/home/fracchio/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/stl_vector.h[0m[0m:[1;31m1289[0m
+[0m--- 0x420126e9: [0;33mFFT_ultrasonic::getMaxFrequencyFFT()[0m[0m at [0;32m/home/fracchio/Thesis_project_node_side/esp_node/components/frequency/fft_wrapper.cpp[0m[0m:[1;31m293[0m
+[0m--- 0x4200ba06: [0;33mapp_main[0m[0m at [0;32m/home/fracchio/Thesis_project_node_side/esp_node/main/esp_node.cpp[0m[0m:[1;31m438[0m
+[0m--- 0x420b53eb: [0;33mmain_task[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x4037ed1d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m134[0m
+[0m--- 0x40375b24: [0;33mesp_restart_noos[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m159[0m
+[0m--- 0x4037b77a: [0;33mxt_utils_compare_and_set[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/xtensa/include/xt_utils.h[0m[0m:[1;31m215[0m
+[0m--- (inlined by) [0;33mesp_cpu_compare_and_set[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m491[0m
+[0m--- 0x400570e8: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x400570f3: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x4037b777: [0;33mxt_utils_compare_and_set[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/xtensa/include/xt_utils.h[0m[0m:[1;31m215[0m
+[0m--- (inlined by) [0;33mesp_cpu_compare_and_set[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m491[0m
+[0m--- 0x4037ef42: [0;33mspinlock_acquire[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/esp_hw_support/include/spinlock.h[0m[0m:[1;31m121[0m
+[0m--- (inlined by) [0;33mxPortEnterCriticalTimeout[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m473[0m
+[0m--- 0x4037eb4c: [0;33mvPortEnterCritical[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h[0m[0m:[1;31m571[0m
+[0m--- (inlined by) [0;33mxQueueSemaphoreTake[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c[0m[0m:[1;31m1727[0m
+[0m--- 0x42003599: [0;33mpthread_mutex_lock_internal[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/pthread/pthread.c[0m[0m:[1;31m614[0m
+[0m--- 0x42003753: [0;33mpthread_mutex_lock[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/pthread/pthread.c[0m[0m:[1;31m644[0m
+[0m--- 0x42088b81: [0;33m__gnu_cxx::__mutex::lock()[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/build/build-cc-gcc-final/xtensa-esp-elf/esp32s3/no-rtti/libstdc++-v3/include/xtensa-esp-elf/bits/gthr-default.h[0m[0m:[1;31m749[0m
+[0m--- (inlined by) [0;33m__gnu_cxx::__mutex::lock()[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/build/build-cc-gcc-final/xtensa-esp-elf/esp32s3/no-rtti/libstdc++-v3/include/ext/concurrence.h[0m[0m:[1;31m149[0m
+[0m--- 0x42088c4e: [0;33m__gnu_cxx::__scoped_lock::__scoped_lock(__gnu_cxx::__mutex&)[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/build/build-cc-gcc-final/xtensa-esp-elf/esp32s3/no-rtti/libstdc++-v3/include/ext/concurrence.h[0m[0m:[1;31m241[0m
+[0m--- (inlined by) [0;33mallocate[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/libstdc++-v3/libsupc++/eh_alloc.cc[0m[0m:[1;31m259[0m
+[0m--- 0x42088cae: [0;33m__cxa_allocate_exception[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/libstdc++-v3/libsupc++/eh_alloc.cc[0m[0m:[1;31m408[0m
+[0m--- 0x42088689: [0;33moperator new(unsigned int)[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/gcc/libstdc++-v3/libsupc++/new_op.cc[0m[0m:[1;31m54[0m
+[0m--- 0x42011ae1: [0;33mstd::__new_allocator<FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak>::allocate(unsigned int, void const*)[0m[0m at [0;32m/home/fracchio/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/new_allocator.h[0m[0m:[1;31m147[0m
+[0m--- 0x42011e0e: [0;33mvoid std::vector<FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak, std::allocator<FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak> >::_M_realloc_insert<FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak const&>(__gnu_cxx::__normal_iterator<FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak*, std::vector<FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak, std::allocator<FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak> > >, FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak const&)[0m[0m at [0;32m/home/fracchio/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/allocator.h[0m[0m:[1;31m198[0m
+[0m--- (inlined by) [0;33mallocate[0m[0m at [0;32m/home/fracchio/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/alloc_traits.h[0m[0m:[1;31m482[0m
+[0m--- (inlined by) [0;33m_M_allocate[0m[0m at [0;32m/home/fracchio/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/stl_vector.h[0m[0m:[1;31m378[0m
+[0m--- (inlined by) [0;33m_M_realloc_insert<const FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak&>[0m[0m at [0;32m/home/fracchio/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/vector.tcc[0m[0m:[1;31m459[0m
+[0m--- 0x42011e9e: [0;33mstd::vector<FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak, std::allocator<FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak> >::push_back(FFT_ultrasonic::getMaxFrequencyFFT()::LocalPeak const&)[0m[0m at [0;32m/home/fracchio/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/bits/stl_vector.h[0m[0m:[1;31m1289[0m
+[0m--- 0x420126e9: [0;33mFFT_ultrasonic::getMaxFrequencyFFT()[0m[0m at [0;32m/home/fracchio/Thesis_project_node_side/esp_node/components/frequency/fft_wrapper.cpp[0m[0m:[1;31m293[0m
+[0m--- 0x4200ba06: [0;33mapp_main[0m[0m at [0;32m/home/fracchio/Thesis_project_node_side/esp_node/main/esp_node.cpp[0m[0m:[1;31m438[0m
+[0m--- 0x420b53eb: [0;33mmain_task[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x4037ed1d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m134[0m
+[0m--- 0x40375b24: [0;33mesp_restart_noos[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m159[0m
+[0m--- 0x4200483b: [0;33mpanic_handler[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/esp_system/port/panic_handler.c[0m[0m:[1;31m145[0m
+[0m

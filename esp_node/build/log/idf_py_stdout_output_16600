@@ -1,0 +1,2977 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d9c
+entry 0x403c9914
+[0;32mI (27) boot: ESP-IDF v5.2.2 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Oct 17 2025 19:46:11[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=35678h (218744) map[0m
+[0;32mI (138) esp_image: segment 1: paddr=000456a0 vaddr=3fc9b300 size=04880h ( 18560) load[0m
+[0;32mI (143) esp_image: segment 2: paddr=00049f28 vaddr=40374000 size=060f0h ( 24816) load[0m
+[0;32mI (150) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=b6064h (745572) map[0m
+[0;32mI (286) esp_image: segment 4: paddr=0010608c vaddr=4037a0f0 size=1116ch ( 69996) load[0m
+[0;32mI (311) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (312) boot: Disabling RNG early entropy source...[0m
+[0;32mI (323) cpu_start: Multicore app[0m
+[0;32mI (333) cpu_start: Pro cpu start user code[0m
+[0;32mI (333) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (333) cpu_start: Application information:[0m
+[0;32mI (336) cpu_start: Project name:     esp_node[0m
+[0;32mI (341) cpu_start: App version:      5129bb6-dirty[0m
+[0;32mI (346) cpu_start: Compile time:     Oct 17 2025 19:46:08[0m
+[0;32mI (352) cpu_start: ELF file SHA256:  06217d05f...[0m
+[0;32mI (358) cpu_start: ESP-IDF:          v5.2.2[0m
+[0;32mI (363) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (367) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (372) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (377) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (384) heap_init: At 3FCA3D90 len 00045980 (278 KiB): RAM[0m
+[0;32mI (390) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (396) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (402) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (410) spi_flash: detected chip: gd[0m
+[0;32mI (413) spi_flash: flash io: dio[0m
+[0;33mW (417) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (431) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (437) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (444) main_task: Started on CPU0[0m
+[0;32mI (454) main_task: Calling app_main()[0m
+[0;32mI (454) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (464) PWM: PWM inizializzato: GPIO 2, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (474) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (474) PWM: PWM inizializzato: GPIO 3, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (484) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (494) PWM: PWM inizializzato: GPIO 4, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (504) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (504) PWM: PWM inizializzato: GPIO 1, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (514) PWM: Cambio frequenza: 40000 -> 1300 Hz, risoluzione: 8 -> 13 bit[0m
+[0;32mI (524) PWM: Timer riconfigurato: 1300 Hz, 13 bit (8192 livelli)[0m
+Imposto duty: 0 / 8192 (risoluzione: 13 bit)
+[0;32mI (534) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/8192)[0m
+[0;32mI (544) PWM: Cambio frequenza: 40000 -> 1300 Hz, risoluzione: 8 -> 13 bit[0m
+[0;32mI (554) PWM: Timer riconfigurato: 1300 Hz, 13 bit (8192 livelli)[0m
+Imposto duty: 0 / 8192 (risoluzione: 13 bit)
+[0;32mI (564) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/8192)[0m
+[0;32mI (564) gpio: GPIO[26]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (574) gpio: GPIO[26]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (584) Temperature sensor: Bus inizializzato su GPIO 26[0m
+[0;32mI (704) Temperature sensor: Slot 0: BA00000046755428[0m
+[0;32mI (704) Temperature sensor: Trovati 1 nuovi (totale 1)[0m
+[0;32mI (704) MAIN: Inizializzati 1 sensori[0m
+[0;32mI (734) wifi: ESP_WIFI_MODE_STA[0m
+[0;32mI (734) pp: pp rom version: e7ae62f[0m
+[0;32mI (734) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (744) wifi:wifi driver task: 3fcb15d8, prio:23, stack:6656, core=0[0m
+[0;32mI (754) wifi:wifi firmware version: 3e0076f[0m
+[0;32mI (754) wifi:wifi certification version: v7.0[0m
+[0;32mI (754) wifi:config NVS flash: enabled[0m
+[0;32mI (754) wifi:config nano formating: disabled[0m
+[0;32mI (754) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (764) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (764) wifi:Init management short buffer num: 32[0m
+[0;32mI (774) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (774) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (784) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (784) wifi:Init static rx buffer num: 10[0m
+[0;32mI (784) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (794) wifi_init: rx ba win: 6[0m
+[0;32mI (794) wifi_init: tcpip mbox: 32[0m
+[0;32mI (804) wifi_init: udp mbox: 6[0m
+[0;32mI (804) wifi_init: tcp mbox: 6[0m
+[0;32mI (804) wifi_init: tcp tx win: 5760[0m
+[0;32mI (814) wifi_init: tcp rx win: 5760[0m
+[0;32mI (814) wifi_init: tcp mss: 1440[0m
+[0;32mI (824) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (824) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (834) phy_init: phy_version 670,b7bc9b9,Apr 30 2024,10:54:13[0m
+[0;32mI (884) wifi:mode : sta (34:b7:da:54:35:28)[0m
+[0;32mI (884) wifi:enable tsf[0m
+[0;32mI (884) wifi: wifi_init_sta finished.[0m
+[0;32mI (2634) wifi:new:<13,0>, old:<1,0>, ap:<255,255>, sta:<13,0>, prof:1[0m
+[0;32mI (2634) wifi:state: init -> auth (b0)[0m
+[0;32mI (3634) wifi:state: auth -> init (200)[0m
+[0;32mI (3634) wifi:new:<13,0>, old:<13,0>, ap:<255,255>, sta:<13,0>, prof:1[0m
+[0;32mI (3634) wifi: retry to connect to the AP[0m
+[0;32mI (3644) wifi: connect to the AP fail[0m
+[0;32mI (6044) wifi: retry to connect to the AP[0m
+[0;32mI (6044) wifi: connect to the AP fail[0m
+[0;32mI (7754) wifi:new:<13,0>, old:<13,0>, ap:<255,255>, sta:<13,0>, prof:1[0m
+[0;32mI (7754) wifi:state: init -> auth (b0)[0m
+[0;32mI (7764) wifi:state: auth -> assoc (0)[0m
+[0;32mI (7804) wifi:state: assoc -> run (10)[0m
+[0;32mI (7824) wifi:connected with Oneplus, aid = 2, channel 13, BW20, bssid = ba:7e:6d:57:2c:9d[0m
+[0;32mI (7824) wifi:security: WPA2-PSK, phy: bgn, rssi: -53[0m
+[0;32mI (7844) wifi:pm start, type: 1[0m
+
+[0;32mI (7844) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (7844) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (7854) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (7854) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (7864) wifi:<ba-add>idx:0 (ifx:0, ba:7e:6d:57:2c:9d), tid:0, ssn:0, winSize:64[0m
+[0;32mI (8854) esp_netif_handlers: sta ip: 10.121.56.118, mask: 255.255.255.0, gw: 10.121.56.100[0m
+[0;32mI (8854) wifi: got ip:10.121.56.118[0m
+[0;32mI (8854) wifi: connected to ap SSID:Oneplus password:123456789[0m
+[0;32mI (8864) MAIN: WIFI connected![0m
+[0;32mI (8864) mqtts: MqttWrapper created with client_id: 34B7DA543528[0m
+[0;32mI (8874) mqtts: [APP] Free memory: 262596 bytes[0m
+[0;32mI (8874) mqtts: Other event id:7[0m
+[0;32mI (9584) mqtts: MQTT_EVENT_CONNECTED[0m
+[0;32mI (9584) mqtts: Subscribed to 34B7DA543528/downlink, msg_id=50381[0m
+[0;32mI (9624) mqtts: MQTT_EVENT_SUBSCRIBED, msg_id=50381[0m
+[0;32mI (9884) MAIN: MQTT connected! System running in background...[0m
+[0;32mI (9884) MAIN: Initializing SNTP[0m
+[0;32mI (9884) MAIN: Waiting for time sync... (1/20)[0m
+[0;32mI (10884) MAIN: Waiting for time sync... (2/20)[0m
+[0;32mI (11884) MAIN: Waiting for time sync... (3/20)[0m
+[0;32mI (12884) MAIN: Waiting for time sync... (4/20)[0m
+[0;32mI (13884) MAIN: Time synchronized: Sat Oct 18 17:07:45 2025
+[0m
+[0;32mI (13884) FFT: sampling rate too high, the maximum sampling rate will be used: 83333[0m
+[0;32mI (13884) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (14004) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (14814) Temperature sensor: Slot 0: 22.00 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   39387.86 Hz |   79.0000 |  484
+   2 |   40283.04 Hz |   78.0000 |  495
+   3 |   34749.21 Hz |   65.0000 |  427
+   4 |   17252.54 Hz |   65.0000 |  212
+   5 |   15624.94 Hz |   64.0000 |  192
+   6 |   11067.66 Hz |   63.0000 |  136
+   7 |   25878.80 Hz |   61.0000 |  318
+   8 |   11962.84 Hz |   60.0000 |  147
+   9 |   33854.03 Hz |   60.0000 |  416
+  10 |   33121.61 Hz |   58.0000 |  407
+  11 |   38492.68 Hz |   56.0000 |  473
+  12 |   35563.01 Hz |   55.0000 |  437
+  13 |   25390.52 Hz |   55.0000 |  312
+  14 |   35888.53 Hz |   55.0000 |  441
+  15 |   27099.50 Hz |   54.0000 |  333
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 21565.67 Hz (bin 265)
+  Peak magnitude: 0.42
+  Band average: 0.19
+  Peak/Average ratio: 2.20
+
+Band 40kHz (37-42 kHz):
+  Peak: 38818.20 Hz (bin 477)
+  Peak magnitude: 0.36
+  Band average: 0.19
+  Peak/Average ratio: 1.88
+
+Noise baseline (5-15 kHz):
+  Average: 0.23
+  Max: 0.64
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 1.87 (5.4 dB)
+SNR 40kHz band: 1.61 (4.1 dB)
+
+Signal detected at 20kHz: NO (SNR=1.87, Peak/Avg=2.20, Mag=0.42)
+Signal detected at 40kHz: NO (SNR=1.61, Peak/Avg=1.88, Mag=0.36)
+
+==> NO VIBRATION DETECTED (0 Hz)
+==============================
+
+[0;32mI (14954) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=47167[0m
+[0;32mI (14964) MAIN: MQTT message sent![0m
+[0;32mI (15844) mqtts: MQTT_EVENT_PUBLISHED, msg_id=47167[0m
+[0;32mI (25064) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (25884) Temperature sensor: Slot 0: 22.06 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   16438.74 Hz |   90.0000 |  202
+   2 |    8951.79 Hz |   81.0000 |  110
+   3 |    6835.91 Hz |   76.0000 |   84
+   4 |   18391.85 Hz |   74.0000 |  226
+   5 |   41096.84 Hz |   62.0000 |  505
+   6 |   38736.82 Hz |   60.0000 |  476
+   7 |   31412.63 Hz |   60.0000 |  386
+   8 |   37678.89 Hz |   60.0000 |  463
+   9 |   38004.41 Hz |   60.0000 |  467
+  10 |   38899.59 Hz |   56.0000 |  478
+  11 |   10904.90 Hz |   53.0000 |  134
+  12 |   30517.46 Hz |   52.0000 |  375
+  13 |   35888.53 Hz |   51.0000 |  441
+  14 |   16275.98 Hz |   50.0000 |  200
+  15 |   41422.36 Hz |   50.0000 |  509
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 22460.85 Hz (bin 276)
+  Peak magnitude: 0.41
+  Band average: 0.22
+  Peak/Average ratio: 1.88
+
+Band 40kHz (37-42 kHz):
+  Peak: 38085.79 Hz (bin 468)
+  Peak magnitude: 0.41
+  Band average: 0.23
+  Peak/Average ratio: 1.78
+
+Noise baseline (5-15 kHz):
+  Average: 0.24
+  Max: 0.95
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 1.67 (4.4 dB)
+SNR 40kHz band: 1.66 (4.4 dB)
+
+Signal detected at 20kHz: NO (SNR=1.67, Peak/Avg=1.88, Mag=0.41)
+Signal detected at 40kHz: NO (SNR=1.66, Peak/Avg=1.78, Mag=0.41)
+
+==> NO VIBRATION DETECTED (0 Hz)
+==============================
+
+[0;32mI (26004) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=8650[0m
+[0;32mI (26014) MAIN: MQTT message sent![0m
+[0;32mI (27114) mqtts: MQTT_EVENT_PUBLISHED, msg_id=8650[0m
+[0;32mI (36114) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (36934) Temperature sensor: Slot 0: 22.06 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   12613.88 Hz |   78.0000 |  155
+   2 |   32307.81 Hz |   78.0000 |  397
+   3 |   28401.58 Hz |   62.0000 |  349
+   4 |   24658.11 Hz |   62.0000 |  303
+   5 |   22053.95 Hz |   62.0000 |  271
+   6 |   17903.57 Hz |   54.0000 |  220
+   7 |   16682.88 Hz |   53.0000 |  205
+   8 |   25553.28 Hz |   53.0000 |  314
+   9 |   23844.30 Hz |   53.0000 |  293
+  10 |   32551.95 Hz |   52.0000 |  400
+  11 |   35807.15 Hz |   52.0000 |  440
+  12 |   26611.22 Hz |   50.0000 |  327
+  13 |   26448.46 Hz |   50.0000 |  325
+  14 |   19775.31 Hz |   50.0000 |  243
+  15 |   24251.21 Hz |   50.0000 |  298
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 22460.85 Hz (bin 276)
+  Peak magnitude: 0.45
+  Band average: 0.17
+  Peak/Average ratio: 2.61
+
+Band 40kHz (37-42 kHz):
+  Peak: 38980.96 Hz (bin 479)
+  Peak magnitude: 0.34
+  Band average: 0.17
+  Peak/Average ratio: 2.06
+
+Noise baseline (5-15 kHz):
+  Average: 0.20
+  Max: 0.58
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 2.28 (7.2 dB)
+SNR 40kHz band: 1.73 (4.7 dB)
+
+Signal detected at 20kHz: NO (SNR=2.28, Peak/Avg=2.61, Mag=0.45)
+Signal detected at 40kHz: NO (SNR=1.73, Peak/Avg=2.06, Mag=0.34)
+
+==> NO VIBRATION DETECTED (0 Hz)
+==============================
+
+[0;32mI (37074) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=1686[0m
+[0;32mI (37084) MAIN: MQTT message sent![0m
+[0;32mI (37554) mqtts: MQTT_EVENT_PUBLISHED, msg_id=1686[0m
+[0;32mI (47184) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (48004) Temperature sensor: Slot 0: 22.06 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   19856.69 Hz |   81.0000 |  244
+   2 |   32796.09 Hz |   68.0000 |  403
+   3 |   13590.44 Hz |   68.0000 |  167
+   4 |   38085.79 Hz |   65.0000 |  468
+   5 |   32958.85 Hz |   64.0000 |  405
+   6 |   18798.75 Hz |   63.0000 |  231
+   7 |    8463.51 Hz |   63.0000 |  104
+   8 |   27750.54 Hz |   58.0000 |  341
+   9 |   31494.02 Hz |   55.0000 |  387
+  10 |   28401.58 Hz |   54.0000 |  349
+  11 |   12939.40 Hz |   52.0000 |  159
+  12 |   30680.21 Hz |   50.0000 |  377
+  13 |   20182.21 Hz |   50.0000 |  248
+  14 |   40689.94 Hz |   48.0000 |  500
+  15 |   11393.18 Hz |   48.0000 |  140
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 22216.71 Hz (bin 273)
+  Peak magnitude: 0.35
+  Band average: 0.18
+  Peak/Average ratio: 1.93
+
+Band 40kHz (37-42 kHz):
+  Peak: 39794.76 Hz (bin 489)
+  Peak magnitude: 0.59
+  Band average: 0.25
+  Peak/Average ratio: 2.40
+
+Noise baseline (5-15 kHz):
+  Average: 0.22
+  Max: 0.60
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 1.59 (4.0 dB)
+SNR 40kHz band: 2.70 (8.6 dB)
+
+Signal detected at 20kHz: NO (SNR=1.59, Peak/Avg=1.93, Mag=0.35)
+Signal detected at 40kHz: YES (SNR=2.70, Peak/Avg=2.40, Mag=0.59)
+
+==> DETECTED: 40 kHz TRANSDUCER ACTIVE
+    Frequency: 39794.76 Hz
+==============================
+
+[0;32mI (48124) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=19607[0m
+[0;32mI (48134) MAIN: MQTT message sent![0m
+[0;32mI (48824) mqtts: MQTT_EVENT_PUBLISHED, msg_id=19607[0m
+[0;32mI (58234) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (59054) Temperature sensor: Slot 0: 22.06 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   35074.73 Hz |   54.0000 |  431
+   2 |   38818.20 Hz |   52.0000 |  477
+   3 |   38492.68 Hz |   50.0000 |  473
+   4 |   31900.91 Hz |   48.0000 |  392
+   5 |    7324.19 Hz |   47.0000 |   90
+   6 |   10660.76 Hz |   44.0000 |  131
+   7 |   30191.94 Hz |   44.0000 |  371
+   8 |   31249.88 Hz |   44.0000 |  384
+   9 |   26692.60 Hz |   43.0000 |  328
+  10 |   33854.03 Hz |   42.0000 |  416
+  11 |   14729.76 Hz |   41.0000 |  181
+  12 |   26936.74 Hz |   40.0000 |  331
+  13 |   28076.06 Hz |   39.0000 |  345
+  14 |   27994.68 Hz |   37.0000 |  344
+  15 |    9765.59 Hz |   37.0000 |  120
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 19449.79 Hz (bin 239)
+  Peak magnitude: 0.50
+  Band average: 0.22
+  Peak/Average ratio: 2.32
+
+Band 40kHz (37-42 kHz):
+  Peak: 39957.52 Hz (bin 491)
+  Peak magnitude: 0.41
+  Band average: 0.19
+  Peak/Average ratio: 2.10
+
+Noise baseline (5-15 kHz):
+  Average: 0.22
+  Max: 0.58
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 2.27 (7.1 dB)
+SNR 40kHz band: 1.84 (5.3 dB)
+
+Signal detected at 20kHz: YES (SNR=2.27, Peak/Avg=2.32, Mag=0.50)
+Signal detected at 40kHz: NO (SNR=1.84, Peak/Avg=2.10, Mag=0.41)
+
+==> DETECTED: 20 kHz TRANSDUCER ACTIVE
+    Frequency: 19449.79 Hz
+==============================
+
+[0;32mI (59194) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=21583[0m
+[0;32mI (59204) MAIN: MQTT message sent![0m
+[0;32mI (60084) mqtts: MQTT_EVENT_PUBLISHED, msg_id=21583[0m
+[0;32mI (69304) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (70124) Temperature sensor: Slot 0: 22.06 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   18798.75 Hz |   78.0000 |  231
+   2 |   13834.58 Hz |   55.0000 |  170
+   3 |   36702.33 Hz |   47.0000 |  451
+   4 |    6673.15 Hz |   44.0000 |   82
+   5 |   33121.61 Hz |   43.0000 |  407
+   6 |    7324.19 Hz |   39.0000 |   90
+   7 |   33284.37 Hz |   39.0000 |  409
+   8 |   39143.72 Hz |   37.0000 |  481
+   9 |   34179.55 Hz |   37.0000 |  420
+  10 |   31819.54 Hz |   34.0000 |  391
+  11 |   34667.83 Hz |   34.0000 |  426
+  12 |   39876.14 Hz |   31.0000 |  490
+  13 |   18635.99 Hz |   31.0000 |  229
+  14 |   28645.72 Hz |   31.0000 |  352
+  15 |   11311.80 Hz |   31.0000 |  139
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 20100.83 Hz (bin 247)
+  Peak magnitude: 0.39
+  Band average: 0.17
+  Peak/Average ratio: 2.25
+
+Band 40kHz (37-42 kHz):
+  Peak: 39632.00 Hz (bin 487)
+  Peak magnitude: 0.44
+  Band average: 0.20
+  Peak/Average ratio: 2.21
+
+Noise baseline (5-15 kHz):
+  Average: 0.19
+  Max: 0.54
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 2.00 (6.0 dB)
+SNR 40kHz band: 2.25 (7.0 dB)
+
+Signal detected at 20kHz: NO (SNR=2.00, Peak/Avg=2.25, Mag=0.39)
+Signal detected at 40kHz: NO (SNR=2.25, Peak/Avg=2.21, Mag=0.44)
+
+==> NO VIBRATION DETECTED (0 Hz)
+==============================
+
+[0;32mI (70244) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=23821[0m
+[0;32mI (70254) MAIN: MQTT message sent![0m
+[0;32mI (70364) mqtts: MQTT_EVENT_PUBLISHED, msg_id=23821[0m
+[0;32mI (80354) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (81174) Temperature sensor: Slot 0: 22.06 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   41015.46 Hz |   63.0000 |  504
+   2 |   30680.21 Hz |   47.0000 |  377
+   3 |    8951.79 Hz |   45.0000 |  110
+   4 |   18798.75 Hz |   44.0000 |  231
+   5 |   21728.43 Hz |   43.0000 |  267
+   6 |   30273.32 Hz |   41.0000 |  372
+   7 |   38167.16 Hz |   41.0000 |  469
+   8 |   36295.43 Hz |   39.0000 |  446
+   9 |   25309.14 Hz |   38.0000 |  311
+  10 |   33121.61 Hz |   38.0000 |  407
+  11 |   24658.11 Hz |   37.0000 |  303
+  12 |   34993.35 Hz |   37.0000 |  430
+  13 |   20182.21 Hz |   37.0000 |  248
+  14 |   10172.49 Hz |   37.0000 |  125
+  15 |   14404.24 Hz |   36.0000 |  177
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 21809.81 Hz (bin 268)
+  Peak magnitude: 0.31
+  Band average: 0.16
+  Peak/Average ratio: 1.91
+
+Band 40kHz (37-42 kHz):
+  Peak: 38818.20 Hz (bin 477)
+  Peak magnitude: 0.37
+  Band average: 0.20
+  Peak/Average ratio: 1.88
+
+Noise baseline (5-15 kHz):
+  Average: 0.18
+  Max: 0.38
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 1.68 (4.5 dB)
+SNR 40kHz band: 2.01 (6.1 dB)
+
+Signal detected at 20kHz: NO (SNR=1.68, Peak/Avg=1.91, Mag=0.31)
+Signal detected at 40kHz: NO (SNR=2.01, Peak/Avg=1.88, Mag=0.37)
+
+==> NO VIBRATION DETECTED (0 Hz)
+==============================
+
+[0;32mI (81314) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=21595[0m
+[0;32mI (81324) MAIN: MQTT message sent![0m
+[0;32mI (81584) mqtts: MQTT_EVENT_PUBLISHED, msg_id=21595[0m
+[0;32mI (91424) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (92244) Temperature sensor: Slot 0: 22.00 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   11637.32 Hz |   44.0000 |  143
+   2 |   32470.57 Hz |   44.0000 |  399
+   3 |   18798.75 Hz |   41.0000 |  231
+   4 |   39713.38 Hz |   41.0000 |  488
+   5 |   26122.94 Hz |   41.0000 |  321
+   6 |   39876.14 Hz |   39.0000 |  490
+   7 |   22704.99 Hz |   37.0000 |  279
+   8 |   18066.33 Hz |   37.0000 |  222
+   9 |   39306.48 Hz |   37.0000 |  483
+  10 |   30924.36 Hz |   37.0000 |  380
+  11 |   37678.89 Hz |   36.0000 |  463
+  12 |   24495.34 Hz |   36.0000 |  301
+  13 |   15462.18 Hz |   34.0000 |  190
+  14 |   36295.43 Hz |   34.0000 |  446
+  15 |   40038.90 Hz |   34.0000 |  492
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 19938.07 Hz (bin 245)
+  Peak magnitude: 0.36
+  Band average: 0.16
+  Peak/Average ratio: 2.19
+
+Band 40kHz (37-42 kHz):
+  Peak: 39225.10 Hz (bin 482)
+  Peak magnitude: 0.41
+  Band average: 0.19
+  Peak/Average ratio: 2.09
+
+Noise baseline (5-15 kHz):
+  Average: 0.20
+  Max: 0.50
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 1.79 (5.1 dB)
+SNR 40kHz band: 2.05 (6.2 dB)
+
+Signal detected at 20kHz: NO (SNR=1.79, Peak/Avg=2.19, Mag=0.36)
+Signal detected at 40kHz: NO (SNR=2.05, Peak/Avg=2.09, Mag=0.41)
+
+==> NO VIBRATION DETECTED (0 Hz)
+==============================
+
+[0;32mI (92364) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=13685[0m
+[0;32mI (92374) MAIN: MQTT message sent![0m
+[0;32mI (92854) mqtts: MQTT_EVENT_PUBLISHED, msg_id=13685[0m
+[0;32mI (102474) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (103294) Temperature sensor: Slot 0: 22.06 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   12206.98 Hz |   68.0000 |  150
+   2 |   35888.53 Hz |   55.0000 |  441
+   3 |   22623.61 Hz |   53.0000 |  278
+   4 |   29866.42 Hz |   52.0000 |  367
+   5 |   35563.01 Hz |   50.0000 |  437
+   6 |   24576.72 Hz |   50.0000 |  302
+   7 |   12939.40 Hz |   48.0000 |  159
+   8 |   28564.34 Hz |   47.0000 |  351
+   9 |   21728.43 Hz |   46.0000 |  267
+  10 |    5940.73 Hz |   46.0000 |   73
+  11 |   30191.94 Hz |   46.0000 |  371
+  12 |   16113.22 Hz |   45.0000 |  198
+  13 |   21077.39 Hz |   44.0000 |  259
+  14 |   25471.90 Hz |   44.0000 |  313
+  15 |   15380.80 Hz |   44.0000 |  189
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 22460.85 Hz (bin 276)
+  Peak magnitude: 0.43
+  Band average: 0.19
+  Peak/Average ratio: 2.32
+
+Band 40kHz (37-42 kHz):
+  Peak: 37923.02 Hz (bin 466)
+  Peak magnitude: 0.36
+  Band average: 0.18
+  Peak/Average ratio: 1.97
+
+Noise baseline (5-15 kHz):
+  Average: 0.20
+  Max: 0.50
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 2.17 (6.7 dB)
+SNR 40kHz band: 1.81 (5.2 dB)
+
+Signal detected at 20kHz: NO (SNR=2.17, Peak/Avg=2.32, Mag=0.43)
+Signal detected at 40kHz: NO (SNR=1.81, Peak/Avg=1.97, Mag=0.36)
+
+==> NO VIBRATION DETECTED (0 Hz)
+==============================
+
+[0;32mI (103434) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=55362[0m
+[0;32mI (103444) MAIN: MQTT message sent![0m
+[0;32mI (104114) mqtts: MQTT_EVENT_PUBLISHED, msg_id=55362[0m
+[0;32mI (106784) mqtts: MQTT_EVENT_DATA[0m
+TOPIC=34B7DA543528/downlink
+DATA={"frequency":20.0,"duty_frequency":100.0,"temperature":17.5,"finish_after":0.13,"startTime":null}
+[0;32mI (106784) MAIN: === Message received in MAIN ===[0m
+[0;32mI (106794) MAIN: Topic: 34B7DA543528/downlink[0m
+[0;32mI (106794) MAIN: Data: {"frequency":20.0,"duty_frequency":100.0,"temperature":17.5,"finish_after":0.13,"startTime":null}[0m
+[0;32mI (106804) MAIN: Start timestamp is 0 or past, executing immediately[0m
+[0;32mI (106814) MAIN: Timer triggered! Executing scheduled action...[0m
+Imposto duty: 0 / 8192 (risoluzione: 13 bit)
+[0;32mI (106824) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/8192)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (106834) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+[0;32mI (106844) PWM: Cambio frequenza: 40000 -> 21700 Hz, risoluzione: 8 -> 9 bit[0m
+[0;32mI (106854) PWM: Timer riconfigurato: 21700 Hz, 9 bit (512 livelli)[0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (106864) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 256 / 512 (risoluzione: 9 bit)
+[0;32mI (106874) PWM: Hardware PWM duty: 50.00% richiesto -> 50.10% effettivo (256/512)[0m
+Imposto duty: 8191 / 8192 (risoluzione: 13 bit)
+[0;32mI (106884) PWM: Hardware PWM duty: 100.00% richiesto -> 100.00% effettivo (8191/8192)[0m
+[0;32mI (106894) MAIN: Expiry timer set for 0.13 hours (total 467 seconds from now)[0m
+[0;32mI (106904) MAIN: status updated and timer started[0m
+[0;32mI (113544) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (114364) Temperature sensor: Slot 0: 22.06 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   13509.06 Hz |   77.0000 |  166
+   2 |   32958.85 Hz |   69.0000 |  405
+   3 |   41259.60 Hz |   65.0000 |  507
+   4 |    8300.75 Hz |   55.0000 |  102
+   5 |   18798.75 Hz |   47.0000 |  231
+   6 |   10823.52 Hz |   47.0000 |  133
+   7 |   23030.51 Hz |   45.0000 |  283
+   8 |    4964.17 Hz |   45.0000 |   61
+   9 |   15055.28 Hz |   41.0000 |  185
+  10 |   17171.16 Hz |   40.0000 |  211
+  11 |   26122.94 Hz |   39.0000 |  321
+  12 |   40038.90 Hz |   38.0000 |  492
+  13 |    5045.55 Hz |   37.0000 |   62
+  14 |    9928.35 Hz |   37.0000 |  122
+  15 |   37027.85 Hz |   37.0000 |  455
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 22216.71 Hz (bin 273)
+  Peak magnitude: 0.48
+  Band average: 0.19
+  Peak/Average ratio: 2.48
+
+Band 40kHz (37-42 kHz):
+  Peak: 39306.48 Hz (bin 483)
+  Peak magnitude: 0.43
+  Band average: 0.20
+  Peak/Average ratio: 2.20
+
+Noise baseline (5-15 kHz):
+  Average: 0.19
+  Max: 0.54
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 2.51 (8.0 dB)
+SNR 40kHz band: 2.27 (7.1 dB)
+
+Signal detected at 20kHz: NO (SNR=2.51, Peak/Avg=2.48, Mag=0.48)
+Signal detected at 40kHz: NO (SNR=2.27, Peak/Avg=2.20, Mag=0.43)
+
+==> NO VIBRATION DETECTED (0 Hz)
+==============================
+
+[0;32mI (114484) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=2156[0m
+[0;32mI (114494) MAIN: MQTT message sent![0m
+[0;32mI (115174) mqtts: MQTT_EVENT_PUBLISHED, msg_id=2156[0m
+[0;32mI (124594) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (125414) Temperature sensor: Slot 0: 22.06 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   13915.96 Hz | 1001.0000 |  171
+   2 |   29378.14 Hz |  566.0000 |  361
+   3 |   11393.18 Hz |  533.0000 |  140
+   4 |    7975.23 Hz |  491.0000 |   98
+   5 |   39876.14 Hz |  485.0000 |  490
+   6 |   17984.95 Hz |  470.0000 |  221
+   7 |   33935.41 Hz |  465.0000 |  417
+   8 |   12044.22 Hz |  461.0000 |  148
+   9 |   27994.68 Hz |  453.0000 |  344
+  10 |   22053.95 Hz |  447.0000 |  271
+  11 |   23925.69 Hz |  446.0000 |  294
+  12 |    6103.49 Hz |  445.0000 |   75
+  13 |   32063.67 Hz |  440.0000 |  394
+  14 |   38004.41 Hz |  433.0000 |  467
+  15 |   16113.22 Hz |  433.0000 |  198
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 21647.05 Hz (bin 266)
+  Peak magnitude: 49.61
+  Band average: 3.17
+  Peak/Average ratio: 15.63
+
+Band 40kHz (37-42 kHz):
+  Peak: 39957.52 Hz (bin 491)
+  Peak magnitude: 5.96
+  Band average: 0.99
+  Peak/Average ratio: 6.02
+
+Noise baseline (5-15 kHz):
+  Average: 0.83
+  Max: 2.69
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 59.55 (35.5 dB)
+SNR 40kHz band: 7.15 (17.1 dB)
+
+Signal detected at 20kHz: YES (SNR=59.55, Peak/Avg=15.63, Mag=49.61)
+Signal detected at 40kHz: YES (SNR=7.15, Peak/Avg=6.02, Mag=5.96)
+
+==> WARNING: Both frequencies detected!
+    Selecting 20 kHz (stronger signal)
+==============================
+
+[0;32mI (125564) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=62654[0m
+[0;32mI (125564) MAIN: MQTT message sent![0m
+[0;32mI (126444) mqtts: MQTT_EVENT_PUBLISHED, msg_id=62654[0m
+[0;32mI (135674) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (136494) Temperature sensor: Slot 0: 22.06 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   36295.43 Hz |  809.0000 |  446
+   2 |   20344.97 Hz |  561.0000 |  250
+   3 |   14404.24 Hz |  491.0000 |  177
+   4 |   30354.70 Hz |  476.0000 |  373
+   5 |   24413.96 Hz |  469.0000 |  300
+   6 |   40364.42 Hz |  467.0000 |  496
+   7 |    8463.51 Hz |  456.0000 |  104
+   8 |   18473.23 Hz |  453.0000 |  227
+   9 |   34423.69 Hz |  452.0000 |  423
+  10 |   35644.39 Hz |  447.0000 |  438
+  11 |   28482.96 Hz |  445.0000 |  350
+  12 |   14078.72 Hz |  444.0000 |  173
+  13 |   13427.68 Hz |  433.0000 |  165
+  14 |   19368.41 Hz |  431.0000 |  238
+  15 |   27831.92 Hz |  430.0000 |  342
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 21647.05 Hz (bin 266)
+  Peak magnitude: 51.61
+  Band average: 3.11
+  Peak/Average ratio: 16.60
+
+Band 40kHz (37-42 kHz):
+  Peak: 39957.52 Hz (bin 491)
+  Peak magnitude: 6.62
+  Band average: 1.10
+  Peak/Average ratio: 6.05
+
+Noise baseline (5-15 kHz):
+  Average: 0.80
+  Max: 2.63
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 64.43 (36.2 dB)
+SNR 40kHz band: 8.27 (18.3 dB)
+
+Signal detected at 20kHz: YES (SNR=64.43, Peak/Avg=16.60, Mag=51.61)
+Signal detected at 40kHz: YES (SNR=8.27, Peak/Avg=6.05, Mag=6.62)
+
+==> WARNING: Both frequencies detected!
+    Selecting 20 kHz (stronger signal)
+==============================
+
+[0;32mI (136624) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=40422[0m
+[0;32mI (136624) MAIN: MQTT message sent![0m
+[0;32mI (136884) mqtts: MQTT_EVENT_PUBLISHED, msg_id=40422[0m
+[0;32mI (146734) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (147554) Temperature sensor: Slot 0: 22.06 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |    8382.13 Hz |  762.0000 |  103
+   2 |   14322.86 Hz |  603.0000 |  176
+   3 |   34342.31 Hz |  559.0000 |  422
+   4 |    6510.39 Hz |  548.0000 |   80
+   5 |   12451.12 Hz |  538.0000 |  153
+   6 |   28401.58 Hz |  533.0000 |  349
+   7 |   40283.04 Hz |  532.0000 |  495
+   8 |   16520.12 Hz |  531.0000 |  203
+   9 |   26529.84 Hz |  531.0000 |  326
+  10 |    7731.09 Hz |  527.0000 |   95
+  11 |    5533.83 Hz |  525.0000 |   68
+  12 |   22460.85 Hz |  525.0000 |  276
+  13 |   18391.85 Hz |  522.0000 |  226
+  14 |   10579.38 Hz |  522.0000 |  130
+  15 |   21484.29 Hz |  519.0000 |  264
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 21647.05 Hz (bin 266)
+  Peak magnitude: 71.20
+  Band average: 3.84
+  Peak/Average ratio: 18.52
+
+Band 40kHz (37-42 kHz):
+  Peak: 39957.52 Hz (bin 491)
+  Peak magnitude: 3.61
+  Band average: 0.67
+  Peak/Average ratio: 5.39
+
+Noise baseline (5-15 kHz):
+  Average: 0.52
+  Max: 1.61
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 137.34 (42.8 dB)
+SNR 40kHz band: 6.97 (16.9 dB)
+
+Signal detected at 20kHz: YES (SNR=137.34, Peak/Avg=18.52, Mag=71.20)
+Signal detected at 40kHz: YES (SNR=6.97, Peak/Avg=5.39, Mag=3.61)
+
+==> WARNING: Both frequencies detected!
+    Selecting 20 kHz (stronger signal)
+==============================
+
+[0;32mI (147704) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=11970[0m
+[0;32mI (147704) MAIN: MQTT message sent![0m
+[0;32mI (148164) mqtts: MQTT_EVENT_PUBLISHED, msg_id=11970[0m
+[0;32mI (157814) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (158634) Temperature sensor: Slot 0: 22.06 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   20751.87 Hz |  734.0000 |  255
+   2 |   14811.14 Hz |  573.0000 |  182
+   3 |    8870.41 Hz |  549.0000 |  109
+   4 |   30761.60 Hz |  547.0000 |  378
+   5 |   34830.59 Hz |  538.0000 |  428
+   6 |   18880.13 Hz |  536.0000 |  232
+   7 |   36702.33 Hz |  535.0000 |  451
+   8 |   24820.86 Hz |  531.0000 |  305
+   9 |   12939.40 Hz |  525.0000 |  159
+  10 |   28889.86 Hz |  523.0000 |  355
+  11 |   31982.29 Hz |  519.0000 |  393
+  12 |   37923.02 Hz |  519.0000 |  466
+  13 |   32958.85 Hz |  516.0000 |  405
+  14 |   33854.03 Hz |  514.0000 |  416
+  15 |   10091.11 Hz |  514.0000 |  124
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 21647.05 Hz (bin 266)
+  Peak magnitude: 70.69
+  Band average: 3.96
+  Peak/Average ratio: 17.87
+
+Band 40kHz (37-42 kHz):
+  Peak: 39957.52 Hz (bin 491)
+  Peak magnitude: 3.15
+  Band average: 0.70
+  Peak/Average ratio: 4.53
+
+Noise baseline (5-15 kHz):
+  Average: 0.57
+  Max: 1.54
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 123.40 (41.8 dB)
+SNR 40kHz band: 5.49 (14.8 dB)
+
+Signal detected at 20kHz: YES (SNR=123.40, Peak/Avg=17.87, Mag=70.69)
+Signal detected at 40kHz: YES (SNR=5.49, Peak/Avg=4.53, Mag=3.15)
+
+==> WARNING: Both frequencies detected!
+    Selecting 20 kHz (stronger signal)
+==============================
+
+[0;32mI (158764) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=37468[0m
+[0;32mI (158764) MAIN: MQTT message sent![0m
+[0;32mI (159414) mqtts: MQTT_EVENT_PUBLISHED, msg_id=37468[0m
+[0;32mI (168874) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (169694) Temperature sensor: Slot 0: 22.06 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   22867.75 Hz |  832.0000 |  281
+   2 |   15055.28 Hz |  820.0000 |  185
+   3 |   38167.16 Hz |  819.0000 |  469
+   4 |   36295.43 Hz |  816.0000 |  446
+   5 |   12532.50 Hz |  816.0000 |  154
+   6 |   18473.23 Hz |  813.0000 |  227
+   7 |   20996.01 Hz |  813.0000 |  258
+   8 |   14404.24 Hz |  813.0000 |  177
+   9 |    9114.55 Hz |  811.0000 |  112
+  10 |   22542.23 Hz |  809.0000 |  277
+  11 |    6591.77 Hz |  809.0000 |   81
+  12 |   16601.50 Hz |  808.0000 |  204
+  13 |    8463.51 Hz |  805.0000 |  104
+  14 |   16275.98 Hz |  805.0000 |  200
+  15 |   38818.20 Hz |  803.0000 |  477
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 21728.43 Hz (bin 267)
+  Peak magnitude: 114.77
+  Band average: 6.34
+  Peak/Average ratio: 18.10
+
+Band 40kHz (37-42 kHz):
+  Peak: 39957.52 Hz (bin 491)
+  Peak magnitude: 2.81
+  Band average: 0.85
+  Peak/Average ratio: 3.32
+
+Noise baseline (5-15 kHz):
+  Average: 0.73
+  Max: 1.62
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 158.09 (44.0 dB)
+SNR 40kHz band: 3.87 (11.8 dB)
+
+Signal detected at 20kHz: YES (SNR=158.09, Peak/Avg=18.10, Mag=114.77)
+Signal detected at 40kHz: YES (SNR=3.87, Peak/Avg=3.32, Mag=2.81)
+
+==> WARNING: Both frequencies detected!
+    Selecting 20 kHz (stronger signal)
+==============================
+
+[0;32mI (169844) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=31130[0m
+[0;32mI (169844) MAIN: MQTT message sent![0m
+[0;32mI (170674) mqtts: MQTT_EVENT_PUBLISHED, msg_id=31130[0m
+[0;32mI (179954) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (180774) Temperature sensor: Slot 0: 22.00 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   26122.94 Hz |  921.0000 |  321
+   2 |   10823.52 Hz |  887.0000 |  133
+   3 |   36458.19 Hz |  876.0000 |  448
+   4 |   28645.72 Hz |  873.0000 |  352
+   5 |   16764.26 Hz |  871.0000 |  206
+   6 |   22704.99 Hz |  862.0000 |  279
+   7 |   32389.19 Hz |  844.0000 |  398
+   8 |   34586.45 Hz |  842.0000 |  425
+   9 |   28320.20 Hz |  834.0000 |  348
+  10 |   32714.71 Hz |  834.0000 |  402
+  11 |   40527.18 Hz |  832.0000 |  498
+  12 |   38004.41 Hz |  830.0000 |  467
+  13 |   39876.14 Hz |  822.0000 |  490
+  14 |    8951.79 Hz |  822.0000 |  110
+  15 |   33935.41 Hz |  822.0000 |  417
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 21728.43 Hz (bin 267)
+  Peak magnitude: 122.41
+  Band average: 6.51
+  Peak/Average ratio: 18.79
+
+Band 40kHz (37-42 kHz):
+  Peak: 39957.52 Hz (bin 491)
+  Peak magnitude: 4.89
+  Band average: 0.73
+  Peak/Average ratio: 6.70
+
+Noise baseline (5-15 kHz):
+  Average: 0.62
+  Max: 1.81
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 196.96 (45.9 dB)
+SNR 40kHz band: 7.87 (17.9 dB)
+
+Signal detected at 20kHz: YES (SNR=196.96, Peak/Avg=18.79, Mag=122.41)
+Signal detected at 40kHz: YES (SNR=7.87, Peak/Avg=6.70, Mag=4.89)
+
+==> WARNING: Both frequencies detected!
+    Selecting 20 kHz (stronger signal)
+==============================
+
+[0;32mI (180904) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=32241[0m
+[0;32mI (180904) MAIN: MQTT message sent![0m
+[0;32mI (181934) mqtts: MQTT_EVENT_PUBLISHED, msg_id=32241[0m
+[0;32mI (191014) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (191834) Temperature sensor: Slot 0: 22.06 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   19693.93 Hz |  900.0000 |  242
+   2 |    5289.69 Hz |  785.0000 |   65
+   3 |    7812.47 Hz |  652.0000 |   96
+   4 |   29703.66 Hz |  635.0000 |  365
+   5 |   41585.12 Hz |  628.0000 |  511
+   6 |   35644.39 Hz |  628.0000 |  438
+   7 |   31575.39 Hz |  616.0000 |  388
+   8 |   17822.20 Hz |  604.0000 |  219
+   9 |   13753.20 Hz |  601.0000 |  169
+  10 |   11881.46 Hz |  592.0000 |  146
+  11 |    5940.73 Hz |  589.0000 |   73
+  12 |   23762.93 Hz |  588.0000 |  292
+  13 |   27831.92 Hz |  579.0000 |  342
+  14 |   21891.19 Hz |  579.0000 |  269
+  15 |   39713.38 Hz |  576.0000 |  488
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 21647.05 Hz (bin 266)
+  Peak magnitude: 69.34
+  Band average: 4.38
+  Peak/Average ratio: 15.83
+
+Band 40kHz (37-42 kHz):
+  Peak: 39957.52 Hz (bin 491)
+  Peak magnitude: 2.04
+  Band average: 0.96
+  Peak/Average ratio: 2.12
+
+Noise baseline (5-15 kHz):
+  Average: 1.13
+  Max: 2.79
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 61.51 (35.8 dB)
+SNR 40kHz band: 1.81 (5.1 dB)
+
+Signal detected at 20kHz: YES (SNR=61.51, Peak/Avg=15.83, Mag=69.34)
+Signal detected at 40kHz: YES (SNR=1.81, Peak/Avg=2.12, Mag=2.04)
+
+==> WARNING: Both frequencies detected!
+    Selecting 20 kHz (stronger signal)
+==============================
+
+[0;32mI (191984) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=10056[0m
+[0;32mI (191984) MAIN: MQTT message sent![0m
+[0;32mI (192384) mqtts: MQTT_EVENT_PUBLISHED, msg_id=10056[0m
+[0;32mI (202084) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (202904) Temperature sensor: Slot 0: 22.00 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   21728.43 Hz |  963.0000 |  267
+   2 |   37678.89 Hz |  907.0000 |  463
+   3 |   25797.42 Hz |  614.0000 |  317
+   4 |   31738.15 Hz |  604.0000 |  390
+   5 |   13915.96 Hz |  604.0000 |  171
+   6 |   35807.15 Hz |  601.0000 |  440
+   7 |    7975.23 Hz |  590.0000 |   98
+   8 |   19856.69 Hz |  587.0000 |  244
+   9 |   17984.95 Hz |  577.0000 |  221
+  10 |   33935.41 Hz |  576.0000 |  417
+  11 |   29866.42 Hz |  576.0000 |  367
+  12 |   12044.22 Hz |  569.0000 |  148
+  13 |   16113.22 Hz |  564.0000 |  198
+  14 |    6103.49 Hz |  562.0000 |   75
+  15 |   39876.14 Hz |  561.0000 |  490
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 21647.05 Hz (bin 266)
+  Peak magnitude: 67.70
+  Band average: 4.28
+  Peak/Average ratio: 15.81
+
+Band 40kHz (37-42 kHz):
+  Peak: 39957.52 Hz (bin 491)
+  Peak magnitude: 2.75
+  Band average: 1.20
+  Peak/Average ratio: 2.30
+
+Noise baseline (5-15 kHz):
+  Average: 1.08
+  Max: 2.17
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 62.76 (36.0 dB)
+SNR 40kHz band: 2.55 (8.1 dB)
+
+Signal detected at 20kHz: YES (SNR=62.76, Peak/Avg=15.81, Mag=67.70)
+Signal detected at 40kHz: YES (SNR=2.55, Peak/Avg=2.30, Mag=2.75)
+
+==> WARNING: Both frequencies detected!
+    Selecting 20 kHz (stronger signal)
+==============================
+
+[0;32mI (203034) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=2214[0m
+[0;32mI (203034) MAIN: MQTT message sent![0m
+[0;32mI (203644) mqtts: MQTT_EVENT_PUBLISHED, msg_id=2214[0m
+[0;32mI (213134) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (213954) Temperature sensor: Slot 0: 22.06 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |    5208.31 Hz |  504.0000 |   64
+   2 |   11149.04 Hz |  495.0000 |  137
+   3 |   20833.25 Hz |  487.0000 |  256
+   4 |   27099.50 Hz |  487.0000 |  333
+   5 |   33040.23 Hz |  484.0000 |  406
+   6 |   14892.52 Hz |  484.0000 |  183
+   7 |   26773.98 Hz |  482.0000 |  329
+   8 |   36783.71 Hz |  481.0000 |  452
+   9 |    8951.79 Hz |  480.0000 |  110
+  10 |   24576.72 Hz |  479.0000 |  302
+  11 |    7405.57 Hz |  478.0000 |   91
+  12 |   30842.98 Hz |  478.0000 |  379
+  13 |   23681.55 Hz |  475.0000 |  291
+  14 |   24902.24 Hz |  470.0000 |  306
+  15 |   30517.46 Hz |  470.0000 |  375
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 21647.05 Hz (bin 266)
+  Peak magnitude: 47.90
+  Band average: 2.76
+  Peak/Average ratio: 17.33
+
+Band 40kHz (37-42 kHz):
+  Peak: 39957.52 Hz (bin 491)
+  Peak magnitude: 9.62
+  Band average: 1.34
+  Peak/Average ratio: 7.19
+
+Noise baseline (5-15 kHz):
+  Average: 0.95
+  Max: 6.55
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 50.31 (34.0 dB)
+SNR 40kHz band: 10.10 (20.1 dB)
+
+Signal detected at 20kHz: YES (SNR=50.31, Peak/Avg=17.33, Mag=47.90)
+Signal detected at 40kHz: YES (SNR=10.10, Peak/Avg=7.19, Mag=9.62)
+
+==> WARNING: Both frequencies detected!
+    Selecting 20 kHz (stronger signal)
+==============================
+
+[0;32mI (214104) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=25560[0m
+[0;32mI (214104) MAIN: MQTT message sent![0m
+[0;32mI (214914) mqtts: MQTT_EVENT_PUBLISHED, msg_id=25560[0m
+[0;32mI (224214) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (225034) Temperature sensor: Slot 0: 22.06 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   17578.05 Hz |  518.0000 |  216
+   2 |   11637.32 Hz |  497.0000 |  143
+   3 |   39469.24 Hz |  493.0000 |  485
+   4 |   24169.82 Hz |  484.0000 |  297
+   5 |   27587.78 Hz |  482.0000 |  339
+   6 |   30110.56 Hz |  481.0000 |  370
+   7 |   17903.57 Hz |  481.0000 |  220
+   8 |   39794.76 Hz |  478.0000 |  489
+   9 |   33854.03 Hz |  475.0000 |  416
+  10 |    5696.59 Hz |  470.0000 |   70
+  11 |   36376.81 Hz |  470.0000 |  447
+  12 |   11962.84 Hz |  468.0000 |  147
+  13 |   37271.98 Hz |  467.0000 |  458
+  14 |   33528.51 Hz |  465.0000 |  412
+  15 |   23844.30 Hz |  465.0000 |  293
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 21647.05 Hz (bin 266)
+  Peak magnitude: 48.92
+  Band average: 3.04
+  Peak/Average ratio: 16.08
+
+Band 40kHz (37-42 kHz):
+  Peak: 39957.52 Hz (bin 491)
+  Peak magnitude: 11.14
+  Band average: 1.38
+  Peak/Average ratio: 8.06
+
+Noise baseline (5-15 kHz):
+  Average: 0.97
+  Max: 6.74
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 50.43 (34.1 dB)
+SNR 40kHz band: 11.48 (21.2 dB)
+
+Signal detected at 20kHz: YES (SNR=50.43, Peak/Avg=16.08, Mag=48.92)
+Signal detected at 40kHz: YES (SNR=11.48, Peak/Avg=8.06, Mag=11.14)
+
+==> WARNING: Both frequencies detected!
+    Selecting 20 kHz (stronger signal)
+==============================
+
+[0;32mI (225164) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=39282[0m
+[0;32mI (225164) MAIN: MQTT message sent![0m
+[0;32mI (226174) mqtts: MQTT_EVENT_PUBLISHED, msg_id=39282[0m
+[0;32mI (235274) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (236094) Temperature sensor: Slot 0: 22.06 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   20996.01 Hz | 1216.0000 |  258
+   2 |   15055.28 Hz | 1196.0000 |  185
+   3 |    9114.55 Hz | 1166.0000 |  112
+   4 |   31005.73 Hz | 1143.0000 |  381
+   5 |   25065.00 Hz | 1138.0000 |  308
+   6 |   19124.27 Hz | 1129.0000 |  235
+   7 |   13183.54 Hz | 1129.0000 |  162
+   8 |   35074.73 Hz | 1120.0000 |  431
+   9 |   36946.47 Hz | 1117.0000 |  454
+  10 |   10986.28 Hz | 1114.0000 |  135
+  11 |   12858.02 Hz | 1105.0000 |  158
+  12 |   18473.23 Hz | 1105.0000 |  227
+  13 |   29134.00 Hz | 1103.0000 |  358
+  14 |    8789.03 Hz | 1103.0000 |  108
+  15 |   32877.47 Hz | 1101.0000 |  404
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 21647.05 Hz (bin 266)
+  Peak magnitude: 155.48
+  Band average: 8.29
+  Peak/Average ratio: 18.75
+
+Band 40kHz (37-42 kHz):
+  Peak: 39957.52 Hz (bin 491)
+  Peak magnitude: 8.25
+  Band average: 1.17
+  Peak/Average ratio: 7.07
+
+Noise baseline (5-15 kHz):
+  Average: 0.69
+  Max: 2.05
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 224.34 (47.0 dB)
+SNR 40kHz band: 11.91 (21.5 dB)
+
+Signal detected at 20kHz: YES (SNR=224.34, Peak/Avg=18.75, Mag=155.48)
+Signal detected at 40kHz: YES (SNR=11.91, Peak/Avg=7.07, Mag=8.25)
+
+==> WARNING: Both frequencies detected!
+    Selecting 20 kHz (stronger signal)
+==============================
+
+[0;32mI (236244) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=23556[0m
+[0;32mI (236244) MAIN: MQTT message sent![0m
+[0;32mI (236414) mqtts: MQTT_EVENT_PUBLISHED, msg_id=23556[0m
+[0;32mI (246354) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (247174) Temperature sensor: Slot 0: 22.06 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   19287.03 Hz | 1477.0000 |  237
+   2 |   29296.76 Hz | 1188.0000 |  360
+   3 |   23356.03 Hz | 1159.0000 |  287
+   4 |   39306.48 Hz | 1138.0000 |  483
+   5 |   11474.56 Hz | 1129.0000 |  141
+   6 |   17415.29 Hz | 1125.0000 |  214
+   7 |    7405.57 Hz | 1123.0000 |   91
+   8 |   33365.75 Hz | 1112.0000 |  410
+   9 |   27425.02 Hz | 1101.0000 |  337
+  10 |   26773.98 Hz | 1099.0000 |  329
+  11 |   21484.29 Hz | 1091.0000 |  264
+  12 |    5533.83 Hz | 1085.0000 |   68
+  13 |   13020.78 Hz | 1078.0000 |  160
+  14 |   33040.23 Hz | 1078.0000 |  406
+  15 |   23030.51 Hz | 1076.0000 |  283
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 21647.05 Hz (bin 266)
+  Peak magnitude: 153.42
+  Band average: 7.95
+  Peak/Average ratio: 19.29
+
+Band 40kHz (37-42 kHz):
+  Peak: 39957.52 Hz (bin 491)
+  Peak magnitude: 9.07
+  Band average: 0.99
+  Peak/Average ratio: 9.15
+
+Noise baseline (5-15 kHz):
+  Average: 0.53
+  Max: 1.83
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 287.10 (49.2 dB)
+SNR 40kHz band: 16.97 (24.6 dB)
+
+Signal detected at 20kHz: YES (SNR=287.10, Peak/Avg=19.29, Mag=153.42)
+Signal detected at 40kHz: YES (SNR=16.97, Peak/Avg=9.15, Mag=9.07)
+
+==> WARNING: Both frequencies detected!
+    Selecting 20 kHz (stronger signal)
+==============================
+
+[0;32mI (247304) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=36186[0m
+[0;32mI (247304) MAIN: MQTT message sent![0m
+[0;32mI (247674) mqtts: MQTT_EVENT_PUBLISHED, msg_id=36186[0m
+[0;32mI (257414) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (258234) Temperature sensor: Slot 0: 22.06 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   31900.91 Hz | 1778.0000 |  392
+   2 |    8056.61 Hz | 1567.0000 |   99
+   3 |   19938.07 Hz | 1516.0000 |  245
+   4 |   35888.53 Hz | 1501.0000 |  441
+   5 |   14322.86 Hz | 1477.0000 |  176
+   6 |   24007.07 Hz | 1473.0000 |  295
+   7 |   29622.28 Hz | 1473.0000 |  364
+   8 |   39957.52 Hz | 1460.0000 |  491
+   9 |   25553.28 Hz | 1460.0000 |  314
+  10 |   41503.74 Hz | 1454.0000 |  510
+  11 |   16764.26 Hz | 1447.0000 |  206
+  12 |   12125.60 Hz | 1444.0000 |  149
+  13 |   18391.85 Hz | 1440.0000 |  226
+  14 |    6510.39 Hz | 1431.0000 |   80
+  15 |   13671.82 Hz | 1415.0000 |  168
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 21728.43 Hz (bin 267)
+  Peak magnitude: 124.70
+  Band average: 7.45
+  Peak/Average ratio: 16.75
+
+Band 40kHz (37-42 kHz):
+  Peak: 38818.20 Hz (bin 477)
+  Peak magnitude: 7.66
+  Band average: 1.76
+  Peak/Average ratio: 4.36
+
+Noise baseline (5-15 kHz):
+  Average: 4.11
+  Max: 96.11
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 30.37 (29.6 dB)
+SNR 40kHz band: 1.86 (5.4 dB)
+
+Signal detected at 20kHz: YES (SNR=30.37, Peak/Avg=16.75, Mag=124.70)
+Signal detected at 40kHz: YES (SNR=1.86, Peak/Avg=4.36, Mag=7.66)
+
+==> WARNING: Both frequencies detected!
+    Selecting 20 kHz (stronger signal)
+==============================
+
+[0;32mI (258384) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=13277[0m
+[0;32mI (258384) MAIN: MQTT message sent![0m
+[0;32mI (259354) mqtts: MQTT_EVENT_PUBLISHED, msg_id=13277[0m
+[0;31mE (268394) 1-wire.device: no devices participating in search[0m
+[0;32mI (268394) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (268974) mqtts: MQTT_EVENT_DATA[0m
+TOPIC=34B7DA543528/downlink
+DATA={"frequency":0.0,"duty_frequency":100.0,"temperature":17.5,"finish_after":0.13,"startTime":null}
+[0;32mI (268984) MAIN: === Message received in MAIN ===[0m
+[0;32mI (268984) MAIN: Topic: 34B7DA543528/downlink[0m
+[0;32mI (268994) MAIN: Data: {"frequency":0.0,"duty_frequency":100.0,"temperature":17.5,"finish_after":0.13,"startTime":null}[0m
+[0;32mI (269004) MAIN: Expiry timer triggered! Schedule has expired![0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (269014) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (269024) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 8192 (risoluzione: 13 bit)
+[0;32mI (269034) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/8192)[0m
+Imposto duty: 0 / 8192 (risoluzione: 13 bit)
+[0;32mI (269044) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/8192)[0m
+[0;32mI (269054) MAIN: Previous expiry timer deleted[0m
+[0;32mI (269064) MAIN: Start timestamp is 0 or past, executing immediately[0m
+[0;32mI (269064) MAIN: Timer triggered! Executing scheduled action...[0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (269074) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (269094) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 8192 (risoluzione: 13 bit)
+[0;32mI (269104) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/8192)[0m
+Imposto duty: 0 / 8192 (risoluzione: 13 bit)
+[0;32mI (269114) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/8192)[0m
+[0;32mI (269124) MAIN: Expiry timer set for 0.13 hours (total 467 seconds from now)[0m
+[0;32mI (269134) MAIN: status updated and timer started[0m
+[0;32mI (269214) Temperature sensor: Slot 0: 22.06 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   15787.70 Hz | 1569.0000 |  194
+   2 |    9846.97 Hz | 1447.0000 |  121
+   3 |   24332.59 Hz | 1403.0000 |  299
+   4 |   14729.76 Hz | 1305.0000 |  181
+   5 |   36295.43 Hz | 1268.0000 |  446
+   6 |   20344.97 Hz | 1260.0000 |  250
+   7 |   27669.16 Hz | 1259.0000 |  340
+   8 |   41422.36 Hz | 1249.0000 |  509
+   9 |   18798.75 Hz | 1249.0000 |  231
+  10 |    6022.11 Hz | 1222.0000 |   74
+  11 |   32226.43 Hz | 1217.0000 |  396
+  12 |   24413.96 Hz | 1206.0000 |  300
+  13 |   40364.42 Hz | 1202.0000 |  496
+  14 |    8463.51 Hz | 1189.0000 |  104
+  15 |   30680.21 Hz | 1175.0000 |  377
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 21728.43 Hz (bin 267)
+  Peak magnitude: 120.58
+  Band average: 7.12
+  Peak/Average ratio: 16.94
+
+Band 40kHz (37-42 kHz):
+  Peak: 39957.52 Hz (bin 491)
+  Peak magnitude: 26.63
+  Band average: 4.06
+  Peak/Average ratio: 6.56
+
+Noise baseline (5-15 kHz):
+  Average: 3.66
+  Max: 61.44
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 32.91 (30.3 dB)
+SNR 40kHz band: 7.27 (17.2 dB)
+
+Signal detected at 20kHz: YES (SNR=32.91, Peak/Avg=16.94, Mag=120.58)
+Signal detected at 40kHz: YES (SNR=7.27, Peak/Avg=6.56, Mag=26.63)
+
+==> WARNING: Both frequencies detected!
+    Selecting 20 kHz (stronger signal)
+==============================
+
+[0;32mI (269344) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=24811[0m
+[0;32mI (269344) MAIN: MQTT message sent![0m
+[0;32mI (270414) mqtts: MQTT_EVENT_PUBLISHED, msg_id=24811[0m
+[0;32mI (279454) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (280274) Temperature sensor: Slot 0: 22.06 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   33691.27 Hz |  107.0000 |  414
+   2 |   22949.13 Hz |  105.0000 |  282
+   3 |   12288.36 Hz |  100.0000 |  151
+   4 |   12206.98 Hz |   95.0000 |  150
+   5 |   23030.51 Hz |   90.0000 |  283
+   6 |   33609.89 Hz |   76.0000 |  413
+   7 |   33772.65 Hz |   73.0000 |  415
+   8 |   12125.60 Hz |   65.0000 |  149
+   9 |   12369.74 Hz |   61.0000 |  152
+  10 |   33854.03 Hz |   61.0000 |  416
+  11 |   22867.75 Hz |   61.0000 |  281
+  12 |   28482.96 Hz |   55.0000 |  350
+  13 |   23111.89 Hz |   55.0000 |  284
+  14 |   12451.12 Hz |   53.0000 |  153
+  15 |   39306.48 Hz |   53.0000 |  483
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 19042.89 Hz (bin 234)
+  Peak magnitude: 0.76
+  Band average: 0.21
+  Peak/Average ratio: 3.66
+
+Band 40kHz (37-42 kHz):
+  Peak: 39062.34 Hz (bin 480)
+  Peak magnitude: 0.58
+  Band average: 0.20
+  Peak/Average ratio: 2.92
+
+Noise baseline (5-15 kHz):
+  Average: 0.27
+  Max: 1.07
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 2.87 (9.1 dB)
+SNR 40kHz band: 2.19 (6.8 dB)
+
+Signal detected at 20kHz: YES (SNR=2.87, Peak/Avg=3.66, Mag=0.76)
+Signal detected at 40kHz: YES (SNR=2.19, Peak/Avg=2.92, Mag=0.58)
+
+==> WARNING: Both frequencies detected!
+    Selecting 20 kHz (stronger signal)
+==============================
+
+[0;32mI (280414) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=44032[0m
+[0;32mI (280424) MAIN: MQTT message sent![0m
+[0;32mI (280654) mqtts: MQTT_EVENT_PUBLISHED, msg_id=44032[0m
+[0;32mI (290524) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (291344) Temperature sensor: Slot 0: 22.00 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   35807.15 Hz |  106.0000 |  440
+   2 |   25146.38 Hz |  102.0000 |  309
+   3 |   14485.62 Hz |   96.0000 |  178
+   4 |   35725.77 Hz |   87.0000 |  439
+   5 |   25227.76 Hz |   77.0000 |  310
+   6 |   27913.30 Hz |   68.0000 |  343
+   7 |   25065.00 Hz |   67.0000 |  308
+   8 |   14404.24 Hz |   65.0000 |  177
+   9 |   14567.00 Hz |   64.0000 |  179
+  10 |   20426.35 Hz |   63.0000 |  251
+  11 |   35888.53 Hz |   62.0000 |  441
+  12 |   25309.14 Hz |   53.0000 |  311
+  13 |   35644.39 Hz |   51.0000 |  438
+  14 |   14648.38 Hz |   50.0000 |  180
+  15 |   25390.52 Hz |   46.0000 |  312
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 19042.89 Hz (bin 234)
+  Peak magnitude: 0.93
+  Band average: 0.19
+  Peak/Average ratio: 4.91
+
+Band 40kHz (37-42 kHz):
+  Peak: 38167.16 Hz (bin 469)
+  Peak magnitude: 0.24
+  Band average: 0.12
+  Peak/Average ratio: 2.00
+
+Noise baseline (5-15 kHz):
+  Average: 0.27
+  Max: 0.89
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 3.41 (10.7 dB)
+SNR 40kHz band: 0.89 (-1.0 dB)
+
+Signal detected at 20kHz: YES (SNR=3.41, Peak/Avg=4.91, Mag=0.93)
+Signal detected at 40kHz: NO (SNR=0.89, Peak/Avg=2.00, Mag=0.24)
+
+==> DETECTED: 20 kHz TRANSDUCER ACTIVE
+    Frequency: 19042.89 Hz
+==============================
+
+[0;32mI (291464) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=60775[0m
+[0;32mI (291474) MAIN: MQTT message sent![0m
+[0;32mI (291914) mqtts: MQTT_EVENT_PUBLISHED, msg_id=60775[0m
+[0;32mI (301574) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (302394) Temperature sensor: Slot 0: 22.00 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   33609.89 Hz |   89.0000 |  413
+   2 |   12532.50 Hz |   79.0000 |  154
+   3 |    8951.79 Hz |   64.0000 |  110
+   4 |   37271.98 Hz |   62.0000 |  458
+   5 |   20182.21 Hz |   55.0000 |  248
+   6 |   31412.63 Hz |   55.0000 |  386
+   7 |   20751.87 Hz |   54.0000 |  255
+   8 |   18473.23 Hz |   52.0000 |  227
+   9 |   13834.58 Hz |   52.0000 |  170
+  10 |   12206.98 Hz |   51.0000 |  150
+  11 |   19531.17 Hz |   50.0000 |  240
+  12 |   10904.90 Hz |   50.0000 |  134
+  13 |   27262.26 Hz |   50.0000 |  335
+  14 |   10253.87 Hz |   50.0000 |  126
+  15 |    5859.35 Hz |   48.0000 |   72
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 20670.49 Hz (bin 254)
+  Peak magnitude: 0.32
+  Band average: 0.18
+  Peak/Average ratio: 1.76
+
+Band 40kHz (37-42 kHz):
+  Peak: 38004.41 Hz (bin 467)
+  Peak magnitude: 0.31
+  Band average: 0.17
+  Peak/Average ratio: 1.81
+
+Noise baseline (5-15 kHz):
+  Average: 0.20
+  Max: 0.62
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 1.57 (3.9 dB)
+SNR 40kHz band: 1.52 (3.6 dB)
+
+Signal detected at 20kHz: NO (SNR=1.57, Peak/Avg=1.76, Mag=0.32)
+Signal detected at 40kHz: NO (SNR=1.52, Peak/Avg=1.81, Mag=0.31)
+
+==> NO VIBRATION DETECTED (0 Hz)
+==============================
+
+[0;32mI (302534) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=48983[0m
+[0;32mI (302544) MAIN: MQTT message sent![0m
+[0;32mI (303174) mqtts: MQTT_EVENT_PUBLISHED, msg_id=48983[0m
+[0;32mI (312644) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (313464) Temperature sensor: Slot 0: 22.06 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   34911.97 Hz |   55.0000 |  429
+   2 |    8544.89 Hz |   52.0000 |  105
+   3 |   38899.59 Hz |   52.0000 |  478
+   4 |   38492.68 Hz |   52.0000 |  473
+   5 |   29622.28 Hz |   52.0000 |  364
+   6 |   41585.12 Hz |   50.0000 |  511
+   7 |   19368.41 Hz |   50.0000 |  238
+   8 |   32714.71 Hz |   47.0000 |  402
+   9 |    9602.83 Hz |   47.0000 |  118
+  10 |   28564.34 Hz |   47.0000 |  351
+  11 |   34586.45 Hz |   47.0000 |  425
+  12 |   36214.05 Hz |   45.0000 |  445
+  13 |   28727.10 Hz |   41.0000 |  353
+  14 |   35563.01 Hz |   39.0000 |  437
+  15 |   23274.65 Hz |   37.0000 |  286
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 19938.07 Hz (bin 245)
+  Peak magnitude: 0.32
+  Band average: 0.16
+  Peak/Average ratio: 2.04
+
+Band 40kHz (37-42 kHz):
+  Peak: 39062.34 Hz (bin 480)
+  Peak magnitude: 0.40
+  Band average: 0.20
+  Peak/Average ratio: 2.04
+
+Noise baseline (5-15 kHz):
+  Average: 0.19
+  Max: 0.51
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 1.66 (4.4 dB)
+SNR 40kHz band: 2.12 (6.5 dB)
+
+Signal detected at 20kHz: NO (SNR=1.66, Peak/Avg=2.04, Mag=0.32)
+Signal detected at 40kHz: NO (SNR=2.12, Peak/Avg=2.04, Mag=0.40)
+
+==> NO VIBRATION DETECTED (0 Hz)
+==============================
+
+[0;32mI (313584) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=19927[0m
+[0;32mI (313594) MAIN: MQTT message sent![0m
+[0;32mI (314644) mqtts: MQTT_EVENT_PUBLISHED, msg_id=19927[0m
+[0;32mI (323694) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (324514) Temperature sensor: Slot 0: 22.00 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   18961.51 Hz |   77.0000 |  233
+   2 |   30680.21 Hz |   74.0000 |  377
+   3 |   29540.90 Hz |   54.0000 |  363
+   4 |   21077.39 Hz |   53.0000 |  259
+   5 |   26122.94 Hz |   53.0000 |  321
+   6 |   40120.28 Hz |   53.0000 |  493
+   7 |   38004.41 Hz |   52.0000 |  467
+   8 |   28727.10 Hz |   52.0000 |  353
+   9 |    5371.07 Hz |   52.0000 |   66
+  10 |   38085.79 Hz |   51.0000 |  468
+  11 |   17659.43 Hz |   51.0000 |  217
+  12 |   32633.33 Hz |   51.0000 |  401
+  13 |   28482.96 Hz |   51.0000 |  350
+  14 |   34179.55 Hz |   50.0000 |  420
+  15 |   30598.84 Hz |   50.0000 |  376
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 18961.51 Hz (bin 233)
+  Peak magnitude: 0.46
+  Band average: 0.24
+  Peak/Average ratio: 1.93
+
+Band 40kHz (37-42 kHz):
+  Peak: 39143.72 Hz (bin 481)
+  Peak magnitude: 0.48
+  Band average: 0.21
+  Peak/Average ratio: 2.27
+
+Noise baseline (5-15 kHz):
+  Average: 0.24
+  Max: 0.61
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 1.93 (5.7 dB)
+SNR 40kHz band: 2.03 (6.2 dB)
+
+Signal detected at 20kHz: NO (SNR=1.93, Peak/Avg=1.93, Mag=0.46)
+Signal detected at 40kHz: NO (SNR=2.03, Peak/Avg=2.27, Mag=0.48)
+
+==> NO VIBRATION DETECTED (0 Hz)
+==============================
+
+[0;32mI (324654) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=48879[0m
+[0;32mI (324664) MAIN: MQTT message sent![0m
+[0;32mI (324884) mqtts: MQTT_EVENT_PUBLISHED, msg_id=48879[0m
+[0;32mI (326324) mqtts: MQTT_EVENT_DATA[0m
+TOPIC=34B7DA543528/downlink
+DATA={"frequency":40.0,"duty_frequency":100.0,"temperature":17.5,"finish_after":0.13,"startTime":null}
+[0;32mI (326324) MAIN: === Message received in MAIN ===[0m
+[0;32mI (326334) MAIN: Topic: 34B7DA543528/downlink[0m
+[0;32mI (326344) MAIN: Data: {"frequency":40.0,"duty_frequency":100.0,"temperature":17.5,"finish_after":0.13,"startTime":null}[0m
+[0;32mI (326354) MAIN: Expiry timer triggered! Schedule has expired![0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (326364) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (326374) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 8192 (risoluzione: 13 bit)
+[0;32mI (326384) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/8192)[0m
+Imposto duty: 0 / 8192 (risoluzione: 13 bit)
+[0;32mI (326394) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/8192)[0m
+[0;32mI (326404) MAIN: Previous expiry timer deleted[0m
+[0;32mI (326414) MAIN: Start timestamp is 0 or past, executing immediately[0m
+[0;32mI (326414) MAIN: Timer triggered! Executing scheduled action...[0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (326424) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 0 / 8192 (risoluzione: 13 bit)
+[0;32mI (326434) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/8192)[0m
+[0;32mI (326444) PWM: Cambio frequenza: 40000 -> 39300 Hz, risoluzione: 8 -> 8 bit[0m
+[0;32mI (326454) PWM: Timer riconfigurato: 39300 Hz, 8 bit (256 livelli)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (326464) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 128 / 256 (risoluzione: 8 bit)
+[0;32mI (326474) PWM: Hardware PWM duty: 50.00% richiesto -> 50.20% effettivo (128/256)[0m
+Imposto duty: 8191 / 8192 (risoluzione: 13 bit)
+[0;32mI (326494) PWM: Hardware PWM duty: 100.00% richiesto -> 100.00% effettivo (8191/8192)[0m
+[0;32mI (326494) MAIN: Expiry timer set for 0.13 hours (total 467 seconds from now)[0m
+[0;32mI (326504) MAIN: status updated and timer started[0m
+[0;32mI (334764) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (335584) Temperature sensor: Slot 0: 22.00 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   26855.36 Hz |   65.0000 |  330
+   2 |    7324.19 Hz |   60.0000 |   90
+   3 |   10253.87 Hz |   53.0000 |  126
+   4 |   16438.74 Hz |   48.0000 |  202
+   5 |   22949.13 Hz |   48.0000 |  282
+   6 |   17008.39 Hz |   46.0000 |  209
+   7 |   16357.36 Hz |   46.0000 |  201
+   8 |   13427.68 Hz |   46.0000 |  165
+   9 |   22542.23 Hz |   46.0000 |  277
+  10 |   16275.98 Hz |   45.0000 |  200
+  11 |    9358.69 Hz |   45.0000 |  115
+  12 |   24739.48 Hz |   44.0000 |  304
+  13 |   35400.25 Hz |   41.0000 |  435
+  14 |   24983.62 Hz |   41.0000 |  307
+  15 |    6266.25 Hz |   41.0000 |   77
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 19124.27 Hz (bin 235)
+  Peak magnitude: 0.40
+  Band average: 0.18
+  Peak/Average ratio: 2.28
+
+Band 40kHz (37-42 kHz):
+  Peak: 39062.34 Hz (bin 480)
+  Peak magnitude: 0.34
+  Band average: 0.16
+  Peak/Average ratio: 2.17
+
+Noise baseline (5-15 kHz):
+  Average: 0.19
+  Max: 0.48
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 2.07 (6.3 dB)
+SNR 40kHz band: 1.75 (4.9 dB)
+
+Signal detected at 20kHz: NO (SNR=2.07, Peak/Avg=2.28, Mag=0.40)
+Signal detected at 40kHz: NO (SNR=1.75, Peak/Avg=2.17, Mag=0.34)
+
+==> NO VIBRATION DETECTED (0 Hz)
+==============================
+
+[0;32mI (335704) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=63090[0m
+[0;32mI (335714) MAIN: MQTT message sent![0m
+[0;32mI (336764) mqtts: MQTT_EVENT_PUBLISHED, msg_id=63090[0m
+[0;32mI (345814) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (346634) Temperature sensor: Slot 0: 22.00 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |    5533.83 Hz |  295.0000 |   68
+   2 |   15380.80 Hz |  293.0000 |  189
+   3 |   23844.30 Hz |  290.0000 |  293
+   4 |    8300.75 Hz |  287.0000 |  102
+   5 |   30924.36 Hz |  285.0000 |  380
+   6 |   39387.86 Hz |  283.0000 |  484
+   7 |   12613.88 Hz |  280.0000 |  155
+   8 |   40934.08 Hz |  280.0000 |  503
+   9 |   18147.71 Hz |  275.0000 |  223
+  10 |   33691.27 Hz |  273.0000 |  414
+  11 |   25390.52 Hz |  273.0000 |  312
+  12 |    9684.21 Hz |  273.0000 |  119
+  13 |   36458.19 Hz |  273.0000 |  448
+  14 |   16764.26 Hz |  272.0000 |  206
+  15 |   40771.32 Hz |  271.0000 |  501
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 20100.83 Hz (bin 247)
+  Peak magnitude: 1.08
+  Band average: 0.23
+  Peak/Average ratio: 4.68
+
+Band 40kHz (37-42 kHz):
+  Peak: 39306.48 Hz (bin 483)
+  Peak magnitude: 40.10
+  Band average: 3.38
+  Peak/Average ratio: 11.86
+
+Noise baseline (5-15 kHz):
+  Average: 0.29
+  Max: 2.30
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 3.70 (11.4 dB)
+SNR 40kHz band: 137.54 (42.8 dB)
+
+Signal detected at 20kHz: YES (SNR=3.70, Peak/Avg=4.68, Mag=1.08)
+Signal detected at 40kHz: YES (SNR=137.54, Peak/Avg=11.86, Mag=40.10)
+
+==> WARNING: Both frequencies detected!
+    Selecting 40 kHz (stronger signal)
+==============================
+
+[0;32mI (346774) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=51110[0m
+[0;32mI (346774) MAIN: MQTT message sent![0m
+[0;32mI (347004) mqtts: MQTT_EVENT_PUBLISHED, msg_id=51110[0m
+[0;32mI (356884) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (357704) Temperature sensor: Slot 0: 22.00 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   23356.03 Hz |  313.0000 |  287
+   2 |   31819.54 Hz |  300.0000 |  391
+   3 |   37516.12 Hz |  299.0000 |  461
+   4 |   38899.59 Hz |  295.0000 |  478
+   5 |   11230.42 Hz |  293.0000 |  138
+   6 |   38167.16 Hz |  293.0000 |  469
+   7 |   27669.16 Hz |  293.0000 |  340
+   8 |    8463.51 Hz |  293.0000 |  104
+   9 |    7080.05 Hz |  293.0000 |   87
+  10 |   25390.52 Hz |  293.0000 |  312
+  11 |    9846.97 Hz |  292.0000 |  121
+  12 |   26773.98 Hz |  291.0000 |  329
+  13 |   32470.57 Hz |  291.0000 |  399
+  14 |   34749.21 Hz |  290.0000 |  427
+  15 |    7812.47 Hz |  287.0000 |   96
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 19124.27 Hz (bin 235)
+  Peak magnitude: 0.68
+  Band average: 0.21
+  Peak/Average ratio: 3.20
+
+Band 40kHz (37-42 kHz):
+  Peak: 39306.48 Hz (bin 483)
+  Peak magnitude: 45.12
+  Band average: 3.81
+  Peak/Average ratio: 11.86
+
+Noise baseline (5-15 kHz):
+  Average: 0.40
+  Max: 5.74
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 1.69 (4.6 dB)
+SNR 40kHz band: 112.40 (41.0 dB)
+
+Signal detected at 20kHz: YES (SNR=1.69, Peak/Avg=3.20, Mag=0.68)
+Signal detected at 40kHz: YES (SNR=112.40, Peak/Avg=11.86, Mag=45.12)
+
+==> WARNING: Both frequencies detected!
+    Selecting 40 kHz (stronger signal)
+==============================
+
+[0;32mI (357844) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=45775[0m
+[0;32mI (357844) MAIN: MQTT message sent![0m
+[0;32mI (358264) mqtts: MQTT_EVENT_PUBLISHED, msg_id=45775[0m
+[0;32mI (367954) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (368774) Temperature sensor: Slot 0: 22.00 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   38004.41 Hz |  677.0000 |  467
+   2 |    5859.35 Hz |  677.0000 |   72
+   3 |    8463.51 Hz |  663.0000 |  104
+   4 |   25227.76 Hz |  662.0000 |  310
+   5 |   40608.56 Hz |  658.0000 |  499
+   6 |   39225.10 Hz |  654.0000 |  482
+   7 |    5696.59 Hz |  653.0000 |   70
+   8 |   23844.30 Hz |  652.0000 |  293
+   9 |    7080.05 Hz |  651.0000 |   87
+  10 |   21077.39 Hz |  650.0000 |  259
+  11 |   22460.85 Hz |  650.0000 |  276
+  12 |   12613.88 Hz |  650.0000 |  155
+  13 |    9846.97 Hz |  648.0000 |  121
+  14 |   29378.14 Hz |  648.0000 |  361
+  15 |   11230.42 Hz |  648.0000 |  138
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 19775.31 Hz (bin 243)
+  Peak magnitude: 1.45
+  Band average: 0.31
+  Peak/Average ratio: 4.69
+
+Band 40kHz (37-42 kHz):
+  Peak: 39225.10 Hz (bin 482)
+  Peak magnitude: 92.83
+  Band average: 6.54
+  Peak/Average ratio: 14.20
+
+Noise baseline (5-15 kHz):
+  Average: 0.55
+  Max: 11.40
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 2.62 (8.4 dB)
+SNR 40kHz band: 167.85 (44.5 dB)
+
+Signal detected at 20kHz: YES (SNR=2.62, Peak/Avg=4.69, Mag=1.45)
+Signal detected at 40kHz: YES (SNR=167.85, Peak/Avg=14.20, Mag=92.83)
+
+==> WARNING: Both frequencies detected!
+    Selecting 40 kHz (stronger signal)
+==============================
+
+[0;32mI (368914) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=62694[0m
+[0;32mI (368914) MAIN: MQTT message sent![0m
+[0;32mI (369534) mqtts: MQTT_EVENT_PUBLISHED, msg_id=62694[0m
+[0;32mI (379024) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (379844) Temperature sensor: Slot 0: 22.00 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   41585.12 Hz |  728.0000 |  511
+   2 |   23274.65 Hz |  718.0000 |  286
+   3 |   13427.68 Hz |  710.0000 |  165
+   4 |   38818.20 Hz |  684.0000 |  477
+   5 |   28971.24 Hz |  678.0000 |  356
+   6 |   40201.66 Hz |  678.0000 |  494
+   7 |   33121.61 Hz |  676.0000 |  407
+   8 |   34505.07 Hz |  673.0000 |  424
+   9 |   38655.45 Hz |  669.0000 |  475
+  10 |   36051.29 Hz |  667.0000 |  443
+  11 |   24658.11 Hz |  662.0000 |  303
+  12 |   37434.75 Hz |  661.0000 |  460
+  13 |   14811.14 Hz |  661.0000 |  182
+  14 |   35888.53 Hz |  661.0000 |  441
+  15 |    7731.09 Hz |  660.0000 |   95
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 19287.03 Hz (bin 237)
+  Peak magnitude: 1.29
+  Band average: 0.31
+  Peak/Average ratio: 4.19
+
+Band 40kHz (37-42 kHz):
+  Peak: 39225.10 Hz (bin 482)
+  Peak magnitude: 101.60
+  Band average: 7.94
+  Peak/Average ratio: 12.79
+
+Noise baseline (5-15 kHz):
+  Average: 0.51
+  Max: 6.69
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 2.52 (8.0 dB)
+SNR 40kHz band: 198.91 (46.0 dB)
+
+Signal detected at 20kHz: YES (SNR=2.52, Peak/Avg=4.19, Mag=1.29)
+Signal detected at 40kHz: YES (SNR=198.91, Peak/Avg=12.79, Mag=101.60)
+
+==> WARNING: Both frequencies detected!
+    Selecting 40 kHz (stronger signal)
+==============================
+
+[0;32mI (379994) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=23719[0m
+[0;32mI (379994) MAIN: MQTT message sent![0m
+[0;32mI (381014) mqtts: MQTT_EVENT_PUBLISHED, msg_id=23719[0m
+[0;32mI (390104) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (390424) mqtts: MQTT_EVENT_DATA[0m
+TOPIC=34B7DA543528/downlink
+DATA={"frequency":0.0,"duty_frequency":100.0,"temperature":17.5,"finish_after":0.13,"startTime":null}
+[0;32mI (390424) MAIN: === Message received in MAIN ===[0m
+[0;32mI (390434) MAIN: Topic: 34B7DA543528/downlink[0m
+[0;32mI (390434) MAIN: Data: {"frequency":0.0,"duty_frequency":100.0,"temperature":17.5,"finish_after":0.13,"startTime":null}[0m
+[0;32mI (390444) MAIN: Expiry timer triggered! Schedule has expired![0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (390454) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (390474) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 8192 (risoluzione: 13 bit)
+[0;32mI (390484) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/8192)[0m
+Imposto duty: 0 / 8192 (risoluzione: 13 bit)
+[0;32mI (390494) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/8192)[0m
+[0;32mI (390504) MAIN: Previous expiry timer deleted[0m
+[0;32mI (390504) MAIN: Start timestamp is 0 or past, executing immediately[0m
+[0;32mI (390514) MAIN: Timer triggered! Executing scheduled action...[0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (390524) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (390534) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 8192 (risoluzione: 13 bit)
+[0;32mI (390544) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/8192)[0m
+Imposto duty: 0 / 8192 (risoluzione: 13 bit)
+[0;32mI (390554) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/8192)[0m
+[0;32mI (390564) MAIN: Expiry timer set for 0.13 hours (total 467 seconds from now)[0m
+[0;32mI (390574) MAIN: status updated and timer started[0m
+[0;32mI (390924) Temperature sensor: Slot 0: 22.00 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   24413.96 Hz |  840.0000 |  300
+   2 |   14567.00 Hz |  741.0000 |  179
+   3 |   11800.08 Hz |  725.0000 |  145
+   4 |    6103.49 Hz |  725.0000 |   75
+   5 |   15950.46 Hz |  715.0000 |  196
+   6 |   34260.93 Hz |  711.0000 |  421
+   7 |   28564.34 Hz |  711.0000 |  351
+   8 |   37027.85 Hz |  710.0000 |  455
+   9 |   21647.05 Hz |  708.0000 |  266
+  10 |   23030.51 Hz |  705.0000 |  283
+  11 |   39957.52 Hz |  705.0000 |  491
+  12 |   30110.56 Hz |  705.0000 |  370
+  13 |   32877.47 Hz |  705.0000 |  404
+  14 |   20263.59 Hz |  702.0000 |  249
+  15 |   27180.88 Hz |  700.0000 |  334
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 19287.03 Hz (bin 237)
+  Peak magnitude: 1.45
+  Band average: 0.26
+  Peak/Average ratio: 5.61
+
+Band 40kHz (37-42 kHz):
+  Peak: 39225.10 Hz (bin 482)
+  Peak magnitude: 103.64
+  Band average: 8.06
+  Peak/Average ratio: 12.86
+
+Noise baseline (5-15 kHz):
+  Average: 0.47
+  Max: 6.33
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 3.07 (9.7 dB)
+SNR 40kHz band: 218.59 (46.8 dB)
+
+Signal detected at 20kHz: YES (SNR=3.07, Peak/Avg=5.61, Mag=1.45)
+Signal detected at 40kHz: YES (SNR=218.59, Peak/Avg=12.86, Mag=103.64)
+
+==> WARNING: Both frequencies detected!
+    Selecting 40 kHz (stronger signal)
+==============================
+
+[0;32mI (391054) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=14090[0m
+[0;32mI (391054) MAIN: MQTT message sent![0m
+[0;32mI (391854) mqtts: MQTT_EVENT_PUBLISHED, msg_id=14090[0m
+[0;32mI (401164) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (401984) Temperature sensor: Slot 0: 22.00 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   25960.18 Hz |   61.0000 |  319
+   2 |   16031.84 Hz |   53.0000 |  197
+   3 |   30191.94 Hz |   53.0000 |  371
+   4 |   14811.14 Hz |   53.0000 |  182
+   5 |   19531.17 Hz |   52.0000 |  240
+   6 |   23193.27 Hz |   51.0000 |  285
+   7 |   15136.66 Hz |   51.0000 |  186
+   8 |   23600.17 Hz |   50.0000 |  290
+   9 |   33854.03 Hz |   50.0000 |  416
+  10 |   18310.47 Hz |   50.0000 |  225
+  11 |   12044.22 Hz |   50.0000 |  148
+  12 |   40527.18 Hz |   48.0000 |  498
+  13 |   13346.30 Hz |   47.0000 |  164
+  14 |   13753.20 Hz |   47.0000 |  169
+  15 |   29052.62 Hz |   47.0000 |  357
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 19612.55 Hz (bin 241)
+  Peak magnitude: 0.37
+  Band average: 0.15
+  Peak/Average ratio: 2.49
+
+Band 40kHz (37-42 kHz):
+  Peak: 38818.20 Hz (bin 477)
+  Peak magnitude: 0.27
+  Band average: 0.13
+  Peak/Average ratio: 2.07
+
+Noise baseline (5-15 kHz):
+  Average: 0.17
+  Max: 0.49
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 2.16 (6.7 dB)
+SNR 40kHz band: 1.58 (4.0 dB)
+
+Signal detected at 20kHz: NO (SNR=2.16, Peak/Avg=2.49, Mag=0.37)
+Signal detected at 40kHz: NO (SNR=1.58, Peak/Avg=2.07, Mag=0.27)
+
+==> NO VIBRATION DETECTED (0 Hz)
+==============================
+
+[0;32mI (402124) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=18544[0m
+[0;32mI (402134) MAIN: MQTT message sent![0m
+[0;32mI (403124) mqtts: MQTT_EVENT_PUBLISHED, msg_id=18544[0m
+[0;32mI (412234) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (413054) Temperature sensor: Slot 0: 22.00 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   16031.84 Hz |   81.0000 |  197
+   2 |   37434.75 Hz |   56.0000 |  460
+   3 |   34260.93 Hz |   53.0000 |  421
+   4 |    6998.67 Hz |   53.0000 |   86
+   5 |   33772.65 Hz |   51.0000 |  415
+   6 |   40445.80 Hz |   51.0000 |  497
+   7 |   17008.39 Hz |   50.0000 |  209
+   8 |   16113.22 Hz |   50.0000 |  198
+   9 |   34098.17 Hz |   50.0000 |  419
+  10 |   40120.28 Hz |   50.0000 |  493
+  11 |   20751.87 Hz |   50.0000 |  255
+  12 |   37109.23 Hz |   50.0000 |  456
+  13 |   37760.27 Hz |   48.0000 |  464
+  14 |   26773.98 Hz |   47.0000 |  329
+  15 |   27099.50 Hz |   47.0000 |  333
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 20182.21 Hz (bin 248)
+  Peak magnitude: 0.35
+  Band average: 0.13
+  Peak/Average ratio: 2.59
+
+Band 40kHz (37-42 kHz):
+  Peak: 38492.68 Hz (bin 473)
+  Peak magnitude: 0.31
+  Band average: 0.13
+  Peak/Average ratio: 2.36
+
+Noise baseline (5-15 kHz):
+  Average: 0.17
+  Max: 0.51
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 2.00 (6.0 dB)
+SNR 40kHz band: 1.79 (5.0 dB)
+
+Signal detected at 20kHz: NO (SNR=2.00, Peak/Avg=2.59, Mag=0.35)
+Signal detected at 40kHz: NO (SNR=1.79, Peak/Avg=2.36, Mag=0.31)
+
+==> NO VIBRATION DETECTED (0 Hz)
+==============================
+
+[0;32mI (413174) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=47790[0m
+[0;32mI (413184) MAIN: MQTT message sent![0m
+[0;32mI (413564) mqtts: MQTT_EVENT_PUBLISHED, msg_id=47790[0m
+[0;32mI (423284) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (424104) Temperature sensor: Slot 0: 22.00 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   31494.02 Hz |   65.0000 |  387
+   2 |   28238.82 Hz |   63.0000 |  347
+   3 |   18066.33 Hz |   63.0000 |  222
+   4 |   19693.93 Hz |   61.0000 |  242
+   5 |   26611.22 Hz |   55.0000 |  327
+   6 |   39062.34 Hz |   55.0000 |  480
+   7 |   23274.65 Hz |   53.0000 |  286
+   8 |   36620.95 Hz |   53.0000 |  450
+   9 |   18717.37 Hz |   52.0000 |  230
+  10 |   39876.14 Hz |   51.0000 |  490
+  11 |   25634.66 Hz |   50.0000 |  315
+  12 |    8626.27 Hz |   50.0000 |  106
+  13 |   17252.54 Hz |   50.0000 |  212
+  14 |   26936.74 Hz |   48.0000 |  331
+  15 |    8300.75 Hz |   47.0000 |  102
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 19775.31 Hz (bin 243)
+  Peak magnitude: 0.40
+  Band average: 0.15
+  Peak/Average ratio: 2.65
+
+Band 40kHz (37-42 kHz):
+  Peak: 40364.42 Hz (bin 496)
+  Peak magnitude: 0.24
+  Band average: 0.12
+  Peak/Average ratio: 2.06
+
+Noise baseline (5-15 kHz):
+  Average: 0.17
+  Max: 0.51
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 2.39 (7.6 dB)
+SNR 40kHz band: 1.44 (3.2 dB)
+
+Signal detected at 20kHz: NO (SNR=2.39, Peak/Avg=2.65, Mag=0.40)
+Signal detected at 40kHz: NO (SNR=1.44, Peak/Avg=2.06, Mag=0.24)
+
+==> NO VIBRATION DETECTED (0 Hz)
+==============================
+
+[0;32mI (424244) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=13658[0m
+[0;32mI (424254) MAIN: MQTT message sent![0m
+[0;32mI (424824) mqtts: MQTT_EVENT_PUBLISHED, msg_id=13658[0m
+[0;32mI (434354) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (435174) Temperature sensor: Slot 0: 21.94 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |    6998.67 Hz |   76.0000 |   86
+   2 |   12695.26 Hz |   69.0000 |  156
+   3 |    6429.01 Hz |   63.0000 |   79
+   4 |   25146.38 Hz |   53.0000 |  309
+   5 |    5533.83 Hz |   53.0000 |   68
+   6 |   26041.56 Hz |   53.0000 |  320
+   7 |   19612.55 Hz |   52.0000 |  241
+   8 |   12125.60 Hz |   50.0000 |  149
+   9 |   33528.51 Hz |   47.0000 |  412
+  10 |   37434.75 Hz |   47.0000 |  460
+  11 |    7649.71 Hz |   46.0000 |   94
+  12 |   32145.05 Hz |   46.0000 |  395
+  13 |   31575.39 Hz |   46.0000 |  388
+  14 |   17659.43 Hz |   45.0000 |  217
+  15 |   39632.00 Hz |   42.0000 |  487
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 22216.71 Hz (bin 273)
+  Peak magnitude: 0.39
+  Band average: 0.16
+  Peak/Average ratio: 2.35
+
+Band 40kHz (37-42 kHz):
+  Peak: 39387.86 Hz (bin 484)
+  Peak magnitude: 0.29
+  Band average: 0.13
+  Peak/Average ratio: 2.20
+
+Noise baseline (5-15 kHz):
+  Average: 0.19
+  Max: 0.55
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 1.98 (5.9 dB)
+SNR 40kHz band: 1.48 (3.4 dB)
+
+Signal detected at 20kHz: NO (SNR=1.98, Peak/Avg=2.35, Mag=0.39)
+Signal detected at 40kHz: NO (SNR=1.48, Peak/Avg=2.20, Mag=0.29)
+
+==> NO VIBRATION DETECTED (0 Hz)
+==============================
+
+[0;32mI (435294) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=59416[0m
+[0;32mI (435304) MAIN: MQTT message sent![0m
+[0;32mI (436084) mqtts: MQTT_EVENT_PUBLISHED, msg_id=59416[0m
+[0;32mI (445404) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (446224) Temperature sensor: Slot 0: 22.00 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   31005.73 Hz |   60.0000 |  381
+   2 |   39143.72 Hz |   55.0000 |  481
+   3 |   18066.33 Hz |   52.0000 |  222
+   4 |   20996.01 Hz |   51.0000 |  258
+   5 |   26529.84 Hz |   50.0000 |  326
+   6 |   22460.85 Hz |   48.0000 |  276
+   7 |   38899.59 Hz |   47.0000 |  478
+   8 |   36376.81 Hz |   47.0000 |  447
+   9 |   36051.29 Hz |   47.0000 |  443
+  10 |   34260.93 Hz |   47.0000 |  421
+  11 |   19693.93 Hz |   46.0000 |  242
+  12 |   35888.53 Hz |   46.0000 |  441
+  13 |   35563.01 Hz |   46.0000 |  437
+  14 |   39550.62 Hz |   45.0000 |  486
+  15 |   26855.36 Hz |   45.0000 |  330
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 20996.01 Hz (bin 258)
+  Peak magnitude: 0.26
+  Band average: 0.13
+  Peak/Average ratio: 1.96
+
+Band 40kHz (37-42 kHz):
+  Peak: 38899.59 Hz (bin 478)
+  Peak magnitude: 0.41
+  Band average: 0.16
+  Peak/Average ratio: 2.55
+
+Noise baseline (5-15 kHz):
+  Average: 0.20
+  Max: 0.56
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 1.35 (2.6 dB)
+SNR 40kHz band: 2.09 (6.4 dB)
+
+Signal detected at 20kHz: NO (SNR=1.35, Peak/Avg=1.96, Mag=0.26)
+Signal detected at 40kHz: NO (SNR=2.09, Peak/Avg=2.55, Mag=0.41)
+
+==> NO VIBRATION DETECTED (0 Hz)
+==============================
+
+[0;32mI (446364) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=32371[0m
+[0;32mI (446374) MAIN: MQTT message sent![0m
+[0;32mI (447354) mqtts: MQTT_EVENT_PUBLISHED, msg_id=32371[0m
+[0;32mI (456474) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (457294) Temperature sensor: Slot 0: 22.00 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   29947.80 Hz |   91.0000 |  368
+   2 |   19449.79 Hz |   76.0000 |  239
+   3 |   17089.78 Hz |   65.0000 |  210
+   4 |   26204.32 Hz |   63.0000 |  322
+   5 |   11718.70 Hz |   63.0000 |  144
+   6 |   17252.54 Hz |   60.0000 |  212
+   7 |   22623.61 Hz |   55.0000 |  278
+   8 |   18310.47 Hz |   55.0000 |  225
+   9 |   24739.48 Hz |   54.0000 |  304
+  10 |    8870.41 Hz |   53.0000 |  109
+  11 |   23518.79 Hz |   52.0000 |  289
+  12 |   40120.28 Hz |   52.0000 |  493
+  13 |   31005.73 Hz |   52.0000 |  381
+  14 |   41422.36 Hz |   50.0000 |  509
+  15 |   26122.94 Hz |   50.0000 |  321
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 22135.33 Hz (bin 272)
+  Peak magnitude: 0.26
+  Band average: 0.15
+  Peak/Average ratio: 1.81
+
+Band 40kHz (37-42 kHz):
+  Peak: 39957.52 Hz (bin 491)
+  Peak magnitude: 0.48
+  Band average: 0.15
+  Peak/Average ratio: 3.15
+
+Noise baseline (5-15 kHz):
+  Average: 0.18
+  Max: 0.63
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 1.51 (3.6 dB)
+SNR 40kHz band: 2.74 (8.7 dB)
+
+Signal detected at 20kHz: NO (SNR=1.51, Peak/Avg=1.81, Mag=0.26)
+Signal detected at 40kHz: NO (SNR=2.74, Peak/Avg=3.15, Mag=0.48)
+
+==> NO VIBRATION DETECTED (0 Hz)
+==============================
+
+[0;32mI (457414) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=55042[0m
+[0;32mI (457424) MAIN: MQTT message sent![0m
+[0;32mI (457594) mqtts: MQTT_EVENT_PUBLISHED, msg_id=55042[0m
+[0;32mI (467524) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (468344) Temperature sensor: Slot 0: 22.00 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   17578.05 Hz |   93.0000 |  216
+   2 |   12125.60 Hz |   79.0000 |  149
+   3 |   10498.00 Hz |   76.0000 |  129
+   4 |    8382.13 Hz |   61.0000 |  103
+   5 |   10823.52 Hz |   55.0000 |  133
+   6 |   36620.95 Hz |   54.0000 |  450
+   7 |    7242.81 Hz |   53.0000 |   89
+   8 |   17415.29 Hz |   53.0000 |  214
+   9 |    6184.87 Hz |   51.0000 |   76
+  10 |    7649.71 Hz |   51.0000 |   94
+  11 |   14241.48 Hz |   51.0000 |  175
+  12 |    9440.07 Hz |   50.0000 |  116
+  13 |   21809.81 Hz |   48.0000 |  268
+  14 |    6266.25 Hz |   48.0000 |   77
+  15 |    6510.39 Hz |   48.0000 |   80
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 19287.03 Hz (bin 237)
+  Peak magnitude: 0.39
+  Band average: 0.12
+  Peak/Average ratio: 3.25
+
+Band 40kHz (37-42 kHz):
+  Peak: 38818.20 Hz (bin 477)
+  Peak magnitude: 0.33
+  Band average: 0.11
+  Peak/Average ratio: 2.98
+
+Noise baseline (5-15 kHz):
+  Average: 0.17
+  Max: 0.45
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 2.29 (7.2 dB)
+SNR 40kHz band: 1.91 (5.6 dB)
+
+Signal detected at 20kHz: NO (SNR=2.29, Peak/Avg=3.25, Mag=0.39)
+Signal detected at 40kHz: NO (SNR=1.91, Peak/Avg=2.98, Mag=0.33)
+
+==> NO VIBRATION DETECTED (0 Hz)
+==============================
+
+[0;32mI (468484) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=39734[0m
+[0;32mI (468494) MAIN: MQTT message sent![0m
+[0;32mI (468744) mqtts: MQTT_EVENT_PUBLISHED, msg_id=39734[0m
+[0;32mI (478594) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (479414) Temperature sensor: Slot 0: 22.00 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   38574.06 Hz |   79.0000 |  474
+   2 |   25146.38 Hz |   65.0000 |  309
+   3 |    8789.03 Hz |   64.0000 |  108
+   4 |   26367.08 Hz |   63.0000 |  324
+   5 |   32389.19 Hz |   55.0000 |  398
+   6 |   25309.14 Hz |   55.0000 |  311
+   7 |   16764.26 Hz |   54.0000 |  206
+   8 |   24576.72 Hz |   53.0000 |  302
+   9 |   38899.59 Hz |   50.0000 |  478
+  10 |   36295.43 Hz |   50.0000 |  446
+  11 |   32796.09 Hz |   50.0000 |  403
+  12 |   27425.02 Hz |   50.0000 |  337
+  13 |   34830.59 Hz |   47.0000 |  428
+  14 |   23274.65 Hz |   47.0000 |  286
+  15 |   30354.70 Hz |   46.0000 |  373
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 22298.09 Hz (bin 274)
+  Peak magnitude: 0.43
+  Band average: 0.16
+  Peak/Average ratio: 2.68
+
+Band 40kHz (37-42 kHz):
+  Peak: 37923.02 Hz (bin 466)
+  Peak magnitude: 0.29
+  Band average: 0.15
+  Peak/Average ratio: 1.97
+
+Noise baseline (5-15 kHz):
+  Average: 0.20
+  Max: 0.59
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 2.14 (6.6 dB)
+SNR 40kHz band: 1.42 (3.0 dB)
+
+Signal detected at 20kHz: NO (SNR=2.14, Peak/Avg=2.68, Mag=0.43)
+Signal detected at 40kHz: NO (SNR=1.42, Peak/Avg=1.97, Mag=0.29)
+
+==> NO VIBRATION DETECTED (0 Hz)
+==============================
+
+[0;32mI (479534) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=59986[0m
+[0;32mI (479544) MAIN: MQTT message sent![0m
+[0;32mI (480124) mqtts: MQTT_EVENT_PUBLISHED, msg_id=59986[0m
+[0;32mI (489644) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (490464) Temperature sensor: Slot 0: 22.00 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   34342.31 Hz |   67.0000 |  422
+   2 |   33447.13 Hz |   62.0000 |  411
+   3 |   37923.02 Hz |   62.0000 |  466
+   4 |    6266.25 Hz |   60.0000 |   77
+   5 |   24576.72 Hz |   53.0000 |  302
+   6 |   25960.18 Hz |   52.0000 |  319
+   7 |   29215.38 Hz |   52.0000 |  359
+   8 |   15950.46 Hz |   52.0000 |  196
+   9 |   15380.80 Hz |   51.0000 |  189
+  10 |    9765.59 Hz |   50.0000 |  120
+  11 |   34179.55 Hz |   50.0000 |  420
+  12 |   41340.98 Hz |   48.0000 |  508
+  13 |   23193.27 Hz |   47.0000 |  285
+  14 |   36051.29 Hz |   47.0000 |  443
+  15 |   13997.34 Hz |   47.0000 |  172
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 19449.79 Hz (bin 239)
+  Peak magnitude: 0.35
+  Band average: 0.14
+  Peak/Average ratio: 2.55
+
+Band 40kHz (37-42 kHz):
+  Peak: 39957.52 Hz (bin 491)
+  Peak magnitude: 0.29
+  Band average: 0.15
+  Peak/Average ratio: 1.89
+
+Noise baseline (5-15 kHz):
+  Average: 0.19
+  Max: 0.51
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 1.83 (5.2 dB)
+SNR 40kHz band: 1.53 (3.7 dB)
+
+Signal detected at 20kHz: NO (SNR=1.83, Peak/Avg=2.55, Mag=0.35)
+Signal detected at 40kHz: NO (SNR=1.53, Peak/Avg=1.89, Mag=0.29)
+
+==> NO VIBRATION DETECTED (0 Hz)
+==============================
+
+[0;32mI (490604) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=58846[0m
+[0;32mI (490614) MAIN: MQTT message sent![0m
+[0;32mI (491594) mqtts: MQTT_EVENT_PUBLISHED, msg_id=58846[0m
+[0;32mI (500714) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (501534) Temperature sensor: Slot 0: 22.00 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |    7161.43 Hz |   87.0000 |   88
+   2 |   36946.47 Hz |   69.0000 |  454
+   3 |   15706.32 Hz |   69.0000 |  193
+   4 |   16031.84 Hz |   68.0000 |  197
+   5 |    5696.59 Hz |   60.0000 |   70
+   6 |   24251.21 Hz |   59.0000 |  298
+   7 |   27506.40 Hz |   53.0000 |  338
+   8 |   34098.17 Hz |   53.0000 |  419
+   9 |   31738.15 Hz |   53.0000 |  390
+  10 |   20426.35 Hz |   52.0000 |  251
+  11 |   25309.14 Hz |   52.0000 |  311
+  12 |   10335.25 Hz |   51.0000 |  127
+  13 |   41422.36 Hz |   50.0000 |  509
+  14 |   33121.61 Hz |   50.0000 |  407
+  15 |   26611.22 Hz |   50.0000 |  327
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 20833.25 Hz (bin 256)
+  Peak magnitude: 0.40
+  Band average: 0.19
+  Peak/Average ratio: 2.04
+
+Band 40kHz (37-42 kHz):
+  Peak: 38492.68 Hz (bin 473)
+  Peak magnitude: 0.42
+  Band average: 0.15
+  Peak/Average ratio: 2.75
+
+Noise baseline (5-15 kHz):
+  Average: 0.22
+  Max: 0.56
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 1.83 (5.3 dB)
+SNR 40kHz band: 1.95 (5.8 dB)
+
+Signal detected at 20kHz: NO (SNR=1.83, Peak/Avg=2.04, Mag=0.40)
+Signal detected at 40kHz: NO (SNR=1.95, Peak/Avg=2.75, Mag=0.42)
+
+==> NO VIBRATION DETECTED (0 Hz)
+==============================
+
+[0;32mI (501654) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=44558[0m
+[0;32mI (501664) MAIN: MQTT message sent![0m
+[0;32mI (502034) mqtts: MQTT_EVENT_PUBLISHED, msg_id=44558[0m
+[0;32mI (511764) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (512584) Temperature sensor: Slot 0: 22.00 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   41015.46 Hz |   96.0000 |  504
+   2 |   29540.90 Hz |   78.0000 |  363
+   3 |   35725.77 Hz |   76.0000 |  439
+   4 |   23518.79 Hz |   74.0000 |  289
+   5 |   21402.91 Hz |   72.0000 |  263
+   6 |   30761.60 Hz |   69.0000 |  378
+   7 |   30598.84 Hz |   67.0000 |  376
+   8 |    9195.93 Hz |   64.0000 |  113
+   9 |   15055.28 Hz |   63.0000 |  185
+  10 |   27750.54 Hz |   62.0000 |  341
+  11 |   38167.16 Hz |   60.0000 |  469
+  12 |   20507.73 Hz |   60.0000 |  252
+  13 |    8137.99 Hz |   56.0000 |  100
+  14 |    8463.51 Hz |   55.0000 |  104
+  15 |   26773.98 Hz |   55.0000 |  329
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 18961.51 Hz (bin 233)
+  Peak magnitude: 0.47
+  Band average: 0.19
+  Peak/Average ratio: 2.41
+
+Band 40kHz (37-42 kHz):
+  Peak: 39632.00 Hz (bin 487)
+  Peak magnitude: 0.27
+  Band average: 0.15
+  Peak/Average ratio: 1.80
+
+Noise baseline (5-15 kHz):
+  Average: 0.25
+  Max: 0.64
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 1.88 (5.5 dB)
+SNR 40kHz band: 1.08 (0.7 dB)
+
+Signal detected at 20kHz: NO (SNR=1.88, Peak/Avg=2.41, Mag=0.47)
+Signal detected at 40kHz: NO (SNR=1.08, Peak/Avg=1.80, Mag=0.27)
+
+==> NO VIBRATION DETECTED (0 Hz)
+==============================
+
+[0;32mI (512724) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=57237[0m
+[0;32mI (512734) MAIN: MQTT message sent![0m
+[0;32mI (513294) mqtts: MQTT_EVENT_PUBLISHED, msg_id=57237[0m
+[0;32mI (522834) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (523654) Temperature sensor: Slot 0: 22.00 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   13020.78 Hz |   84.0000 |  160
+   2 |   11311.80 Hz |   78.0000 |  139
+   3 |   12125.60 Hz |   69.0000 |  149
+   4 |   33528.51 Hz |   64.0000 |  412
+   5 |   19612.55 Hz |   62.0000 |  241
+   6 |   19449.79 Hz |   61.0000 |  239
+   7 |   39143.72 Hz |   58.0000 |  481
+   8 |    5859.35 Hz |   56.0000 |   72
+   9 |   32307.81 Hz |   55.0000 |  397
+  10 |   11230.42 Hz |   53.0000 |  138
+  11 |   18717.37 Hz |   53.0000 |  230
+  12 |   25878.80 Hz |   53.0000 |  318
+  13 |   17659.43 Hz |   53.0000 |  217
+  14 |   26041.56 Hz |   53.0000 |  320
+  15 |   32633.33 Hz |   52.0000 |  401
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 19693.93 Hz (bin 242)
+  Peak magnitude: 0.32
+  Band average: 0.14
+  Peak/Average ratio: 2.33
+
+Band 40kHz (37-42 kHz):
+  Peak: 38492.68 Hz (bin 473)
+  Peak magnitude: 0.41
+  Band average: 0.14
+  Peak/Average ratio: 2.96
+
+Noise baseline (5-15 kHz):
+  Average: 0.16
+  Max: 0.42
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 2.00 (6.0 dB)
+SNR 40kHz band: 2.58 (8.2 dB)
+
+Signal detected at 20kHz: NO (SNR=2.00, Peak/Avg=2.33, Mag=0.32)
+Signal detected at 40kHz: NO (SNR=2.58, Peak/Avg=2.96, Mag=0.41)
+
+==> NO VIBRATION DETECTED (0 Hz)
+==============================
+
+[0;32mI (523774) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=14817[0m
+[0;32mI (523784) MAIN: MQTT message sent![0m
+[0;32mI (524764) mqtts: MQTT_EVENT_PUBLISHED, msg_id=14817[0m
+[0;32mI (533884) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (534704) Temperature sensor: Slot 0: 22.00 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   30842.98 Hz |   55.0000 |  379
+   2 |   10335.25 Hz |   55.0000 |  127
+   3 |   10172.49 Hz |   55.0000 |  125
+   4 |   32226.43 Hz |   52.0000 |  396
+   5 |   27913.30 Hz |   52.0000 |  343
+   6 |    9765.59 Hz |   52.0000 |  120
+   7 |   18147.71 Hz |   50.0000 |  223
+   8 |   23518.79 Hz |   50.0000 |  289
+   9 |   24739.48 Hz |   48.0000 |  304
+  10 |   20263.59 Hz |   48.0000 |  249
+  11 |    7405.57 Hz |   47.0000 |   91
+  12 |   38899.59 Hz |   47.0000 |  478
+  13 |    6591.77 Hz |   47.0000 |   81
+  14 |   32389.19 Hz |   47.0000 |  398
+  15 |   31168.50 Hz |   47.0000 |  383
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 21891.19 Hz (bin 269)
+  Peak magnitude: 0.50
+  Band average: 0.18
+  Peak/Average ratio: 2.80
+
+Band 40kHz (37-42 kHz):
+  Peak: 40120.28 Hz (bin 493)
+  Peak magnitude: 0.26
+  Band average: 0.13
+  Peak/Average ratio: 1.97
+
+Noise baseline (5-15 kHz):
+  Average: 0.21
+  Max: 0.56
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 2.42 (7.7 dB)
+SNR 40kHz band: 1.24 (1.9 dB)
+
+Signal detected at 20kHz: YES (SNR=2.42, Peak/Avg=2.80, Mag=0.50)
+Signal detected at 40kHz: NO (SNR=1.24, Peak/Avg=1.97, Mag=0.26)
+
+==> DETECTED: 20 kHz TRANSDUCER ACTIVE
+    Frequency: 21891.19 Hz
+==============================
+
+[0;32mI (534844) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=12211[0m
+[0;32mI (534854) MAIN: MQTT message sent![0m
+[0;32mI (535004) mqtts: MQTT_EVENT_PUBLISHED, msg_id=12211[0m
+[0;32mI (544954) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (545774) Temperature sensor: Slot 0: 22.00 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   20182.21 Hz |   65.0000 |  248
+   2 |   36051.29 Hz |   63.0000 |  443
+   3 |   21972.57 Hz |   63.0000 |  270
+   4 |   40608.56 Hz |   61.0000 |  499
+   5 |   30842.98 Hz |   54.0000 |  379
+   6 |   18717.37 Hz |   53.0000 |  230
+   7 |   34830.59 Hz |   53.0000 |  428
+   8 |    8056.61 Hz |   53.0000 |   99
+   9 |   28564.34 Hz |   52.0000 |  351
+  10 |   41178.22 Hz |   51.0000 |  506
+  11 |   30110.56 Hz |   50.0000 |  370
+  12 |   33040.23 Hz |   50.0000 |  406
+  13 |   38085.79 Hz |   48.0000 |  468
+  14 |   41259.60 Hz |   48.0000 |  507
+  15 |   23030.51 Hz |   47.0000 |  283
+
+
+Applying notch filter at bin 509 (41-42 kHz)
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 19856.69 Hz (bin 244)
+  Peak magnitude: 0.36
+  Band average: 0.13
+  Peak/Average ratio: 2.86
+
+Band 40kHz (37-42 kHz):
+  Peak: 40201.66 Hz (bin 494)
+  Peak magnitude: 0.25
+  Band average: 0.12
+  Peak/Average ratio: 2.07
+
+Noise baseline (5-15 kHz):
+  Average: 0.20
+  Max: 0.59
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 1.78 (5.0 dB)
+SNR 40kHz band: 1.21 (1.6 dB)
+
+Signal detected at 20kHz: NO (SNR=1.78, Peak/Avg=2.86, Mag=0.36)
+Signal detected at 40kHz: NO (SNR=1.21, Peak/Avg=2.07, Mag=0.25)
+
+==> NO VIBRATION DETECTED (0 Hz)
+==============================
+
+[0;32mI (545894) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=157[0m
+[0;32mI (545904) MAIN: MQTT message sent![0m
+[0;32mI (546184) mqtts: MQTT_EVENT_PUBLISHED, msg_id=157[0m

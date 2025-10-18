@@ -11,7 +11,6 @@
 #include "esp_adc/adc_continuous.h"
 #include <cstring>
 #include <cmath>
-
 #define MAX_SAMPLING_FREQUENCY SOC_ADC_SAMPLE_FREQ_THRES_HIGH
 
 
@@ -25,6 +24,7 @@ class FFT_ultrasonic {
         void begin(uint8_t ADC_channel, uint8_t ADC_unit, uint32_t sampling_frequency, int num_samples);
         int getMaxFrequencyFFT();
         float* read_and_get_data_fixed_samples();
+
 
     private:
 

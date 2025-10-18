@@ -1,0 +1,769 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d9c
+entry 0x403c9914
+[0;32mI (27) boot: ESP-IDF v5.2.2 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Oct 17 2025 19:46:11[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=35278h (217720) map[0m
+[0;32mI (138) esp_image: segment 1: paddr=000452a0 vaddr=3fc9b300 size=04880h ( 18560) load[0m
+[0;32mI (142) esp_image: segment 2: paddr=00049b28 vaddr=40374000 size=064f0h ( 25840) load[0m
+[0;32mI (150) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=b4e10h (740880) map[0m
+[0;32mI (285) esp_image: segment 4: paddr=00104e38 vaddr=4037a4f0 size=10d6ch ( 68972) load[0m
+[0;32mI (310) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (310) boot: Disabling RNG early entropy source...[0m
+[0;32mI (322) cpu_start: Multicore app[0m
+[0;32mI (331) cpu_start: Pro cpu start user code[0m
+[0;32mI (331) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (332) cpu_start: Application information:[0m
+[0;32mI (334) cpu_start: Project name:     esp_node[0m
+[0;32mI (340) cpu_start: App version:      5129bb6-dirty[0m
+[0;32mI (345) cpu_start: Compile time:     Oct 17 2025 19:46:08[0m
+[0;32mI (351) cpu_start: ELF file SHA256:  6d55eae8d...[0m
+[0;32mI (356) cpu_start: ESP-IDF:          v5.2.2[0m
+[0;32mI (361) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (366) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (371) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (376) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (383) heap_init: At 3FCA3D90 len 00045980 (278 KiB): RAM[0m
+[0;32mI (389) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (395) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (401) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (408) spi_flash: detected chip: gd[0m
+[0;32mI (412) spi_flash: flash io: dio[0m
+[0;33mW (416) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (430) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (436) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (443) main_task: Started on CPU0[0m
+[0;32mI (453) main_task: Calling app_main()[0m
+[0;32mI (453) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (463) PWM: PWM inizializzato: GPIO 2, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (473) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (473) PWM: PWM inizializzato: GPIO 3, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (483) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (493) PWM: PWM inizializzato: GPIO 4, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (503) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (503) PWM: PWM inizializzato: GPIO 1, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (513) PWM: Cambio frequenza: 40000 -> 1300 Hz, risoluzione: 8 -> 13 bit[0m
+[0;32mI (523) PWM: Timer riconfigurato: 1300 Hz, 13 bit (8192 livelli)[0m
+Imposto duty: 0 / 8192 (risoluzione: 13 bit)
+[0;32mI (533) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/8192)[0m
+[0;32mI (543) PWM: Cambio frequenza: 40000 -> 1300 Hz, risoluzione: 8 -> 13 bit[0m
+[0;32mI (553) PWM: Timer riconfigurato: 1300 Hz, 13 bit (8192 livelli)[0m
+Imposto duty: 0 / 8192 (risoluzione: 13 bit)
+[0;32mI (563) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/8192)[0m
+[0;32mI (563) gpio: GPIO[26]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (573) gpio: GPIO[26]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (583) Temperature sensor: Bus inizializzato su GPIO 26[0m
+[0;32mI (703) Temperature sensor: Slot 0: BA00000046755428[0m
+[0;32mI (703) Temperature sensor: Trovati 1 nuovi (totale 1)[0m
+[0;32mI (703) MAIN: Inizializzati 1 sensori[0m
+[0;32mI (733) wifi: ESP_WIFI_MODE_STA[0m
+[0;32mI (733) pp: pp rom version: e7ae62f[0m
+[0;32mI (733) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (743) wifi:wifi driver task: 3fcb15d8, prio:23, stack:6656, core=0[0m
+[0;32mI (753) wifi:wifi firmware version: 3e0076f[0m
+[0;32mI (753) wifi:wifi certification version: v7.0[0m
+[0;32mI (753) wifi:config NVS flash: enabled[0m
+[0;32mI (753) wifi:config nano formating: disabled[0m
+[0;32mI (753) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (763) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (763) wifi:Init management short buffer num: 32[0m
+[0;32mI (773) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (773) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (783) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (783) wifi:Init static rx buffer num: 10[0m
+[0;32mI (783) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (793) wifi_init: rx ba win: 6[0m
+[0;32mI (793) wifi_init: tcpip mbox: 32[0m
+[0;32mI (803) wifi_init: udp mbox: 6[0m
+[0;32mI (803) wifi_init: tcp mbox: 6[0m
+[0;32mI (803) wifi_init: tcp tx win: 5760[0m
+[0;32mI (813) wifi_init: tcp rx win: 5760[0m
+[0;32mI (813) wifi_init: tcp mss: 1440[0m
+[0;32mI (823) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (823) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (833) phy_init: phy_version 670,b7bc9b9,Apr 30 2024,10:54:13[0m
+[0;32mI (873) wifi:mode : sta (34:b7:da:54:35:28)[0m
+[0;32mI (873) wifi:enable tsf[0m
+[0;32mI (883) wifi: wifi_init_sta finished.[0m
+[0;32mI (2093) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (2093) wifi:state: init -> auth (b0)[0m
+[0;32mI (2113) wifi:state: auth -> assoc (0)[0m
+[0;32mI (2143) wifi:state: assoc -> run (10)[0m
+[0;32mI (2173) wifi:connected with Oneplus, aid = 1, channel 11, BW20, bssid = ba:7e:6d:57:2c:9d[0m
+[0;32mI (2173) wifi:security: WPA2-PSK, phy: bgn, rssi: -42[0m
+[0;32mI (2193) wifi:pm start, type: 1[0m
+
+[0;32mI (2193) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (2193) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (2203) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (2203) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (2313) wifi:<ba-add>idx:0 (ifx:0, ba:7e:6d:57:2c:9d), tid:0, ssn:1, winSize:64[0m
+[0;32mI (3213) esp_netif_handlers: sta ip: 10.121.56.118, mask: 255.255.255.0, gw: 10.121.56.100[0m
+[0;32mI (3213) wifi: got ip:10.121.56.118[0m
+[0;32mI (3213) wifi: connected to ap SSID:Oneplus password:123456789[0m
+[0;32mI (3223) MAIN: WIFI connected![0m
+[0;32mI (3223) mqtts: MqttWrapper created with client_id: 34B7DA543528[0m
+[0;32mI (3233) mqtts: [APP] Free memory: 262592 bytes[0m
+[0;32mI (3233) mqtts: Other event id:7[0m
+[0;32mI (4613) mqtts: MQTT_EVENT_CONNECTED[0m
+[0;32mI (4613) mqtts: Subscribed to 34B7DA543528/downlink, msg_id=43897[0m
+[0;32mI (4653) mqtts: MQTT_EVENT_SUBSCRIBED, msg_id=43897[0m
+[0;32mI (4743) MAIN: MQTT connected! System running in background...[0m
+[0;32mI (4743) MAIN: Initializing SNTP[0m
+[0;32mI (4743) MAIN: Waiting for time sync... (1/20)[0m
+[0;32mI (5743) MAIN: Waiting for time sync... (2/20)[0m
+[0;32mI (6743) MAIN: Waiting for time sync... (3/20)[0m
+[0;32mI (7743) MAIN: Waiting for time sync... (4/20)[0m
+[0;32mI (8743) MAIN: Waiting for time sync... (5/20)[0m
+[0;32mI (9743) MAIN: Time synchronized: Sat Oct 18 20:43:09 2025
+[0m
+[0;32mI (9743) FFT: sampling rate too high, the maximum sampling rate will be used: 83333[0m
+[0;32mI (9743) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (9863) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (10673) Temperature sensor: Slot 0: 22.25 °C[0m
+[0;32mI (10713) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (10713) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=12114[0m
+[0;32mI (10713) MAIN: MQTT message sent![0m
+[0;32mI (11933) mqtts: MQTT_EVENT_PUBLISHED, msg_id=12114[0m
+[0;32mI (19003) mqtts: MQTT_EVENT_DATA[0m
+TOPIC=34B7DA543528/downlink
+DATA={"frequency":20.0,"duty_frequency":100.0,"temperature":17.5,"finish_after":0.13,"startTime":null}
+[0;32mI (19003) MAIN: === Message received in MAIN ===[0m
+[0;32mI (19013) MAIN: Topic: 34B7DA543528/downlink[0m
+[0;32mI (19013) MAIN: Data: {"frequency":20.0,"duty_frequency":100.0,"temperature":17.5,"finish_after":0.13,"startTime":null}[0m
+[0;32mI (19023) MAIN: Start timestamp is 0 or past, executing immediately[0m
+[0;32mI (19033) MAIN: Timer triggered! Executing scheduled action...[0m
+Imposto duty: 0 / 8192 (risoluzione: 13 bit)
+[0;32mI (19043) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/8192)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (19053) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+[0;32mI (19063) PWM: Cambio frequenza: 40000 -> 21700 Hz, risoluzione: 8 -> 9 bit[0m
+[0;32mI (19073) PWM: Timer riconfigurato: 21700 Hz, 9 bit (512 livelli)[0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (19083) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 256 / 512 (risoluzione: 9 bit)
+[0;32mI (19093) PWM: Hardware PWM duty: 50.00% richiesto -> 50.10% effettivo (256/512)[0m
+Imposto duty: 8191 / 8192 (risoluzione: 13 bit)
+[0;32mI (19103) PWM: Hardware PWM duty: 100.00% richiesto -> 100.00% effettivo (8191/8192)[0m
+[0;32mI (19113) MAIN: Expiry timer set for 0.13 hours (total 467 seconds from now)[0m
+[0;32mI (19123) MAIN: status updated and timer started[0m
+[0;32mI (20823) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (21643) Temperature sensor: Slot 0: 22.25 °C[0m
+[0;32mI (21653) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (21653) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=42472[0m
+[0;32mI (21653) MAIN: MQTT message sent![0m
+[0;32mI (22403) mqtts: MQTT_EVENT_PUBLISHED, msg_id=42472[0m
+[0;32mI (31763) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (32583) Temperature sensor: Slot 0: 22.25 °C[0m
+[0;32mI (32613) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (32613) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=17655[0m
+[0;32mI (32623) MAIN: MQTT message sent![0m
+[0;32mI (33643) mqtts: MQTT_EVENT_PUBLISHED, msg_id=17655[0m
+[0;32mI (42723) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (43543) Temperature sensor: Slot 0: 22.25 °C[0m
+[0;32mI (43553) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (43553) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=27038[0m
+[0;32mI (43553) MAIN: MQTT message sent![0m
+[0;32mI (44083) mqtts: MQTT_EVENT_PUBLISHED, msg_id=27038[0m
+[0;32mI (53663) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (54483) Temperature sensor: Slot 0: 22.25 °C[0m
+[0;32mI (54513) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (54513) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=35408[0m
+[0;32mI (54523) MAIN: MQTT message sent![0m
+[0;32mI (55243) mqtts: MQTT_EVENT_PUBLISHED, msg_id=35408[0m
+[0;32mI (64623) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (65443) Temperature sensor: Slot 0: 22.25 °C[0m
+[0;32mI (65453) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (65453) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=50673[0m
+[0;32mI (65453) MAIN: MQTT message sent![0m
+[0;32mI (65793) mqtts: MQTT_EVENT_PUBLISHED, msg_id=50673[0m
+[0;32mI (75563) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (76383) Temperature sensor: Slot 0: 22.25 °C[0m
+[0;32mI (76413) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (76413) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=17113[0m
+[0;32mI (76413) MAIN: MQTT message sent![0m
+[0;32mI (77263) mqtts: MQTT_EVENT_PUBLISHED, msg_id=17113[0m
+[0;32mI (86523) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (87343) Temperature sensor: Slot 0: 22.25 °C[0m
+[0;32mI (87353) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (87353) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=51334[0m
+[0;32mI (87353) MAIN: MQTT message sent![0m
+[0;32mI (87703) mqtts: MQTT_EVENT_PUBLISHED, msg_id=51334[0m
+[0;32mI (97463) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (98283) Temperature sensor: Slot 0: 22.25 °C[0m
+[0;32mI (98313) FFT: Dominant Frequency: 21647.05 Hz, Magnitude: 149.6131, SNR: 94.41[0m
+[0;32mI (98313) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=4205[0m
+[0;32mI (98323) MAIN: MQTT message sent![0m
+[0;32mI (98973) mqtts: MQTT_EVENT_PUBLISHED, msg_id=4205[0m
+[0;32mI (108423) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (109243) Temperature sensor: Slot 0: 22.25 °C[0m
+[0;32mI (109253) FFT: Dominant Frequency: 21647.05 Hz, Magnitude: 143.1604, SNR: 83.81[0m
+[0;32mI (109253) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=62257[0m
+[0;32mI (109263) MAIN: MQTT message sent![0m
+[0;32mI (110233) mqtts: MQTT_EVENT_PUBLISHED, msg_id=62257[0m
+[0;32mI (119363) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (120183) Temperature sensor: Slot 0: 22.25 °C[0m
+[0;32mI (120213) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (120213) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=6676[0m
+[0;32mI (120213) MAIN: MQTT message sent![0m
+[0;32mI (120673) mqtts: MQTT_EVENT_PUBLISHED, msg_id=6676[0m
+[0;32mI (130323) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (131143) Temperature sensor: Slot 0: 22.25 °C[0m
+[0;32mI (131153) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (131153) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=9329[0m
+[0;32mI (131153) MAIN: MQTT message sent![0m
+[0;32mI (132113) mqtts: MQTT_EVENT_PUBLISHED, msg_id=9329[0m
+[0;32mI (141263) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (142083) Temperature sensor: Slot 0: 22.25 °C[0m
+[0;32mI (142113) FFT: Dominant Frequency: 21647.05 Hz, Magnitude: 148.1931, SNR: 84.51[0m
+[0;32mI (142113) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=5169[0m
+[0;32mI (142123) MAIN: MQTT message sent![0m
+[0;32mI (142593) mqtts: MQTT_EVENT_PUBLISHED, msg_id=5169[0m
+[0;32mI (152223) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (153043) Temperature sensor: Slot 0: 22.25 °C[0m
+[0;33mW (153053) FFT: Found a frequency with high interference: 21728.43 Hz, SNR: 81.26, Magnitude: 133.8129[0m
+[0;32mI (153053) FFT: Dominant Frequency: 21647.05 Hz, Magnitude: 151.3683, SNR: 91.92[0m
+[0;32mI (153063) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=45883[0m
+[0;32mI (153073) MAIN: MQTT message sent![0m
+[0;32mI (154063) mqtts: MQTT_EVENT_PUBLISHED, msg_id=45883[0m
+[0;32mI (163173) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (163993) Temperature sensor: Slot 0: 22.25 °C[0m
+[0;32mI (164023) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (164023) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=60897[0m
+[0;32mI (164023) MAIN: MQTT message sent![0m
+[0;32mI (164503) mqtts: MQTT_EVENT_PUBLISHED, msg_id=60897[0m
+[0;32mI (174133) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (174953) Temperature sensor: Slot 0: 22.25 °C[0m
+[0;32mI (174963) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (174963) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=36045[0m
+[0;32mI (174963) MAIN: MQTT message sent![0m
+[0;32mI (175763) mqtts: MQTT_EVENT_PUBLISHED, msg_id=36045[0m
+[0;32mI (185073) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (185893) Temperature sensor: Slot 0: 22.25 °C[0m
+[0;32mI (185923) FFT: Dominant Frequency: 21647.05 Hz, Magnitude: 134.7014, SNR: 82.64[0m
+[0;32mI (185923) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=40065[0m
+[0;32mI (185933) MAIN: MQTT message sent![0m
+[0;32mI (187233) mqtts: MQTT_EVENT_PUBLISHED, msg_id=40065[0m
+[0;32mI (196033) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (196853) Temperature sensor: Slot 0: 22.25 °C[0m
+[0;32mI (196863) FFT: Dominant Frequency: 21647.05 Hz, Magnitude: 135.2053, SNR: 90.79[0m
+[0;32mI (196863) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=16399[0m
+[0;32mI (196873) MAIN: MQTT message sent![0m
+[0;32mI (197883) mqtts: MQTT_EVENT_DATA[0m
+TOPIC=34B7DA543528/downlink
+DATA={"frequency":20.0,"duty_frequency":50.0,"temperature":17.5,"finish_after":0.13,"startTime":null}
+[0;32mI (197893) MAIN: === Message received in MAIN ===[0m
+[0;32mI (197893) MAIN: Topic: 34B7DA543528/downlink[0m
+[0;32mI (197903) MAIN: Data: {"frequency":20.0,"duty_frequency":50.0,"temperature":17.5,"finish_after":0.13,"startTime":null}[0m
+[0;32mI (197913) MAIN: Expiry timer triggered! Schedule has expired![0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (197923) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (197933) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 8192 (risoluzione: 13 bit)
+[0;32mI (197943) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/8192)[0m
+Imposto duty: 0 / 8192 (risoluzione: 13 bit)
+[0;32mI (197953) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/8192)[0m
+[0;32mI (197963) MAIN: Previous expiry timer deleted[0m
+[0;32mI (197973) MAIN: Start timestamp is 0 or past, executing immediately[0m
+[0;32mI (197973) MAIN: Timer triggered! Executing scheduled action...[0m
+Imposto duty: 0 / 8192 (risoluzione: 13 bit)
+[0;32mI (197993) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/8192)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (198003) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+[0;32mI (198013) PWM: Cambio frequenza: 21700 -> 21700 Hz, risoluzione: 9 -> 9 bit[0m
+[0;32mI (198013) PWM: Timer riconfigurato: 21700 Hz, 9 bit (512 livelli)[0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (198023) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 256 / 512 (risoluzione: 9 bit)
+[0;32mI (198033) PWM: Hardware PWM duty: 50.00% richiesto -> 50.10% effettivo (256/512)[0m
+Imposto duty: 4096 / 8192 (risoluzione: 13 bit)
+[0;32mI (198053) PWM: Hardware PWM duty: 50.00% richiesto -> 50.01% effettivo (4096/8192)[0m
+[0;32mI (198063) MAIN: Expiry timer set for 0.13 hours (total 467 seconds from now)[0m
+[0;32mI (198063) MAIN: status updated and timer started[0m
+[0;32mI (198083) mqtts: MQTT_EVENT_PUBLISHED, msg_id=16399[0m
+[0;32mI (206973) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (207793) Temperature sensor: Slot 0: 22.25 °C[0m
+[0;32mI (207823) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (207823) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=1977[0m
+[0;32mI (207823) MAIN: MQTT message sent![0m
+[0;32mI (208943) mqtts: MQTT_EVENT_PUBLISHED, msg_id=1977[0m
+[0;32mI (217933) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (218753) Temperature sensor: Slot 0: 22.25 °C[0m
+[0;32mI (218763) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (218773) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=23679[0m
+[0;32mI (218773) MAIN: MQTT message sent![0m
+[0;32mI (219393) mqtts: MQTT_EVENT_PUBLISHED, msg_id=23679[0m
+[0;32mI (228873) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (229693) Temperature sensor: Slot 0: 22.25 °C[0m
+[0;32mI (229723) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (229723) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=30622[0m
+[0;32mI (229723) MAIN: MQTT message sent![0m
+[0;32mI (230653) mqtts: MQTT_EVENT_PUBLISHED, msg_id=30622[0m
+[0;32mI (239833) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (240653) Temperature sensor: Slot 0: 22.25 °C[0m
+[0;32mI (240663) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (240663) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=10440[0m
+[0;32mI (240663) MAIN: MQTT message sent![0m
+[0;32mI (241093) mqtts: MQTT_EVENT_PUBLISHED, msg_id=10440[0m
+[0;32mI (250773) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (251593) Temperature sensor: Slot 0: 22.25 °C[0m
+[0;32mI (251623) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (251623) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=6800[0m
+[0;32mI (251623) MAIN: MQTT message sent![0m
+[0;32mI (252783) mqtts: MQTT_EVENT_PUBLISHED, msg_id=6800[0m
+[0;32mI (254303) mqtts: MQTT_EVENT_DATA[0m
+TOPIC=34B7DA543528/downlink
+DATA={"frequency":20.0,"duty_frequency":80.0,"temperature":17.5,"finish_after":0.13,"startTime":null}
+[0;32mI (254313) MAIN: === Message received in MAIN ===[0m
+[0;32mI (254313) MAIN: Topic: 34B7DA543528/downlink[0m
+[0;32mI (254323) MAIN: Data: {"frequency":20.0,"duty_frequency":80.0,"temperature":17.5,"finish_after":0.13,"startTime":null}[0m
+[0;32mI (254333) MAIN: Expiry timer triggered! Schedule has expired![0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (254343) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (254353) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 8192 (risoluzione: 13 bit)
+[0;32mI (254363) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/8192)[0m
+Imposto duty: 0 / 8192 (risoluzione: 13 bit)
+[0;32mI (254383) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/8192)[0m
+[0;32mI (254383) MAIN: Previous expiry timer deleted[0m
+[0;32mI (254393) MAIN: Start timestamp is 0 or past, executing immediately[0m
+[0;32mI (254403) MAIN: Timer triggered! Executing scheduled action...[0m
+Imposto duty: 0 / 8192 (risoluzione: 13 bit)
+[0;32mI (254413) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/8192)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (254423) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+[0;32mI (254433) PWM: Cambio frequenza: 21700 -> 21700 Hz, risoluzione: 9 -> 9 bit[0m
+[0;32mI (254433) PWM: Timer riconfigurato: 21700 Hz, 9 bit (512 livelli)[0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (254443) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 256 / 512 (risoluzione: 9 bit)
+[0;32mI (254463) PWM: Hardware PWM duty: 50.00% richiesto -> 50.10% effettivo (256/512)[0m
+Imposto duty: 6553 / 8192 (risoluzione: 13 bit)
+[0;32mI (254473) PWM: Hardware PWM duty: 80.00% richiesto -> 80.00% effettivo (6553/8192)[0m
+[0;32mI (254483) MAIN: Expiry timer set for 0.13 hours (total 467 seconds from now)[0m
+[0;32mI (254483) MAIN: status updated and timer started[0m
+[0;32mI (261733) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (262553) Temperature sensor: Slot 0: 22.25 °C[0m
+[0;32mI (262563) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (262563) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=25546[0m
+[0;32mI (262563) MAIN: MQTT message sent![0m
+[0;32mI (262803) mqtts: MQTT_EVENT_PUBLISHED, msg_id=25546[0m
+[0;32mI (272673) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (273493) Temperature sensor: Slot 0: 22.25 °C[0m
+[0;32mI (273523) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (273523) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=51216[0m
+[0;32mI (273523) MAIN: MQTT message sent![0m
+[0;32mI (273963) mqtts: MQTT_EVENT_PUBLISHED, msg_id=51216[0m
+[0;32mI (283633) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (284453) Temperature sensor: Slot 0: 22.25 °C[0m
+[0;32mI (284463) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (284463) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=2106[0m
+[0;32mI (284463) MAIN: MQTT message sent![0m
+[0;32mI (285233) mqtts: MQTT_EVENT_PUBLISHED, msg_id=2106[0m
+[0;32mI (294573) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (295393) Temperature sensor: Slot 0: 22.31 °C[0m
+[0;32mI (295423) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (295423) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=11823[0m
+[0;32mI (295423) MAIN: MQTT message sent![0m
+[0;32mI (296593) mqtts: MQTT_EVENT_PUBLISHED, msg_id=11823[0m
+[0;32mI (299463) mqtts: MQTT_EVENT_DATA[0m
+TOPIC=34B7DA543528/downlink
+DATA={"frequency":20.0,"duty_frequency":90.0,"temperature":17.5,"finish_after":0.13,"startTime":null}
+[0;32mI (299463) MAIN: === Message received in MAIN ===[0m
+[0;32mI (299473) MAIN: Topic: 34B7DA543528/downlink[0m
+[0;32mI (299473) MAIN: Data: {"frequency":20.0,"duty_frequency":90.0,"temperature":17.5,"finish_after":0.13,"startTime":null}[0m
+[0;32mI (299493) MAIN: Expiry timer triggered! Schedule has expired![0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (299503) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (299513) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 8192 (risoluzione: 13 bit)
+[0;32mI (299523) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/8192)[0m
+Imposto duty: 0 / 8192 (risoluzione: 13 bit)
+[0;32mI (299533) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/8192)[0m
+[0;32mI (299543) MAIN: Previous expiry timer deleted[0m
+[0;32mI (299543) MAIN: Start timestamp is 0 or past, executing immediately[0m
+[0;32mI (299553) MAIN: Timer triggered! Executing scheduled action...[0m
+Imposto duty: 0 / 8192 (risoluzione: 13 bit)
+[0;32mI (299563) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/8192)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (299573) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+[0;32mI (299583) PWM: Cambio frequenza: 21700 -> 21700 Hz, risoluzione: 9 -> 9 bit[0m
+[0;32mI (299593) PWM: Timer riconfigurato: 21700 Hz, 9 bit (512 livelli)[0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (299603) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 256 / 512 (risoluzione: 9 bit)
+[0;32mI (299613) PWM: Hardware PWM duty: 50.00% richiesto -> 50.10% effettivo (256/512)[0m
+Imposto duty: 7372 / 8192 (risoluzione: 13 bit)
+[0;32mI (299623) PWM: Hardware PWM duty: 90.00% richiesto -> 90.00% effettivo (7372/8192)[0m
+[0;32mI (299633) MAIN: Expiry timer set for 0.13 hours (total 467 seconds from now)[0m
+[0;32mI (299643) MAIN: status updated and timer started[0m
+[0;32mI (305533) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (306353) Temperature sensor: Slot 0: 22.25 °C[0m
+[0;32mI (306363) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (306363) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=52607[0m
+[0;32mI (306363) MAIN: MQTT message sent![0m
+[0;32mI (307043) mqtts: MQTT_EVENT_PUBLISHED, msg_id=52607[0m
+[0;32mI (316473) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (317293) Temperature sensor: Slot 0: 22.25 °C[0m
+[0;32mI (317323) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (317323) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=47797[0m
+[0;32mI (317323) MAIN: MQTT message sent![0m
+[0;32mI (317693) mqtts: MQTT_EVENT_PUBLISHED, msg_id=47797[0m
+[0;32mI (327433) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (328253) Temperature sensor: Slot 0: 22.31 °C[0m
+[0;32mI (328263) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (328263) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=47511[0m
+[0;32mI (328263) MAIN: MQTT message sent![0m
+[0;32mI (328953) mqtts: MQTT_EVENT_PUBLISHED, msg_id=47511[0m
+[0;32mI (338373) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (339193) Temperature sensor: Slot 0: 22.25 °C[0m
+[0;32mI (339223) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (339223) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=20173[0m
+[0;32mI (339223) MAIN: MQTT message sent![0m
+[0;32mI (340423) mqtts: MQTT_EVENT_PUBLISHED, msg_id=20173[0m
+[0;32mI (344723) mqtts: MQTT_EVENT_DATA[0m
+TOPIC=34B7DA543528/downlink
+DATA={"frequency":20.0,"duty_frequency":100.0,"temperature":17.5,"finish_after":0.13,"startTime":null}
+[0;32mI (344733) MAIN: === Message received in MAIN ===[0m
+[0;32mI (344733) MAIN: Topic: 34B7DA543528/downlink[0m
+[0;32mI (344743) MAIN: Data: {"frequency":20.0,"duty_frequency":100.0,"temperature":17.5,"finish_after":0.13,"startTime":null}[0m
+[0;32mI (344753) MAIN: Expiry timer triggered! Schedule has expired![0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (344763) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (344773) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 8192 (risoluzione: 13 bit)
+[0;32mI (344783) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/8192)[0m
+Imposto duty: 0 / 8192 (risoluzione: 13 bit)
+[0;32mI (344793) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/8192)[0m
+[0;32mI (344803) MAIN: Previous expiry timer deleted[0m
+[0;32mI (344813) MAIN: Start timestamp is 0 or past, executing immediately[0m
+[0;32mI (344813) MAIN: Timer triggered! Executing scheduled action...[0m
+Imposto duty: 0 / 8192 (risoluzione: 13 bit)
+[0;32mI (344823) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/8192)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (344843) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+[0;32mI (344853) PWM: Cambio frequenza: 21700 -> 21700 Hz, risoluzione: 9 -> 9 bit[0m
+[0;32mI (344853) PWM: Timer riconfigurato: 21700 Hz, 9 bit (512 livelli)[0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (344863) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 256 / 512 (risoluzione: 9 bit)
+[0;32mI (344873) PWM: Hardware PWM duty: 50.00% richiesto -> 50.10% effettivo (256/512)[0m
+Imposto duty: 8191 / 8192 (risoluzione: 13 bit)
+[0;32mI (344893) PWM: Hardware PWM duty: 100.00% richiesto -> 100.00% effettivo (8191/8192)[0m
+[0;32mI (344903) MAIN: Expiry timer set for 0.13 hours (total 467 seconds from now)[0m
+[0;32mI (344903) MAIN: status updated and timer started[0m
+[0;32mI (349333) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (350153) Temperature sensor: Slot 0: 22.25 °C[0m
+[0;32mI (350163) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (350163) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=5827[0m
+[0;32mI (350163) MAIN: MQTT message sent![0m
+[0;32mI (351273) mqtts: MQTT_EVENT_PUBLISHED, msg_id=5827[0m
+[0;32mI (360273) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (361093) Temperature sensor: Slot 0: 22.25 °C[0m
+[0;32mI (361123) FFT: Dominant Frequency: 21647.05 Hz, Magnitude: 137.1607, SNR: 94.83[0m
+[0;32mI (361123) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=7143[0m
+[0;32mI (361133) MAIN: MQTT message sent![0m
+[0;32mI (361723) mqtts: MQTT_EVENT_PUBLISHED, msg_id=7143[0m
+[0;32mI (371233) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (372053) Temperature sensor: Slot 0: 22.25 °C[0m
+[0;32mI (372063) FFT: Dominant Frequency: 21647.05 Hz, Magnitude: 129.5410, SNR: 82.77[0m
+[0;32mI (372063) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=57970[0m
+[0;32mI (372073) MAIN: MQTT message sent![0m
+[0;32mI (372263) mqtts: MQTT_EVENT_PUBLISHED, msg_id=57970[0m
+[0;32mI (375443) mqtts: MQTT_EVENT_DATA[0m
+TOPIC=34B7DA543528/downlink
+DATA={"frequency":0.0,"duty_frequency":100.0,"temperature":17.5,"finish_after":0.13,"startTime":null}
+[0;32mI (375453) MAIN: === Message received in MAIN ===[0m
+[0;32mI (375453) MAIN: Topic: 34B7DA543528/downlink[0m
+[0;32mI (375463) MAIN: Data: {"frequency":0.0,"duty_frequency":100.0,"temperature":17.5,"finish_after":0.13,"startTime":null}[0m
+[0;32mI (375473) MAIN: Expiry timer triggered! Schedule has expired![0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (375483) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (375493) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 8192 (risoluzione: 13 bit)
+[0;32mI (375503) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/8192)[0m
+Imposto duty: 0 / 8192 (risoluzione: 13 bit)
+[0;32mI (375513) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/8192)[0m
+[0;32mI (375523) MAIN: Previous expiry timer deleted[0m
+[0;32mI (375533) MAIN: Start timestamp is 0 or past, executing immediately[0m
+[0;32mI (375533) MAIN: Timer triggered! Executing scheduled action...[0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (375543) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (375563) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 8192 (risoluzione: 13 bit)
+[0;32mI (375573) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/8192)[0m
+Imposto duty: 0 / 8192 (risoluzione: 13 bit)
+[0;32mI (375583) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/8192)[0m
+[0;32mI (375593) MAIN: Expiry timer set for 0.13 hours (total 467 seconds from now)[0m
+[0;32mI (375593) MAIN: status updated and timer started[0m
+[0;32mI (382173) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (382993) Temperature sensor: Slot 0: 22.31 °C[0m
+[0;32mI (383023) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (383023) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=4664[0m
+[0;32mI (383023) MAIN: MQTT message sent![0m
+[0;32mI (383743) mqtts: MQTT_EVENT_PUBLISHED, msg_id=4664[0m
+[0;32mI (393133) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (393953) Temperature sensor: Slot 0: 22.31 °C[0m
+[0;32mI (393963) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (393963) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=14729[0m
+[0;32mI (393963) MAIN: MQTT message sent![0m
+[0;32mI (395103) mqtts: MQTT_EVENT_PUBLISHED, msg_id=14729[0m
+[0;32mI (404073) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (404893) Temperature sensor: Slot 0: 22.25 °C[0m
+[0;32mI (404923) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (404933) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=18596[0m
+[0;32mI (404933) MAIN: MQTT message sent![0m
+[0;32mI (405253) mqtts: MQTT_EVENT_PUBLISHED, msg_id=18596[0m
+[0;32mI (415033) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (415853) Temperature sensor: Slot 0: 22.25 °C[0m
+[0;32mI (415863) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (415863) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=17814[0m
+[0;32mI (415863) MAIN: MQTT message sent![0m
+[0;32mI (416813) mqtts: MQTT_EVENT_PUBLISHED, msg_id=17814[0m
+[0;32mI (425973) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (426793) Temperature sensor: Slot 0: 22.25 °C[0m
+[0;32mI (426823) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (426823) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=47549[0m
+[0;32mI (426823) MAIN: MQTT message sent![0m
+[0;32mI (427253) mqtts: MQTT_EVENT_PUBLISHED, msg_id=47549[0m
+[0;32mI (436933) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (437753) Temperature sensor: Slot 0: 22.31 °C[0m
+[0;32mI (437763) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (437763) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=20634[0m
+[0;32mI (437763) MAIN: MQTT message sent![0m
+[0;32mI (439133) mqtts: MQTT_EVENT_PUBLISHED, msg_id=20634[0m
+[0;32mI (447873) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (448693) Temperature sensor: Slot 0: 22.31 °C[0m
+[0;32mI (448713) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (448713) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=44625[0m
+[0;32mI (448713) MAIN: MQTT message sent![0m
+[0;32mI (449273) mqtts: MQTT_EVENT_PUBLISHED, msg_id=44625[0m
+[0;32mI (458823) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (459643) Temperature sensor: Slot 0: 22.25 °C[0m
+[0;32mI (459663) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (459663) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=7786[0m
+[0;32mI (459663) MAIN: MQTT message sent![0m
+[0;32mI (460633) mqtts: MQTT_EVENT_PUBLISHED, msg_id=7786[0m
+[0;32mI (469773) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (470593) Temperature sensor: Slot 0: 22.25 °C[0m
+[0;32mI (470613) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (470613) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=9781[0m
+[0;32mI (470613) MAIN: MQTT message sent![0m
+[0;32mI (471083) mqtts: MQTT_EVENT_PUBLISHED, msg_id=9781[0m
+[0;32mI (480723) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (481543) Temperature sensor: Slot 0: 22.31 °C[0m
+[0;32mI (481563) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (481563) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=16926[0m
+[0;32mI (481563) MAIN: MQTT message sent![0m
+[0;32mI (482553) mqtts: MQTT_EVENT_PUBLISHED, msg_id=16926[0m
+[0;32mI (491673) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (492493) Temperature sensor: Slot 0: 22.31 °C[0m
+[0;32mI (492513) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (492513) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=57483[0m
+[0;32mI (492513) MAIN: MQTT message sent![0m
+[0;32mI (492933) mqtts: MQTT_EVENT_PUBLISHED, msg_id=57483[0m
+[0;32mI (502623) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (503443) Temperature sensor: Slot 0: 22.31 °C[0m
+[0;32mI (503463) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (503463) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=8596[0m
+[0;32mI (503463) MAIN: MQTT message sent![0m
+[0;32mI (504163) mqtts: MQTT_EVENT_PUBLISHED, msg_id=8596[0m
+[0;32mI (513573) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (514393) Temperature sensor: Slot 0: 22.31 °C[0m
+[0;32mI (514413) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (514413) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=57530[0m
+[0;32mI (514413) MAIN: MQTT message sent![0m
+[0;32mI (515733) mqtts: MQTT_EVENT_PUBLISHED, msg_id=57530[0m
+[0;32mI (524523) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (525343) Temperature sensor: Slot 0: 22.31 °C[0m
+[0;32mI (525363) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (525363) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=57974[0m
+[0;32mI (525363) MAIN: MQTT message sent![0m
+[0;32mI (526073) mqtts: MQTT_EVENT_PUBLISHED, msg_id=57974[0m
+[0;32mI (535473) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (536293) Temperature sensor: Slot 0: 22.31 °C[0m
+[0;32mI (536313) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (536313) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=57704[0m
+[0;32mI (536313) MAIN: MQTT message sent![0m
+[0;32mI (537333) mqtts: MQTT_EVENT_PUBLISHED, msg_id=57704[0m
+[0;32mI (546423) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (547243) Temperature sensor: Slot 0: 22.31 °C[0m
+[0;32mI (547263) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (547263) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=10397[0m
+[0;32mI (547263) MAIN: MQTT message sent![0m
+[0;32mI (547983) mqtts: MQTT_EVENT_PUBLISHED, msg_id=10397[0m
+[0;32mI (557373) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (558193) Temperature sensor: Slot 0: 22.31 °C[0m
+[0;32mI (558213) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (558223) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=20938[0m
+[0;32mI (558223) MAIN: MQTT message sent![0m
+[0;32mI (558433) mqtts: MQTT_EVENT_PUBLISHED, msg_id=20938[0m
+[0;32mI (568323) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (569143) Temperature sensor: Slot 0: 22.31 °C[0m
+[0;32mI (569163) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (569163) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=16836[0m
+[0;32mI (569163) MAIN: MQTT message sent![0m
+[0;32mI (569893) mqtts: MQTT_EVENT_PUBLISHED, msg_id=16836[0m
+[0;32mI (579273) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (580093) Temperature sensor: Slot 0: 22.31 °C[0m
+[0;32mI (580113) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (580113) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=29312[0m
+[0;32mI (580113) MAIN: MQTT message sent![0m
+[0;32mI (581363) mqtts: MQTT_EVENT_PUBLISHED, msg_id=29312[0m
+[0;32mI (590223) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (591043) Temperature sensor: Slot 0: 22.31 °C[0m
+[0;32mI (591063) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (591063) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=22021[0m
+[0;32mI (591063) MAIN: MQTT message sent![0m
+[0;32mI (591813) mqtts: MQTT_EVENT_PUBLISHED, msg_id=22021[0m
+[0;32mI (601173) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (601993) Temperature sensor: Slot 0: 22.25 °C[0m
+[0;32mI (602013) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (602013) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=27027[0m
+[0;32mI (602013) MAIN: MQTT message sent![0m
+[0;32mI (603273) mqtts: MQTT_EVENT_PUBLISHED, msg_id=27027[0m
+[0;32mI (612123) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (612943) Temperature sensor: Slot 0: 22.25 °C[0m
+[0;32mI (612963) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (612963) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=52320[0m
+[0;32mI (612963) MAIN: MQTT message sent![0m
+[0;32mI (613923) mqtts: MQTT_EVENT_PUBLISHED, msg_id=52320[0m
+[0;32mI (623073) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (623893) Temperature sensor: Slot 0: 22.31 °C[0m
+[0;32mI (623913) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (623913) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=3870[0m
+[0;32mI (623913) MAIN: MQTT message sent![0m
+[0;32mI (624373) mqtts: MQTT_EVENT_PUBLISHED, msg_id=3870[0m
+[0;32mI (634023) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (634843) Temperature sensor: Slot 0: 22.31 °C[0m
+[0;32mI (634863) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (634863) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=49598[0m
+[0;32mI (634863) MAIN: MQTT message sent![0m
+[0;32mI (636043) mqtts: MQTT_EVENT_PUBLISHED, msg_id=49598[0m
+[0;32mI (644973) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (645793) Temperature sensor: Slot 0: 22.31 °C[0m
+[0;32mI (645813) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (645813) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=33431[0m
+[0;32mI (645813) MAIN: MQTT message sent![0m
+[0;32mI (646493) mqtts: MQTT_EVENT_PUBLISHED, msg_id=33431[0m
+[0;32mI (655923) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (656743) Temperature sensor: Slot 0: 22.31 °C[0m
+[0;32mI (656763) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (656763) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=48915[0m
+[0;32mI (656763) MAIN: MQTT message sent![0m
+[0;32mI (657963) mqtts: MQTT_EVENT_PUBLISHED, msg_id=48915[0m
+[0;32mI (666873) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (667693) Temperature sensor: Slot 0: 22.31 °C[0m
+[0;32mI (667713) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (667713) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=54024[0m
+[0;32mI (667713) MAIN: MQTT message sent![0m
+[0;32mI (668603) mqtts: MQTT_EVENT_PUBLISHED, msg_id=54024[0m
+[0;32mI (677823) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (678643) Temperature sensor: Slot 0: 22.31 °C[0m
+[0;32mI (678663) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (678663) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=8709[0m
+[0;32mI (678663) MAIN: MQTT message sent![0m
+[0;32mI (679253) mqtts: MQTT_EVENT_PUBLISHED, msg_id=8709[0m
+[0;32mI (688773) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (689593) Temperature sensor: Slot 0: 22.31 °C[0m
+[0;32mI (689613) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (689613) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=37737[0m
+[0;32mI (689613) MAIN: MQTT message sent![0m
+[0;32mI (690723) mqtts: MQTT_EVENT_PUBLISHED, msg_id=37737[0m
+[0;32mI (699723) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (700543) Temperature sensor: Slot 0: 22.31 °C[0m
+[0;32mI (700563) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (700563) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=23240[0m
+[0;32mI (700563) MAIN: MQTT message sent![0m
+[0;32mI (701173) mqtts: MQTT_EVENT_PUBLISHED, msg_id=23240[0m
+[0;32mI (710673) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (711493) Temperature sensor: Slot 0: 22.31 °C[0m
+[0;32mI (711513) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (711513) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=34403[0m
+[0;32mI (711513) MAIN: MQTT message sent![0m
+[0;32mI (712653) mqtts: MQTT_EVENT_PUBLISHED, msg_id=34403[0m
+[0;32mI (721623) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (722443) Temperature sensor: Slot 0: 22.31 °C[0m
+[0;32mI (722463) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (722473) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=46867[0m
+[0;32mI (722473) MAIN: MQTT message sent![0m
+[0;32mI (722983) mqtts: MQTT_EVENT_PUBLISHED, msg_id=46867[0m
+[0;32mI (732573) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (733393) Temperature sensor: Slot 0: 22.31 °C[0m
+[0;32mI (733413) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (733413) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=45702[0m
+[0;32mI (733413) MAIN: MQTT message sent![0m
+[0;32mI (734553) mqtts: MQTT_EVENT_PUBLISHED, msg_id=45702[0m
+[0;32mI (743523) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (744343) Temperature sensor: Slot 0: 22.31 °C[0m
+[0;32mI (744363) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (744363) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=21323[0m
+[0;32mI (744373) MAIN: MQTT message sent![0m
+[0;32mI (744993) mqtts: MQTT_EVENT_PUBLISHED, msg_id=21323[0m
+[0;32mI (754473) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (755293) Temperature sensor: Slot 0: 22.31 °C[0m
+[0;32mI (755313) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (755313) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=6516[0m
+[0;32mI (755313) MAIN: MQTT message sent![0m
+[0;32mI (756463) mqtts: MQTT_EVENT_PUBLISHED, msg_id=6516[0m
+[0;32mI (765423) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (766243) Temperature sensor: Slot 0: 22.31 °C[0m
+[0;32mI (766263) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (766263) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=27568[0m
+[0;32mI (766263) MAIN: MQTT message sent![0m
+[0;32mI (766913) mqtts: MQTT_EVENT_PUBLISHED, msg_id=27568[0m
+[0;32mI (776373) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (777193) Temperature sensor: Slot 0: 22.31 °C[0m
+[0;32mI (777213) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (777213) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=2352[0m
+[0;32mI (777213) MAIN: MQTT message sent![0m
+[0;32mI (778373) mqtts: MQTT_EVENT_PUBLISHED, msg_id=2352[0m
+[0;32mI (787323) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (788143) Temperature sensor: Slot 0: 22.31 °C[0m
+[0;32mI (788163) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (788163) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=20099[0m
+[0;32mI (788163) MAIN: MQTT message sent![0m
+[0;32mI (788823) mqtts: MQTT_EVENT_PUBLISHED, msg_id=20099[0m
+[0;32mI (798273) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (799093) Temperature sensor: Slot 0: 22.31 °C[0m
+[0;32mI (799113) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (799113) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=46192[0m
+[0;32mI (799113) MAIN: MQTT message sent![0m
+[0;32mI (799473) mqtts: MQTT_EVENT_PUBLISHED, msg_id=46192[0m
+[0;32mI (809223) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (810043) Temperature sensor: Slot 0: 22.31 °C[0m
+[0;32mI (810063) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (810063) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=29305[0m
+[0;32mI (810063) MAIN: MQTT message sent![0m
+[0;32mI (810933) mqtts: MQTT_EVENT_PUBLISHED, msg_id=29305[0m
+[0;32mI (820173) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (820993) Temperature sensor: Slot 0: 22.31 °C[0m
+[0;32mI (821013) FFT: No frequency found with SNR > 80.00[0m
+[0;32mI (821013) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=22695[0m
+[0;32mI (821013) MAIN: MQTT message sent![0m
+[0;32mI (821383) mqtts: MQTT_EVENT_PUBLISHED, msg_id=22695[0m

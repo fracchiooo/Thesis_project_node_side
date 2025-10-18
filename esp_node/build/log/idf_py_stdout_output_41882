@@ -1,0 +1,102 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /home/fracchio/Thesis_project_node_side/esp_node/build/bootloader/esp-idf/esptool_py && /home/fracchio/.espressif/python_env/idf5.2_py3.10_env/bin/python /home/fracchio/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/fracchio/Thesis_project_node_side/esp_node/build/bootloader/bootloader.bin
+Bootloader binary size 0x5250 bytes. 0x2db0 bytes (36%) free.
+[2/8] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/esp_node.cpp.obj
+/home/fracchio/Thesis_project_node_side/esp_node/main/esp_node.cpp: In function 'void schedule_timer_command(uint32_t, float)':
+/home/fracchio/Thesis_project_node_side/esp_node/main/esp_node.cpp:214:9: warning: missing initializer for member 'esp_timer_create_args_t::dispatch_method' [-Wmissing-field-initializers]
+  214 |         };
+      |         ^
+/home/fracchio/Thesis_project_node_side/esp_node/main/esp_node.cpp:214:9: warning: missing initializer for member 'esp_timer_create_args_t::skip_unhandled_events' [-Wmissing-field-initializers]
+/home/fracchio/Thesis_project_node_side/esp_node/main/esp_node.cpp:236:9: warning: missing initializer for member 'esp_timer_create_args_t::dispatch_method' [-Wmissing-field-initializers]
+  236 |         };
+      |         ^
+/home/fracchio/Thesis_project_node_side/esp_node/main/esp_node.cpp:236:9: warning: missing initializer for member 'esp_timer_create_args_t::skip_unhandled_events' [-Wmissing-field-initializers]
+/home/fracchio/Thesis_project_node_side/esp_node/main/esp_node.cpp: In function 'void app_main()':
+/home/fracchio/Thesis_project_node_side/esp_node/main/esp_node.cpp:438:13: warning: unused variable 'max_freq' [-Wunused-variable]
+  438 |         int max_freq = fft.getMaxFrequencyFFT();
+      |             ^~~~~~~~
+[3/8] Linking C static library esp-idf/main/libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable esp_node.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.9.0
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /home/fracchio/Thesis_project_node_side/esp_node/build/esp_node.bin
+[7/8] cd /home/fracchio/Thesis_project_node_side/esp_node/build/esp-idf/esptool_py && /home/fracchio/.espressif/python_env/idf5.2_py3.10_env/bin/python /home/fracchio/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/fracchio/Thesis_project_node_side/esp_node/build/partition_table/partition-table.bin /home/fracchio/Thesis_project_node_side/esp_node/build/esp_node.bin
+esp_node.bin binary size 0x107220 bytes. Smallest app partition is 0x177000 bytes. 0x6fde0 bytes (30%) free.
+[7/8] cd /home/fracchio/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/fracchio/esp/esp-idf -D "SERIAL_TOOL=/home/fracchio/.espressif/python_env/idf5.2_py3.10_env/bin/python;;/home/fracchio/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/fracchio/Thesis_project_node_side/esp_node/build -P /home/fracchio/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32s3 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 esp_node.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.9.0
+Serial port /dev/ttyUSB0
+Connecting....
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE, Embedded Flash 8MB (GD)
+Crystal is 40MHz
+MAC: 34:b7:da:54:35:28
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x00117fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 21072 bytes to 13057...
+Writing at 0x00000000... (100 %)
+Wrote 21072 bytes (13057 compressed) at 0x00000000 in 0.6 seconds (effective 287.4 kbit/s)...
+Hash of data verified.
+Compressed 1077792 bytes to 662709...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001d81d... (4 %)
+Writing at 0x0002954c... (7 %)
+Writing at 0x0002f4a3... (9 %)
+Writing at 0x00034dc8... (12 %)
+Writing at 0x0003abf2... (14 %)
+Writing at 0x00048878... (17 %)
+Writing at 0x0004efe4... (19 %)
+Writing at 0x00055199... (21 %)
+Writing at 0x0005b5da... (24 %)
+Writing at 0x0006169d... (26 %)
+Writing at 0x00067ff5... (29 %)
+Writing at 0x0006e2ea... (31 %)
+Writing at 0x00073c33... (34 %)
+Writing at 0x00079a1e... (36 %)
+Writing at 0x0007f7de... (39 %)
+Writing at 0x000853b8... (41 %)
+Writing at 0x0008b55c... (43 %)
+Writing at 0x00090fdd... (46 %)
+Writing at 0x00096e0b... (48 %)
+Writing at 0x0009d2c4... (51 %)
+Writing at 0x000a3141... (53 %)
+Writing at 0x000a86e0... (56 %)
+Writing at 0x000ad609... (58 %)
+Writing at 0x000b268d... (60 %)
+Writing at 0x000b76fa... (63 %)
+Writing at 0x000bc9da... (65 %)
+Writing at 0x000c1dee... (68 %)
+Writing at 0x000c7b46... (70 %)
+Writing at 0x000cd44b... (73 %)
+Writing at 0x000d301c... (75 %)
+Writing at 0x000d8fda... (78 %)
+Writing at 0x000df78d... (80 %)
+Writing at 0x000e4cf8... (82 %)
+Writing at 0x000ea21d... (85 %)
+Writing at 0x000f1ebf... (87 %)
+Writing at 0x000fbc40... (90 %)
+Writing at 0x00102201... (92 %)
+Writing at 0x001087d3... (95 %)
+Writing at 0x0010ec63... (97 %)
+Writing at 0x001144de... (100 %)
+Wrote 1077792 bytes (662709 compressed) at 0x00010000 in 15.6 seconds (effective 552.9 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 105...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (105 compressed) at 0x00008000 in 0.0 seconds (effective 532.8 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

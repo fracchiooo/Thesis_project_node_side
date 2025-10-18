@@ -1,0 +1,408 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x28 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d9c
+entry 0x403c9914
+[0;32mI (27) boot: ESP-IDF v5.2.2 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Oct 17 2025 19:46:11[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=1722ch ( 94764) map[0m
+[0;32mI (116) esp_image: segment 1: paddr=00027254 vaddr=3fc94500 size=02ad4h ( 10964) load[0m
+[0;32mI (119) esp_image: segment 2: paddr=00029d30 vaddr=40374000 size=062e8h ( 25320) load[0m
+[0;32mI (128) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=2a04ch (172108) map[0m
+[0;32mI (161) esp_image: segment 4: paddr=0005a074 vaddr=4037a2e8 size=0a168h ( 41320) load[0m
+[0;32mI (177) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (178) boot: Disabling RNG early entropy source...[0m
+[0;32mI (189) cpu_start: Multicore app[0m
+[0;32mI (199) cpu_start: Pro cpu start user code[0m
+[0;32mI (199) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (199) cpu_start: Application information:[0m
+[0;32mI (202) cpu_start: Project name:     esp_node[0m
+[0;32mI (207) cpu_start: App version:      5129bb6-dirty[0m
+[0;32mI (212) cpu_start: Compile time:     Oct 17 2025 19:46:08[0m
+[0;32mI (218) cpu_start: ELF file SHA256:  44f8cbc55...[0m
+[0;32mI (224) cpu_start: ESP-IDF:          v5.2.2[0m
+[0;32mI (228) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (233) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (238) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (243) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (250) heap_init: At 3FC979E0 len 00051D30 (327 KiB): RAM[0m
+[0;32mI (256) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (262) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (276) spi_flash: detected chip: gd[0m
+[0;32mI (279) spi_flash: flash io: dio[0m
+[0;33mW (283) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (297) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (303) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (310) main_task: Started on CPU0[0m
+[0;32mI (320) main_task: Calling app_main()[0m
+[0;32mI (320) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (330) PWM: PWM inizializzato: GPIO 2, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (340) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (340) PWM: PWM inizializzato: GPIO 3, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (350) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (360) PWM: PWM inizializzato: GPIO 4, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (370) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (370) PWM: PWM inizializzato: GPIO 1, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (380) PWM: Cambio frequenza: 40000 -> 1000 Hz, risoluzione: 8 -> 14 bit[0m
+[0;32mI (390) PWM: Timer riconfigurato: 1000 Hz, 14 bit (16384 livelli)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (400) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (410) PWM: Cambio frequenza: 40000 -> 1000 Hz, risoluzione: 8 -> 14 bit[0m
+[0;32mI (420) PWM: Timer riconfigurato: 1000 Hz, 14 bit (16384 livelli)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (430) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+
+========== DIAGNOSTIC TEST ==========
+[0;32mI (440) FFT: sampling rate too high, the maximum sampling rate will be used: 83333[0m
+[0;32mI (450) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+
+--- Test 1: All OFF ---
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (460) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (470) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (480) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (500) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 21077.39 Hz (bin 259)
+  Peak magnitude: 0.01
+  Band average: 0.00
+  Peak/Average ratio: 1.92
+
+Band 40kHz (37-42 kHz):
+  Peak: 41585.12 Hz (bin 511)
+  Peak magnitude: 0.78
+  Band average: 0.02
+  Peak/Average ratio: 46.62
+
+Noise baseline (5-15 kHz):
+  Average: 0.00
+  Max: 0.01
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 1.76 (4.9 dB)
+SNR 40kHz band: 238.56 (47.6 dB)
+
+Signal detected at 20kHz: NO
+Signal detected at 40kHz: YES
+
+==> DETECTED: 40 kHz TRANSDUCER ACTIVE
+    Frequency: 41585.12 Hz
+==============================
+
+Result: 41585 Hz
+
+--- Test 2: 20kHz input ONLY (no burst) ---
+[0;32mI (1080) PWM: Cambio frequenza: 40000 -> 21700 Hz, risoluzione: 8 -> 9 bit[0m
+[0;32mI (1080) PWM: Timer riconfigurato: 21700 Hz, 9 bit (512 livelli)[0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (1090) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 256 / 512 (risoluzione: 9 bit)
+[0;32mI (1110) PWM: Hardware PWM duty: 50.00% richiesto -> 50.10% effettivo (256/512)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (1120) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 20670.49 Hz (bin 254)
+  Peak magnitude: 0.01
+  Band average: 0.01
+  Peak/Average ratio: 2.04
+
+Band 40kHz (37-42 kHz):
+  Peak: 41585.12 Hz (bin 511)
+  Peak magnitude: 0.78
+  Band average: 0.02
+  Peak/Average ratio: 41.74
+
+Noise baseline (5-15 kHz):
+  Average: 0.00
+  Max: 0.01
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 2.15 (6.6 dB)
+SNR 40kHz band: 156.98 (43.9 dB)
+
+Signal detected at 20kHz: NO
+Signal detected at 40kHz: YES
+
+==> DETECTED: 40 kHz TRANSDUCER ACTIVE
+    Frequency: 41585.12 Hz
+==============================
+
+Result: 41585 Hz
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (1700) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+
+--- Test 3: 20kHz input + burst ---
+[0;32mI (1710) PWM: Cambio frequenza: 21700 -> 21700 Hz, risoluzione: 9 -> 9 bit[0m
+[0;32mI (1720) PWM: Timer riconfigurato: 21700 Hz, 9 bit (512 livelli)[0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (1730) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 256 / 512 (risoluzione: 9 bit)
+[0;32mI (1740) PWM: Hardware PWM duty: 50.00% richiesto -> 50.10% effettivo (256/512)[0m
+Imposto duty: 8192 / 16384 (risoluzione: 14 bit)
+[0;32mI (1750) PWM: Hardware PWM duty: 50.00% richiesto -> 50.00% effettivo (8192/16384)[0m
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 19938.07 Hz (bin 245)
+  Peak magnitude: 3.32
+  Band average: 1.25
+  Peak/Average ratio: 2.65
+
+Band 40kHz (37-42 kHz):
+  Peak: 39957.52 Hz (bin 491)
+  Peak magnitude: 4.95
+  Band average: 1.20
+  Peak/Average ratio: 4.13
+
+Noise baseline (5-15 kHz):
+  Average: 1.25
+  Max: 3.06
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 2.66 (8.5 dB)
+SNR 40kHz band: 3.96 (12.0 dB)
+
+Signal detected at 20kHz: NO
+Signal detected at 40kHz: YES
+
+==> DETECTED: 40 kHz TRANSDUCER ACTIVE
+    Frequency: 39957.52 Hz
+==============================
+
+Result: 39957 Hz
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (2330) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (2340) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+
+=====================================
+[0;31mE (2350) adc_continuous: adc_continuous_stop(403): The driver is already stopped[0m
+[0;32mI (2360) main_task: Returned from app_main()[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x29 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d9c
+entry 0x403c9914
+[0;32mI (27) boot: ESP-IDF v5.2.2 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Oct 17 2025 19:46:11[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=1722ch ( 94764) map[0m
+[0;32mI (116) esp_image: segment 1: paddr=00027254 vaddr=3fc94500 size=02ad4h ( 10964) load[0m
+[0;32mI (119) esp_image: segment 2: paddr=00029d30 vaddr=40374000 size=062e8h ( 25320) load[0m
+[0;32mI (128) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=2a04ch (172108) map[0m
+[0;32mI (161) esp_image: segment 4: paddr=0005a074 vaddr=4037a2e8 size=0a168h ( 41320) load[0m
+[0;32mI (177) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (178) boot: Disabling RNG early entropy source...[0m
+[0;32mI (189) cpu_start: Multicore app[0m
+[0;32mI (199) cpu_start: Pro cpu start user code[0m
+[0;32mI (199) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (199) cpu_start: Application information:[0m
+[0;32mI (202) cpu_start: Project name:     esp_node[0m
+[0;32mI (207) cpu_start: App version:      5129bb6-dirty[0m
+[0;32mI (212) cpu_start: Compile time:     Oct 17 2025 19:46:08[0m
+[0;32mI (218) cpu_start: ELF file SHA256:  44f8cbc55...[0m
+[0;32mI (224) cpu_start: ESP-IDF:          v5.2.2[0m
+[0;32mI (228) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (233) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (238) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (243) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (250) heap_init: At 3FC979E0 len 00051D30 (327 KiB): RAM[0m
+[0;32mI (256) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (262) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (268) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (276) spi_flash: detected chip: gd[0m
+[0;32mI (279) spi_flash: flash io: dio[0m
+[0;33mW (283) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (297) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (303) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (310) main_task: Started on CPU0[0m
+[0;32mI (320) main_task: Calling app_main()[0m
+[0;32mI (320) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (330) PWM: PWM inizializzato: GPIO 2, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (340) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (340) PWM: PWM inizializzato: GPIO 3, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (350) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (360) PWM: PWM inizializzato: GPIO 4, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (370) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (370) PWM: PWM inizializzato: GPIO 1, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (380) PWM: Cambio frequenza: 40000 -> 1000 Hz, risoluzione: 8 -> 14 bit[0m
+[0;32mI (390) PWM: Timer riconfigurato: 1000 Hz, 14 bit (16384 livelli)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (400) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (410) PWM: Cambio frequenza: 40000 -> 1000 Hz, risoluzione: 8 -> 14 bit[0m
+[0;32mI (420) PWM: Timer riconfigurato: 1000 Hz, 14 bit (16384 livelli)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (430) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+
+========== DIAGNOSTIC TEST ==========
+[0;32mI (440) FFT: sampling rate too high, the maximum sampling rate will be used: 83333[0m
+[0;32mI (450) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+
+--- Test 1: All OFF ---
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (460) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (470) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (480) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (500) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 19938.07 Hz (bin 245)
+  Peak magnitude: 0.37
+  Band average: 0.18
+  Peak/Average ratio: 2.08
+
+Band 40kHz (37-42 kHz):
+  Peak: 37190.61 Hz (bin 457)
+  Peak magnitude: 0.49
+  Band average: 0.20
+  Peak/Average ratio: 2.48
+
+Noise baseline (5-15 kHz):
+  Average: 0.20
+  Max: 0.64
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 1.85 (5.4 dB)
+SNR 40kHz band: 2.41 (7.7 dB)
+
+Signal detected at 20kHz: NO
+Signal detected at 40kHz: NO
+
+==> NO VIBRATION DETECTED (0 Hz)
+==============================
+
+Result: 0 Hz
+
+--- Test 2: 20kHz input ONLY (no burst) ---
+[0;32mI (1070) PWM: Cambio frequenza: 40000 -> 21700 Hz, risoluzione: 8 -> 9 bit[0m
+[0;32mI (1080) PWM: Timer riconfigurato: 21700 Hz, 9 bit (512 livelli)[0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (1090) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 256 / 512 (risoluzione: 9 bit)
+[0;32mI (1100) PWM: Hardware PWM duty: 50.00% richiesto -> 50.10% effettivo (256/512)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (1110) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 21402.91 Hz (bin 263)
+  Peak magnitude: 0.38
+  Band average: 0.16
+  Peak/Average ratio: 2.30
+
+Band 40kHz (37-42 kHz):
+  Peak: 39062.34 Hz (bin 480)
+  Peak magnitude: 0.57
+  Band average: 0.20
+  Peak/Average ratio: 2.84
+
+Noise baseline (5-15 kHz):
+  Average: 0.22
+  Max: 0.69
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 1.70 (4.6 dB)
+SNR 40kHz band: 2.56 (8.2 dB)
+
+Signal detected at 20kHz: NO
+Signal detected at 40kHz: NO
+
+==> NO VIBRATION DETECTED (0 Hz)
+==============================
+
+Result: 0 Hz
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (1690) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+
+--- Test 3: 20kHz input + burst ---
+[0;32mI (1700) PWM: Cambio frequenza: 21700 -> 21700 Hz, risoluzione: 9 -> 9 bit[0m
+[0;32mI (1710) PWM: Timer riconfigurato: 21700 Hz, 9 bit (512 livelli)[0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (1720) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 256 / 512 (risoluzione: 9 bit)
+[0;32mI (1730) PWM: Hardware PWM duty: 50.00% richiesto -> 50.10% effettivo (256/512)[0m
+Imposto duty: 8192 / 16384 (risoluzione: 14 bit)
+[0;32mI (1740) PWM: Hardware PWM duty: 50.00% richiesto -> 50.00% effettivo (8192/16384)[0m
+
+=== FREQUENCY BAND ANALYSIS ===
+Band 20kHz (19-23 kHz):
+  Peak: 22216.71 Hz (bin 273)
+  Peak magnitude: 2.72
+  Band average: 0.99
+  Peak/Average ratio: 2.74
+
+Band 40kHz (37-42 kHz):
+  Peak: 39957.52 Hz (bin 491)
+  Peak magnitude: 4.53
+  Band average: 1.30
+  Peak/Average ratio: 3.50
+
+Noise baseline (5-15 kHz):
+  Average: 1.02
+  Max: 2.54
+
+=== DECISION LOGIC ===
+SNR 20kHz band: 2.66 (8.5 dB)
+SNR 40kHz band: 4.44 (12.9 dB)
+
+Signal detected at 20kHz: NO
+Signal detected at 40kHz: YES
+
+==> DETECTED: 40 kHz TRANSDUCER ACTIVE
+    Frequency: 39957.52 Hz
+==============================
+
+Result: 39957 Hz
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (2320) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (2330) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+
+=====================================
+[0;31mE (2340) adc_continuous: adc_continuous_stop(403): The driver is already stopped[0m
+[0;32mI (2350) main_task: Returned from app_main()[0m

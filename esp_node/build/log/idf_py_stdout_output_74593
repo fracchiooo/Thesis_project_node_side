@@ -1,0 +1,2367 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x29 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d9c
+entry 0x403c9914
+[0;32mI (27) boot: ESP-IDF v5.2.2 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Oct 17 2025 17:10:25[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=354a8h (218280) map[0m
+[0;32mI (138) esp_image: segment 1: paddr=000454d0 vaddr=3fc9b300 size=04880h ( 18560) load[0m
+[0;32mI (143) esp_image: segment 2: paddr=00049d58 vaddr=40374000 size=062c0h ( 25280) load[0m
+[0;32mI (150) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=b5b20h (744224) map[0m
+[0;32mI (286) esp_image: segment 4: paddr=00105b48 vaddr=4037a2c0 size=10f9ch ( 69532) load[0m
+[0;32mI (311) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (311) boot: Disabling RNG early entropy source...[0m
+[0;32mI (323) cpu_start: Multicore app[0m
+[0;32mI (332) cpu_start: Pro cpu start user code[0m
+[0;32mI (332) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (332) cpu_start: Application information:[0m
+[0;32mI (335) cpu_start: Project name:     esp_node[0m
+[0;32mI (340) cpu_start: App version:      5129bb6-dirty[0m
+[0;32mI (346) cpu_start: Compile time:     Oct 17 2025 17:10:22[0m
+[0;32mI (352) cpu_start: ELF file SHA256:  c310ca0a2...[0m
+[0;32mI (357) cpu_start: ESP-IDF:          v5.2.2[0m
+[0;32mI (362) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (367) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (372) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (377) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (384) heap_init: At 3FCA3D90 len 00045980 (278 KiB): RAM[0m
+[0;32mI (390) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (396) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (402) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (409) spi_flash: detected chip: gd[0m
+[0;32mI (413) spi_flash: flash io: dio[0m
+[0;33mW (416) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (430) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (437) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (444) main_task: Started on CPU0[0m
+[0;32mI (454) main_task: Calling app_main()[0m
+[0;32mI (454) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (464) PWM: PWM inizializzato: GPIO 2, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (474) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (474) PWM: PWM inizializzato: GPIO 3, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (484) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (494) PWM: PWM inizializzato: GPIO 4, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (504) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (504) PWM: PWM inizializzato: GPIO 1, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (514) PWM: Cambio frequenza: 40000 -> 1000 Hz, risoluzione: 8 -> 14 bit[0m
+[0;32mI (524) PWM: Timer riconfigurato: 1000 Hz, 14 bit (16384 livelli)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (534) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (544) PWM: Cambio frequenza: 40000 -> 1000 Hz, risoluzione: 8 -> 14 bit[0m
+[0;32mI (554) PWM: Timer riconfigurato: 1000 Hz, 14 bit (16384 livelli)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (564) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (574) gpio: GPIO[26]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (574) gpio: GPIO[26]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (584) Temperature sensor: Bus inizializzato su GPIO 26[0m
+[0;32mI (704) Temperature sensor: Slot 0: BA00000046755428[0m
+[0;32mI (704) Temperature sensor: Trovati 1 nuovi (totale 1)[0m
+[0;32mI (704) MAIN: Inizializzati 1 sensori[0m
+[0;32mI (734) wifi: ESP_WIFI_MODE_STA[0m
+[0;32mI (734) pp: pp rom version: e7ae62f[0m
+[0;32mI (734) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (744) wifi:wifi driver task: 3fcb0250, prio:23, stack:6656, core=0[0m
+[0;32mI (754) wifi:wifi firmware version: 3e0076f[0m
+[0;32mI (754) wifi:wifi certification version: v7.0[0m
+[0;32mI (754) wifi:config NVS flash: enabled[0m
+[0;32mI (754) wifi:config nano formating: disabled[0m
+[0;32mI (764) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (764) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (774) wifi:Init management short buffer num: 32[0m
+[0;32mI (774) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (774) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (784) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (784) wifi:Init static rx buffer num: 10[0m
+[0;32mI (794) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (794) wifi_init: rx ba win: 6[0m
+[0;32mI (794) wifi_init: tcpip mbox: 32[0m
+[0;32mI (804) wifi_init: udp mbox: 6[0m
+[0;32mI (804) wifi_init: tcp mbox: 6[0m
+[0;32mI (804) wifi_init: tcp tx win: 5760[0m
+[0;32mI (814) wifi_init: tcp rx win: 5760[0m
+[0;32mI (814) wifi_init: tcp mss: 1440[0m
+[0;32mI (824) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (824) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (834) phy_init: phy_version 670,b7bc9b9,Apr 30 2024,10:54:13[0m
+[0;32mI (884) wifi:mode : sta (34:b7:da:54:35:28)[0m
+[0;32mI (884) wifi:enable tsf[0m
+[0;32mI (884) wifi: wifi_init_sta finished.[0m
+[0;32mI (894) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (894) wifi:state: init -> auth (b0)[0m
+[0;32mI (1894) wifi:state: auth -> init (200)[0m
+[0;32mI (1894) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (1894) wifi: retry to connect to the AP[0m
+[0;32mI (1894) wifi: connect to the AP fail[0m
+[0;32mI (4304) wifi: retry to connect to the AP[0m
+[0;32mI (4304) wifi: connect to the AP fail[0m
+[0;32mI (4314) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (4314) wifi:state: init -> auth (b0)[0m
+[0;32mI (4354) wifi:state: auth -> assoc (0)[0m
+[0;32mI (4414) wifi:state: assoc -> run (10)[0m
+[0;32mI (4434) wifi:connected with Oneplus, aid = 6, channel 1, BW20, bssid = ba:7e:6d:57:2c:9d[0m
+[0;32mI (4434) wifi:security: WPA2-PSK, phy: bgn, rssi: -30[0m
+[0;32mI (4444) wifi:pm start, type: 1[0m
+
+[0;32mI (4444) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (4444) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (4454) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (4464) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (4484) wifi:<ba-add>idx:0 (ifx:0, ba:7e:6d:57:2c:9d), tid:0, ssn:0, winSize:64[0m
+[0;32mI (5474) esp_netif_handlers: sta ip: 10.121.56.118, mask: 255.255.255.0, gw: 10.121.56.100[0m
+[0;32mI (5474) wifi: got ip:10.121.56.118[0m
+[0;32mI (5474) wifi: connected to ap SSID:Oneplus password:123456789[0m
+[0;32mI (5484) MAIN: WIFI connected![0m
+[0;32mI (5484) mqtts: MqttWrapper created with client_id: 34B7DA543528[0m
+[0;32mI (5494) mqtts: [APP] Free memory: 267600 bytes[0m
+[0;32mI (5494) mqtts: Other event id:7[0m
+[0;32mI (6614) mqtts: MQTT_EVENT_CONNECTED[0m
+[0;32mI (6614) mqtts: Subscribed to 34B7DA543528/downlink, msg_id=21183[0m
+[0;32mI (6654) mqtts: MQTT_EVENT_SUBSCRIBED, msg_id=21183[0m
+[0;32mI (7004) MAIN: MQTT connected! System running in background...[0m
+[0;32mI (7004) MAIN: Initializing SNTP[0m
+[0;32mI (7004) MAIN: Waiting for time sync... (1/20)[0m
+[0;32mI (8004) MAIN: Time synchronized: Fri Oct 17 17:25:16 2025
+[0m
+[0;32mI (8004) FFT: sampling rate too high, the maximum sampling rate will be used: 83333[0m
+[0;32mI (8004) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (8124) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (8934) Temperature sensor: Slot 0: 22.25 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |    6574.05 Hz | 1959.0000 |   71
+   2 |   34814.68 Hz | 1959.0000 |  376
+   3 |   27129.52 Hz | 1957.0000 |  293
+   4 |   22407.32 Hz | 1955.0000 |  242
+   5 |   30185.06 Hz | 1955.0000 |  326
+   6 |   23703.61 Hz | 1954.0000 |  256
+   7 |   39444.29 Hz | 1953.0000 |  426
+   8 |   24999.90 Hz | 1952.0000 |  270
+   9 |   20462.88 Hz | 1952.0000 |  221
+  10 |   23425.83 Hz | 1952.0000 |  253
+  11 |   24073.98 Hz | 1952.0000 |  260
+  12 |   15833.27 Hz | 1952.0000 |  171
+  13 |   19351.77 Hz | 1951.0000 |  209
+  14 |   33796.16 Hz | 1951.0000 |  365
+  15 |   19722.14 Hz | 1951.0000 |  213
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (9014) view: Data min[58] = 0.001757, Data max[0] = 63.720684[0m
+ ________________________________________________________________
+0||                                                             ||
+1||                                                              |
+2||                                                              |
+3||                                                              |
+4||                                                              |
+5||                              |    |         |     | |        |
+6||                             |||||||||||||||||||||||||||||||| |
+7||                             |||||||||||||||||||||||||||||||| |
+8|||||||||||||||||||||||||||||||||||||  |||||||||  | | || |||||| |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (9084) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 14.1443, z-score: 12.33)
+[0;32mI (9104) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=43531[0m
+[0;32mI (9104) MAIN: MQTT message sent![0m
+[0;32mI (9894) mqtts: MQTT_EVENT_PUBLISHED, msg_id=43531[0m
+[0;32mI (19214) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (20034) Temperature sensor: Slot 0: 22.25 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   28611.00 Hz | 1964.0000 |  309
+   2 |   12129.58 Hz | 1959.0000 |  131
+   3 |   31851.72 Hz | 1959.0000 |  344
+   4 |   33055.42 Hz | 1957.0000 |  357
+   5 |   32314.68 Hz | 1955.0000 |  349
+   6 |   16851.79 Hz | 1954.0000 |  182
+   7 |   39351.69 Hz | 1954.0000 |  425
+   8 |   17962.89 Hz | 1954.0000 |  194
+   9 |   36110.96 Hz | 1954.0000 |  390
+  10 |   10833.29 Hz | 1953.0000 |  117
+  11 |   35833.19 Hz | 1952.0000 |  387
+  12 |   22036.95 Hz | 1952.0000 |  238
+  13 |   27407.30 Hz | 1952.0000 |  296
+  14 |   27777.67 Hz | 1952.0000 |  300
+  15 |   24907.31 Hz | 1951.0000 |  269
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (20114) view: Data min[13] = 0.001222, Data max[0] = 63.623703[0m
+ ________________________________________________________________
+0||                                                             ||
+1||                                                              |
+2||                                                              |
+3||                                                              |
+4||                                                              |
+5||                              | |  |               | |  |  |  |
+6||                             |||||||||||||||||||||||||||||||| |
+7||                             |||||||||||||||||||||||||||||||| |
+8|||||||||||||||||||||||||||||||| |||||||||||| |||||| || || |||  |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (20184) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 14.1107, z-score: 12.33)
+[0;32mI (20194) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=552[0m
+[0;32mI (20204) MAIN: MQTT message sent![0m
+[0;32mI (21364) mqtts: MQTT_EVENT_PUBLISHED, msg_id=552[0m
+[0;32mI (30304) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (31124) Temperature sensor: Slot 0: 22.25 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |    6296.27 Hz | 1973.0000 |   68
+   2 |   31388.76 Hz | 1970.0000 |  339
+   3 |   19907.33 Hz | 1966.0000 |  215
+   4 |   22685.09 Hz | 1964.0000 |  245
+   5 |   29073.96 Hz | 1963.0000 |  314
+   6 |   31573.95 Hz | 1961.0000 |  341
+   7 |    9814.78 Hz | 1961.0000 |  106
+   8 |   28333.22 Hz | 1959.0000 |  306
+   9 |    8611.08 Hz | 1957.0000 |   93
+  10 |   20277.70 Hz | 1957.0000 |  219
+  11 |   15833.27 Hz | 1957.0000 |  171
+  12 |   21481.40 Hz | 1957.0000 |  232
+  13 |   21573.99 Hz | 1955.0000 |  233
+  14 |   19074.00 Hz | 1955.0000 |  206
+  15 |   10092.55 Hz | 1955.0000 |  109
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (31204) view: Data min[79] = 0.000688, Data max[0] = 63.665180[0m
+ ________________________________________________________________
+0||                                                             ||
+1||                                                              |
+2||                                                              |
+3||                                                              |
+4||                                                              |
+5||                                |  |         |     |          |
+6||                             |||||||||||||||||||||||||||||||| |
+7||                             |||||||||||||||||||||||||||||||| |
+8|||||||||||||||||||||||||||||||||| || ||| ||||||||||| ||||||||| |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (31274) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 14.1384, z-score: 12.34)
+[0;32mI (31284) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=10389[0m
+[0;32mI (31294) MAIN: MQTT message sent![0m
+[0;32mI (31604) mqtts: MQTT_EVENT_PUBLISHED, msg_id=10389[0m
+[0;32mI (41394) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (42214) Temperature sensor: Slot 0: 22.25 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   23425.83 Hz | 1966.0000 |  253
+   2 |   20833.25 Hz | 1955.0000 |  225
+   3 |   15092.53 Hz | 1955.0000 |  163
+   4 |   24629.53 Hz | 1955.0000 |  266
+   5 |   37962.81 Hz | 1954.0000 |  410
+   6 |    7037.01 Hz | 1954.0000 |   76
+   7 |   19166.59 Hz | 1954.0000 |  207
+   8 |   33425.79 Hz | 1954.0000 |  361
+   9 |    7314.79 Hz | 1953.0000 |   79
+  10 |   11851.80 Hz | 1953.0000 |  128
+  11 |   37222.07 Hz | 1953.0000 |  402
+  12 |   36018.38 Hz | 1952.0000 |  389
+  13 |   14166.61 Hz | 1952.0000 |  153
+  14 |   10740.70 Hz | 1952.0000 |  116
+  15 |   38703.55 Hz | 1952.0000 |  418
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (42294) view: Data min[119] = 0.003593, Data max[0] = 63.649067[0m
+ ________________________________________________________________
+0||                                                             ||
+1||                                                              |
+2||                                                              |
+3||                                                              |
+4||                                                              |
+5||                                |  |               |       |  |
+6||                              ||||||||||||||||||||||||||||||| |
+7||                             |||||||||||||||||||||||||||||||| |
+8|||||||||||||||||||||||||||||||||| || |||||||  |||||||||||||||| |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (42364) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 13.9663, z-score: 12.26)
+[0;32mI (42384) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=48149[0m
+[0;32mI (42384) MAIN: MQTT message sent![0m
+[0;32mI (43074) mqtts: MQTT_EVENT_PUBLISHED, msg_id=48149[0m
+[0;32mI (52484) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (53304) Temperature sensor: Slot 0: 22.25 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |    6759.23 Hz | 1966.0000 |   73
+   2 |   35277.64 Hz | 1964.0000 |  381
+   3 |   41018.36 Hz | 1955.0000 |  443
+   4 |   31944.32 Hz | 1955.0000 |  345
+   5 |    5925.90 Hz | 1954.0000 |   64
+   6 |   37499.85 Hz | 1954.0000 |  405
+   7 |    8888.85 Hz | 1954.0000 |   96
+   8 |    7592.56 Hz | 1954.0000 |   82
+   9 |    7222.19 Hz | 1954.0000 |   78
+  10 |   13055.50 Hz | 1953.0000 |  141
+  11 |   31203.58 Hz | 1953.0000 |  337
+  12 |   23425.83 Hz | 1952.0000 |  253
+  13 |   24166.57 Hz | 1952.0000 |  261
+  14 |   10833.29 Hz | 1952.0000 |  117
+  15 |    5092.57 Hz | 1952.0000 |   55
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (53384) view: Data min[417] = 0.003375, Data max[0] = 63.484932[0m
+ ________________________________________________________________
+0||                                                             ||
+1||                                                              |
+2||                                                              |
+3||                                                              |
+4||                                                              |
+5||                              | |  |               |          |
+6||                             |||||||||||||||||||||||||||||||| |
+7||                             |||||||||||||||||||||||||||||||| |
+8||||||||||||||||||||||||||||||||   || ||||||||||||||| ||||||||| |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (53454) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 13.9845, z-score: 12.30)
+[0;32mI (53474) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=9674[0m
+[0;32mI (53474) MAIN: MQTT message sent![0m
+[0;32mI (54534) mqtts: MQTT_EVENT_PUBLISHED, msg_id=9674[0m
+[0;32mI (63574) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (64394) Temperature sensor: Slot 0: 22.25 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   34259.12 Hz | 1970.0000 |  370
+   2 |   33425.79 Hz | 1968.0000 |  361
+   3 |   35277.64 Hz | 1964.0000 |  381
+   4 |   26388.78 Hz | 1957.0000 |  285
+   5 |   40370.21 Hz | 1957.0000 |  436
+   6 |   32314.68 Hz | 1954.0000 |  349
+   7 |   34629.49 Hz | 1954.0000 |  374
+   8 |    5092.57 Hz | 1952.0000 |   55
+   9 |   36110.96 Hz | 1952.0000 |  390
+  10 |   41203.54 Hz | 1952.0000 |  445
+  11 |   36573.93 Hz | 1951.0000 |  395
+  12 |    8981.45 Hz | 1951.0000 |   97
+  13 |   30370.25 Hz | 1951.0000 |  328
+  14 |   21388.80 Hz | 1951.0000 |  231
+  15 |   29073.96 Hz | 1951.0000 |  314
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (64474) view: Data min[418] = 0.005719, Data max[0] = 63.619244[0m
+ ________________________________________________________________
+0||                                                             ||
+1||                                                              |
+2||                                                              |
+3||                                                              |
+4||                                                              |
+5||                                                   |          |
+6||                             |||||||||||||||||||||||||||||||| |
+7||                             |||||||||||||||||||||||||||||||| |
+8||||||||||||||||||||||||||||||||| |||| ||  |||||||| | || |||||  |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (64544) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 13.9910, z-score: 12.26)
+[0;32mI (64564) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=11455[0m
+[0;32mI (64564) MAIN: MQTT message sent![0m
+[0;32mI (64984) mqtts: MQTT_EVENT_PUBLISHED, msg_id=11455[0m
+[0;32mI (74664) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (75484) Temperature sensor: Slot 0: 22.25 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   11111.07 Hz | 1979.0000 |  120
+   2 |    9537.00 Hz | 1959.0000 |  103
+   3 |   32685.05 Hz | 1955.0000 |  353
+   4 |    9999.96 Hz | 1955.0000 |  108
+   5 |   36759.11 Hz | 1955.0000 |  397
+   6 |   40462.80 Hz | 1955.0000 |  437
+   7 |   29722.10 Hz | 1954.0000 |  321
+   8 |    6759.23 Hz | 1954.0000 |   73
+   9 |   21759.17 Hz | 1954.0000 |  235
+  10 |   34259.12 Hz | 1953.0000 |  370
+  11 |   37407.26 Hz | 1953.0000 |  404
+  12 |   38240.59 Hz | 1953.0000 |  413
+  13 |   40925.76 Hz | 1953.0000 |  442
+  14 |   32036.91 Hz | 1953.0000 |  346
+  15 |   36203.56 Hz | 1953.0000 |  391
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (75564) view: Data min[63] = 0.003589, Data max[0] = 63.683479[0m
+ ________________________________________________________________
+0||                                                             ||
+1||                                                              |
+2||                                                              |
+3||                                                              |
+4||                                                              |
+5||                              | |  |         |     | |  |     |
+6||                             |||||||||||||||||||||||||||||||| |
+7||                             |||||||||||||||||||||||||||||||| |
+8|||||||||||||||||||||||||||||||||| ||  ||| |||||||||| | ||||||| |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (75634) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 14.1055, z-score: 12.28)
+[0;32mI (75644) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=12901[0m
+[0;32mI (75654) MAIN: MQTT message sent![0m
+[0;32mI (76654) mqtts: MQTT_EVENT_PUBLISHED, msg_id=12901[0m
+[0;32mI (79944) mqtts: MQTT_EVENT_DATA[0m
+TOPIC=34B7DA543528/downlink
+DATA={"frequency":20.0,"duty_frequency":100.0,"temperature":17.5,"finish_after":0.13,"startTime":null}
+[0;32mI (79944) MAIN: === Message received in MAIN ===[0m
+[0;32mI (79954) MAIN: Topic: 34B7DA543528/downlink[0m
+[0;32mI (79954) MAIN: Data: {"frequency":20.0,"duty_frequency":100.0,"temperature":17.5,"finish_after":0.13,"startTime":null}[0m
+[0;32mI (79974) MAIN: Start timestamp is 0 or past, executing immediately[0m
+[0;32mI (79974) MAIN: Timer triggered! Executing scheduled action...[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (79984) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (80004) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+[0;32mI (80004) PWM: Cambio frequenza: 40000 -> 21700 Hz, risoluzione: 8 -> 9 bit[0m
+[0;32mI (80014) PWM: Timer riconfigurato: 21700 Hz, 9 bit (512 livelli)[0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (80024) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 256 / 512 (risoluzione: 9 bit)
+[0;32mI (80034) PWM: Hardware PWM duty: 50.00% richiesto -> 50.10% effettivo (256/512)[0m
+Imposto duty: 16383 / 16384 (risoluzione: 14 bit)
+[0;32mI (80054) PWM: Hardware PWM duty: 100.00% richiesto -> 100.00% effettivo (16383/16384)[0m
+[0;32mI (80054) MAIN: Expiry timer set for 0.13 hours (total 467 seconds from now)[0m
+[0;32mI (80064) MAIN: status updated and timer started[0m
+[0;32mI (85754) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (86574) Temperature sensor: Slot 0: 22.25 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   23055.46 Hz | 2886.0000 |  249
+   2 |   16296.23 Hz | 2427.0000 |  176
+   3 |   25370.27 Hz | 2303.0000 |  274
+   4 |    7222.19 Hz | 2260.0000 |   78
+   5 |   34444.31 Hz | 2149.0000 |  372
+   6 |   38888.73 Hz | 2134.0000 |  420
+   7 |   11851.80 Hz | 2123.0000 |  128
+   8 |   32129.50 Hz | 2110.0000 |  347
+   9 |   13981.43 Hz | 2060.0000 |  151
+  10 |   36759.11 Hz | 2053.0000 |  397
+  11 |   15740.68 Hz | 2024.0000 |  170
+  12 |    9537.00 Hz | 2021.0000 |  103
+  13 |   18611.04 Hz | 2003.0000 |  201
+  14 |   41388.72 Hz | 2001.0000 |  447
+  15 |   41203.54 Hz | 1997.0000 |  445
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (86654) view: Data min[439] = 0.037126, Data max[0] = 64.798264[0m
+ ________________________________________________________________
+0||                                  |                          ||
+1||                                  |                           |
+2||                 | |     |    |   |   |                     | |
+3|||     | |    |   | |   | | |  | | |  |||||| | | |  || ||||| | |
+4||| || ||||||||| ||||| | ||| | |||| || |||||||||||||||||||||||| |
+5||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |
+6|||||||||||||||||||||||||||||||||||||||||||||||||| |||||||||||| |
+7||||||||||||||||| |||||||||||||||||||||| |||||  || | ||  || ||| |
+8|    |            | |      |  |  |                           || |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (86724) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 15.0922, z-score: 12.62)
+[0;32mI (86744) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=19092[0m
+[0;32mI (86744) MAIN: MQTT message sent![0m
+[0;32mI (87304) mqtts: MQTT_EVENT_PUBLISHED, msg_id=19092[0m
+[0;32mI (96844) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (97664) Temperature sensor: Slot 0: 22.25 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   34536.90 Hz | 3102.0000 |  373
+   2 |   36851.70 Hz | 2145.0000 |  398
+   3 |   33981.35 Hz | 2130.0000 |  367
+   4 |   30092.47 Hz | 2124.0000 |  325
+   5 |   25462.86 Hz | 2110.0000 |  275
+   6 |   23148.05 Hz | 2096.0000 |  250
+   7 |   27777.67 Hz | 2050.0000 |  300
+   8 |   13518.46 Hz | 2049.0000 |  146
+   9 |   31666.54 Hz | 2043.0000 |  342
+  10 |   16388.82 Hz | 2028.0000 |  177
+  11 |    4999.98 Hz | 2021.0000 |   54
+  12 |   23333.24 Hz | 2017.0000 |  252
+  13 |   18703.63 Hz | 1993.0000 |  202
+  14 |   11944.40 Hz | 1985.0000 |  129
+  15 |   21203.62 Hz | 1982.0000 |  229
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (97744) view: Data min[117] = 0.017925, Data max[0] = 64.960518[0m
+ ________________________________________________________________
+0||                                |                            ||
+1||                 |         | || | |                      |    |
+2||   |        |    |     |   | || | |   |     |   |  |||| ||||  |
+3|| | |  |  |  || ||||    ||  | || | ||| | ||| ||||| ||||| ||||| |
+4|| | | ||| ||||||||||||| |||||||||||||||||||||||||||||||||||||| |
+5|||| |||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |
+6||||| | |||||||||||||||||||||||||||| ||||| |||||||||||||||||||| |
+7||||| | | | ||||||||| | | ||||||||||  || | | |   |||  || || | | |
+8|         | |  || ||          |                    |      |     |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (97814) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 13.7414, z-score: 11.74)
+[0;32mI (97834) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=45558[0m
+[0;32mI (97834) MAIN: MQTT message sent![0m
+[0;32mI (98774) mqtts: MQTT_EVENT_PUBLISHED, msg_id=45558[0m
+[0;32mI (107934) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (108754) Temperature sensor: Slot 0: 22.25 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   24999.90 Hz | 2368.0000 |  270
+   2 |    6851.82 Hz | 2362.0000 |   74
+   3 |   20555.47 Hz | 2057.0000 |  222
+   4 |    6296.27 Hz | 2043.0000 |   68
+   5 |   27314.71 Hz | 2021.0000 |  295
+   6 |    9166.63 Hz | 2021.0000 |   99
+   7 |   41018.36 Hz | 1993.0000 |  443
+   8 |   38703.55 Hz | 1985.0000 |  418
+   9 |   24444.35 Hz | 1982.0000 |  264
+  10 |   18425.85 Hz | 1973.0000 |  199
+  11 |   19444.37 Hz | 1967.0000 |  210
+  12 |   22870.28 Hz | 1966.0000 |  247
+  13 |   38888.73 Hz | 1965.0000 |  420
+  14 |   16296.23 Hz | 1961.0000 |  176
+  15 |   34444.31 Hz | 1959.0000 |  372
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (108834) view: Data min[20] = 0.016627, Data max[0] = 63.391541[0m
+ ________________________________________________________________
+0||                                                             ||
+1||                                                              |
+2||                                                              |
+3||                                                              |
+4||                                  |       |||| ||       |     |
+5||                              ||  |      ||||||||||  ||||  || |
+6||| ||||||    ||  || ||||  ||| ||||||||  ||||||||||||| |||||||| |
+7||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |
+8||||||  | | |||   |||  |||| ||||   ||  |||| ||| | |||||  | |||| |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (108904) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 14.2660, z-score: 12.36)
+[0;32mI (108924) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=29302[0m
+[0;32mI (108924) MAIN: MQTT message sent![0m
+[0;32mI (110244) mqtts: MQTT_EVENT_PUBLISHED, msg_id=29302[0m
+[0;32mI (119024) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (119844) Temperature sensor: Slot 0: 22.25 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   30277.66 Hz | 2330.0000 |  327
+   2 |    7499.97 Hz | 2147.0000 |   81
+   3 |   18888.81 Hz | 2135.0000 |  204
+   4 |   32592.46 Hz | 2048.0000 |  352
+   5 |   14259.20 Hz | 2037.0000 |  154
+   6 |   29722.10 Hz | 2004.0000 |  321
+   7 |   37222.07 Hz | 1994.0000 |  402
+   8 |   34907.27 Hz | 1980.0000 |  377
+   9 |   34351.71 Hz | 1970.0000 |  371
+  10 |   19259.18 Hz | 1970.0000 |  208
+  11 |   26111.01 Hz | 1967.0000 |  282
+  12 |   27962.85 Hz | 1963.0000 |  302
+  13 |   16944.38 Hz | 1961.0000 |  183
+  14 |   10185.14 Hz | 1961.0000 |  110
+  15 |   12407.36 Hz | 1961.0000 |  134
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (119934) view: Data min[106] = 0.016102, Data max[0] = 63.828568[0m
+ ________________________________________________________________
+0||                                                             ||
+1||                                                              |
+2||                                                              |
+3||                                                            | |
+4||                                  ||   | |     | |    |   | | |
+5||   |        |       |         || ||| ||| ||||| | |||||||||||| |
+6||| ||  ||| ||||||| ||||||| ||||||||||||||||||||||||||||||||||| |
+7||||||||||||||||||||||||||||||||| ||||||||| ||||||||||||||||||  |
+8 | ||  | |   | ||  | ||  | ||     |       |    |    |           |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (120004) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 13.8003, z-score: 12.27)
+[0;32mI (120024) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=37110[0m
+[0;32mI (120024) MAIN: MQTT message sent![0m
+[0;32mI (120474) mqtts: MQTT_EVENT_PUBLISHED, msg_id=37110[0m
+[0;32mI (123144) mqtts: MQTT_EVENT_DATA[0m
+TOPIC=34B7DA543528/downlink
+DATA={"frequency":0.0,"duty_frequency":100.0,"temperature":17.5,"finish_after":0.13,"startTime":null}
+[0;32mI (123154) MAIN: === Message received in MAIN ===[0m
+[0;32mI (123154) MAIN: Topic: 34B7DA543528/downlink[0m
+[0;32mI (123164) MAIN: Data: {"frequency":0.0,"duty_frequency":100.0,"temperature":17.5,"finish_after":0.13,"startTime":null}[0m
+[0;32mI (123174) MAIN: Expiry timer triggered! Schedule has expired![0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (123184) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (123194) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (123204) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (123214) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (123224) MAIN: Previous expiry timer deleted[0m
+[0;32mI (123234) MAIN: Start timestamp is 0 or past, executing immediately[0m
+[0;32mI (123234) MAIN: Timer triggered! Executing scheduled action...[0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (123244) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (123264) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (123274) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (123284) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (123294) MAIN: Expiry timer set for 0.13 hours (total 467 seconds from now)[0m
+[0;32mI (123294) MAIN: status updated and timer started[0m
+[0;32mI (130124) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (130944) Temperature sensor: Slot 0: 22.25 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   24166.57 Hz | 2430.0000 |  261
+   2 |   15092.53 Hz | 2161.0000 |  163
+   3 |   23611.02 Hz | 2072.0000 |  255
+   4 |    6018.49 Hz | 2056.0000 |   65
+   5 |   12777.73 Hz | 2049.0000 |  138
+   6 |   33425.79 Hz | 2024.0000 |  361
+   7 |   26481.38 Hz | 2008.0000 |  286
+   8 |   28796.18 Hz | 2004.0000 |  311
+   9 |   17407.34 Hz | 1985.0000 |  188
+  10 |   40370.21 Hz | 1983.0000 |  436
+  11 |   12962.91 Hz | 1974.0000 |  140
+  12 |    8333.30 Hz | 1973.0000 |   90
+  13 |   10648.11 Hz | 1967.0000 |  115
+  14 |   28981.37 Hz | 1967.0000 |  313
+  15 |   40555.39 Hz | 1966.0000 |  438
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (131014) view: Data min[209] = 0.014500, Data max[0] = 63.070808[0m
+ ________________________________________________________________
+0||                                                             ||
+1||                                                              |
+2||                                                              |
+3||                                                              |
+4||                                               |    ||    |   |
+5||                               || || | | ||   |||   ||  ||||| |
+6||    |      |   |||   ||||| | |||||||||||||||||||||||||||||||| |
+7||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |
+8|||||| | ||   ||  | ||| |||||||   ||    ||   |||    |     | ||  |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (131084) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 13.9608, z-score: 12.47)
+[0;32mI (131104) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=43563[0m
+[0;32mI (131104) MAIN: MQTT message sent![0m
+[0;32mI (131744) mqtts: MQTT_EVENT_PUBLISHED, msg_id=43563[0m
+[0;32mI (141204) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (142024) Temperature sensor: Slot 0: 22.25 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   39166.51 Hz | 1967.0000 |  423
+   2 |   22314.72 Hz | 1959.0000 |  241
+   3 |   28611.00 Hz | 1957.0000 |  309
+   4 |   37036.89 Hz | 1954.0000 |  400
+   5 |    8333.30 Hz | 1954.0000 |   90
+   6 |   24999.90 Hz | 1952.0000 |  270
+   7 |   10648.11 Hz | 1952.0000 |  115
+   8 |   34073.94 Hz | 1952.0000 |  368
+   9 |   39536.88 Hz | 1951.0000 |  427
+  10 |   14629.57 Hz | 1951.0000 |  158
+  11 |   26666.56 Hz | 1951.0000 |  288
+  12 |   34722.09 Hz | 1951.0000 |  375
+  13 |   36666.52 Hz | 1951.0000 |  396
+  14 |   12499.95 Hz | 1948.0000 |  135
+  15 |   38703.55 Hz | 1948.0000 |  418
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (142104) view: Data min[147] = 0.003114, Data max[0] = 63.514545[0m
+ ________________________________________________________________
+0||                                                             ||
+1||                                                              |
+2||                                                              |
+3||                                                              |
+4||                                                              |
+5||                              | |  |               | |        |
+6||                             |||||||||||||||||||||||||||||||| |
+7||                             |||||||||||||||||||||||||||||||| |
+8||||||||||||||||||||||||||||||||||||||||||||| |||| || | ||||||| |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (142174) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 14.1174, z-score: 12.36)
+[0;32mI (142194) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=49663[0m
+[0;32mI (142194) MAIN: MQTT message sent![0m
+[0;32mI (143214) mqtts: MQTT_EVENT_PUBLISHED, msg_id=49663[0m
+[0;32mI (152294) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (153114) Temperature sensor: Slot 0: 22.25 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   28240.63 Hz | 1965.0000 |  305
+   2 |   13333.28 Hz | 1964.0000 |  144
+   3 |   35925.78 Hz | 1959.0000 |  388
+   4 |   38240.59 Hz | 1959.0000 |  413
+   5 |   27222.11 Hz | 1959.0000 |  294
+   6 |    5370.35 Hz | 1957.0000 |   58
+   7 |   18240.67 Hz | 1957.0000 |  197
+   8 |   13425.87 Hz | 1955.0000 |  145
+   9 |   25833.23 Hz | 1954.0000 |  279
+  10 |   26111.01 Hz | 1953.0000 |  282
+  11 |   40185.02 Hz | 1952.0000 |  434
+  12 |   18703.63 Hz | 1952.0000 |  202
+  13 |   29999.88 Hz | 1952.0000 |  324
+  14 |    5185.16 Hz | 1951.0000 |   56
+  15 |   29536.92 Hz | 1951.0000 |  319
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (153194) view: Data min[251] = 0.006382, Data max[0] = 63.267624[0m
+ ________________________________________________________________
+0||                                                             ||
+1||                                                              |
+2||                                                              |
+3||                                                              |
+4||                                                              |
+5||                              | |            |     |    ||    |
+6||                             |||||||||||||||||||||||||||||||| |
+7||                             |||||||||||||||||||||||||||||||| |
+8|||||||||||||||||||||||||||||||| ||||| |||||||||||||| ||||| ||| |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (153264) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 14.0187, z-score: 12.31)
+[0;32mI (153284) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=53561[0m
+[0;32mI (153284) MAIN: MQTT message sent![0m
+[0;32mI (153654) mqtts: MQTT_EVENT_PUBLISHED, msg_id=53561[0m
+[0;32mI (163384) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (164204) Temperature sensor: Slot 0: 22.25 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   28333.22 Hz | 1967.0000 |  306
+   2 |   38518.36 Hz | 1965.0000 |  416
+   3 |   18333.26 Hz | 1959.0000 |  198
+   4 |   35462.82 Hz | 1959.0000 |  383
+   5 |   23796.20 Hz | 1959.0000 |  257
+   6 |   22314.72 Hz | 1959.0000 |  241
+   7 |   23518.42 Hz | 1957.0000 |  254
+   8 |   27129.52 Hz | 1957.0000 |  293
+   9 |   14259.20 Hz | 1955.0000 |  154
+  10 |   12499.95 Hz | 1955.0000 |  135
+  11 |   21111.03 Hz | 1954.0000 |  228
+  12 |   18888.81 Hz | 1954.0000 |  204
+  13 |   16574.01 Hz | 1953.0000 |  179
+  14 |   26296.19 Hz | 1953.0000 |  284
+  15 |   37314.67 Hz | 1952.0000 |  403
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (164284) view: Data min[92] = 0.001253, Data max[0] = 63.501503[0m
+ ________________________________________________________________
+0||                                                             ||
+1||                                                              |
+2||                                                              |
+3||                                                              |
+4||                                                              |
+5||                                |  |               |       |  |
+6||                             |||||||||||||||||||||||||||||||| |
+7||                             |||||||||||||||||||||||||||||||| |
+8||||||||||||||||||||||||||||||||||||||| || ||||||||   ||||||| | |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (164354) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 14.0093, z-score: 12.32)
+[0;32mI (164374) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=3878[0m
+[0;32mI (164374) MAIN: MQTT message sent![0m
+[0;32mI (165124) mqtts: MQTT_EVENT_PUBLISHED, msg_id=3878[0m
+[0;32mI (174474) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (175294) Temperature sensor: Slot 0: 22.25 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   30092.47 Hz | 1964.0000 |  325
+   2 |   12870.32 Hz | 1955.0000 |  139
+   3 |   17685.12 Hz | 1954.0000 |  191
+   4 |   14074.02 Hz | 1954.0000 |  152
+   5 |   10092.55 Hz | 1953.0000 |  109
+   6 |   21388.80 Hz | 1952.0000 |  231
+   7 |    6759.23 Hz | 1952.0000 |   73
+   8 |   38518.36 Hz | 1951.0000 |  416
+   9 |   39999.84 Hz | 1951.0000 |  432
+  10 |   19166.59 Hz | 1951.0000 |  207
+  11 |   10925.88 Hz | 1951.0000 |  118
+  12 |    7222.19 Hz | 1949.0000 |   78
+  13 |   30277.66 Hz | 1949.0000 |  327
+  14 |   25277.68 Hz | 1948.0000 |  273
+  15 |   21851.76 Hz | 1948.0000 |  236
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (175374) view: Data min[208] = 0.002081, Data max[0] = 63.432472[0m
+ ________________________________________________________________
+0||                                                             ||
+1||                                                              |
+2||                                                              |
+3||                                                              |
+4||                                                              |
+5||                              | |  |         |     |          |
+6||                             |||| ||||||||||||||||||||||||||| |
+7||                             |||||||||||||||||||||||||||||||| |
+8||||||||||||||||||||||||||||||||  ||||||||||||||||||||||||||||| |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (175444) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 14.0283, z-score: 12.32)
+[0;32mI (175464) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=12487[0m
+[0;32mI (175464) MAIN: MQTT message sent![0m
+[0;32mI (176274) mqtts: MQTT_EVENT_PUBLISHED, msg_id=12487[0m
+[0;32mI (185564) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (186384) Temperature sensor: Slot 0: 22.25 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   37314.67 Hz | 1966.0000 |  403
+   2 |   36944.30 Hz | 1965.0000 |  399
+   3 |   35555.41 Hz | 1959.0000 |  384
+   4 |   40925.76 Hz | 1959.0000 |  442
+   5 |   31573.95 Hz | 1957.0000 |  341
+   6 |   41296.13 Hz | 1957.0000 |  446
+   7 |   16388.82 Hz | 1955.0000 |  177
+   8 |   19907.33 Hz | 1955.0000 |  215
+   9 |   23055.46 Hz | 1955.0000 |  249
+  10 |   21388.80 Hz | 1955.0000 |  231
+  11 |    9259.22 Hz | 1954.0000 |  100
+  12 |   18888.81 Hz | 1954.0000 |  204
+  13 |   22222.13 Hz | 1954.0000 |  240
+  14 |    9166.63 Hz | 1954.0000 |   99
+  15 |   13611.06 Hz | 1954.0000 |  147
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (186474) view: Data min[97] = 0.007236, Data max[0] = 63.335293[0m
+ ________________________________________________________________
+0||                                                             ||
+1||                                                              |
+2||                                                              |
+3||                                                              |
+4||                                                              |
+5||                                |  |               |    |  |  |
+6||                             |||||||||||||||||||||||||||||||| |
+7||                             |||||||||||||||||||||||||||||||| |
+8|||||||||||||||||||||||||||||||||| ||  |||||| ||||||| |||  |||| |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (186544) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 14.1033, z-score: 12.34)
+[0;32mI (186564) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=20100[0m
+[0;32mI (186564) MAIN: MQTT message sent![0m
+[0;32mI (187664) mqtts: MQTT_EVENT_PUBLISHED, msg_id=20100[0m
+[0;32mI (196674) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (197494) Temperature sensor: Slot 0: 22.25 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   13796.24 Hz | 1955.0000 |  149
+   2 |   13888.83 Hz | 1953.0000 |  150
+   3 |   15648.09 Hz | 1953.0000 |  169
+   4 |   19722.14 Hz | 1952.0000 |  213
+   5 |   12129.58 Hz | 1951.0000 |  131
+   6 |   23425.83 Hz | 1951.0000 |  253
+   7 |    7222.19 Hz | 1948.0000 |   78
+   8 |   22962.87 Hz | 1948.0000 |  248
+   9 |   18611.04 Hz | 1948.0000 |  201
+  10 |   15833.27 Hz | 1948.0000 |  171
+  11 |   17962.89 Hz | 1946.0000 |  194
+  12 |   10648.11 Hz | 1946.0000 |  115
+  13 |   23240.65 Hz | 1946.0000 |  251
+  14 |   23333.24 Hz | 1946.0000 |  252
+  15 |   11481.44 Hz | 1946.0000 |  124
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (197564) view: Data min[106] = 0.004287, Data max[0] = 63.101395[0m
+ ________________________________________________________________
+0||                                                             ||
+1||                                                              |
+2||                                                              |
+3||                                                              |
+4||                                                              |
+5||                              |              |     | |     |  |
+6||                             |||||||||||||||||||||||||||||||| |
+7||                             |||||||||||||||||||||||||||||||| |
+8|||||||||||||||||||||||||||||||||||||||||| |||||||||| | | ||| | |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (197634) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 13.9312, z-score: 12.32)
+[0;32mI (197654) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=55522[0m
+[0;32mI (197654) MAIN: MQTT message sent![0m
+[0;32mI (197894) mqtts: MQTT_EVENT_PUBLISHED, msg_id=55522[0m
+[0;32mI (207754) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (208574) Temperature sensor: Slot 0: 22.25 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   26481.38 Hz | 1974.0000 |  286
+   2 |   35740.60 Hz | 1966.0000 |  386
+   3 |   29351.73 Hz | 1961.0000 |  317
+   4 |   36110.96 Hz | 1959.0000 |  390
+   5 |   11388.84 Hz | 1957.0000 |  123
+   6 |   12592.54 Hz | 1955.0000 |  136
+   7 |    5092.57 Hz | 1954.0000 |   55
+   8 |   34444.31 Hz | 1954.0000 |  372
+   9 |   20277.70 Hz | 1953.0000 |  219
+  10 |   11759.21 Hz | 1953.0000 |  127
+  11 |   38240.59 Hz | 1952.0000 |  413
+  12 |   11944.40 Hz | 1952.0000 |  129
+  13 |   14722.16 Hz | 1952.0000 |  159
+  14 |    8888.85 Hz | 1952.0000 |   96
+  15 |   21666.58 Hz | 1952.0000 |  234
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (208654) view: Data min[209] = 0.003284, Data max[0] = 63.390495[0m
+ ________________________________________________________________
+0||                                                             ||
+1||                                                              |
+2||                                                              |
+3||                                                              |
+4||                                                              |
+5||                              | |  |               |       |  |
+6||                             |||||||||||||||||||||||||||||||| |
+7||                             |||||||||||||||||||||||||||||||| |
+8|||||||||||||||||||||||||||||||| | |||| ||||||||||||||||||||||  |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (208724) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 13.9568, z-score: 12.27)
+[0;32mI (208744) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=3362[0m
+[0;32mI (208744) MAIN: MQTT message sent![0m
+[0;32mI (209154) mqtts: MQTT_EVENT_PUBLISHED, msg_id=3362[0m
+[0;32mI (218844) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (219664) Temperature sensor: Slot 0: 22.25 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   38240.59 Hz | 1970.0000 |  413
+   2 |   20277.70 Hz | 1966.0000 |  219
+   3 |   17036.97 Hz | 1961.0000 |  184
+   4 |   25092.49 Hz | 1959.0000 |  271
+   5 |   18425.85 Hz | 1955.0000 |  199
+   6 |   36110.96 Hz | 1954.0000 |  390
+   7 |   31203.58 Hz | 1954.0000 |  337
+   8 |   31388.76 Hz | 1953.0000 |  339
+   9 |   17314.75 Hz | 1952.0000 |  187
+  10 |   26759.15 Hz | 1952.0000 |  289
+  11 |   33240.61 Hz | 1952.0000 |  359
+  12 |   32222.09 Hz | 1952.0000 |  348
+  13 |    6759.23 Hz | 1951.0000 |   73
+  14 |   29444.33 Hz | 1951.0000 |  318
+  15 |   29907.29 Hz | 1951.0000 |  323
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (219744) view: Data min[249] = 0.006147, Data max[0] = 63.415161[0m
+ ________________________________________________________________
+0||                                                             ||
+1||                                                              |
+2||                                                              |
+3||                                                              |
+4||                                                              |
+5||                              | |  |               |       |  |
+6||                             |||||||||||||||||||||||||||||||| |
+7||                             |||||||||||||||||||||||||||||||| |
+8||||||||||||||||||||||||||||||||| |||| ||||||||| |||||||||||||| |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (219814) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 14.0646, z-score: 12.36)
+[0;32mI (219834) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=20958[0m
+[0;32mI (219834) MAIN: MQTT message sent![0m
+[0;32mI (220424) mqtts: MQTT_EVENT_PUBLISHED, msg_id=20958[0m
+[0;32mI (229934) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (230754) Temperature sensor: Slot 0: 22.19 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   40370.21 Hz | 1968.0000 |  436
+   2 |    8981.45 Hz | 1964.0000 |   97
+   3 |    5185.16 Hz | 1959.0000 |   56
+   4 |   20648.07 Hz | 1959.0000 |  223
+   5 |   21851.76 Hz | 1955.0000 |  236
+   6 |   38055.41 Hz | 1955.0000 |  411
+   7 |   14351.79 Hz | 1955.0000 |  155
+   8 |    6388.86 Hz | 1955.0000 |   69
+   9 |   26111.01 Hz | 1954.0000 |  282
+  10 |   13333.28 Hz | 1954.0000 |  144
+  11 |   15833.27 Hz | 1953.0000 |  171
+  12 |   23518.42 Hz | 1952.0000 |  254
+  13 |   12870.32 Hz | 1952.0000 |  139
+  14 |   37314.67 Hz | 1952.0000 |  403
+  15 |   13518.46 Hz | 1951.0000 |  146
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (230834) view: Data min[213] = 0.003426, Data max[0] = 63.339691[0m
+ ________________________________________________________________
+0||                                                             ||
+1||                                                              |
+2||                                                              |
+3||                                                              |
+4||                                                              |
+5||                                |  |         |       |     |  |
+6||                             |||||||||||||||||||||||||||||||| |
+7||                             |||||||||||||||||||||||||||||||| |
+8|||||||||||||||||||||||||||||||||| || |||||| || |||||||| ||| || |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (230904) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 13.9890, z-score: 12.34)
+[0;32mI (230924) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=46493[0m
+[0;32mI (230924) MAIN: MQTT message sent![0m
+[0;32mI (231894) mqtts: MQTT_EVENT_PUBLISHED, msg_id=46493[0m
+[0;32mI (241024) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (241844) Temperature sensor: Slot 0: 22.25 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   26944.34 Hz | 1965.0000 |  291
+   2 |   23703.61 Hz | 1964.0000 |  256
+   3 |   11018.47 Hz | 1957.0000 |  119
+   4 |   22036.95 Hz | 1957.0000 |  238
+   5 |   12129.58 Hz | 1955.0000 |  131
+   6 |   27499.89 Hz | 1954.0000 |  297
+   7 |   24999.90 Hz | 1954.0000 |  270
+   8 |   22407.32 Hz | 1954.0000 |  242
+   9 |   19444.37 Hz | 1953.0000 |  210
+  10 |   32777.65 Hz | 1952.0000 |  354
+  11 |   36296.15 Hz | 1952.0000 |  392
+  12 |   26203.60 Hz | 1951.0000 |  283
+  13 |   28055.45 Hz | 1951.0000 |  303
+  14 |   28518.40 Hz | 1951.0000 |  308
+  15 |   29166.55 Hz | 1951.0000 |  315
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (241924) view: Data min[205] = 0.003533, Data max[0] = 63.438667[0m
+ ________________________________________________________________
+0||                                                             ||
+1||                                                              |
+2||                                                              |
+3||                                                              |
+4||                                                              |
+5||                              | |  |         |          |     |
+6||                             |||||||||||||||||||||||||||||||| |
+7||                             |||||||||||||||||||||||||||||||| |
+8|||||||||||||||||||||||||||||||| |||||| |||||||||||||||||  |||| |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (241994) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 14.0335, z-score: 12.34)
+[0;32mI (242014) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=14365[0m
+[0;32mI (242014) MAIN: MQTT message sent![0m
+[0;32mI (243564) mqtts: MQTT_EVENT_PUBLISHED, msg_id=14365[0m
+[0;32mI (252114) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (252934) Temperature sensor: Slot 0: 22.25 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |    9166.63 Hz | 1954.0000 |   99
+   2 |   35370.23 Hz | 1952.0000 |  382
+   3 |   22499.91 Hz | 1951.0000 |  243
+   4 |   29722.10 Hz | 1951.0000 |  321
+   5 |    9629.59 Hz | 1951.0000 |  104
+   6 |   29629.51 Hz | 1951.0000 |  320
+   7 |   21018.44 Hz | 1951.0000 |  227
+   8 |   29073.96 Hz | 1951.0000 |  314
+   9 |   14259.20 Hz | 1951.0000 |  154
+  10 |   32222.09 Hz | 1951.0000 |  348
+  11 |    8518.48 Hz | 1948.0000 |   92
+  12 |   34259.12 Hz | 1948.0000 |  370
+  13 |   12870.32 Hz | 1948.0000 |  139
+  14 |   12962.91 Hz | 1948.0000 |  140
+  15 |   13981.43 Hz | 1948.0000 |  151
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (253014) view: Data min[49] = 0.002741, Data max[0] = 63.350288[0m
+ ________________________________________________________________
+0||                                                             ||
+1||                                                              |
+2||                                                              |
+3||                                                              |
+4||                                                              |
+5||                              | |            |     | |     |  |
+6||                             |||||||||||||||||||||||||||||||| |
+7||                             |||||||||||||||||||||||||||||||| |
+8|||||||||||||||||||||||||||||||||| ||| ||||||||||| |||||||||||| |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (253084) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 14.0085, z-score: 12.31)
+[0;32mI (253104) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=22273[0m
+[0;32mI (253104) MAIN: MQTT message sent![0m
+[0;32mI (254214) mqtts: MQTT_EVENT_PUBLISHED, msg_id=22273[0m
+[0;32mI (263204) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (264024) Temperature sensor: Slot 0: 22.25 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |    5833.31 Hz | 1970.0000 |   63
+   2 |   24166.57 Hz | 1961.0000 |  261
+   3 |    7870.34 Hz | 1959.0000 |   85
+   4 |   21111.03 Hz | 1959.0000 |  228
+   5 |   18148.08 Hz | 1957.0000 |  196
+   6 |   32222.09 Hz | 1955.0000 |  348
+   7 |   23518.42 Hz | 1955.0000 |  254
+   8 |   34351.71 Hz | 1955.0000 |  371
+   9 |   19444.37 Hz | 1954.0000 |  210
+  10 |   12685.13 Hz | 1954.0000 |  137
+  11 |   23333.24 Hz | 1954.0000 |  252
+  12 |   19074.00 Hz | 1953.0000 |  206
+  13 |   25925.82 Hz | 1953.0000 |  280
+  14 |    9166.63 Hz | 1952.0000 |   99
+  15 |   24907.31 Hz | 1952.0000 |  269
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (264104) view: Data min[177] = 0.004008, Data max[0] = 62.661697[0m
+ ________________________________________________________________
+0||                                                             ||
+1||                                                              |
+2||                                                              |
+3||                                                              |
+4||                                                              |
+5||                              |              |     | |        |
+6||                             |||| ||||||||||||||||||||||||||| |
+7||                         |   |||||||||||||||||||||||||||||||| |
+8||||||||||||||||||||||||||| ||| |||||||||||||||||||| ||| |||||| |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (264174) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 13.8557, z-score: 12.36)
+[0;32mI (264194) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=52209[0m
+[0;32mI (264194) MAIN: MQTT message sent![0m
+[0;32mI (264654) mqtts: MQTT_EVENT_PUBLISHED, msg_id=52209[0m
+[0;32mI (274294) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (275114) Temperature sensor: Slot 0: 22.25 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   12314.77 Hz | 1966.0000 |  133
+   2 |   19351.77 Hz | 1957.0000 |  209
+   3 |   14444.39 Hz | 1954.0000 |  156
+   4 |    8425.89 Hz | 1953.0000 |   91
+   5 |   37036.89 Hz | 1953.0000 |  400
+   6 |   11203.66 Hz | 1952.0000 |  121
+   7 |    8518.48 Hz | 1951.0000 |   92
+   8 |   28518.40 Hz | 1951.0000 |  308
+   9 |   13425.87 Hz | 1951.0000 |  145
+  10 |   36296.15 Hz | 1951.0000 |  392
+  11 |   16388.82 Hz | 1951.0000 |  177
+  12 |   15092.53 Hz | 1951.0000 |  163
+  13 |   28333.22 Hz | 1948.0000 |  306
+  14 |   26481.38 Hz | 1948.0000 |  286
+  15 |   35092.45 Hz | 1948.0000 |  379
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (275194) view: Data min[193] = 0.001782, Data max[0] = 62.539944[0m
+ ________________________________________________________________
+0||                                                             ||
+1||                                                              |
+2||                                                              |
+3||                                                              |
+4||                                                              |
+5||                                |                  |    |  |  |
+6||                             |||||||||||||||||||||||||||||||| |
+7||                             |||||||||||||||||||||||||||||||| |
+8|||||||||||||||||||||||||||||||||| |||  ||||||||||||| |||| |||  |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (275264) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 13.8180, z-score: 12.29)
+[0;32mI (275284) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=27863[0m
+[0;32mI (275284) MAIN: MQTT message sent![0m
+[0;32mI (276124) mqtts: MQTT_EVENT_PUBLISHED, msg_id=27863[0m
+[0;32mI (285384) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (286204) Temperature sensor: Slot 0: 22.25 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   31944.32 Hz | 1966.0000 |  345
+   2 |   32314.68 Hz | 1955.0000 |  349
+   3 |   30648.03 Hz | 1953.0000 |  331
+   4 |   34814.68 Hz | 1953.0000 |  376
+   5 |   36944.30 Hz | 1952.0000 |  399
+   6 |   39444.29 Hz | 1952.0000 |  426
+   7 |   23055.46 Hz | 1951.0000 |  249
+   8 |   20092.51 Hz | 1951.0000 |  217
+   9 |   37592.45 Hz | 1951.0000 |  406
+  10 |   12036.99 Hz | 1951.0000 |  130
+  11 |   38888.73 Hz | 1951.0000 |  420
+  12 |   30462.84 Hz | 1948.0000 |  329
+  13 |   38333.18 Hz | 1948.0000 |  414
+  14 |   19351.77 Hz | 1948.0000 |  209
+  15 |   30370.25 Hz | 1948.0000 |  328
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (286284) view: Data min[92] = 0.004707, Data max[0] = 63.400818[0m
+ ________________________________________________________________
+0||                                                             ||
+1||                                                              |
+2||                                                              |
+3||                                                              |
+4||                                                              |
+5||                              | |            |     |    |  |  |
+6||                             |||||||||||||||||||||||||||||||| |
+7||                             |||||||||||||||||||||||||||||||| |
+8|||||||||||||||||||||||||||||||  | | || ||||||| |||||||||| |    |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (286354) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 14.0382, z-score: 12.31)
+[0;32mI (286374) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=3353[0m
+[0;32mI (286374) MAIN: MQTT message sent![0m
+[0;32mI (287384) mqtts: MQTT_EVENT_PUBLISHED, msg_id=3353[0m
+[0;32mI (296484) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (297304) Temperature sensor: Slot 0: 22.25 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   29166.55 Hz | 1966.0000 |  315
+   2 |   16574.01 Hz | 1966.0000 |  179
+   3 |   14444.39 Hz | 1964.0000 |  156
+   4 |   21111.03 Hz | 1961.0000 |  228
+   5 |    9722.18 Hz | 1957.0000 |  105
+   6 |    5833.31 Hz | 1957.0000 |   63
+   7 |   19444.37 Hz | 1955.0000 |  210
+   8 |   35277.64 Hz | 1955.0000 |  381
+   9 |   20370.29 Hz | 1954.0000 |  220
+  10 |   21481.40 Hz | 1952.0000 |  232
+  11 |   38610.96 Hz | 1952.0000 |  417
+  12 |   14814.76 Hz | 1952.0000 |  160
+  13 |   41018.36 Hz | 1952.0000 |  443
+  14 |   22777.69 Hz | 1951.0000 |  246
+  15 |   28425.81 Hz | 1951.0000 |  307
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (297384) view: Data min[209] = 0.002624, Data max[0] = 63.341408[0m
+ ________________________________________________________________
+0||                                                             ||
+1||                                                              |
+2||                                                              |
+3||                                                              |
+4||                                                              |
+5||                              | |            |     | |     |  |
+6||                             |||||||||||||||||||||||||||||||| |
+7||                             |||||||||||||||||||||||||||||||| |
+8||||||||||||||||||||||||||||||| |  |||||||||||||||||||| ||||| | |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (297454) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 13.9645, z-score: 12.29)
+[0;32mI (297474) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=51840[0m
+[0;32mI (297474) MAIN: MQTT message sent![0m
+[0;32mI (297834) mqtts: MQTT_EVENT_PUBLISHED, msg_id=51840[0m
+[0;32mI (307574) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (308394) Temperature sensor: Slot 0: 22.25 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   12407.36 Hz | 1961.0000 |  134
+   2 |    5370.35 Hz | 1959.0000 |   58
+   3 |    8703.67 Hz | 1957.0000 |   94
+   4 |    8148.12 Hz | 1953.0000 |   88
+   5 |   19814.74 Hz | 1952.0000 |  214
+   6 |   33055.42 Hz | 1952.0000 |  357
+   7 |   33703.57 Hz | 1952.0000 |  364
+   8 |   34351.71 Hz | 1952.0000 |  371
+   9 |   37870.22 Hz | 1952.0000 |  409
+  10 |   17314.75 Hz | 1952.0000 |  187
+  11 |   38888.73 Hz | 1952.0000 |  420
+  12 |   16759.19 Hz | 1951.0000 |  181
+  13 |   40925.76 Hz | 1951.0000 |  442
+  14 |    9259.22 Hz | 1951.0000 |  100
+  15 |    9166.63 Hz | 1951.0000 |   99
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (308474) view: Data min[83] = 0.002053, Data max[0] = 63.344948[0m
+ ________________________________________________________________
+0||                                                             ||
+1||                                                              |
+2||                                                              |
+3||                                                              |
+4||                                                              |
+5||                              | |  |                    |  |  |
+6||                             |||||||||||||||||||||||||||||||| |
+7||                             |||||||||||||||||||||||||||||||| |
+8|||||||||||||||||||||||||||||||| |||| ||| ||||||| |||||||| |||  |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (308544) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 14.0265, z-score: 12.32)
+[0;32mI (308564) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=14126[0m
+[0;32mI (308564) MAIN: MQTT message sent![0m
+[0;32mI (309304) mqtts: MQTT_EVENT_PUBLISHED, msg_id=14126[0m
+[0;32mI (318664) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (319484) Temperature sensor: Slot 0: 22.25 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   29166.55 Hz | 1966.0000 |  315
+   2 |   28148.04 Hz | 1955.0000 |  304
+   3 |    8425.89 Hz | 1955.0000 |   91
+   4 |   35648.00 Hz | 1954.0000 |  385
+   5 |   15740.68 Hz | 1954.0000 |  170
+   6 |   40555.39 Hz | 1954.0000 |  438
+   7 |   18611.04 Hz | 1953.0000 |  201
+   8 |   21851.76 Hz | 1953.0000 |  236
+   9 |   37685.04 Hz | 1952.0000 |  407
+  10 |   16111.05 Hz | 1952.0000 |  174
+  11 |   30185.06 Hz | 1952.0000 |  326
+  12 |   26573.97 Hz | 1952.0000 |  287
+  13 |   26203.60 Hz | 1951.0000 |  283
+  14 |    5648.13 Hz | 1951.0000 |   61
+  15 |   11851.80 Hz | 1951.0000 |  128
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (319564) view: Data min[10] = 0.002394, Data max[0] = 63.057182[0m
+ ________________________________________________________________
+0||                                                             ||
+1||                                                              |
+2||                                                              |
+3||                                                              |
+4||                                                              |
+5||                              | |            |     |    |  |  |
+6||                             |||||||||||||||||||||||||||||||| |
+7||                  |          |||||||||||||||||||||||||||||||| |
+8|||||||||||||||||||||||||||||||||||||| |||||| |  ||||||||| || | |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (319634) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 13.8561, z-score: 12.27)
+[0;32mI (319654) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=4780[0m
+[0;32mI (319654) MAIN: MQTT message sent![0m
+[0;32mI (320764) mqtts: MQTT_EVENT_PUBLISHED, msg_id=4780[0m
+[0;32mI (329754) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (330574) Temperature sensor: Slot 0: 22.25 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   31573.95 Hz | 1970.0000 |  341
+   2 |   10277.74 Hz | 1967.0000 |  111
+   3 |   29166.55 Hz | 1959.0000 |  315
+   4 |   19444.37 Hz | 1955.0000 |  210
+   5 |   10370.33 Hz | 1954.0000 |  112
+   6 |   31666.54 Hz | 1953.0000 |  342
+   7 |   11759.21 Hz | 1952.0000 |  127
+   8 |   28333.22 Hz | 1952.0000 |  306
+   9 |   34999.86 Hz | 1952.0000 |  378
+  10 |   33796.16 Hz | 1952.0000 |  365
+  11 |   24907.31 Hz | 1951.0000 |  269
+  12 |   27129.52 Hz | 1951.0000 |  293
+  13 |   32870.24 Hz | 1951.0000 |  355
+  14 |   33425.79 Hz | 1951.0000 |  361
+  15 |   23703.61 Hz | 1951.0000 |  256
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (330664) view: Data min[95] = 0.009220, Data max[0] = 63.401527[0m
+ ________________________________________________________________
+0||                                                             ||
+1||                                                              |
+2||                                                              |
+3||                                                              |
+4||                                                              |
+5||                              | |            |     | |  |  |  |
+6||                             |||||||||||||||||||||||||||||||| |
+7||                             |||||||||||||||||||||||||||||||| |
+8|||||||||||||||||||||||||||||||||| |||||||||||| |||||||| |||||| |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (330734) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 14.0780, z-score: 12.36)
+[0;32mI (330754) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=19185[0m
+[0;32mI (330754) MAIN: MQTT message sent![0m
+[0;32mI (331214) mqtts: MQTT_EVENT_PUBLISHED, msg_id=19185[0m
+[0;32mI (340854) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (341674) Temperature sensor: Slot 0: 22.19 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   33888.75 Hz | 1954.0000 |  366
+   2 |   38055.41 Hz | 1953.0000 |  411
+   3 |   24629.53 Hz | 1953.0000 |  266
+   4 |    8518.48 Hz | 1952.0000 |   92
+   5 |   11851.80 Hz | 1951.0000 |  128
+   6 |   32314.68 Hz | 1951.0000 |  349
+   7 |   29907.29 Hz | 1951.0000 |  323
+   8 |    9907.37 Hz | 1951.0000 |  107
+   9 |    9537.00 Hz | 1951.0000 |  103
+  10 |   24166.57 Hz | 1951.0000 |  261
+  11 |    5277.76 Hz | 1948.0000 |   57
+  12 |   23796.20 Hz | 1948.0000 |  257
+  13 |    7499.97 Hz | 1948.0000 |   81
+  14 |   10092.55 Hz | 1946.0000 |  109
+  15 |   35925.78 Hz | 1946.0000 |  388
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (341744) view: Data min[167] = 0.003739, Data max[0] = 62.333881[0m
+ ________________________________________________________________
+0||                                                             ||
+1||                                                              |
+2||                                                              |
+3||                                                              |
+4||                                                              |
+5||                              | |                  | |        |
+6||                              ||||||||||||||||||||||||||||||| |
+7||      |                      |||||||||||||||||||||||||||||||| |
+8|||||||| |||||||||||||||||||||||  |||||||||||||||||||||| |||||| |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (341814) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 13.7253, z-score: 12.32)
+[0;32mI (341834) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=51431[0m
+[0;32mI (341834) MAIN: MQTT message sent![0m
+[0;32mI (342474) mqtts: MQTT_EVENT_PUBLISHED, msg_id=51431[0m
+[0;32mI (351934) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (352754) Temperature sensor: Slot 0: 22.25 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   24999.90 Hz | 1961.0000 |  270
+   2 |   29536.92 Hz | 1961.0000 |  319
+   3 |   20833.25 Hz | 1959.0000 |  225
+   4 |   28425.81 Hz | 1959.0000 |  307
+   5 |    5370.35 Hz | 1957.0000 |   58
+   6 |   28148.04 Hz | 1957.0000 |  304
+   7 |   27222.11 Hz | 1955.0000 |  294
+   8 |   13981.43 Hz | 1955.0000 |  151
+   9 |   11851.80 Hz | 1954.0000 |  128
+  10 |    8425.89 Hz | 1954.0000 |   91
+  11 |   36388.74 Hz | 1954.0000 |  393
+  12 |    9999.96 Hz | 1954.0000 |  108
+  13 |    4999.98 Hz | 1954.0000 |   54
+  14 |   19259.18 Hz | 1954.0000 |  208
+  15 |   19814.74 Hz | 1954.0000 |  214
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (352834) view: Data min[185] = 0.008585, Data max[0] = 63.470993[0m
+ ________________________________________________________________
+0||                                                             ||
+1||                                                              |
+2||                                                              |
+3||                                                              |
+4||                                                              |
+5||                              | |            |     |    |  |  |
+6||                             |||||||||||||||||||||||||||||||| |
+7||                 |           |||||||||||||||||||||||||||||||| |
+8||||||||||||||||||| |||||||||||||| |||||||||||||||||| ||| ||||  |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (352904) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 13.9759, z-score: 12.30)
+[0;32mI (352924) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=28953[0m
+[0;32mI (352924) MAIN: MQTT message sent![0m
+[0;32mI (353734) mqtts: MQTT_EVENT_PUBLISHED, msg_id=28953[0m
+[0;32mI (363024) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (363844) Temperature sensor: Slot 0: 22.19 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   17962.89 Hz | 1966.0000 |  194
+   2 |   40277.62 Hz | 1959.0000 |  435
+   3 |   19166.59 Hz | 1959.0000 |  207
+   4 |    9814.78 Hz | 1957.0000 |  106
+   5 |   13981.43 Hz | 1955.0000 |  151
+   6 |    7592.56 Hz | 1955.0000 |   82
+   7 |   15370.31 Hz | 1955.0000 |  166
+   8 |   18333.26 Hz | 1955.0000 |  198
+   9 |   24073.98 Hz | 1955.0000 |  260
+  10 |   29629.51 Hz | 1954.0000 |  320
+  11 |   21851.76 Hz | 1954.0000 |  236
+  12 |   17499.93 Hz | 1954.0000 |  189
+  13 |   15740.68 Hz | 1953.0000 |  170
+  14 |   27777.67 Hz | 1952.0000 |  300
+  15 |   14444.39 Hz | 1952.0000 |  156
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (363924) view: Data min[70] = 0.005318, Data max[0] = 63.521759[0m
+ ________________________________________________________________
+0||                                                             ||
+1||                                                              |
+2||                                                              |
+3||                                                              |
+4||                                                              |
+5||                              |    |                 |        |
+6||                             |||||||||||||||||||||||||||||||| |
+7||                             |||||||||||||||||||||||||||||||| |
+8||||||||||||||||||||||||||||||||  ||| ||||||||||||| ||||||||||| |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (363994) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 13.9539, z-score: 12.26)
+[0;32mI (364014) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=51590[0m
+[0;32mI (364014) MAIN: MQTT message sent![0m
+[0;32mI (365214) mqtts: MQTT_EVENT_PUBLISHED, msg_id=51590[0m
+[0;32mI (374114) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (374934) Temperature sensor: Slot 0: 22.19 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   28981.37 Hz |    0.0000 |  313
+   2 |   30092.47 Hz |    0.0000 |  325
+   3 |   29999.88 Hz |    0.0000 |  324
+   4 |   29907.29 Hz |    0.0000 |  323
+   5 |   29814.70 Hz |    0.0000 |  322
+   6 |   29722.10 Hz |    0.0000 |  321
+   7 |   29629.51 Hz |    0.0000 |  320
+   8 |   29536.92 Hz |    0.0000 |  319
+   9 |   29444.33 Hz |    0.0000 |  318
+  10 |   29351.73 Hz |    0.0000 |  317
+  11 |   29259.14 Hz |    0.0000 |  316
+  12 |   29166.55 Hz |    0.0000 |  315
+  13 |   29073.96 Hz |    0.0000 |  314
+  14 |   30185.06 Hz |    0.0000 |  326
+  15 |   28888.77 Hz |    0.0000 |  312
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (375014) view: Data min[152] = 0.000003, Data max[0] = 253.158142[0m
+ ________________________________________________________________
+0||                             ||||||||||||||||||||||||||||||||||
+1||                             |||||||||||||||||||||||||||||||| |
+2||                             |||||||||||||||||||||||||||||||| |
+3||                             |||||||||||||||||||||||||||||||| |
+4||                             |||||||||||||||||||||||||||||||| |
+5||                             |||||||||||||||||||||||||||||||| |
+6||                             |||||||||||||||||||||||||||||||| |
+7||                             |||||||||||||||||||||||||||||||| |
+8||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (375084) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 55.9342, z-score: 12.24)
+[0;32mI (375104) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=42162[0m
+[0;32mI (375104) MAIN: MQTT message sent![0m
+[0;32mI (375864) mqtts: MQTT_EVENT_PUBLISHED, msg_id=42162[0m
+[0;32mI (385214) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (386034) Temperature sensor: Slot 0: 22.25 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   21388.80 Hz | 1970.0000 |  231
+   2 |   40092.43 Hz | 1959.0000 |  433
+   3 |   40833.17 Hz | 1957.0000 |  441
+   4 |   41203.54 Hz | 1957.0000 |  445
+   5 |   28240.63 Hz | 1957.0000 |  305
+   6 |   17685.12 Hz | 1955.0000 |  191
+   7 |   26203.60 Hz | 1955.0000 |  283
+   8 |   27870.26 Hz | 1954.0000 |  301
+   9 |   23703.61 Hz | 1953.0000 |  256
+  10 |   36388.74 Hz | 1952.0000 |  393
+  11 |   38055.41 Hz | 1951.0000 |  411
+  12 |   38240.59 Hz | 1951.0000 |  413
+  13 |   24999.90 Hz | 1951.0000 |  270
+  14 |   22499.91 Hz | 1951.0000 |  243
+  15 |   21666.58 Hz | 1951.0000 |  234
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (386114) view: Data min[39] = 0.001757, Data max[0] = 63.344837[0m
+ ________________________________________________________________
+0||                                                             ||
+1||                                                              |
+2||                                                              |
+3||                                                              |
+4||                                                              |
+5||                              | |  |               |          |
+6||                             |||||||||||||||||||||||||||||||| |
+7||                             |||||||||||||||||||||||||||||||| |
+8|||||||||||||||||||||||||||||||| |||| ||||||||||||||| ||||||||| |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (386184) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 14.1570, z-score: 12.38)
+[0;32mI (386204) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=19485[0m
+[0;32mI (386204) MAIN: MQTT message sent![0m
+[0;32mI (387324) mqtts: MQTT_EVENT_PUBLISHED, msg_id=19485[0m
+[0;32mI (396304) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (397124) Temperature sensor: Slot 0: 22.19 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   31481.36 Hz | 1966.0000 |  340
+   2 |   34444.31 Hz | 1966.0000 |  372
+   3 |   16944.38 Hz | 1961.0000 |  183
+   4 |   37685.04 Hz | 1959.0000 |  407
+   5 |   15648.09 Hz | 1959.0000 |  169
+   6 |   33148.02 Hz | 1957.0000 |  358
+   7 |   13055.50 Hz | 1955.0000 |  141
+   8 |   19536.96 Hz | 1955.0000 |  211
+   9 |   23518.42 Hz | 1954.0000 |  254
+  10 |   23425.83 Hz | 1954.0000 |  253
+  11 |   38148.00 Hz | 1953.0000 |  412
+  12 |    8796.26 Hz | 1952.0000 |   95
+  13 |   35185.04 Hz | 1952.0000 |  380
+  14 |   17407.34 Hz | 1952.0000 |  188
+  15 |   30555.43 Hz | 1951.0000 |  330
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (397204) view: Data min[320] = 0.002775, Data max[0] = 63.319191[0m
+ ________________________________________________________________
+0||                                                             ||
+1||                                                              |
+2||                                                              |
+3||                                                              |
+4||                                                              |
+5||                              | |            |     |    |     |
+6||                             |||||||||||||||||||||||||||||||| |
+7||                             |||||||||||||||||||||||||||||||| |
+8||||||||||||||||||||||||||||||||   |||||||||||||||| |||||| |||| |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (397274) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 13.9610, z-score: 12.31)
+[0;32mI (397294) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=36156[0m
+[0;32mI (397294) MAIN: MQTT message sent![0m
+[0;32mI (397974) mqtts: MQTT_EVENT_PUBLISHED, msg_id=36156[0m
+[0;32mI (407394) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (408214) Temperature sensor: Slot 0: 22.19 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   15648.09 Hz | 1966.0000 |  169
+   2 |   29536.92 Hz | 1964.0000 |  319
+   3 |    9074.04 Hz | 1961.0000 |   98
+   4 |   25740.64 Hz | 1961.0000 |  278
+   5 |   38796.14 Hz | 1959.0000 |  419
+   6 |   10925.88 Hz | 1959.0000 |  118
+   7 |   22592.50 Hz | 1957.0000 |  244
+   8 |    9259.22 Hz | 1954.0000 |  100
+   9 |   11388.84 Hz | 1952.0000 |  123
+  10 |   23888.79 Hz | 1951.0000 |  258
+  11 |    7499.97 Hz | 1951.0000 |   81
+  12 |   12592.54 Hz | 1951.0000 |  136
+  13 |   23240.65 Hz | 1951.0000 |  251
+  14 |   23333.24 Hz | 1951.0000 |  252
+  15 |   24259.16 Hz | 1951.0000 |  262
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (408294) view: Data min[200] = 0.002142, Data max[0] = 63.420589[0m
+ ________________________________________________________________
+0||                                                             ||
+1||                                                              |
+2||                                                              |
+3||                                                              |
+4||                                                              |
+5||                              | |  |               | |        |
+6||                             |||||||||||||||||||||||||||||||| |
+7||                             |||||||||||||||||||||||||||||||| |
+8|||||||||||||||||||||||||||||||| | |||||||||| ||||||| || |||||| |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (408364) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 14.0405, z-score: 12.28)
+[0;32mI (408384) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=23295[0m
+[0;32mI (408384) MAIN: MQTT message sent![0m
+[0;32mI (409444) mqtts: MQTT_EVENT_PUBLISHED, msg_id=23295[0m
+[0;32mI (418494) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (419314) Temperature sensor: Slot 0: 22.25 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   19722.14 Hz | 1966.0000 |  213
+   2 |   27870.26 Hz | 1966.0000 |  301
+   3 |   21111.03 Hz | 1961.0000 |  228
+   4 |    7407.38 Hz | 1957.0000 |   80
+   5 |   10462.92 Hz | 1957.0000 |  113
+   6 |   17777.71 Hz | 1955.0000 |  192
+   7 |   35740.60 Hz | 1955.0000 |  386
+   8 |   29536.92 Hz | 1954.0000 |  319
+   9 |   28425.81 Hz | 1954.0000 |  307
+  10 |   15370.31 Hz | 1954.0000 |  166
+  11 |   32499.87 Hz | 1953.0000 |  351
+  12 |   27407.30 Hz | 1953.0000 |  296
+  13 |   26203.60 Hz | 1953.0000 |  283
+  14 |   20462.88 Hz | 1953.0000 |  221
+  15 |   33703.57 Hz | 1952.0000 |  364
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (419394) view: Data min[334] = 0.004439, Data max[0] = 63.602547[0m
+ ________________________________________________________________
+0||                                                             ||
+1||                                                              |
+2||                                                              |
+3||                                                              |
+4||                                                              |
+5||                                |      |     |     | |     |  |
+6||                             |||||||||||||||||||||||||||||||| |
+7||                             |||||||||||||||||||||||||||||||| |
+8|||||||||||||||||||||||||||||||||||||||||||| |||||| ||||||||| | |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (419464) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 14.0585, z-score: 12.31)
+[0;32mI (419484) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=28632[0m
+[0;32mI (419484) MAIN: MQTT message sent![0m
+[0;32mI (419894) mqtts: MQTT_EVENT_PUBLISHED, msg_id=28632[0m
+[0;32mI (429584) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (430404) Temperature sensor: Slot 0: 22.25 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   26203.60 Hz | 1969.0000 |  283
+   2 |   37036.89 Hz | 1968.0000 |  400
+   3 |   19074.00 Hz | 1966.0000 |  206
+   4 |   33981.35 Hz | 1961.0000 |  367
+   5 |   39073.92 Hz | 1959.0000 |  422
+   6 |    8055.52 Hz | 1957.0000 |   87
+   7 |   23888.79 Hz | 1957.0000 |  258
+   8 |   11296.25 Hz | 1957.0000 |  122
+   9 |   33518.38 Hz | 1955.0000 |  362
+  10 |   13703.65 Hz | 1954.0000 |  148
+  11 |   39814.66 Hz | 1954.0000 |  430
+  12 |   21666.58 Hz | 1953.0000 |  234
+  13 |   18796.22 Hz | 1952.0000 |  203
+  14 |   23703.61 Hz | 1952.0000 |  256
+  15 |   39166.51 Hz | 1952.0000 |  423
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (430484) view: Data min[201] = 0.003432, Data max[0] = 63.356361[0m
+ ________________________________________________________________
+0||                                                             ||
+1||                                                              |
+2||                                                              |
+3||                                                              |
+4||                                                              |
+5||                              | |  |   |     |     | |  |     |
+6||                             |||||||||||||||||||||||||||||||| |
+7||                             |||||||||||||||||||||||||||||||| |
+8|||||||||||||||||||||||||||||||||||| || | ||||||||| | |||| |||| |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (430554) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 13.9406, z-score: 12.27)
+[0;32mI (430574) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=7705[0m
+[0;32mI (430574) MAIN: MQTT message sent![0m
+[0;32mI (431364) mqtts: MQTT_EVENT_PUBLISHED, msg_id=7705[0m
+[0;32mI (440674) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (441494) Temperature sensor: Slot 0: 22.25 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   32407.28 Hz | 1963.0000 |  350
+   2 |   12407.36 Hz | 1961.0000 |  134
+   3 |   35740.60 Hz | 1959.0000 |  386
+   4 |   40185.02 Hz | 1959.0000 |  434
+   5 |   13425.87 Hz | 1959.0000 |  145
+   6 |   30370.25 Hz | 1957.0000 |  328
+   7 |   22499.91 Hz | 1955.0000 |  243
+   8 |   32499.87 Hz | 1955.0000 |  351
+   9 |   27314.71 Hz | 1955.0000 |  295
+  10 |    7685.15 Hz | 1954.0000 |   83
+  11 |   25740.64 Hz | 1954.0000 |  278
+  12 |   34722.09 Hz | 1953.0000 |  375
+  13 |   19259.18 Hz | 1952.0000 |  208
+  14 |   34907.27 Hz | 1952.0000 |  377
+  15 |   10555.51 Hz | 1952.0000 |  114
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (441574) view: Data min[11] = 0.000085, Data max[0] = 63.516987[0m
+ ________________________________________________________________
+0||                                                             ||
+1||                                                              |
+2||                                                              |
+3||                                                              |
+4||                                                              |
+5||                              | |  |               |    |  |  |
+6||                             |||||||||||||||||||||||||||||||| |
+7||                             |||||||||||||||||||||||||||||||| |
+8|||||||||||||||||||||||||||||||||||||||||| || |||||| ||| | |||| |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (441644) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 14.1134, z-score: 12.35)
+[0;32mI (441664) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=21573[0m
+[0;32mI (441664) MAIN: MQTT message sent![0m
+[0;32mI (443034) mqtts: MQTT_EVENT_PUBLISHED, msg_id=21573[0m
+[0;32mI (451764) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (452584) Temperature sensor: Slot 0: 22.25 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   37036.89 Hz | 1963.0000 |  400
+   2 |   29166.55 Hz | 1959.0000 |  315
+   3 |   18240.67 Hz | 1954.0000 |  197
+   4 |   18981.40 Hz | 1952.0000 |  205
+   5 |   31018.40 Hz | 1952.0000 |  335
+   6 |   39722.06 Hz | 1951.0000 |  429
+   7 |   21759.17 Hz | 1951.0000 |  235
+   8 |   21481.40 Hz | 1951.0000 |  232
+   9 |   37314.67 Hz | 1951.0000 |  403
+  10 |   10833.29 Hz | 1951.0000 |  117
+  11 |   24999.90 Hz | 1951.0000 |  270
+  12 |   24629.53 Hz | 1949.0000 |  266
+  13 |   31944.32 Hz | 1948.0000 |  345
+  14 |   25925.82 Hz | 1948.0000 |  280
+  15 |   26111.01 Hz | 1948.0000 |  282
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (452664) view: Data min[417] = 0.001316, Data max[0] = 63.362938[0m
+ ________________________________________________________________
+0||                                                             ||
+1||                                                              |
+2||                                                              |
+3||                                                              |
+4||                                                              |
+5||                                |  |         |     | |     |  |
+6||                              ||||||||||||||||||||||||||||||| |
+7||                             |||||||||||||||||||||||||||||||| |
+8|||||||||||||||||||||||||||||||||| || | |||||||| || | ||| ||  | |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (452734) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 13.9976, z-score: 12.30)
+[0;32mI (452754) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=2575[0m
+[0;32mI (452754) MAIN: MQTT message sent![0m
+[0;32mI (453474) mqtts: MQTT_EVENT_PUBLISHED, msg_id=2575[0m
+[0;32mI (462854) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (463674) Temperature sensor: Slot 0: 22.19 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   15370.31 Hz | 1961.0000 |  166
+   2 |   16203.64 Hz | 1959.0000 |  175
+   3 |   21481.40 Hz | 1957.0000 |  232
+   4 |    9907.37 Hz | 1955.0000 |  107
+   5 |   17870.30 Hz | 1955.0000 |  193
+   6 |   25277.68 Hz | 1955.0000 |  273
+   7 |   24907.31 Hz | 1955.0000 |  269
+   8 |   19351.77 Hz | 1955.0000 |  209
+   9 |   26111.01 Hz | 1954.0000 |  282
+  10 |   10370.33 Hz | 1954.0000 |  112
+  11 |   26388.78 Hz | 1953.0000 |  285
+  12 |   25740.64 Hz | 1953.0000 |  278
+  13 |   38240.59 Hz | 1952.0000 |  413
+  14 |   28703.59 Hz | 1952.0000 |  310
+  15 |   34444.31 Hz | 1952.0000 |  372
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (463754) view: Data min[33] = 0.001472, Data max[0] = 63.578285[0m
+ ________________________________________________________________
+0||                                                             ||
+1||                                                              |
+2||                                                              |
+3||                                                              |
+4||                                                              |
+5||                              | |            |          |     |
+6||                             |||||||||||||||||||||||||||||||| |
+7||                             |||||||||||||||||||||||||||||||| |
+8|||||||||||||||||||||||||||||||| | |||| ||||||| | |||||||||| || |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (463824) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 14.0667, z-score: 12.31)
+[0;32mI (463844) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=37194[0m
+[0;32mI (463844) MAIN: MQTT message sent![0m
+[0;32mI (464734) mqtts: MQTT_EVENT_PUBLISHED, msg_id=37194[0m
+[0;32mI (473944) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (474764) Temperature sensor: Slot 0: 22.19 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   36110.96 Hz | 1982.0000 |  390
+   2 |   39722.06 Hz | 1959.0000 |  429
+   3 |   26296.19 Hz | 1955.0000 |  284
+   4 |   19907.33 Hz | 1955.0000 |  215
+   5 |   31481.36 Hz | 1953.0000 |  340
+   6 |   24351.76 Hz | 1952.0000 |  263
+   7 |   29629.51 Hz | 1952.0000 |  320
+   8 |   36573.93 Hz | 1952.0000 |  395
+   9 |   38610.96 Hz | 1952.0000 |  417
+  10 |   34259.12 Hz | 1951.0000 |  370
+  11 |   27962.85 Hz | 1951.0000 |  302
+  12 |   27222.11 Hz | 1951.0000 |  294
+  13 |   33610.98 Hz | 1949.0000 |  363
+  14 |   27407.30 Hz | 1949.0000 |  296
+  15 |   30370.25 Hz | 1949.0000 |  328
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (474844) view: Data min[288] = 0.005893, Data max[0] = 63.161621[0m
+ ________________________________________________________________
+0||                                                             ||
+1||                                                              |
+2||                                                              |
+3||                                                              |
+4||                                                              |
+5||                                |  |         |     |       |  |
+6||                              ||||||||||||||||||||||||||||||| |
+7||                             |||||||||||||||||||||||||||||||| |
+8|||||||||||||||||||||||||||||||||| |||  || |||| ||| | |||||| || |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (474914) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 14.0063, z-score: 12.32)
+[0;32mI (474934) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=39640[0m
+[0;32mI (474934) MAIN: MQTT message sent![0m
+[0;32mI (476214) mqtts: MQTT_EVENT_PUBLISHED, msg_id=39640[0m
+[0;32mI (485034) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (485854) Temperature sensor: Slot 0: 22.25 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   27592.48 Hz | 1967.0000 |  298
+   2 |   35370.23 Hz | 1955.0000 |  382
+   3 |   40185.02 Hz | 1954.0000 |  434
+   4 |   16203.64 Hz | 1954.0000 |  175
+   5 |   34351.71 Hz | 1954.0000 |  371
+   6 |   17222.15 Hz | 1954.0000 |  186
+   7 |   20277.70 Hz | 1953.0000 |  219
+   8 |   10092.55 Hz | 1953.0000 |  109
+   9 |   27222.11 Hz | 1952.0000 |  294
+  10 |   18055.48 Hz | 1952.0000 |  195
+  11 |   21111.03 Hz | 1951.0000 |  228
+  12 |   16388.82 Hz | 1951.0000 |  177
+  13 |   32407.28 Hz | 1951.0000 |  350
+  14 |   33333.20 Hz | 1951.0000 |  360
+  15 |   33518.38 Hz | 1951.0000 |  362
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (485934) view: Data min[147] = 0.004716, Data max[0] = 63.443985[0m
+ ________________________________________________________________
+0||                                                             ||
+1||                                                              |
+2||                                                              |
+3||                                                              |
+4||                                                              |
+5||                              | |                  |          |
+6||                             |||||||||||||||||||||||||||||||| |
+7||                             |||||||||||||||||||||||||||||||| |
+8|||||||||||||||||||||||||||||||| |||||  |||||||||||||||||||| || |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (486004) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 14.0075, z-score: 12.29)
+[0;32mI (486024) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=9674[0m
+[0;32mI (486024) MAIN: MQTT message sent![0m
+[0;32mI (486654) mqtts: MQTT_EVENT_PUBLISHED, msg_id=9674[0m
+[0;32mI (496124) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (496944) Temperature sensor: Slot 0: 22.19 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   35925.78 Hz |   10.0000 |  388
+   2 |   30092.47 Hz |    0.0000 |  325
+   3 |   30185.06 Hz |    0.0000 |  326
+   4 |   29999.88 Hz |    0.0000 |  324
+   5 |   29907.29 Hz |    0.0000 |  323
+   6 |   29814.70 Hz |    0.0000 |  322
+   7 |   29722.10 Hz |    0.0000 |  321
+   8 |   29629.51 Hz |    0.0000 |  320
+   9 |   29536.92 Hz |    0.0000 |  319
+  10 |   29444.33 Hz |    0.0000 |  318
+  11 |   29351.73 Hz |    0.0000 |  317
+  12 |   29259.14 Hz |    0.0000 |  316
+  13 |   29166.55 Hz |    0.0000 |  315
+  14 |   29073.96 Hz |    0.0000 |  314
+  15 |   28981.37 Hz |    0.0000 |  313
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (497024) view: Data min[152] = 0.000003, Data max[0] = 253.158142[0m
+ ________________________________________________________________
+0||                             ||||||||||||||||||||||||||||||||||
+1||                             |||||||||||||||||||||||||||||||| |
+2||                             |||||||||||||||||||||||||||||||| |
+3||                             |||||||||||||||||||||||||||||||| |
+4||                             |||||||||||||||||||||||||||||||| |
+5||                             |||||||||||||||||||||||||||||||| |
+6||                             |||||||||||||||||||||||||||||||| |
+7||                             |||||||||||||||||||||||||||||||| |
+8||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (497094) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 55.9354, z-score: 12.24)
+[0;32mI (497114) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=52300[0m
+[0;32mI (497114) MAIN: MQTT message sent![0m
+[0;32mI (498324) mqtts: MQTT_EVENT_PUBLISHED, msg_id=52300[0m
+[0;32mI (507224) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (508044) Temperature sensor: Slot 0: 22.25 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   36388.74 Hz |    5.0000 |  393
+   2 |   41296.13 Hz |    2.0000 |  446
+   3 |   28888.77 Hz |    0.0000 |  312
+   4 |   29999.88 Hz |    0.0000 |  324
+   5 |   29907.29 Hz |    0.0000 |  323
+   6 |   29814.70 Hz |    0.0000 |  322
+   7 |   29722.10 Hz |    0.0000 |  321
+   8 |   29629.51 Hz |    0.0000 |  320
+   9 |   29536.92 Hz |    0.0000 |  319
+  10 |   29444.33 Hz |    0.0000 |  318
+  11 |   29351.73 Hz |    0.0000 |  317
+  12 |   29259.14 Hz |    0.0000 |  316
+  13 |   29166.55 Hz |    0.0000 |  315
+  14 |   29073.96 Hz |    0.0000 |  314
+  15 |   28981.37 Hz |    0.0000 |  313
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (508124) view: Data min[15] = 0.000258, Data max[0] = 253.151733[0m
+ ________________________________________________________________
+0||                             ||||||||||||||||||||||||||||||||||
+1||                             |||||||||||||||||||||||||||||||| |
+2||                             |||||||||||||||||||||||||||||||| |
+3||                             |||||||||||||||||||||||||||||||| |
+4||                             |||||||||||||||||||||||||||||||| |
+5||                             |||||||||||||||||||||||||||||||| |
+6||                             |||||||||||||||||||||||||||||||| |
+7||                             |||||||||||||||||||||||||||||||| |
+8||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (508194) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 55.9336, z-score: 12.24)
+[0;32mI (508214) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=8264[0m
+[0;32mI (508214) MAIN: MQTT message sent![0m
+[0;32mI (508774) mqtts: MQTT_EVENT_PUBLISHED, msg_id=8264[0m
+[0;32mI (518314) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (519134) Temperature sensor: Slot 0: 22.25 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   22314.72 Hz |    4.0000 |  241
+   2 |   28981.37 Hz |    0.0000 |  313
+   3 |   30092.47 Hz |    0.0000 |  325
+   4 |   29999.88 Hz |    0.0000 |  324
+   5 |   29907.29 Hz |    0.0000 |  323
+   6 |   29814.70 Hz |    0.0000 |  322
+   7 |   29722.10 Hz |    0.0000 |  321
+   8 |   29629.51 Hz |    0.0000 |  320
+   9 |   29536.92 Hz |    0.0000 |  319
+  10 |   29444.33 Hz |    0.0000 |  318
+  11 |   29351.73 Hz |    0.0000 |  317
+  12 |   29259.14 Hz |    0.0000 |  316
+  13 |   29166.55 Hz |    0.0000 |  315
+  14 |   29073.96 Hz |    0.0000 |  314
+  15 |   30277.66 Hz |    0.0000 |  327
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (519214) view: Data min[83] = 0.000237, Data max[0] = 253.154755[0m
+ ________________________________________________________________
+0||                             ||||||||||||||||||||||||||||||||||
+1||                             |||||||||||||||||||||||||||||||| |
+2||                             |||||||||||||||||||||||||||||||| |
+3||                             |||||||||||||||||||||||||||||||| |
+4||                             |||||||||||||||||||||||||||||||| |
+5||                             |||||||||||||||||||||||||||||||| |
+6||                             |||||||||||||||||||||||||||||||| |
+7||                             |||||||||||||||||||||||||||||||| |
+8||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (519284) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 55.9337, z-score: 12.24)
+[0;32mI (519304) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=37652[0m
+[0;32mI (519304) MAIN: MQTT message sent![0m
+[0;32mI (520244) mqtts: MQTT_EVENT_PUBLISHED, msg_id=37652[0m
+[0;32mI (529404) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (530224) Temperature sensor: Slot 0: 22.19 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   28981.37 Hz |    0.0000 |  313
+   2 |   30092.47 Hz |    0.0000 |  325
+   3 |   29999.88 Hz |    0.0000 |  324
+   4 |   29907.29 Hz |    0.0000 |  323
+   5 |   29814.70 Hz |    0.0000 |  322
+   6 |   29722.10 Hz |    0.0000 |  321
+   7 |   29629.51 Hz |    0.0000 |  320
+   8 |   29536.92 Hz |    0.0000 |  319
+   9 |   29444.33 Hz |    0.0000 |  318
+  10 |   29351.73 Hz |    0.0000 |  317
+  11 |   29259.14 Hz |    0.0000 |  316
+  12 |   29166.55 Hz |    0.0000 |  315
+  13 |   29073.96 Hz |    0.0000 |  314
+  14 |   30185.06 Hz |    0.0000 |  326
+  15 |   28888.77 Hz |    0.0000 |  312
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (530304) view: Data min[152] = 0.000003, Data max[0] = 253.158142[0m
+ ________________________________________________________________
+0||                             ||||||||||||||||||||||||||||||||||
+1||                             |||||||||||||||||||||||||||||||| |
+2||                             |||||||||||||||||||||||||||||||| |
+3||                             |||||||||||||||||||||||||||||||| |
+4||                             |||||||||||||||||||||||||||||||| |
+5||                             |||||||||||||||||||||||||||||||| |
+6||                             |||||||||||||||||||||||||||||||| |
+7||                             |||||||||||||||||||||||||||||||| |
+8||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (530374) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 55.9342, z-score: 12.24)
+[0;32mI (530394) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=1607[0m
+[0;32mI (530394) MAIN: MQTT message sent![0m
+[0;32mI (531704) mqtts: MQTT_EVENT_PUBLISHED, msg_id=1607[0m
+[0;32mI (540494) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (541314) Temperature sensor: Slot 0: 22.25 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   29073.96 Hz |    4.0000 |  314
+   2 |   18518.45 Hz |    2.0000 |  200
+   3 |   28981.37 Hz |    0.0000 |  313
+   4 |   30092.47 Hz |    0.0000 |  325
+   5 |   29999.88 Hz |    0.0000 |  324
+   6 |   29907.29 Hz |    0.0000 |  323
+   7 |   29814.70 Hz |    0.0000 |  322
+   8 |   29722.10 Hz |    0.0000 |  321
+   9 |   29629.51 Hz |    0.0000 |  320
+  10 |   29536.92 Hz |    0.0000 |  319
+  11 |   29444.33 Hz |    0.0000 |  318
+  12 |   29351.73 Hz |    0.0000 |  317
+  13 |   29259.14 Hz |    0.0000 |  316
+  14 |   29166.55 Hz |    0.0000 |  315
+  15 |   30185.06 Hz |    0.0000 |  326
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (541394) view: Data min[21] = 0.000101, Data max[0] = 253.156372[0m
+ ________________________________________________________________
+0||                             ||||||||||||||||||||||||||||||||||
+1||                             |||||||||||||||||||||||||||||||| |
+2||                             |||||||||||||||||||||||||||||||| |
+3||                             |||||||||||||||||||||||||||||||| |
+4||                             |||||||||||||||||||||||||||||||| |
+5||                             |||||||||||||||||||||||||||||||| |
+6||                             |||||||||||||||||||||||||||||||| |
+7||                             |||||||||||||||||||||||||||||||| |
+8||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (541464) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 55.9355, z-score: 12.24)
+[0;32mI (541484) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=40710[0m
+[0;32mI (541484) MAIN: MQTT message sent![0m
+[0;32mI (542154) mqtts: MQTT_EVENT_PUBLISHED, msg_id=40710[0m
+[0;32mI (551594) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (552414) Temperature sensor: Slot 0: 22.25 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   38518.36 Hz | 1961.0000 |  416
+   2 |   31666.54 Hz | 1955.0000 |  342
+   3 |   28240.63 Hz | 1953.0000 |  305
+   4 |   36018.38 Hz | 1952.0000 |  389
+   5 |   15555.49 Hz | 1948.0000 |  168
+   6 |   36573.93 Hz | 1948.0000 |  395
+   7 |   16203.64 Hz | 1948.0000 |  175
+   8 |   38610.96 Hz | 1948.0000 |  417
+   9 |    8240.71 Hz | 1948.0000 |   89
+  10 |   40277.62 Hz | 1946.0000 |  435
+  11 |   21111.03 Hz | 1946.0000 |  228
+  12 |    6111.09 Hz | 1946.0000 |   66
+  13 |    6388.86 Hz | 1946.0000 |   69
+  14 |   31203.58 Hz | 1946.0000 |  337
+  15 |   29814.70 Hz | 1946.0000 |  322
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (552494) view: Data min[432] = 0.002856, Data max[0] = 62.626320[0m
+ ________________________________________________________________
+0||                                                             ||
+1||                                                              |
+2||                                                              |
+3||                                                              |
+4||                                                              |
+5||                              | |            |     | |   | |  |
+6||                             |||||||||||||||||||||||||||||||| |
+7||                          |  |||||||||||||||||||||||||||||||| |
+8|||||||||||||||||||||||||||| |||||||||| |||||||  |||  | | ||||| |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (552564) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 13.8214, z-score: 12.29)
+[0;32mI (552584) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=20277[0m
+[0;32mI (552584) MAIN: MQTT message sent![0m
+[0;32mI (553524) mqtts: MQTT_EVENT_PUBLISHED, msg_id=20277[0m
+[0;32mI (562684) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (563504) Temperature sensor: Slot 0: 22.25 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   33425.79 Hz | 1959.0000 |  361
+   2 |   37777.62 Hz | 1957.0000 |  408
+   3 |   37685.04 Hz | 1955.0000 |  407
+   4 |    6018.49 Hz | 1955.0000 |   65
+   5 |   17499.93 Hz | 1954.0000 |  189
+   6 |   20370.29 Hz | 1954.0000 |  220
+   7 |   32314.68 Hz | 1953.0000 |  349
+   8 |   18518.45 Hz | 1953.0000 |  200
+   9 |   32962.83 Hz | 1952.0000 |  356
+  10 |   38796.14 Hz | 1952.0000 |  419
+  11 |   27870.26 Hz | 1952.0000 |  301
+  12 |   27962.85 Hz | 1951.0000 |  302
+  13 |   38333.18 Hz | 1951.0000 |  414
+  14 |   39444.29 Hz | 1951.0000 |  426
+  15 |   27499.89 Hz | 1951.0000 |  297
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (563584) view: Data min[58] = 0.004506, Data max[0] = 63.556190[0m
+ ________________________________________________________________
+0||                                                             ||
+1||                                                              |
+2||                                                              |
+3||                                                              |
+4||                                                              |
+5||                              | |  |               | |  |  |  |
+6||                             |||||||||||||||||||||||||||||||| |
+7||                             |||||||||||||||||||||||||||||||| |
+8|||||||||||||||||||||||||||||||  | || |||||||||||||||||||| | || |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (563654) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 13.9294, z-score: 12.23)
+[0;32mI (563674) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=9575[0m
+[0;32mI (563674) MAIN: MQTT message sent![0m
+[0;32mI (564884) mqtts: MQTT_EVENT_PUBLISHED, msg_id=9575[0m
+[0;32mI (573774) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (574594) Temperature sensor: Slot 0: 22.25 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   26111.01 Hz | 1968.0000 |  282
+   2 |   14629.57 Hz | 1963.0000 |  158
+   3 |    6851.82 Hz | 1959.0000 |   74
+   4 |    9444.41 Hz | 1955.0000 |  102
+   5 |   22222.13 Hz | 1954.0000 |  240
+   6 |   14166.61 Hz | 1953.0000 |  153
+   7 |   11388.84 Hz | 1952.0000 |  123
+   8 |   28333.22 Hz | 1952.0000 |  306
+   9 |   32777.65 Hz | 1951.0000 |  354
+  10 |   18518.45 Hz | 1951.0000 |  200
+  11 |    7499.97 Hz | 1951.0000 |   81
+  12 |    7222.19 Hz | 1951.0000 |   78
+  13 |   39814.66 Hz | 1951.0000 |  430
+  14 |   21111.03 Hz | 1951.0000 |  228
+  15 |   16296.23 Hz | 1951.0000 |  176
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (574674) view: Data min[145] = 0.003916, Data max[0] = 63.579498[0m
+ ________________________________________________________________
+0||                                                             ||
+1||                                                              |
+2||                                                              |
+3||                                                              |
+4||                                                              |
+5||                              | |  |         |     | |        |
+6||                             |||||||||||||||||||||||||||||||| |
+7||                             |||||||||||||||||||||||||||||||| |
+8|||||||||||||||||||||||||||||||||||||||||||||||| |||||||  ||||| |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (574744) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 14.0944, z-score: 12.34)
+[0;32mI (574764) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=5689[0m
+[0;32mI (574764) MAIN: MQTT message sent![0m
+[0;32mI (575334) mqtts: MQTT_EVENT_PUBLISHED, msg_id=5689[0m
+[0;32mI (584864) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (585684) Temperature sensor: Slot 0: 22.25 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   10185.14 Hz | 1954.0000 |  110
+   2 |    6574.05 Hz | 1953.0000 |   71
+   3 |   40740.58 Hz | 1952.0000 |  440
+   4 |    6296.27 Hz | 1952.0000 |   68
+   5 |   35092.45 Hz | 1952.0000 |  379
+   6 |   32592.46 Hz | 1951.0000 |  352
+   7 |   39444.29 Hz | 1951.0000 |  426
+   8 |   36851.70 Hz | 1951.0000 |  398
+   9 |   40925.76 Hz | 1951.0000 |  442
+  10 |    8518.48 Hz | 1951.0000 |   92
+  11 |   27222.11 Hz | 1948.0000 |  294
+  12 |   30462.84 Hz | 1948.0000 |  329
+  13 |   33055.42 Hz | 1948.0000 |  357
+  14 |   33981.35 Hz | 1948.0000 |  367
+  15 |   15370.31 Hz | 1948.0000 |  166
+
+Signal spectrum in absolute scale (bins 54-486)
+[0;32mI (585764) view: Data min[18] = 0.005199, Data max[0] = 63.498043[0m
+ ________________________________________________________________
+0||                                                             ||
+1||                                                              |
+2||                                                              |
+3||                                                              |
+4||                                                              |
+5||                                |  |         |     | |     |  |
+6||                             |||||||||||||||||||||||||||||||| |
+7||                             |||||||||||||||||||||||||||||||| |
+8|||||||||||||||||||||||||||||||||| |||||||||||| ||| | ||||||| | |
+9                                                                |
+ 0123456789012345678901234567890123456789012345678901234567890123
+[0;32mI (585834) view: Plot: Length=450, min=0.000000, max=2.000000[0m
+Max frequency detected: 41388.72 Hz (bin 447, magnitude: 14.1063, z-score: 12.36)
+[0;32mI (585854) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=40487[0m
+[0;32mI (585854) MAIN: MQTT message sent![0m
+[0;32mI (586804) mqtts: MQTT_EVENT_PUBLISHED, msg_id=40487[0m

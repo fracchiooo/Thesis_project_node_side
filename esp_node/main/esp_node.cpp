@@ -63,19 +63,23 @@ DeviceState_t get_device_state() {
 }
 
 void initialize_sntp(void) {
+    Wifi_wrapper* wifi = Wifi_wrapper::getWifiInstance();
+    if (!wifi->isConnected()) {
+        ESP_LOGE(TAG, "WiFi not connected, cannot sync time");
+        return;
+    }
     ESP_LOGI(TAG, "Initializing SNTP");
     esp_sntp_setoperatingmode(SNTP_OPMODE_POLL);
     esp_sntp_setservername(0, "pool.ntp.org");
     esp_sntp_init();
-    
-    // Aspetta sincronizzazione (max 10 secondi)
+    // Aspetta sincronizzazione (max 20 secondi)
     int retry = 0;
-    while (sntp_get_sync_status() == SNTP_SYNC_STATUS_RESET && ++retry < 10) {
-        ESP_LOGI(TAG, "Waiting for time sync... (%d/10)", retry);
+    while (sntp_get_sync_status() == SNTP_SYNC_STATUS_RESET && ++retry < 20) {
+        ESP_LOGI(TAG, "Waiting for time sync... (%d/20)", retry);
         vTaskDelay(pdMS_TO_TICKS(1000));
     }
     
-    if (retry < 10) {
+    if (retry < 20) {
         time_t now;
         time(&now);
         ESP_LOGI(TAG, "Time synchronized: %s", ctime(&now));
@@ -369,8 +373,8 @@ extern "C" void app_main(void)
     pwm_burst_40 = new PwmController(GPIO_NUM_1, LEDC_CHANNEL_2, LEDC_TIMER_1, false);
     pwm_burst_40->init();
 
-    pwm_burst_40->setFrequency(1000);
-    pwm_burst_20->setFrequency(1000);
+    pwm_burst_40->setFrequency(150);
+    pwm_burst_20->setFrequency(150);
 
 
     //actuator.begin(GPIO_NUM_6, GPIO_NUM_5, LEDC_CHANNEL_2, LEDC_TIMER_2);
@@ -421,16 +425,15 @@ extern "C" void app_main(void)
     ESP_LOGI(TAG, "MQTT connected! System running in background...");
     initialize_sntp();
     FFT_ultrasonic fft;
-    fft.begin(ADC_CHANNEL_9, ADC_UNIT_2, 90000, 900); // sampling at 90 khz in order to sample signals till 45 khz, taking 900 samples, so sampling with steps of 100 hz
+    fft.begin(ADC_CHANNEL_6, ADC_UNIT_1, 90000, 1024); // sampling at 90 khz in order to sample signals till 45 khz, taking 900 samples, so sampling with steps of 100 hz
     // the sampling rate should be always <= of MAX_SAMPLING_FREQUENCY
-    fft.read_and_get_data_fixed_samples();
 
     while(1){
         sensor.scan(new_slots);
         float curr_temp = sensor.readTemperature(0);
 
         fft.read_and_get_data_fixed_samples();
-        float max_freq = fft.getMaxFrequencyFFT();
+        int max_freq = fft.getMaxFrequencyFFT();
 
         char* payload = encodePayload(curr_temp);
         mqtt.send_message(nullptr, payload);

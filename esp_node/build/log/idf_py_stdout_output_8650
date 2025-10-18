@@ -1,0 +1,1109 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x28 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d9c
+entry 0x403c9914
+[0;32mI (27) boot: ESP-IDF v5.2.2 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Oct 17 2025 17:10:25[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=355cch (218572) map[0m
+[0;32mI (139) esp_image: segment 1: paddr=000455f4 vaddr=3fc9b300 size=04880h ( 18560) load[0m
+[0;32mI (143) esp_image: segment 2: paddr=00049e7c vaddr=40374000 size=0619ch ( 24988) load[0m
+[0;32mI (150) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=b6358h (746328) map[0m
+[0;32mI (287) esp_image: segment 4: paddr=00106380 vaddr=4037a19c size=110c0h ( 69824) load[0m
+[0;32mI (311) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (312) boot: Disabling RNG early entropy source...[0m
+[0;32mI (323) cpu_start: Multicore app[0m
+[0;32mI (333) cpu_start: Pro cpu start user code[0m
+[0;32mI (333) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (333) cpu_start: Application information:[0m
+[0;32mI (336) cpu_start: Project name:     esp_node[0m
+[0;32mI (341) cpu_start: App version:      5129bb6-dirty[0m
+[0;32mI (346) cpu_start: Compile time:     Oct 17 2025 17:10:22[0m
+[0;32mI (352) cpu_start: ELF file SHA256:  d58eada14...[0m
+[0;32mI (358) cpu_start: ESP-IDF:          v5.2.2[0m
+[0;32mI (363) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (367) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (372) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (377) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (384) heap_init: At 3FCA3D90 len 00045980 (278 KiB): RAM[0m
+[0;32mI (390) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (396) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (402) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (410) spi_flash: detected chip: gd[0m
+[0;32mI (413) spi_flash: flash io: dio[0m
+[0;33mW (417) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (431) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (437) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (444) main_task: Started on CPU0[0m
+[0;32mI (454) main_task: Calling app_main()[0m
+[0;32mI (454) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (464) PWM: PWM inizializzato: GPIO 2, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (474) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (474) PWM: PWM inizializzato: GPIO 3, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (484) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (494) PWM: PWM inizializzato: GPIO 4, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (504) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (504) PWM: PWM inizializzato: GPIO 1, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (514) PWM: Cambio frequenza: 40000 -> 1000 Hz, risoluzione: 8 -> 14 bit[0m
+[0;32mI (524) PWM: Timer riconfigurato: 1000 Hz, 14 bit (16384 livelli)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (534) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (544) PWM: Cambio frequenza: 40000 -> 1000 Hz, risoluzione: 8 -> 14 bit[0m
+[0;32mI (554) PWM: Timer riconfigurato: 1000 Hz, 14 bit (16384 livelli)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (564) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (574) gpio: GPIO[26]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (574) gpio: GPIO[26]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (584) Temperature sensor: Bus inizializzato su GPIO 26[0m
+[0;32mI (704) Temperature sensor: Slot 0: BA00000046755428[0m
+[0;32mI (704) Temperature sensor: Trovati 1 nuovi (totale 1)[0m
+[0;32mI (704) MAIN: Inizializzati 1 sensori[0m
+[0;32mI (734) wifi: ESP_WIFI_MODE_STA[0m
+[0;32mI (734) pp: pp rom version: e7ae62f[0m
+[0;32mI (734) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (744) wifi:wifi driver task: 3fcb0250, prio:23, stack:6656, core=0[0m
+[0;32mI (754) wifi:wifi firmware version: 3e0076f[0m
+[0;32mI (754) wifi:wifi certification version: v7.0[0m
+[0;32mI (754) wifi:config NVS flash: enabled[0m
+[0;32mI (754) wifi:config nano formating: disabled[0m
+[0;32mI (764) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (764) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (774) wifi:Init management short buffer num: 32[0m
+[0;32mI (774) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (774) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (784) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (784) wifi:Init static rx buffer num: 10[0m
+[0;32mI (794) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (794) wifi_init: rx ba win: 6[0m
+[0;32mI (794) wifi_init: tcpip mbox: 32[0m
+[0;32mI (804) wifi_init: udp mbox: 6[0m
+[0;32mI (804) wifi_init: tcp mbox: 6[0m
+[0;32mI (804) wifi_init: tcp tx win: 5760[0m
+[0;32mI (814) wifi_init: tcp rx win: 5760[0m
+[0;32mI (814) wifi_init: tcp mss: 1440[0m
+[0;32mI (824) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (824) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (834) phy_init: phy_version 670,b7bc9b9,Apr 30 2024,10:54:13[0m
+[0;32mI (884) wifi:mode : sta (34:b7:da:54:35:28)[0m
+[0;32mI (884) wifi:enable tsf[0m
+[0;32mI (884) wifi: wifi_init_sta finished.[0m
+[0;32mI (894) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (894) wifi:state: init -> auth (b0)[0m
+[0;32mI (1894) wifi:state: auth -> init (200)[0m
+[0;32mI (1894) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (1894) wifi: retry to connect to the AP[0m
+[0;32mI (1894) wifi: connect to the AP fail[0m
+[0;32mI (4304) wifi: retry to connect to the AP[0m
+[0;32mI (4304) wifi: connect to the AP fail[0m
+[0;32mI (4314) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (4314) wifi:state: init -> auth (b0)[0m
+[0;32mI (4324) wifi:state: auth -> assoc (0)[0m
+[0;32mI (4394) wifi:state: assoc -> run (10)[0m
+[0;32mI (4424) wifi:connected with Oneplus, aid = 7, channel 1, BW20, bssid = ba:7e:6d:57:2c:9d[0m
+[0;32mI (4424) wifi:security: WPA2-PSK, phy: bgn, rssi: -53[0m
+[0;32mI (4424) wifi:pm start, type: 1[0m
+
+[0;32mI (4424) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (4434) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (4454) wifi:<ba-add>idx:0 (ifx:0, ba:7e:6d:57:2c:9d), tid:0, ssn:0, winSize:64[0m
+[0;32mI (4514) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (4514) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (5444) esp_netif_handlers: sta ip: 10.121.56.118, mask: 255.255.255.0, gw: 10.121.56.100[0m
+[0;32mI (5444) wifi: got ip:10.121.56.118[0m
+[0;32mI (5444) wifi: connected to ap SSID:Oneplus password:123456789[0m
+[0;32mI (5454) MAIN: WIFI connected![0m
+[0;32mI (5454) mqtts: MqttWrapper created with client_id: 34B7DA543528[0m
+[0;32mI (5464) mqtts: [APP] Free memory: 267600 bytes[0m
+[0;32mI (5464) mqtts: Other event id:7[0m
+[0;32mI (6854) mqtts: MQTT_EVENT_CONNECTED[0m
+[0;32mI (6864) mqtts: Subscribed to 34B7DA543528/downlink, msg_id=47941[0m
+[0;32mI (6904) mqtts: MQTT_EVENT_SUBSCRIBED, msg_id=47941[0m
+[0;32mI (6974) MAIN: MQTT connected! System running in background...[0m
+[0;32mI (6974) MAIN: Initializing SNTP[0m
+[0;32mI (6974) MAIN: Waiting for time sync... (1/20)[0m
+[0;32mI (7974) MAIN: Waiting for time sync... (2/20)[0m
+[0;32mI (8974) MAIN: Waiting for time sync... (3/20)[0m
+[0;32mI (9974) MAIN: Waiting for time sync... (4/20)[0m
+[0;32mI (10974) MAIN: Waiting for time sync... (5/20)[0m
+[0;32mI (11974) MAIN: Time synchronized: Fri Oct 17 17:35:44 2025
+[0m
+[0;32mI (11974) FFT: sampling rate too high, the maximum sampling rate will be used: 83333[0m
+[0;32mI (11974) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (12094) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (12904) Temperature sensor: Slot 0: 22.25 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   14811.14 Hz | 1957.0000 |  364
+   2 |   10864.21 Hz | 1957.0000 |  267
+   3 |   38126.48 Hz | 1957.0000 |  937
+   4 |   10701.46 Hz | 1957.0000 |  263
+   5 |   40852.70 Hz | 1957.0000 | 1004
+   6 |   35603.70 Hz | 1957.0000 |  875
+   7 |   35318.87 Hz | 1955.0000 |  868
+   8 |   35440.94 Hz | 1955.0000 |  871
+   9 |   34342.31 Hz | 1954.0000 |  844
+  10 |   30680.21 Hz | 1954.0000 |  754
+  11 |   13346.30 Hz | 1954.0000 |  328
+  12 |   15706.32 Hz | 1954.0000 |  386
+  13 |   34383.00 Hz | 1953.0000 |  845
+  14 |   12125.60 Hz | 1953.0000 |  298
+  15 |   40608.56 Hz | 1952.0000 |  998
+
+Guru Meditation Error: Core  0 panic'ed (LoadStoreAlignment). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4037b77a  PS      : 0x00060133  A0      : 0x8037ef45  A1      : 0x3fca4220  
+A2      : 0x3e2ca5ff  A3      : 0xb33fffff  A4      : 0x0000cdcd  A5      : 0x3fc9d490  
+A6      : 0x3fc9b3a8  A7      : 0x0000000c  A8      : 0x8208868c  A9      : 0x3fca4330  
+A10     : 0x00000064  A11     : 0x0000cdcd  A12     : 0x8037f0c6  A13     : 0x3fc9d480  
+A14     : 0x00060023  A15     : 0x00000001  SAR     : 0x0000001d  EXCCAUSE: 0x00000009  
+EXCVADDR: 0x3e2ca5ff  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x4037b777:0x3fca4220 0x4037ef42:0x3fca4240 0x4037eb4c:0x3fca4270 0x42003599:0x3fca42b0 0x42003753:0x3fca42d0 0x42088b81:0x3fca42f0 0x42088c4e:0x3fca4310 0x42088cae:0x3fca4330 0x42088689:0x3fca4350 0x42011ae1:0x3fca4370 0x42011e0e:0x3fca4390 0x42011e9e:0x3fca43c0 0x420126e9:0x3fca43e0 0x4200ba06:0x3fca9450 0x420b53eb:0x3fca94d0 0x4037ed1d:0x3fca9500
+
+
+
+
+ELF file SHA256: d58eada14
+
+Rebooting...
+���ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x28 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375b24
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d9c
+entry 0x403c9914
+[0;32mI (31) boot: ESP-IDF v5.2.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 17 2025 17:10:25[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v0.2[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=355cch (218572) map[0m
+[0;32mI (143) esp_image: segment 1: paddr=000455f4 vaddr=3fc9b300 size=04880h ( 18560) load[0m
+[0;32mI (147) esp_image: segment 2: paddr=00049e7c vaddr=40374000 size=0619ch ( 24988) load[0m
+[0;32mI (154) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=b6358h (746328) map[0m
+[0;32mI (291) esp_image: segment 4: paddr=00106380 vaddr=4037a19c size=110c0h ( 69824) load[0m
+[0;32mI (316) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (316) boot: Disabling RNG early entropy source...[0m
+[0;32mI (327) cpu_start: Multicore app[0m
+[0;32mI (337) cpu_start: Pro cpu start user code[0m
+[0;32mI (337) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (337) cpu_start: Application information:[0m
+[0;32mI (340) cpu_start: Project name:     esp_node[0m
+[0;32mI (345) cpu_start: App version:      5129bb6-dirty[0m
+[0;32mI (351) cpu_start: Compile time:     Oct 17 2025 17:10:22[0m
+[0;32mI (357) cpu_start: ELF file SHA256:  d58eada14...[0m
+[0;32mI (362) cpu_start: ESP-IDF:          v5.2.2[0m
+[0;32mI (367) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (372) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (377) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (381) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (389) heap_init: At 3FCA3D90 len 00045980 (278 KiB): RAM[0m
+[0;32mI (395) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (401) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (407) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (414) spi_flash: detected chip: gd[0m
+[0;32mI (417) spi_flash: flash io: dio[0m
+[0;33mW (421) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (435) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (441) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (449) main_task: Started on CPU0[0m
+[0;32mI (459) main_task: Calling app_main()[0m
+[0;32mI (459) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (469) PWM: PWM inizializzato: GPIO 2, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (479) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (479) PWM: PWM inizializzato: GPIO 3, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (489) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (499) PWM: PWM inizializzato: GPIO 4, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (509) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (509) PWM: PWM inizializzato: GPIO 1, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (519) PWM: Cambio frequenza: 40000 -> 1000 Hz, risoluzione: 8 -> 14 bit[0m
+[0;32mI (529) PWM: Timer riconfigurato: 1000 Hz, 14 bit (16384 livelli)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (539) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (549) PWM: Cambio frequenza: 40000 -> 1000 Hz, risoluzione: 8 -> 14 bit[0m
+[0;32mI (559) PWM: Timer riconfigurato: 1000 Hz, 14 bit (16384 livelli)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (569) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (579) gpio: GPIO[26]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (579) gpio: GPIO[26]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (589) Temperature sensor: Bus inizializzato su GPIO 26[0m
+[0;32mI (709) Temperature sensor: Slot 0: BA00000046755428[0m
+[0;32mI (709) Temperature sensor: Trovati 1 nuovi (totale 1)[0m
+[0;32mI (709) MAIN: Inizializzati 1 sensori[0m
+[0;32mI (739) wifi: ESP_WIFI_MODE_STA[0m
+[0;32mI (739) pp: pp rom version: e7ae62f[0m
+[0;32mI (739) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (749) wifi:wifi driver task: 3fcb0250, prio:23, stack:6656, core=0[0m
+[0;32mI (759) wifi:wifi firmware version: 3e0076f[0m
+[0;32mI (759) wifi:wifi certification version: v7.0[0m
+[0;32mI (759) wifi:config NVS flash: enabled[0m
+[0;32mI (759) wifi:config nano formating: disabled[0m
+[0;32mI (769) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (769) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (779) wifi:Init management short buffer num: 32[0m
+[0;32mI (779) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (779) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (789) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (789) wifi:Init static rx buffer num: 10[0m
+[0;32mI (799) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (799) wifi_init: rx ba win: 6[0m
+[0;32mI (799) wifi_init: tcpip mbox: 32[0m
+[0;32mI (809) wifi_init: udp mbox: 6[0m
+[0;32mI (809) wifi_init: tcp mbox: 6[0m
+[0;32mI (809) wifi_init: tcp tx win: 5760[0m
+[0;32mI (819) wifi_init: tcp rx win: 5760[0m
+[0;32mI (819) wifi_init: tcp mss: 1440[0m
+[0;32mI (829) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (829) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (839) phy_init: phy_version 670,b7bc9b9,Apr 30 2024,10:54:13[0m
+[0;32mI (889) wifi:mode : sta (34:b7:da:54:35:28)[0m
+[0;32mI (889) wifi:enable tsf[0m
+[0;32mI (889) wifi: wifi_init_sta finished.[0m
+[0;32mI (899) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (899) wifi:state: init -> auth (b0)[0m
+[0;32mI (1899) wifi:state: auth -> init (200)[0m
+[0;32mI (1899) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (1899) wifi: retry to connect to the AP[0m
+[0;32mI (1899) wifi: connect to the AP fail[0m
+[0;32mI (4309) wifi: retry to connect to the AP[0m
+[0;32mI (4309) wifi: connect to the AP fail[0m
+[0;32mI (4319) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (4319) wifi:state: init -> auth (b0)[0m
+[0;32mI (4359) wifi:state: auth -> assoc (0)[0m
+[0;32mI (4389) wifi:state: assoc -> run (10)[0m
+[0;32mI (4429) wifi:connected with Oneplus, aid = 8, channel 1, BW20, bssid = ba:7e:6d:57:2c:9d[0m
+[0;32mI (4429) wifi:security: WPA2-PSK, phy: bgn, rssi: -44[0m
+[0;32mI (4439) wifi:pm start, type: 1[0m
+
+[0;32mI (4439) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (4449) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (4449) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (4459) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (4479) wifi:<ba-add>idx:0 (ifx:0, ba:7e:6d:57:2c:9d), tid:0, ssn:0, winSize:64[0m
+[0;32mI (5469) esp_netif_handlers: sta ip: 10.121.56.118, mask: 255.255.255.0, gw: 10.121.56.100[0m
+[0;32mI (5469) wifi: got ip:10.121.56.118[0m
+[0;32mI (5469) wifi: connected to ap SSID:Oneplus password:123456789[0m
+[0;32mI (5479) MAIN: WIFI connected![0m
+[0;32mI (5479) mqtts: MqttWrapper created with client_id: 34B7DA543528[0m
+[0;32mI (5489) mqtts: [APP] Free memory: 267600 bytes[0m
+[0;32mI (5489) mqtts: Other event id:7[0m
+[0;32mI (6569) mqtts: MQTT_EVENT_CONNECTED[0m
+[0;32mI (6579) mqtts: Subscribed to 34B7DA543528/downlink, msg_id=14245[0m
+[0;32mI (6619) mqtts: MQTT_EVENT_SUBSCRIBED, msg_id=14245[0m
+[0;32mI (6999) MAIN: MQTT connected! System running in background...[0m
+[0;32mI (6999) MAIN: Initializing SNTP[0m
+[0;32mI (6999) MAIN: Waiting for time sync... (1/20)[0m
+[0;32mI (7999) MAIN: Waiting for time sync... (2/20)[0m
+[0;32mI (8999) MAIN: Waiting for time sync... (3/20)[0m
+[0;32mI (9999) MAIN: Waiting for time sync... (4/20)[0m
+[0;32mI (10999) MAIN: Waiting for time sync... (5/20)[0m
+[0;32mI (11999) MAIN: Waiting for time sync... (6/20)[0m
+[0;32mI (12999) MAIN: Waiting for time sync... (7/20)[0m
+[0;32mI (13999) MAIN: Waiting for time sync... (8/20)[0m
+[0;32mI (14999) MAIN: Waiting for time sync... (9/20)[0m
+[0;32mI (15999) MAIN: Waiting for time sync... (10/20)[0m
+[0;32mI (16999) MAIN: Waiting for time sync... (11/20)[0m
+[0;32mI (17999) MAIN: Waiting for time sync... (12/20)[0m
+[0;32mI (18999) MAIN: Waiting for time sync... (13/20)[0m
+[0;32mI (19999) MAIN: Waiting for time sync... (14/20)[0m
+[0;32mI (20999) MAIN: Waiting for time sync... (15/20)[0m
+[0;32mI (21999) MAIN: Waiting for time sync... (16/20)[0m
+[0;32mI (22999) MAIN: Waiting for time sync... (17/20)[0m
+[0;32mI (23999) MAIN: Waiting for time sync... (18/20)[0m
+[0;32mI (24999) MAIN: Waiting for time sync... (19/20)[0m
+[0;33mW (25999) MAIN: Time sync timeout[0m
+[0;32mI (25999) FFT: sampling rate too high, the maximum sampling rate will be used: 83333[0m
+[0;32mI (25999) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (26109) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (26929) Temperature sensor: Slot 0: 22.25 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   31860.22 Hz | 1961.0000 |  783
+   2 |   31656.77 Hz | 1961.0000 |  778
+   3 |   10091.11 Hz | 1961.0000 |  248
+   4 |   35156.11 Hz | 1961.0000 |  864
+   5 |   20467.04 Hz | 1961.0000 |  503
+   6 |    8789.03 Hz | 1959.0000 |  216
+   7 |   34789.90 Hz | 1959.0000 |  855
+   8 |    9928.35 Hz | 1959.0000 |  244
+   9 |   20548.42 Hz | 1959.0000 |  505
+  10 |    9724.90 Hz | 1957.0000 |  239
+  11 |   11759.39 Hz | 1957.0000 |  289
+  12 |   12288.36 Hz | 1955.0000 |  302
+  13 |   14200.79 Hz | 1954.0000 |  349
+  14 |   15950.46 Hz | 1954.0000 |  392
+  15 |   12410.43 Hz | 1954.0000 |  305
+
+Guru Meditation Error: Core  0 panic'ed (LoadStoreAlignment). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4037b77a  PS      : 0x00060133  A0      : 0x8037ef45  A1      : 0x3fca4220  
+A2      : 0x3e4b9701  A3      : 0xb33fffff  A4      : 0x0000cdcd  A5      : 0x3fc9d490  
+A6      : 0x3fc9b3a8  A7      : 0x0000000c  A8      : 0x8208868c  A9      : 0x3fca4330  
+A10     : 0x00000064  A11     : 0x0000cdcd  A12     : 0x8037f0c6  A13     : 0x3fc9d480  
+A14     : 0x00060023  A15     : 0x00000001  SAR     : 0x0000001d  EXCCAUSE: 0x00000009  
+EXCVADDR: 0x3e4b9701  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x4037b777:0x3fca4220 0x4037ef42:0x3fca4240 0x4037eb4c:0x3fca4270 0x42003599:0x3fca42b0 0x42003753:0x3fca42d0 0x42088b81:0x3fca42f0 0x42088c4e:0x3fca4310 0x42088cae:0x3fca4330 0x42088689:0x3fca4350 0x42011ae1:0x3fca4370 0x42011e0e:0x3fca4390 0x42011e9e:0x3fca43c0 0x420126e9:0x3fca43e0 0x4200ba06:0x3fca9450 0x420b53eb:0x3fca94d0 0x4037ed1d:0x3fca9500
+
+
+
+
+ELF file SHA256: d58eada14
+
+Rebooting...
+���ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x28 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375b24
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d9c
+entry 0x403c9914
+[0;32mI (31) boot: ESP-IDF v5.2.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 17 2025 17:10:25[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v0.2[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=355cch (218572) map[0m
+[0;32mI (143) esp_image: segment 1: paddr=000455f4 vaddr=3fc9b300 size=04880h ( 18560) load[0m
+[0;32mI (147) esp_image: segment 2: paddr=00049e7c vaddr=40374000 size=0619ch ( 24988) load[0m
+[0;32mI (154) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=b6358h (746328) map[0m
+[0;32mI (291) esp_image: segment 4: paddr=00106380 vaddr=4037a19c size=110c0h ( 69824) load[0m
+[0;32mI (316) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (316) boot: Disabling RNG early entropy source...[0m
+[0;32mI (327) cpu_start: Multicore app[0m
+[0;32mI (337) cpu_start: Pro cpu start user code[0m
+[0;32mI (337) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (337) cpu_start: Application information:[0m
+[0;32mI (340) cpu_start: Project name:     esp_node[0m
+[0;32mI (345) cpu_start: App version:      5129bb6-dirty[0m
+[0;32mI (351) cpu_start: Compile time:     Oct 17 2025 17:10:22[0m
+[0;32mI (357) cpu_start: ELF file SHA256:  d58eada14...[0m
+[0;32mI (362) cpu_start: ESP-IDF:          v5.2.2[0m
+[0;32mI (367) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (372) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (377) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (381) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (389) heap_init: At 3FCA3D90 len 00045980 (278 KiB): RAM[0m
+[0;32mI (395) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (401) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (407) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (414) spi_flash: detected chip: gd[0m
+[0;32mI (417) spi_flash: flash io: dio[0m
+[0;33mW (421) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (435) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (441) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (449) main_task: Started on CPU0[0m
+[0;32mI (459) main_task: Calling app_main()[0m
+[0;32mI (459) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (469) PWM: PWM inizializzato: GPIO 2, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (479) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (479) PWM: PWM inizializzato: GPIO 3, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (489) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (499) PWM: PWM inizializzato: GPIO 4, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (509) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (509) PWM: PWM inizializzato: GPIO 1, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (519) PWM: Cambio frequenza: 40000 -> 1000 Hz, risoluzione: 8 -> 14 bit[0m
+[0;32mI (529) PWM: Timer riconfigurato: 1000 Hz, 14 bit (16384 livelli)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (539) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (549) PWM: Cambio frequenza: 40000 -> 1000 Hz, risoluzione: 8 -> 14 bit[0m
+[0;32mI (559) PWM: Timer riconfigurato: 1000 Hz, 14 bit (16384 livelli)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (569) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (579) gpio: GPIO[26]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (579) gpio: GPIO[26]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (589) Temperature sensor: Bus inizializzato su GPIO 26[0m
+[0;32mI (709) Temperature sensor: Slot 0: BA00000046755428[0m
+[0;32mI (709) Temperature sensor: Trovati 1 nuovi (totale 1)[0m
+[0;32mI (709) MAIN: Inizializzati 1 sensori[0m
+[0;32mI (739) wifi: ESP_WIFI_MODE_STA[0m
+[0;32mI (739) pp: pp rom version: e7ae62f[0m
+[0;32mI (739) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (749) wifi:wifi driver task: 3fcb0250, prio:23, stack:6656, core=0[0m
+[0;32mI (759) wifi:wifi firmware version: 3e0076f[0m
+[0;32mI (759) wifi:wifi certification version: v7.0[0m
+[0;32mI (759) wifi:config NVS flash: enabled[0m
+[0;32mI (759) wifi:config nano formating: disabled[0m
+[0;32mI (769) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (769) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (779) wifi:Init management short buffer num: 32[0m
+[0;32mI (779) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (779) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (789) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (789) wifi:Init static rx buffer num: 10[0m
+[0;32mI (799) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (799) wifi_init: rx ba win: 6[0m
+[0;32mI (799) wifi_init: tcpip mbox: 32[0m
+[0;32mI (809) wifi_init: udp mbox: 6[0m
+[0;32mI (809) wifi_init: tcp mbox: 6[0m
+[0;32mI (809) wifi_init: tcp tx win: 5760[0m
+[0;32mI (819) wifi_init: tcp rx win: 5760[0m
+[0;32mI (819) wifi_init: tcp mss: 1440[0m
+[0;32mI (829) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (829) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (839) phy_init: phy_version 670,b7bc9b9,Apr 30 2024,10:54:13[0m
+[0;32mI (889) wifi:mode : sta (34:b7:da:54:35:28)[0m
+[0;32mI (889) wifi:enable tsf[0m
+[0;32mI (889) wifi: wifi_init_sta finished.[0m
+[0;32mI (899) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (899) wifi:state: init -> auth (b0)[0m
+[0;32mI (1899) wifi:state: auth -> init (200)[0m
+[0;32mI (1899) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (1899) wifi: retry to connect to the AP[0m
+[0;32mI (1899) wifi: connect to the AP fail[0m
+[0;32mI (4309) wifi: retry to connect to the AP[0m
+[0;32mI (4309) wifi: connect to the AP fail[0m
+[0;32mI (4309) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (4319) wifi:state: init -> auth (b0)[0m
+[0;32mI (4319) wifi:state: auth -> assoc (0)[0m
+[0;32mI (4359) wifi:state: assoc -> run (10)[0m
+[0;32mI (4379) wifi:connected with Oneplus, aid = 9, channel 1, BW20, bssid = ba:7e:6d:57:2c:9d[0m
+[0;32mI (4379) wifi:security: WPA2-PSK, phy: bgn, rssi: -43[0m
+[0;32mI (4379) wifi:pm start, type: 1[0m
+
+[0;32mI (4379) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (4389) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (4399) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (4409) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (4429) wifi:<ba-add>idx:0 (ifx:0, ba:7e:6d:57:2c:9d), tid:0, ssn:0, winSize:64[0m
+[0;32mI (5409) esp_netif_handlers: sta ip: 10.121.56.118, mask: 255.255.255.0, gw: 10.121.56.100[0m
+[0;32mI (5409) wifi: got ip:10.121.56.118[0m
+[0;32mI (5409) wifi: connected to ap SSID:Oneplus password:123456789[0m
+[0;32mI (5419) MAIN: WIFI connected![0m
+[0;32mI (5419) mqtts: MqttWrapper created with client_id: 34B7DA543528[0m
+[0;32mI (5429) mqtts: [APP] Free memory: 267600 bytes[0m
+[0;32mI (5429) mqtts: Other event id:7[0m
+[0;32mI (6299) mqtts: MQTT_EVENT_CONNECTED[0m
+[0;32mI (6299) mqtts: Subscribed to 34B7DA543528/downlink, msg_id=15131[0m
+[0;32mI (6339) mqtts: MQTT_EVENT_SUBSCRIBED, msg_id=15131[0m
+[0;32mI (6439) MAIN: MQTT connected! System running in background...[0m
+[0;32mI (6439) MAIN: Initializing SNTP[0m
+[0;32mI (6439) MAIN: Waiting for time sync... (1/20)[0m
+[0;32mI (7439) MAIN: Waiting for time sync... (2/20)[0m
+[0;32mI (8439) MAIN: Waiting for time sync... (3/20)[0m
+[0;32mI (9439) MAIN: Waiting for time sync... (4/20)[0m
+[0;32mI (10439) MAIN: Waiting for time sync... (5/20)[0m
+[0;32mI (11439) MAIN: Waiting for time sync... (6/20)[0m
+[0;32mI (12439) MAIN: Waiting for time sync... (7/20)[0m
+[0;32mI (13439) MAIN: Waiting for time sync... (8/20)[0m
+[0;32mI (14439) MAIN: Waiting for time sync... (9/20)[0m
+[0;32mI (15439) MAIN: Waiting for time sync... (10/20)[0m
+[0;32mI (16439) MAIN: Waiting for time sync... (11/20)[0m
+[0;32mI (17439) MAIN: Waiting for time sync... (12/20)[0m
+[0;32mI (18439) MAIN: Waiting for time sync... (13/20)[0m
+[0;32mI (19439) MAIN: Waiting for time sync... (14/20)[0m
+[0;32mI (20439) MAIN: Waiting for time sync... (15/20)[0m
+[0;32mI (21439) MAIN: Waiting for time sync... (16/20)[0m
+[0;32mI (22439) MAIN: Waiting for time sync... (17/20)[0m
+[0;32mI (23439) MAIN: Waiting for time sync... (18/20)[0m
+[0;32mI (24439) MAIN: Waiting for time sync... (19/20)[0m
+[0;33mW (25439) MAIN: Time sync timeout[0m
+[0;32mI (25439) FFT: sampling rate too high, the maximum sampling rate will be used: 83333[0m
+[0;32mI (25439) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (25549) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (26369) Temperature sensor: Slot 0: 22.19 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   20100.83 Hz | 1965.0000 |  494
+   2 |   23925.69 Hz | 1964.0000 |  588
+   3 |   19612.55 Hz | 1961.0000 |  482
+   4 |    5452.45 Hz | 1957.0000 |  134
+   5 |   28076.06 Hz | 1957.0000 |  690
+   6 |   16845.64 Hz | 1955.0000 |  414
+   7 |   25024.31 Hz | 1955.0000 |  615
+   8 |   35481.63 Hz | 1955.0000 |  872
+   9 |   23111.89 Hz | 1955.0000 |  568
+  10 |   37597.51 Hz | 1955.0000 |  924
+  11 |   26245.01 Hz | 1955.0000 |  645
+  12 |   13549.75 Hz | 1954.0000 |  333
+  13 |   24373.28 Hz | 1954.0000 |  599
+  14 |   35644.39 Hz | 1954.0000 |  876
+  15 |   36824.40 Hz | 1954.0000 |  905
+
+Guru Meditation Error: Core  0 panic'ed (LoadStoreAlignment). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4037b77a  PS      : 0x00060133  A0      : 0x8037ef45  A1      : 0x3fca4220  
+A2      : 0x3e317931  A3      : 0xb33fffff  A4      : 0x0000cdcd  A5      : 0x4048f6b9  
+A6      : 0x4048f6b9  A7      : 0x0000000c  A8      : 0x8208868c  A9      : 0x3fca4330  
+A10     : 0x00000064  A11     : 0x00001800  A12     : 0x8037f576  A13     : 0x3fc9d4b0  
+A14     : 0x00000000  A15     : 0x00000a2c  SAR     : 0x0000001d  EXCCAUSE: 0x00000009  
+EXCVADDR: 0x3e317931  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x4037b777:0x3fca4220 0x4037ef42:0x3fca4240 0x4037eb4c:0x3fca4270 0x42003599:0x3fca42b0 0x42003753:0x3fca42d0 0x42088b81:0x3fca42f0 0x42088c4e:0x3fca4310 0x42088cae:0x3fca4330 0x42088689:0x3fca4350 0x42011ae1:0x3fca4370 0x42011e0e:0x3fca4390 0x42011e9e:0x3fca43c0 0x420126e9:0x3fca43e0 0x4200ba06:0x3fca9450 0x420b53eb:0x3fca94d0 0x4037ed1d:0x3fca9500
+
+
+
+
+ELF file SHA256: d58eada14
+
+Rebooting...
+���ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x28 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375b24
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d9c
+entry 0x403c9914
+[0;32mI (31) boot: ESP-IDF v5.2.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 17 2025 17:10:25[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v0.2[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=355cch (218572) map[0m
+[0;32mI (143) esp_image: segment 1: paddr=000455f4 vaddr=3fc9b300 size=04880h ( 18560) load[0m
+[0;32mI (147) esp_image: segment 2: paddr=00049e7c vaddr=40374000 size=0619ch ( 24988) load[0m
+[0;32mI (154) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=b6358h (746328) map[0m
+[0;32mI (291) esp_image: segment 4: paddr=00106380 vaddr=4037a19c size=110c0h ( 69824) load[0m
+[0;32mI (316) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (316) boot: Disabling RNG early entropy source...[0m
+[0;32mI (327) cpu_start: Multicore app[0m
+[0;32mI (337) cpu_start: Pro cpu start user code[0m
+[0;32mI (337) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (337) cpu_start: Application information:[0m
+[0;32mI (340) cpu_start: Project name:     esp_node[0m
+[0;32mI (345) cpu_start: App version:      5129bb6-dirty[0m
+[0;32mI (351) cpu_start: Compile time:     Oct 17 2025 17:10:22[0m
+[0;32mI (357) cpu_start: ELF file SHA256:  d58eada14...[0m
+[0;32mI (362) cpu_start: ESP-IDF:          v5.2.2[0m
+[0;32mI (367) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (372) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (377) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (381) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (389) heap_init: At 3FCA3D90 len 00045980 (278 KiB): RAM[0m
+[0;32mI (395) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (401) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (407) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (414) spi_flash: detected chip: gd[0m
+[0;32mI (417) spi_flash: flash io: dio[0m
+[0;33mW (421) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (435) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (441) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (449) main_task: Started on CPU0[0m
+[0;32mI (459) main_task: Calling app_main()[0m
+[0;32mI (459) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (469) PWM: PWM inizializzato: GPIO 2, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (479) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (479) PWM: PWM inizializzato: GPIO 3, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (489) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (499) PWM: PWM inizializzato: GPIO 4, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (509) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (509) PWM: PWM inizializzato: GPIO 1, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (519) PWM: Cambio frequenza: 40000 -> 1000 Hz, risoluzione: 8 -> 14 bit[0m
+[0;32mI (529) PWM: Timer riconfigurato: 1000 Hz, 14 bit (16384 livelli)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (539) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (549) PWM: Cambio frequenza: 40000 -> 1000 Hz, risoluzione: 8 -> 14 bit[0m
+[0;32mI (559) PWM: Timer riconfigurato: 1000 Hz, 14 bit (16384 livelli)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (569) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (579) gpio: GPIO[26]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (579) gpio: GPIO[26]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (589) Temperature sensor: Bus inizializzato su GPIO 26[0m
+[0;32mI (709) Temperature sensor: Slot 0: BA00000046755428[0m
+[0;32mI (709) Temperature sensor: Trovati 1 nuovi (totale 1)[0m
+[0;32mI (709) MAIN: Inizializzati 1 sensori[0m
+[0;32mI (739) wifi: ESP_WIFI_MODE_STA[0m
+[0;32mI (739) pp: pp rom version: e7ae62f[0m
+[0;32mI (739) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (749) wifi:wifi driver task: 3fcb0250, prio:23, stack:6656, core=0[0m
+[0;32mI (759) wifi:wifi firmware version: 3e0076f[0m
+[0;32mI (759) wifi:wifi certification version: v7.0[0m
+[0;32mI (759) wifi:config NVS flash: enabled[0m
+[0;32mI (759) wifi:config nano formating: disabled[0m
+[0;32mI (769) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (769) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (779) wifi:Init management short buffer num: 32[0m
+[0;32mI (779) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (779) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (789) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (789) wifi:Init static rx buffer num: 10[0m
+[0;32mI (799) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (799) wifi_init: rx ba win: 6[0m
+[0;32mI (799) wifi_init: tcpip mbox: 32[0m
+[0;32mI (809) wifi_init: udp mbox: 6[0m
+[0;32mI (809) wifi_init: tcp mbox: 6[0m
+[0;32mI (809) wifi_init: tcp tx win: 5760[0m
+[0;32mI (819) wifi_init: tcp rx win: 5760[0m
+[0;32mI (819) wifi_init: tcp mss: 1440[0m
+[0;32mI (829) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (829) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (839) phy_init: phy_version 670,b7bc9b9,Apr 30 2024,10:54:13[0m
+[0;32mI (889) wifi:mode : sta (34:b7:da:54:35:28)[0m
+[0;32mI (889) wifi:enable tsf[0m
+[0;32mI (889) wifi: wifi_init_sta finished.[0m
+[0;32mI (909) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (909) wifi:state: init -> auth (b0)[0m
+[0;32mI (1909) wifi:state: auth -> init (200)[0m
+[0;32mI (1909) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (1919) wifi: retry to connect to the AP[0m
+[0;32mI (1919) wifi: connect to the AP fail[0m
+[0;32mI (4319) wifi: retry to connect to the AP[0m
+[0;32mI (4329) wifi: connect to the AP fail[0m
+[0;32mI (4329) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (4329) wifi:state: init -> auth (b0)[0m
+[0;32mI (4339) wifi:state: auth -> assoc (0)[0m
+[0;32mI (4369) wifi:state: assoc -> run (10)[0m
+[0;32mI (4419) wifi:connected with Oneplus, aid = 10, channel 1, BW20, bssid = ba:7e:6d:57:2c:9d[0m
+[0;32mI (4419) wifi:security: WPA2-PSK, phy: bgn, rssi: -41[0m
+[0;32mI (4419) wifi:pm start, type: 1[0m
+
+[0;32mI (4419) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (4429) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (4449) wifi:<ba-add>idx:0 (ifx:0, ba:7e:6d:57:2c:9d), tid:0, ssn:0, winSize:64[0m
+[0;32mI (4489) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (4489) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (5439) esp_netif_handlers: sta ip: 10.121.56.118, mask: 255.255.255.0, gw: 10.121.56.100[0m
+[0;32mI (5439) wifi: got ip:10.121.56.118[0m
+[0;32mI (5439) wifi: connected to ap SSID:Oneplus password:123456789[0m
+[0;32mI (5449) MAIN: WIFI connected![0m
+[0;32mI (5449) mqtts: MqttWrapper created with client_id: 34B7DA543528[0m
+[0;32mI (5459) mqtts: [APP] Free memory: 267600 bytes[0m
+[0;32mI (5459) mqtts: Other event id:7[0m
+[0;32mI (6439) mqtts: MQTT_EVENT_CONNECTED[0m
+[0;32mI (6449) mqtts: Subscribed to 34B7DA543528/downlink, msg_id=54974[0m
+[0;32mI (6469) MAIN: MQTT connected! System running in background...[0m
+[0;32mI (6469) MAIN: Initializing SNTP[0m
+[0;32mI (6469) MAIN: Waiting for time sync... (1/20)[0m
+[0;32mI (6489) mqtts: MQTT_EVENT_SUBSCRIBED, msg_id=54974[0m
+[0;32mI (7469) MAIN: Waiting for time sync... (2/20)[0m
+[0;32mI (8469) MAIN: Waiting for time sync... (3/20)[0m
+[0;32mI (9469) MAIN: Time synchronized: Fri Oct 17 17:36:48 2025
+[0m
+[0;32mI (9469) FFT: sampling rate too high, the maximum sampling rate will be used: 83333[0m
+[0;32mI (9469) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (9589) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (10399) Temperature sensor: Slot 0: 22.19 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   28971.24 Hz | 1968.0000 |  712
+   2 |    9521.45 Hz | 1967.0000 |  234
+   3 |   29418.83 Hz | 1961.0000 |  723
+   4 |   41340.98 Hz | 1959.0000 | 1016
+   5 |   14078.72 Hz | 1955.0000 |  346
+   6 |   25024.31 Hz | 1955.0000 |  615
+   7 |   32796.09 Hz | 1954.0000 |  806
+   8 |   24576.72 Hz | 1954.0000 |  604
+   9 |   29134.00 Hz | 1954.0000 |  716
+  10 |   12247.67 Hz | 1954.0000 |  301
+  11 |   16113.22 Hz | 1952.0000 |  396
+  12 |   31249.88 Hz | 1952.0000 |  768
+  13 |    6876.60 Hz | 1952.0000 |  169
+  14 |   14282.17 Hz | 1952.0000 |  351
+  15 |   21524.98 Hz | 1952.0000 |  529
+
+Guru Meditation Error: Core  0 panic'ed (LoadStoreAlignment). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4037b77a  PS      : 0x00060133  A0      : 0x8037ef45  A1      : 0x3fca4220  
+A2      : 0x3e4b9d3e  A3      : 0xb33fffff  A4      : 0x0000cdcd  A5      : 0x3fc9d480  
+A6      : 0x00060023  A7      : 0x0000000c  A8      : 0x8208868c  A9      : 0x3fca4330  
+A10     : 0x00000064  A11     : 0x00001800  A12     : 0x00000000  A13     : 0x00000002  
+A14     : 0x00001f80  A15     : 0x3fca4480  SAR     : 0x0000001d  EXCCAUSE: 0x00000009  
+EXCVADDR: 0x3e4b9d3e  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x4037b777:0x3fca4220 0x4037ef42:0x3fca4240 0x4037eb4c:0x3fca4270 0x42003599:0x3fca42b0 0x42003753:0x3fca42d0 0x42088b81:0x3fca42f0 0x42088c4e:0x3fca4310 0x42088cae:0x3fca4330 0x42088689:0x3fca4350 0x42011ae1:0x3fca4370 0x42011e0e:0x3fca4390 0x42011e9e:0x3fca43c0 0x420126e9:0x3fca43e0 0x4200ba06:0x3fca9450 0x420b53eb:0x3fca94d0 0x4037ed1d:0x3fca9500
+
+
+
+
+ELF file SHA256: d58eada14
+
+Rebooting...
+���ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x28 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375b24
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d9c
+entry 0x403c9914
+[0;32mI (31) boot: ESP-IDF v5.2.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 17 2025 17:10:25[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v0.2[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=355cch (218572) map[0m
+[0;32mI (143) esp_image: segment 1: paddr=000455f4 vaddr=3fc9b300 size=04880h ( 18560) load[0m
+[0;32mI (147) esp_image: segment 2: paddr=00049e7c vaddr=40374000 size=0619ch ( 24988) load[0m
+[0;32mI (154) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=b6358h (746328) map[0m
+[0;32mI (291) esp_image: segment 4: paddr=00106380 vaddr=4037a19c size=110c0h ( 69824) load[0m
+[0;32mI (316) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (316) boot: Disabling RNG early entropy source...[0m
+[0;32mI (327) cpu_start: Multicore app[0m
+[0;32mI (337) cpu_start: Pro cpu start user code[0m
+[0;32mI (337) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (337) cpu_start: Application information:[0m
+[0;32mI (340) cpu_start: Project name:     esp_node[0m
+[0;32mI (345) cpu_start: App version:      5129bb6-dirty[0m
+[0;32mI (351) cpu_start: Compile time:     Oct 17 2025 17:10:22[0m
+[0;32mI (357) cpu_start: ELF file SHA256:  d58eada14...[0m
+[0;32mI (362) cpu_start: ESP-IDF:          v5.2.2[0m
+[0;32mI (367) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (372) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (377) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (381) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (389) heap_init: At 3FCA3D90 len 00045980 (278 KiB): RAM[0m
+[0;32mI (395) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (401) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (407) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (414) spi_flash: detected chip: gd[0m
+[0;32mI (417) spi_flash: flash io: dio[0m
+[0;33mW (421) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (435) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (441) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (449) main_task: Started on CPU0[0m
+[0;32mI (459) main_task: Calling app_main()[0m
+[0;32mI (459) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (469) PWM: PWM inizializzato: GPIO 2, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (479) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (479) PWM: PWM inizializzato: GPIO 3, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (489) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (499) PWM: PWM inizializzato: GPIO 4, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (509) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (509) PWM: PWM inizializzato: GPIO 1, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (519) PWM: Cambio frequenza: 40000 -> 1000 Hz, risoluzione: 8 -> 14 bit[0m
+[0;32mI (529) PWM: Timer riconfigurato: 1000 Hz, 14 bit (16384 livelli)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (539) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (549) PWM: Cambio frequenza: 40000 -> 1000 Hz, risoluzione: 8 -> 14 bit[0m
+[0;32mI (559) PWM: Timer riconfigurato: 1000 Hz, 14 bit (16384 livelli)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (569) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (579) gpio: GPIO[26]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (579) gpio: GPIO[26]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (589) Temperature sensor: Bus inizializzato su GPIO 26[0m
+[0;32mI (709) Temperature sensor: Slot 0: BA00000046755428[0m
+[0;32mI (709) Temperature sensor: Trovati 1 nuovi (totale 1)[0m
+[0;32mI (709) MAIN: Inizializzati 1 sensori[0m
+[0;32mI (739) wifi: ESP_WIFI_MODE_STA[0m
+[0;32mI (739) pp: pp rom version: e7ae62f[0m
+[0;32mI (739) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (749) wifi:wifi driver task: 3fcb0250, prio:23, stack:6656, core=0[0m
+[0;32mI (759) wifi:wifi firmware version: 3e0076f[0m
+[0;32mI (759) wifi:wifi certification version: v7.0[0m
+[0;32mI (759) wifi:config NVS flash: enabled[0m
+[0;32mI (759) wifi:config nano formating: disabled[0m
+[0;32mI (769) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (769) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (779) wifi:Init management short buffer num: 32[0m
+[0;32mI (779) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (779) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (789) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (789) wifi:Init static rx buffer num: 10[0m
+[0;32mI (799) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (799) wifi_init: rx ba win: 6[0m
+[0;32mI (799) wifi_init: tcpip mbox: 32[0m
+[0;32mI (809) wifi_init: udp mbox: 6[0m
+[0;32mI (809) wifi_init: tcp mbox: 6[0m
+[0;32mI (809) wifi_init: tcp tx win: 5760[0m
+[0;32mI (819) wifi_init: tcp rx win: 5760[0m
+[0;32mI (819) wifi_init: tcp mss: 1440[0m
+[0;32mI (829) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (829) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (839) phy_init: phy_version 670,b7bc9b9,Apr 30 2024,10:54:13[0m
+[0;32mI (889) wifi:mode : sta (34:b7:da:54:35:28)[0m
+[0;32mI (889) wifi:enable tsf[0m
+[0;32mI (889) wifi: wifi_init_sta finished.[0m
+[0;32mI (899) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (899) wifi:state: init -> auth (b0)[0m
+[0;32mI (1899) wifi:state: auth -> init (200)[0m
+[0;32mI (1899) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (1899) wifi: retry to connect to the AP[0m
+[0;32mI (1899) wifi: connect to the AP fail[0m
+[0;32mI (4309) wifi: retry to connect to the AP[0m
+[0;32mI (4309) wifi: connect to the AP fail[0m
+[0;32mI (4329) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (4329) wifi:state: init -> auth (b0)[0m
+[0;32mI (4339) wifi:state: auth -> assoc (0)[0m
+[0;32mI (4369) wifi:state: assoc -> run (10)[0m
+[0;32mI (4389) wifi:connected with Oneplus, aid = 1, channel 1, BW20, bssid = ba:7e:6d:57:2c:9d[0m
+[0;32mI (4399) wifi:security: WPA2-PSK, phy: bgn, rssi: -44[0m
+[0;32mI (4399) wifi:pm start, type: 1[0m
+
+[0;32mI (4399) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (4409) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (4429) wifi:<ba-add>idx:0 (ifx:0, ba:7e:6d:57:2c:9d), tid:0, ssn:0, winSize:64[0m
+[0;32mI (4469) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (4469) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (5419) esp_netif_handlers: sta ip: 10.121.56.118, mask: 255.255.255.0, gw: 10.121.56.100[0m
+[0;32mI (5419) wifi: got ip:10.121.56.118[0m
+[0;32mI (5419) wifi: connected to ap SSID:Oneplus password:123456789[0m
+[0;32mI (5429) MAIN: WIFI connected![0m
+[0;32mI (5429) mqtts: MqttWrapper created with client_id: 34B7DA543528[0m
+[0;32mI (5439) mqtts: [APP] Free memory: 267600 bytes[0m
+[0;32mI (5439) mqtts: Other event id:7[0m
+[0;32mI (6729) mqtts: MQTT_EVENT_CONNECTED[0m
+[0;32mI (6739) mqtts: Subscribed to 34B7DA543528/downlink, msg_id=55104[0m
+[0;32mI (6789) mqtts: MQTT_EVENT_SUBSCRIBED, msg_id=55104[0m
+[0;32mI (6949) MAIN: MQTT connected! System running in background...[0m
+[0;32mI (6949) MAIN: Initializing SNTP[0m
+[0;32mI (6949) MAIN: Waiting for time sync... (1/20)[0m
+[0;32mI (7949) MAIN: Waiting for time sync... (2/20)[0m
+[0;32mI (8949) MAIN: Waiting for time sync... (3/20)[0m
+[0;32mI (9949) MAIN: Time synchronized: Fri Oct 17 17:36:59 2025
+[0m
+[0;32mI (9949) FFT: sampling rate too high, the maximum sampling rate will be used: 83333[0m
+[0;32mI (9949) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (10069) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (10879) Temperature sensor: Slot 0: 22.25 °C[0m
+
+=== TOP 15 FREQUENZE ===
+Rank | Frequency (Hz) | Magnitude | Bin
+-----|----------------|-----------|-----
+   1 |   17700.12 Hz | 1967.0000 |  435
+   2 |   18717.37 Hz | 1966.0000 |  460
+   3 |   15624.94 Hz | 1966.0000 |  384
+   4 |   18798.75 Hz | 1961.0000 |  462
+   5 |    5493.14 Hz | 1961.0000 |  135
+   6 |   38004.41 Hz | 1959.0000 |  934
+   7 |   21362.22 Hz | 1957.0000 |  525
+   8 |   10091.11 Hz | 1957.0000 |  248
+   9 |   16520.12 Hz | 1957.0000 |  406
+  10 |   10375.94 Hz | 1955.0000 |  255
+  11 |   19734.62 Hz | 1955.0000 |  485
+  12 |   19368.41 Hz | 1955.0000 |  476
+  13 |   38899.59 Hz | 1955.0000 |  956
+  14 |   20100.83 Hz | 1955.0000 |  494
+  15 |   26936.74 Hz | 1955.0000 |  662
+
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x8 (TG1WDT_SYS_RST),boot:0x28 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4200483b
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d9c
+entry 0x403c9914
+[0;32mI (31) boot: ESP-IDF v5.2.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 17 2025 17:10:25[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v0.2[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;33mW (52) boot.esp32s3: PRO CPU has been reset by WDT.[0m
+[0;33mW (58) boot.esp32s3: APP CPU has been reset by WDT.[0m
+[0;32mI (64) boot: Enabling RNG early entropy source...[0m
+[0;32mI (69) boot: Partition Table:[0m
+[0;32mI (73) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (80) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (87) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (95) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (102) boot: End of partition table[0m
+[0;32mI (107) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=355cch (218572) map[0m
+[0;32mI (154) esp_image: segment 1: paddr=000455f4 vaddr=3fc9b300 size=04880h ( 18560) load[0m
+[0;32mI (158) esp_image: segment 2: paddr=00049e7c vaddr=40374000 size=0619ch ( 24988) load[0m
+[0;32mI (166) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=b6358h (746328) map[0m
+[0;32mI (302) esp_image: segment 4: paddr=00106380 vaddr=4037a19c size=110c0h ( 69824) load[0m
+[0;32mI (327) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (327) boot: Disabling RNG early entropy source...[0m
+[0;32mI (339) cpu_start: Multicore app[0m
+[0;32mI (348) cpu_start: Pro cpu start user code[0m
+[0;32mI (348) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (349) cpu_start: Application information:[0m
+[0;32mI (351) cpu_start: Project name:     esp_node[0m
+[0;32mI (357) cpu_start: App version:      5129bb6-dirty[0m
+[0;32mI (362) cpu_start: Compile time:     Oct 17 2025 17:10:22[0m
+[0;32mI (368) cpu_start: ELF file SHA256:  d58eada14...[0m
+[0;32mI (373) cpu_start: ESP-IDF:          v5.2.2[0m
+[0;32mI (378) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (383) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (388) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (393) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (400) heap_init: At 3FCA3D90 len 00045980 (278 KiB): RAM[0m
+[0;32mI (406) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (412) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (418) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (425) spi_flash: detected chip: gd[0m
+[0;32mI (429) spi_flash: flash io: dio[0m
+[0;33mW (433) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (446) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (453) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (460) main_task: Started on CPU0[0m
+[0;32mI (470) main_task: Calling app_main()[0m
+[0;32mI (470) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (480) PWM: PWM inizializzato: GPIO 2, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (490) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (490) PWM: PWM inizializzato: GPIO 3, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (500) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (510) PWM: PWM inizializzato: GPIO 4, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (520) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (520) PWM: PWM inizializzato: GPIO 1, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (530) PWM: Cambio frequenza: 40000 -> 1000 Hz, risoluzione: 8 -> 14 bit[0m
+[0;32mI (540) PWM: Timer riconfigurato: 1000 Hz, 14 bit (16384 livelli)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (550) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (560) PWM: Cambio frequenza: 40000 -> 1000 Hz, risoluzione: 8 -> 14 bit[0m
+[0;32mI (570) PWM: Timer riconfigurato: 1000 Hz, 14 bit (16384 livelli)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (580) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (590) gpio: GPIO[26]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (590) gpio: GPIO[26]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (600) Temperature sensor: Bus inizializzato su GPIO 26[0m
+[0;32mI (720) Temperature sensor: Slot 0: BA00000046755428[0m
+[0;32mI (720) Temperature sensor: Trovati 1 nuovi (totale 1)[0m
+[0;32mI (720) MAIN: Inizializzati 1 sensori[0m
+[0;32mI (750) wifi: ESP_WIFI_MODE_STA[0m
+[0;32mI (750) pp: pp rom version: e7ae62f[0m
+[0;32mI (750) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (760) wifi:wifi driver task: 3fcb0250, prio:23, stack:6656, core=0[0m
+[0;32mI (770) wifi:wifi firmware version: 3e0076f[0m
+[0;32mI (770) wifi:wifi certification version: v7.0[0m
+[0;32mI (770) wifi:config NVS flash: enabled[0m
+[0;32mI (770) wifi:config nano formating: disabled[0m
+[0;32mI (780) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (780) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (790) wifi:Init management short buffer num: 32[0m
+[0;32mI (790) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (790) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (800) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (800) wifi:Init static rx buffer num: 10[0m
+[0;32mI (810) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (810) wifi_init: rx ba win: 6[0m
+[0;32mI (810) wifi_init: tcpip mbox: 32[0m
+[0;32mI (820) wifi_init: udp mbox: 6[0m
+[0;32mI (820) wifi_init: tcp mbox: 6[0m
+[0;32mI (820) wifi_init: tcp tx win: 5760[0m
+[0;32mI (830) wifi_init: tcp rx win: 5760[0m
+[0;32mI (830) wifi_init: tcp mss: 1440[0m
+[0;32mI (840) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (840) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (850) phy_init: phy_version 670,b7bc9b9,Apr 30 2024,10:54:13[0m
+[0;32mI (890) wifi:mode : sta (34:b7:da:54:35:28)[0m
+[0;32mI (900) wifi:enable tsf[0m
+[0;32mI (900) wifi: wifi_init_sta finished.[0m
+[0;32mI (900) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (910) wifi:state: init -> auth (b0)[0m
+[0;32mI (1910) wifi:state: auth -> init (200)[0m
+[0;32mI (1910) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (1910) wifi: retry to connect to the AP[0m
+[0;32mI (1910) wifi: connect to the AP fail[0m
+[0;32mI (4320) wifi: retry to connect to the AP[0m
+[0;32mI (4320) wifi: connect to the AP fail[0m
+[0;32mI (4320) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (4330) wifi:state: init -> auth (b0)[0m
+[0;32mI (4370) wifi:state: auth -> assoc (0)[0m
+[0;32mI (4410) wifi:state: assoc -> run (10)[0m
+[0;32mI (4440) wifi:connected with Oneplus, aid = 2, channel 1, BW20, bssid = ba:7e:6d:57:2c:9d[0m
+[0;32mI (4440) wifi:security: WPA2-PSK, phy: bgn, rssi: -53[0m
+[0;32mI (4440) wifi:pm start, type: 1[0m
+
+[0;32mI (4440) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (4450) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (4460) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (4470) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (4480) wifi:<ba-add>idx:0 (ifx:0, ba:7e:6d:57:2c:9d), tid:0, ssn:0, winSize:64[0m
+[0;32mI (5470) esp_netif_handlers: sta ip: 10.121.56.118, mask: 255.255.255.0, gw: 10.121.56.100[0m
+[0;32mI (5470) wifi: got ip:10.121.56.118[0m
+[0;32mI (5470) wifi: connected to ap SSID:Oneplus password:123456789[0m
+[0;32mI (5480) MAIN: WIFI connected![0m
+[0;32mI (5480) mqtts: MqttWrapper created with client_id: 34B7DA543528[0m
+[0;32mI (5490) mqtts: [APP] Free memory: 267600 bytes[0m
+[0;32mI (5490) mqtts: Other event id:7[0m
+[0;32mI (6410) mqtts: MQTT_EVENT_CONNECTED[0m
+[0;32mI (6420) mqtts: Subscribed to 34B7DA543528/downlink, msg_id=28742[0m
+[0;32mI (6460) mqtts: MQTT_EVENT_SUBSCRIBED, msg_id=28742[0m
+[0;32mI (6500) MAIN: MQTT connected! System running in background...[0m
+[0;32mI (6500) MAIN: Initializing SNTP[0m
+[0;32mI (6500) MAIN: Waiting for time sync... (1/20)[0m
+[0;32mI (7500) MAIN: Waiting for time sync... (2/20)[0m
+[0;32mI (8500) MAIN: Waiting for time sync... (3/20)[0m
+[0;32mI (9500) MAIN: Waiting for time sync... (4/20)[0m
+[0;32mI (10500) MAIN: Waiting for time sync... (5/20)[0m
+[0;32mI (11500) MAIN: Waiting for time sync... (6/20)[0m
+[0;32mI (12500) MAIN: Waiting for time sync... (7/20)[0m
+[0;32mI (13500) MAIN: Waiting for time sync... (8/20)[0m
+[0;32mI (14500) MAIN: Waiting for time sync... (9/20)[0m
+[0;32mI (15500) MAIN: Waiting for time sync... (10/20)[0m
+[0;32mI (16500) MAIN: Waiting for time sync... (11/20)[0m
+[0;32mI (17500) MAIN: Waiting for time sync... (12/20)[0m
+[0;32mI (18500) MAIN: Waiting for time sync... (13/20)[0m
+[0;32mI (19500) MAIN: Waiting for time sync... (14/20)[0m
+[0;32mI (20500) MAIN: Waiting for time sync... (15/20)[0m

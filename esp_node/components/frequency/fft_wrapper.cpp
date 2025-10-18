@@ -8,17 +8,30 @@ FFT_ultrasonic::FFT_ultrasonic() : _ADC_channel(-1), _ADC_unit(-1), _sampling_fr
 }
 
 FFT_ultrasonic::~FFT_ultrasonic(){
-    if(_handle!=nullptr){
-        ESP_ERROR_CHECK(adc_continuous_stop(_handle));
-        ESP_ERROR_CHECK(adc_continuous_deinit(_handle));
+    if(_handle != nullptr){
+        // NON usare ESP_ERROR_CHECK - gestisci manualmente
+        esp_err_t ret = adc_continuous_stop(_handle);
+        // Ignora l'errore "already stopped"
+        if(ret != ESP_OK && ret != ESP_ERR_INVALID_STATE){
+            ESP_LOGE(TAG, "Error stopping ADC: %s", esp_err_to_name(ret));
+        }
+        
+        ret = adc_continuous_deinit(_handle);
+        if(ret != ESP_OK){
+            ESP_LOGE(TAG, "Error deiniting ADC: %s", esp_err_to_name(ret));
+        }
     }
-    if(_cali_handle!=nullptr){
+    
+    if(_cali_handle != nullptr){
         adc_calibration_deinit(_cali_handle);
     }
-    if(_fft_result!=nullptr){
+    
+    if(_fft_result != nullptr){
         free(_fft_result);
     }
 }
+
+
 
 static bool IRAM_ATTR s_conv_done_cb(adc_continuous_handle_t handle, const adc_continuous_evt_data_t *edata, void *user_data)
 {
@@ -30,9 +43,20 @@ static bool IRAM_ATTR s_conv_done_cb(adc_continuous_handle_t handle, const adc_c
 }
 
 void FFT_ultrasonic::begin(uint8_t ADC_channel, uint8_t ADC_unit, uint32_t sampling_frequency, int num_samples){
+
+    if(_handle != nullptr) {
+        ESP_LOGE(TAG, "ADC già configurato");
+        return;
+    }
+
+    if(MAX_SAMPLING_FREQUENCY < sampling_frequency){
+        ESP_LOGI(TAG, "sampling rate too high, the maximum sampling rate will be used: %d", MAX_SAMPLING_FREQUENCY);
+        _sampling_freq = MAX_SAMPLING_FREQUENCY;
+    } else {
+        _sampling_freq = sampling_frequency;
+    }
     _ADC_channel = ADC_channel;
     _ADC_unit = ADC_unit;
-    _sampling_freq = sampling_frequency;
     _num_samples = num_samples;
 
     uint32_t pool_length = 4*_num_samples; //each sample is saved in 4 bytes
@@ -72,15 +96,14 @@ void FFT_ultrasonic::begin(uint8_t ADC_channel, uint8_t ADC_unit, uint32_t sampl
 
 
 float* FFT_ultrasonic::read_and_get_data_fixed_samples(){
-    _fft_result = (float*) malloc(2*_num_samples * sizeof(float));
-    if(_fft_result == NULL){
-        ESP_LOGI(TAG, "unable to allocate heap memory for fft samples");
-        return nullptr;
-    }
 
-    int array_lenght= 4*_num_samples; // each sample is saved in 4 bytes
-  
-    ESP_ERROR_CHECK(adc_continuous_start(_handle));
+    if(_fft_result == nullptr){
+        _fft_result = (float*) malloc(2*_num_samples * sizeof(float));
+        if(_fft_result == nullptr){
+            ESP_LOGI(TAG, "unable to allocate heap memory for fft samples");
+            return nullptr;
+        }
+    }
 
     adc_calibration_init();
     if(!_calibrated){
@@ -88,7 +111,18 @@ float* FFT_ultrasonic::read_and_get_data_fixed_samples(){
         return nullptr;
     }
 
-    esp_err_t ret;
+
+    int array_lenght= 4*_num_samples; // each sample is saved in 4 bytes
+  
+    esp_err_t ret = adc_continuous_start(_handle);
+    if(ret != ESP_OK && ret != ESP_ERR_INVALID_STATE){
+        ESP_LOGE(TAG, "Failed to start ADC: %s", esp_err_to_name(ret));
+        return nullptr;
+    }
+
+    ulTaskNotifyTake(pdTRUE, pdMS_TO_TICKS(1000));
+
+  
     uint32_t ret_num = 0;
     uint8_t result[array_lenght];
     memset(result, 0x00, array_lenght);
@@ -100,7 +134,7 @@ float* FFT_ultrasonic::read_and_get_data_fixed_samples(){
                 adc_digi_output_data_t *p = (adc_digi_output_data_t*)&result[i];
                 uint32_t chan_num = p->type2.channel;
                 uint32_t data = p->type2.data;
-                if (chan_num < SOC_ADC_CHANNEL_NUM(unit)) {
+                if (chan_num < SOC_ADC_CHANNEL_NUM(_ADC_unit)) {
                     int t;
                     ESP_ERROR_CHECK(adc_cali_raw_to_voltage(_cali_handle, data, &t)); //converts raw data to calibrated voltage
                     _fft_result[ii] = (uint32_t) t;
@@ -120,13 +154,14 @@ float* FFT_ultrasonic::read_and_get_data_fixed_samples(){
         }
     }
   
-    ESP_ERROR_CHECK(adc_continuous_stop(_handle));
-    ESP_ERROR_CHECK(adc_continuous_deinit(_handle));
+    ret = adc_continuous_stop(_handle);
+    if(ret != ESP_OK && ret != ESP_ERR_INVALID_STATE){
+        ESP_LOGE(TAG, "Failed to stop ADC: %s", esp_err_to_name(ret));
+    }
     return _fft_result;
 }  
 
 int FFT_ultrasonic::getMaxFrequencyFFT(){
-
 
     if(_fft_result == nullptr){
         ESP_LOGI(TAG, "you should read and sample the signal before try to get its maximum frequency");
@@ -140,72 +175,110 @@ int FFT_ultrasonic::getMaxFrequencyFFT(){
 
     uint32_t max_value = get_max_cali_value(_cali_handle);
 
-    //logica fft, considera _fft_result
-    esp_err_t ret;
+    const int NUM_ACQUISITIONS = 5;
+    float best_magnitude = 0.0f;
+    int best_frequency_bin = 0;
+    float best_noise_floor = 0.0f;
 
-    //preparing the fft algorithm
-    ret = dsps_fft2r_init_fc32(NULL, CONFIG_DSP_MAX_FFT_SIZE);
-    if (ret != ESP_OK){
-        printf("Not possible to initialize FFT. Error = %i", ret);
-        return -1.0;
-    }
-    
-    // Generate hann window
-    float wind[_num_samples];
-    dsps_wind_hann_f32(wind, _num_samples);
-
-    float signal_real_normalized_vector[_num_samples];
-    memcpy(signal_real_normalized_vector, _fft_result, _num_samples * sizeof(float)); // copies the _num_samples elements in the vector
-
-
-    signal_real_normalized_vector[0]=signal_real_normalized_vector[1]; // removes the first sample which could bring problems in the analysis phase
-    normalize(signal_real_normalized_vector, _num_samples, max_value); // normalizing the signal and centering it in 0
- 
-
-
-    for (int i=0 ; i< _num_samples ; i++)
-    {
-        _fft_result[i*2 + 0] = signal_real_normalized_vector[i] * wind[i]; // Real part is your signal multiply with window to smooth its corners
-        _fft_result[i*2 + 1] = 0; // Imaginary part is 0 (real signal)
-    }
-
-    //calculates the FFT (translates the signal from time domain to frequency domain)
-    dsps_fft2r_fc32(_fft_result, _num_samples);
-    // Bit reverse (the result has the bits as inverted, so invert it to have the result itself)
-    dsps_bit_rev_fc32(_fft_result, _num_samples);
-    dsps_cplx2reC_fc32(_fft_result, _num_samples); // optimization for real signals
-
-     for (int i = 0 ; i < _num_samples/2 ; i++) {
-        _fft_result[i]=sqrtf(pow(_fft_result[i * 2 + 0],2.0f) + pow(_fft_result[i * 2 + 1],2.0f)); // computing the magnitude of each frequency of the signal, using real and imaginary part
-     }
-    // I've checked for half of the signal, because it is symmetric for real signals
-
-
-    // now we compute the Z score in order to filter frequencies similar to the noise
-    float std_dev;
-    float mean;
-    std_deviation_and_mean(_fft_result, _num_samples/2, &std_dev, &mean);     
-    float threshold = 2.0f;
-    int idx=0;
-    for(int j=(_num_samples/2)-1; j>=0; j--){
-        float dat = _fft_result[j];
-        float z= (dat - mean) / std_dev;
-        if(z > threshold){
-            idx=j;
-            break; // we break after finding the higher frequency far away from the noise
+    for(int acq = 0; acq < NUM_ACQUISITIONS; acq++) {
+        
+        float* new_samples = read_and_get_data_fixed_samples();
+        if(new_samples == nullptr) {
+            continue;
         }
+
+        esp_err_t ret = dsps_fft2r_init_fc32(NULL, CONFIG_DSP_MAX_FFT_SIZE);
+        if (ret != ESP_OK){
+            return -1.0;
+        }
+        
+        float wind[_num_samples];
+        dsps_wind_hann_f32(wind, _num_samples);
+
+        float signal_normalized[_num_samples];
+        memcpy(signal_normalized, _fft_result, _num_samples * sizeof(float));
+        normalize(signal_normalized, _num_samples, max_value);
+
+        for (int i=0; i < _num_samples; i++) {
+            _fft_result[i*2 + 0] = signal_normalized[i] * wind[i];
+            _fft_result[i*2 + 1] = 0;
+        }
+
+        dsps_fft2r_fc32(_fft_result, _num_samples);
+        dsps_bit_rev_fc32(_fft_result, _num_samples);
+        dsps_cplx2reC_fc32(_fft_result, _num_samples);
+
+        for (int i = 0; i < _num_samples/2; i++) {
+            _fft_result[i] = sqrtf(pow(_fft_result[i * 2 + 0], 2.0f) + 
+                                   pow(_fft_result[i * 2 + 1], 2.0f));
+        }
+
+        const float MIN_FREQ = 300.0f;
+        int min_bin = (int)(MIN_FREQ * _num_samples / _sampling_freq);
+        
+        int max_idx = 0;
+        float max_mag = _fft_result[min_bin];
+        
+        for (int i = min_bin; i < _num_samples/2; i++) {
+            if(_fft_result[i] > max_mag) {
+                max_mag = _fft_result[i];
+                max_idx = i;
+            }
+        }
+
+        float noise_floor = 0.0f;
+        int noise_count = 0;
+        for (int i = min_bin; i < _num_samples/2; i++) {
+            noise_floor += _fft_result[i];
+            noise_count++;
+        }
+        noise_floor /= noise_count;
+
+        if(max_mag > best_magnitude) {
+            best_magnitude = max_mag;
+            best_frequency_bin = max_idx;
+            best_noise_floor = noise_floor;
+        }
+
+        vTaskDelay(pdMS_TO_TICKS(20));
     }
 
-    // Show power spectrum in 64x10 window from -60 to 0 dB from 0..N/2 samples
-    //printf("Signal x1 in log scale");
-    //dsps_view(_fft_result, N/2, 64, 10,  -60, 40, '|');
-    printf("Signal x1 in absolute scale");
-    dsps_view(_fft_result, _num_samples/2, 64, 10,  0, 2, '|');
+    const float MIN_FREQ = 300.0f;
+    int min_bin = (int)(MIN_FREQ * _num_samples / _sampling_freq);
+    
+    float noise_floor = 0.0f;
+    int noise_count = 0;
+    
+    for (int i = min_bin; i < _num_samples/2; i++) {
+        noise_floor += _fft_result[i];
+        noise_count++;
+    }
+    noise_floor /= noise_count;
 
+    // Soglia minima assoluta
+    const float MIN_MAGNITUDE = 20.0f;
+    
+    if (best_magnitude < MIN_MAGNITUDE) {
+        ESP_LOGI(TAG, "Signal too weak (magnitude: %.2f < %.2f mV)", 
+                 best_magnitude, MIN_MAGNITUDE);
+        return 0;
+    }
 
-    float max_frequency=(idx*_sampling_freq)*1.0f/_num_samples*1.0f; // calculates which frequency belongs to that array slot
-    printf("the max frequency of the signal is: %f\n", max_frequency);
-    return max_frequency;
+    // Usa una soglia relativa al rumore
+    const float SNR_THRESHOLD = 3.0f; // Il segnale deve essere 3x il rumore
+    
+    if (best_magnitude < best_noise_floor * SNR_THRESHOLD) {
+        ESP_LOGI(TAG, "No significant frequency found (magnitude: %.2f, noise floor: %.2f, SNR: %.2f)", 
+                 best_magnitude, best_noise_floor, best_magnitude / best_noise_floor);
+        return 0;
+    }
+
+    float dominant_frequency = (float) best_frequency_bin * _sampling_freq / _num_samples;
+
+    ESP_LOGI(TAG, "Dominant Frequency: %.2f Hz, Magnitude: %.2f mV, Noise floor: %.2f, SNR: %.2f", 
+            dominant_frequency, best_magnitude, best_noise_floor, best_magnitude / best_noise_floor);
+
+    return dominant_frequency;
 }
 
 uint32_t FFT_ultrasonic::get_max_cali_value(adc_cali_handle_t calibration){
@@ -241,7 +314,7 @@ void FFT_ultrasonic::adc_calibration_init()
 
 #if ADC_CALI_SCHEME_LINE_FITTING_SUPPORTED
 //printf("ADC_CALI_SCHEME_LINE_FITTING_SUPPORTED \n");
-    if (!calibrated) {
+    if (!_calibrated) {
         adc_cali_line_fitting_config_t cali_config = {
             .unit_id = _ADC_unit,
             .atten = ADC_ATTEN_DB_12,
