@@ -9,16 +9,6 @@ dependencies:
       registry_url: https://components.espressif.com/
       type: service
     version: 1.7.0
-  espressif/esp_lcd_sh1107:
-    component_hash: 9cc00a4d066e3e1d120fd2006d30612766488379b820804092a9bfedb3c1f93c
-    dependencies:
-    - name: idf
-      require: private
-      version: '>=4.4'
-    source:
-      registry_url: https://components.espressif.com/
-      type: service
-    version: 1.1.0
   espressif/onewire_bus:
     component_hash: 11729fd9a5de80225177a61e9cd77de91683b8ec300e83710d5327b666dbe884
     dependencies:
@@ -32,19 +22,10 @@ dependencies:
   idf:
     source:
       type: idf
-    version: 5.2.2
-  lvgl/lvgl:
-    component_hash: 2409fdc84e9766d2a18afd84b051aef3f838348136cdb1c10ac2e8bcdb012bf6
-    dependencies: []
-    source:
-      registry_url: https://components.espressif.com/
-      type: service
-    version: 9.2.0
+    version: 5.5.1
 direct_dependencies:
 - espressif/esp-dsp
-- espressif/esp_lcd_sh1107
 - espressif/onewire_bus
-- lvgl/lvgl
-manifest_hash: eb490dedbd3a91cd5ca4e776c052c1bf60bcf4f118a426bd19082fe7c77d9c88
+manifest_hash: a02e353845cdc7b96d5ed6c21d5b5d1a0b3fb0e3a8856771cb8dd6d25f4689d3
 target: esp32s3
 version: 2.0.0

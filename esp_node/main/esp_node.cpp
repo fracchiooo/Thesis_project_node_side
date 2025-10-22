@@ -27,7 +27,7 @@ static const char* TAG = "MAIN";
 typedef struct {
     float frequency;
     float duty_frequency;
-    float temperature;
+    float sensed_frequency;
     float finish_after;
     uint32_t start_time;
 
@@ -36,7 +36,7 @@ typedef struct {
 static DeviceState_t device_state = {
     .frequency = 0.0,
     .duty_frequency = 0.0,
-    .temperature = -127.0,
+    .sensed_frequency = 0.0,
     .finish_after = 0.0,
     .start_time=0
 };
@@ -62,17 +62,17 @@ DeviceState_t get_device_state() {
     return state;
 }
 
-void initialize_sntp(void) {
+bool initialize_sntp(void) {
     Wifi_wrapper* wifi = Wifi_wrapper::getWifiInstance();
     if (!wifi->isConnected()) {
         ESP_LOGE(TAG, "WiFi not connected, cannot sync time");
-        return;
+        return false;
     }
     ESP_LOGI(TAG, "Initializing SNTP");
     esp_sntp_setoperatingmode(SNTP_OPMODE_POLL);
     esp_sntp_setservername(0, "pool.ntp.org");
     esp_sntp_init();
-    // Aspetta sincronizzazione (max 20 secondi)
+
     int retry = 0;
     while (sntp_get_sync_status() == SNTP_SYNC_STATUS_RESET && ++retry < 20) {
         ESP_LOGI(TAG, "Waiting for time sync... (%d/20)", retry);
@@ -83,8 +83,10 @@ void initialize_sntp(void) {
         time_t now;
         time(&now);
         ESP_LOGI(TAG, "Time synchronized: %s", ctime(&now));
+        return true;
     } else {
         ESP_LOGW(TAG, "Time sync timeout");
+        return false;
     }
 }
 
@@ -257,7 +259,6 @@ void onMqttMessage(const char* topic, int topic_len, const char* data, int data_
     if (json != NULL) {
         cJSON *frequency = cJSON_GetObjectItem(json, "frequency");
         cJSON *duty_frequency = cJSON_GetObjectItem(json, "duty_frequency");
-        cJSON *temperature = cJSON_GetObjectItem(json, "temperature");
         cJSON *finish_after = cJSON_GetObjectItem(json, "finish_after");
         cJSON *startTime = cJSON_GetObjectItem(json, "startTime");
 
@@ -268,10 +269,6 @@ void onMqttMessage(const char* topic, int topic_len, const char* data, int data_
             }
             if (cJSON_IsNumber(duty_frequency)) {
                 device_state.duty_frequency = (float) duty_frequency->valuedouble;
-                
-            }
-            if (cJSON_IsNumber(temperature)) {
-                device_state.temperature = (float) temperature->valuedouble;
             }
             if (cJSON_IsNumber(finish_after)) {
                 device_state.finish_after = (float) finish_after->valuedouble;
@@ -313,7 +310,7 @@ void onMqttMessage(const char* topic, int topic_len, const char* data, int data_
 
 
 
-char* encodePayload(float current_temperature) {
+char* encodePayload(float current_temperature, float current_frequency) {
     char* payload = new char[512];
         
     // get current time
@@ -334,8 +331,8 @@ char* encodePayload(float current_temperature) {
         "{"
         "\"lastUpdate\":\"%s\","
         "\"currentTemperature\":%.2f,"
+        "\"currentSensedFrequency\":%.2f,"
         "\"deviceEnvRequests\":{"
-            "\"temperature\":%.2f,"
             "\"frequency\":%.2f,"
             "\"duty_frequency\":%.2f,"
             "\"finishAfter\":%.2f,"
@@ -344,7 +341,7 @@ char* encodePayload(float current_temperature) {
         "}",
         timestamp,
         current_temperature,
-        curr_state.temperature,
+        current_frequency,
         curr_state.frequency,
         curr_state.duty_frequency,
         curr_state.finish_after,
@@ -354,6 +351,32 @@ char* encodePayload(float current_temperature) {
     return payload;
 }
 
+
+void check_connection(MqttWrapper mqtt){
+
+    int time_shift = 250;
+    int backoff=0;
+
+    while (!wifi->isConnected()) {
+        vTaskDelay(pdMS_TO_TICKS(pow(2, backoff) + time_shift));
+        if(backoff == 20){
+            backoff=0;
+        } else {
+            backoff++;
+        }
+    }
+
+    backoff=0;
+
+    while (!mqtt.isConnected()) {
+        vTaskDelay(pdMS_TO_TICKS(pow(2, backoff) + time_shift));
+        if(backoff == 20){
+            backoff=0;
+        } else {
+            backoff++;
+        }
+    }
+}
 
 
 
@@ -423,19 +446,26 @@ extern "C" void app_main(void)
     }
     
     ESP_LOGI(TAG, "MQTT connected! System running in background...");
-    initialize_sntp();
+    
+    if(!initialize_sntp()){
+        return;
+    }
+
+
+
     FFT_ultrasonic fft;
     fft.begin(ADC_CHANNEL_6, ADC_UNIT_1, 90000, 1024); // sampling at 90 khz in order to sample signals till 45 khz, taking 900 samples, so sampling with steps of 100 hz
     // the sampling rate should be always <= of MAX_SAMPLING_FREQUENCY
 
     while(1){
+        check_connection(mqtt);
         sensor.scan(new_slots);
         float curr_temp = sensor.readTemperature(0);
 
         fft.read_and_get_data_fixed_samples();
         int max_freq = fft.getMaxFrequencyFFT();
 
-        char* payload = encodePayload(curr_temp);
+        char* payload = encodePayload(curr_temp, max_freq);
         mqtt.send_message(nullptr, payload);
         delete[] payload;
         ESP_LOGI(TAG, "MQTT message sent!");

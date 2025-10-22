@@ -1,0 +1,583 @@
+Command: /home/fracchio/.espressif/python_env/idf5.5_py3.10_env/bin/python /home/fracchio/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /home/fracchio/Thesis_project_node_side/esp_node/build/esp_node.elf /home/fracchio/Thesis_project_node_side/esp_node/build/bootloader/bootloader.elf -m '/home/fracchio/.espressif/python_env/idf5.5_py3.10_env/bin/python' '/home/fracchio/esp/esp-idf/tools/idf.py' '-p' '/dev/ttyUSB0'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x158c
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2f34
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Oct 20 2025 17:31:18[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=36bbch (224188) map[0m
+[0;32mI (126) esp_image: segment 1: paddr=00046be4 vaddr=3fc9d000 size=04f14h ( 20244) load[0m
+[0;32mI (130) esp_image: segment 2: paddr=0004bb00 vaddr=40374000 size=04518h ( 17688) load[0m
+[0;32mI (134) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=b6a5ch (748124) map[0m
+[0;32mI (269) esp_image: segment 4: paddr=00106a84 vaddr=40378518 size=14a44h ( 84548) load[0m
+[0;32mI (288) esp_image: segment 5: paddr=0011b4d0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (298) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (298) boot: Disabling RNG early entropy source...[0m
+[0;32mI (308) cpu_start: Multicore app[0m
+[0;32mI (317) cpu_start: Pro cpu start user code[0m
+[0;32mI (317) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (317) app_init: Application information:[0m
+[0;32mI (320) app_init: Project name:     esp_node[0m
+[0;32mI (325) app_init: App version:      3a10424-dirty[0m
+[0;32mI (330) app_init: Compile time:     Oct 20 2025 17:31:09[0m
+[0;32mI (336) app_init: ELF file SHA256:  22e26a0e1...[0m
+[0;32mI (342) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (346) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (351) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (356) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (361) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (368) heap_init: At 3FCA6560 len 000431B0 (268 KiB): RAM[0m
+[0;32mI (374) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (380) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (387) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (394) spi_flash: detected chip: gd[0m
+[0;32mI (397) spi_flash: flash io: dio[0m
+[0;33mW (401) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (415) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (421) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (429) main_task: Started on CPU0[0m
+[0;32mI (449) main_task: Calling app_main()[0m
+[0;32mI (449) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (449) PWM: PWM inizializzato: GPIO 2, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (459) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (469) PWM: PWM inizializzato: GPIO 3, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (479) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (479) PWM: PWM inizializzato: GPIO 4, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (489) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (499) PWM: PWM inizializzato: GPIO 1, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (509) PWM: Cambio frequenza: 40000 -> 150 Hz, risoluzione: 8 -> 14 bit[0m
+[0;32mI (519) PWM: Timer riconfigurato: 150 Hz, 14 bit (16384 livelli)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (529) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (539) PWM: Cambio frequenza: 40000 -> 150 Hz, risoluzione: 8 -> 14 bit[0m
+[0;32mI (539) PWM: Timer riconfigurato: 150 Hz, 14 bit (16384 livelli)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (549) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (559) Temperature sensor: Bus inizializzato su GPIO 26[0m
+[0;32mI (669) Temperature sensor: Slot 0: 390000004742F328[0m
+[0;32mI (669) Temperature sensor: Trovati 1 nuovi (totale 1)[0m
+[0;32mI (669) MAIN: Inizializzati 1 sensori[0m
+[0;32mI (699) wifi: ESP_WIFI_MODE_STA[0m
+[0;32mI (699) pp: pp rom version: e7ae62f[0m
+[0;32mI (699) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (709) wifi:wifi driver task: 3fcedcd0, prio:23, stack:6656, core=0[0m
+[0;32mI (719) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (719) wifi:wifi certification version: v7.0[0m
+[0;32mI (719) wifi:config NVS flash: enabled[0m
+[0;32mI (719) wifi:config nano formatting: disabled[0m
+[0;32mI (719) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (729) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (729) wifi:Init management short buffer num: 32[0m
+[0;32mI (729) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (739) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (739) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (749) wifi:Init static rx buffer num: 10[0m
+[0;32mI (749) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (759) wifi_init: rx ba win: 6[0m
+[0;32mI (759) wifi_init: accept mbox: 6[0m
+[0;32mI (759) wifi_init: tcpip mbox: 32[0m
+[0;32mI (769) wifi_init: udp mbox: 6[0m
+[0;32mI (769) wifi_init: tcp mbox: 6[0m
+[0;32mI (769) wifi_init: tcp tx win: 5760[0m
+[0;32mI (779) wifi_init: tcp rx win: 5760[0m
+[0;32mI (779) wifi_init: tcp mss: 1440[0m
+[0;32mI (789) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (789) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (799) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (839) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (859) wifi:mode : sta (34:b7:da:54:35:28)[0m
+[0;32mI (859) wifi:enable tsf[0m
+[0;32mI (859) wifi: wifi_init_sta finished.[0m
+[0;32mI (869) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (869) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (919) wifi:state: auth -> init (0x1c0)[0m
+[0;32mI (969) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (969) wifi: retry to connect to the AP[0m
+[0;32mI (969) wifi: connect to the AP fail[0m
+[0;32mI (3379) wifi: retry to connect to the AP[0m
+[0;32mI (3379) wifi: connect to the AP fail[0m
+[0;32mI (3389) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3389) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3449) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3489) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3519) wifi:connected with Oneplus, aid = 5, channel 6, BW20, bssid = ba:7e:6d:57:2c:9d[0m
+[0;32mI (3519) wifi:security: WPA2-PSK, phy: bgn, rssi: -47[0m
+[0;32mI (3519) wifi:pm start, type: 1[0m
+
+[0;32mI (3519) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3529) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (3549) wifi:<ba-add>idx:0 (ifx:0, ba:7e:6d:57:2c:9d), tid:0, ssn:0, winSize:64[0m
+[0;32mI (3579) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (3589) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (4569) esp_netif_handlers: sta ip: 10.121.56.118, mask: 255.255.255.0, gw: 10.121.56.100[0m
+[0;32mI (4569) wifi: got ip:10.121.56.118[0m
+[0;32mI (4569) wifi: connected to ap SSID:Oneplus password:123456789[0m
+[0;32mI (4569) MAIN: WIFI connected![0m
+[0;32mI (4579) mqtts: MqttWrapper created with client_id: 34B7DA543528[0m
+[0;32mI (4579) mqtts: [APP] Free memory: 250476 bytes[0m
+[0;32mI (4589) mqtts: Other event id:7[0m
+[0;32mI (5539) mqtts: MQTT_EVENT_CONNECTED[0m
+[0;32mI (5539) mqtts: Subscribed to 34B7DA543528/downlink, msg_id=38425[0m
+[0;32mI (5579) mqtts: MQTT_EVENT_SUBSCRIBED, msg_id=38425[0m
+[0;32mI (5599) MAIN: MQTT connected! System running in background...[0m
+[0;32mI (5599) MAIN: Initializing SNTP[0m
+[0;32mI (5599) MAIN: Waiting for time sync... (1/20)[0m
+[0;32mI (6599) MAIN: Waiting for time sync... (2/20)[0m
+[0;32mI (7599) MAIN: Waiting for time sync... (3/20)[0m
+[0;32mI (8599) MAIN: Time synchronized: Mon Oct 20 16:13:29 2025
+[0m
+[0;32mI (8599) FFT: sampling rate too high, the maximum sampling rate will be used: 83333[0m
+[0;32mI (8709) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (9529) Temperature sensor: Slot 0: 24.12 °C[0m
+[0;32mI (9759) FFT: Signal too weak (magnitude: 0.74 < 20.00 mV)[0m
+[0;32mI (9759) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=21185[0m
+[0;32mI (9759) MAIN: MQTT message sent![0m
+[0;32mI (10659) mqtts: MQTT_EVENT_PUBLISHED, msg_id=21185[0m
+[0;32mI (19859) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (20679) Temperature sensor: Slot 0: 24.12 °C[0m
+[0;32mI (20899) FFT: Signal too weak (magnitude: 0.89 < 20.00 mV)[0m
+[0;32mI (20899) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=4036[0m
+[0;32mI (20899) MAIN: MQTT message sent![0m
+[0;32mI (21919) mqtts: MQTT_EVENT_PUBLISHED, msg_id=4036[0m
+[0;31mE (31899) 1-wire.rmt: onewire_bus_rmt_reset(419): 1-wire reset pulse receive timeout[0m
+[0;31mE (31899) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (31899) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (31909) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (31919) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (31919) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (31929) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (31939) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;33mW (31949) Temperature sensor: Troppi errori di lettura, reinizializzo bus[0m
+[0;33mW (31949) Temperature sensor: Reinizializzazione bus...[0m
+[0;32mI (32059) Temperature sensor: Bus reinizializzato[0m
+[0;31mE (33059) 1-wire.rmt: onewire_bus_rmt_reset(419): 1-wire reset pulse receive timeout[0m
+[0;32mI (33279) FFT: Signal too weak (magnitude: 1.00 < 20.00 mV)[0m
+[0;32mI (33279) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=62021[0m
+[0;32mI (33279) MAIN: MQTT message sent![0m
+[0;32mI (34069) mqtts: MQTT_EVENT_PUBLISHED, msg_id=62021[0m
+[0;31mE (43279) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (43279) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (43279) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (43289) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (43289) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (43299) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (43309) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (43309) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (43319) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;33mW (43329) Temperature sensor: Troppi errori di lettura, reinizializzo bus[0m
+[0;33mW (43339) Temperature sensor: Reinizializzazione bus...[0m
+[0;32mI (43439) Temperature sensor: Bus reinizializzato[0m
+[0;31mE (44439) 1-wire.rmt: onewire_bus_rmt_reset(419): 1-wire reset pulse receive timeout[0m
+[0;32mI (44659) FFT: Signal too weak (magnitude: 1.37 < 20.00 mV)[0m
+[0;32mI (44659) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=60577[0m
+[0;32mI (44659) MAIN: MQTT message sent![0m
+[0;32mI (45269) mqtts: MQTT_EVENT_PUBLISHED, msg_id=60577[0m
+[0;31mE (54659) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (54659) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (54659) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (54669) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (54669) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (54679) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (54689) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (54689) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (54699) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;33mW (54709) Temperature sensor: Troppi errori di lettura, reinizializzo bus[0m
+[0;33mW (54719) Temperature sensor: Reinizializzazione bus...[0m
+[0;32mI (54819) Temperature sensor: Bus reinizializzato[0m
+[0;31mE (55819) 1-wire.rmt: onewire_bus_rmt_reset(419): 1-wire reset pulse receive timeout[0m
+[0;32mI (56039) FFT: Signal too weak (magnitude: 3.40 < 20.00 mV)[0m
+[0;32mI (56039) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=679[0m
+[0;32mI (56039) MAIN: MQTT message sent![0m
+[0;32mI (56529) mqtts: MQTT_EVENT_PUBLISHED, msg_id=679[0m
+[0;31mE (66039) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (66039) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66039) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (66049) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (66049) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66059) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (66069) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (66069) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66079) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;33mW (66089) Temperature sensor: Troppi errori di lettura, reinizializzo bus[0m
+[0;33mW (66099) Temperature sensor: Reinizializzazione bus...[0m
+[0;32mI (66199) Temperature sensor: Bus reinizializzato[0m
+[0;31mE (67199) 1-wire.rmt: onewire_bus_rmt_reset(419): 1-wire reset pulse receive timeout[0m
+[0;32mI (67419) FFT: Signal too weak (magnitude: 0.79 < 20.00 mV)[0m
+[0;32mI (67419) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=58624[0m
+[0;32mI (67419) MAIN: MQTT message sent![0m
+[0;32mI (67999) mqtts: MQTT_EVENT_PUBLISHED, msg_id=58624[0m
+[0;31mE (77419) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (77419) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (77419) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (77429) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (77429) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (77439) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (77449) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (77449) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (77459) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;33mW (77469) Temperature sensor: Troppi errori di lettura, reinizializzo bus[0m
+[0;33mW (77479) Temperature sensor: Reinizializzazione bus...[0m
+[0;32mI (77579) Temperature sensor: Bus reinizializzato[0m
+[0;31mE (78579) 1-wire.rmt: onewire_bus_rmt_reset(419): 1-wire reset pulse receive timeout[0m
+[0;32mI (78799) FFT: Dominant Frequency: 4964.17 Hz, Magnitude: 21.82 mV, Noise floor: 0.41, SNR: 53.24[0m
+[0;32mI (78799) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=29654[0m
+[0;32mI (78799) MAIN: MQTT message sent![0m
+[0;32mI (79259) mqtts: MQTT_EVENT_PUBLISHED, msg_id=29654[0m
+[0;31mE (88799) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (88799) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (88799) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (88809) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (88809) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (88819) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (88829) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (88829) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (88839) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;33mW (88849) Temperature sensor: Troppi errori di lettura, reinizializzo bus[0m
+[0;33mW (88859) Temperature sensor: Reinizializzazione bus...[0m
+[0;32mI (88959) Temperature sensor: Bus reinizializzato[0m
+[0;31mE (89959) 1-wire.rmt: onewire_bus_rmt_reset(419): 1-wire reset pulse receive timeout[0m
+[0;32mI (90179) FFT: Signal too weak (magnitude: 0.66 < 20.00 mV)[0m
+[0;32mI (90179) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=3953[0m
+[0;32mI (90179) MAIN: MQTT message sent![0m
+[0;32mI (90529) mqtts: MQTT_EVENT_PUBLISHED, msg_id=3953[0m
+[0;31mE (100179) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (100179) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (100179) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (100189) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (100189) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (100199) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (100209) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (100219) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (100219) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;33mW (100229) Temperature sensor: Troppi errori di lettura, reinizializzo bus[0m
+[0;33mW (100239) Temperature sensor: Reinizializzazione bus...[0m
+[0;32mI (100349) Temperature sensor: Bus reinizializzato[0m
+[0;31mE (101349) 1-wire.rmt: onewire_bus_rmt_reset(419): 1-wire reset pulse receive timeout[0m
+[0;32mI (101569) FFT: Signal too weak (magnitude: 0.80 < 20.00 mV)[0m
+[0;32mI (101569) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=25215[0m
+[0;32mI (101569) MAIN: MQTT message sent![0m
+[0;32mI (101789) mqtts: MQTT_EVENT_PUBLISHED, msg_id=25215[0m
+[0;31mE (111569) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (111569) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (111569) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (111579) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (111579) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (111589) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (111599) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (111609) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (111609) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;33mW (111619) Temperature sensor: Troppi errori di lettura, reinizializzo bus[0m
+[0;33mW (111629) Temperature sensor: Reinizializzazione bus...[0m
+[0;32mI (111739) Temperature sensor: Bus reinizializzato[0m
+[0;31mE (112739) 1-wire.rmt: onewire_bus_rmt_reset(419): 1-wire reset pulse receive timeout[0m
+[0;32mI (112959) FFT: Signal too weak (magnitude: 0.55 < 20.00 mV)[0m
+[0;32mI (112959) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=43675[0m
+[0;32mI (112959) MAIN: MQTT message sent![0m
+[0;32mI (114079) mqtts: MQTT_EVENT_PUBLISHED, msg_id=43675[0m
+[0;31mE (122959) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (122959) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (122959) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (122969) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (122969) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (122979) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (122989) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (122999) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (122999) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;33mW (123009) Temperature sensor: Troppi errori di lettura, reinizializzo bus[0m
+[0;33mW (123019) Temperature sensor: Reinizializzazione bus...[0m
+[0;32mI (123129) Temperature sensor: Bus reinizializzato[0m
+[0;31mE (124129) 1-wire.rmt: onewire_bus_rmt_reset(419): 1-wire reset pulse receive timeout[0m
+[0;32mI (124349) FFT: Signal too weak (magnitude: 0.67 < 20.00 mV)[0m
+[0;32mI (124349) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=23474[0m
+[0;32mI (124349) MAIN: MQTT message sent![0m
+[0;32mI (125339) mqtts: MQTT_EVENT_PUBLISHED, msg_id=23474[0m
+[0;31mE (134349) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (134349) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (134349) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (134359) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (134359) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (134369) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (134379) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (134389) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (134389) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;33mW (134399) Temperature sensor: Troppi errori di lettura, reinizializzo bus[0m
+[0;33mW (134409) Temperature sensor: Reinizializzazione bus...[0m
+[0;32mI (134519) Temperature sensor: Bus reinizializzato[0m
+[0;31mE (135519) 1-wire.rmt: onewire_bus_rmt_reset(419): 1-wire reset pulse receive timeout[0m
+[0;32mI (135739) FFT: Signal too weak (magnitude: 0.84 < 20.00 mV)[0m
+[0;32mI (135739) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=37737[0m
+[0;32mI (135739) MAIN: MQTT message sent![0m
+[0;32mI (136819) mqtts: MQTT_EVENT_PUBLISHED, msg_id=37737[0m
+[0;31mE (145739) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (145739) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (145739) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (145749) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (145749) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (145759) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (145769) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (145779) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (145779) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;33mW (145789) Temperature sensor: Troppi errori di lettura, reinizializzo bus[0m
+[0;33mW (145799) Temperature sensor: Reinizializzazione bus...[0m
+[0;32mI (145909) Temperature sensor: Bus reinizializzato[0m
+[0;31mE (146909) 1-wire.rmt: onewire_bus_rmt_reset(419): 1-wire reset pulse receive timeout[0m
+[0;32mI (147129) FFT: Signal too weak (magnitude: 0.86 < 20.00 mV)[0m
+[0;32mI (147129) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=60631[0m
+[0;32mI (147129) MAIN: MQTT message sent![0m
+[0;32mI (148079) mqtts: MQTT_EVENT_PUBLISHED, msg_id=60631[0m
+[0;31mE (157129) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (157129) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (157129) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (157139) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (157139) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (157149) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (157159) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (157169) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (157169) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;33mW (157179) Temperature sensor: Troppi errori di lettura, reinizializzo bus[0m
+[0;33mW (157189) Temperature sensor: Reinizializzazione bus...[0m
+[0;32mI (157299) Temperature sensor: Bus reinizializzato[0m
+[0;31mE (158299) 1-wire.rmt: onewire_bus_rmt_reset(419): 1-wire reset pulse receive timeout[0m
+[0;32mI (158519) FFT: Signal too weak (magnitude: 0.68 < 20.00 mV)[0m
+[0;32mI (158519) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=51554[0m
+[0;32mI (158519) MAIN: MQTT message sent![0m
+[0;32mI (159339) mqtts: MQTT_EVENT_PUBLISHED, msg_id=51554[0m
+[0;31mE (168519) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (168519) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (168519) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (168529) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (168529) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (168539) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (168549) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (168559) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (168559) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;33mW (168569) Temperature sensor: Troppi errori di lettura, reinizializzo bus[0m
+[0;33mW (168579) Temperature sensor: Reinizializzazione bus...[0m
+[0;32mI (168689) Temperature sensor: Bus reinizializzato[0m
+[0;31mE (169689) 1-wire.rmt: onewire_bus_rmt_reset(419): 1-wire reset pulse receive timeout[0m
+[0;32mI (169909) FFT: Signal too weak (magnitude: 0.65 < 20.00 mV)[0m
+[0;32mI (169909) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=53876[0m
+[0;32mI (169909) MAIN: MQTT message sent![0m
+[0;32mI (170609) mqtts: MQTT_EVENT_PUBLISHED, msg_id=53876[0m
+[0;31mE (179909) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (179909) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (179909) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (179919) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (179919) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (179929) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (179939) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (179949) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (179949) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;33mW (179959) Temperature sensor: Troppi errori di lettura, reinizializzo bus[0m
+[0;33mW (179969) Temperature sensor: Reinizializzazione bus...[0m
+[0;32mI (180079) Temperature sensor: Bus reinizializzato[0m
+[0;31mE (181079) 1-wire.rmt: onewire_bus_rmt_reset(419): 1-wire reset pulse receive timeout[0m
+[0;32mI (181299) FFT: Signal too weak (magnitude: 0.91 < 20.00 mV)[0m
+[0;32mI (181299) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=47471[0m
+[0;32mI (181299) MAIN: MQTT message sent![0m
+[0;32mI (181869) mqtts: MQTT_EVENT_PUBLISHED, msg_id=47471[0m
+[0;31mE (191299) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (191299) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (191299) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (191309) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (191309) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (191319) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (191329) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (191339) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (191339) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;33mW (191349) Temperature sensor: Troppi errori di lettura, reinizializzo bus[0m
+[0;33mW (191359) Temperature sensor: Reinizializzazione bus...[0m
+[0;32mI (191469) Temperature sensor: Bus reinizializzato[0m
+[0;31mE (192469) 1-wire.rmt: onewire_bus_rmt_reset(419): 1-wire reset pulse receive timeout[0m
+[0;32mI (192689) FFT: Signal too weak (magnitude: 0.68 < 20.00 mV)[0m
+[0;32mI (192689) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=34186[0m
+[0;32mI (192689) MAIN: MQTT message sent![0m
+[0;32mI (193339) mqtts: MQTT_EVENT_PUBLISHED, msg_id=34186[0m
+[0;31mE (202689) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (202689) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (202689) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (202699) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (202699) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (202709) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (202719) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (202729) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (202729) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;33mW (202739) Temperature sensor: Troppi errori di lettura, reinizializzo bus[0m
+[0;33mW (202749) Temperature sensor: Reinizializzazione bus...[0m
+[0;32mI (202859) Temperature sensor: Bus reinizializzato[0m
+[0;31mE (203859) 1-wire.rmt: onewire_bus_rmt_reset(419): 1-wire reset pulse receive timeout[0m
+[0;32mI (204079) FFT: Signal too weak (magnitude: 0.46 < 20.00 mV)[0m
+[0;32mI (204079) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=1012[0m
+[0;32mI (204079) MAIN: MQTT message sent![0m
+[0;32mI (204599) mqtts: MQTT_EVENT_PUBLISHED, msg_id=1012[0m
+[0;31mE (214079) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (214079) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (214079) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (214089) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (214089) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (214099) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (214109) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (214119) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (214119) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;33mW (214129) Temperature sensor: Troppi errori di lettura, reinizializzo bus[0m
+[0;33mW (214139) Temperature sensor: Reinizializzazione bus...[0m
+[0;32mI (214249) Temperature sensor: Bus reinizializzato[0m
+[0;31mE (215249) 1-wire.rmt: onewire_bus_rmt_reset(419): 1-wire reset pulse receive timeout[0m
+[0;32mI (215469) FFT: Signal too weak (magnitude: 0.74 < 20.00 mV)[0m
+[0;32mI (215469) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=38293[0m
+[0;32mI (215469) MAIN: MQTT message sent![0m
+[0;32mI (215859) mqtts: MQTT_EVENT_PUBLISHED, msg_id=38293[0m
+[0;31mE (225469) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (225469) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (225469) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (225479) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (225479) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (225489) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (225499) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (225509) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (225509) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;33mW (225519) Temperature sensor: Troppi errori di lettura, reinizializzo bus[0m
+[0;33mW (225529) Temperature sensor: Reinizializzazione bus...[0m
+[0;32mI (225639) Temperature sensor: Bus reinizializzato[0m
+[0;31mE (226639) 1-wire.rmt: onewire_bus_rmt_reset(419): 1-wire reset pulse receive timeout[0m
+[0;32mI (226859) FFT: Signal too weak (magnitude: 0.85 < 20.00 mV)[0m
+[0;32mI (226859) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=10003[0m
+[0;32mI (226859) MAIN: MQTT message sent![0m
+[0;32mI (227129) mqtts: MQTT_EVENT_PUBLISHED, msg_id=10003[0m
+[0;31mE (236859) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (236859) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (236859) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (236869) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (236869) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (236879) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (236889) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (236899) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (236899) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;33mW (236909) Temperature sensor: Troppi errori di lettura, reinizializzo bus[0m
+[0;33mW (236919) Temperature sensor: Reinizializzazione bus...[0m
+[0;32mI (237029) Temperature sensor: Bus reinizializzato[0m
+[0;31mE (238029) 1-wire.rmt: onewire_bus_rmt_reset(419): 1-wire reset pulse receive timeout[0m
+[0;32mI (238249) FFT: Signal too weak (magnitude: 0.73 < 20.00 mV)[0m
+[0;32mI (238249) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=14865[0m
+[0;32mI (238249) MAIN: MQTT message sent![0m
+[0;32mI (239419) mqtts: MQTT_EVENT_PUBLISHED, msg_id=14865[0m
+[0;31mE (248249) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (248249) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (248249) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (248259) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (248259) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (248269) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (248279) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (248289) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (248289) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;33mW (248299) Temperature sensor: Troppi errori di lettura, reinizializzo bus[0m
+[0;33mW (248309) Temperature sensor: Reinizializzazione bus...[0m
+[0;32mI (248419) Temperature sensor: Bus reinizializzato[0m
+[0;31mE (249419) 1-wire.rmt: onewire_bus_rmt_reset(419): 1-wire reset pulse receive timeout[0m
+[0;32mI (249639) FFT: Signal too weak (magnitude: 0.54 < 20.00 mV)[0m
+[0;32mI (249639) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=64191[0m
+[0;32mI (249639) MAIN: MQTT message sent![0m
+[0;32mI (250879) mqtts: MQTT_EVENT_PUBLISHED, msg_id=64191[0m
+[0;31mE (259639) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (259639) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (259639) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (259649) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (259649) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (259659) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (259669) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (259679) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (259679) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;33mW (259689) Temperature sensor: Troppi errori di lettura, reinizializzo bus[0m
+[0;33mW (259699) Temperature sensor: Reinizializzazione bus...[0m
+[0;32mI (259809) Temperature sensor: Bus reinizializzato[0m
+[0;31mE (260809) 1-wire.rmt: onewire_bus_rmt_reset(419): 1-wire reset pulse receive timeout[0m
+[0;32mI (261029) FFT: Signal too weak (magnitude: 0.62 < 20.00 mV)[0m
+[0;32mI (261029) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=33339[0m
+[0;32mI (261029) MAIN: MQTT message sent![0m
+[0;32mI (262149) mqtts: MQTT_EVENT_PUBLISHED, msg_id=33339[0m
+[0;31mE (271029) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (271029) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (271029) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (271039) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (271039) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (271049) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (271059) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (271069) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (271069) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;33mW (271079) Temperature sensor: Troppi errori di lettura, reinizializzo bus[0m
+[0;33mW (271089) Temperature sensor: Reinizializzazione bus...[0m
+[0;32mI (271199) Temperature sensor: Bus reinizializzato[0m
+[0;31mE (272199) 1-wire.rmt: onewire_bus_rmt_reset(419): 1-wire reset pulse receive timeout[0m
+[0;32mI (272419) FFT: Signal too weak (magnitude: 0.84 < 20.00 mV)[0m
+[0;32mI (272419) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=7507[0m
+[0;32mI (272419) MAIN: MQTT message sent![0m
+[0;32mI (273409) mqtts: MQTT_EVENT_PUBLISHED, msg_id=7507[0m
+[0;31mE (282419) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (282419) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (282419) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (282429) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (282429) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (282439) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (282449) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (282459) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (282459) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;33mW (282469) Temperature sensor: Troppi errori di lettura, reinizializzo bus[0m
+[0;33mW (282479) Temperature sensor: Reinizializzazione bus...[0m
+[0;32mI (282589) Temperature sensor: Bus reinizializzato[0m
+[0;31mE (283589) 1-wire.rmt: onewire_bus_rmt_reset(419): 1-wire reset pulse receive timeout[0m
+[0;32mI (283809) FFT: Signal too weak (magnitude: 0.63 < 20.00 mV)[0m
+[0;32mI (283809) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=29328[0m
+[0;32mI (283809) MAIN: MQTT message sent![0m
+[0;32mI (284679) mqtts: MQTT_EVENT_PUBLISHED, msg_id=29328[0m
+[0;31mE (293809) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (293809) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (293809) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (293819) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (293819) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (293829) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (293839) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (293849) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (293849) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;33mW (293859) Temperature sensor: Troppi errori di lettura, reinizializzo bus[0m
+[0;33mW (293869) Temperature sensor: Reinizializzazione bus...[0m
+[0;32mI (293979) Temperature sensor: Bus reinizializzato[0m
+[0;31mE (294979) 1-wire.rmt: onewire_bus_rmt_reset(419): 1-wire reset pulse receive timeout[0m
+[0;32mI (295199) FFT: Signal too weak (magnitude: 0.66 < 20.00 mV)[0m
+[0;32mI (295199) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=50854[0m
+[0;32mI (295199) MAIN: MQTT message sent![0m
+[0;32mI (296039) mqtts: MQTT_EVENT_PUBLISHED, msg_id=50854[0m
+[0;31mE (305199) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (305199) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (305199) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (305209) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (305209) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (305219) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (305229) rmt: rmt_receive(401): channel not in enable state[0m
+[0;31mE (305239) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (305239) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;33mW (305249) Temperature sensor: Troppi errori di lettura, reinizializzo bus[0m
+[0;33mW (305259) Temperature sensor: Reinizializzazione bus...[0m
+[0;32mI (305369) Temperature sensor: Bus reinizializzato[0m
+[0;31mE (306369) 1-wire.rmt: onewire_bus_rmt_reset(419): 1-wire reset pulse receive timeout[0m
+[0;32mI (306589) FFT: Signal too weak (magnitude: 0.82 < 20.00 mV)[0m
+[0;32mI (306589) mqtts: Enqueued to 34B7DA543528/uplink, msg_id=17080[0m
+[0;32mI (306589) MAIN: MQTT message sent![0m
+[0;32mI (307409) mqtts: MQTT_EVENT_PUBLISHED, msg_id=17080[0m

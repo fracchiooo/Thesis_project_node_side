@@ -4,8 +4,7 @@
 /home/fracchio/Thesis_project_node_side/esp_node/build/bootloader/CMakeFiles/gen_project_binary.dir
 /home/fracchio/Thesis_project_node_side/esp_node/build/bootloader/CMakeFiles/app.dir
 /home/fracchio/Thesis_project_node_side/esp_node/build/bootloader/CMakeFiles/erase_flash.dir
-/home/fracchio/Thesis_project_node_side/esp_node/build/bootloader/CMakeFiles/uf2.dir
-/home/fracchio/Thesis_project_node_side/esp_node/build/bootloader/CMakeFiles/uf2-app.dir
+/home/fracchio/Thesis_project_node_side/esp_node/build/bootloader/CMakeFiles/merge-bin.dir
 /home/fracchio/Thesis_project_node_side/esp_node/build/bootloader/CMakeFiles/monitor.dir
 /home/fracchio/Thesis_project_node_side/esp_node/build/bootloader/CMakeFiles/_project_elf_src.dir
 /home/fracchio/Thesis_project_node_side/esp_node/build/bootloader/CMakeFiles/bootloader.elf.dir
@@ -15,6 +14,8 @@
 /home/fracchio/Thesis_project_node_side/esp_node/build/bootloader/CMakeFiles/dfu.dir
 /home/fracchio/Thesis_project_node_side/esp_node/build/bootloader/CMakeFiles/dfu-list.dir
 /home/fracchio/Thesis_project_node_side/esp_node/build/bootloader/CMakeFiles/dfu-flash.dir
+/home/fracchio/Thesis_project_node_side/esp_node/build/bootloader/CMakeFiles/uf2.dir
+/home/fracchio/Thesis_project_node_side/esp_node/build/bootloader/CMakeFiles/uf2-app.dir
 /home/fracchio/Thesis_project_node_side/esp_node/build/bootloader/CMakeFiles/edit_cache.dir
 /home/fracchio/Thesis_project_node_side/esp_node/build/bootloader/CMakeFiles/rebuild_cache.dir
 /home/fracchio/Thesis_project_node_side/esp_node/build/bootloader/esp-idf/CMakeFiles/edit_cache.dir
@@ -54,6 +55,8 @@
 /home/fracchio/Thesis_project_node_side/esp_node/build/bootloader/esp-idf/efuse/CMakeFiles/efuse_test_table.dir
 /home/fracchio/Thesis_project_node_side/esp_node/build/bootloader/esp-idf/efuse/CMakeFiles/edit_cache.dir
 /home/fracchio/Thesis_project_node_side/esp_node/build/bootloader/esp-idf/efuse/CMakeFiles/rebuild_cache.dir
+/home/fracchio/Thesis_project_node_side/esp_node/build/bootloader/esp-idf/esp_security/CMakeFiles/edit_cache.dir
+/home/fracchio/Thesis_project_node_side/esp_node/build/bootloader/esp-idf/esp_security/CMakeFiles/rebuild_cache.dir
 /home/fracchio/Thesis_project_node_side/esp_node/build/bootloader/esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir
 /home/fracchio/Thesis_project_node_side/esp_node/build/bootloader/esp-idf/esp_system/CMakeFiles/edit_cache.dir
 /home/fracchio/Thesis_project_node_side/esp_node/build/bootloader/esp-idf/esp_system/CMakeFiles/rebuild_cache.dir
@@ -62,6 +65,10 @@
 /home/fracchio/Thesis_project_node_side/esp_node/build/bootloader/esp-idf/esp_hw_support/CMakeFiles/rebuild_cache.dir
 /home/fracchio/Thesis_project_node_side/esp_node/build/bootloader/esp-idf/esp_hw_support/port/esp32s3/CMakeFiles/edit_cache.dir
 /home/fracchio/Thesis_project_node_side/esp_node/build/bootloader/esp-idf/esp_hw_support/port/esp32s3/CMakeFiles/rebuild_cache.dir
+/home/fracchio/Thesis_project_node_side/esp_node/build/bootloader/esp-idf/esp_hw_support/mspi_timing_tuning/port/esp32s3/CMakeFiles/edit_cache.dir
+/home/fracchio/Thesis_project_node_side/esp_node/build/bootloader/esp-idf/esp_hw_support/mspi_timing_tuning/port/esp32s3/CMakeFiles/rebuild_cache.dir
+/home/fracchio/Thesis_project_node_side/esp_node/build/bootloader/esp-idf/esp_hw_support/lowpower/CMakeFiles/edit_cache.dir
+/home/fracchio/Thesis_project_node_side/esp_node/build/bootloader/esp-idf/esp_hw_support/lowpower/CMakeFiles/rebuild_cache.dir
 /home/fracchio/Thesis_project_node_side/esp_node/build/bootloader/esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir
 /home/fracchio/Thesis_project_node_side/esp_node/build/bootloader/esp-idf/esp_common/CMakeFiles/edit_cache.dir
 /home/fracchio/Thesis_project_node_side/esp_node/build/bootloader/esp-idf/esp_common/CMakeFiles/rebuild_cache.dir
