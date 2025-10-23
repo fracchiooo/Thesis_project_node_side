@@ -135,6 +135,32 @@ int MqttWrapper::send_message(const char* topic, const char* payload) {
 
 
 
+void MqttWrapper::reconnect()
+{
+    if (_connected) {
+        ESP_LOGI(TAG, "Already connected");
+        return;
+    }
+    
+    if (_client == nullptr) {
+        ESP_LOGW(TAG, "Client not initialized");
+        return;
+    }
+
+    esp_err_t err = esp_mqtt_client_reconnect(_client);
+    
+    if (err == ESP_OK) {
+        ESP_LOGI(TAG, "Reconnection initiated successfully");
+        _connected = true;
+    }
+}
+
+
+
+
+
+
+
 
 void MqttWrapper::mqtt_app_start()
 {

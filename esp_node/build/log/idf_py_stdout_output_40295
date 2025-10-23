@@ -1,0 +1,237 @@
+2mI (138) esp_image: �ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d9c
+entry 0x403c9914
+[0;32mI (27) boot: ESP-IDF v5.2.2 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Oct 23 2025 14:43:50[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=35284h (217732) map[0m
+[0;32mI (138) esp_image: segment 1: paddr=000452ac vaddr=3fc9b300 size=04870h ( 18544) load[0m
+[0;32mI (142) esp_image: segment 2: paddr=00049b24 vaddr=40374000 size=064f4h ( 25844) load[0m
+[0;32mI (150) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=b4f68h (741224) map[0m
+[0;32mI (285) esp_image: segment 4: paddr=00104f90 vaddr=4037a4f4 size=10d68h ( 68968) load[0m
+[0;32mI (310) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (310) boot: Disabling RNG early entropy source...[0m
+[0;32mI (322) cpu_start: Multicore app[0m
+[0;32mI (331) cpu_start: Pro cpu start user code[0m
+[0;32mI (332) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (332) cpu_start: Application information:[0m
+[0;32mI (335) cpu_start: Project name:     esp_node[0m
+[0;32mI (340) cpu_start: App version:      50a3c4e-dirty[0m
+[0;32mI (345) cpu_start: Compile time:     Oct 23 2025 14:43:44[0m
+[0;32mI (351) cpu_start: ELF file SHA256:  279893a38...[0m
+[0;32mI (357) cpu_start: ESP-IDF:          v5.2.2[0m
+[0;32mI (361) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (366) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (371) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (376) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (383) heap_init: At 3FCA3D98 len 00045978 (278 KiB): RAM[0m
+[0;32mI (389) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (395) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (401) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (408) spi_flash: detected chip: gd[0m
+[0;32mI (412) spi_flash: flash io: dio[0m
+[0;33mW (416) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (430) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (436) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (443) main_task: Started on CPU0[0m
+[0;32mI (453) main_task: Calling app_main()[0m
+[0;32mI (453) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (463) PWM: PWM inizializzato: GPIO 2, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (473) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (473) PWM: PWM inizializzato: GPIO 3, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (483) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (493) PWM: PWM inizializzato: GPIO 4, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (503) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (503) PWM: PWM inizializzato: GPIO 1, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (513) PWM: Cambio frequenza: 40000 -> 150 Hz, risoluzione: 8 -> 14 bit[0m
+[0;32mI (523) PWM: Timer riconfigurato: 150 Hz, 14 bit (16384 livelli)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (533) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (543) PWM: Cambio frequenza: 40000 -> 150 Hz, risoluzione: 8 -> 14 bit[0m
+[0;32mI (553) PWM: Timer riconfigurato: 150 Hz, 14 bit (16384 livelli)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (563) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (563) gpio: GPIO[26]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (573) gpio: GPIO[26]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (583) Temperature sensor: Bus inizializzato su GPIO 26[0m
+[0;31mE (1593) 1-wire.rmt: onewire_bus_rmt_reset(419): 1-wire reset pulse receive timeout[0m
+[0;31mE (1593) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (1593) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (1603) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (1603) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (1613) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (1623) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (1633) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;33mW (1633) Temperature sensor: Troppi errori di lettura, reinizializzo bus[0m
+[0;33mW (1643) Temperature sensor: Reinizializzazione bus...[0m
+[0;32mI (1653) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1663) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1773) gpio: GPIO[26]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1773) gpio: GPIO[26]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1773) Temperature sensor: Bus reinizializzato[0m
+[0;32mI (1783) MAIN: Inizializzati 0 sensori[0m
+[0;32mI (1813) wifi: ESP_WIFI_MODE_STA[0m
+[0;32mI (1813) pp: pp rom version: e7ae62f[0m
+[0;32mI (1813) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1833) wifi:wifi driver task: 3fcb154c, prio:23, stack:6656, core=0[0m
+[0;32mI (1843) wifi:wifi firmware version: 3e0076f[0m
+[0;32mI (1843) wifi:wifi certification version: v7.0[0m
+[0;32mI (1843) wifi:config NVS flash: enabled[0m
+[0;32mI (1843) wifi:config nano formating: disabled[0m
+[0;32mI (1843) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1853) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1853) wifi:Init management short buffer num: 32[0m
+[0;32mI (1863) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1863) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1873) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1873) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1873) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1883) wifi_init: rx ba win: 6[0m
+[0;32mI (1883) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1893) wifi_init: udp mbox: 6[0m
+[0;32mI (1893) wifi_init: tcp mbox: 6[0m
+[0;32mI (1893) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1903) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1903) wifi_init: tcp mss: 1440[0m
+[0;32mI (1913) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1913) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1923) phy_init: phy_version 670,b7bc9b9,Apr 30 2024,10:54:13[0m
+[0;32mI (1973) wifi:mode : sta (10:20:ba:66:2e:94)[0m
+[0;32mI (1973) wifi:enable tsf[0m
+[0;32mI (1973) wifi: wifi_init_sta finished.[0m
+[0;32mI (1983) wifi:new:<1,1>, old:<1,0>, ap:<255,255>, sta:<1,1>, prof:1[0m
+[0;32mI (1983) wifi:state: init -> auth (b0)[0m
+[0;32mI (2983) wifi:state: auth -> init (200)[0m
+[0;32mI (2983) wifi:new:<1,0>, old:<1,1>, ap:<255,255>, sta:<1,1>, prof:1[0m
+[0;32mI (2983) wifi: retry to connect to the AP[0m
+[0;32mI (2983) wifi: connect to the AP fail[0m
+[0;32mI (5393) wifi: retry to connect to the AP[0m
+[0;32mI (5393) wifi: connect to the AP fail[0m
+[0;32mI (5403) wifi:new:<1,1>, old:<1,0>, ap:<255,255>, sta:<1,1>, prof:1[0m
+[0;32mI (5403) wifi:state: init -> auth (b0)[0m
+[0;32mI (5413) wifi:state: auth -> assoc (0)[0m
+[0;32mI (5453) wifi:state: assoc -> run (10)[0m
+[0;32mI (5473) wifi:connected with Oneplus, aid = 1, channel 1, 40U, bssid = ba:7e:6d:57:2c:9d[0m
+[0;32mI (5473) wifi:security: WPA2-PSK, phy: bgn, rssi: -28[0m
+[0;32mI (5473) wifi:pm start, type: 1[0m
+
+[0;32mI (5473) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (5483) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (5493) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (5503) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (5523) wifi:<ba-add>idx:0 (ifx:0, ba:7e:6d:57:2c:9d), tid:0, ssn:0, winSize:64[0m
+[0;32mI (6503) esp_netif_handlers: sta ip: 10.203.33.18, mask: 255.255.255.0, gw: 10.203.33.85[0m
+[0;32mI (6503) wifi: got ip:10.203.33.18[0m
+[0;32mI (6503) wifi: connected to ap SSID:Oneplus password:123456789[0m
+[0;32mI (6503) MAIN: WIFI connected![0m
+[0;32mI (6513) mqtts: MqttWrapper created with client_id: 1020BA662E94[0m
+[0;32mI (6523) mqtts: [APP] Free memory: 262728 bytes[0m
+[0;32mI (6523) mqtts: Other event id:7[0m
+[0;32mI (7373) mqtts: MQTT_EVENT_CONNECTED[0m
+[0;32mI (7373) mqtts: Subscribed to 1020BA662E94/downlink, msg_id=52113[0m
+[0;32mI (7413) mqtts: MQTT_EVENT_SUBSCRIBED, msg_id=52113[0m
+[0;32mI (7533) MAIN: MQTT connected! System running in background...[0m
+[0;32mI (7533) MAIN: Initializing SNTP[0m
+[0;32mI (7533) MAIN: Waiting for time sync... (1/20)[0m
+[0;32mI (8533) MAIN: Time synchronized: Thu Oct 23 12:52:53 2025
+[0m
+[0;32mI (8533) FFT: sampling rate too high, the maximum sampling rate will be used: 83333[0m
+[0;32mI (8533) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (9543) 1-wire.rmt: onewire_bus_rmt_reset(419): 1-wire reset pulse receive timeout[0m
+[0;31mE (9543) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (9543) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (9553) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (9553) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (9563) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (9573) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (9583) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;33mW (9583) Temperature sensor: Troppi errori di lettura, reinizializzo bus[0m
+[0;33mW (9593) Temperature sensor: Reinizializzazione bus...[0m
+[0;32mI (9603) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (9613) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (9723) gpio: GPIO[26]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (9723) gpio: GPIO[26]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (9723) Temperature sensor: Bus reinizializzato[0m
+[0;33mW (9733) Temperature sensor: Slot 0 vuoto[0m
+[0;32mI (9973) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (9973) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=8067[0m
+[0;32mI (9973) MAIN: MQTT message sent![0m
+[0;32mI (10713) mqtts: MQTT_EVENT_PUBLISHED, msg_id=8067[0m
+[0;31mE (20973) 1-wire.rmt: onewire_bus_rmt_reset(419): 1-wire reset pulse receive timeout[0m
+[0;31mE (20973) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (20973) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (20983) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (20993) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (20993) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (21003) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (21013) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;33mW (21023) Temperature sensor: Troppi errori di lettura, reinizializzo bus[0m
+[0;33mW (21023) Temperature sensor: Reinizializzazione bus...[0m
+[0;32mI (21033) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (21043) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (21153) gpio: GPIO[26]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (21153) gpio: GPIO[26]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (21153) Temperature sensor: Bus reinizializzato[0m
+[0;33mW (21163) Temperature sensor: Slot 0 vuoto[0m
+[0;32mI (21393) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (21393) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=11148[0m
+[0;32mI (21393) MAIN: MQTT message sent![0m
+[0;32mI (23203) mqtts: MQTT_EVENT_PUBLISHED, msg_id=11148[0m
+[0;31mE (32393) 1-wire.rmt: onewire_bus_rmt_reset(419): 1-wire reset pulse receive timeout[0m
+[0;31mE (32393) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (32393) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (32403) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (32413) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (32413) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (32423) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (32433) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;33mW (32443) Temperature sensor: Troppi errori di lettura, reinizializzo bus[0m
+[0;33mW (32443) Temperature sensor: Reinizializzazione bus...[0m
+[0;32mI (32453) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (32463) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (32573) gpio: GPIO[26]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (32573) gpio: GPIO[26]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (32573) Temperature sensor: Bus reinizializzato[0m
+[0;33mW (32583) Temperature sensor: Slot 0 vuoto[0m
+[0;32mI (32813) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (32813) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=33170[0m
+[0;32mI (32813) MAIN: MQTT message sent![0m
+[0;32mI (33543) mqtts: MQTT_EVENT_PUBLISHED, msg_id=33170[0m
+[0;31mE (43813) 1-wire.rmt: onewire_bus_rmt_reset(419): 1-wire reset pulse receive timeout[0m
+[0;31mE (43813) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (43813) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (43823) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (43833) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (43833) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (43843) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (43853) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;33mW (43863) Temperature sensor: Troppi errori di lettura, reinizializzo bus[0m
+[0;33mW (43863) Temperature sensor: Reinizializzazione bus...[0m
+[0;32mI (43873) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (43883) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (43993) gpio: GPIO[26]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (43993) gpio: GPIO[26]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (43993) Temperature sensor: Bus reinizializzato[0m
+[0;33mW (44003) Temperature sensor: Slot 0 vuoto[0m
+[0;32mI (44233) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (44233) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=37778[0m
+[0;32mI (44233) MAIN: MQTT message sent![0m
+[0;32mI (44733) mqtts: MQTT_EVENT_PUBLISHED, msg_id=37778[0m

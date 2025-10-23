@@ -352,30 +352,28 @@ char* encodePayload(float current_temperature, float current_frequency) {
 }
 
 
-void check_connection(MqttWrapper mqtt){
+void check_connection(Wifi_wrapper* wifi, MqttWrapper* mqtt, PwmController* pwm_led){
 
-    int time_shift = 250;
+    const int max_backoff = 17;
     int backoff=0;
 
     while (!wifi->isConnected()) {
-        vTaskDelay(pdMS_TO_TICKS(pow(2, backoff) + time_shift));
-        if(backoff == 20){
-            backoff=0;
-        } else {
-            backoff++;
-        }
+        pwm_led->setDuty(0.0f);
+        wifi->reconnect();
+        vTaskDelay(pdMS_TO_TICKS(pow(2, backoff) * 250));
+        if (backoff < max_backoff) backoff++;
     }
 
     backoff=0;
 
-    while (!mqtt.isConnected()) {
-        vTaskDelay(pdMS_TO_TICKS(pow(2, backoff) + time_shift));
-        if(backoff == 20){
-            backoff=0;
-        } else {
-            backoff++;
-        }
+    while (!mqtt->isConnected()) {
+        pwm_led->setDuty(0.0f);
+        mqtt->reconnect();
+        vTaskDelay(pdMS_TO_TICKS(pow(2, backoff) * 250));
+        if (backoff < max_backoff) backoff++;
     }
+
+    pwm_led->setDuty(20.0f);
 }
 
 
@@ -453,12 +451,17 @@ extern "C" void app_main(void)
 
 
 
+
     FFT_ultrasonic fft;
     fft.begin(ADC_CHANNEL_6, ADC_UNIT_1, 90000, 1024); // sampling at 90 khz in order to sample signals till 45 khz, taking 900 samples, so sampling with steps of 100 hz
     // the sampling rate should be always <= of MAX_SAMPLING_FREQUENCY
 
+    PwmController* pwm_led = new PwmController(GPIO_NUM_35, LEDC_CHANNEL_3, LEDC_TIMER_1, false);
+    pwm_led->init();
+    pwm_led->setDuty(20.0f);
+
     while(1){
-        check_connection(mqtt);
+        check_connection(wifi, &mqtt, pwm_led);
         sensor.scan(new_slots);
         float curr_temp = sensor.readTemperature(0);
 
@@ -476,6 +479,7 @@ extern "C" void app_main(void)
     delete pwm_input_20;
     delete pwm_burst_20;
     delete pwm_burst_40;
+    delete pwm_led;
     //vTaskDelete(NULL);
 
 

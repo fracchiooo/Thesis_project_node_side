@@ -1,0 +1,293 @@
+dr=3fc9b300 size=04870h ( 1�ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d9c
+entry 0x403c9914
+[0;32mI (27) boot: ESP-IDF v5.2.2 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Oct 23 2025 14:43:50[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=35290h (217744) map[0m
+[0;32mI (138) esp_image: segment 1: paddr=000452b8 vaddr=3fc9b300 size=04870h ( 18544) load[0m
+[0;32mI (142) esp_image: segment 2: paddr=00049b30 vaddr=40374000 size=064e8h ( 25832) load[0m
+[0;32mI (150) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=b4fd0h (741328) map[0m
+[0;32mI (285) esp_image: segment 4: paddr=00104ff8 vaddr=4037a4e8 size=10d74h ( 68980) load[0m
+[0;32mI (310) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (310) boot: Disabling RNG early entropy source...[0m
+[0;32mI (322) cpu_start: Multicore app[0m
+[0;32mI (331) cpu_start: Pro cpu start user code[0m
+[0;32mI (332) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (332) cpu_start: Application information:[0m
+[0;32mI (335) cpu_start: Project name:     esp_node[0m
+[0;32mI (340) cpu_start: App version:      50a3c4e-dirty[0m
+[0;32mI (345) cpu_start: Compile time:     Oct 23 2025 14:43:44[0m
+[0;32mI (351) cpu_start: ELF file SHA256:  89352a7e2...[0m
+[0;32mI (357) cpu_start: ESP-IDF:          v5.2.2[0m
+[0;32mI (361) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (366) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (371) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (376) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (383) heap_init: At 3FCA3D98 len 00045978 (278 KiB): RAM[0m
+[0;32mI (389) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (395) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (401) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (409) spi_flash: detected chip: gd[0m
+[0;32mI (412) spi_flash: flash io: dio[0m
+[0;33mW (416) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (430) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (436) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (443) main_task: Started on CPU0[0m
+[0;32mI (453) main_task: Calling app_main()[0m
+[0;32mI (453) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (463) PWM: PWM inizializzato: GPIO 2, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (473) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (473) PWM: PWM inizializzato: GPIO 3, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (483) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (493) PWM: PWM inizializzato: GPIO 4, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (503) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (503) PWM: PWM inizializzato: GPIO 1, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (513) PWM: Cambio frequenza: 40000 -> 150 Hz, risoluzione: 8 -> 14 bit[0m
+[0;32mI (523) PWM: Timer riconfigurato: 150 Hz, 14 bit (16384 livelli)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (533) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (543) PWM: Cambio frequenza: 40000 -> 150 Hz, risoluzione: 8 -> 14 bit[0m
+[0;32mI (553) PWM: Timer riconfigurato: 150 Hz, 14 bit (16384 livelli)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (563) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (563) gpio: GPIO[26]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (573) gpio: GPIO[26]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (583) Temperature sensor: Bus inizializzato su GPIO 26[0m
+[0;31mE (1593) 1-wire.rmt: onewire_bus_rmt_reset(419): 1-wire reset pulse receive timeout[0m
+[0;31mE (1593) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (1593) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (1603) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (1603) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (1613) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (1623) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (1633) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;33mW (1633) Temperature sensor: Troppi errori di lettura, reinizializzo bus[0m
+[0;33mW (1643) Temperature sensor: Reinizializzazione bus...[0m
+[0;32mI (1653) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1663) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1773) gpio: GPIO[26]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1773) gpio: GPIO[26]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1773) Temperature sensor: Bus reinizializzato[0m
+[0;32mI (1783) MAIN: Inizializzati 0 sensori[0m
+[0;32mI (1813) wifi: ESP_WIFI_MODE_STA[0m
+[0;32mI (1813) pp: pp rom version: e7ae62f[0m
+[0;32mI (1813) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1823) wifi:wifi driver task: 3fcb15d0, prio:23, stack:6656, core=0[0m
+[0;32mI (1833) wifi:wifi firmware version: 3e0076f[0m
+[0;32mI (1833) wifi:wifi certification version: v7.0[0m
+[0;32mI (1833) wifi:config NVS flash: enabled[0m
+[0;32mI (1843) wifi:config nano formating: disabled[0m
+[0;32mI (1843) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1843) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1853) wifi:Init management short buffer num: 32[0m
+[0;32mI (1853) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1863) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1863) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1873) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1873) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1873) wifi_init: rx ba win: 6[0m
+[0;32mI (1883) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1883) wifi_init: udp mbox: 6[0m
+[0;32mI (1883) wifi_init: tcp mbox: 6[0m
+[0;32mI (1893) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1893) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1903) wifi_init: tcp mss: 1440[0m
+[0;32mI (1903) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1913) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1913) phy_init: phy_version 670,b7bc9b9,Apr 30 2024,10:54:13[0m
+[0;32mI (1963) wifi:mode : sta (10:20:ba:66:2e:94)[0m
+[0;32mI (1963) wifi:enable tsf[0m
+[0;32mI (1963) wifi: wifi_init_sta finished.[0m
+[0;32mI (2053) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (2053) wifi:state: init -> auth (b0)[0m
+[0;32mI (2053) wifi:state: auth -> assoc (0)[0m
+[0;32mI (2083) wifi:state: assoc -> run (10)[0m
+[0;32mI (2103) wifi:connected with Oneplus, aid = 3, channel 6, BW20, bssid = ba:7e:6d:57:2c:9d[0m
+[0;32mI (2103) wifi:security: WPA2-PSK, phy: bgn, rssi: -24[0m
+[0;32mI (2113) wifi:pm start, type: 1[0m
+
+[0;32mI (2113) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (2123) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (2153) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (2153) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (2153) wifi:<ba-add>idx:0 (ifx:0, ba:7e:6d:57:2c:9d), tid:0, ssn:0, winSize:64[0m
+[0;32mI (3133) esp_netif_handlers: sta ip: 10.203.33.18, mask: 255.255.255.0, gw: 10.203.33.85[0m
+[0;32mI (3133) wifi: got ip:10.203.33.18[0m
+[0;32mI (3133) wifi: connected to ap SSID:Oneplus password:123456789[0m
+[0;32mI (3143) MAIN: WIFI connected![0m
+[0;32mI (3143) mqtts: MqttWrapper created with client_id: 1020BA662E94[0m
+[0;32mI (3153) mqtts: [APP] Free memory: 262596 bytes[0m
+[0;32mI (3153) mqtts: Other event id:7[0m
+[0;32mI (4203) mqtts: MQTT_EVENT_CONNECTED[0m
+[0;32mI (4203) mqtts: Subscribed to 1020BA662E94/downlink, msg_id=38549[0m
+[0;32mI (4293) mqtts: MQTT_EVENT_SUBSCRIBED, msg_id=38549[0m
+[0;32mI (4663) MAIN: MQTT connected! System running in background...[0m
+[0;32mI (4663) MAIN: Initializing SNTP[0m
+[0;32mI (4663) MAIN: Waiting for time sync... (1/20)[0m
+[0;32mI (5663) MAIN: Waiting for time sync... (2/20)[0m
+[0;32mI (6663) MAIN: Time synchronized: Thu Oct 23 13:44:52 2025
+[0m
+[0;32mI (6663) FFT: sampling rate too high, the maximum sampling rate will be used: 83333[0m
+[0;32mI (6663) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (6673) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (6683) PWM: PWM inizializzato: GPIO 35, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+Imposto duty: 51 / 256 (risoluzione: 8 bit)
+[0;32mI (6693) PWM: Hardware PWM duty: 20.00% richiesto -> 20.00% effettivo (51/256)[0m
+Imposto duty: 51 / 256 (risoluzione: 8 bit)
+[0;32mI (6703) PWM: Hardware PWM duty: 20.00% richiesto -> 20.00% effettivo (51/256)[0m
+[0;31mE (7713) 1-wire.rmt: onewire_bus_rmt_reset(419): 1-wire reset pulse receive timeout[0m
+[0;31mE (7713) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (7713) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (7723) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (7723) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;31mE (7733) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (7743) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (7753) 1-wire.device: onewire_device_iter_get_next(61): reset bus failed[0m
+[0;33mW (7753) Temperature sensor: Troppi errori di lettura, reinizializzo bus[0m
+[0;33mW (7763) Temperature sensor: Reinizializzazione bus...[0m
+[0;32mI (7773) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7783) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7893) gpio: GPIO[26]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7893) gpio: GPIO[26]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7893) Temperature sensor: Bus reinizializzato[0m
+[0;33mW (7903) Temperature sensor: Slot 0 vuoto[0m
+[0;32mI (8143) FFT: Signal too weak (magnitude: 0.12 < 20.00 mV)[0m
+[0;32mI (8143) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=20512[0m
+[0;32mI (8143) MAIN: MQTT message sent![0m
+[0;32mI (8393) mqtts: MQTT_EVENT_PUBLISHED, msg_id=20512[0m
+[0;32mI (15463) wifi:state: run -> init (1a0)[0m
+[0;32mI (15463) wifi:pm stop, total sleep time: 10257544 us / 13352451 us[0m
+
+[0;32mI (15463) wifi:<ba-del>idx:0, tid:0[0m
+[0;32mI (15463) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;31mE (15473) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54[0m
+[0;32mI (15483) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0;31mE (15483) mqtt_client: Poll read error: 119, aborting connection[0m[0m
+
+[0;32mI (15493) wifi:state: init -> auth (b0)[0m
+[0;32mI (15493) mqtts: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (15503) wifi:state: auth -> init (3a0)[0m
+[0;32mI (15503) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (15473) wifi: retry to connect to the AP[0m
+[0;32mI (15513) wifi: connect to the AP fail[0m
+[0;32mI (15523) wifi: retry to connect to the AP[0m
+[0;32mI (15523) wifi: connect to the AP fail[0m
+[0;32mI (17933) wifi: retry to connect to the AP[0m
+[0;32mI (17933) wifi: connect to the AP fail[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (18143) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (18393) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (18643) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (18893) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (19143) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (19403) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (19683) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (19993) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+[0;32mI (20343) wifi: retry to connect to the AP[0m
+[0;32mI (20343) wifi: connect to the AP fail[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (20363) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (20863) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (21623) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+[0;32mI (22753) wifi: retry to connect to the AP[0m
+[0;32mI (22753) wifi: connect to the AP fail[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (22893) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+[0;32mI (25163) wifi: connect to the AP fail[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (25183) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+[0;32mI (25503) mqtts: Other event id:7[0m
+[0;31mE (25503) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (25503) esp-tls: Failed to open new connection[0m
+[0;31mE (25503) transport_base: Failed to open a new connection[0m
+[0;31mE (25513) mqtt_client: Error transport connect[0m
+[0;32mI (25513) mqtts: MQTT_EVENT_ERROR[0m
+[0;32mI (25523) mqtts: Last error code reported from esp-tls: 0x8004[0m
+[0;32mI (25523) mqtts: Last tls stack error number: 0x0[0m
+[0;32mI (25533) mqtts: Last captured errno : 0 (Success)[0m
+[0;32mI (25533) mqtts: MQTT_EVENT_DISCONNECTED[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (29523) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+[0;32mI (35543) mqtts: Other event id:7[0m
+[0;31mE (35543) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (35543) esp-tls: Failed to open new connection[0m
+[0;31mE (35543) transport_base: Failed to open a new connection[0m
+[0;31mE (35553) mqtt_client: Error transport connect[0m
+[0;32mI (35553) mqtts: MQTT_EVENT_ERROR[0m
+[0;32mI (35563) mqtts: Last error code reported from esp-tls: 0x8004[0m
+[0;32mI (35563) mqtts: Last tls stack error number: 0x0[0m
+[0;32mI (35573) mqtts: Last captured errno : 0 (Success)[0m
+[0;32mI (35573) mqtts: MQTT_EVENT_DISCONNECTED[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (37963) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+[0;32mI (45583) mqtts: Other event id:7[0m
+[0;31mE (45583) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (45583) esp-tls: Failed to open new connection[0m
+[0;31mE (45583) transport_base: Failed to open a new connection[0m
+[0;31mE (45593) mqtt_client: Error transport connect[0m
+[0;32mI (45593) mqtts: MQTT_EVENT_ERROR[0m
+[0;32mI (45603) mqtts: Last error code reported from esp-tls: 0x8004[0m
+[0;32mI (45603) mqtts: Last tls stack error number: 0x0[0m
+[0;32mI (45613) mqtts: Last captured errno : 0 (Success)[0m
+[0;32mI (45613) mqtts: MQTT_EVENT_DISCONNECTED[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (54593) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+[0;32mI (55623) mqtts: Other event id:7[0m
+[0;31mE (55623) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (55623) esp-tls: Failed to open new connection[0m
+[0;31mE (55623) transport_base: Failed to open a new connection[0m
+[0;31mE (55633) mqtt_client: Error transport connect[0m
+[0;32mI (55633) mqtts: MQTT_EVENT_ERROR[0m
+[0;32mI (55643) mqtts: Last error code reported from esp-tls: 0x8004[0m
+[0;32mI (55643) mqtts: Last tls stack error number: 0x0[0m
+[0;32mI (55653) mqtts: Last captured errno : 0 (Success)[0m
+[0;32mI (55653) mqtts: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (65663) mqtts: Other event id:7[0m
+[0;31mE (72663) esp-tls: couldn't get hostname for :yf110114.ala.eu-central-1.emqxsl.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (72663) esp-tls: Failed to open new connection[0m
+[0;31mE (72663) transport_base: Failed to open a new connection[0m
+[0;31mE (72673) mqtt_client: Error transport connect[0m
+[0;32mI (72673) mqtts: MQTT_EVENT_ERROR[0m
+[0;32mI (72683) mqtts: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (72683) mqtts: Last tls stack error number: 0x0[0m
+[0;32mI (72693) mqtts: Last captured errno : 118 (Host is unreachable)[0m
+[0;32mI (72703) mqtts: MQTT_EVENT_DISCONNECTED[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (87603) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+[0;32mI (87703) mqtts: Other event id:7[0m
+[0;31mE (94703) esp-tls: couldn't get hostname for :yf110114.ala.eu-central-1.emqxsl.com: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (94703) esp-tls: Failed to open new connection[0m
+[0;31mE (94703) transport_base: Failed to open a new connection[0m
+[0;31mE (94713) mqtt_client: Error transport connect[0m
+[0;32mI (94713) mqtts: MQTT_EVENT_ERROR[0m
+[0;32mI (94723) mqtts: Last error code reported from esp-tls: 0x8001[0m
+[0;32mI (94723) mqtts: Last tls stack error number: 0x0[0m
+[0;32mI (94733) mqtts: Last captured errno : 118 (Host is unreachable)[0m
+[0;32mI (94743) mqtts: MQTT_EVENT_DISCONNECTED[0m

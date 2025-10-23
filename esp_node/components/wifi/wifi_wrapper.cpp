@@ -36,6 +36,46 @@ void event_handler(void* arg, esp_event_base_t event_base,
     }
 }
 
+
+void Wifi_wrapper::reconnect()
+{
+    if (_connected) {
+        ESP_LOGI(TAG, "Already connected to WiFi");
+        return;
+    }
+    
+    ESP_LOGI(TAG, "Attempting WiFi reconnection...");
+
+    esp_err_t err = esp_wifi_connect();
+
+    if (err == ESP_OK) {
+
+        ESP_LOGI(TAG, "WiFi connect initiated");
+
+        EventBits_t bits = xEventGroupWaitBits(s_wifi_event_group,
+            WIFI_CONNECTED_BIT | WIFI_FAIL_BIT,
+            pdFALSE,
+            pdFALSE,
+            portMAX_DELAY);
+
+        if (bits & WIFI_CONNECTED_BIT) {
+            ESP_LOGI(TAG, "connected to ap SSID:%s password:%s",
+                    EXAMPLE_ESP_WIFI_SSID, EXAMPLE_ESP_WIFI_PASS);
+            _connected = true;
+        } else if (bits & WIFI_FAIL_BIT) {
+            ESP_LOGI(TAG, "Failed to connect to SSID:%s, password:%s",
+                    EXAMPLE_ESP_WIFI_SSID, EXAMPLE_ESP_WIFI_PASS);
+        } else {
+            ESP_LOGE(TAG, "UNEXPECTED EVENT");
+        }
+    }
+}
+
+
+
+
+
+
 void Wifi_wrapper::wifi_init_sta(void) {
 
     if(_connected) {

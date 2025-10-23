@@ -1,0 +1,21 @@
+[0;33m--- esp-idf-monitor 1.7.0 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x420107d7: [0;33mesp_mqtt_client_enqueue[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c[0m[0m:[1;31m2187[0m
+[0m--- 0x400556d5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x400556e5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x420107d4: [0;33mesp_mqtt_client_enqueue[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c[0m[0m:[1;31m2187[0m
+[0m--- 0x4200dee1: [0;33mMqttWrapper::send_message(char const*, char const*)[0m[0m at [0;32m/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp[0m[0m:[1;31m131[0m
+[0m--- 0x4200b9f3: [0;33mapp_main[0m[0m at [0;32m/home/fracchio/Thesis_project_node_side/esp_node/main/esp_node.cpp[0m[0m:[1;31m469[0m
+[0m--- 0x420b401b: [0;33mmain_task[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x4037ed1d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m134[0m
+[0m--- 0x40375b24: [0;33mesp_restart_noos[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m159[0m
+[0m--- 0x420107d7: [0;33mesp_mqtt_client_enqueue[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c[0m[0m:[1;31m2187[0m
+[0m--- 0x400556d5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x400556e5: [0;33mstrlen[0m[0m in [0;32mROM[0m
+[0m--- 0x420107d4: [0;33mesp_mqtt_client_enqueue[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c[0m[0m:[1;31m2187[0m
+[0m--- 0x4200dee1: [0;33mMqttWrapper::send_message(char const*, char const*)[0m[0m at [0;32m/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp[0m[0m:[1;31m131[0m
+[0m--- 0x4200b9f3: [0;33mapp_main[0m[0m at [0;32m/home/fracchio/Thesis_project_node_side/esp_node/main/esp_node.cpp[0m[0m:[1;31m469[0m
+[0m--- 0x420b401b: [0;33mmain_task[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x4037ed1d: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m134[0m
+[0m--- 0x40375b24: [0;33mesp_restart_noos[0m[0m at [0;32m/home/fracchio/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m159[0m
+[0m

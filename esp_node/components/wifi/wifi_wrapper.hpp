@@ -74,6 +74,8 @@ public:
 
     void wifi_disconnect(void);
     static void destroyInstance(void);
+    void reconnect();
+
     
     bool isConnected() const { return _connected; }
 

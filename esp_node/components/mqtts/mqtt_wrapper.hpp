@@ -21,9 +21,11 @@ class MqttWrapper {
         ~MqttWrapper();
         void mqtt_app_start();
         int send_message(const char* topic, const char* payload);
-        int subscribe(const char* topic) ;
+        int subscribe(const char* topic);
 
         bool isConnected() const { return _connected; }
+        void reconnect();
+
         void setMessageCallback(MqttMessageCallback callback) {
         _message_callback = callback;
     }
