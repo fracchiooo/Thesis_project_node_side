@@ -18,7 +18,12 @@ void event_handler(void* arg, esp_event_base_t event_base,
     if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_START) {
         esp_wifi_connect();
     } else if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_DISCONNECTED) {
+
         instance->_connected = false;
+        if(instance->_pwm_led!=nullptr){
+            instance->_pwm_led->setDuty(0.0f);
+        }
+
         if (s_retry_num < EXAMPLE_ESP_MAXIMUM_RETRY) {
             esp_wifi_connect();
             s_retry_num++;
@@ -28,11 +33,34 @@ void event_handler(void* arg, esp_event_base_t event_base,
         }
         ESP_LOGI(TAG,"connect to the AP fail");
     } else if (event_base == IP_EVENT && event_id == IP_EVENT_STA_GOT_IP) {
+
         instance->_connected = true;
+        if(instance->_pwm_led!=nullptr){
+            instance->_pwm_led->setDuty(20.0f);
+        }
+
         ip_event_got_ip_t* event = (ip_event_got_ip_t*) event_data;
         ESP_LOGI(TAG, "got ip:" IPSTR, IP2STR(&event->ip_info.ip));
         s_retry_num = 0;
         xEventGroupSetBits(s_wifi_event_group, WIFI_CONNECTED_BIT);
+        esp_netif_t* netif = esp_netif_get_handle_from_ifkey("WIFI_STA_DEF");
+        if (netif) {
+            esp_netif_dns_info_t dns_info;
+            
+            // Google DNS
+            dns_info.ip.u_addr.ip4.addr = ESP_IP4TOADDR(8, 8, 8, 8);
+            dns_info.ip.type = ESP_IPADDR_TYPE_V4;
+            esp_netif_set_dns_info(netif, ESP_NETIF_DNS_MAIN, &dns_info);
+            
+            // Cloudflare DNS
+            dns_info.ip.u_addr.ip4.addr = ESP_IP4TOADDR(1, 1, 1, 1);
+            esp_netif_set_dns_info(netif, ESP_NETIF_DNS_BACKUP, &dns_info);
+            
+            ESP_LOGI(TAG, "DNS servers configured");
+        }
+        
+        ESP_LOGI("DNS", "DNS servers configured");
+    
     }
 }
 
@@ -76,12 +104,18 @@ void Wifi_wrapper::reconnect()
 
 
 
-void Wifi_wrapper::wifi_init_sta(void) {
+void Wifi_wrapper::wifi_init_sta(PwmController* pwm_led) {
 
     if(_connected) {
         ESP_LOGI(TAG, "Already connected to WiFi");
         return;
     }
+
+    if(pwm_led == nullptr){
+        ESP_LOGI(TAG, "Passed a null ptr as pwm_led, the led will not be used");
+    }
+
+    _pwm_led = pwm_led;
 
     esp_err_t ret = nvs_flash_init();
     if (ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND) {

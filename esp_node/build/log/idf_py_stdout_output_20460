@@ -1,0 +1,144 @@
+[1/162] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/dotprod/fixed/dspi_dotprod_u8_arp4.S.obj
+[2/162] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/dotprod/fixed/dspi_dotprod_s16_arp4.S.obj
+[3/162] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/dotprod/fixed/dspi_dotprod_u16_arp4.S.obj
+[4/162] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/dotprod/fixed/dspi_dotprod_off_s16_aes3.S.obj
+[5/162] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/dotprod/fixed/dspi_dotprod_off_s16_arp4.S.obj
+[6/162] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/dotprod/fixed/dspi_dotprod_off_u8_arp4.S.obj
+[7/162] Linking C static library esp-idf/spiffs/libspiffs.a
+[8/162] Linking C static library esp-idf/touch_element/libtouch_element.a
+[9/162] Linking C static library esp-idf/pwmController/libpwmController.a
+[10/162] Linking C static library esp-idf/espressif__onewire_bus/libespressif__onewire_bus.a
+[11/162] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/dotprod/fixed/dspi_dotprod_s8_aes3.S.obj
+[12/162] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/dotprod/fixed/dspi_dotprod_off_u16_aes3.S.obj
+[13/162] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/dotprod/fixed/dspi_dotprod_s8_arp4.S.obj
+[14/162] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/dotprod/fixed/dspi_dotprod_off_s8_aes3.S.obj
+[15/162] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/matrix/mul/float/dspm_mult_3x3x3_f32_ae32.S.obj
+[16/162] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/matrix/mul/float/dspm_mult_4x4x1_f32_ae32.S.obj
+[17/162] Linking C static library esp-idf/wifi_provisioning/libwifi_provisioning.a
+[18/162] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/dotprod/fixed/dspi_dotprod_off_u16_arp4.S.obj
+[19/162] Linking C static library esp-idf/mqtt/libmqtt.a
+[20/162] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/matrix/mul/float/dspm_mult_f32_aes3.S.obj
+[21/162] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/matrix/mul/float/dspm_mult_3x3x1_f32_ae32.S.obj
+[22/162] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/matrix/mul/float/dspm_mult_f32_ae32.S.obj
+[23/162] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/matrix/mul/float/dspm_mult_4x4x4_f32_ae32.S.obj
+[24/162] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/matrix/mul/float/dspm_mult_ex_f32_ae32.S.obj
+[25/162] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/matrix/mul/fixed/dspm_mult_s16_aes3.S.obj
+[26/162] Building C object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/dotprod/fixed/dspi_dotprod_off_u8_ansi.c.obj
+[27/162] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/matrix/mul/float/dspm_mult_ex_f32_arp4.S.obj
+[28/162] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/matrix/mul/float/dspm_mult_ex_f32_aes3.S.obj
+[29/162] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/dotprod/fixed/dspi_dotprod_off_s8_arp4.S.obj
+[30/162] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/matrix/mul/float/dspm_mult_f32_arp4.S.obj
+[31/162] Linking C static library esp-idf/temperature/libtemperature.a
+[32/162] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/matrix/mul/fixed/dspm_mult_s16_arp4.S.obj
+[33/162] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/matrix/mul/fixed/dspm_mult_s16_ae32.S.obj
+[34/162] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/matrix/add/float/dspm_add_f32_ae32.S.obj
+[35/162] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/matrix/mulc/float/dspm_mulc_f32_ae32.S.obj
+[36/162] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/matrix/sub/float/dspm_sub_f32_ae32.S.obj
+[37/162] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/matrix/addc/float/dspm_addc_f32_ae32.S.obj
+[38/162] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/math/add/fixed/dsps_add_s16_aes3.S.obj
+[39/162] Performing build step for 'bootloader'
+[1/1] cd /home/fracchio/Thesis_project_node_side/esp_node/build/bootloader/esp-idf/esptool_py && /home/fracchio/.espressif/python_env/idf5.2_py3.10_env/bin/python /home/fracchio/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/fracchio/Thesis_project_node_side/esp_node/build/bootloader/bootloader.bin
+Bootloader binary size 0x5250 bytes. 0x2db0 bytes (36%) free.
+[40/160] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/math/add/fixed/dsps_add_s16_ae32.S.obj
+[41/160] Building C object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/matrix/mul/float/dspm_mult_f32_ansi.c.obj
+[42/160] Building C object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/matrix/addc/float/dspm_addc_f32_ansi.c.obj
+[43/160] Building C object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/matrix/mul/float/dspm_mult_ex_f32_ansi.c.obj
+[44/160] Building C object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/matrix/add/float/dspm_add_f32_ansi.c.obj
+[45/160] Building C object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/matrix/mulc/float/dspm_mulc_f32_ansi.c.obj
+[46/160] Building C object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/matrix/mul/fixed/dspm_mult_s16_ansi.c.obj
+[47/160] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/math/mulc/fixed/dsps_mulc_s16_ae32.S.obj
+[48/160] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/math/add/fixed/dsps_add_s8_aes3.S.obj
+[49/160] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/math/sub/fixed/dsps_sub_s16_ae32.S.obj
+[50/160] Building C object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/math/addc/float/dsps_addc_f32_ansi.c.obj
+[51/160] Building C object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/matrix/sub/float/dspm_sub_f32_ansi.c.obj
+[52/160] Building C object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/math/add/float/dsps_add_f32_ansi.c.obj
+[53/160] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/math/sub/fixed/dsps_sub_s16_aes3.S.obj
+[54/160] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/math/sub/fixed/dsps_sub_s8_aes3.S.obj
+[55/160] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/math/mul/fixed/dsps_mul_s16_ae32.S.obj
+[56/160] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/math/mul/fixed/dsps_mul_s16_aes3.S.obj
+[57/160] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/math/mul/fixed/dsps_mul_s8_aes3.S.obj
+[58/160] Building C object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/math/mulc/fixed/dsps_mulc_s16_ansi.c.obj
+[59/160] Building C object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/math/mulc/float/dsps_mulc_f32_ansi.c.obj
+[60/160] Building C object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/math/add/fixed/dsps_add_s16_ansi.c.obj
+[61/160] Building C object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/math/mul/float/dsps_mul_f32_ansi.c.obj
+[62/160] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/math/add/float/dsps_add_f32_ae32.S.obj
+[63/160] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/fft/float/dsps_fft2r_fc32_arp4.S.obj
+[64/160] Building C object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/math/sub/float/dsps_sub_f32_ansi.c.obj
+[65/160] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/math/addc/float/dsps_addc_f32_ae32.S.obj
+[66/160] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/math/mulc/float/dsps_mulc_f32_ae32.S.obj
+[67/160] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/math/sub/float/dsps_sub_f32_ae32.S.obj
+[68/160] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/fft/float/dsps_bit_rev_lookup_fc32_aes3.S.obj
+[69/160] Building C object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/math/add/fixed/dsps_add_s8_ansi.c.obj
+[70/160] Building C object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/math/sub/fixed/dsps_sub_s8_ansi.c.obj
+[71/160] Building C object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/math/sub/fixed/dsps_sub_s16_ansi.c.obj
+[72/160] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/math/mul/float/dsps_mul_f32_ae32.S.obj
+[73/160] Building C object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/math/mul/fixed/dsps_mul_s8_ansi.c.obj
+[74/160] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/fft/float/dsps_fft4r_fc32_ae32_.S.obj
+[75/160] Building C object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/math/mul/fixed/dsps_mul_s16_ansi.c.obj
+[76/160] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/fft/float/dsps_fft2r_fc32_ae32_.S.obj
+[77/160] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/fft/float/dsps_fft2r_fc32_aes3_.S.obj
+[78/160] Building CXX object esp-idf/wifi/CMakeFiles/__idf_wifi.dir/wifi_wrapper.cpp.obj
+FAILED: esp-idf/wifi/CMakeFiles/__idf_wifi.dir/wifi_wrapper.cpp.obj 
+/home/fracchio/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32s3-elf-g++ -DESP_PLATFORM -DIDF_VER=\"v5.2.2\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/fracchio/Thesis_project_node_side/esp_node/build/config -I/home/fracchio/Thesis_project_node_side/esp_node/components/wifi -I/home/fracchio/esp/esp-idf/components/newlib/platform_include -I/home/fracchio/esp/esp-idf/components/freertos/config/include -I/home/fracchio/esp/esp-idf/components/freertos/config/include/freertos -I/home/fracchio/esp/esp-idf/components/freertos/config/xtensa/include -I/home/fracchio/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/fracchio/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/fracchio/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -I/home/fracchio/esp/esp-idf/components/freertos/esp_additions/include -I/home/fracchio/esp/esp-idf/components/esp_hw_support/include -I/home/fracchio/esp/esp-idf/components/esp_hw_support/include/soc -I/home/fracchio/esp/esp-idf/components/esp_hw_support/include/soc/esp32s3 -I/home/fracchio/esp/esp-idf/components/esp_hw_support/port/esp32s3/. -I/home/fracchio/esp/esp-idf/components/heap/include -I/home/fracchio/esp/esp-idf/components/log/include -I/home/fracchio/esp/esp-idf/components/soc/include -I/home/fracchio/esp/esp-idf/components/soc/esp32s3 -I/home/fracchio/esp/esp-idf/components/soc/esp32s3/include -I/home/fracchio/esp/esp-idf/components/hal/platform_port/include -I/home/fracchio/esp/esp-idf/components/hal/esp32s3/include -I/home/fracchio/esp/esp-idf/components/hal/include -I/home/fracchio/esp/esp-idf/components/esp_rom/include -I/home/fracchio/esp/esp-idf/components/esp_rom/include/esp32s3 -I/home/fracchio/esp/esp-idf/components/esp_rom/esp32s3 -I/home/fracchio/esp/esp-idf/components/esp_common/include -I/home/fracchio/esp/esp-idf/components/esp_system/include -I/home/fracchio/esp/esp-idf/components/esp_system/port/soc -I/home/fracchio/esp/esp-idf/components/esp_system/port/include/private -I/home/fracchio/esp/esp-idf/components/xtensa/esp32s3/include -I/home/fracchio/esp/esp-idf/components/xtensa/include -I/home/fracchio/esp/esp-idf/components/xtensa/deprecated_include -I/home/fracchio/esp/esp-idf/components/lwip/include -I/home/fracchio/esp/esp-idf/components/lwip/include/apps -I/home/fracchio/esp/esp-idf/components/lwip/include/apps/sntp -I/home/fracchio/esp/esp-idf/components/lwip/lwip/src/include -I/home/fracchio/esp/esp-idf/components/lwip/port/include -I/home/fracchio/esp/esp-idf/components/lwip/port/freertos/include -I/home/fracchio/esp/esp-idf/components/lwip/port/esp32xx/include -I/home/fracchio/esp/esp-idf/components/lwip/port/esp32xx/include/arch -I/home/fracchio/esp/esp-idf/components/lwip/port/esp32xx/include/sys -I/home/fracchio/esp/esp-idf/components/driver/include -I/home/fracchio/esp/esp-idf/components/driver/deprecated -I/home/fracchio/esp/esp-idf/components/driver/analog_comparator/include -I/home/fracchio/esp/esp-idf/components/driver/dac/include -I/home/fracchio/esp/esp-idf/components/driver/gpio/include -I/home/fracchio/esp/esp-idf/components/driver/gptimer/include -I/home/fracchio/esp/esp-idf/components/driver/i2c/include -I/home/fracchio/esp/esp-idf/components/driver/i2s/include -I/home/fracchio/esp/esp-idf/components/driver/ledc/include -I/home/fracchio/esp/esp-idf/components/driver/mcpwm/include -I/home/fracchio/esp/esp-idf/components/driver/parlio/include -I/home/fracchio/esp/esp-idf/components/driver/pcnt/include -I/home/fracchio/esp/esp-idf/components/driver/rmt/include -I/home/fracchio/esp/esp-idf/components/driver/sdio_slave/include -I/home/fracchio/esp/esp-idf/components/driver/sdmmc/include -I/home/fracchio/esp/esp-idf/components/driver/sigma_delta/include -I/home/fracchio/esp/esp-idf/components/driver/spi/include -I/home/fracchio/esp/esp-idf/components/driver/temperature_sensor/include -I/home/fracchio/esp/esp-idf/components/driver/touch_sensor/include -I/home/fracchio/esp/esp-idf/components/driver/twai/include -I/home/fracchio/esp/esp-idf/components/driver/uart/include -I/home/fracchio/esp/esp-idf/components/driver/usb_serial_jtag/include -I/home/fracchio/esp/esp-idf/components/driver/touch_sensor/esp32s3/include -I/home/fracchio/esp/esp-idf/components/esp_pm/include -I/home/fracchio/esp/esp-idf/components/esp_ringbuf/include -I/home/fracchio/esp/esp-idf/components/esp_event/include -I/home/fracchio/esp/esp-idf/components/esp_wifi/include -I/home/fracchio/esp/esp-idf/components/esp_wifi/wifi_apps/include -I/home/fracchio/esp/esp-idf/components/esp_phy/include -I/home/fracchio/esp/esp-idf/components/esp_phy/esp32s3/include -I/home/fracchio/esp/esp-idf/components/esp_netif/include -I/home/fracchio/esp/esp-idf/components/esp_timer/include -I/home/fracchio/esp/esp-idf/components/nvs_flash/include -I/home/fracchio/esp/esp-idf/components/spi_flash/include -I/home/fracchio/esp/esp-idf/components/esp_partition/include -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=/home/fracchio/Thesis_project_node_side/esp_node=. -fmacro-prefix-map=/home/fracchio/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu++2b -fexceptions -fno-rtti -MD -MT esp-idf/wifi/CMakeFiles/__idf_wifi.dir/wifi_wrapper.cpp.obj -MF esp-idf/wifi/CMakeFiles/__idf_wifi.dir/wifi_wrapper.cpp.obj.d -o esp-idf/wifi/CMakeFiles/__idf_wifi.dir/wifi_wrapper.cpp.obj -c /home/fracchio/Thesis_project_node_side/esp_node/components/wifi/wifi_wrapper.cpp
+/home/fracchio/Thesis_project_node_side/esp_node/components/wifi/wifi_wrapper.cpp: In function 'void event_handler(void*, esp_event_base_t, int32_t, void*)':
+/home/fracchio/Thesis_project_node_side/esp_node/components/wifi/wifi_wrapper.cpp:36:9: error: 'ip_addr_t' was not declared in this scope; did you mean 'in_addr_t'?
+   36 |         ip_addr_t dns_server;
+      |         ^~~~~~~~~
+      |         in_addr_t
+/home/fracchio/Thesis_project_node_side/esp_node/components/wifi/wifi_wrapper.cpp:39:19: error: 'dns_server' was not declared in this scope
+   39 |         IP4_ADDR(&dns_server, 8, 8, 8, 8);
+      |                   ^~~~~~~~~~
+/home/fracchio/Thesis_project_node_side/esp_node/components/wifi/wifi_wrapper.cpp:39:9: error: 'IP4_ADDR' was not declared in this scope
+   39 |         IP4_ADDR(&dns_server, 8, 8, 8, 8);
+      |         ^~~~~~~~
+/home/fracchio/Thesis_project_node_side/esp_node/components/wifi/wifi_wrapper.cpp:40:9: error: 'dns_setserver' was not declared in this scope
+   40 |         dns_setserver(0, &dns_server);
+      |         ^~~~~~~~~~~~~
+[79/160] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/fft/float/dsps_fft4r_fc32_aes3_.S.obj
+[80/160] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/fft/fixed/dsps_fft2r_sc16_aes3.S.obj
+[81/160] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/fft/float/dsps_fft4r_fc32_arp4.S.obj
+[82/160] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/fft/fixed/dsps_fft2r_sc16_ae32.S.obj
+[83/160] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/fft/fixed/dsps_fft2r_sc16_arp4.S.obj
+[84/160] Building C object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/math/sqrt/float/dsps_sqrt_f32_ansi.c.obj
+[85/160] Building C object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/fft/float/dsps_fft2r_fc32_ae32.c.obj
+[86/160] Building ASM object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/support/cplx_gen/dsps_cplx_gen.S.obj
+[87/160] Building C object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/support/misc/dsps_h_gen.c.obj
+[88/160] Building C object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/fft/float/dsps_fft4r_fc32_ae32.c.obj
+[89/160] Building C object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/support/misc/dsps_tone_gen.c.obj
+[90/160] Building CXX object esp-idf/mqtts/CMakeFiles/__idf_mqtts.dir/mqtt_wrapper.cpp.obj
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp: In member function 'void MqttWrapper::mqtt_app_start()':
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp:185:5: warning: missing initializer for member 'esp_mqtt_client_config_t::broker_t::address_t::uri' [-Wmissing-field-initializers]
+  185 |     };
+      |     ^
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp:185:5: warning: missing initializer for member 'esp_mqtt_client_config_t::broker_t::address_t::path' [-Wmissing-field-initializers]
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp:185:5: warning: missing initializer for member 'esp_mqtt_client_config_t::broker_t::verification_t::use_global_ca_store' [-Wmissing-field-initializers]
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp:185:5: warning: missing initializer for member 'esp_mqtt_client_config_t::broker_t::verification_t::crt_bundle_attach' [-Wmissing-field-initializers]
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp:185:5: warning: missing initializer for member 'esp_mqtt_client_config_t::broker_t::verification_t::certificate_len' [-Wmissing-field-initializers]
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp:185:5: warning: missing initializer for member 'esp_mqtt_client_config_t::broker_t::verification_t::psk_hint_key' [-Wmissing-field-initializers]
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp:185:5: warning: missing initializer for member 'esp_mqtt_client_config_t::broker_t::verification_t::skip_cert_common_name_check' [-Wmissing-field-initializers]
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp:185:5: warning: missing initializer for member 'esp_mqtt_client_config_t::broker_t::verification_t::alpn_protos' [-Wmissing-field-initializers]
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp:185:5: warning: missing initializer for member 'esp_mqtt_client_config_t::broker_t::verification_t::common_name' [-Wmissing-field-initializers]
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp:185:5: warning: missing initializer for member 'esp_mqtt_client_config_t::credentials_t::set_null_client_id' [-Wmissing-field-initializers]
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp:185:5: warning: missing initializer for member 'esp_mqtt_client_config_t::credentials_t::authentication_t::certificate' [-Wmissing-field-initializers]
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp:185:5: warning: missing initializer for member 'esp_mqtt_client_config_t::credentials_t::authentication_t::certificate_len' [-Wmissing-field-initializers]
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp:185:5: warning: missing initializer for member 'esp_mqtt_client_config_t::credentials_t::authentication_t::key' [-Wmissing-field-initializers]
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp:185:5: warning: missing initializer for member 'esp_mqtt_client_config_t::credentials_t::authentication_t::key_len' [-Wmissing-field-initializers]
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp:185:5: warning: missing initializer for member 'esp_mqtt_client_config_t::credentials_t::authentication_t::key_password' [-Wmissing-field-initializers]
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp:185:5: warning: missing initializer for member 'esp_mqtt_client_config_t::credentials_t::authentication_t::key_password_len' [-Wmissing-field-initializers]
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp:185:5: warning: missing initializer for member 'esp_mqtt_client_config_t::credentials_t::authentication_t::use_secure_element' [-Wmissing-field-initializers]
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp:185:5: warning: missing initializer for member 'esp_mqtt_client_config_t::credentials_t::authentication_t::ds_data' [-Wmissing-field-initializers]
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp:185:5: warning: missing initializer for member 'esp_mqtt_client_config_t::session' [-Wmissing-field-initializers]
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp:185:5: warning: missing initializer for member 'esp_mqtt_client_config_t::network' [-Wmissing-field-initializers]
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp:185:5: warning: missing initializer for member 'esp_mqtt_client_config_t::task' [-Wmissing-field-initializers]
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp:185:5: warning: missing initializer for member 'esp_mqtt_client_config_t::buffer' [-Wmissing-field-initializers]
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp:185:5: warning: missing initializer for member 'esp_mqtt_client_config_t::outbox' [-Wmissing-field-initializers]
+[91/160] Building C object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/dct/float/dsps_dstiv_f32.c.obj
+[92/160] Building C object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/dct/float/dsps_dctiv_f32.c.obj
+[93/160] Building C object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/dct/float/dsps_dct_f32.c.obj
+[94/160] Building C object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/fft/float/dsps_fft4r_fc32_ansi.c.obj
+[95/160] Building C object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/fft/float/dsps_fft2r_fc32_ansi.c.obj
+[96/160] Building C object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/fft/fixed/dsps_fft2r_sc16_ansi.c.obj
+[97/160] Building CXX object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/support/sfdr/float/dsps_sfdr_f32.cpp.obj
+[98/160] Building CXX object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/support/snr/float/dsps_snr_f32.cpp.obj
+[99/160] Building CXX object esp-idf/espressif__esp-dsp/CMakeFiles/__idf_espressif__esp-dsp.dir/modules/matrix/mat/mat.cpp.obj
+ninja: build stopped: subcommand failed.

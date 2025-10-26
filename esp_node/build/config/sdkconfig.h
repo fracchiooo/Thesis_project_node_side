@@ -417,7 +417,7 @@
 #define CONFIG_ESP_STATION_EXAMPLE_WPA3_SAE_PWE_HUNT_AND_PECK 1
 #define CONFIG_ESP_MAXIMUM_RETRY 5
 #define CONFIG_ESP_WIFI_AUTH_WPA2_PSK 1
-#define CONFIG_BROKER_URI "mqtts://yf110114.ala.eu-central-1.emqxsl.com:8883"
+#define CONFIG_BROKER_URI "yf110114.ala.eu-central-1.emqxsl.com"
 #define CONFIG_BROKER_USERNAME "thesis_yeastime"
 #define CONFIG_BROKER_PASSWORD "Thesis2k25"
 #define CONFIG_COMPILER_OPTIMIZATION_DEBUG 1

@@ -52,7 +52,12 @@ void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_t event
     switch ((esp_mqtt_event_id_t)event_id) {
     case MQTT_EVENT_CONNECTED:
         ESP_LOGI(TAG, "MQTT_EVENT_CONNECTED");
+
         instance->_connected = true;
+        if(instance->_pwm_led!=nullptr){
+            instance->_pwm_led->setDuty(20.0f);
+        }
+
         char topic[64];
         snprintf(topic, sizeof(topic), "%s/downlink", instance->_client_id);
         msg_id = esp_mqtt_client_subscribe(client, topic, 1);
@@ -61,6 +66,10 @@ void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_t event
         break;
     case MQTT_EVENT_DISCONNECTED:
         ESP_LOGI(TAG, "MQTT_EVENT_DISCONNECTED");
+
+        if(instance->_pwm_led!=nullptr){
+            instance->_pwm_led->setDuty(0.0f);
+        }
         instance->_connected = false;
         break;
 
@@ -91,7 +100,6 @@ void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_t event
                      strerror(event->error_handle->esp_transport_sock_errno));
         } else if (event->error_handle->error_type == MQTT_ERROR_TYPE_CONNECTION_REFUSED) {
             ESP_LOGI(TAG, "Connection refused error: 0x%x", event->error_handle->connect_return_code);
-            instance->_connected = false;
         } else {
             ESP_LOGW(TAG, "Unknown error type: 0x%x", event->error_handle->error_type);
         }
@@ -162,12 +170,20 @@ void MqttWrapper::reconnect()
 
 
 
-void MqttWrapper::mqtt_app_start()
+void MqttWrapper::mqtt_app_start(PwmController* pwm_led)
 {
+    if(pwm_led == nullptr){
+        ESP_LOGI(TAG, "Passed a null ptr as pwm_led, the led will not be used");
+    }
+
+    _pwm_led = pwm_led;
+
     esp_mqtt_client_config_t mqtt_cfg = {
         .broker = {
             .address = {
-                .uri = CONFIG_BROKER_URI,
+                .hostname = CONFIG_BROKER_URI,
+                .transport = MQTT_TRANSPORT_OVER_SSL,
+                .port = 8883,
             },
             .verification = {
                 .certificate = (const char *)emqxsl_ca_crt_start,
@@ -186,7 +202,6 @@ void MqttWrapper::mqtt_app_start()
 
     ESP_LOGI(TAG, "[APP] Free memory: %" PRIu32 " bytes", esp_get_free_heap_size());
     _client = esp_mqtt_client_init(&mqtt_cfg);
-    /* The last argument may be used to pass data to the event handler, in this example mqtt_event_handler */
     esp_mqtt_client_register_event(_client, MQTT_EVENT_ANY, mqtt_event_handler, this);
     esp_mqtt_client_start(_client);
 }

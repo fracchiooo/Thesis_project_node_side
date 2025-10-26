@@ -58,7 +58,7 @@
     "BOOT_ROM_LOG_ON_GPIO_HIGH": false,
     "BOOT_ROM_LOG_ON_GPIO_LOW": false,
     "BROKER_PASSWORD": "Thesis2k25",
-    "BROKER_URI": "mqtts://yf110114.ala.eu-central-1.emqxsl.com:8883",
+    "BROKER_URI": "yf110114.ala.eu-central-1.emqxsl.com",
     "BROKER_USERNAME": "thesis_yeastime",
     "BT_ALARM_MAX_NUM": 50,
     "BT_ENABLED": false,

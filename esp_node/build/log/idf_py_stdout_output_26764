@@ -1,0 +1,43 @@
+[1/11] Linking C static library esp-idf/wifi/libwifi.a
+[2/11] Performing build step for 'bootloader'
+[1/1] cd /home/fracchio/Thesis_project_node_side/esp_node/build/bootloader/esp-idf/esptool_py && /home/fracchio/.espressif/python_env/idf5.2_py3.10_env/bin/python /home/fracchio/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/fracchio/Thesis_project_node_side/esp_node/build/bootloader/bootloader.bin
+Bootloader binary size 0x5250 bytes. 0x2db0 bytes (36%) free.
+[3/9] Building CXX object esp-idf/mqtts/CMakeFiles/__idf_mqtts.dir/mqtt_wrapper.cpp.obj
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp: In member function 'void MqttWrapper::mqtt_app_start(PwmController*)':
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp:199:5: warning: missing initializer for member 'esp_mqtt_client_config_t::broker_t::address_t::uri' [-Wmissing-field-initializers]
+  199 |     };
+      |     ^
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp:199:5: warning: missing initializer for member 'esp_mqtt_client_config_t::broker_t::address_t::path' [-Wmissing-field-initializers]
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp:199:5: warning: missing initializer for member 'esp_mqtt_client_config_t::broker_t::verification_t::use_global_ca_store' [-Wmissing-field-initializers]
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp:199:5: warning: missing initializer for member 'esp_mqtt_client_config_t::broker_t::verification_t::crt_bundle_attach' [-Wmissing-field-initializers]
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp:199:5: warning: missing initializer for member 'esp_mqtt_client_config_t::broker_t::verification_t::certificate_len' [-Wmissing-field-initializers]
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp:199:5: warning: missing initializer for member 'esp_mqtt_client_config_t::broker_t::verification_t::psk_hint_key' [-Wmissing-field-initializers]
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp:199:5: warning: missing initializer for member 'esp_mqtt_client_config_t::broker_t::verification_t::skip_cert_common_name_check' [-Wmissing-field-initializers]
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp:199:5: warning: missing initializer for member 'esp_mqtt_client_config_t::broker_t::verification_t::alpn_protos' [-Wmissing-field-initializers]
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp:199:5: warning: missing initializer for member 'esp_mqtt_client_config_t::broker_t::verification_t::common_name' [-Wmissing-field-initializers]
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp:199:5: warning: missing initializer for member 'esp_mqtt_client_config_t::credentials_t::set_null_client_id' [-Wmissing-field-initializers]
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp:199:5: warning: missing initializer for member 'esp_mqtt_client_config_t::credentials_t::authentication_t::certificate' [-Wmissing-field-initializers]
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp:199:5: warning: missing initializer for member 'esp_mqtt_client_config_t::credentials_t::authentication_t::certificate_len' [-Wmissing-field-initializers]
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp:199:5: warning: missing initializer for member 'esp_mqtt_client_config_t::credentials_t::authentication_t::key' [-Wmissing-field-initializers]
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp:199:5: warning: missing initializer for member 'esp_mqtt_client_config_t::credentials_t::authentication_t::key_len' [-Wmissing-field-initializers]
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp:199:5: warning: missing initializer for member 'esp_mqtt_client_config_t::credentials_t::authentication_t::key_password' [-Wmissing-field-initializers]
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp:199:5: warning: missing initializer for member 'esp_mqtt_client_config_t::credentials_t::authentication_t::key_password_len' [-Wmissing-field-initializers]
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp:199:5: warning: missing initializer for member 'esp_mqtt_client_config_t::credentials_t::authentication_t::use_secure_element' [-Wmissing-field-initializers]
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp:199:5: warning: missing initializer for member 'esp_mqtt_client_config_t::credentials_t::authentication_t::ds_data' [-Wmissing-field-initializers]
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp:199:5: warning: missing initializer for member 'esp_mqtt_client_config_t::session' [-Wmissing-field-initializers]
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp:199:5: warning: missing initializer for member 'esp_mqtt_client_config_t::network' [-Wmissing-field-initializers]
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp:199:5: warning: missing initializer for member 'esp_mqtt_client_config_t::task' [-Wmissing-field-initializers]
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp:199:5: warning: missing initializer for member 'esp_mqtt_client_config_t::buffer' [-Wmissing-field-initializers]
+/home/fracchio/Thesis_project_node_side/esp_node/components/mqtts/mqtt_wrapper.cpp:199:5: warning: missing initializer for member 'esp_mqtt_client_config_t::outbox' [-Wmissing-field-initializers]
+[4/9] Linking C static library esp-idf/mqtts/libmqtts.a
+[5/9] Linking C static library esp-idf/main/libmain.a
+[6/9] Generating ld/sections.ld
+[7/9] Linking CXX executable esp_node.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.9.0
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /home/fracchio/Thesis_project_node_side/esp_node/build/esp_node.bin
+[9/9] cd /home/fracchio/Thesis_project_node_side/esp_node/build/esp-idf/esptool_py && /home/fracchio/.espressif/python_env/idf5.2_py3.10_env/bin/python /home/fracchio/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/fracchio/Thesis_project_node_side/esp_node/build/partition_table/partition-table.bin /home/fracchio/Thesis_project_node_side/esp_node/build/esp_node.bin
+esp_node.bin binary size 0x106360 bytes. Smallest app partition is 0x177000 bytes. 0x70ca0 bytes (30%) free.

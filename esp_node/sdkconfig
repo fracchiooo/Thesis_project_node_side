@@ -530,7 +530,7 @@ CONFIG_ESP_WIFI_AUTH_WPA2_PSK=y
 #
 # Example Configuration
 #
-CONFIG_BROKER_URI="mqtts://yf110114.ala.eu-central-1.emqxsl.com:8883"
+CONFIG_BROKER_URI="yf110114.ala.eu-central-1.emqxsl.com"
 CONFIG_BROKER_USERNAME="thesis_yeastime"
 CONFIG_BROKER_PASSWORD="Thesis2k25"
 # end of Example Configuration

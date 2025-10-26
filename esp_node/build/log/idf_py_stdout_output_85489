@@ -1,0 +1,346 @@
+���m[0m
+[0;32mI (142) eESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d9c
+entry 0x403c9914
+[0;32mI (27) boot: ESP-IDF v5.2.2 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Oct 23 2025 14:43:50[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=35404h (218116) map[0m
+[0;32mI (138) esp_image: segment 1: paddr=0004542c vaddr=3fc9b300 size=04870h ( 18544) load[0m
+[0;32mI (142) esp_image: segment 2: paddr=00049ca4 vaddr=40374000 size=06374h ( 25460) load[0m
+[0;32mI (150) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=b5198h (741784) map[0m
+[0;32mI (286) esp_image: segment 4: paddr=001051c0 vaddr=4037a374 size=10ee8h ( 69352) load[0m
+[0;32mI (310) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (311) boot: Disabling RNG early entropy source...[0m
+[0;32mI (322) cpu_start: Multicore app[0m
+[0;32mI (332) cpu_start: Pro cpu start user code[0m
+[0;32mI (332) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (332) cpu_start: Application information:[0m
+[0;32mI (335) cpu_start: Project name:     esp_node[0m
+[0;32mI (340) cpu_start: App version:      ad0802d-dirty[0m
+[0;32mI (345) cpu_start: Compile time:     Oct 24 2025 16:56:25[0m
+[0;32mI (351) cpu_start: ELF file SHA256:  4508c4124...[0m
+[0;32mI (357) cpu_start: ESP-IDF:          v5.2.2[0m
+[0;32mI (362) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (366) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (371) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (376) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (383) heap_init: At 3FCA3D98 len 00045978 (278 KiB): RAM[0m
+[0;32mI (389) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (395) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (401) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (409) spi_flash: detected chip: gd[0m
+[0;32mI (412) spi_flash: flash io: dio[0m
+[0;33mW (416) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (430) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (436) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (443) main_task: Started on CPU0[0m
+[0;32mI (453) main_task: Calling app_main()[0m
+[0;32mI (453) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (463) PWM: PWM inizializzato: GPIO 2, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (473) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (473) PWM: PWM inizializzato: GPIO 3, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (483) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (493) PWM: PWM inizializzato: GPIO 4, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (503) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (503) PWM: PWM inizializzato: GPIO 1, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (513) PWM: Cambio frequenza: 40000 -> 150 Hz, risoluzione: 8 -> 14 bit[0m
+[0;32mI (523) PWM: Timer riconfigurato: 150 Hz, 14 bit (16384 livelli)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (533) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (543) PWM: Cambio frequenza: 40000 -> 150 Hz, risoluzione: 8 -> 14 bit[0m
+[0;32mI (553) PWM: Timer riconfigurato: 150 Hz, 14 bit (16384 livelli)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (563) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (563) gpio: GPIO[26]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (573) gpio: GPIO[26]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (583) Temperature sensor: Bus inizializzato su GPIO 26[0m
+[0;32mI (703) Temperature sensor: Slot 0: BA00000046755428[0m
+[0;32mI (703) Temperature sensor: Trovati 1 nuovi (totale 1)[0m
+[0;32mI (703) MAIN: Inizializzati 1 sensori[0m
+[0;32mI (733) wifi: ESP_WIFI_MODE_STA[0m
+[0;32mI (733) pp: pp rom version: e7ae62f[0m
+[0;32mI (733) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (743) wifi:wifi driver task: 3fcb15c0, prio:23, stack:6656, core=0[0m
+[0;32mI (753) wifi:wifi firmware version: 3e0076f[0m
+[0;32mI (753) wifi:wifi certification version: v7.0[0m
+[0;32mI (753) wifi:config NVS flash: enabled[0m
+[0;32mI (753) wifi:config nano formating: disabled[0m
+[0;32mI (753) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (763) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (763) wifi:Init management short buffer num: 32[0m
+[0;32mI (773) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (773) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (783) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (783) wifi:Init static rx buffer num: 10[0m
+[0;32mI (783) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (793) wifi_init: rx ba win: 6[0m
+[0;32mI (793) wifi_init: tcpip mbox: 32[0m
+[0;32mI (803) wifi_init: udp mbox: 6[0m
+[0;32mI (803) wifi_init: tcp mbox: 6[0m
+[0;32mI (803) wifi_init: tcp tx win: 5760[0m
+[0;32mI (813) wifi_init: tcp rx win: 5760[0m
+[0;32mI (813) wifi_init: tcp mss: 1440[0m
+[0;32mI (823) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (823) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (833) phy_init: phy_version 670,b7bc9b9,Apr 30 2024,10:54:13[0m
+[0;32mI (873) wifi:mode : sta (10:20:ba:66:2e:94)[0m
+[0;32mI (873) wifi:enable tsf[0m
+[0;32mI (873) wifi: wifi_init_sta finished.[0m
+[0;32mI (893) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (893) wifi:state: init -> auth (b0)[0m
+[0;32mI (1893) wifi:state: auth -> init (200)[0m
+[0;32mI (1893) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (1893) wifi: retry to connect to the AP[0m
+[0;32mI (1893) wifi: connect to the AP fail[0m
+[0;32mI (4303) wifi: retry to connect to the AP[0m
+[0;32mI (4303) wifi: connect to the AP fail[0m
+[0;32mI (4313) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (4313) wifi:state: init -> auth (b0)[0m
+[0;32mI (4323) wifi:state: auth -> assoc (0)[0m
+[0;32mI (4353) wifi:state: assoc -> run (10)[0m
+[0;32mI (4373) wifi:connected with Oneplus, aid = 7, channel 1, BW20, bssid = ba:7e:6d:57:2c:9d[0m
+[0;32mI (4373) wifi:security: WPA2-PSK, phy: bgn, rssi: -29[0m
+[0;32mI (4383) wifi:pm start, type: 1[0m
+
+[0;32mI (4383) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (4393) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (4403) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (4403) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (4423) wifi:<ba-add>idx:0 (ifx:0, ba:7e:6d:57:2c:9d), tid:0, ssn:0, winSize:64[0m
+[0;32mI (5413) esp_netif_handlers: sta ip: 10.94.143.18, mask: 255.255.255.0, gw: 10.94.143.195[0m
+[0;32mI (5413) wifi: got ip:10.94.143.18[0m
+[0;32mI (5413) wifi: connected to ap SSID:Oneplus password:123456789[0m
+[0;32mI (5423) MAIN: WIFI connected![0m
+[0;32mI (5423) mqtts: MqttWrapper created with client_id: 1020BA662E94[0m
+[0;32mI (5433) mqtts: [APP] Free memory: 262624 bytes[0m
+[0;32mI (5433) mqtts: Other event id:7[0m
+[0;32mI (6953) mqtts: MQTT_EVENT_CONNECTED[0m
+[0;32mI (6953) mqtts: Subscribed to 1020BA662E94/downlink, msg_id=49973[0m
+[0;32mI (7003) mqtts: MQTT_EVENT_SUBSCRIBED, msg_id=49973[0m
+[0;32mI (7443) MAIN: MQTT connected! System running in background...[0m
+[0;32mI (7443) MAIN: Initializing SNTP[0m
+[0;32mI (7443) MAIN: Waiting for time sync... (1/20)[0m
+[0;32mI (8443) MAIN: Time synchronized: Fri Oct 24 15:51:18 2025
+[0m
+[0;32mI (8443) FFT: sampling rate too high, the maximum sampling rate will be used: 83333[0m
+[0;32mI (8443) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (8453) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (8463) PWM: PWM inizializzato: GPIO 35, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+Imposto duty: 51 / 256 (risoluzione: 8 bit)
+[0;32mI (8473) PWM: Hardware PWM duty: 20.00% richiesto -> 20.00% effettivo (51/256)[0m
+Imposto duty: 51 / 256 (risoluzione: 8 bit)
+[0;32mI (8483) PWM: Hardware PWM duty: 20.00% richiesto -> 20.00% effettivo (51/256)[0m
+[0;32mI (8603) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (9413) Temperature sensor: Slot 0: 21.94 °C[0m
+[0;32mI (9643) FFT: Dominant Frequency: 20182.21 Hz, Magnitude: 46.50 mV, Noise floor: 0.48, SNR: 96.14[0m
+[0;32mI (9643) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=48200[0m
+[0;32mI (9643) MAIN: MQTT message sent![0m
+[0;32mI (10233) mqtts: MQTT_EVENT_PUBLISHED, msg_id=48200[0m
+Imposto duty: 51 / 256 (risoluzione: 8 bit)
+[0;32mI (19643) PWM: Hardware PWM duty: 20.00% richiesto -> 20.00% effettivo (51/256)[0m
+[0;32mI (19743) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (20563) Temperature sensor: Slot 0: 21.94 °C[0m
+[0;32mI (20783) FFT: Dominant Frequency: 20182.21 Hz, Magnitude: 46.63 mV, Noise floor: 0.46, SNR: 101.50[0m
+[0;32mI (20783) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=14961[0m
+[0;32mI (20783) MAIN: MQTT message sent![0m
+[0;32mI (21493) mqtts: MQTT_EVENT_PUBLISHED, msg_id=14961[0m
+Imposto duty: 51 / 256 (risoluzione: 8 bit)
+[0;32mI (30783) PWM: Hardware PWM duty: 20.00% richiesto -> 20.00% effettivo (51/256)[0m
+[0;32mI (30883) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (31703) Temperature sensor: Slot 0: 21.94 °C[0m
+[0;32mI (31923) FFT: Dominant Frequency: 20182.21 Hz, Magnitude: 46.65 mV, Noise floor: 0.48, SNR: 96.80[0m
+[0;32mI (31923) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=24881[0m
+[0;32mI (31923) MAIN: MQTT message sent![0m
+[0;32mI (32963) mqtts: MQTT_EVENT_PUBLISHED, msg_id=24881[0m
+Imposto duty: 51 / 256 (risoluzione: 8 bit)
+[0;32mI (41923) PWM: Hardware PWM duty: 20.00% richiesto -> 20.00% effettivo (51/256)[0m
+[0;32mI (42023) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (42843) Temperature sensor: Slot 0: 21.94 °C[0m
+[0;32mI (43063) FFT: Dominant Frequency: 20182.21 Hz, Magnitude: 46.71 mV, Noise floor: 0.45, SNR: 102.93[0m
+[0;32mI (43063) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=8565[0m
+[0;32mI (43063) MAIN: MQTT message sent![0m
+[0;32mI (44123) mqtts: MQTT_EVENT_PUBLISHED, msg_id=8565[0m
+Imposto duty: 51 / 256 (risoluzione: 8 bit)
+[0;32mI (53073) PWM: Hardware PWM duty: 20.00% richiesto -> 20.00% effettivo (51/256)[0m
+[0;32mI (53173) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (53993) Temperature sensor: Slot 0: 21.94 °C[0m
+[0;32mI (54213) FFT: Dominant Frequency: 20182.21 Hz, Magnitude: 46.73 mV, Noise floor: 0.47, SNR: 99.26[0m
+[0;32mI (54213) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=2004[0m
+[0;32mI (54213) MAIN: MQTT message sent![0m
+[0;32mI (54283) mqtts: MQTT_EVENT_PUBLISHED, msg_id=2004[0m
+Imposto duty: 51 / 256 (risoluzione: 8 bit)
+[0;32mI (64213) PWM: Hardware PWM duty: 20.00% richiesto -> 20.00% effettivo (51/256)[0m
+[0;32mI (64313) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (65133) Temperature sensor: Slot 0: 21.94 °C[0m
+[0;32mI (65353) FFT: Dominant Frequency: 20182.21 Hz, Magnitude: 46.71 mV, Noise floor: 0.47, SNR: 100.02[0m
+[0;32mI (65353) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=31962[0m
+[0;32mI (65353) MAIN: MQTT message sent![0m
+[0;32mI (65523) mqtts: MQTT_EVENT_PUBLISHED, msg_id=31962[0m
+Imposto duty: 51 / 256 (risoluzione: 8 bit)
+[0;32mI (75353) PWM: Hardware PWM duty: 20.00% richiesto -> 20.00% effettivo (51/256)[0m
+[0;32mI (75453) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (76273) Temperature sensor: Slot 0: 21.94 °C[0m
+[0;32mI (76493) FFT: Dominant Frequency: 20182.21 Hz, Magnitude: 46.76 mV, Noise floor: 0.46, SNR: 101.15[0m
+[0;32mI (76493) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=36473[0m
+[0;32mI (76493) MAIN: MQTT message sent![0m
+[0;32mI (76923) mqtts: MQTT_EVENT_PUBLISHED, msg_id=36473[0m
+Imposto duty: 51 / 256 (risoluzione: 8 bit)
+[0;32mI (86493) PWM: Hardware PWM duty: 20.00% richiesto -> 20.00% effettivo (51/256)[0m
+[0;32mI (86593) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (87413) Temperature sensor: Slot 0: 21.94 °C[0m
+[0;32mI (87633) FFT: Dominant Frequency: 20182.21 Hz, Magnitude: 46.52 mV, Noise floor: 0.45, SNR: 102.36[0m
+[0;32mI (87633) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=47347[0m
+[0;32mI (87633) MAIN: MQTT message sent![0m
+[0;32mI (88253) mqtts: MQTT_EVENT_PUBLISHED, msg_id=47347[0m
+Imposto duty: 51 / 256 (risoluzione: 8 bit)
+[0;32mI (97643) PWM: Hardware PWM duty: 20.00% richiesto -> 20.00% effettivo (51/256)[0m
+[0;32mI (97743) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (98563) Temperature sensor: Slot 0: 21.94 °C[0m
+[0;32mI (98783) FFT: Dominant Frequency: 20182.21 Hz, Magnitude: 46.54 mV, Noise floor: 0.47, SNR: 98.80[0m
+[0;32mI (98783) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=63600[0m
+[0;32mI (98783) MAIN: MQTT message sent![0m
+[0;32mI (99423) mqtts: MQTT_EVENT_PUBLISHED, msg_id=63600[0m
+Imposto duty: 51 / 256 (risoluzione: 8 bit)
+[0;32mI (108783) PWM: Hardware PWM duty: 20.00% richiesto -> 20.00% effettivo (51/256)[0m
+[0;32mI (108883) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (109703) Temperature sensor: Slot 0: 21.94 °C[0m
+[0;32mI (109923) FFT: Dominant Frequency: 20182.21 Hz, Magnitude: 46.86 mV, Noise floor: 0.49, SNR: 95.69[0m
+[0;32mI (109923) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=57839[0m
+[0;32mI (109923) MAIN: MQTT message sent![0m
+[0;32mI (110783) mqtts: MQTT_EVENT_PUBLISHED, msg_id=57839[0m
+Imposto duty: 51 / 256 (risoluzione: 8 bit)
+[0;32mI (119933) PWM: Hardware PWM duty: 20.00% richiesto -> 20.00% effettivo (51/256)[0m
+[0;32mI (120033) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (120853) Temperature sensor: Slot 0: 21.94 °C[0m
+[0;32mI (121073) FFT: Dominant Frequency: 20182.21 Hz, Magnitude: 46.73 mV, Noise floor: 0.46, SNR: 100.85[0m
+[0;32mI (121073) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=7175[0m
+[0;32mI (121073) MAIN: MQTT message sent![0m
+[0;32mI (122043) mqtts: MQTT_EVENT_PUBLISHED, msg_id=7175[0m
+Imposto duty: 51 / 256 (risoluzione: 8 bit)
+[0;32mI (131083) PWM: Hardware PWM duty: 20.00% richiesto -> 20.00% effettivo (51/256)[0m
+[0;32mI (131183) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (132003) Temperature sensor: Slot 0: 21.94 °C[0m
+[0;32mI (132223) FFT: Dominant Frequency: 20182.21 Hz, Magnitude: 46.53 mV, Noise floor: 0.48, SNR: 97.66[0m
+[0;32mI (132223) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=20721[0m
+[0;32mI (132223) MAIN: MQTT message sent![0m
+[0;32mI (132493) mqtts: MQTT_EVENT_PUBLISHED, msg_id=20721[0m
+Imposto duty: 51 / 256 (risoluzione: 8 bit)
+[0;32mI (142233) PWM: Hardware PWM duty: 20.00% richiesto -> 20.00% effettivo (51/256)[0m
+[0;32mI (142333) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (143153) Temperature sensor: Slot 0: 22.00 °C[0m
+[0;32mI (143373) FFT: Dominant Frequency: 20182.21 Hz, Magnitude: 46.55 mV, Noise floor: 0.46, SNR: 101.68[0m
+[0;32mI (143373) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=2008[0m
+[0;32mI (143373) MAIN: MQTT message sent![0m
+[0;32mI (143763) mqtts: MQTT_EVENT_PUBLISHED, msg_id=2008[0m
+Imposto duty: 51 / 256 (risoluzione: 8 bit)
+[0;32mI (153383) PWM: Hardware PWM duty: 20.00% richiesto -> 20.00% effettivo (51/256)[0m
+[0;32mI (153483) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (154303) Temperature sensor: Slot 0: 22.00 °C[0m
+[0;32mI (154523) FFT: Dominant Frequency: 20182.21 Hz, Magnitude: 46.60 mV, Noise floor: 0.48, SNR: 97.89[0m
+[0;32mI (154523) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=36279[0m
+[0;32mI (154523) MAIN: MQTT message sent![0m
+[0;32mI (154923) mqtts: MQTT_EVENT_PUBLISHED, msg_id=36279[0m
+Imposto duty: 51 / 256 (risoluzione: 8 bit)
+[0;32mI (164533) PWM: Hardware PWM duty: 20.00% richiesto -> 20.00% effettivo (51/256)[0m
+[0;32mI (164633) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (165453) Temperature sensor: Slot 0: 22.00 °C[0m
+[0;32mI (165673) FFT: Dominant Frequency: 20182.21 Hz, Magnitude: 46.50 mV, Noise floor: 0.46, SNR: 100.27[0m
+[0;32mI (165673) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=32832[0m
+[0;32mI (165673) MAIN: MQTT message sent![0m
+[0;32mI (166283) mqtts: MQTT_EVENT_PUBLISHED, msg_id=32832[0m
+Imposto duty: 51 / 256 (risoluzione: 8 bit)
+[0;32mI (175683) PWM: Hardware PWM duty: 20.00% richiesto -> 20.00% effettivo (51/256)[0m
+[0;32mI (175783) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (176603) Temperature sensor: Slot 0: 22.00 °C[0m
+[0;32mI (176823) FFT: Dominant Frequency: 20182.21 Hz, Magnitude: 46.58 mV, Noise floor: 0.48, SNR: 96.58[0m
+[0;32mI (176823) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=36335[0m
+[0;32mI (176823) MAIN: MQTT message sent![0m
+[0;32mI (177543) mqtts: MQTT_EVENT_PUBLISHED, msg_id=36335[0m
+Imposto duty: 51 / 256 (risoluzione: 8 bit)
+[0;32mI (186833) PWM: Hardware PWM duty: 20.00% richiesto -> 20.00% effettivo (51/256)[0m
+[0;32mI (186933) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (187753) Temperature sensor: Slot 0: 22.00 °C[0m
+[0;32mI (187973) FFT: Dominant Frequency: 20182.21 Hz, Magnitude: 46.63 mV, Noise floor: 0.48, SNR: 97.18[0m
+[0;32mI (187973) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=34731[0m
+[0;32mI (187973) MAIN: MQTT message sent![0m
+[0;32mI (188813) mqtts: MQTT_EVENT_PUBLISHED, msg_id=34731[0m
+Imposto duty: 51 / 256 (risoluzione: 8 bit)
+[0;32mI (197983) PWM: Hardware PWM duty: 20.00% richiesto -> 20.00% effettivo (51/256)[0m
+[0;32mI (198083) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (198903) Temperature sensor: Slot 0: 22.00 °C[0m
+[0;32mI (199123) FFT: Dominant Frequency: 20182.21 Hz, Magnitude: 46.71 mV, Noise floor: 0.47, SNR: 100.37[0m
+[0;32mI (199123) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=56152[0m
+[0;32mI (199123) MAIN: MQTT message sent![0m
+[0;32mI (200083) mqtts: MQTT_EVENT_PUBLISHED, msg_id=56152[0m
+Imposto duty: 51 / 256 (risoluzione: 8 bit)
+[0;32mI (209133) PWM: Hardware PWM duty: 20.00% richiesto -> 20.00% effettivo (51/256)[0m
+[0;32mI (209233) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (210053) Temperature sensor: Slot 0: 22.00 °C[0m
+[0;32mI (210273) FFT: Dominant Frequency: 20182.21 Hz, Magnitude: 46.85 mV, Noise floor: 0.46, SNR: 102.82[0m
+[0;32mI (210273) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=408[0m
+[0;32mI (210273) MAIN: MQTT message sent![0m
+[0;32mI (211243) mqtts: MQTT_EVENT_PUBLISHED, msg_id=408[0m
+Imposto duty: 51 / 256 (risoluzione: 8 bit)
+[0;32mI (220283) PWM: Hardware PWM duty: 20.00% richiesto -> 20.00% effettivo (51/256)[0m
+[0;32mI (220393) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (221203) Temperature sensor: Slot 0: 22.00 °C[0m
+[0;32mI (221423) FFT: Dominant Frequency: 20182.21 Hz, Magnitude: 46.64 mV, Noise floor: 0.49, SNR: 96.09[0m
+[0;32mI (221423) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=55692[0m
+[0;32mI (221423) MAIN: MQTT message sent![0m
+[0;32mI (222603) mqtts: MQTT_EVENT_PUBLISHED, msg_id=55692[0m
+Imposto duty: 51 / 256 (risoluzione: 8 bit)
+[0;32mI (231433) PWM: Hardware PWM duty: 20.00% richiesto -> 20.00% effettivo (51/256)[0m
+[0;32mI (231533) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (232353) Temperature sensor: Slot 0: 21.94 °C[0m
+[0;32mI (232573) FFT: Dominant Frequency: 20182.21 Hz, Magnitude: 46.52 mV, Noise floor: 0.48, SNR: 96.76[0m
+[0;32mI (232573) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=65303[0m
+[0;32mI (232573) MAIN: MQTT message sent![0m
+[0;32mI (232843) mqtts: MQTT_EVENT_PUBLISHED, msg_id=65303[0m
+Imposto duty: 51 / 256 (risoluzione: 8 bit)
+[0;32mI (242583) PWM: Hardware PWM duty: 20.00% richiesto -> 20.00% effettivo (51/256)[0m
+[0;32mI (242683) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (243503) Temperature sensor: Slot 0: 22.00 °C[0m
+[0;32mI (243723) FFT: Dominant Frequency: 20182.21 Hz, Magnitude: 46.88 mV, Noise floor: 0.48, SNR: 96.68[0m
+[0;32mI (243723) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=47587[0m
+[0;32mI (243723) MAIN: MQTT message sent![0m
+[0;32mI (244313) mqtts: MQTT_EVENT_PUBLISHED, msg_id=47587[0m
+[0;31mE (249023) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (249023) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=119[0m
+[0;32mI (249033) mqtts: MQTT_EVENT_ERROR[0m
+[0;32mI (249033) mqtts: Last error code reported from esp-tls: 0x8008[0m
+[0;32mI (249043) mqtts: Last tls stack error number: 0x0[0m
+[0;32mI (249043) mqtts: Last captured errno : 0 (Success)[0m
+[0;31mE (249053) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (249063) mqtts: MQTT_EVENT_DISCONNECTED[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (253733) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+[0;32mI (253733) mqtt_client: Client force reconnect requested[0m
+[0;32mI (253733) mqtts: Reconnection initiated successfully[0m
+[0;32mI (253743) mqtts: Other event id:7[0m
+Imposto duty: 51 / 256 (risoluzione: 8 bit)
+[0;32mI (253993) PWM: Hardware PWM duty: 20.00% richiesto -> 20.00% effettivo (51/256)[0m
+[0;32mI (254093) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;33mW (254423) mqtt_client: Connection refused, server unavailable[0m
+[0;32mI (254433) mqtts: MQTT_EVENT_ERROR[0m
+[0;32mI (254433) mqtts: Connection refused error: 0x3[0m
+[0;31mE (254433) mqtt_client: MQTT connect failed[0m
+[0;32mI (254443) mqtts: MQTT_EVENT_DISCONNECTED[0m

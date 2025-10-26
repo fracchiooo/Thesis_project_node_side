@@ -1,0 +1,1127 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d9c
+entry 0x403c9914
+[0;32mI (27) boot: ESP-IDF v5.2.2 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Oct 23 2025 14:43:50[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=35488h (218248) map[0m
+[0;32mI (138) esp_image: segment 1: paddr=000454b0 vaddr=3fc9b300 size=04870h ( 18544) load[0m
+[0;32mI (143) esp_image: segment 2: paddr=00049d28 vaddr=40374000 size=062f0h ( 25328) load[0m
+[0;32mI (150) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=b535ch (742236) map[0m
+[0;32mI (286) esp_image: segment 4: paddr=00105384 vaddr=4037a2f0 size=10f6ch ( 69484) load[0m
+[0;32mI (311) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (311) boot: Disabling RNG early entropy source...[0m
+[0;32mI (322) cpu_start: Multicore app[0m
+[0;32mI (332) cpu_start: Pro cpu start user code[0m
+[0;32mI (332) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (332) cpu_start: Application information:[0m
+[0;32mI (335) cpu_start: Project name:     esp_node[0m
+[0;32mI (340) cpu_start: App version:      ad0802d-dirty[0m
+[0;32mI (345) cpu_start: Compile time:     Oct 24 2025 18:07:37[0m
+[0;32mI (352) cpu_start: ELF file SHA256:  337e70035...[0m
+[0;32mI (357) cpu_start: ESP-IDF:          v5.2.2[0m
+[0;32mI (362) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (366) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (371) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (376) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (383) heap_init: At 3FCA3D98 len 00045978 (278 KiB): RAM[0m
+[0;32mI (389) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (395) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (402) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (409) spi_flash: detected chip: gd[0m
+[0;32mI (412) spi_flash: flash io: dio[0m
+[0;33mW (416) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (430) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (436) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (444) main_task: Started on CPU0[0m
+[0;32mI (454) main_task: Calling app_main()[0m
+[0;32mI (454) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (464) PWM: PWM inizializzato: GPIO 2, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (474) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (474) PWM: PWM inizializzato: GPIO 3, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (484) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (494) PWM: PWM inizializzato: GPIO 4, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (504) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (504) PWM: PWM inizializzato: GPIO 1, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (514) PWM: Cambio frequenza: 40000 -> 15000 Hz, risoluzione: 8 -> 10 bit[0m
+[0;32mI (524) PWM: Timer riconfigurato: 15000 Hz, 10 bit (1024 livelli)[0m
+Imposto duty: 0 / 1024 (risoluzione: 10 bit)
+[0;32mI (534) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/1024)[0m
+[0;32mI (544) PWM: Cambio frequenza: 40000 -> 15000 Hz, risoluzione: 8 -> 10 bit[0m
+[0;32mI (554) PWM: Timer riconfigurato: 15000 Hz, 10 bit (1024 livelli)[0m
+Imposto duty: 0 / 1024 (risoluzione: 10 bit)
+[0;32mI (564) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/1024)[0m
+[0;32mI (564) gpio: GPIO[26]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (574) gpio: GPIO[26]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (584) Temperature sensor: Bus inizializzato su GPIO 26[0m
+[0;32mI (704) Temperature sensor: Slot 0: BA00000046755428[0m
+[0;32mI (704) Temperature sensor: Trovati 1 nuovi (totale 1)[0m
+[0;32mI (704) MAIN: Inizializzati 1 sensori[0m
+[0;32mI (704) wifi: Passed a null ptr as pwm_led, the led will not be used[0m
+[0;32mI (744) wifi: ESP_WIFI_MODE_STA[0m
+[0;32mI (744) pp: pp rom version: e7ae62f[0m
+[0;32mI (744) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (754) wifi:wifi driver task: 3fcb15c4, prio:23, stack:6656, core=0[0m
+[0;32mI (764) wifi:wifi firmware version: 3e0076f[0m
+[0;32mI (764) wifi:wifi certification version: v7.0[0m
+[0;32mI (764) wifi:config NVS flash: enabled[0m
+[0;32mI (764) wifi:config nano formating: disabled[0m
+[0;32mI (764) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (774) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (774) wifi:Init management short buffer num: 32[0m
+[0;32mI (784) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (784) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (794) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (794) wifi:Init static rx buffer num: 10[0m
+[0;32mI (794) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (804) wifi_init: rx ba win: 6[0m
+[0;32mI (804) wifi_init: tcpip mbox: 32[0m
+[0;32mI (814) wifi_init: udp mbox: 6[0m
+[0;32mI (814) wifi_init: tcp mbox: 6[0m
+[0;32mI (814) wifi_init: tcp tx win: 5760[0m
+[0;32mI (824) wifi_init: tcp rx win: 5760[0m
+[0;32mI (824) wifi_init: tcp mss: 1440[0m
+[0;32mI (834) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (834) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (844) phy_init: phy_version 670,b7bc9b9,Apr 30 2024,10:54:13[0m
+[0;32mI (884) wifi:mode : sta (10:20:ba:66:2e:94)[0m
+[0;32mI (894) wifi:enable tsf[0m
+[0;32mI (894) wifi: wifi_init_sta finished.[0m
+[0;32mI (934) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (934) wifi:state: init -> auth (b0)[0m
+[0;32mI (964) wifi:state: auth -> init (1c0)[0m
+[0;32mI (964) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (974) wifi: retry to connect to the AP[0m
+[0;32mI (974) wifi: connect to the AP fail[0m
+[0;32mI (3384) wifi: retry to connect to the AP[0m
+[0;32mI (3384) wifi: connect to the AP fail[0m
+[0;32mI (3394) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (3394) wifi:state: init -> auth (b0)[0m
+[0;32mI (3394) wifi:state: auth -> assoc (0)[0m
+[0;32mI (3424) wifi:state: assoc -> run (10)[0m
+[0;32mI (3444) wifi:connected with Oneplus, aid = 5, channel 1, BW20, bssid = ba:7e:6d:57:2c:9d[0m
+[0;32mI (3444) wifi:security: WPA2-PSK, phy: bgn, rssi: -53[0m
+[0;32mI (3454) wifi:pm start, type: 1[0m
+
+[0;32mI (3454) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3454) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (3494) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (3494) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (3504) wifi:<ba-add>idx:0 (ifx:0, ba:7e:6d:57:2c:9d), tid:0, ssn:0, winSize:64[0m
+[0;32mI (4464) esp_netif_handlers: sta ip: 10.94.143.18, mask: 255.255.255.0, gw: 10.94.143.195[0m
+[0;32mI (4464) wifi: got ip:10.94.143.18[0m
+[0;32mI (4464) wifi: DNS servers configured[0m
+[0;32mI (4464) DNS: DNS servers configured[0m
+[0;32mI (4474) wifi: connected to ap SSID:Oneplus password:123456789[0m
+[0;32mI (4474) MAIN: WIFI connected![0m
+[0;32mI (4484) mqtts: MqttWrapper created with client_id: 1020BA662E94[0m
+[0;32mI (4484) mqtts: Passed a null ptr as pwm_led, the led will not be used[0m
+[0;32mI (4494) mqtts: [APP] Free memory: 262616 bytes[0m
+[0;32mI (4504) mqtts: Other event id:7[0m
+[0;32mI (5954) mqtts: MQTT_EVENT_CONNECTED[0m
+[0;32mI (5964) mqtts: Subscribed to 1020BA662E94/downlink, msg_id=23735[0m
+[0;32mI (6004) MAIN: MQTT connected! System running in background...[0m
+[0;32mI (6004) MAIN: Initializing SNTP[0m
+[0;32mI (6004) MAIN: Waiting for time sync... (1/20)[0m
+[0;32mI (6164) mqtts: MQTT_EVENT_SUBSCRIBED, msg_id=23735[0m
+[0;32mI (7004) MAIN: Waiting for time sync... (2/20)[0m
+[0;32mI (8004) MAIN: Waiting for time sync... (3/20)[0m
+[0;32mI (9004) MAIN: Waiting for time sync... (4/20)[0m
+[0;32mI (10004) MAIN: Waiting for time sync... (5/20)[0m
+[0;32mI (11004) MAIN: Waiting for time sync... (6/20)[0m
+[0;32mI (12004) MAIN: Time synchronized: Sun Oct 26 19:09:28 2025
+[0m
+[0;32mI (12004) FFT: sampling rate too high, the maximum sampling rate will be used: 83333[0m
+[0;32mI (12004) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (12124) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (12934) Temperature sensor: Slot 0: 21.81 °C[0m
+[0;32mI (13164) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (13164) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=30406[0m
+[0;32mI (13164) MAIN: MQTT message sent![0m
+[0;32mI (13334) mqtts: MQTT_EVENT_PUBLISHED, msg_id=30406[0m
+[0;32mI (16194) mqtts: MQTT_EVENT_DATA[0m
+TOPIC=1020BA662E94/downlink
+DATA={"frequency":20.0,"duty_frequency":80.0,"finish_after":0.16666667,"startTime":null}
+[0;32mI (16204) MAIN: === Message received in MAIN ===[0m
+[0;32mI (16204) MAIN: Topic: 1020BA662E94/downlink[0m
+[0;32mI (16214) MAIN: Data: {"frequency":20.0,"duty_frequency":80.0,"finish_after":0.16666667,"startTime":null}[0m
+[0;32mI (16224) MAIN: Start timestamp is 0 or past, executing immediately[0m
+[0;32mI (16224) MAIN: Timer triggered! Executing scheduled action...[0m
+Imposto duty: 0 / 1024 (risoluzione: 10 bit)
+[0;32mI (16244) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/1024)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (16254) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+[0;32mI (16264) PWM: Cambio frequenza: 40000 -> 21700 Hz, risoluzione: 8 -> 9 bit[0m
+[0;32mI (16264) PWM: Timer riconfigurato: 21700 Hz, 9 bit (512 livelli)[0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (16274) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 256 / 512 (risoluzione: 9 bit)
+[0;32mI (16284) PWM: Hardware PWM duty: 50.00% richiesto -> 50.10% effettivo (256/512)[0m
+Imposto duty: 818 / 1024 (risoluzione: 10 bit)
+[0;32mI (16304) PWM: Hardware PWM duty: 80.00% richiesto -> 79.96% effettivo (818/1024)[0m
+[0;32mI (16304) MAIN: Expiry timer set for 0.17 hours (total 600 seconds from now)[0m
+[0;32mI (16314) MAIN: status updated and timer started[0m
+[0;32mI (23264) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (24084) Temperature sensor: Slot 0: 21.81 °C[0m
+[0;32mI (24304) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (24304) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=49723[0m
+[0;32mI (24304) MAIN: MQTT message sent![0m
+[0;32mI (24594) mqtts: MQTT_EVENT_PUBLISHED, msg_id=49723[0m
+[0;32mI (34404) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (35224) Temperature sensor: Slot 0: 21.81 °C[0m
+[0;32mI (35444) FFT: Signal too weak (magnitude: 0.84 < 20.00 mV)[0m
+[0;32mI (35444) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=22160[0m
+[0;32mI (35444) MAIN: MQTT message sent![0m
+[0;32mI (36064) mqtts: MQTT_EVENT_PUBLISHED, msg_id=22160[0m
+[0;32mI (45544) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (46364) Temperature sensor: Slot 0: 21.81 °C[0m
+[0;32mI (46584) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (46584) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=56134[0m
+[0;32mI (46584) MAIN: MQTT message sent![0m
+[0;32mI (47324) mqtts: MQTT_EVENT_PUBLISHED, msg_id=56134[0m
+[0;32mI (56684) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (57504) Temperature sensor: Slot 0: 21.81 °C[0m
+[0;32mI (57724) FFT: Signal too weak (magnitude: 0.80 < 20.00 mV)[0m
+[0;32mI (57724) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=7451[0m
+[0;32mI (57724) MAIN: MQTT message sent![0m
+[0;32mI (58594) mqtts: MQTT_EVENT_PUBLISHED, msg_id=7451[0m
+[0;32mI (67824) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (68644) Temperature sensor: Slot 0: 21.88 °C[0m
+[0;32mI (68864) FFT: Signal too weak (magnitude: 0.80 < 20.00 mV)[0m
+[0;32mI (68864) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=27863[0m
+[0;32mI (68864) MAIN: MQTT message sent![0m
+[0;32mI (70064) mqtts: MQTT_EVENT_PUBLISHED, msg_id=27863[0m
+[0;32mI (78964) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (79784) Temperature sensor: Slot 0: 21.88 °C[0m
+[0;32mI (80004) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (80004) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=583[0m
+[0;32mI (80004) MAIN: MQTT message sent![0m
+[0;32mI (80304) mqtts: MQTT_EVENT_PUBLISHED, msg_id=583[0m
+[0;32mI (90104) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (90924) Temperature sensor: Slot 0: 21.81 °C[0m
+[0;32mI (91144) FFT: Signal too weak (magnitude: 0.79 < 20.00 mV)[0m
+[0;32mI (91144) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=41992[0m
+[0;32mI (91144) MAIN: MQTT message sent![0m
+[0;32mI (91764) mqtts: MQTT_EVENT_PUBLISHED, msg_id=41992[0m
+[0;32mI (101244) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (102064) Temperature sensor: Slot 0: 21.88 °C[0m
+[0;32mI (102284) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (102284) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=34179[0m
+[0;32mI (102284) MAIN: MQTT message sent![0m
+[0;32mI (103134) mqtts: MQTT_EVENT_PUBLISHED, msg_id=34179[0m
+[0;32mI (109384) mqtts: MQTT_EVENT_DATA[0m
+TOPIC=1020BA662E94/downlink
+DATA={"frequency":20.0,"duty_frequency":30.0,"finish_after":0.06666667,"startTime":null}
+[0;32mI (109384) MAIN: === Message received in MAIN ===[0m
+[0;32mI (109394) MAIN: Topic: 1020BA662E94/downlink[0m
+[0;32mI (109394) MAIN: Data: {"frequency":20.0,"duty_frequency":30.0,"finish_after":0.06666667,"startTime":null}[0m
+[0;32mI (109404) MAIN: Expiry timer triggered! Schedule has expired![0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (109414) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (109424) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 1024 (risoluzione: 10 bit)
+[0;32mI (109444) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/1024)[0m
+Imposto duty: 0 / 1024 (risoluzione: 10 bit)
+[0;32mI (109454) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/1024)[0m
+[0;32mI (109464) MAIN: Previous expiry timer deleted[0m
+[0;32mI (109464) MAIN: Start timestamp is 0 or past, executing immediately[0m
+[0;32mI (109474) MAIN: Timer triggered! Executing scheduled action...[0m
+Imposto duty: 0 / 1024 (risoluzione: 10 bit)
+[0;32mI (109484) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/1024)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (109494) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+[0;32mI (109504) PWM: Cambio frequenza: 21700 -> 21700 Hz, risoluzione: 9 -> 9 bit[0m
+[0;32mI (109514) PWM: Timer riconfigurato: 21700 Hz, 9 bit (512 livelli)[0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (109524) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 256 / 512 (risoluzione: 9 bit)
+[0;32mI (109534) PWM: Hardware PWM duty: 50.00% richiesto -> 50.10% effettivo (256/512)[0m
+Imposto duty: 307 / 1024 (risoluzione: 10 bit)
+[0;32mI (109544) PWM: Hardware PWM duty: 30.00% richiesto -> 30.01% effettivo (307/1024)[0m
+[0;32mI (109554) MAIN: Expiry timer set for 0.07 hours (total 240 seconds from now)[0m
+[0;32mI (109564) MAIN: status updated and timer started[0m
+[0;32mI (112384) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (113204) Temperature sensor: Slot 0: 21.88 °C[0m
+[0;32mI (113424) FFT: Signal too weak (magnitude: 0.79 < 20.00 mV)[0m
+[0;32mI (113424) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=4083[0m
+[0;32mI (113424) MAIN: MQTT message sent![0m
+[0;32mI (113884) mqtts: MQTT_EVENT_PUBLISHED, msg_id=4083[0m
+[0;32mI (123524) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (124344) Temperature sensor: Slot 0: 21.88 °C[0m
+[0;32mI (124564) FFT: Signal too weak (magnitude: 0.82 < 20.00 mV)[0m
+[0;32mI (124564) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=42698[0m
+[0;32mI (124564) MAIN: MQTT message sent![0m
+[0;32mI (125254) mqtts: MQTT_EVENT_PUBLISHED, msg_id=42698[0m
+[0;32mI (134664) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (135484) Temperature sensor: Slot 0: 21.88 °C[0m
+[0;32mI (135704) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (135704) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=63644[0m
+[0;32mI (135704) MAIN: MQTT message sent![0m
+[0;32mI (136624) mqtts: MQTT_EVENT_PUBLISHED, msg_id=63644[0m
+[0;32mI (145804) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (146624) Temperature sensor: Slot 0: 21.88 °C[0m
+[0;32mI (146844) FFT: Signal too weak (magnitude: 0.79 < 20.00 mV)[0m
+[0;32mI (146844) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=43550[0m
+[0;32mI (146844) MAIN: MQTT message sent![0m
+[0;32mI (148084) mqtts: MQTT_EVENT_PUBLISHED, msg_id=43550[0m
+[0;32mI (156944) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (157764) Temperature sensor: Slot 0: 21.88 °C[0m
+[0;32mI (157984) FFT: Signal too weak (magnitude: 0.80 < 20.00 mV)[0m
+[0;32mI (157984) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=12228[0m
+[0;32mI (157984) MAIN: MQTT message sent![0m
+[0;32mI (158334) mqtts: MQTT_EVENT_PUBLISHED, msg_id=12228[0m
+[0;32mI (163654) mqtts: MQTT_EVENT_DATA[0m
+TOPIC=1020BA662E94/downlink
+DATA={"frequency":40.0,"duty_frequency":80.0,"finish_after":0.06666667,"startTime":null}
+[0;32mI (163654) MAIN: === Message received in MAIN ===[0m
+[0;32mI (163664) MAIN: Topic: 1020BA662E94/downlink[0m
+[0;32mI (163664) MAIN: Data: {"frequency":40.0,"duty_frequency":80.0,"finish_after":0.06666667,"startTime":null}[0m
+[0;32mI (163674) MAIN: Expiry timer triggered! Schedule has expired![0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (163684) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (163704) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 1024 (risoluzione: 10 bit)
+[0;32mI (163714) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/1024)[0m
+Imposto duty: 0 / 1024 (risoluzione: 10 bit)
+[0;32mI (163724) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/1024)[0m
+[0;32mI (163734) MAIN: Previous expiry timer deleted[0m
+[0;32mI (163734) MAIN: Start timestamp is 0 or past, executing immediately[0m
+[0;32mI (163744) MAIN: Timer triggered! Executing scheduled action...[0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (163754) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 0 / 1024 (risoluzione: 10 bit)
+[0;32mI (163764) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/1024)[0m
+[0;32mI (163774) PWM: Cambio frequenza: 40000 -> 39300 Hz, risoluzione: 8 -> 8 bit[0m
+[0;32mI (163784) PWM: Timer riconfigurato: 39300 Hz, 8 bit (256 livelli)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (163794) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 128 / 256 (risoluzione: 8 bit)
+[0;32mI (163804) PWM: Hardware PWM duty: 50.00% richiesto -> 50.20% effettivo (128/256)[0m
+Imposto duty: 818 / 1024 (risoluzione: 10 bit)
+[0;32mI (163814) PWM: Hardware PWM duty: 80.00% richiesto -> 79.96% effettivo (818/1024)[0m
+[0;32mI (163824) MAIN: Expiry timer set for 0.07 hours (total 240 seconds from now)[0m
+[0;32mI (163834) MAIN: status updated and timer started[0m
+[0;32mI (168084) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (168904) Temperature sensor: Slot 0: 21.88 °C[0m
+[0;32mI (169124) FFT: Signal too weak (magnitude: 0.83 < 20.00 mV)[0m
+[0;32mI (169124) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=20387[0m
+[0;32mI (169124) MAIN: MQTT message sent![0m
+[0;32mI (170104) mqtts: MQTT_EVENT_PUBLISHED, msg_id=20387[0m
+[0;32mI (179224) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (180044) Temperature sensor: Slot 0: 21.88 °C[0m
+[0;32mI (180264) FFT: Signal too weak (magnitude: 0.79 < 20.00 mV)[0m
+[0;32mI (180264) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=27952[0m
+[0;32mI (180264) MAIN: MQTT message sent![0m
+[0;32mI (181364) mqtts: MQTT_EVENT_PUBLISHED, msg_id=27952[0m
+[0;32mI (190364) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (191184) Temperature sensor: Slot 0: 21.88 °C[0m
+[0;32mI (191404) FFT: Signal too weak (magnitude: 0.80 < 20.00 mV)[0m
+[0;32mI (191404) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=36548[0m
+[0;32mI (191404) MAIN: MQTT message sent![0m
+[0;32mI (191814) mqtts: MQTT_EVENT_PUBLISHED, msg_id=36548[0m
+[0;32mI (195704) mqtts: MQTT_EVENT_DATA[0m
+TOPIC=1020BA662E94/downlink
+DATA={"frequency":20.0,"duty_frequency":20.0,"finish_after":0.06666667,"startTime":null}
+[0;32mI (195704) MAIN: === Message received in MAIN ===[0m
+[0;32mI (195714) MAIN: Topic: 1020BA662E94/downlink[0m
+[0;32mI (195714) MAIN: Data: {"frequency":20.0,"duty_frequency":20.0,"finish_after":0.06666667,"startTime":null}[0m
+[0;32mI (195734) MAIN: Expiry timer triggered! Schedule has expired![0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (195744) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (195754) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 1024 (risoluzione: 10 bit)
+[0;32mI (195764) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/1024)[0m
+Imposto duty: 0 / 1024 (risoluzione: 10 bit)
+[0;32mI (195774) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/1024)[0m
+[0;32mI (195784) MAIN: Previous expiry timer deleted[0m
+[0;32mI (195784) MAIN: Start timestamp is 0 or past, executing immediately[0m
+[0;32mI (195794) MAIN: Timer triggered! Executing scheduled action...[0m
+Imposto duty: 0 / 1024 (risoluzione: 10 bit)
+[0;32mI (195804) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/1024)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (195814) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+[0;32mI (195824) PWM: Cambio frequenza: 21700 -> 21700 Hz, risoluzione: 9 -> 9 bit[0m
+[0;32mI (195834) PWM: Timer riconfigurato: 21700 Hz, 9 bit (512 livelli)[0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (195844) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 256 / 512 (risoluzione: 9 bit)
+[0;32mI (195854) PWM: Hardware PWM duty: 50.00% richiesto -> 50.10% effettivo (256/512)[0m
+Imposto duty: 205 / 1024 (risoluzione: 10 bit)
+[0;32mI (195864) PWM: Hardware PWM duty: 20.00% richiesto -> 20.04% effettivo (205/1024)[0m
+[0;32mI (195874) MAIN: Expiry timer set for 0.07 hours (total 240 seconds from now)[0m
+[0;32mI (195884) MAIN: status updated and timer started[0m
+[0;32mI (201504) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (202324) Temperature sensor: Slot 0: 21.88 °C[0m
+[0;32mI (202544) FFT: Signal too weak (magnitude: 0.79 < 20.00 mV)[0m
+[0;32mI (202544) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=60163[0m
+[0;32mI (202544) MAIN: MQTT message sent![0m
+[0;32mI (203284) mqtts: MQTT_EVENT_PUBLISHED, msg_id=60163[0m
+[0;32mI (212644) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (213464) Temperature sensor: Slot 0: 21.88 °C[0m
+[0;32mI (213684) FFT: Signal too weak (magnitude: 0.79 < 20.00 mV)[0m
+[0;32mI (213684) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=22394[0m
+[0;32mI (213684) MAIN: MQTT message sent![0m
+[0;32mI (214554) mqtts: MQTT_EVENT_PUBLISHED, msg_id=22394[0m
+[0;32mI (223784) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (224604) Temperature sensor: Slot 0: 21.88 °C[0m
+[0;32mI (224824) FFT: Signal too weak (magnitude: 0.79 < 20.00 mV)[0m
+[0;32mI (224824) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=40180[0m
+[0;32mI (224824) MAIN: MQTT message sent![0m
+[0;32mI (225814) mqtts: MQTT_EVENT_PUBLISHED, msg_id=40180[0m
+[0;32mI (234924) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (235744) Temperature sensor: Slot 0: 21.88 °C[0m
+[0;32mI (235964) FFT: Signal too weak (magnitude: 0.79 < 20.00 mV)[0m
+[0;32mI (235964) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=60532[0m
+[0;32mI (235964) MAIN: MQTT message sent![0m
+[0;32mI (237174) mqtts: MQTT_EVENT_PUBLISHED, msg_id=60532[0m
+[0;32mI (239224) mqtts: MQTT_EVENT_DATA[0m
+TOPIC=1020BA662E94/downlink
+DATA={"frequency":40.0,"duty_frequency":100.0,"finish_after":0.016666668,"startTime":null}
+[0;32mI (239224) MAIN: === Message received in MAIN ===[0m
+[0;32mI (239234) MAIN: Topic: 1020BA662E94/downlink[0m
+[0;32mI (239234) MAIN: Data: {"frequency":40.0,"duty_frequency":100.0,"finish_after":0.016666668,"startTime":null}[0m
+[0;32mI (239254) MAIN: Expiry timer triggered! Schedule has expired![0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (239264) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (239274) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 1024 (risoluzione: 10 bit)
+[0;32mI (239284) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/1024)[0m
+Imposto duty: 0 / 1024 (risoluzione: 10 bit)
+[0;32mI (239294) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/1024)[0m
+[0;32mI (239304) MAIN: Previous expiry timer deleted[0m
+[0;32mI (239304) MAIN: Start timestamp is 0 or past, executing immediately[0m
+[0;32mI (239314) MAIN: Timer triggered! Executing scheduled action...[0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (239324) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 0 / 1024 (risoluzione: 10 bit)
+[0;32mI (239334) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/1024)[0m
+[0;32mI (239344) PWM: Cambio frequenza: 39300 -> 39300 Hz, risoluzione: 8 -> 8 bit[0m
+[0;32mI (239354) PWM: Timer riconfigurato: 39300 Hz, 8 bit (256 livelli)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (239364) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 128 / 256 (risoluzione: 8 bit)
+[0;32mI (239374) PWM: Hardware PWM duty: 50.00% richiesto -> 50.20% effettivo (128/256)[0m
+Imposto duty: 1023 / 1024 (risoluzione: 10 bit)
+[0;32mI (239384) PWM: Hardware PWM duty: 100.00% richiesto -> 100.00% effettivo (1023/1024)[0m
+[0;32mI (239394) MAIN: Expiry timer set for 0.02 hours (total 60 seconds from now)[0m
+[0;32mI (239404) MAIN: status updated and timer started[0m
+[0;32mI (246064) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (246884) Temperature sensor: Slot 0: 21.88 °C[0m
+[0;32mI (247104) FFT: Signal too weak (magnitude: 0.79 < 20.00 mV)[0m
+[0;32mI (247104) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=4700[0m
+[0;32mI (247104) MAIN: MQTT message sent![0m
+[0;32mI (247624) mqtts: MQTT_EVENT_PUBLISHED, msg_id=4700[0m
+[0;32mI (257204) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (258024) Temperature sensor: Slot 0: 21.88 °C[0m
+[0;32mI (258244) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (258244) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=6618[0m
+[0;32mI (258244) MAIN: MQTT message sent![0m
+[0;32mI (259094) mqtts: MQTT_EVENT_PUBLISHED, msg_id=6618[0m
+[0;32mI (268344) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (269164) Temperature sensor: Slot 0: 21.94 °C[0m
+[0;32mI (269384) FFT: Signal too weak (magnitude: 0.82 < 20.00 mV)[0m
+[0;32mI (269384) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=9220[0m
+[0;32mI (269384) MAIN: MQTT message sent![0m
+[0;32mI (270454) mqtts: MQTT_EVENT_PUBLISHED, msg_id=9220[0m
+[0;32mI (279484) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (280304) Temperature sensor: Slot 0: 21.94 °C[0m
+[0;32mI (280524) FFT: Signal too weak (magnitude: 0.80 < 20.00 mV)[0m
+[0;32mI (280524) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=7878[0m
+[0;32mI (280524) MAIN: MQTT message sent![0m
+[0;32mI (280694) mqtts: MQTT_EVENT_PUBLISHED, msg_id=7878[0m
+[0;32mI (290624) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (291444) Temperature sensor: Slot 0: 21.88 °C[0m
+[0;32mI (291664) FFT: Signal too weak (magnitude: 0.79 < 20.00 mV)[0m
+[0;32mI (291664) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=25918[0m
+[0;32mI (291664) MAIN: MQTT message sent![0m
+[0;32mI (292064) mqtts: MQTT_EVENT_PUBLISHED, msg_id=25918[0m
+[0;32mI (295754) mqtts: MQTT_EVENT_DATA[0m
+TOPIC=1020BA662E94/downlink
+DATA={"frequency":40.0,"duty_frequency":100.0,"finish_after":0.033333335,"startTime":null}
+[0;32mI (295754) MAIN: === Message received in MAIN ===[0m
+[0;32mI (295764) MAIN: Topic: 1020BA662E94/downlink[0m
+[0;32mI (295764) MAIN: Data: {"frequency":40.0,"duty_frequency":100.0,"finish_after":0.033333335,"startTime":null}[0m
+[0;32mI (295774) MAIN: Expiry timer triggered! Schedule has expired![0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (295784) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (295794) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 1024 (risoluzione: 10 bit)
+[0;32mI (295804) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/1024)[0m
+Imposto duty: 0 / 1024 (risoluzione: 10 bit)
+[0;32mI (295824) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/1024)[0m
+[0;32mI (295824) MAIN: Previous expiry timer deleted[0m
+[0;32mI (295834) MAIN: Start timestamp is 0 or past, executing immediately[0m
+[0;32mI (295844) MAIN: Timer triggered! Executing scheduled action...[0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (295854) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 0 / 1024 (risoluzione: 10 bit)
+[0;32mI (295864) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/1024)[0m
+[0;32mI (295874) PWM: Cambio frequenza: 39300 -> 39300 Hz, risoluzione: 8 -> 8 bit[0m
+[0;32mI (295874) PWM: Timer riconfigurato: 39300 Hz, 8 bit (256 livelli)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (295884) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 128 / 256 (risoluzione: 8 bit)
+[0;32mI (295904) PWM: Hardware PWM duty: 50.00% richiesto -> 50.20% effettivo (128/256)[0m
+Imposto duty: 1023 / 1024 (risoluzione: 10 bit)
+[0;32mI (295914) PWM: Hardware PWM duty: 100.00% richiesto -> 100.00% effettivo (1023/1024)[0m
+[0;32mI (295924) MAIN: Expiry timer set for 0.03 hours (total 120 seconds from now)[0m
+[0;32mI (295934) MAIN: status updated and timer started[0m
+[0;32mI (301764) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (302584) Temperature sensor: Slot 0: 21.88 °C[0m
+[0;32mI (302804) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (302804) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=60401[0m
+[0;32mI (302804) MAIN: MQTT message sent![0m
+[0;32mI (303324) mqtts: MQTT_EVENT_PUBLISHED, msg_id=60401[0m
+[0;32mI (312904) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (313724) Temperature sensor: Slot 0: 21.94 °C[0m
+[0;32mI (313944) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (313944) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=31571[0m
+[0;32mI (313944) MAIN: MQTT message sent![0m
+[0;32mI (314694) mqtts: MQTT_EVENT_PUBLISHED, msg_id=31571[0m
+[0;32mI (324044) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (324864) Temperature sensor: Slot 0: 21.94 °C[0m
+[0;32mI (325084) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (325084) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=2512[0m
+[0;32mI (325084) MAIN: MQTT message sent![0m
+[0;32mI (326164) mqtts: MQTT_EVENT_PUBLISHED, msg_id=2512[0m
+[0;32mI (335184) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (336004) Temperature sensor: Slot 0: 21.88 °C[0m
+[0;32mI (336224) FFT: Signal too weak (magnitude: 0.79 < 20.00 mV)[0m
+[0;32mI (336224) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=23197[0m
+[0;32mI (336224) MAIN: MQTT message sent![0m
+[0;32mI (336404) mqtts: MQTT_EVENT_PUBLISHED, msg_id=23197[0m
+[0;32mI (346324) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (347144) Temperature sensor: Slot 0: 21.88 °C[0m
+[0;32mI (347364) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (347364) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=63707[0m
+[0;32mI (347364) MAIN: MQTT message sent![0m
+[0;32mI (347674) mqtts: MQTT_EVENT_PUBLISHED, msg_id=63707[0m
+[0;32mI (357464) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (358284) Temperature sensor: Slot 0: 21.88 °C[0m
+[0;32mI (358504) FFT: Signal too weak (magnitude: 0.80 < 20.00 mV)[0m
+[0;32mI (358504) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=3901[0m
+[0;32mI (358504) MAIN: MQTT message sent![0m
+[0;32mI (358934) mqtts: MQTT_EVENT_PUBLISHED, msg_id=3901[0m
+[0;32mI (368604) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (369424) Temperature sensor: Slot 0: 21.88 °C[0m
+[0;32mI (369644) FFT: Signal too weak (magnitude: 0.80 < 20.00 mV)[0m
+[0;32mI (369644) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=21262[0m
+[0;32mI (369644) MAIN: MQTT message sent![0m
+[0;32mI (370604) mqtts: MQTT_EVENT_PUBLISHED, msg_id=21262[0m
+[0;32mI (379744) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (380564) Temperature sensor: Slot 0: 21.88 °C[0m
+[0;32mI (380784) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (380784) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=15546[0m
+[0;32mI (380784) MAIN: MQTT message sent![0m
+[0;32mI (381864) mqtts: MQTT_EVENT_PUBLISHED, msg_id=15546[0m
+[0;32mI (390884) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (391704) Temperature sensor: Slot 0: 21.88 °C[0m
+[0;32mI (391924) FFT: Signal too weak (magnitude: 0.80 < 20.00 mV)[0m
+[0;32mI (391924) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=50230[0m
+[0;32mI (391924) MAIN: MQTT message sent![0m
+[0;32mI (392104) mqtts: MQTT_EVENT_PUBLISHED, msg_id=50230[0m
+[0;32mI (402024) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (402844) Temperature sensor: Slot 0: 21.88 °C[0m
+[0;32mI (403064) FFT: Signal too weak (magnitude: 0.79 < 20.00 mV)[0m
+[0;32mI (403064) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=37803[0m
+[0;32mI (403064) MAIN: MQTT message sent![0m
+[0;32mI (403474) mqtts: MQTT_EVENT_PUBLISHED, msg_id=37803[0m
+[0;32mI (413164) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (413984) Temperature sensor: Slot 0: 21.88 °C[0m
+[0;32mI (414204) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (414204) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=59223[0m
+[0;32mI (414204) MAIN: MQTT message sent![0m
+[0;32mI (414744) mqtts: MQTT_EVENT_PUBLISHED, msg_id=59223[0m
+[0;32mI (415924) MAIN: Expiry timer triggered! Schedule has expired![0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (415924) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (415934) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 1024 (risoluzione: 10 bit)
+[0;32mI (415944) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/1024)[0m
+Imposto duty: 0 / 1024 (risoluzione: 10 bit)
+[0;32mI (415954) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/1024)[0m
+[0;32mI (424304) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (425124) Temperature sensor: Slot 0: 21.94 °C[0m
+[0;32mI (425344) FFT: Signal too weak (magnitude: 0.80 < 20.00 mV)[0m
+[0;32mI (425344) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=22024[0m
+[0;32mI (425344) MAIN: MQTT message sent![0m
+[0;32mI (426204) mqtts: MQTT_EVENT_PUBLISHED, msg_id=22024[0m
+[0;32mI (435444) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (436264) Temperature sensor: Slot 0: 21.94 °C[0m
+[0;32mI (436484) FFT: Signal too weak (magnitude: 0.80 < 20.00 mV)[0m
+[0;32mI (436484) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=12461[0m
+[0;32mI (436484) MAIN: MQTT message sent![0m
+[0;32mI (436964) mqtts: MQTT_EVENT_PUBLISHED, msg_id=12461[0m
+[0;32mI (446584) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (447404) Temperature sensor: Slot 0: 21.94 °C[0m
+[0;32mI (447624) FFT: Signal too weak (magnitude: 0.79 < 20.00 mV)[0m
+[0;32mI (447624) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=8964[0m
+[0;32mI (447624) MAIN: MQTT message sent![0m
+[0;32mI (448224) mqtts: MQTT_EVENT_PUBLISHED, msg_id=8964[0m
+[0;32mI (457724) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (458544) Temperature sensor: Slot 0: 21.94 °C[0m
+[0;32mI (458764) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (458764) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=57093[0m
+[0;32mI (458764) MAIN: MQTT message sent![0m
+[0;32mI (459584) mqtts: MQTT_EVENT_PUBLISHED, msg_id=57093[0m
+[0;32mI (468864) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (469684) Temperature sensor: Slot 0: 22.00 °C[0m
+[0;32mI (469904) FFT: Signal too weak (magnitude: 0.80 < 20.00 mV)[0m
+[0;32mI (469904) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=32540[0m
+[0;32mI (469904) MAIN: MQTT message sent![0m
+[0;32mI (470954) mqtts: MQTT_EVENT_PUBLISHED, msg_id=32540[0m
+[0;32mI (480004) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (480824) Temperature sensor: Slot 0: 22.00 °C[0m
+[0;32mI (481044) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (481044) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=56802[0m
+[0;32mI (481044) MAIN: MQTT message sent![0m
+[0;32mI (481294) mqtts: MQTT_EVENT_PUBLISHED, msg_id=56802[0m
+[0;32mI (491144) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (491964) Temperature sensor: Slot 0: 22.00 °C[0m
+[0;32mI (492184) FFT: Signal too weak (magnitude: 0.79 < 20.00 mV)[0m
+[0;32mI (492184) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=17971[0m
+[0;32mI (492184) MAIN: MQTT message sent![0m
+[0;32mI (492874) mqtts: MQTT_EVENT_PUBLISHED, msg_id=17971[0m
+[0;32mI (493274) mqtts: MQTT_EVENT_DATA[0m
+TOPIC=1020BA662E94/downlink
+DATA={"frequency":20.0,"duty_frequency":80.0,"finish_after":0.033333335,"startTime":null}
+[0;32mI (493284) MAIN: === Message received in MAIN ===[0m
+[0;32mI (493284) MAIN: Topic: 1020BA662E94/downlink[0m
+[0;32mI (493294) MAIN: Data: {"frequency":20.0,"duty_frequency":80.0,"finish_after":0.033333335,"startTime":null}[0m
+[0;32mI (493304) MAIN: Expiry timer triggered! Schedule has expired![0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (493314) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (493324) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 1024 (risoluzione: 10 bit)
+[0;32mI (493334) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/1024)[0m
+Imposto duty: 0 / 1024 (risoluzione: 10 bit)
+[0;32mI (493354) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/1024)[0m
+[0;32mI (493354) MAIN: Previous expiry timer deleted[0m
+[0;32mI (493364) MAIN: Start timestamp is 0 or past, executing immediately[0m
+[0;32mI (493374) MAIN: Timer triggered! Executing scheduled action...[0m
+Imposto duty: 0 / 1024 (risoluzione: 10 bit)
+[0;32mI (493384) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/1024)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (493394) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+[0;32mI (493404) PWM: Cambio frequenza: 21700 -> 21700 Hz, risoluzione: 9 -> 9 bit[0m
+[0;32mI (493404) PWM: Timer riconfigurato: 21700 Hz, 9 bit (512 livelli)[0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (493414) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 256 / 512 (risoluzione: 9 bit)
+[0;32mI (493434) PWM: Hardware PWM duty: 50.00% richiesto -> 50.10% effettivo (256/512)[0m
+Imposto duty: 818 / 1024 (risoluzione: 10 bit)
+[0;32mI (493444) PWM: Hardware PWM duty: 80.00% richiesto -> 79.96% effettivo (818/1024)[0m
+[0;32mI (493454) MAIN: Expiry timer set for 0.03 hours (total 120 seconds from now)[0m
+[0;32mI (493454) MAIN: status updated and timer started[0m
+[0;32mI (502284) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (503104) Temperature sensor: Slot 0: 22.00 °C[0m
+[0;32mI (503324) FFT: Signal too weak (magnitude: 0.79 < 20.00 mV)[0m
+[0;32mI (503324) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=33206[0m
+[0;32mI (503324) MAIN: MQTT message sent![0m
+[0;32mI (503834) mqtts: MQTT_EVENT_PUBLISHED, msg_id=33206[0m
+[0;32mI (513424) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (514244) Temperature sensor: Slot 0: 22.00 °C[0m
+[0;32mI (514464) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (514464) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=43962[0m
+[0;32mI (514464) MAIN: MQTT message sent![0m
+[0;32mI (515094) mqtts: MQTT_EVENT_PUBLISHED, msg_id=43962[0m
+[0;32mI (524564) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (525384) Temperature sensor: Slot 0: 22.00 °C[0m
+[0;32mI (525604) FFT: Signal too weak (magnitude: 0.79 < 20.00 mV)[0m
+[0;32mI (525604) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=32638[0m
+[0;32mI (525604) MAIN: MQTT message sent![0m
+[0;32mI (526554) mqtts: MQTT_EVENT_PUBLISHED, msg_id=32638[0m
+[0;32mI (529224) mqtts: MQTT_EVENT_DATA[0m
+TOPIC=1020BA662E94/downlink
+DATA={"frequency":40.0,"duty_frequency":80.0,"finish_after":1.0,"startTime":null}
+[0;32mI (529224) MAIN: === Message received in MAIN ===[0m
+[0;32mI (529234) MAIN: Topic: 1020BA662E94/downlink[0m
+[0;32mI (529234) MAIN: Data: {"frequency":40.0,"duty_frequency":80.0,"finish_after":1.0,"startTime":null}[0m
+[0;32mI (529244) MAIN: Expiry timer triggered! Schedule has expired![0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (529254) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (529264) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 1024 (risoluzione: 10 bit)
+[0;32mI (529274) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/1024)[0m
+Imposto duty: 0 / 1024 (risoluzione: 10 bit)
+[0;32mI (529294) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/1024)[0m
+[0;32mI (529294) MAIN: Previous expiry timer deleted[0m
+[0;32mI (529304) MAIN: Start timestamp is 0 or past, executing immediately[0m
+[0;32mI (529314) MAIN: Timer triggered! Executing scheduled action...[0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (529324) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 0 / 1024 (risoluzione: 10 bit)
+[0;32mI (529334) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/1024)[0m
+[0;32mI (529344) PWM: Cambio frequenza: 39300 -> 39300 Hz, risoluzione: 8 -> 8 bit[0m
+[0;32mI (529344) PWM: Timer riconfigurato: 39300 Hz, 8 bit (256 livelli)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (529364) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 128 / 256 (risoluzione: 8 bit)
+[0;32mI (529374) PWM: Hardware PWM duty: 50.00% richiesto -> 50.20% effettivo (128/256)[0m
+Imposto duty: 818 / 1024 (risoluzione: 10 bit)
+[0;32mI (529384) PWM: Hardware PWM duty: 80.00% richiesto -> 79.96% effettivo (818/1024)[0m
+[0;32mI (529394) MAIN: Expiry timer set for 1.00 hours (total 3600 seconds from now)[0m
+[0;32mI (529404) MAIN: status updated and timer started[0m
+[0;32mI (535704) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (536524) Temperature sensor: Slot 0: 22.00 °C[0m
+[0;32mI (536744) FFT: Signal too weak (magnitude: 0.79 < 20.00 mV)[0m
+[0;32mI (536744) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=50602[0m
+[0;32mI (536744) MAIN: MQTT message sent![0m
+[0;32mI (537614) mqtts: MQTT_EVENT_PUBLISHED, msg_id=50602[0m
+[0;32mI (546844) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (547664) Temperature sensor: Slot 0: 22.06 °C[0m
+[0;32mI (547884) FFT: Signal too weak (magnitude: 0.79 < 20.00 mV)[0m
+[0;32mI (547884) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=37039[0m
+[0;32mI (547884) MAIN: MQTT message sent![0m
+[0;32mI (548884) mqtts: MQTT_EVENT_PUBLISHED, msg_id=37039[0m
+[0;32mI (557984) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (558804) Temperature sensor: Slot 0: 22.00 °C[0m
+[0;32mI (559024) FFT: Signal too weak (magnitude: 0.81 < 20.00 mV)[0m
+[0;32mI (559024) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=9115[0m
+[0;32mI (559024) MAIN: MQTT message sent![0m
+[0;32mI (559324) mqtts: MQTT_EVENT_PUBLISHED, msg_id=9115[0m
+[0;32mI (569124) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (569944) Temperature sensor: Slot 0: 22.00 °C[0m
+[0;32mI (570164) FFT: Signal too weak (magnitude: 0.79 < 20.00 mV)[0m
+[0;32mI (570164) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=9836[0m
+[0;32mI (570164) MAIN: MQTT message sent![0m
+[0;32mI (570594) mqtts: MQTT_EVENT_PUBLISHED, msg_id=9836[0m
+[0;32mI (580264) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (581084) Temperature sensor: Slot 0: 22.06 °C[0m
+[0;32mI (581304) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (581304) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=12548[0m
+[0;32mI (581304) MAIN: MQTT message sent![0m
+[0;32mI (581854) mqtts: MQTT_EVENT_PUBLISHED, msg_id=12548[0m
+[0;32mI (591404) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (592224) Temperature sensor: Slot 0: 22.06 °C[0m
+[0;32mI (592444) FFT: Signal too weak (magnitude: 0.79 < 20.00 mV)[0m
+[0;32mI (592444) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=58713[0m
+[0;32mI (592444) MAIN: MQTT message sent![0m
+[0;32mI (593114) mqtts: MQTT_EVENT_PUBLISHED, msg_id=58713[0m
+[0;32mI (602544) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (603364) Temperature sensor: Slot 0: 22.00 °C[0m
+[0;32mI (603584) FFT: Signal too weak (magnitude: 0.79 < 20.00 mV)[0m
+[0;32mI (603584) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=58971[0m
+[0;32mI (603584) MAIN: MQTT message sent![0m
+[0;32mI (604384) mqtts: MQTT_EVENT_PUBLISHED, msg_id=58971[0m
+[0;32mI (613684) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (614504) Temperature sensor: Slot 0: 22.06 °C[0m
+[0;32mI (614724) FFT: Signal too weak (magnitude: 0.82 < 20.00 mV)[0m
+[0;32mI (614724) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=58089[0m
+[0;32mI (614724) MAIN: MQTT message sent![0m
+[0;32mI (615954) mqtts: MQTT_EVENT_PUBLISHED, msg_id=58089[0m
+[0;32mI (624824) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (625644) Temperature sensor: Slot 0: 22.06 °C[0m
+[0;32mI (625864) FFT: Signal too weak (magnitude: 0.82 < 20.00 mV)[0m
+[0;32mI (625864) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=36365[0m
+[0;32mI (625864) MAIN: MQTT message sent![0m
+[0;32mI (626194) mqtts: MQTT_EVENT_PUBLISHED, msg_id=36365[0m
+[0;32mI (633974) mqtts: MQTT_EVENT_DATA[0m
+TOPIC=1020BA662E94/downlink
+DATA={"frequency":20.0,"duty_frequency":80.0,"finish_after":0.016666668,"startTime":null}
+[0;32mI (633984) MAIN: === Message received in MAIN ===[0m
+[0;32mI (633984) MAIN: Topic: 1020BA662E94/downlink[0m
+[0;32mI (633994) MAIN: Data: {"frequency":20.0,"duty_frequency":80.0,"finish_after":0.016666668,"startTime":null}[0m
+[0;32mI (634004) MAIN: Expiry timer triggered! Schedule has expired![0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (634014) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (634024) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 1024 (risoluzione: 10 bit)
+[0;32mI (634034) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/1024)[0m
+Imposto duty: 0 / 1024 (risoluzione: 10 bit)
+[0;32mI (634044) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/1024)[0m
+[0;32mI (634054) MAIN: Previous expiry timer deleted[0m
+[0;32mI (634064) MAIN: Start timestamp is 0 or past, executing immediately[0m
+[0;32mI (634064) MAIN: Timer triggered! Executing scheduled action...[0m
+Imposto duty: 0 / 1024 (risoluzione: 10 bit)
+[0;32mI (634074) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/1024)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (634084) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+[0;32mI (634094) PWM: Cambio frequenza: 21700 -> 21700 Hz, risoluzione: 9 -> 9 bit[0m
+[0;32mI (634104) PWM: Timer riconfigurato: 21700 Hz, 9 bit (512 livelli)[0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (634114) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 256 / 512 (risoluzione: 9 bit)
+[0;32mI (634124) PWM: Hardware PWM duty: 50.00% richiesto -> 50.10% effettivo (256/512)[0m
+Imposto duty: 818 / 1024 (risoluzione: 10 bit)
+[0;32mI (634134) PWM: Hardware PWM duty: 80.00% richiesto -> 79.96% effettivo (818/1024)[0m
+[0;32mI (634144) MAIN: Expiry timer set for 0.02 hours (total 60 seconds from now)[0m
+[0;32mI (634154) MAIN: status updated and timer started[0m
+[0;32mI (635964) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (636784) Temperature sensor: Slot 0: 22.06 °C[0m
+[0;32mI (637004) FFT: Signal too weak (magnitude: 0.81 < 20.00 mV)[0m
+[0;32mI (637004) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=129[0m
+[0;32mI (637004) MAIN: MQTT message sent![0m
+[0;32mI (637464) mqtts: MQTT_EVENT_PUBLISHED, msg_id=129[0m
+[0;32mI (647104) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (647924) Temperature sensor: Slot 0: 22.06 °C[0m
+[0;32mI (648144) FFT: Signal too weak (magnitude: 0.79 < 20.00 mV)[0m
+[0;32mI (648144) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=57787[0m
+[0;32mI (648144) MAIN: MQTT message sent![0m
+[0;32mI (648724) mqtts: MQTT_EVENT_PUBLISHED, msg_id=57787[0m
+[0;32mI (658244) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (659064) Temperature sensor: Slot 0: 22.00 °C[0m
+[0;32mI (659284) FFT: Signal too weak (magnitude: 0.79 < 20.00 mV)[0m
+[0;32mI (659284) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=30090[0m
+[0;32mI (659284) MAIN: MQTT message sent![0m
+[0;32mI (660084) mqtts: MQTT_EVENT_PUBLISHED, msg_id=30090[0m
+[0;32mI (669384) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (670204) Temperature sensor: Slot 0: 22.06 °C[0m
+[0;32mI (670424) FFT: Signal too weak (magnitude: 0.80 < 20.00 mV)[0m
+[0;32mI (670424) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=25147[0m
+[0;32mI (670424) MAIN: MQTT message sent![0m
+[0;32mI (671354) mqtts: MQTT_EVENT_PUBLISHED, msg_id=25147[0m
+[0;32mI (680524) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (681344) Temperature sensor: Slot 0: 22.06 °C[0m
+[0;32mI (681564) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (681564) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=43799[0m
+[0;32mI (681564) MAIN: MQTT message sent![0m
+[0;32mI (681794) mqtts: MQTT_EVENT_PUBLISHED, msg_id=43799[0m
+[0;32mI (691664) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (692484) Temperature sensor: Slot 0: 22.06 °C[0m
+[0;32mI (692704) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (692704) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=65116[0m
+[0;32mI (692704) MAIN: MQTT message sent![0m
+[0;32mI (693064) mqtts: MQTT_EVENT_PUBLISHED, msg_id=65116[0m
+[0;32mI (694144) MAIN: Expiry timer triggered! Schedule has expired![0m
+Imposto duty: 0 / 512 (risoluzione: 9 bit)
+[0;32mI (694144) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/512)[0m
+Imposto duty: 0 / 256 (risoluzione: 8 bit)
+[0;32mI (694154) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/256)[0m
+Imposto duty: 0 / 1024 (risoluzione: 10 bit)
+[0;32mI (694174) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/1024)[0m
+Imposto duty: 0 / 1024 (risoluzione: 10 bit)
+[0;32mI (694184) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/1024)[0m
+[0;32mI (702804) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (703624) Temperature sensor: Slot 0: 22.06 °C[0m
+[0;32mI (703844) FFT: Signal too weak (magnitude: 0.79 < 20.00 mV)[0m
+[0;32mI (703844) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=55521[0m
+[0;32mI (703844) MAIN: MQTT message sent![0m
+[0;32mI (704434) mqtts: MQTT_EVENT_PUBLISHED, msg_id=55521[0m
+[0;32mI (713944) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (714764) Temperature sensor: Slot 0: 22.06 °C[0m
+[0;32mI (714984) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (714984) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=1950[0m
+[0;32mI (714984) MAIN: MQTT message sent![0m
+[0;32mI (715694) mqtts: MQTT_EVENT_PUBLISHED, msg_id=1950[0m
+[0;32mI (725084) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (725904) Temperature sensor: Slot 0: 22.06 °C[0m
+[0;32mI (726124) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (726124) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=6273[0m
+[0;32mI (726124) MAIN: MQTT message sent![0m
+[0;32mI (727054) mqtts: MQTT_EVENT_PUBLISHED, msg_id=6273[0m
+[0;32mI (736224) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (737044) Temperature sensor: Slot 0: 22.06 °C[0m
+[0;32mI (737264) FFT: Signal too weak (magnitude: 0.79 < 20.00 mV)[0m
+[0;32mI (737264) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=11521[0m
+[0;32mI (737264) MAIN: MQTT message sent![0m
+[0;32mI (738424) mqtts: MQTT_EVENT_PUBLISHED, msg_id=11521[0m
+[0;32mI (747364) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (748184) Temperature sensor: Slot 0: 22.00 °C[0m
+[0;32mI (748404) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (748404) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=59273[0m
+[0;32mI (748404) MAIN: MQTT message sent![0m
+[0;32mI (748874) mqtts: MQTT_EVENT_PUBLISHED, msg_id=59273[0m
+[0;32mI (758504) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (759324) Temperature sensor: Slot 0: 22.06 °C[0m
+[0;32mI (759544) FFT: Signal too weak (magnitude: 0.79 < 20.00 mV)[0m
+[0;32mI (759544) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=10614[0m
+[0;32mI (759544) MAIN: MQTT message sent![0m
+[0;32mI (760234) mqtts: MQTT_EVENT_PUBLISHED, msg_id=10614[0m
+[0;32mI (769644) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (770464) Temperature sensor: Slot 0: 22.06 °C[0m
+[0;32mI (770684) FFT: Signal too weak (magnitude: 0.79 < 20.00 mV)[0m
+[0;32mI (770684) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=53536[0m
+[0;32mI (770684) MAIN: MQTT message sent![0m
+[0;32mI (771504) mqtts: MQTT_EVENT_PUBLISHED, msg_id=53536[0m
+[0;32mI (780784) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (781604) Temperature sensor: Slot 0: 22.06 °C[0m
+[0;32mI (781824) FFT: Signal too weak (magnitude: 0.80 < 20.00 mV)[0m
+[0;32mI (781824) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=19870[0m
+[0;32mI (781824) MAIN: MQTT message sent![0m
+[0;32mI (782874) mqtts: MQTT_EVENT_PUBLISHED, msg_id=19870[0m
+[0;32mI (791924) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (792744) Temperature sensor: Slot 0: 22.06 °C[0m
+[0;32mI (792964) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (792964) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=62918[0m
+[0;32mI (792964) MAIN: MQTT message sent![0m
+[0;32mI (793204) mqtts: MQTT_EVENT_PUBLISHED, msg_id=62918[0m
+[0;32mI (803064) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (803884) Temperature sensor: Slot 0: 22.06 °C[0m
+[0;32mI (804104) FFT: Signal too weak (magnitude: 0.81 < 20.00 mV)[0m
+[0;32mI (804104) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=48850[0m
+[0;32mI (804104) MAIN: MQTT message sent![0m
+[0;32mI (804684) mqtts: MQTT_EVENT_PUBLISHED, msg_id=48850[0m
+[0;32mI (814204) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (815024) Temperature sensor: Slot 0: 22.06 °C[0m
+[0;32mI (815244) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (815244) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=57498[0m
+[0;32mI (815244) MAIN: MQTT message sent![0m
+[0;32mI (815944) mqtts: MQTT_EVENT_PUBLISHED, msg_id=57498[0m
+[0;32mI (825344) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (826164) Temperature sensor: Slot 0: 22.06 °C[0m
+[0;32mI (826384) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (826384) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=53525[0m
+[0;32mI (826384) MAIN: MQTT message sent![0m
+[0;32mI (827204) mqtts: MQTT_EVENT_PUBLISHED, msg_id=53525[0m
+[0;32mI (836484) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (837304) Temperature sensor: Slot 0: 22.06 °C[0m
+[0;32mI (837524) FFT: Signal too weak (magnitude: 0.80 < 20.00 mV)[0m
+[0;32mI (837524) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=49586[0m
+[0;32mI (837524) MAIN: MQTT message sent![0m
+[0;32mI (838474) mqtts: MQTT_EVENT_PUBLISHED, msg_id=49586[0m
+[0;32mI (847624) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (848444) Temperature sensor: Slot 0: 22.00 °C[0m
+[0;32mI (848664) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (848664) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=58873[0m
+[0;32mI (848664) MAIN: MQTT message sent![0m
+[0;32mI (849734) mqtts: MQTT_EVENT_PUBLISHED, msg_id=58873[0m
+[0;32mI (858764) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (859584) Temperature sensor: Slot 0: 22.00 °C[0m
+[0;32mI (859804) FFT: Signal too weak (magnitude: 0.79 < 20.00 mV)[0m
+[0;32mI (859804) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=2713[0m
+[0;32mI (859804) MAIN: MQTT message sent![0m
+[0;32mI (860304) mqtts: MQTT_EVENT_PUBLISHED, msg_id=2713[0m
+[0;32mI (869904) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (870724) Temperature sensor: Slot 0: 22.06 °C[0m
+[0;32mI (870944) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (870944) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=58571[0m
+[0;32mI (870944) MAIN: MQTT message sent![0m
+[0;32mI (871644) mqtts: MQTT_EVENT_PUBLISHED, msg_id=58571[0m
+[0;32mI (881044) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (881864) Temperature sensor: Slot 0: 22.06 °C[0m
+[0;32mI (882084) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (882084) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=27659[0m
+[0;32mI (882084) MAIN: MQTT message sent![0m
+[0;32mI (883014) mqtts: MQTT_EVENT_PUBLISHED, msg_id=27659[0m
+[0;32mI (892184) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (893004) Temperature sensor: Slot 0: 22.00 °C[0m
+[0;32mI (893224) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (893224) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=28308[0m
+[0;32mI (893224) MAIN: MQTT message sent![0m
+[0;32mI (896634) mqtts: MQTT_EVENT_PUBLISHED, msg_id=28308[0m
+[0;32mI (903324) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (904144) Temperature sensor: Slot 0: 22.00 °C[0m
+[0;32mI (904364) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (904364) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=28754[0m
+[0;32mI (904364) MAIN: MQTT message sent![0m
+[0;32mI (905034) mqtts: MQTT_EVENT_PUBLISHED, msg_id=28754[0m
+[0;32mI (914464) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (915284) Temperature sensor: Slot 0: 22.00 °C[0m
+[0;32mI (915504) FFT: Signal too weak (magnitude: 0.79 < 20.00 mV)[0m
+[0;32mI (915504) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=34756[0m
+[0;32mI (915504) MAIN: MQTT message sent![0m
+[0;32mI (916504) mqtts: MQTT_EVENT_PUBLISHED, msg_id=34756[0m
+[0;32mI (925604) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (926424) Temperature sensor: Slot 0: 22.00 °C[0m
+[0;32mI (926644) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (926644) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=12558[0m
+[0;32mI (926644) MAIN: MQTT message sent![0m
+[0;32mI (927044) mqtts: MQTT_EVENT_PUBLISHED, msg_id=12558[0m
+[0;32mI (936744) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (937564) Temperature sensor: Slot 0: 22.00 °C[0m
+[0;32mI (937784) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (937784) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=21283[0m
+[0;32mI (937784) MAIN: MQTT message sent![0m
+[0;32mI (938414) mqtts: MQTT_EVENT_PUBLISHED, msg_id=21283[0m
+[0;32mI (947884) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (948704) Temperature sensor: Slot 0: 22.00 °C[0m
+[0;32mI (948924) FFT: Signal too weak (magnitude: 0.79 < 20.00 mV)[0m
+[0;32mI (948924) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=7961[0m
+[0;32mI (948924) MAIN: MQTT message sent![0m
+[0;32mI (949674) mqtts: MQTT_EVENT_PUBLISHED, msg_id=7961[0m
+[0;32mI (959024) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (959844) Temperature sensor: Slot 0: 22.00 °C[0m
+[0;32mI (960064) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (960064) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=55370[0m
+[0;32mI (960064) MAIN: MQTT message sent![0m
+[0;32mI (961144) mqtts: MQTT_EVENT_PUBLISHED, msg_id=55370[0m
+[0;32mI (970164) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (970984) Temperature sensor: Slot 0: 22.00 °C[0m
+[0;32mI (971204) FFT: Signal too weak (magnitude: 0.79 < 20.00 mV)[0m
+[0;32mI (971204) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=24792[0m
+[0;32mI (971204) MAIN: MQTT message sent![0m
+[0;32mI (971594) mqtts: MQTT_EVENT_PUBLISHED, msg_id=24792[0m
+[0;32mI (981304) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (982124) Temperature sensor: Slot 0: 22.06 °C[0m
+[0;32mI (982344) FFT: Signal too weak (magnitude: 0.79 < 20.00 mV)[0m
+[0;32mI (982344) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=25167[0m
+[0;32mI (982344) MAIN: MQTT message sent![0m
+[0;32mI (982954) mqtts: MQTT_EVENT_PUBLISHED, msg_id=25167[0m
+[0;32mI (992444) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (993264) Temperature sensor: Slot 0: 22.00 °C[0m
+[0;32mI (993484) FFT: Signal too weak (magnitude: 0.80 < 20.00 mV)[0m
+[0;32mI (993484) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=47172[0m
+[0;32mI (993484) MAIN: MQTT message sent![0m
+[0;32mI (994324) mqtts: MQTT_EVENT_PUBLISHED, msg_id=47172[0m
+[0;32mI (1003584) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (1004404) Temperature sensor: Slot 0: 22.00 °C[0m
+[0;32mI (1004624) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (1004624) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=49356[0m
+[0;32mI (1004624) MAIN: MQTT message sent![0m
+[0;32mI (1005694) mqtts: MQTT_EVENT_PUBLISHED, msg_id=49356[0m
+[0;32mI (1014724) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (1015544) Temperature sensor: Slot 0: 22.00 °C[0m
+[0;32mI (1015764) FFT: Signal too weak (magnitude: 0.80 < 20.00 mV)[0m
+[0;32mI (1015764) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=62256[0m
+[0;32mI (1015764) MAIN: MQTT message sent![0m
+[0;32mI (1017264) mqtts: MQTT_EVENT_PUBLISHED, msg_id=62256[0m
+[0;32mI (1025864) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (1026684) Temperature sensor: Slot 0: 22.06 °C[0m
+[0;32mI (1026904) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (1026904) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=48626[0m
+[0;32mI (1026904) MAIN: MQTT message sent![0m
+[0;32mI (1027704) mqtts: MQTT_EVENT_PUBLISHED, msg_id=48626[0m
+[0;32mI (1037004) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (1037824) Temperature sensor: Slot 0: 22.06 °C[0m
+[0;32mI (1038044) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (1038044) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=47867[0m
+[0;32mI (1038044) MAIN: MQTT message sent![0m
+[0;32mI (1038974) mqtts: MQTT_EVENT_PUBLISHED, msg_id=47867[0m
+[0;32mI (1048144) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (1048964) Temperature sensor: Slot 0: 22.06 °C[0m
+[0;32mI (1049184) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (1049184) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=64898[0m
+[0;32mI (1049184) MAIN: MQTT message sent![0m
+[0;32mI (1050334) mqtts: MQTT_EVENT_PUBLISHED, msg_id=64898[0m
+[0;32mI (1059284) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (1060104) Temperature sensor: Slot 0: 22.06 °C[0m
+[0;32mI (1060324) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (1060324) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=55965[0m
+[0;32mI (1060324) MAIN: MQTT message sent![0m
+[0;32mI (1060574) mqtts: MQTT_EVENT_PUBLISHED, msg_id=55965[0m
+[0;32mI (1070424) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (1071244) Temperature sensor: Slot 0: 22.06 °C[0m
+[0;32mI (1071464) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (1071464) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=18415[0m
+[0;32mI (1071464) MAIN: MQTT message sent![0m
+[0;32mI (1071844) mqtts: MQTT_EVENT_PUBLISHED, msg_id=18415[0m
+[0;32mI (1081564) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (1082384) Temperature sensor: Slot 0: 22.06 °C[0m
+[0;32mI (1082604) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (1082604) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=39989[0m
+[0;32mI (1082604) MAIN: MQTT message sent![0m
+[0;32mI (1083104) mqtts: MQTT_EVENT_PUBLISHED, msg_id=39989[0m
+[0;32mI (1092704) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (1093524) Temperature sensor: Slot 0: 22.12 °C[0m
+[0;32mI (1093744) FFT: Signal too weak (magnitude: 0.80 < 20.00 mV)[0m
+[0;32mI (1093744) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=42905[0m
+[0;32mI (1093744) MAIN: MQTT message sent![0m
+[0;32mI (1094364) mqtts: MQTT_EVENT_PUBLISHED, msg_id=42905[0m
+[0;32mI (1103844) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (1104664) Temperature sensor: Slot 0: 22.06 °C[0m
+[0;32mI (1104884) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (1104884) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=44605[0m
+[0;32mI (1104884) MAIN: MQTT message sent![0m
+[0;32mI (1105634) mqtts: MQTT_EVENT_PUBLISHED, msg_id=44605[0m
+[0;32mI (1114984) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (1115804) Temperature sensor: Slot 0: 22.06 °C[0m
+[0;32mI (1116024) FFT: Signal too weak (magnitude: 0.79 < 20.00 mV)[0m
+[0;32mI (1116024) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=3855[0m
+[0;32mI (1116024) MAIN: MQTT message sent![0m
+[0;32mI (1116894) mqtts: MQTT_EVENT_PUBLISHED, msg_id=3855[0m
+[0;32mI (1126124) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (1126944) Temperature sensor: Slot 0: 22.06 °C[0m
+[0;32mI (1127164) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (1127164) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=59994[0m
+[0;32mI (1127164) MAIN: MQTT message sent![0m
+[0;32mI (1128164) mqtts: MQTT_EVENT_PUBLISHED, msg_id=59994[0m
+[0;32mI (1137264) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (1138084) Temperature sensor: Slot 0: 22.06 °C[0m
+[0;32mI (1138304) FFT: Signal too weak (magnitude: 0.79 < 20.00 mV)[0m
+[0;32mI (1138304) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=20946[0m
+[0;32mI (1138304) MAIN: MQTT message sent![0m
+[0;32mI (1141064) mqtts: MQTT_EVENT_PUBLISHED, msg_id=20946[0m
+[0;32mI (1148404) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (1149224) Temperature sensor: Slot 0: 22.06 °C[0m
+[0;32mI (1149444) FFT: Signal too weak (magnitude: 0.79 < 20.00 mV)[0m
+[0;32mI (1149444) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=260[0m
+[0;32mI (1149444) MAIN: MQTT message sent![0m
+[0;32mI (1150484) mqtts: MQTT_EVENT_PUBLISHED, msg_id=260[0m
+[0;32mI (1159544) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (1160364) Temperature sensor: Slot 0: 22.12 °C[0m
+[0;32mI (1160584) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (1160584) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=17082[0m
+[0;32mI (1160584) MAIN: MQTT message sent![0m
+[0;32mI (1160924) mqtts: MQTT_EVENT_PUBLISHED, msg_id=17082[0m
+[0;32mI (1170684) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (1171504) Temperature sensor: Slot 0: 22.12 °C[0m
+[0;32mI (1171724) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (1171724) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=58416[0m
+[0;32mI (1171724) MAIN: MQTT message sent![0m
+[0;32mI (1172194) mqtts: MQTT_EVENT_PUBLISHED, msg_id=58416[0m
+[0;32mI (1181824) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (1182644) Temperature sensor: Slot 0: 22.12 °C[0m
+[0;32mI (1182864) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (1182864) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=19125[0m
+[0;32mI (1182864) MAIN: MQTT message sent![0m
+[0;32mI (1183454) mqtts: MQTT_EVENT_PUBLISHED, msg_id=19125[0m
+[0;32mI (1192964) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (1193784) Temperature sensor: Slot 0: 22.12 °C[0m
+[0;32mI (1194004) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (1194004) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=41524[0m
+[0;32mI (1194004) MAIN: MQTT message sent![0m
+[0;32mI (1194714) mqtts: MQTT_EVENT_PUBLISHED, msg_id=41524[0m
+[0;32mI (1204104) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (1204924) Temperature sensor: Slot 0: 22.06 °C[0m
+[0;32mI (1205144) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (1205144) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=60090[0m
+[0;32mI (1205144) MAIN: MQTT message sent![0m
+[0;32mI (1205984) mqtts: MQTT_EVENT_PUBLISHED, msg_id=60090[0m
+[0;32mI (1215244) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (1216064) Temperature sensor: Slot 0: 22.06 °C[0m
+[0;32mI (1216284) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (1216284) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=8065[0m
+[0;32mI (1216284) MAIN: MQTT message sent![0m
+[0;32mI (1217244) mqtts: MQTT_EVENT_PUBLISHED, msg_id=8065[0m
+[0;32mI (1226384) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (1227204) Temperature sensor: Slot 0: 22.12 °C[0m
+[0;32mI (1227424) FFT: Signal too weak (magnitude: 0.79 < 20.00 mV)[0m
+[0;32mI (1227424) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=32977[0m
+[0;32mI (1227424) MAIN: MQTT message sent![0m
+[0;32mI (1227594) mqtts: MQTT_EVENT_PUBLISHED, msg_id=32977[0m
+[0;32mI (1237524) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (1238344) Temperature sensor: Slot 0: 22.12 °C[0m
+[0;32mI (1238564) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (1238564) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=27594[0m
+[0;32mI (1238564) MAIN: MQTT message sent![0m
+[0;32mI (1239064) mqtts: MQTT_EVENT_PUBLISHED, msg_id=27594[0m
+[0;32mI (1248664) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (1249484) Temperature sensor: Slot 0: 22.06 °C[0m
+[0;32mI (1249704) FFT: Signal too weak (magnitude: 0.78 < 20.00 mV)[0m
+[0;32mI (1249704) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=6419[0m
+[0;32mI (1249704) MAIN: MQTT message sent![0m
+[0;32mI (1250324) mqtts: MQTT_EVENT_PUBLISHED, msg_id=6419[0m
+[0;32mI (1259804) Temperature sensor: Trovati 0 nuovi (totale 1)[0m
+[0;32mI (1260624) Temperature sensor: Slot 0: 22.06 °C[0m
+[0;32mI (1260844) FFT: Signal too weak (magnitude: 0.79 < 20.00 mV)[0m
+[0;32mI (1260844) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=34413[0m
+[0;32mI (1260844) MAIN: MQTT message sent![0m
+[0;32mI (1261584) mqtts: MQTT_EVENT_PUBLISHED, msg_id=34413[0m

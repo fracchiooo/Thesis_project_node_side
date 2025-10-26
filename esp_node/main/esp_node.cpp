@@ -44,12 +44,9 @@ static DeviceState_t device_state = {
 static SemaphoreHandle_t state_mutex = NULL;
 static esp_timer_handle_t schedule_timer = NULL;
 static esp_timer_handle_t expiry_timer = NULL;
-//static Actuator_temperature actuator;
-//static TaskHandle_t mantain_temperatureTask_handle = NULL;
 static Sensor_temperature sensor;
 static PwmController* pwm_input_40 = NULL;
 static PwmController* pwm_input_20 = NULL;
-
 static PwmController* pwm_burst_20 = NULL;
 static PwmController* pwm_burst_40 = NULL;
 
@@ -71,6 +68,7 @@ bool initialize_sntp(void) {
     ESP_LOGI(TAG, "Initializing SNTP");
     esp_sntp_setoperatingmode(SNTP_OPMODE_POLL);
     esp_sntp_setservername(0, "pool.ntp.org");
+    esp_sntp_set_sync_interval(3600000); // re-sync every each hour
     esp_sntp_init();
 
     int retry = 0;
@@ -90,51 +88,10 @@ bool initialize_sntp(void) {
     }
 }
 
-/*
-void mantain_temperature(void* temperature_target){
-    //histeresys cycle
-    const float HYSTERESIS = 0.5;  // isteresi di ±0.5°C
-    const float TOLERANCE = 0.2;
-    const unsigned long DELAY_MS = 5000;
-
-    float* temp = (float*) temperature_target;
-    float temp_target = *temp;
-
-    while (true) {
-        float currentTemp = sensor.readTemperature(0);
-        if(currentTemp==-127.0){
-            printf("error in reading temperature in control function");
-            actuator.stop_cool();
-            actuator.stop_warm();
-            mantain_temperatureTask_handle=NULL;
-            return;
-        }
-        float error = temp_target - currentTemp;
-        
-        if (abs(error) < TOLERANCE) {
-            actuator.stop_cool();
-            actuator.stop_warm();
-            vTaskDelay(pdMS_TO_TICKS(DELAY_MS));
-        }
-        
-        else if (error > HYSTERESIS) {
-            actuator.init_warm(100.0);
-        } 
-        else if (error < -HYSTERESIS) {
-            actuator.init_cool(100.0);
-        }
-        
-        vTaskDelay(pdMS_TO_TICKS(DELAY_MS));
-    
-    }
-}*/
 
 void scheduled_action(void* arg) {
     ESP_LOGI(TAG, "Timer triggered! Executing scheduled action...");
     DeviceState_t state = get_device_state();
-    // TODO start irradiation
-    /*float temp = state.temperature;
-    xTaskCreate(mantain_temperature, "mantain_temperatureTask", 4096, (void*)&temp, 2, &mantain_temperatureTask_handle);*/
 
     if(state.frequency==40.0){
         pwm_input_20->setDuty(0.0f);
@@ -163,13 +120,6 @@ void scheduled_action(void* arg) {
 
 void expiry_action(void* arg) {
     ESP_LOGI(TAG, "Expiry timer triggered! Schedule has expired!");
-
-    /*if (mantain_temperatureTask_handle != NULL) {
-        vTaskDelete(mantain_temperatureTask_handle);
-        mantain_temperatureTask_handle = NULL;
-    }
-    actuator.stop_warm();
-    actuator.stop_cool();*/
 
     pwm_input_20->setDuty(0.0f);
     pwm_input_40->setDuty(0.0f);
@@ -352,13 +302,12 @@ char* encodePayload(float current_temperature, float current_frequency) {
 }
 
 
-void check_connection(Wifi_wrapper* wifi, MqttWrapper* mqtt, PwmController* pwm_led){
+void check_connection(Wifi_wrapper* wifi, MqttWrapper* mqtt){
 
     const int max_backoff = 17;
     int backoff=0;
 
     while (!wifi->isConnected()) {
-        pwm_led->setDuty(0.0f);
         wifi->reconnect();
         vTaskDelay(pdMS_TO_TICKS(pow(2, backoff) * 250));
         if (backoff < max_backoff) backoff++;
@@ -367,13 +316,11 @@ void check_connection(Wifi_wrapper* wifi, MqttWrapper* mqtt, PwmController* pwm_
     backoff=0;
 
     while (!mqtt->isConnected()) {
-        pwm_led->setDuty(0.0f);
         mqtt->reconnect();
         vTaskDelay(pdMS_TO_TICKS(pow(2, backoff) * 250));
         if (backoff < max_backoff) backoff++;
     }
 
-    pwm_led->setDuty(20.0f);
 }
 
 
@@ -389,26 +336,27 @@ extern "C" void app_main(void)
     pwm_input_20 = new PwmController(GPIO_NUM_3, LEDC_CHANNEL_3, LEDC_TIMER_3, false);
     pwm_input_20->init();
    
-    pwm_burst_20 = new PwmController(GPIO_NUM_4, LEDC_CHANNEL_1, LEDC_TIMER_1, false);
+    pwm_burst_20 = new PwmController(GPIO_NUM_4, LEDC_CHANNEL_1, LEDC_TIMER_2, false);
     pwm_burst_20->init();
-    pwm_burst_40 = new PwmController(GPIO_NUM_1, LEDC_CHANNEL_2, LEDC_TIMER_1, false);
+    pwm_burst_40 = new PwmController(GPIO_NUM_1, LEDC_CHANNEL_2, LEDC_TIMER_2, false);
     pwm_burst_40->init();
 
     pwm_burst_40->setFrequency(150);
     pwm_burst_20->setFrequency(150);
 
 
-    //actuator.begin(GPIO_NUM_6, GPIO_NUM_5, LEDC_CHANNEL_2, LEDC_TIMER_2);
+    PwmController* pwm_led = new PwmController(GPIO_NUM_35, LEDC_CHANNEL_5, LEDC_TIMER_1, false);
+    pwm_led->init();
+    pwm_led->setFrequency(200);
+
     sensor.begin();
     int new_slots[MAX_SENSORS];
     int num = sensor.scan(new_slots);
     ESP_LOGI(TAG, "Inizializzati %d sensori", num);
 
-    // Inizializza WiFi
-
     Wifi_wrapper* wifi = Wifi_wrapper::getWifiInstance();
 
-    wifi->wifi_init_sta();
+    wifi->wifi_init_sta(nullptr);
 
 
     int retry = 0;
@@ -427,10 +375,9 @@ extern "C" void app_main(void)
     //wifi->destroyInstance();
 
 
-    // Inizializza MQTT
     MqttWrapper mqtt;
     mqtt.setMessageCallback(onMqttMessage);
-    mqtt.mqtt_app_start();
+    mqtt.mqtt_app_start(pwm_led); 
 
     retry = 0;
     while (!mqtt.isConnected() && retry < 20) {
@@ -451,17 +398,14 @@ extern "C" void app_main(void)
 
 
 
-
     FFT_ultrasonic fft;
     fft.begin(ADC_CHANNEL_6, ADC_UNIT_1, 90000, 1024); // sampling at 90 khz in order to sample signals till 45 khz, taking 900 samples, so sampling with steps of 100 hz
     // the sampling rate should be always <= of MAX_SAMPLING_FREQUENCY
 
-    PwmController* pwm_led = new PwmController(GPIO_NUM_35, LEDC_CHANNEL_3, LEDC_TIMER_1, false);
-    pwm_led->init();
-    pwm_led->setDuty(20.0f);
+
 
     while(1){
-        check_connection(wifi, &mqtt, pwm_led);
+        check_connection(wifi, &mqtt);
         sensor.scan(new_slots);
         float curr_temp = sensor.readTemperature(0);
 
@@ -481,29 +425,4 @@ extern "C" void app_main(void)
     delete pwm_burst_40;
     delete pwm_led;
     //vTaskDelete(NULL);
-
-
-    
-    // utilizzo sensore temperatura DS18B20
-/*
-
-    Sensor_temperature sensor;
-    sensor.begin();
-    int new_slots[MAX_SENSORS];
-    int num = sensor.scan(new_slots);
-    ESP_LOGI(TAG, "Inizializzati %d sensori", num);
-    while (1) {
-        float temp = sensor.readTemperature(0);
-        ESP_LOGI(TAG, "Temp 1 : %.2f °C", temp);
-        temp = sensor.readTemperature(1);
-        ESP_LOGI(TAG, "Temp 2 : %.2f °C", temp);
-        // Riscansiona ogni tanto
-        sensor.scan(new_slots);
-        vTaskDelay(pdMS_TO_TICKS(5000));
-    }*/
-
-
-
-
-
 }

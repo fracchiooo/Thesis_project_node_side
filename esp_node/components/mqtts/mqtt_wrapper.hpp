@@ -9,6 +9,7 @@
 #include "esp_mac.h"
 #include "esp_log.h"
 #include "mqtt_client.h"
+#include "pwmController.hpp"
 
 
 typedef void (*MqttMessageCallback)(const char* topic, int topic_len, 
@@ -19,7 +20,7 @@ class MqttWrapper {
     public:
         MqttWrapper();
         ~MqttWrapper();
-        void mqtt_app_start();
+        void mqtt_app_start(PwmController* pwm_led);
         int send_message(const char* topic, const char* payload);
         int subscribe(const char* topic);
 
@@ -38,5 +39,6 @@ class MqttWrapper {
         bool _connected;
         char _client_id[13]; // 12 characters + null terminator
         MqttMessageCallback _message_callback;
+        PwmController* _pwm_led;
 };
 

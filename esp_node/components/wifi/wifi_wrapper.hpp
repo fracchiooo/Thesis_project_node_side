@@ -8,7 +8,8 @@
 #include "esp_event.h"
 #include "esp_log.h"
 #include "nvs_flash.h"
-
+#include "esp_netif.h"
+#include "pwmController.hpp"
 #include "lwip/err.h"
 #include "lwip/sys.h"
 
@@ -62,6 +63,7 @@ private:
     esp_event_handler_instance_t _instance_any_id;
     esp_event_handler_instance_t _instance_got_ip;
     esp_netif_t* _esp_netif_sta;
+    PwmController* _pwm_led;
 
 public:
 
@@ -79,5 +81,5 @@ public:
     
     bool isConnected() const { return _connected; }
 
-    void wifi_init_sta(void);
+    void wifi_init_sta(PwmController* pwm_led);
 };
