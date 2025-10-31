@@ -7,8 +7,7 @@
 #include "onewire_bus.h"
 #include "onewire_device.h"
 
-#define ONEWIRE_GPIO GPIO_NUM_26
-#define MAX_SENSORS 10
+#define MAX_SENSORS 1
 
 class Sensor_temperature {
 private:
@@ -16,6 +15,8 @@ private:
     uint64_t _addresses[MAX_SENSORS];
     bool _device_active[MAX_SENSORS];
     int _device_count;
+    gpio_num_t _input_sensor;
+    int* _new_slots;
     
     int findFreeSlot();
     int findDeviceByAddress(uint64_t address);
@@ -25,9 +26,9 @@ private:
 public:
     Sensor_temperature();
     ~Sensor_temperature();
-    
-    void begin();
-    int scan(int* new_slots);
+    int* getSlots() const {return _new_slots;}
+    void begin(gpio_num_t input);
+    int scan();
     void removeDevice(int index);
     float readTemperature(int index);
     int getDeviceCount() const { return _device_count; }

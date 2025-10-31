@@ -25,15 +25,12 @@ class FFT_ultrasonic {
         int getMaxFrequencyFFT();
         float* read_and_get_data_fixed_samples();
 
-
     private:
 
         uint32_t get_max_cali_value(adc_cali_handle_t calibration);
         void normalize(float array[], int N, uint32_t max_val);
-        void std_deviation_and_mean(float* data, size_t size, float* std_dev, float* mean);
         void adc_calibration_init();
         void adc_calibration_deinit(adc_cali_handle_t handle);
-
 
         uint8_t _ADC_channel;
         uint8_t _ADC_unit;

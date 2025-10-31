@@ -53,12 +53,9 @@ class Wifi_wrapper {
 private:
 
     static Wifi_wrapper* _wifi_instance;
-    
     Wifi_wrapper();
-
     friend void event_handler(void* arg, esp_event_base_t event_base,
                              int32_t event_id, void* event_data);
-
     bool _connected = false;
     esp_event_handler_instance_t _instance_any_id;
     esp_event_handler_instance_t _instance_got_ip;
@@ -73,13 +70,9 @@ public:
         }
         return _wifi_instance;
     }
-
     void wifi_disconnect(void);
     static void destroyInstance(void);
     void reconnect();
-
-    
     bool isConnected() const { return _connected; }
-
     void wifi_init_sta(PwmController* pwm_led);
 };

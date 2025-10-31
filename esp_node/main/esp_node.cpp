@@ -171,7 +171,6 @@ void schedule_timer_command(uint32_t start_timestamp, float expiry_hours) {
         ESP_LOGI(TAG, "Schedule timer set for %lld seconds from now", start_delay_seconds);
     }
     
-    // 4. Calcola e avvia expiry timer
     int64_t expiry_seconds = (int64_t)(expiry_hours * 3600.0f);
     int64_t total_expiry_seconds = start_delay_seconds + expiry_seconds;
     
@@ -245,7 +244,6 @@ void onMqttMessage(const char* topic, int topic_len, const char* data, int data_
                 }
             }
             xSemaphoreGive(state_mutex);
-            //triggers the time clock for start and stop the actuators
             schedule_timer_command(device_state.start_time, device_state.finish_after);
             ESP_LOGI(TAG, "status updated and timer started");
         }
@@ -255,8 +253,6 @@ void onMqttMessage(const char* topic, int topic_len, const char* data, int data_
         ESP_LOGW(TAG, "Failed to parse JSON");
     }
 }
-
-
 
 
 
@@ -304,6 +300,7 @@ char* encodePayload(float current_temperature, float current_frequency) {
 
 void check_connection(Wifi_wrapper* wifi, MqttWrapper* mqtt){
 
+    // checks the wifi and mqtt connection with an exponential backoff
     const int max_backoff = 17;
     int backoff=0;
 
@@ -329,7 +326,7 @@ extern "C" void app_main(void)
 {
     state_mutex = xSemaphoreCreateMutex();
 
-    // Inizializza controller PWM
+    // Initializes controller PWM
     pwm_input_40 = new PwmController(GPIO_NUM_2, LEDC_CHANNEL_0, LEDC_TIMER_0, false);
     pwm_input_40->init();
 
@@ -341,23 +338,23 @@ extern "C" void app_main(void)
     pwm_burst_40 = new PwmController(GPIO_NUM_1, LEDC_CHANNEL_2, LEDC_TIMER_2, false);
     pwm_burst_40->init();
 
-    pwm_burst_40->setFrequency(150);
+    pwm_burst_40->setFrequency(150); // the frequency of the burst inputs should be smaller wrt the frequency of the direction inputs
     pwm_burst_20->setFrequency(150);
 
 
+    // led which notifies if the mqtt connection is well established currently
     PwmController* pwm_led = new PwmController(GPIO_NUM_35, LEDC_CHANNEL_5, LEDC_TIMER_1, false);
     pwm_led->init();
     pwm_led->setFrequency(200);
 
-    sensor.begin();
-    int new_slots[MAX_SENSORS];
-    int num = sensor.scan(new_slots);
-    ESP_LOGI(TAG, "Inizializzati %d sensori", num);
+    // initializing the temperature sensor in order to read it later
+    sensor.begin(GPIO_NUM_26);
+    int num = sensor.scan();
+    ESP_LOGI(TAG, "Initialized %d sensors", num);
 
+    // initializing wifi conenction
     Wifi_wrapper* wifi = Wifi_wrapper::getWifiInstance();
-
     wifi->wifi_init_sta(nullptr);
-
 
     int retry = 0;
     while (!wifi->isConnected() && retry < 20) {
@@ -369,12 +366,10 @@ extern "C" void app_main(void)
         ESP_LOGE(TAG, "WIFI connection failed!");
         return;
     }
-    
     ESP_LOGI(TAG, "WIFI connected!");
     
-    //wifi->destroyInstance();
 
-
+    // initializing mqtt connection
     MqttWrapper mqtt;
     mqtt.setMessageCallback(onMqttMessage);
     mqtt.mqtt_app_start(pwm_led); 
@@ -389,7 +384,6 @@ extern "C" void app_main(void)
         ESP_LOGE(TAG, "MQTT connection failed!");
         return;
     }
-    
     ESP_LOGI(TAG, "MQTT connected! System running in background...");
     
     if(!initialize_sntp()){
@@ -397,16 +391,14 @@ extern "C" void app_main(void)
     }
 
 
-
+    // initializing the fft
     FFT_ultrasonic fft;
     fft.begin(ADC_CHANNEL_6, ADC_UNIT_1, 90000, 1024); // sampling at 90 khz in order to sample signals till 45 khz, taking 900 samples, so sampling with steps of 100 hz
-    // the sampling rate should be always <= of MAX_SAMPLING_FREQUENCY
-
+    // the sampling rate should be always <= of MAX_SAMPLING_FREQUENCY (in esp32s3 is 83333 hz)
 
 
     while(1){
         check_connection(wifi, &mqtt);
-        sensor.scan(new_slots);
         float curr_temp = sensor.readTemperature(0);
 
         fft.read_and_get_data_fixed_samples();
@@ -419,10 +411,11 @@ extern "C" void app_main(void)
         vTaskDelay(pdMS_TO_TICKS(10000));
     }
 
-    delete pwm_input_40;
-    delete pwm_input_20;
-    delete pwm_burst_20;
-    delete pwm_burst_40;
-    delete pwm_led;
+    //delete pwm_input_40;
+    //delete pwm_input_20;
+    //delete pwm_burst_20;
+    //delete pwm_burst_40;
+    //delete pwm_led;
+    //wifi->destroyInstance();
     //vTaskDelete(NULL);
 }

@@ -40,8 +40,6 @@ MqttWrapper::~MqttWrapper()
     ESP_LOGI(TAG, "MQTT cleanup completed");
 }
 
-
-
 void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_t event_id, void *event_data)
 {
     ESP_LOGD(TAG, "Event dispatched from event loop base=%s, event_id=%" PRIi32, base, event_id);
@@ -116,7 +114,6 @@ int MqttWrapper::subscribe(const char* topic){
     return msg_id;
 }
 
-
 int MqttWrapper::send_message(const char* topic, const char* payload) {
     if(!_connected) {
         ESP_LOGW(TAG, "Client not connected, message not sent");
@@ -141,8 +138,6 @@ int MqttWrapper::send_message(const char* topic, const char* payload) {
     return msg_id;
 }
 
-
-
 void MqttWrapper::reconnect()
 {
     if (_connected) {
@@ -162,13 +157,6 @@ void MqttWrapper::reconnect()
         _connected = true;
     }
 }
-
-
-
-
-
-
-
 
 void MqttWrapper::mqtt_app_start(PwmController* pwm_led)
 {

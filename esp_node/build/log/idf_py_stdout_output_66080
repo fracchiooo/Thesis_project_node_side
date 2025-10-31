@@ -1,0 +1,1961 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d9c
+entry 0x403c9914
+[0;32mI (27) boot: ESP-IDF v5.2.2 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Oct 23 2025 14:43:50[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=355e0h (218592) map[0m
+[0;32mI (138) esp_image: segment 1: paddr=00045608 vaddr=3fc9b300 size=04870h ( 18544) load[0m
+[0;32mI (143) esp_image: segment 2: paddr=00049e80 vaddr=40374000 size=06198h ( 24984) load[0m
+[0;32mI (150) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=b5414h (742420) map[0m
+[0;32mI (286) esp_image: segment 4: paddr=0010543c vaddr=4037a198 size=110c4h ( 69828) load[0m
+[0;32mI (311) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (311) boot: Disabling RNG early entropy source...[0m
+[0;32mI (322) cpu_start: Multicore app[0m
+[0;32mI (332) cpu_start: Pro cpu start user code[0m
+[0;32mI (332) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (332) cpu_start: Application information:[0m
+[0;32mI (335) cpu_start: Project name:     esp_node[0m
+[0;32mI (340) cpu_start: App version:      3a8e390-dirty[0m
+[0;32mI (346) cpu_start: Compile time:     Oct 28 2025 14:03:08[0m
+[0;32mI (352) cpu_start: ELF file SHA256:  9b2cefb0b...[0m
+[0;32mI (357) cpu_start: ESP-IDF:          v5.2.2[0m
+[0;32mI (362) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (367) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (372) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (376) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (384) heap_init: At 3FCA3D50 len 000459C0 (278 KiB): RAM[0m
+[0;32mI (390) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (396) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (402) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (409) spi_flash: detected chip: gd[0m
+[0;32mI (412) spi_flash: flash io: dio[0m
+[0;33mW (416) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (430) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (436) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (444) main_task: Started on CPU0[0m
+[0;32mI (454) main_task: Calling app_main()[0m
+[0;32mI (454) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (464) PWM: PWM inizializzato: GPIO 2, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (474) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (474) PWM: PWM inizializzato: GPIO 3, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (484) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (494) PWM: PWM inizializzato: GPIO 4, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (504) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (504) PWM: PWM inizializzato: GPIO 1, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (514) PWM: Cambio frequenza: 40000 -> 150 Hz, risoluzione: 8 -> 14 bit[0m
+[0;32mI (524) PWM: Timer riconfigurato: 150 Hz, 14 bit (16384 livelli)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (534) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (544) PWM: Cambio frequenza: 40000 -> 150 Hz, risoluzione: 8 -> 14 bit[0m
+[0;32mI (554) PWM: Timer riconfigurato: 150 Hz, 14 bit (16384 livelli)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (564) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (574) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (574) PWM: PWM inizializzato: GPIO 35, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (584) PWM: Cambio frequenza: 40000 -> 200 Hz, risoluzione: 8 -> 14 bit[0m
+[0;32mI (594) PWM: Timer riconfigurato: 200 Hz, 14 bit (16384 livelli)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (604) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (614) gpio: GPIO[26]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (624) gpio: GPIO[26]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (624) Temperature sensor: Bus initialized on GPIO 26[0m
+[0;32mI (744) Temperature sensor: Slot 0: BA00000046755428[0m
+[0;32mI (744) Temperature sensor: Found 1 new temperature sensors (total 1)[0m
+[0;32mI (744) MAIN: Initialized 1 sensors[0m
+[0;32mI (744) wifi: Passed a null ptr as pwm_led, the led will not be used[0m
+[0;32mI (784) wifi: ESP_WIFI_MODE_STA[0m
+[0;32mI (784) pp: pp rom version: e7ae62f[0m
+[0;32mI (784) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (794) wifi:wifi driver task: 3fcb15b0, prio:23, stack:6656, core=0[0m
+[0;32mI (804) wifi:wifi firmware version: 3e0076f[0m
+[0;32mI (804) wifi:wifi certification version: v7.0[0m
+[0;32mI (804) wifi:config NVS flash: enabled[0m
+[0;32mI (804) wifi:config nano formating: disabled[0m
+[0;32mI (814) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (814) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (814) wifi:Init management short buffer num: 32[0m
+[0;32mI (824) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (824) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (834) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (834) wifi:Init static rx buffer num: 10[0m
+[0;32mI (844) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (844) wifi_init: rx ba win: 6[0m
+[0;32mI (844) wifi_init: tcpip mbox: 32[0m
+[0;32mI (854) wifi_init: udp mbox: 6[0m
+[0;32mI (854) wifi_init: tcp mbox: 6[0m
+[0;32mI (854) wifi_init: tcp tx win: 5760[0m
+[0;32mI (864) wifi_init: tcp rx win: 5760[0m
+[0;32mI (864) wifi_init: tcp mss: 1440[0m
+[0;32mI (874) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (874) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (884) phy_init: phy_version 670,b7bc9b9,Apr 30 2024,10:54:13[0m
+[0;32mI (924) wifi:mode : sta (10:20:ba:66:2e:94)[0m
+[0;32mI (924) wifi:enable tsf[0m
+[0;32mI (934) wifi: wifi_init_sta finished.[0m
+[0;32mI (944) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (944) wifi:state: init -> auth (b0)[0m
+[0;32mI (1944) wifi:state: auth -> init (200)[0m
+[0;32mI (1944) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (1944) wifi: retry to connect to the AP[0m
+[0;32mI (1944) wifi: connect to the AP fail[0m
+[0;32mI (4354) wifi: retry to connect to the AP[0m
+[0;32mI (4354) wifi: connect to the AP fail[0m
+[0;32mI (4364) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (4364) wifi:state: init -> auth (b0)[0m
+[0;32mI (4364) wifi:state: auth -> assoc (0)[0m
+[0;32mI (4394) wifi:state: assoc -> run (10)[0m
+[0;32mI (4414) wifi:connected with Oneplus, aid = 2, channel 6, BW20, bssid = ba:7e:6d:57:2c:9d[0m
+[0;32mI (4414) wifi:security: WPA2-PSK, phy: bgn, rssi: -31[0m
+[0;32mI (4424) wifi:pm start, type: 1[0m
+
+[0;32mI (4424) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (4424) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (4474) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (4474) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (4514) wifi:<ba-add>idx:0 (ifx:0, ba:7e:6d:57:2c:9d), tid:0, ssn:1, winSize:64[0m
+[0;32mI (5434) esp_netif_handlers: sta ip: 10.94.143.18, mask: 255.255.255.0, gw: 10.94.143.195[0m
+[0;32mI (5434) wifi: got ip:10.94.143.18[0m
+[0;32mI (5434) wifi: DNS servers configured[0m
+[0;32mI (5434) DNS: DNS servers configured[0m
+[0;32mI (5444) wifi: connected to ap SSID:Oneplus[0m
+[0;32mI (5444) MAIN: WIFI connected![0m
+[0;32mI (5454) mqtts: MqttWrapper created with client_id: 1020BA662E94[0m
+[0;32mI (5454) mqtts: [APP] Free memory: 262620 bytes[0m
+[0;32mI (5464) mqtts: Other event id:7[0m
+[0;32mI (7454) mqtts: MQTT_EVENT_CONNECTED[0m
+Imposto duty: 3277 / 16384 (risoluzione: 14 bit)
+[0;32mI (7454) PWM: Hardware PWM duty: 20.00% richiesto -> 20.00% effettivo (3277/16384)[0m
+[0;32mI (7464) mqtts: Subscribed to 1020BA662E94/downlink, msg_id=20202[0m
+[0;32mI (7464) MAIN: MQTT connected! System running in background...[0m
+[0;32mI (7474) MAIN: Initializing SNTP[0m
+[0;32mI (7474) MAIN: Waiting for time sync... (1/20)[0m
+[0;32mI (7504) mqtts: MQTT_EVENT_SUBSCRIBED, msg_id=20202[0m
+[0;32mI (8474) MAIN: Waiting for time sync... (2/20)[0m
+[0;32mI (9474) MAIN: Waiting for time sync... (3/20)[0m
+[0;32mI (10474) MAIN: Waiting for time sync... (4/20)[0m
+[0;32mI (11474) MAIN: Time synchronized: Fri Oct 31 16:04:52 2025
+[0m
+[0;32mI (11474) FFT: sampling rate too high, the maximum sampling rate will be used: 83333[0m
+[0;32mI (11474) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;33mW (15544) Temperature sensor: Error in reading temperature data from the bus, trying to reinit the bus and re-reading the temperature[0m
+[0;33mW (15544) Temperature sensor: Bus reinitialization...[0m
+[0;32mI (15554) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (15554) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (15664) gpio: GPIO[26]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (15664) gpio: GPIO[26]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (15664) Temperature sensor: Bus reinitialized[0m
+[0;32mI (16494) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (16724) FFT: Signal too weak (magnitude: 0.85 < 20.00 mV)[0m
+[0;32mI (16724) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=4603[0m
+[0;32mI (16724) MAIN: MQTT message sent![0m
+[0;32mI (17694) mqtts: MQTT_EVENT_PUBLISHED, msg_id=4603[0m
+[0;33mW (30774) Temperature sensor: Error in reading temperature data from the bus, trying to reinit the bus and re-reading the temperature[0m
+[0;33mW (30774) Temperature sensor: Bus reinitialization...[0m
+[0;32mI (30784) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (30784) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (30894) gpio: GPIO[26]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (30894) gpio: GPIO[26]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (30894) Temperature sensor: Bus reinitialized[0m
+[0;32mI (31724) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (31944) FFT: Signal too weak (magnitude: 0.61 < 20.00 mV)[0m
+[0;32mI (31944) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=27022[0m
+[0;32mI (31944) MAIN: MQTT message sent![0m
+[0;32mI (33054) mqtts: MQTT_EVENT_PUBLISHED, msg_id=27022[0m
+[0;33mW (45994) Temperature sensor: Error in reading temperature data from the bus, trying to reinit the bus and re-reading the temperature[0m
+[0;33mW (45994) Temperature sensor: Bus reinitialization...[0m
+[0;32mI (46004) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (46004) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (46114) gpio: GPIO[26]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (46114) gpio: GPIO[26]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (46114) Temperature sensor: Bus reinitialized[0m
+[0;32mI (46944) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (47164) FFT: Signal too weak (magnitude: 0.66 < 20.00 mV)[0m
+[0;32mI (47164) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=46255[0m
+[0;32mI (47164) MAIN: MQTT message sent![0m
+[0;32mI (47594) mqtts: MQTT_EVENT_PUBLISHED, msg_id=46255[0m
+[0;31mE (58164) 1-wire.rmt: onewire_bus_rmt_reset(419): 1-wire reset pulse receive timeout[0m
+[0;31mE (58164) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58164) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58174) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58174) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58184) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58194) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58204) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58204) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58214) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58224) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58234) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58234) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58244) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58254) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58264) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58264) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58274) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58284) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58284) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58294) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58304) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58314) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58314) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58324) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58334) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58334) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58344) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58354) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58364) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58364) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58374) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58384) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58394) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58394) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58404) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58414) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58424) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58424) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58434) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58444) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58454) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58454) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58464) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58474) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58484) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58484) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58494) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58504) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58504) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58514) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58524) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58534) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58534) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58544) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58554) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58554) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58564) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58574) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58584) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58584) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58594) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58604) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58614) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58614) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58624) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58634) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58644) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58644) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58654) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58664) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58674) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58674) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58684) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58694) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58704) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58704) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58714) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58724) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58724) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58734) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58744) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58754) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58754) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58764) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58774) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58784) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58784) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58794) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58804) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58804) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58814) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58824) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58834) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58834) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58844) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58854) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58864) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58864) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58874) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58884) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58894) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58894) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58904) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58914) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58924) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58924) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58934) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58944) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58944) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58954) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58964) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58974) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58974) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (58984) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (58994) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59004) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59004) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59014) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59024) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59024) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59034) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59044) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59054) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59054) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59064) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59074) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59084) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59084) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59094) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59104) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59114) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59114) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59124) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59134) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59144) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59144) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59154) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59164) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59164) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59174) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59184) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59194) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59194) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59204) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59214) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59224) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59224) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59234) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59244) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59244) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59254) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59264) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59274) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59274) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59284) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59294) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59304) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59304) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59314) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59324) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59334) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59334) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59344) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59354) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59364) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59364) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59374) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59384) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59384) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59394) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59404) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59414) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59414) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59424) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59434) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59444) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59444) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59454) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59464) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59464) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59474) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59484) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59494) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59494) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59504) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59514) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59524) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59524) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59534) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59544) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59554) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59554) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59564) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59574) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59584) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59584) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59594) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59604) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59614) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59614) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59624) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59634) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59634) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59644) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59654) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59664) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59664) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59674) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59684) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59684) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59694) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59704) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59714) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59714) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59724) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59734) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59744) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59744) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59754) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59764) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59774) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59774) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59784) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59794) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59804) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59804) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59814) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59824) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59834) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59834) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59844) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59854) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59854) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59864) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59874) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59884) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59884) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59894) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59904) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59904) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59914) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59924) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59934) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59934) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59944) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59954) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59964) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59964) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59974) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59984) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (59994) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (59994) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60004) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60014) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60024) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60024) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60034) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60044) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60054) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60054) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60064) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60074) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60074) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60084) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60094) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60104) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60104) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60114) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60124) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60124) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60134) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60144) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60154) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60154) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60164) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60174) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60184) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60184) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60194) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60204) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60214) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60214) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60224) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60234) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60244) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60244) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60254) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60264) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60274) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60274) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60284) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60294) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60294) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60304) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60314) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60324) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60324) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60334) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60344) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60344) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60354) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60364) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60374) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60374) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60384) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60394) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60404) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60404) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60414) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60424) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60434) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60434) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60444) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60454) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60464) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60464) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60474) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60484) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60494) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60494) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60504) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60514) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60514) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60524) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60534) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60544) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60544) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60554) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60564) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60564) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60574) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60584) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60594) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60594) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60604) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60614) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60624) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60624) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60634) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60644) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60654) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60654) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60664) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60674) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60684) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60684) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60694) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60704) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60714) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60714) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60724) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60734) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60734) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60744) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60754) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60764) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60764) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60774) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60784) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60784) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60794) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60804) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60814) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60814) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60824) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60834) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60844) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60844) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60854) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60864) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60874) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60874) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60884) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60894) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60904) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60904) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60914) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60924) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60934) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60934) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60944) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60954) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60954) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60964) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60974) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60984) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (60984) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (60994) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61004) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61004) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61014) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61024) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61034) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61034) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61044) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61054) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61064) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61064) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61074) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61084) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61094) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61094) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61104) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61114) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61124) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61124) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61134) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61144) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61154) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61154) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61164) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61174) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61174) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61184) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61194) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61204) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61204) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61214) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61224) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61224) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61234) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61244) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61254) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61254) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61264) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61274) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61284) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61284) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61294) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61304) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61314) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61314) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61324) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61334) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61344) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61344) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61354) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61364) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61374) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61374) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61384) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61394) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61394) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61404) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61414) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61424) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61424) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61434) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61444) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61444) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61454) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61464) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61474) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61474) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61484) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61494) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61504) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61504) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61514) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61524) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61534) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61534) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61544) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61554) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61564) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61564) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61574) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61584) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61594) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61594) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61604) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61614) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61614) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61624) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61634) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61644) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61644) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61654) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61664) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61664) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61674) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61684) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61694) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61694) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61704) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61714) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61724) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61724) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61734) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61744) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61754) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61754) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61764) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61774) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61784) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61784) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61794) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61804) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61814) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61814) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61824) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61834) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61834) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61844) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61854) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61864) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61864) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61874) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61884) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61884) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61894) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61904) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61914) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61914) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61924) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61934) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61944) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61944) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61954) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61964) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61974) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61974) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (61984) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (61994) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62004) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62004) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62014) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62024) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62034) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62034) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62044) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62054) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62054) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62064) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62074) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62084) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62084) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62094) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62104) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62104) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62114) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62124) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62134) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62134) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62144) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62154) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62164) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62164) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62174) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62184) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62194) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62194) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62204) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62214) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62224) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62224) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62234) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62244) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62254) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62254) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62264) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62274) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62274) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62284) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62294) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62304) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62304) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62314) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62324) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62324) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62334) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62344) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62354) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62354) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62364) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62374) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62384) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62384) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62394) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62404) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62414) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62414) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62424) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62434) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62444) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62444) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62454) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62464) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62474) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62474) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62484) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62494) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62494) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62504) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62514) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62524) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62524) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62534) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62544) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62544) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62554) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62564) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62574) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62574) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62584) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62594) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62604) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62604) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62614) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62624) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62634) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62634) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62644) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62654) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62664) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62664) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62674) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62684) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62694) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62694) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62704) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62714) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62714) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62724) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62734) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62744) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62744) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62754) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62764) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62764) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62774) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62784) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62794) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62794) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62804) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62814) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62824) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62824) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62834) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62844) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62854) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62854) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62864) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62874) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62884) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62884) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62894) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62904) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62914) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62914) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62924) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62934) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62934) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62944) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62954) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62964) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62964) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62974) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62984) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (62984) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (62994) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63004) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63014) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63014) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63024) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63034) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63044) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63044) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63054) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63064) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63074) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63074) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63084) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63094) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63104) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63104) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63114) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63124) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63134) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63134) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63144) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63154) 1-wire.rmt: onewire_bus[0;31mE (63154) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (63154) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (63154) task_wdt: Tasks currently running:[0m
+[0;31mE (63154) task_wdt: CPU 0: main[0m
+[0;31mE (63154) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (63154) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x42018B47:0x3FC9D4B0 0x42018F64:0x3FC9D4D0 0x40377845:0x3FC9D500 0x4200A0A1:0x3FCAA1A0 0x4200AFB3:0x3FCAA1D0 0x42009AA5:0x3FCAA1F0 0x4200917E:0x3FCAA210 0x420968C6:0x3FCAA230 0x42095D35:0x3FCAA250 0x42095D92:0x3FCAA270 0x420963D1:0x3FCAA2A0 0x420A764B:0x3FCAA2D0 0x420A700E:0x3FCAA2F0 0x4209693D:0x3FCAA610 0x420B53A9:0x3FCAA640 0x403857A9:0x3FCAA670 0x4200CE7D:0x3FCAA6C0 0x4200C8BC:0x3FCAA700 0x4200C6B5:0x3FCAA730 0x4200C7D9:0x3FCAA780 0x4200BA1A:0x3FCAA7C0 0x420B44A7:0x3FCAA820 0x4037ED1D:0x3FCAA850
+
+_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63234) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63244) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63254) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63254) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63264) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63274) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63284) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63284) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63294) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63304) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63314) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63314) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63324) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63334) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63344) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63344) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63354) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63364) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63374) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63374) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63384) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63394) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63404) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63404) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63414) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63424) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63424) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63434) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63444) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63454) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63454) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63464) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63474) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63474) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63484) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63494) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63504) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63504) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63514) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63524) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63534) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63534) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63544) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63554) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63564) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63564) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63574) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63584) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63594) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63594) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63604) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63614) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63624) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63624) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63634) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63644) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63644) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63654) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63664) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63674) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63674) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63684) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63694) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63694) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63704) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63714) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63724) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63724) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63734) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63744) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63754) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63754) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63764) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63774) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63784) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63784) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63794) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63804) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63814) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63814) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63824) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63834) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63844) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63844) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63854) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63864) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63864) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63874) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63884) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63894) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63894) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63904) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63914) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63914) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63924) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63934) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63944) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63944) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63954) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63964) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63974) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63974) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (63984) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (63994) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64004) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64004) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64014) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64024) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64034) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64034) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64044) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64054) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64064) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64064) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64074) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64084) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64084) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64094) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64104) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64114) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64114) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64124) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64134) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64134) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64144) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64154) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64164) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64164) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64174) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64184) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64194) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64194) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64204) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64214) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64224) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64224) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64234) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64244) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64254) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64254) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64264) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64274) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64284) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64284) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64294) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64304) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64304) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64314) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64324) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64334) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64334) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64344) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64354) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64354) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64364) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64374) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64384) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64384) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64394) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64404) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64414) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64414) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64424) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64434) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64444) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64444) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64454) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64464) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64474) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64474) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64484) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64494) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64504) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64504) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64514) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64524) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64524) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64534) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64544) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64554) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64554) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64564) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64574) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64574) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64584) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64594) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64604) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64604) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64614) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64624) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64634) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64634) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64644) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64654) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64664) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64664) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64674) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64684) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64694) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64694) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64704) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64714) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64724) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64724) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64734) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64744) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64744) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64754) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64764) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64774) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64774) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64784) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64794) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64794) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64804) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64814) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64824) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64824) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64834) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64844) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64854) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64854) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64864) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64874) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64884) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64884) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64894) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64904) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64914) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64914) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64924) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64934) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64944) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64944) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64954) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64964) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64964) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64974) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64984) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (64994) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (64994) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65004) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65014) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65014) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65024) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65034) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65044) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65044) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65054) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65064) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65074) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65074) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65084) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65094) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65104) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65104) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65114) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65124) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65134) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65134) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65144) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65154) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65164) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65164) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65174) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65184) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65184) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65194) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65204) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65214) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65214) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65224) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65234) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65234) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65244) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65254) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65264) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65264) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65274) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65284) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65294) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65294) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65304) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65314) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65324) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65324) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65334) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65344) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65354) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65354) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65364) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65374) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65384) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65384) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65394) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65404) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65404) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65414) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65424) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65434) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65434) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65444) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65454) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65454) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65464) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65474) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65484) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65484) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65494) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65504) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65514) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65514) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65524) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65534) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65544) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65544) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65554) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65564) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65574) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65574) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65584) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65594) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65604) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65604) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65614) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65624) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65624) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65634) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65644) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65654) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65654) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65664) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65674) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65684) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65684) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65694) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65704) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65704) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65714) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65724) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65734) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65734) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65744) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65754) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65764) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65764) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65774) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65784) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65794) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65794) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65804) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65814) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65824) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65824) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65834) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65844) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65844) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65854) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65864) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65874) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65874) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65884) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65894) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65904) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65904) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65914) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65924) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65924) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65934) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65944) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65954) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65954) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65964) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65974) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65984) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (65984) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (65994) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66004) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66014) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66014) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66024) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66034) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66044) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66044) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66054) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66064) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66064) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66074) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66084) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66094) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66094) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66104) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66114) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66124) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66124) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66134) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66144) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66144) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66154) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66164) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66174) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66174) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66184) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66194) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66204) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66204) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66214) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66224) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66234) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66234) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66244) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66254) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66264) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66264) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66274) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66284) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66294) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66294) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66304) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66314) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66314) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66324) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66334) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66344) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66344) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66354) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66364) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66364) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66374) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66384) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66394) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66394) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66404) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66414) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66424) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66424) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66434) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66444) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66454) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66454) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66464) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66474) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66484) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66484) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66494) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66504) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66514) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66514) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66524) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66534) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66534) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66544) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66554) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66564) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66564) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66574) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66584) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66584) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66594) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66604) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66614) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66614) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66624) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66634) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66644) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66644) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66654) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66664) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66674) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66674) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66684) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66694) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66704) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66704) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66714) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66724) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66734) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66734) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66744) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66754) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66754) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66764) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66774) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66784) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66784) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66794) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66804) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66804) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66814) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66824) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66834) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66834) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66844) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66854) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66864) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66864) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66874) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66884) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66894) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66894) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66904) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66914) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66924) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66924) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66934) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66944) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66954) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66954) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66964) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66974) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66974) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (66984) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (66994) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67004) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67004) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67014) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67024) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67024) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67034) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67044) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67054) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67054) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67064) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67074) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67084) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67084) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67094) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67104) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67114) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67114) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67124) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67134) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67144) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67144) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67154) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67164) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67174) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67174) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67184) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67194) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67194) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67204) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67214) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67224) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67224) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67234) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67244) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67244) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67254) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67264) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67274) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67274) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67284) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67294) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67304) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67304) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67314) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67324) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67334) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67334) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67344) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67354) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67364) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67364) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67374) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67384) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67394) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67394) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67404) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67414) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67414) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67424) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67434) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67444) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67444) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67454) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67464) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67464) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67474) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67484) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67494) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67494) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67504) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67514) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67524) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67524) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67534) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67544) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67554) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67554) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67564) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67574) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67584) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67584) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67594) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67604) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67614) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67614) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67624) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67634) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67634) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67644) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67654) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67664) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67664) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67674) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67684) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67684) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67694) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67704) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67714) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67714) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67724) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67734) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67744) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67744) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67754) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67764) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67774) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67774) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67784) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67794) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67804) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67804) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67814) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67824) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67834) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67834) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67844) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67854) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67854) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67864) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67874) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67884) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67884) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67894) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67904) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67904) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67914) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67924) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67934) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67934) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67944) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67954) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67964) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67964) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67974) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67984) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (67994) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (67994) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68004) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68014) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68024) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68024) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68034) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68044) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68054) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68054) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68064) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68074) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68074) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68084) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68094) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68104) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68104) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68114) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68124) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68124) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68134) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68144) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68154) rmt: rm[0;31mE (68154) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (68154) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (68154) task_wdt: Tasks currently running:[0m
+[0;31mE (68154) task_wdt: CPU 0: main[0m
+[0;31mE (68154) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (68154) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x42018B47:0x3FC9D4B0 0x42018F64:0x3FC9D4D0 0x40377845:0x3FC9D500 0x40048838:0x3FCAA530 0x40048C69:0x3FCAA550 0x40043D03:0x3FCAA570 0x40043CD5:0x3FCAA590 0x40044131:0x3FCAA5B0 0x40044281:0x3FCAA630 0x4201668E:0x3FCAA680 0x4200CE58:0x3FCAA6C0 0x4200C8BC:0x3FCAA700 0x4200C6B5:0x3FCAA730 0x4200C7D9:0x3FCAA780 0x4200BA1A:0x3FCAA7C0 0x420B44A7:0x3FCAA820 0x4037ED1D:0x3FCAA850
+
+t_receive(382): channel not in enable state[0m
+[0;31mE (68224) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68234) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68244) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68244) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68254) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68264) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68274) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68274) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68284) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68294) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68294) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68304) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68314) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68324) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68324) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68334) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68344) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68354) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68354) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68364) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68374) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68384) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68384) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68394) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68404) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68414) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68414) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68424) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68434) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68444) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68444) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68454) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68464) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68464) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68474) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68484) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68494) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68494) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68504) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68514) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68514) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68524) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68534) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68544) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68544) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68554) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68564) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68574) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68574) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68584) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68594) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68604) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68604) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68614) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68624) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68634) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68634) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68644) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68654) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68664) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68664) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68674) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68684) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68684) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68694) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68704) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68714) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68714) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68724) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68734) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68744) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68744) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68754) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68764) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68764) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68774) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68784) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68794) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68794) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68804) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68814) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68824) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68824) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68834) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68844) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68854) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68854) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68864) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68874) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68884) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68884) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68894) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68904) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68904) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68914) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68924) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68934) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68934) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68944) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68954) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68964) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68964) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68974) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68984) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (68984) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (68994) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (69004) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (69014) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (69014) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (69024) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (69034) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (69044) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (69044) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (69054) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (69064) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (69074) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (69074) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (69084) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (69094) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (69104) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (69104) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (69114) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (69124) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (69124) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (69134) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (69144) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (69154) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (69154) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (69164) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (69174) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (69184) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (69184) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (69194) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (69204) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (69204) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (69214) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (69224) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (69234) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (69234) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (69244) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (69254) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (69264) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (69264) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (69274) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (69284) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (69294) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (69294) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (69304) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (69314) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (69324) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (69324) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (69334) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (69344) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+[0;31mE (69354) rmt: rmt_receive(382): channel not in enable state[0m
+[0;31mE (69354) 1-wire.rmt: onewire_bus_rmt_reset(412): 1-wire reset pulse receive failed[0m
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: user buffer too small, received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+[0;31mE (70184) rmt: rmt_receive(382): channel not in enable state[0m
+E rmt: user buffer too small, received symbols truncated
+[0;31mE (70184) 1-wire.rmt: onewire_bus_rmt_read_bytes(462): 1-wire data receive failed[0m
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: user buffer too small, received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+[0;31mE (71014) rmt: rmt_receive(382): channel not in enable state[0m
+E rmt: user buffer too small, received symbols truncated
+[0;31mE (71014) 1-wire.rmt: onewire_bus_rmt_read_bytes(462): 1-wire data receive failed[0m
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: user buffer too small, received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+[0;31mE (71844) rmt: rmt_receive(382): channel not in enable state[0m
+E rmt: user buffer too small, received symbols truncated
+[0;31mE (71844) 1-wire.rmt: onewire_bus_rmt_read_bytes(462): 1-wire data receive failed[0m
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: user buffer too small, received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+[0;31mE (72674) rmt: rmt_receive(382): channel not in enable state[0m
+E rmt: user buffer too small, received symbols truncated
+[0;31mE (72674) 1-wire.rmt: onewire_bus_rmt_read_bytes(462): 1-wire data receive failed[0m
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: user buffer too small, received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+[0;31mE (73504) rmt: rmt_receive(382): channel not in enable state[0m
+E rmt: user buffer too small, received symbols truncated
+[0;31mE (73504) 1-wire.rmt: onewire_bus_rmt_read_bytes(462): 1-wire data receive failed[0m
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: user buffer too small, received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+[0;31mE (74334) rmt: rmt_receive(382): channel not in enable state[0m
+E rmt: user buffer too small, received symbols truncated
+[0;31mE (74334) 1-wire.rmt: onewire_bus_rmt_read_bytes(462): 1-wire data receive failed[0m
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: user buffer too small, received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+[0;31mE (75174) rmt: rmt_receive(382): channel not in enable state[0m
+E rmt: user buffer too small, received symbols truncated
+[0;31mE (75174) 1-wire.rmt: onewire_bus_rmt_read_bytes(462): 1-wire data receive failed[0m
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: user buffer too small, received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+[0;31mE (76004) rmt: rmt_receive(382): channel not in enable state[0m
+E rmt: user buffer too small, received symbols truncated
+[0;31mE (76004) 1-wire.rmt: onewire_bus_rmt_read_bytes(462): 1-wire data receive failed[0m
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: user buffer too small, received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+[0;31mE (76834) rmt: rmt_receive(382): channel not in enable state[0m
+E rmt: user buffer too small, received symbols truncated
+[0;31mE (76834) 1-wire.rmt: onewire_bus_rmt_read_bytes(462): 1-wire data receive failed[0m
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: user buffer too small, received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+[0;31mE (77674) rmt: rmt_receive(382): channel not in enable state[0m
+E rmt: user buffer too small, received symbols truncated
+[0;31mE (77674) 1-wire.rmt: onewire_bus_rmt_read_bytes(462): 1-wire data receive failed[0m
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: user buffer too small, received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+[0;31mE (78504) rmt: rmt_receive(382): channel not in enable state[0m
+E rmt: user buffer too small, received symbols truncated
+[0;31mE (78504) 1-wire.rmt: onewire_bus_rmt_read_bytes(462): 1-wire data receive failed[0m
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: user buffer too small, received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+[0;31mE (79334) rmt: rmt_receive(382): channel not in enable state[0m
+E rmt: user buffer too small, received symbols truncated
+[0;31mE (79334) 1-wire.rmt: onewire_bus_rmt_read_bytes(462): 1-wire data receive failed[0m
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: user buffer too small, received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+[0;31mE (80164) rmt: rmt_receive(382): channel not in enable state[0m
+E rmt: user buffer too small, received symbols truncated
+[0;31mE (80164) 1-wire.rmt: onewire_bus_rmt_read_bytes(462): 1-wire data receive failed[0m
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: user buffer too small, received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+[0;31mE (80994) rmt: rmt_receive(382): channel not in enable state[0m
+E rmt: user buffer too small, received symbols truncated
+[0;31mE (80994) 1-wire.rmt: onewire_bus_rmt_read_bytes(462): 1-wire data receive failed[0m
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: user buffer too small, received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+[0;31mE (81824) rmt: rmt_receive(382): channel not in enable state[0m
+E rmt: user buffer too small, received symbols truncated
+[0;31mE (81824) 1-wire.rmt: onewire_bus_rmt_read_bytes(462): 1-wire data receive failed[0m
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: user buffer too small, received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+[0;31mE (82654) rmt: rmt_receive(382): channel not in enable state[0m
+E rmt: user buffer too small, received symbols truncated
+[0;31mE (82654) 1-wire.rmt: onewire_bus_rmt_read_bytes(462): 1-wire data receive failed[0m
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: user buffer too small, received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+[0;31mE (83484) rmt: rmt_receive(382): channel not in enable state[0m
+E rmt: user buffer too small, received symbols truncated
+[0;31mE (83484) 1-wire.rmt: onewire_bus_rmt_read_bytes(462): 1-wire data receive failed[0m
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: user buffer too small, received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+[0;31mE (84314) rmt: rmt_receive(382): channel not in enable state[0m
+E rmt: user buffer too small, received symbols truncated
+[0;31mE (84314) 1-wire.rmt: onewire_bus_rmt_read_bytes(462): 1-wire data receive failed[0m
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: user buffer too small, received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+[0;31mE (85144) rmt: rmt_receive(382): channel not in enable state[0m
+E rmt: user buffer too small, received symbols truncated
+[0;31mE (85144) 1-wire.rmt: onewire_bus_rmt_read_bytes(462): 1-wire data receive failed[0m
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: user buffer too small, received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+[0;31mE (85974) rmt: rmt_receive(382): channel not in enable state[0m
+E rmt: user buffer too small, received symbols truncated
+[0;31mE (85974) 1-wire.rmt: onewire_bus_rmt_read_bytes(462): 1-wire data receive failed[0m
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: user buffer too small, received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+[0;31mE (86804) rmt: rmt_receive(382): channel not in enable state[0m
+E rmt: user buffer too small, received symbols truncated
+[0;31mE (86804) 1-wire.rmt: onewire_bus_rmt_read_bytes(462): 1-wire data receive failed[0m
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: received symbols truncated
+E rmt: user buffer too small, received symbols truncated

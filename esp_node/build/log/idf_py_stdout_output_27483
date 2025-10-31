@@ -1,0 +1,208 @@
+�����42000020 size=b5414h �ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d9c
+entry 0x403c9914
+[0;32mI (27) boot: ESP-IDF v5.2.2 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Oct 23 2025 14:43:50[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=355e0h (218592) map[0m
+[0;32mI (138) esp_image: segment 1: paddr=00045608 vaddr=3fc9b300 size=04870h ( 18544) load[0m
+[0;32mI (143) esp_image: segment 2: paddr=00049e80 vaddr=40374000 size=06198h ( 24984) load[0m
+[0;32mI (150) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=b5414h (742420) map[0m
+[0;32mI (286) esp_image: segment 4: paddr=0010543c vaddr=4037a198 size=110c4h ( 69828) load[0m
+[0;32mI (311) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (311) boot: Disabling RNG early entropy source...[0m
+[0;32mI (322) cpu_start: Multicore app[0m
+[0;32mI (332) cpu_start: Pro cpu start user code[0m
+[0;32mI (332) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (332) cpu_start: Application information:[0m
+[0;32mI (335) cpu_start: Project name:     esp_node[0m
+[0;32mI (340) cpu_start: App version:      3a8e390-dirty[0m
+[0;32mI (346) cpu_start: Compile time:     Oct 28 2025 14:03:08[0m
+[0;32mI (352) cpu_start: ELF file SHA256:  d9121d33c...[0m
+[0;32mI (357) cpu_start: ESP-IDF:          v5.2.2[0m
+[0;32mI (362) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (367) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (372) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (376) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (384) heap_init: At 3FCA3D50 len 000459C0 (278 KiB): RAM[0m
+[0;32mI (390) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (396) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (402) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (409) spi_flash: detected chip: gd[0m
+[0;32mI (412) spi_flash: flash io: dio[0m
+[0;33mW (416) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (430) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (436) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (444) main_task: Started on CPU0[0m
+[0;32mI (454) main_task: Calling app_main()[0m
+[0;32mI (454) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (464) PWM: PWM inizializzato: GPIO 2, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (474) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (474) PWM: PWM inizializzato: GPIO 3, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (484) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (494) PWM: PWM inizializzato: GPIO 4, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (504) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (504) PWM: PWM inizializzato: GPIO 1, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (514) PWM: Cambio frequenza: 40000 -> 150 Hz, risoluzione: 8 -> 14 bit[0m
+[0;32mI (524) PWM: Timer riconfigurato: 150 Hz, 14 bit (16384 livelli)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (534) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (544) PWM: Cambio frequenza: 40000 -> 150 Hz, risoluzione: 8 -> 14 bit[0m
+[0;32mI (554) PWM: Timer riconfigurato: 150 Hz, 14 bit (16384 livelli)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (564) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (574) PWM: Risoluzione ottimale calcolata: 8 bit per frequenza 40000 Hz[0m
+[0;32mI (574) PWM: PWM inizializzato: GPIO 35, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (584) PWM: Cambio frequenza: 40000 -> 200 Hz, risoluzione: 8 -> 14 bit[0m
+[0;32mI (594) PWM: Timer riconfigurato: 200 Hz, 14 bit (16384 livelli)[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (604) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (614) gpio: GPIO[26]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (624) gpio: GPIO[26]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (624) Temperature sensor: Bus initialized on GPIO 26[0m
+[0;32mI (744) Temperature sensor: Slot 0: BA00000046755428[0m
+[0;32mI (744) Temperature sensor: Found 1 new temperature sensors (total 1)[0m
+[0;32mI (744) MAIN: Initialized 1 sensors[0m
+[0;32mI (744) wifi: Passed a null ptr as pwm_led, the led will not be used[0m
+[0;32mI (784) wifi: ESP_WIFI_MODE_STA[0m
+[0;32mI (784) pp: pp rom version: e7ae62f[0m
+[0;32mI (784) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (794) wifi:wifi driver task: 3fcb15b0, prio:23, stack:6656, core=0[0m
+[0;32mI (804) wifi:wifi firmware version: 3e0076f[0m
+[0;32mI (804) wifi:wifi certification version: v7.0[0m
+[0;32mI (804) wifi:config NVS flash: enabled[0m
+[0;32mI (804) wifi:config nano formating: disabled[0m
+[0;32mI (814) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (814) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (814) wifi:Init management short buffer num: 32[0m
+[0;32mI (824) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (824) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (834) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (834) wifi:Init static rx buffer num: 10[0m
+[0;32mI (844) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (844) wifi_init: rx ba win: 6[0m
+[0;32mI (844) wifi_init: tcpip mbox: 32[0m
+[0;32mI (854) wifi_init: udp mbox: 6[0m
+[0;32mI (854) wifi_init: tcp mbox: 6[0m
+[0;32mI (854) wifi_init: tcp tx win: 5760[0m
+[0;32mI (864) wifi_init: tcp rx win: 5760[0m
+[0;32mI (864) wifi_init: tcp mss: 1440[0m
+[0;32mI (874) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (874) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (884) phy_init: phy_version 670,b7bc9b9,Apr 30 2024,10:54:13[0m
+[0;32mI (934) wifi:mode : sta (10:20:ba:66:2e:94)[0m
+[0;32mI (934) wifi:enable tsf[0m
+[0;32mI (934) wifi: wifi_init_sta finished.[0m
+[0;32mI (3344) wifi: retry to connect to the AP[0m
+[0;32mI (3344) wifi: connect to the AP fail[0m
+[0;32mI (3464) wifi:new:<1,1>, old:<1,0>, ap:<255,255>, sta:<1,1>, prof:1[0m
+[0;32mI (3474) wifi:state: init -> auth (b0)[0m
+[0;32mI (3474) wifi:state: auth -> assoc (0)[0m
+[0;32mI (3504) wifi:state: assoc -> run (10)[0m
+[0;32mI (3524) wifi:connected with Oneplus, aid = 1, channel 1, 40U, bssid = ba:7e:6d:57:2c:9d[0m
+[0;32mI (3524) wifi:security: WPA2-PSK, phy: bgn, rssi: -34[0m
+[0;32mI (3554) wifi:pm start, type: 1[0m
+
+[0;32mI (3554) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3554) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (3564) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (3564) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (3584) wifi:<ba-add>idx:0 (ifx:0, ba:7e:6d:57:2c:9d), tid:0, ssn:0, winSize:64[0m
+[0;32mI (9594) wifi:bcn_timeout,ap_probe_send_start[0m
+[0;32mI (12104) wifi:ap_probe_send over, resett wifi status to disassoc[0m
+[0;32mI (12104) wifi:state: run -> init (c800)[0m
+[0;32mI (12104) wifi:pm stop, total sleep time: 0 us / 8549520 us[0m
+
+[0;32mI (12104) wifi:<ba-del>idx:0, tid:0[0m
+[0;32mI (12104) wifi:new:<1,0>, old:<1,1>, ap:<255,255>, sta:<1,1>, prof:1[0m
+[0;32mI (12114) wifi: retry to connect to the AP[0m
+[0;32mI (12114) wifi: connect to the AP fail[0m
+[0;32mI (14524) wifi: retry to connect to the AP[0m
+[0;32mI (14524) wifi: connect to the AP fail[0m
+[0;32mI (14534) wifi:new:<1,1>, old:<1,0>, ap:<255,255>, sta:<1,1>, prof:1[0m
+[0;32mI (14534) wifi:state: init -> auth (b0)[0m
+[0;32mI (14534) wifi:state: auth -> assoc (0)[0m
+[0;32mI (14564) wifi:state: assoc -> run (10)[0m
+[0;32mI (14584) wifi:connected with Oneplus, aid = 2, channel 1, 40U, bssid = ba:7e:6d:57:2c:9d[0m
+[0;32mI (14584) wifi:security: WPA2-PSK, phy: bgn, rssi: -31[0m
+[0;32mI (14584) wifi:pm start, type: 1[0m
+
+[0;32mI (14594) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (14594) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (15024) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (15024) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (22114) wifi:<ba-add>idx:0 (ifx:0, ba:7e:6d:57:2c:9d), tid:0, ssn:0, winSize:64[0m
+[0;32mI (23104) esp_netif_handlers: sta ip: 10.94.143.18, mask: 255.255.255.0, gw: 10.94.143.195[0m
+[0;32mI (23104) wifi: got ip:10.94.143.18[0m
+[0;32mI (23104) wifi: DNS servers configured[0m
+[0;32mI (23104) DNS: DNS servers configured[0m
+[0;32mI (23114) wifi: connected to ap SSID:Oneplus[0m
+[0;32mI (23114) MAIN: WIFI connected![0m
+[0;32mI (23124) mqtts: MqttWrapper created with client_id: 1020BA662E94[0m
+[0;32mI (23124) mqtts: [APP] Free memory: 262500 bytes[0m
+[0;32mI (23134) mqtts: Other event id:7[0m
+[0;31mE (33134) MAIN: MQTT connection failed![0m
+[0;32mI (33134) mqtts: MqttWrapper destructor called[0m
+[0;32mI (33134) mqtts: Stopping MQTT client...[0m
+[0;32mI (33624) wifi:bcn_timeout,ap_probe_send_start[0m
+[0;32mI (36134) wifi:ap_probe_send over, resett wifi status to disassoc[0m
+[0;32mI (36134) wifi:state: run -> init (c800)[0m
+[0;32mI (36134) wifi:pm stop, total sleep time: 2070561 us / 21542634 us[0m
+
+[0;32mI (36134) wifi:<ba-del>idx:0, tid:0[0m
+[0;32mI (36134) wifi:new:<1,0>, old:<1,1>, ap:<255,255>, sta:<1,1>, prof:1[0m
+[0;31mE (36144) esp-tls: [sock=54] delayed connect error: Software caused connection abort[0m
+[0;32mI (36154) wifi: retry to connect to the AP[0m
+[0;31mE (36154) esp-tls: Failed to open new connection[0m
+[0;32mI (36154) wifi: connect to the AP fail[0m
+[0;31mE (36164) transport_base: Failed to open a new connection[0m
+[0;31mE (36174) mqtt_client: Error transport connect[0m
+[0;32mI (36184) mqtts: MQTT_EVENT_ERROR[0m
+[0;32mI (36184) mqtts: Last error code reported from esp-tls: 0x8004[0m
+[0;32mI (36194) mqtts: Last tls stack error number: 0x0[0m
+[0;32mI (36194) mqtts: Last captured errno : 113 (Software caused connection abort)[0m
+[0;32mI (36204) mqtts: MQTT_EVENT_DISCONNECTED[0m
+Imposto duty: 0 / 16384 (risoluzione: 14 bit)
+[0;32mI (36214) PWM: Hardware PWM duty: 0.00% richiesto -> 0.00% effettivo (0/16384)[0m
+[0;32mI (38554) wifi: retry to connect to the AP[0m
+[0;32mI (38564) wifi: connect to the AP fail[0m
+[0;32mI (40964) wifi: retry to connect to the AP[0m
+[0;32mI (40964) wifi: connect to the AP fail[0m
+[0;32mI (41024) wifi:new:<1,1>, old:<1,0>, ap:<255,255>, sta:<1,1>, prof:1[0m
+[0;32mI (41024) wifi:state: init -> auth (b0)[0m
+[0;32mI (41034) wifi:state: auth -> assoc (0)[0m
+[0;32mI (41064) wifi:state: assoc -> run (10)[0m
+[0;32mI (41084) wifi:connected with Oneplus, aid = 3, channel 1, 40U, bssid = ba:7e:6d:57:2c:9d[0m
+[0;32mI (41084) wifi:security: WPA2-PSK, phy: bgn, rssi: -34[0m
+[0;32mI (41094) wifi:pm start, type: 1[0m
+
+[0;32mI (41094) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (41094) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (41124) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (41124) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (41224) mqtts: Destroying MQTT client...[0m
+[0;32mI (41224) mqtts: MQTT cleanup completed[0m
+[0;32mI (41224) main_task: Returned from app_main()[0m
+[0;32mI (41434) wifi:<ba-add>idx:0 (ifx:0, ba:7e:6d:57:2c:9d), tid:0, ssn:0, winSize:64[0m
+[0;32mI (42104) esp_netif_handlers: sta ip: 10.94.143.18, mask: 255.255.255.0, gw: 10.94.143.195[0m
+[0;32mI (42104) wifi: got ip:10.94.143.18[0m
+[0;32mI (42104) wifi: DNS servers configured[0m
+[0;32mI (42104) DNS: DNS servers configured[0m

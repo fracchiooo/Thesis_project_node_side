@@ -9,8 +9,6 @@ static EventGroupHandle_t s_wifi_event_group;
 Wifi_wrapper::Wifi_wrapper() : _esp_netif_sta(nullptr)
 {}
 
-
-
 void event_handler(void* arg, esp_event_base_t event_base,
                                 int32_t event_id, void* event_data)
 {
@@ -58,12 +56,9 @@ void event_handler(void* arg, esp_event_base_t event_base,
             
             ESP_LOGI(TAG, "DNS servers configured");
         }
-        
         ESP_LOGI("DNS", "DNS servers configured");
-    
     }
 }
-
 
 void Wifi_wrapper::reconnect()
 {
@@ -87,22 +82,15 @@ void Wifi_wrapper::reconnect()
             portMAX_DELAY);
 
         if (bits & WIFI_CONNECTED_BIT) {
-            ESP_LOGI(TAG, "connected to ap SSID:%s password:%s",
-                    EXAMPLE_ESP_WIFI_SSID, EXAMPLE_ESP_WIFI_PASS);
+            ESP_LOGI(TAG, "connected to ap SSID:%s", EXAMPLE_ESP_WIFI_SSID);
             _connected = true;
         } else if (bits & WIFI_FAIL_BIT) {
-            ESP_LOGI(TAG, "Failed to connect to SSID:%s, password:%s",
-                    EXAMPLE_ESP_WIFI_SSID, EXAMPLE_ESP_WIFI_PASS);
+            ESP_LOGI(TAG, "Failed to connect to SSID:%s", EXAMPLE_ESP_WIFI_SSID);
         } else {
             ESP_LOGE(TAG, "UNEXPECTED EVENT");
         }
     }
 }
-
-
-
-
-
 
 void Wifi_wrapper::wifi_init_sta(PwmController* pwm_led) {
 
@@ -125,9 +113,7 @@ void Wifi_wrapper::wifi_init_sta(PwmController* pwm_led) {
     ESP_ERROR_CHECK(ret);
 
     if (CONFIG_LOG_MAXIMUM_LEVEL > CONFIG_LOG_DEFAULT_LEVEL) {
-        /* If you only want to open more logs in the wifi module, you need to make the max level greater than the default level,
-         * and call esp_log_level_set() before esp_wifi_init() to improve the log level of the wifi module. */
-        esp_log_level_set("wifi", (esp_log_level_t) CONFIG_LOG_MAXIMUM_LEVEL);
+        esp_log_level_set(TAG, (esp_log_level_t) CONFIG_LOG_MAXIMUM_LEVEL);
     }
 
     ESP_LOGI(TAG, "ESP_WIFI_MODE_STA");
@@ -162,11 +148,9 @@ void Wifi_wrapper::wifi_init_sta(PwmController* pwm_led) {
     wifi_config.sta.pmf_cfg.capable = true;
     wifi_config.sta.pmf_cfg.required = false;
 
-
     ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA) );
     ESP_ERROR_CHECK(esp_wifi_set_config(WIFI_IF_STA, &wifi_config) );
     ESP_ERROR_CHECK(esp_wifi_start() );
-
     ESP_LOGI(TAG, "wifi_init_sta finished.");
 
     /* Waiting until either the connection is established (WIFI_CONNECTED_BIT) or connection failed for the maximum
@@ -180,12 +164,10 @@ void Wifi_wrapper::wifi_init_sta(PwmController* pwm_led) {
     /* xEventGroupWaitBits() returns the bits before the call returned, hence we can test which event actually
      * happened. */
     if (bits & WIFI_CONNECTED_BIT) {
-        ESP_LOGI(TAG, "connected to ap SSID:%s password:%s",
-                 EXAMPLE_ESP_WIFI_SSID, EXAMPLE_ESP_WIFI_PASS);
+        ESP_LOGI(TAG, "connected to ap SSID:%s", EXAMPLE_ESP_WIFI_SSID);
         _connected = true;
     } else if (bits & WIFI_FAIL_BIT) {
-        ESP_LOGI(TAG, "Failed to connect to SSID:%s, password:%s",
-                 EXAMPLE_ESP_WIFI_SSID, EXAMPLE_ESP_WIFI_PASS);
+        ESP_LOGI(TAG, "Failed to connect to SSID:%s", EXAMPLE_ESP_WIFI_SSID);
     } else {
         ESP_LOGE(TAG, "UNEXPECTED EVENT");
     }
@@ -210,7 +192,6 @@ void Wifi_wrapper::wifi_disconnect(void) {
     ESP_ERROR_CHECK(esp_wifi_disconnect());
     ESP_ERROR_CHECK(esp_wifi_stop());
     ESP_ERROR_CHECK(esp_wifi_deinit());
-    
 
     ESP_ERROR_CHECK(nvs_flash_erase());
     if (_esp_netif_sta) {
@@ -224,7 +205,6 @@ void Wifi_wrapper::wifi_disconnect(void) {
     vEventGroupDelete(s_wifi_event_group);
     s_wifi_event_group = NULL;
     }
-    
     s_retry_num = 0;
     _connected = false;
     
@@ -236,10 +216,8 @@ void Wifi_wrapper::destroyInstance(void) {
         if (_wifi_instance->_connected) {
             _wifi_instance->wifi_disconnect();
         }
-        
         delete _wifi_instance;
         _wifi_instance = nullptr;
-        
         ESP_LOGI(TAG, "Wifi_wrapper instance destroyed");
     }
 }

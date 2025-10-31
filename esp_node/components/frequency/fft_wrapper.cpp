@@ -9,9 +9,7 @@ FFT_ultrasonic::FFT_ultrasonic() : _ADC_channel(-1), _ADC_unit(-1), _sampling_fr
 
 FFT_ultrasonic::~FFT_ultrasonic(){
     if(_handle != nullptr){
-        // NON usare ESP_ERROR_CHECK - gestisci manualmente
         esp_err_t ret = adc_continuous_stop(_handle);
-        // Ignora l'errore "already stopped"
         if(ret != ESP_OK && ret != ESP_ERR_INVALID_STATE){
             ESP_LOGE(TAG, "Error stopping ADC: %s", esp_err_to_name(ret));
         }
@@ -31,8 +29,6 @@ FFT_ultrasonic::~FFT_ultrasonic(){
     }
 }
 
-
-
 static bool IRAM_ATTR s_conv_done_cb(adc_continuous_handle_t handle, const adc_continuous_evt_data_t *edata, void *user_data)
 {
     BaseType_t mustYield = pdFALSE;
@@ -45,7 +41,7 @@ static bool IRAM_ATTR s_conv_done_cb(adc_continuous_handle_t handle, const adc_c
 void FFT_ultrasonic::begin(uint8_t ADC_channel, uint8_t ADC_unit, uint32_t sampling_frequency, int num_samples){
 
     if(_handle != nullptr) {
-        ESP_LOGE(TAG, "ADC già configurato");
+        ESP_LOGE(TAG, "ADC already configured");
         return;
     }
 
@@ -94,7 +90,6 @@ void FFT_ultrasonic::begin(uint8_t ADC_channel, uint8_t ADC_unit, uint32_t sampl
     ESP_ERROR_CHECK(adc_continuous_register_event_callbacks(_handle, &cbs, NULL));
 }
 
-
 float* FFT_ultrasonic::read_and_get_data_fixed_samples(){
 
     if(_fft_result == nullptr){
@@ -121,7 +116,6 @@ float* FFT_ultrasonic::read_and_get_data_fixed_samples(){
     }
 
     ulTaskNotifyTake(pdTRUE, pdMS_TO_TICKS(1000));
-
   
     uint32_t ret_num = 0;
     uint8_t result[array_lenght];
@@ -136,7 +130,7 @@ float* FFT_ultrasonic::read_and_get_data_fixed_samples(){
                 uint32_t data = p->type2.data;
                 if (chan_num < SOC_ADC_CHANNEL_NUM(_ADC_unit)) {
                     int t;
-                    ESP_ERROR_CHECK(adc_cali_raw_to_voltage(_cali_handle, data, &t)); //converts raw data to calibrated voltage
+                    ESP_ERROR_CHECK(adc_cali_raw_to_voltage(_cali_handle, data, &t)); //converts raw data to calibrated voltage (4096 discrete levels)
                     _fft_result[ii] = (uint32_t) t;
                 } else {
                     printf("error in reading sampled raw data");
@@ -255,17 +249,17 @@ int FFT_ultrasonic::getMaxFrequencyFFT(){
     }
     noise_floor /= noise_count;
 
-    // Soglia minima assoluta
+    // Minimum magnitude, it is only 20, because the frequency sensor is not calibrated for the ultrasounds, so their amplitudes are attenuated
     const float MIN_MAGNITUDE = 20.0f;
     
     if (best_magnitude < MIN_MAGNITUDE) {
-        ESP_LOGI(TAG, "Signal too weak (magnitude: %.2f < %.2f mV)", 
+        ESP_LOGI(TAG, "Sensed a signal too weak (magnitude: %.2f < %.2f mV)", 
                  best_magnitude, MIN_MAGNITUDE);
         return 0;
     }
 
-    // Usa una soglia relativa al rumore
-    const float SNR_THRESHOLD = 3.0f; // Il segnale deve essere 3x il rumore
+    // noise threshold
+    const float SNR_THRESHOLD = 3.0f; // signal to noise ratio: the signal should be 3x wrt the noise to be considered as valid
     
     if (best_magnitude < best_noise_floor * SNR_THRESHOLD) {
         ESP_LOGI(TAG, "No significant frequency found (magnitude: %.2f, noise floor: %.2f, SNR: %.2f)", 
@@ -275,7 +269,7 @@ int FFT_ultrasonic::getMaxFrequencyFFT(){
 
     float dominant_frequency = (float) best_frequency_bin * _sampling_freq / _num_samples;
 
-    ESP_LOGI(TAG, "Dominant Frequency: %.2f Hz, Magnitude: %.2f mV, Noise floor: %.2f, SNR: %.2f", 
+    ESP_LOGI(TAG, "Dominant Frequency: %.2f Hz, Magnitude: %.2f mV (attenuated by the sensor), Noise floor: %.2f, SNR: %.2f", 
             dominant_frequency, best_magnitude, best_noise_floor, best_magnitude / best_noise_floor);
 
     return dominant_frequency;
@@ -355,20 +349,9 @@ void FFT_ultrasonic::normalize(float array[], int N, uint32_t max_val) {
     float shift = target_min - scale * min_value; 
     //shift the signal such that values (for example, if 12 bits used for ADC input values) in range [0-4096] will be normalized in [0, 1.98] and shifted in [-0.99, 0,99], so the signal is centered in 0 (no DC component)
 
-    // Apply normalization to each element in the array
+    // Apply normalization and DC shift to each element in the array
     for (int i = 0; i < N; i++) {
         array[i] = scale * array[i] + shift;
     }
 }
 
-void FFT_ultrasonic::std_deviation_and_mean(float* data, size_t size, float* std_dev, float* mean){
-    float sum = 0.0f;
-    float quad_sum = 0.0f;
-    for(int i=0; i< size; i++){
-        sum += data[i];
-        quad_sum += pow(data[i], 2.0f);
-    }
-    *mean = sum/size;
-    float variance = (quad_sum / size) - pow(*mean, 2.0f);
-    *std_dev = sqrtf(variance);
-}

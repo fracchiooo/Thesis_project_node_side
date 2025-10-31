@@ -3,7 +3,6 @@
 
 static const char* TAG = "Temperature sensor";
 
-// Comandi DS18B20
 #define CMD_CONVERT_T       0x44
 #define CMD_READ_SCRATCHPAD 0xBE
 #define CMD_MATCH_ROM       0x55
@@ -23,22 +22,27 @@ Sensor_temperature::~Sensor_temperature() {
     if (_bus) {
         onewire_bus_del(_bus);
     }
+    if(_new_slots != nullptr){
+        free(_new_slots);
+    }
 }
 
-void Sensor_temperature::begin() {
+void Sensor_temperature::begin(gpio_num_t input) {
+    _new_slots = (int *) malloc(MAX_SENSORS * sizeof(int));
+    _input_sensor = input;
     onewire_bus_config_t bus_config = {
-        .bus_gpio_num = ONEWIRE_GPIO,
+        .bus_gpio_num = (int) _input_sensor,
     };
     onewire_bus_rmt_config_t rmt_config = {
         .max_rx_bytes = 10,
     };
     
     ESP_ERROR_CHECK(onewire_new_bus_rmt(&bus_config, &rmt_config, &_bus));
-    ESP_LOGI(TAG, "Bus inizializzato su GPIO %d", ONEWIRE_GPIO);
+    ESP_LOGI(TAG, "Bus initialized on GPIO %d", (int) _input_sensor);
 }
 
 void Sensor_temperature::reinitBus() {
-    ESP_LOGW(TAG, "Reinizializzazione bus...");
+    ESP_LOGW(TAG, "Bus reinitialization...");
     
     if (_bus) {
         onewire_bus_del(_bus);
@@ -48,7 +52,7 @@ void Sensor_temperature::reinitBus() {
     vTaskDelay(pdMS_TO_TICKS(100));
     
     onewire_bus_config_t bus_config = {
-        .bus_gpio_num = ONEWIRE_GPIO,
+        .bus_gpio_num = (int) _input_sensor,
     };
     onewire_bus_rmt_config_t rmt_config = {
         .max_rx_bytes = 10,
@@ -56,9 +60,9 @@ void Sensor_temperature::reinitBus() {
     
     esp_err_t err = onewire_new_bus_rmt(&bus_config, &rmt_config, &_bus);
     if (err == ESP_OK) {
-        ESP_LOGI(TAG, "Bus reinizializzato");
+        ESP_LOGI(TAG, "Bus reinitialized");
     } else {
-        ESP_LOGE(TAG, "Errore reinizializzazione bus");
+        ESP_LOGE(TAG, "Error in bus reinitialization");
     }
 }
 
@@ -80,14 +84,14 @@ int Sensor_temperature::findDeviceByAddress(uint64_t address) {
     return -1;
 }
 
-int Sensor_temperature::scan(int* new_slots) {
+int Sensor_temperature::scan() {
     onewire_device_iter_handle_t iter = nullptr;
     onewire_device_t device;
     esp_err_t search_result;
     
     search_result = onewire_new_device_iter(_bus, &iter);
     if (search_result != ESP_OK) {
-        ESP_LOGE(TAG, "Errore creazione iteratore");
+        ESP_LOGE(TAG, "Error in iterator creation");
         reinitBus();
         return 0;
     }
@@ -110,7 +114,7 @@ int Sensor_temperature::scan(int* new_slots) {
                     _device_active[slot] = true;
                     _device_count++;
                     
-                    new_slots[new_count] = slot;
+                    _new_slots[new_count] = slot;
                     new_count++;
                     
                     ESP_LOGI(TAG, "Slot %d: %016llX", slot, addr);
@@ -119,7 +123,7 @@ int Sensor_temperature::scan(int* new_slots) {
         } else if (search_result != ESP_ERR_NOT_FOUND) {
             error_count++;
             if (error_count >= max_errors) {
-                ESP_LOGW(TAG, "Troppi errori di lettura, reinizializzo bus");
+                ESP_LOGW(TAG, "Too many errors in scanning the bus, trying to solve by reininit it ..");
                 onewire_del_device_iter(iter);
                 reinitBus();
                 return new_count;
@@ -128,7 +132,7 @@ int Sensor_temperature::scan(int* new_slots) {
     } while (search_result != ESP_ERR_NOT_FOUND);
     
     onewire_del_device_iter(iter);
-    ESP_LOGI(TAG, "Trovati %d nuovi (totale %d)", new_count, _device_count);
+    ESP_LOGI(TAG, "Found %d new temperature sensors (total %d)", new_count, _device_count);
     return new_count;
 }
 
@@ -140,16 +144,19 @@ void Sensor_temperature::removeDevice(int index) {
     _device_active[index] = false;
     _addresses[index] = 0;
     _device_count--;
-    ESP_LOGI(TAG, "Slot %d rimosso", index);
+    ESP_LOGI(TAG, "Slot %d removed", index);
 }
 
 float Sensor_temperature::readDS18B20(uint64_t address) {
+    // Replicating the protocol for reading a Dallas probe (unfortunately not already implemented by a library for esp idf)
+
+
     // Reset bus
     if (onewire_bus_reset(_bus) != ESP_OK) {
         return -127.0;
     }
     
-    // MATCH ROM + indirizzo
+    // MATCH ROM + address
     uint8_t tx_buf[9] = {CMD_MATCH_ROM};
     memcpy(&tx_buf[1], &address, 8);
     onewire_bus_write_bytes(_bus, tx_buf, 9);
@@ -158,45 +165,66 @@ float Sensor_temperature::readDS18B20(uint64_t address) {
     uint8_t cmd = CMD_CONVERT_T;
     onewire_bus_write_bytes(_bus, &cmd, 1);
     
-    // Attendi conversione
+    // Wait for convertion
     vTaskDelay(pdMS_TO_TICKS(800));
     
     // Reset
     onewire_bus_reset(_bus);
     
-    // MATCH ROM di nuovo
+    // MATCH ROM
     onewire_bus_write_bytes(_bus, tx_buf, 9);
     
     // READ SCRATCHPAD
     cmd = CMD_READ_SCRATCHPAD;
     onewire_bus_write_bytes(_bus, &cmd, 1);
     
-    // Leggi 9 byte
+    // read 9 byte
     uint8_t data[9];
     if (onewire_bus_read_bytes(_bus, data, 9) != ESP_OK) {
         return -127.0;
     }
     
-    // Calcola temperatura
+    // Calculates temperature
     int16_t raw = (data[1] << 8) | data[0];
     return (float)raw / 16.0;
 }
 
 float Sensor_temperature::readTemperature(int index) {
     if (index < 0 || index >= MAX_SENSORS) {
-        ESP_LOGE(TAG, "Indice non valido: %d", index);
+        ESP_LOGE(TAG, "Illegal index: %d", index);
         return -127.0;
     }
     
     if (!_device_active[index]) {
-        ESP_LOGW(TAG, "Slot %d vuoto", index);
-        return -127.0;
+        ESP_LOGW(TAG, "Not found a probe on lot %d, trying to scan the bus for it", index);
+        scan();
+        if(!_device_active[index]){
+            ESP_LOGW(TAG, "Not found a probe on lot %d definitely", index);
+            return -127.0;
+        }
     }
     
-    float temp = readDS18B20(_addresses[index]);
+    //reading the temperature through the requested probe
+    int retry_num=0;
+    float temp;
+    do{
+        temp = readDS18B20(_addresses[index]);
+        retry_num++;
+        if(temp == -127){
+            reinitBus();
+            vTaskDelay(pdMS_TO_TICKS(1000));
+        }
+    } while(temp == -127 && retry_num<5);
+
+    if(retry_num>=5){
+        ESP_LOGW(TAG, "Error in reading temperature data from the bus, trying to reinit the bus and re-reading the temperature");
+    }
     
     if (temp != -127.0) {
+        // temperature = -127, means an error in reading it
         ESP_LOGI(TAG, "Slot %d: %.2f °C", index, temp);
+    } else{
+        ESP_LOGE(TAG, "Error in reading the temperature, returning -127 instead of correct value");
     }
     
     return temp;

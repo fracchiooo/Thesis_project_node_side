@@ -1,0 +1,122 @@
+[0/1] Re-running CMake...
+-- Building ESP-IDF components for target esp32s3
+NOTICE: Processing 3 dependencies:
+NOTICE: [1/3] espressif/esp-dsp (1.7.0)
+NOTICE: [2/3] espressif/onewire_bus (1.0.4)
+NOTICE: [3/3] idf (5.2.2)
+-- Project sdkconfig file /home/fracchio/Thesis_project_node_side/esp_node/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- App "esp_node" version: 3a8e390-dirty
+-- Adding linker script /home/fracchio/Thesis_project_node_side/esp_node/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /home/fracchio/Thesis_project_node_side/esp_node/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script /home/fracchio/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ld
+-- Adding linker script /home/fracchio/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.api.ld
+-- Adding linker script /home/fracchio/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.libgcc.ld
+-- Adding linker script /home/fracchio/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib.ld
+-- Adding linker script /home/fracchio/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.version.ld
+-- Adding linker script /home/fracchio/esp/esp-idf/components/soc/esp32s3/ld/esp32s3.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump espressif__esp-dsp espressif__onewire_bus esptool_py fatfs freertos frequency hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt mqtts newlib nvs_flash nvs_sec_provider openthread partition_table perfmon protobuf-c protocomm pthread pwmController sdmmc soc spi_flash spiffs tcp_transport temperature touch_element ulp unity usb vfs wear_levelling wifi wifi_provisioning wpa_supplicant xtensa
+-- Component paths: /home/fracchio/esp/esp-idf/components/app_trace /home/fracchio/esp/esp-idf/components/app_update /home/fracchio/esp/esp-idf/components/bootloader /home/fracchio/esp/esp-idf/components/bootloader_support /home/fracchio/esp/esp-idf/components/bt /home/fracchio/esp/esp-idf/components/cmock /home/fracchio/esp/esp-idf/components/console /home/fracchio/esp/esp-idf/components/cxx /home/fracchio/esp/esp-idf/components/driver /home/fracchio/esp/esp-idf/components/efuse /home/fracchio/esp/esp-idf/components/esp-tls /home/fracchio/esp/esp-idf/components/esp_adc /home/fracchio/esp/esp-idf/components/esp_app_format /home/fracchio/esp/esp-idf/components/esp_bootloader_format /home/fracchio/esp/esp-idf/components/esp_coex /home/fracchio/esp/esp-idf/components/esp_common /home/fracchio/esp/esp-idf/components/esp_eth /home/fracchio/esp/esp-idf/components/esp_event /home/fracchio/esp/esp-idf/components/esp_gdbstub /home/fracchio/esp/esp-idf/components/esp_hid /home/fracchio/esp/esp-idf/components/esp_http_client /home/fracchio/esp/esp-idf/components/esp_http_server /home/fracchio/esp/esp-idf/components/esp_https_ota /home/fracchio/esp/esp-idf/components/esp_https_server /home/fracchio/esp/esp-idf/components/esp_hw_support /home/fracchio/esp/esp-idf/components/esp_lcd /home/fracchio/esp/esp-idf/components/esp_local_ctrl /home/fracchio/esp/esp-idf/components/esp_mm /home/fracchio/esp/esp-idf/components/esp_netif /home/fracchio/esp/esp-idf/components/esp_netif_stack /home/fracchio/esp/esp-idf/components/esp_partition /home/fracchio/esp/esp-idf/components/esp_phy /home/fracchio/esp/esp-idf/components/esp_pm /home/fracchio/esp/esp-idf/components/esp_psram /home/fracchio/esp/esp-idf/components/esp_ringbuf /home/fracchio/esp/esp-idf/components/esp_rom /home/fracchio/esp/esp-idf/components/esp_system /home/fracchio/esp/esp-idf/components/esp_timer /home/fracchio/esp/esp-idf/components/esp_wifi /home/fracchio/esp/esp-idf/components/espcoredump /home/fracchio/Thesis_project_node_side/esp_node/managed_components/espressif__esp-dsp /home/fracchio/Thesis_project_node_side/esp_node/managed_components/espressif__onewire_bus /home/fracchio/esp/esp-idf/components/esptool_py /home/fracchio/esp/esp-idf/components/fatfs /home/fracchio/esp/esp-idf/components/freertos /home/fracchio/Thesis_project_node_side/esp_node/components/frequency /home/fracchio/esp/esp-idf/components/hal /home/fracchio/esp/esp-idf/components/heap /home/fracchio/esp/esp-idf/components/http_parser /home/fracchio/esp/esp-idf/components/idf_test /home/fracchio/esp/esp-idf/components/ieee802154 /home/fracchio/esp/esp-idf/components/json /home/fracchio/esp/esp-idf/components/log /home/fracchio/esp/esp-idf/components/lwip /home/fracchio/Thesis_project_node_side/esp_node/main /home/fracchio/esp/esp-idf/components/mbedtls /home/fracchio/esp/esp-idf/components/mqtt /home/fracchio/Thesis_project_node_side/esp_node/components/mqtts /home/fracchio/esp/esp-idf/components/newlib /home/fracchio/esp/esp-idf/components/nvs_flash /home/fracchio/esp/esp-idf/components/nvs_sec_provider /home/fracchio/esp/esp-idf/components/openthread /home/fracchio/esp/esp-idf/components/partition_table /home/fracchio/esp/esp-idf/components/perfmon /home/fracchio/esp/esp-idf/components/protobuf-c /home/fracchio/esp/esp-idf/components/protocomm /home/fracchio/esp/esp-idf/components/pthread /home/fracchio/Thesis_project_node_side/esp_node/components/pwmController /home/fracchio/esp/esp-idf/components/sdmmc /home/fracchio/esp/esp-idf/components/soc /home/fracchio/esp/esp-idf/components/spi_flash /home/fracchio/esp/esp-idf/components/spiffs /home/fracchio/esp/esp-idf/components/tcp_transport /home/fracchio/Thesis_project_node_side/esp_node/components/temperature /home/fracchio/esp/esp-idf/components/touch_element /home/fracchio/esp/esp-idf/components/ulp /home/fracchio/esp/esp-idf/components/unity /home/fracchio/esp/esp-idf/components/usb /home/fracchio/esp/esp-idf/components/vfs /home/fracchio/esp/esp-idf/components/wear_levelling /home/fracchio/Thesis_project_node_side/esp_node/components/wifi /home/fracchio/esp/esp-idf/components/wifi_provisioning /home/fracchio/esp/esp-idf/components/wpa_supplicant /home/fracchio/esp/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/fracchio/Thesis_project_node_side/esp_node/build
+[1/12] Performing build step for 'bootloader'
+[1/1] cd /home/fracchio/Thesis_project_node_side/esp_node/build/bootloader/esp-idf/esptool_py && /home/fracchio/.espressif/python_env/idf5.2_py3.10_env/bin/python /home/fracchio/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/fracchio/Thesis_project_node_side/esp_node/build/bootloader/bootloader.bin
+Bootloader binary size 0x5250 bytes. 0x2db0 bytes (36%) free.
+[2/10] Building C object esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/esp_app_desc.c.obj
+[3/10] Linking C static library esp-idf/esp_app_format/libesp_app_format.a
+[4/10] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/esp_node.cpp.obj
+/home/fracchio/Thesis_project_node_side/esp_node/main/esp_node.cpp: In function 'void schedule_timer_command(uint32_t, float)':
+/home/fracchio/Thesis_project_node_side/esp_node/main/esp_node.cpp:166:9: warning: missing initializer for member 'esp_timer_create_args_t::dispatch_method' [-Wmissing-field-initializers]
+  166 |         };
+      |         ^
+/home/fracchio/Thesis_project_node_side/esp_node/main/esp_node.cpp:166:9: warning: missing initializer for member 'esp_timer_create_args_t::skip_unhandled_events' [-Wmissing-field-initializers]
+/home/fracchio/Thesis_project_node_side/esp_node/main/esp_node.cpp:188:9: warning: missing initializer for member 'esp_timer_create_args_t::dispatch_method' [-Wmissing-field-initializers]
+  188 |         };
+      |         ^
+/home/fracchio/Thesis_project_node_side/esp_node/main/esp_node.cpp:188:9: warning: missing initializer for member 'esp_timer_create_args_t::skip_unhandled_events' [-Wmissing-field-initializers]
+[5/10] Linking C static library esp-idf/main/libmain.a
+[6/10] Generating ld/sections.ld
+[7/10] Linking CXX executable esp_node.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.9.0
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /home/fracchio/Thesis_project_node_side/esp_node/build/esp_node.bin
+[9/10] cd /home/fracchio/Thesis_project_node_side/esp_node/build/esp-idf/esptool_py && /home/fracchio/.espressif/python_env/idf5.2_py3.10_env/bin/python /home/fracchio/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/fracchio/Thesis_project_node_side/esp_node/build/partition_table/partition-table.bin /home/fracchio/Thesis_project_node_side/esp_node/build/esp_node.bin
+esp_node.bin binary size 0x106370 bytes. Smallest app partition is 0x177000 bytes. 0x70c90 bytes (30%) free.
+[9/10] cd /home/fracchio/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/fracchio/esp/esp-idf -D "SERIAL_TOOL=/home/fracchio/.espressif/python_env/idf5.2_py3.10_env/bin/python;;/home/fracchio/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/fracchio/Thesis_project_node_side/esp_node/build -P /home/fracchio/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32s3 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 esp_node.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.9.0
+Serial port /dev/ttyUSB0
+Connecting....
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE, Embedded Flash 8MB (GD)
+Crystal is 40MHz
+MAC: 10:20:ba:66:2e:94
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x00116fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 21072 bytes to 13056...
+Writing at 0x00000000... (100 %)
+Wrote 21072 bytes (13056 compressed) at 0x00000000 in 0.6 seconds (effective 281.0 kbit/s)...
+Hash of data verified.
+Compressed 1074032 bytes to 660117...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001dac1... (4 %)
+Writing at 0x00029543... (7 %)
+Writing at 0x0002f6f4... (9 %)
+Writing at 0x00034db6... (12 %)
+Writing at 0x0003ad96... (14 %)
+Writing at 0x000489ab... (17 %)
+Writing at 0x0004eff7... (19 %)
+Writing at 0x00055177... (21 %)
+Writing at 0x0005b5e9... (24 %)
+Writing at 0x00061730... (26 %)
+Writing at 0x000681c3... (29 %)
+Writing at 0x0006e291... (31 %)
+Writing at 0x00073d1d... (34 %)
+Writing at 0x00079aa0... (36 %)
+Writing at 0x0007f7d6... (39 %)
+Writing at 0x0008544d... (41 %)
+Writing at 0x0008b4ba... (43 %)
+Writing at 0x0009100b... (46 %)
+Writing at 0x00096e51... (48 %)
+Writing at 0x0009d24d... (51 %)
+Writing at 0x000a3118... (53 %)
+Writing at 0x000a8581... (56 %)
+Writing at 0x000ad4a6... (58 %)
+Writing at 0x000b254a... (60 %)
+Writing at 0x000b75b5... (63 %)
+Writing at 0x000bc8cb... (65 %)
+Writing at 0x000c1c69... (68 %)
+Writing at 0x000c7c16... (70 %)
+Writing at 0x000cd3b0... (73 %)
+Writing at 0x000d30ec... (75 %)
+Writing at 0x000d91be... (78 %)
+Writing at 0x000df636... (80 %)
+Writing at 0x000e4b8f... (82 %)
+Writing at 0x000e9fe3... (85 %)
+Writing at 0x000f21cb... (87 %)
+Writing at 0x000fc01b... (90 %)
+Writing at 0x00102260... (92 %)
+Writing at 0x00108847... (95 %)
+Writing at 0x0010f114... (97 %)
+Writing at 0x0011428a... (100 %)
+Wrote 1074032 bytes (660117 compressed) at 0x00010000 in 15.0 seconds (effective 573.4 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 105...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (105 compressed) at 0x00008000 in 0.0 seconds (effective 531.4 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
