@@ -128,4 +128,1942 @@ entry 0x403c9914
 [0;32mI (4484) wifi:state: assoc -> run (10)[0m
 [0;32mI (4544) wifi:connected with Oneplus, aid = 7, channel 1, 40U, bssid = ba:7e:6d:57:2c:9d[0m
 [0;32mI (4544) wifi:security: WPA2-PSK, phy: bgn, rssi: -30[0m
-[0;32mI (455
+[0;32mI (4554) wifi:pm start, type: 1[0m
+
+[0;32mI (4554) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (4564) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (4584) wifi:<ba-add>idx:0 (ifx:0, ba:7e:6d:57:2c:9d), tid:0, ssn:0, winSize:64[0m
+[0;32mI (4614) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (4614) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (5564) esp_netif_handlers: sta ip: 10.94.143.18, mask: 255.255.255.0, gw: 10.94.143.195[0m
+[0;32mI (5564) wifi: got ip:10.94.143.18[0m
+[0;32mI (5564) wifi: DNS servers configured[0m
+[0;32mI (5564) DNS: DNS servers configured[0m
+[0;32mI (5574) wifi: connected to ap SSID:Oneplus[0m
+[0;32mI (5574) MAIN: WIFI connected![0m
+[0;32mI (5584) mqtts: MqttWrapper created with client_id: 1020BA662E94[0m
+[0;32mI (5584) mqtts: [APP] Free memory: 262628 bytes[0m
+[0;32mI (5594) mqtts: Other event id:7[0m
+[0;32mI (6354) mqtts: MQTT_EVENT_CONNECTED[0m
+[0;32mI (6354) PWM: Set the duty: 3277 / 16384 (resolution: 14 bit)
+[0m
+[0;32mI (6354) PWM: Hardware PWM duty: 20.00% requested -> 20.00% effective (3277/16384)[0m
+[0;32mI (6364) mqtts: Subscribed to 1020BA662E94/downlink, msg_id=62080[0m
+[0;32mI (6404) mqtts: MQTT_EVENT_SUBSCRIBED, msg_id=62080[0m
+[0;32mI (6594) MAIN: MQTT connected! System running in background...[0m
+[0;32mI (6594) MAIN: Initializing SNTP[0m
+[0;32mI (6594) MAIN: Waiting for time sync... (1/20)[0m
+[0;32mI (7594) MAIN: Waiting for time sync... (2/20)[0m
+[0;32mI (8594) MAIN: Waiting for time sync... (3/20)[0m
+[0;32mI (9594) MAIN: Time synchronized: Fri Oct 31 17:20:58 2025
+[0m
+[0;32mI (9594) FFT: sampling rate too high, the maximum sampling rate will be used: 83333[0m
+[0;32mI (9594) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (10424) Temperature sensor: Slot 0: 22.44 °C[0m
+[0;32mI (10654) FFT: Sensed a signal too weak (magnitude: 0.79 < 20.00 mV)[0m
+[0;32mI (10654) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=36437[0m
+[0;32mI (10654) MAIN: MQTT message sent![0m
+[0;32mI (11584) mqtts: MQTT_EVENT_PUBLISHED, msg_id=36437[0m
+[0;32mI (21464) Temperature sensor: Slot 0: 22.44 °C[0m
+[0;32mI (21684) FFT: Sensed a signal too weak (magnitude: 0.81 < 20.00 mV)[0m
+[0;32mI (21684) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=55413[0m
+[0;32mI (21684) MAIN: MQTT message sent![0m
+[0;32mI (23254) mqtts: MQTT_EVENT_PUBLISHED, msg_id=55413[0m
+[0;32mI (32494) Temperature sensor: Slot 0: 22.50 °C[0m
+[0;32mI (32714) FFT: Sensed a signal too weak (magnitude: 0.81 < 20.00 mV)[0m
+[0;32mI (32714) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=46109[0m
+[0;32mI (32714) MAIN: MQTT message sent![0m
+[0;32mI (33704) mqtts: MQTT_EVENT_PUBLISHED, msg_id=46109[0m
+[0;32mI (43524) Temperature sensor: Slot 0: 22.44 °C[0m
+[0;32mI (43744) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 134.57 mV (attenuated by the sensor), Noise floor: 1.04, SNR: 129.53[0m
+[0;32mI (43744) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=47658[0m
+[0;32mI (43744) MAIN: MQTT message sent![0m
+[0;32mI (43934) mqtts: MQTT_EVENT_PUBLISHED, msg_id=47658[0m
+[0;32mI (54564) Temperature sensor: Slot 0: 22.44 °C[0m
+[0;32mI (54784) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 129.23 mV (attenuated by the sensor), Noise floor: 1.26, SNR: 102.81[0m
+[0;32mI (54784) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=28059[0m
+[0;32mI (54784) MAIN: MQTT message sent![0m
+[0;32mI (55204) mqtts: MQTT_EVENT_PUBLISHED, msg_id=28059[0m
+[0;32mI (65604) Temperature sensor: Slot 0: 22.44 °C[0m
+[0;32mI (65824) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.60 mV (attenuated by the sensor), Noise floor: 0.51, SNR: 81.20[0m
+[0;32mI (65824) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=5296[0m
+[0;32mI (65824) MAIN: MQTT message sent![0m
+[0;32mI (66464) mqtts: MQTT_EVENT_PUBLISHED, msg_id=5296[0m
+[0;32mI (76644) Temperature sensor: Slot 0: 22.44 °C[0m
+[0;32mI (76864) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.52 mV (attenuated by the sensor), Noise floor: 0.44, SNR: 92.53[0m
+[0;32mI (76864) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=43243[0m
+[0;32mI (76864) MAIN: MQTT message sent![0m
+[0;32mI (78144) mqtts: MQTT_EVENT_PUBLISHED, msg_id=43243[0m
+[0;32mI (87684) Temperature sensor: Slot 0: 22.44 °C[0m
+[0;32mI (87904) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 36.13 mV (attenuated by the sensor), Noise floor: 0.48, SNR: 75.77[0m
+[0;32mI (87904) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=35231[0m
+[0;32mI (87904) MAIN: MQTT message sent![0m
+[0;32mI (88294) mqtts: MQTT_EVENT_PUBLISHED, msg_id=35231[0m
+[0;32mI (98724) Temperature sensor: Slot 0: 22.44 °C[0m
+[0;32mI (98944) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.36 mV (attenuated by the sensor), Noise floor: 0.48, SNR: 83.49[0m
+[0;32mI (98944) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=40222[0m
+[0;32mI (98944) MAIN: MQTT message sent![0m
+[0;32mI (99654) mqtts: MQTT_EVENT_PUBLISHED, msg_id=40222[0m
+[0;32mI (109764) Temperature sensor: Slot 0: 22.44 °C[0m
+[0;32mI (109984) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.06 mV (attenuated by the sensor), Noise floor: 0.43, SNR: 95.27[0m
+[0;32mI (109984) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=30935[0m
+[0;32mI (109984) MAIN: MQTT message sent![0m
+[0;32mI (111114) mqtts: MQTT_EVENT_PUBLISHED, msg_id=30935[0m
+[0;32mI (120804) Temperature sensor: Slot 0: 22.44 °C[0m
+[0;32mI (121024) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.06 mV (attenuated by the sensor), Noise floor: 0.41, SNR: 100.75[0m
+[0;32mI (121024) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=8348[0m
+[0;32mI (121024) MAIN: MQTT message sent![0m
+[0;32mI (121354) mqtts: MQTT_EVENT_PUBLISHED, msg_id=8348[0m
+[0;32mI (131844) Temperature sensor: Slot 0: 22.44 °C[0m
+[0;32mI (132064) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 33.40 mV (attenuated by the sensor), Noise floor: 0.48, SNR: 69.47[0m
+[0;32mI (132064) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=62636[0m
+[0;32mI (132064) MAIN: MQTT message sent![0m
+[0;32mI (133034) mqtts: MQTT_EVENT_PUBLISHED, msg_id=62636[0m
+[0;32mI (142884) Temperature sensor: Slot 0: 22.44 °C[0m
+[0;32mI (143104) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 35.68 mV (attenuated by the sensor), Noise floor: 0.50, SNR: 70.99[0m
+[0;32mI (143104) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=372[0m
+[0;32mI (143104) MAIN: MQTT message sent![0m
+[0;32mI (143474) mqtts: MQTT_EVENT_PUBLISHED, msg_id=372[0m
+[0;32mI (153924) Temperature sensor: Slot 0: 22.44 °C[0m
+[0;32mI (154144) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 39.84 mV (attenuated by the sensor), Noise floor: 0.43, SNR: 92.01[0m
+[0;32mI (154144) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=58214[0m
+[0;32mI (154144) MAIN: MQTT message sent![0m
+[0;32mI (154734) mqtts: MQTT_EVENT_PUBLISHED, msg_id=58214[0m
+[0;32mI (164964) Temperature sensor: Slot 0: 22.44 °C[0m
+[0;32mI (165184) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 29.15 mV (attenuated by the sensor), Noise floor: 0.47, SNR: 61.65[0m
+[0;32mI (165184) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=7307[0m
+[0;32mI (165184) MAIN: MQTT message sent![0m
+[0;32mI (166204) mqtts: MQTT_EVENT_PUBLISHED, msg_id=7307[0m
+[0;32mI (176004) Temperature sensor: Slot 0: 22.44 °C[0m
+[0;32mI (176224) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.23 mV (attenuated by the sensor), Noise floor: 0.39, SNR: 106.36[0m
+[0;32mI (176224) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=45328[0m
+[0;32mI (176224) MAIN: MQTT message sent![0m
+[0;32mI (176654) mqtts: MQTT_EVENT_PUBLISHED, msg_id=45328[0m
+[0;32mI (187044) Temperature sensor: Slot 0: 22.44 °C[0m
+[0;32mI (187264) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.79 mV (attenuated by the sensor), Noise floor: 0.44, SNR: 92.41[0m
+[0;32mI (187264) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=43356[0m
+[0;32mI (187264) MAIN: MQTT message sent![0m
+[0;32mI (188124) mqtts: MQTT_EVENT_PUBLISHED, msg_id=43356[0m
+[0;32mI (198084) Temperature sensor: Slot 0: 22.44 °C[0m
+[0;32mI (198304) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.96 mV (attenuated by the sensor), Noise floor: 0.41, SNR: 99.07[0m
+[0;32mI (198304) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=41284[0m
+[0;32mI (198304) MAIN: MQTT message sent![0m
+[0;32mI (198564) mqtts: MQTT_EVENT_PUBLISHED, msg_id=41284[0m
+[0;32mI (209124) Temperature sensor: Slot 0: 22.44 °C[0m
+[0;32mI (209344) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.04 mV (attenuated by the sensor), Noise floor: 0.44, SNR: 93.76[0m
+[0;32mI (209344) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=46051[0m
+[0;32mI (209344) MAIN: MQTT message sent![0m
+[0;32mI (210034) mqtts: MQTT_EVENT_PUBLISHED, msg_id=46051[0m
+[0;32mI (220164) Temperature sensor: Slot 0: 22.50 °C[0m
+[0;32mI (220384) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 39.27 mV (attenuated by the sensor), Noise floor: 0.46, SNR: 85.89[0m
+[0;32mI (220384) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=41643[0m
+[0;32mI (220384) MAIN: MQTT message sent![0m
+[0;32mI (221504) mqtts: MQTT_EVENT_PUBLISHED, msg_id=41643[0m
+[0;32mI (231204) Temperature sensor: Slot 0: 22.44 °C[0m
+[0;32mI (231424) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 38.65 mV (attenuated by the sensor), Noise floor: 0.48, SNR: 80.67[0m
+[0;32mI (231424) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=47898[0m
+[0;32mI (231424) MAIN: MQTT message sent![0m
+[0;32mI (231944) mqtts: MQTT_EVENT_PUBLISHED, msg_id=47898[0m
+[0;32mI (242244) Temperature sensor: Slot 0: 22.44 °C[0m
+[0;32mI (242464) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 31.63 mV (attenuated by the sensor), Noise floor: 0.49, SNR: 65.10[0m
+[0;32mI (242464) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=3790[0m
+[0;32mI (242464) MAIN: MQTT message sent![0m
+[0;32mI (243414) mqtts: MQTT_EVENT_PUBLISHED, msg_id=3790[0m
+[0;32mI (253284) Temperature sensor: Slot 0: 22.50 °C[0m
+[0;32mI (253504) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.30 mV (attenuated by the sensor), Noise floor: 0.39, SNR: 106.33[0m
+[0;32mI (253504) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=58483[0m
+[0;32mI (253504) MAIN: MQTT message sent![0m
+[0;32mI (254064) mqtts: MQTT_EVENT_PUBLISHED, msg_id=58483[0m
+[0;32mI (264324) Temperature sensor: Slot 0: 22.44 °C[0m
+[0;32mI (264544) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.16 mV (attenuated by the sensor), Noise floor: 0.41, SNR: 101.09[0m
+[0;32mI (264544) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=20948[0m
+[0;32mI (264544) MAIN: MQTT message sent![0m
+[0;32mI (265324) mqtts: MQTT_EVENT_PUBLISHED, msg_id=20948[0m
+[0;32mI (275364) Temperature sensor: Slot 0: 22.44 °C[0m
+[0;32mI (275584) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 30.86 mV (attenuated by the sensor), Noise floor: 0.51, SNR: 61.02[0m
+[0;32mI (275584) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=4835[0m
+[0;32mI (275584) MAIN: MQTT message sent![0m
+[0;32mI (276794) mqtts: MQTT_EVENT_PUBLISHED, msg_id=4835[0m
+[0;32mI (286404) Temperature sensor: Slot 0: 22.44 °C[0m
+[0;32mI (286624) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.95 mV (attenuated by the sensor), Noise floor: 0.45, SNR: 90.46[0m
+[0;32mI (286624) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=21833[0m
+[0;32mI (286624) MAIN: MQTT message sent![0m
+[0;32mI (287444) mqtts: MQTT_EVENT_PUBLISHED, msg_id=21833[0m
+[0;32mI (297444) Temperature sensor: Slot 0: 22.44 °C[0m
+[0;32mI (297664) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.00 mV (attenuated by the sensor), Noise floor: 0.47, SNR: 86.02[0m
+[0;32mI (297664) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=13534[0m
+[0;32mI (297664) MAIN: MQTT message sent![0m
+[0;32mI (298914) mqtts: MQTT_EVENT_PUBLISHED, msg_id=13534[0m
+[0;32mI (308484) Temperature sensor: Slot 0: 22.44 °C[0m
+[0;32mI (308704) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.26 mV (attenuated by the sensor), Noise floor: 0.46, SNR: 87.61[0m
+[0;32mI (308704) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=64226[0m
+[0;32mI (308704) MAIN: MQTT message sent![0m
+[0;32mI (309154) mqtts: MQTT_EVENT_PUBLISHED, msg_id=64226[0m
+[0;32mI (319524) Temperature sensor: Slot 0: 22.44 °C[0m
+[0;32mI (319744) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.52 mV (attenuated by the sensor), Noise floor: 0.45, SNR: 90.07[0m
+[0;32mI (319744) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=31101[0m
+[0;32mI (319744) MAIN: MQTT message sent![0m
+[0;32mI (320414) mqtts: MQTT_EVENT_PUBLISHED, msg_id=31101[0m
+[0;32mI (330564) Temperature sensor: Slot 0: 22.44 °C[0m
+[0;32mI (330784) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.26 mV (attenuated by the sensor), Noise floor: 0.40, SNR: 102.36[0m
+[0;32mI (330784) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=11941[0m
+[0;32mI (330784) MAIN: MQTT message sent![0m
+[0;32mI (331784) mqtts: MQTT_EVENT_PUBLISHED, msg_id=11941[0m
+[0;32mI (341604) Temperature sensor: Slot 0: 22.50 °C[0m
+[0;32mI (341824) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 33.56 mV (attenuated by the sensor), Noise floor: 0.48, SNR: 70.50[0m
+[0;32mI (341824) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=49743[0m
+[0;32mI (341824) MAIN: MQTT message sent![0m
+[0;32mI (342234) mqtts: MQTT_EVENT_PUBLISHED, msg_id=49743[0m
+[0;32mI (352644) Temperature sensor: Slot 0: 22.50 °C[0m
+[0;32mI (352864) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.25 mV (attenuated by the sensor), Noise floor: 0.40, SNR: 103.14[0m
+[0;32mI (352864) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=29789[0m
+[0;32mI (352864) MAIN: MQTT message sent![0m
+[0;32mI (353704) mqtts: MQTT_EVENT_PUBLISHED, msg_id=29789[0m
+[0;32mI (363684) Temperature sensor: Slot 0: 22.50 °C[0m
+[0;32mI (363904) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 36.82 mV (attenuated by the sensor), Noise floor: 0.48, SNR: 77.23[0m
+[0;32mI (363904) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=16208[0m
+[0;32mI (363904) MAIN: MQTT message sent![0m
+[0;32mI (365174) mqtts: MQTT_EVENT_PUBLISHED, msg_id=16208[0m
+[0;32mI (374724) Temperature sensor: Slot 0: 22.50 °C[0m
+[0;32mI (374944) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 37.02 mV (attenuated by the sensor), Noise floor: 0.50, SNR: 73.76[0m
+[0;32mI (374944) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=8401[0m
+[0;32mI (374944) MAIN: MQTT message sent![0m
+[0;32mI (376024) mqtts: MQTT_EVENT_PUBLISHED, msg_id=8401[0m
+[0;32mI (385764) Temperature sensor: Slot 0: 22.50 °C[0m
+[0;32mI (385984) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.82 mV (attenuated by the sensor), Noise floor: 0.46, SNR: 88.08[0m
+[0;32mI (385984) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=40064[0m
+[0;32mI (385984) MAIN: MQTT message sent![0m
+[0;32mI (386264) mqtts: MQTT_EVENT_PUBLISHED, msg_id=40064[0m
+[0;32mI (396804) Temperature sensor: Slot 0: 22.50 °C[0m
+[0;32mI (397024) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.22 mV (attenuated by the sensor), Noise floor: 0.43, SNR: 95.80[0m
+[0;32mI (397024) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=9827[0m
+[0;32mI (397024) MAIN: MQTT message sent![0m
+[0;32mI (397524) mqtts: MQTT_EVENT_PUBLISHED, msg_id=9827[0m
+[0;32mI (407844) Temperature sensor: Slot 0: 22.50 °C[0m
+[0;32mI (408064) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.88 mV (attenuated by the sensor), Noise floor: 0.45, SNR: 91.40[0m
+[0;32mI (408064) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=62344[0m
+[0;32mI (408064) MAIN: MQTT message sent![0m
+[0;32mI (408784) mqtts: MQTT_EVENT_PUBLISHED, msg_id=62344[0m
+[0;32mI (418884) Temperature sensor: Slot 0: 22.50 °C[0m
+[0;32mI (419104) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 34.04 mV (attenuated by the sensor), Noise floor: 0.49, SNR: 69.06[0m
+[0;32mI (419104) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=15657[0m
+[0;32mI (419104) MAIN: MQTT message sent![0m
+[0;32mI (420054) mqtts: MQTT_EVENT_PUBLISHED, msg_id=15657[0m
+[0;32mI (429924) Temperature sensor: Slot 0: 22.50 °C[0m
+[0;32mI (430144) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 30.39 mV (attenuated by the sensor), Noise floor: 0.47, SNR: 64.58[0m
+[0;32mI (430144) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=34438[0m
+[0;32mI (430144) MAIN: MQTT message sent![0m
+[0;32mI (430504) mqtts: MQTT_EVENT_PUBLISHED, msg_id=34438[0m
+[0;32mI (440964) Temperature sensor: Slot 0: 22.50 °C[0m
+[0;32mI (441184) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 30.06 mV (attenuated by the sensor), Noise floor: 0.50, SNR: 60.51[0m
+[0;32mI (441184) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=64962[0m
+[0;32mI (441184) MAIN: MQTT message sent![0m
+[0;32mI (442384) mqtts: MQTT_EVENT_PUBLISHED, msg_id=64962[0m
+[0;32mI (452004) Temperature sensor: Slot 0: 22.50 °C[0m
+[0;32mI (452224) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.51 mV (attenuated by the sensor), Noise floor: 0.41, SNR: 100.11[0m
+[0;32mI (452224) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=11441[0m
+[0;32mI (452224) MAIN: MQTT message sent![0m
+[0;32mI (452824) mqtts: MQTT_EVENT_PUBLISHED, msg_id=11441[0m
+[0;32mI (463044) Temperature sensor: Slot 0: 22.50 °C[0m
+[0;32mI (463264) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 39.40 mV (attenuated by the sensor), Noise floor: 0.45, SNR: 87.52[0m
+[0;32mI (463264) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=28803[0m
+[0;32mI (463264) MAIN: MQTT message sent![0m
+[0;32mI (464294) mqtts: MQTT_EVENT_PUBLISHED, msg_id=28803[0m
+[0;32mI (474084) Temperature sensor: Slot 0: 22.50 °C[0m
+[0;32mI (474304) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 26.76 mV (attenuated by the sensor), Noise floor: 0.47, SNR: 56.79[0m
+[0;32mI (474304) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=5634[0m
+[0;32mI (474304) MAIN: MQTT message sent![0m
+[0;32mI (474524) mqtts: MQTT_EVENT_PUBLISHED, msg_id=5634[0m
+[0;32mI (485124) Temperature sensor: Slot 0: 22.50 °C[0m
+[0;32mI (485344) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 37.59 mV (attenuated by the sensor), Noise floor: 0.47, SNR: 80.79[0m
+[0;32mI (485344) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=37455[0m
+[0;32mI (485344) MAIN: MQTT message sent![0m
+[0;32mI (485794) mqtts: MQTT_EVENT_PUBLISHED, msg_id=37455[0m
+[0;32mI (496164) Temperature sensor: Slot 0: 22.50 °C[0m
+[0;32mI (496384) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 37.63 mV (attenuated by the sensor), Noise floor: 0.47, SNR: 80.61[0m
+[0;32mI (496384) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=41398[0m
+[0;32mI (496384) MAIN: MQTT message sent![0m
+[0;32mI (497674) mqtts: MQTT_EVENT_PUBLISHED, msg_id=41398[0m
+[0;32mI (507204) Temperature sensor: Slot 0: 22.50 °C[0m
+[0;32mI (507424) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.58 mV (attenuated by the sensor), Noise floor: 0.45, SNR: 89.87[0m
+[0;32mI (507424) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=21038[0m
+[0;32mI (507424) MAIN: MQTT message sent![0m
+[0;32mI (507914) mqtts: MQTT_EVENT_PUBLISHED, msg_id=21038[0m
+[0;32mI (518244) Temperature sensor: Slot 0: 22.56 °C[0m
+[0;32mI (518464) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 38.78 mV (attenuated by the sensor), Noise floor: 0.47, SNR: 82.75[0m
+[0;32mI (518464) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=28293[0m
+[0;32mI (518464) MAIN: MQTT message sent![0m
+[0;32mI (519174) mqtts: MQTT_EVENT_PUBLISHED, msg_id=28293[0m
+[0;32mI (529284) Temperature sensor: Slot 0: 22.56 °C[0m
+[0;32mI (529504) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.84 mV (attenuated by the sensor), Noise floor: 0.43, SNR: 95.19[0m
+[0;32mI (529504) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=42849[0m
+[0;32mI (529504) MAIN: MQTT message sent![0m
+[0;32mI (530644) mqtts: MQTT_EVENT_PUBLISHED, msg_id=42849[0m
+[0;32mI (540324) Temperature sensor: Slot 0: 22.56 °C[0m
+[0;32mI (540544) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.36 mV (attenuated by the sensor), Noise floor: 0.41, SNR: 100.14[0m
+[0;32mI (540544) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=20113[0m
+[0;32mI (540544) MAIN: MQTT message sent![0m
+[0;32mI (540944) mqtts: MQTT_EVENT_PUBLISHED, msg_id=20113[0m
+[0;32mI (551364) Temperature sensor: Slot 0: 22.56 °C[0m
+[0;32mI (551584) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.30 mV (attenuated by the sensor), Noise floor: 0.44, SNR: 92.81[0m
+[0;32mI (551584) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=35720[0m
+[0;32mI (551584) MAIN: MQTT message sent![0m
+[0;32mI (552144) mqtts: MQTT_EVENT_PUBLISHED, msg_id=35720[0m
+[0;32mI (562404) Temperature sensor: Slot 0: 22.56 °C[0m
+[0;32mI (562624) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.17 mV (attenuated by the sensor), Noise floor: 0.40, SNR: 103.29[0m
+[0;32mI (562624) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=49213[0m
+[0;32mI (562624) MAIN: MQTT message sent![0m
+[0;32mI (563924) mqtts: MQTT_EVENT_PUBLISHED, msg_id=49213[0m
+[0;32mI (573444) Temperature sensor: Slot 0: 22.56 °C[0m
+[0;32mI (573664) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.48 mV (attenuated by the sensor), Noise floor: 0.42, SNR: 95.56[0m
+[0;32mI (573664) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=3028[0m
+[0;32mI (573664) MAIN: MQTT message sent![0m
+[0;32mI (574264) mqtts: MQTT_EVENT_PUBLISHED, msg_id=3028[0m
+[0;32mI (584484) Temperature sensor: Slot 0: 22.56 °C[0m
+[0;32mI (584704) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.29 mV (attenuated by the sensor), Noise floor: 0.40, SNR: 102.91[0m
+[0;32mI (584704) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=28784[0m
+[0;32mI (584704) MAIN: MQTT message sent![0m
+[0;32mI (585524) mqtts: MQTT_EVENT_PUBLISHED, msg_id=28784[0m
+[0;32mI (595524) Temperature sensor: Slot 0: 22.56 °C[0m
+[0;32mI (595744) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.23 mV (attenuated by the sensor), Noise floor: 0.49, SNR: 82.45[0m
+[0;32mI (595744) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=35221[0m
+[0;32mI (595744) MAIN: MQTT message sent![0m
+[0;32mI (597104) mqtts: MQTT_EVENT_PUBLISHED, msg_id=35221[0m
+[0;32mI (606564) Temperature sensor: Slot 0: 22.56 °C[0m
+[0;32mI (606784) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.17 mV (attenuated by the sensor), Noise floor: 0.40, SNR: 102.65[0m
+[0;32mI (606784) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=15674[0m
+[0;32mI (606784) MAIN: MQTT message sent![0m
+[0;32mI (607344) mqtts: MQTT_EVENT_PUBLISHED, msg_id=15674[0m
+[0;32mI (617604) Temperature sensor: Slot 0: 22.56 °C[0m
+[0;32mI (617824) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.18 mV (attenuated by the sensor), Noise floor: 0.42, SNR: 97.20[0m
+[0;32mI (617824) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=64815[0m
+[0;32mI (617824) MAIN: MQTT message sent![0m
+[0;32mI (618914) mqtts: MQTT_EVENT_PUBLISHED, msg_id=64815[0m
+[0;32mI (628644) Temperature sensor: Slot 0: 22.56 °C[0m
+[0;32mI (628864) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 39.06 mV (attenuated by the sensor), Noise floor: 0.46, SNR: 84.42[0m
+[0;32mI (628864) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=12880[0m
+[0;32mI (628864) MAIN: MQTT message sent![0m
+[0;32mI (629364) mqtts: MQTT_EVENT_PUBLISHED, msg_id=12880[0m
+[0;32mI (639684) Temperature sensor: Slot 0: 22.62 °C[0m
+[0;32mI (639904) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 38.52 mV (attenuated by the sensor), Noise floor: 0.45, SNR: 84.75[0m
+[0;32mI (639904) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=42534[0m
+[0;32mI (639904) MAIN: MQTT message sent![0m
+[0;32mI (640834) mqtts: MQTT_EVENT_PUBLISHED, msg_id=42534[0m
+[0;32mI (650724) Temperature sensor: Slot 0: 22.56 °C[0m
+[0;32mI (650944) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.78 mV (attenuated by the sensor), Noise floor: 0.47, SNR: 86.45[0m
+[0;32mI (650944) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=32004[0m
+[0;32mI (650944) MAIN: MQTT message sent![0m
+[0;32mI (652084) mqtts: MQTT_EVENT_PUBLISHED, msg_id=32004[0m
+[0;32mI (661764) Temperature sensor: Slot 0: 22.62 °C[0m
+[0;32mI (661984) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 34.08 mV (attenuated by the sensor), Noise floor: 0.50, SNR: 68.49[0m
+[0;32mI (661984) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=28681[0m
+[0;32mI (661984) MAIN: MQTT message sent![0m
+[0;32mI (662324) mqtts: MQTT_EVENT_PUBLISHED, msg_id=28681[0m
+[0;32mI (672804) Temperature sensor: Slot 0: 22.56 °C[0m
+[0;32mI (673024) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 39.83 mV (attenuated by the sensor), Noise floor: 0.44, SNR: 90.37[0m
+[0;32mI (673024) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=42579[0m
+[0;32mI (673024) MAIN: MQTT message sent![0m
+[0;32mI (673904) mqtts: MQTT_EVENT_PUBLISHED, msg_id=42579[0m
+[0;32mI (683844) Temperature sensor: Slot 0: 22.62 °C[0m
+[0;32mI (684064) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.26 mV (attenuated by the sensor), Noise floor: 0.43, SNR: 93.53[0m
+[0;32mI (684064) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=28891[0m
+[0;32mI (684064) MAIN: MQTT message sent![0m
+[0;32mI (684454) mqtts: MQTT_EVENT_PUBLISHED, msg_id=28891[0m
+[0;32mI (694884) Temperature sensor: Slot 0: 22.62 °C[0m
+[0;32mI (695104) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 29.26 mV (attenuated by the sensor), Noise floor: 0.47, SNR: 62.49[0m
+[0;32mI (695104) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=61469[0m
+[0;32mI (695104) MAIN: MQTT message sent![0m
+[0;32mI (695934) mqtts: MQTT_EVENT_PUBLISHED, msg_id=61469[0m
+[0;32mI (705924) Temperature sensor: Slot 0: 22.62 °C[0m
+[0;32mI (706144) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 39.49 mV (attenuated by the sensor), Noise floor: 0.49, SNR: 79.83[0m
+[0;32mI (706144) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=30333[0m
+[0;32mI (706144) MAIN: MQTT message sent![0m
+[0;32mI (707384) mqtts: MQTT_EVENT_PUBLISHED, msg_id=30333[0m
+[0;32mI (716964) Temperature sensor: Slot 0: 22.62 °C[0m
+[0;32mI (717184) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 38.98 mV (attenuated by the sensor), Noise floor: 0.50, SNR: 78.38[0m
+[0;32mI (717184) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=4641[0m
+[0;32mI (717184) MAIN: MQTT message sent![0m
+[0;32mI (717624) mqtts: MQTT_EVENT_PUBLISHED, msg_id=4641[0m
+[0;32mI (728004) Temperature sensor: Slot 0: 22.62 °C[0m
+[0;32mI (728224) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.17 mV (attenuated by the sensor), Noise floor: 0.43, SNR: 95.51[0m
+[0;32mI (728224) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=2723[0m
+[0;32mI (728224) MAIN: MQTT message sent![0m
+[0;32mI (729094) mqtts: MQTT_EVENT_PUBLISHED, msg_id=2723[0m
+[0;32mI (739044) Temperature sensor: Slot 0: 22.62 °C[0m
+[0;32mI (739264) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 39.36 mV (attenuated by the sensor), Noise floor: 0.45, SNR: 87.45[0m
+[0;32mI (739264) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=10606[0m
+[0;32mI (739264) MAIN: MQTT message sent![0m
+[0;32mI (739744) mqtts: MQTT_EVENT_PUBLISHED, msg_id=10606[0m
+[0;32mI (750084) Temperature sensor: Slot 0: 22.62 °C[0m
+[0;32mI (750304) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 36.93 mV (attenuated by the sensor), Noise floor: 0.47, SNR: 79.42[0m
+[0;32mI (750304) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=64929[0m
+[0;32mI (750304) MAIN: MQTT message sent![0m
+[0;32mI (751214) mqtts: MQTT_EVENT_PUBLISHED, msg_id=64929[0m
+[0;32mI (761124) Temperature sensor: Slot 0: 22.62 °C[0m
+[0;32mI (761344) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.19 mV (attenuated by the sensor), Noise floor: 0.46, SNR: 88.11[0m
+[0;32mI (761344) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=10615[0m
+[0;32mI (761344) MAIN: MQTT message sent![0m
+[0;32mI (762684) mqtts: MQTT_EVENT_PUBLISHED, msg_id=10615[0m
+[0;32mI (772164) Temperature sensor: Slot 0: 22.62 °C[0m
+[0;32mI (772384) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.57 mV (attenuated by the sensor), Noise floor: 0.44, SNR: 92.79[0m
+[0;32mI (772384) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=23557[0m
+[0;32mI (772384) MAIN: MQTT message sent![0m
+[0;32mI (773334) mqtts: MQTT_EVENT_PUBLISHED, msg_id=23557[0m
+[0;32mI (783204) Temperature sensor: Slot 0: 22.62 °C[0m
+[0;32mI (783424) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.16 mV (attenuated by the sensor), Noise floor: 0.46, SNR: 89.11[0m
+[0;32mI (783424) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=58054[0m
+[0;32mI (783424) MAIN: MQTT message sent![0m
+[0;32mI (783774) mqtts: MQTT_EVENT_PUBLISHED, msg_id=58054[0m
+[0;32mI (794244) Temperature sensor: Slot 0: 22.62 °C[0m
+[0;32mI (794464) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.41 mV (attenuated by the sensor), Noise floor: 0.45, SNR: 88.84[0m
+[0;32mI (794464) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=46332[0m
+[0;32mI (794464) MAIN: MQTT message sent![0m
+[0;32mI (795244) mqtts: MQTT_EVENT_PUBLISHED, msg_id=46332[0m
+[0;32mI (805284) Temperature sensor: Slot 0: 22.62 °C[0m
+[0;32mI (805504) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.81 mV (attenuated by the sensor), Noise floor: 0.45, SNR: 90.75[0m
+[0;32mI (805504) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=2673[0m
+[0;32mI (805504) MAIN: MQTT message sent![0m
+[0;32mI (805904) mqtts: MQTT_EVENT_PUBLISHED, msg_id=2673[0m
+[0;32mI (816324) Temperature sensor: Slot 0: 22.62 °C[0m
+[0;32mI (816544) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.06 mV (attenuated by the sensor), Noise floor: 0.43, SNR: 95.18[0m
+[0;32mI (816544) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=32237[0m
+[0;32mI (816544) MAIN: MQTT message sent![0m
+[0;32mI (817364) mqtts: MQTT_EVENT_PUBLISHED, msg_id=32237[0m
+[0;32mI (827364) Temperature sensor: Slot 0: 22.62 °C[0m
+[0;32mI (827584) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 38.26 mV (attenuated by the sensor), Noise floor: 0.49, SNR: 78.32[0m
+[0;32mI (827584) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=4760[0m
+[0;32mI (827584) MAIN: MQTT message sent![0m
+[0;32mI (828834) mqtts: MQTT_EVENT_PUBLISHED, msg_id=4760[0m
+[0;32mI (838404) Temperature sensor: Slot 0: 22.62 °C[0m
+[0;32mI (838624) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.05 mV (attenuated by the sensor), Noise floor: 0.42, SNR: 97.07[0m
+[0;32mI (838624) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=55255[0m
+[0;32mI (838624) MAIN: MQTT message sent![0m
+[0;32mI (839274) mqtts: MQTT_EVENT_PUBLISHED, msg_id=55255[0m
+[0;32mI (849444) Temperature sensor: Slot 0: 22.62 °C[0m
+[0;32mI (849664) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.03 mV (attenuated by the sensor), Noise floor: 0.41, SNR: 100.61[0m
+[0;32mI (849664) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=20590[0m
+[0;32mI (849664) MAIN: MQTT message sent![0m
+[0;32mI (850744) mqtts: MQTT_EVENT_PUBLISHED, msg_id=20590[0m
+[0;32mI (860484) Temperature sensor: Slot 0: 22.62 °C[0m
+[0;32mI (860704) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 27.24 mV (attenuated by the sensor), Noise floor: 0.47, SNR: 57.92[0m
+[0;32mI (860704) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=29925[0m
+[0;32mI (860704) MAIN: MQTT message sent![0m
+[0;32mI (861594) mqtts: MQTT_EVENT_PUBLISHED, msg_id=29925[0m
+[0;32mI (871524) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (871744) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 37.25 mV (attenuated by the sensor), Noise floor: 0.50, SNR: 74.66[0m
+[0;32mI (871744) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=48172[0m
+[0;32mI (871744) MAIN: MQTT message sent![0m
+[0;32mI (873074) mqtts: MQTT_EVENT_PUBLISHED, msg_id=48172[0m
+[0;32mI (882564) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (882784) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 36.75 mV (attenuated by the sensor), Noise floor: 0.46, SNR: 79.69[0m
+[0;32mI (882784) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=47323[0m
+[0;32mI (882784) MAIN: MQTT message sent![0m
+[0;32mI (883304) mqtts: MQTT_EVENT_PUBLISHED, msg_id=47323[0m
+[0;32mI (893604) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (893824) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.58 mV (attenuated by the sensor), Noise floor: 0.44, SNR: 91.48[0m
+[0;32mI (893824) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=26091[0m
+[0;32mI (893824) MAIN: MQTT message sent![0m
+[0;32mI (894574) mqtts: MQTT_EVENT_PUBLISHED, msg_id=26091[0m
+[0;32mI (904644) Temperature sensor: Slot 0: 22.62 °C[0m
+[0;32mI (904864) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 34.86 mV (attenuated by the sensor), Noise floor: 0.50, SNR: 70.31[0m
+[0;32mI (904864) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=16678[0m
+[0;32mI (904864) MAIN: MQTT message sent![0m
+[0;32mI (906044) mqtts: MQTT_EVENT_PUBLISHED, msg_id=16678[0m
+[0;32mI (915684) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (915904) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 39.39 mV (attenuated by the sensor), Noise floor: 0.48, SNR: 81.47[0m
+[0;32mI (915904) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=15621[0m
+[0;32mI (915904) MAIN: MQTT message sent![0m
+[0;32mI (916484) mqtts: MQTT_EVENT_PUBLISHED, msg_id=15621[0m
+[0;32mI (926724) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (926944) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.76 mV (attenuated by the sensor), Noise floor: 0.50, SNR: 81.72[0m
+[0;32mI (926944) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=15450[0m
+[0;32mI (926944) MAIN: MQTT message sent![0m
+[0;32mI (927954) mqtts: MQTT_EVENT_PUBLISHED, msg_id=15450[0m
+[0;32mI (937764) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (937984) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.27 mV (attenuated by the sensor), Noise floor: 0.41, SNR: 100.01[0m
+[0;32mI (937984) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=57142[0m
+[0;32mI (937984) MAIN: MQTT message sent![0m
+[0;32mI (938504) mqtts: MQTT_EVENT_PUBLISHED, msg_id=57142[0m
+[0;32mI (948804) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (949024) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.93 mV (attenuated by the sensor), Noise floor: 0.43, SNR: 94.32[0m
+[0;32mI (949024) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=46592[0m
+[0;32mI (949024) MAIN: MQTT message sent![0m
+[0;32mI (949874) mqtts: MQTT_EVENT_PUBLISHED, msg_id=46592[0m
+[0;32mI (959844) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (960064) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.21 mV (attenuated by the sensor), Noise floor: 0.45, SNR: 92.32[0m
+[0;32mI (960064) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=49800[0m
+[0;32mI (960064) MAIN: MQTT message sent![0m
+[0;32mI (961334) mqtts: MQTT_EVENT_PUBLISHED, msg_id=49800[0m
+[0;32mI (970884) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (971104) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.22 mV (attenuated by the sensor), Noise floor: 0.43, SNR: 93.66[0m
+[0;32mI (971104) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=21273[0m
+[0;32mI (971104) MAIN: MQTT message sent![0m
+[0;32mI (971784) mqtts: MQTT_EVENT_PUBLISHED, msg_id=21273[0m
+[0;32mI (981924) Temperature sensor: Slot 0: 22.62 °C[0m
+[0;32mI (982144) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 37.11 mV (attenuated by the sensor), Noise floor: 0.47, SNR: 78.58[0m
+[0;32mI (982144) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=59104[0m
+[0;32mI (982144) MAIN: MQTT message sent![0m
+[0;32mI (982434) mqtts: MQTT_EVENT_PUBLISHED, msg_id=59104[0m
+[0;32mI (992964) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (993184) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 39.82 mV (attenuated by the sensor), Noise floor: 0.46, SNR: 87.13[0m
+[0;32mI (993184) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=48935[0m
+[0;32mI (993184) MAIN: MQTT message sent![0m
+[0;32mI (993904) mqtts: MQTT_EVENT_PUBLISHED, msg_id=48935[0m
+[0;32mI (1004004) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (1004224) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.22 mV (attenuated by the sensor), Noise floor: 0.41, SNR: 99.45[0m
+[0;32mI (1004224) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=59301[0m
+[0;32mI (1004224) MAIN: MQTT message sent![0m
+[0;32mI (1005374) mqtts: MQTT_EVENT_PUBLISHED, msg_id=59301[0m
+[0;32mI (1015044) Temperature sensor: Slot 0: 22.62 °C[0m
+[0;32mI (1015264) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 38.84 mV (attenuated by the sensor), Noise floor: 0.49, SNR: 78.55[0m
+[0;32mI (1015264) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=11653[0m
+[0;32mI (1015264) MAIN: MQTT message sent![0m
+[0;32mI (1015604) mqtts: MQTT_EVENT_PUBLISHED, msg_id=11653[0m
+[0;32mI (1026084) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (1026304) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.08 mV (attenuated by the sensor), Noise floor: 0.42, SNR: 98.67[0m
+[0;32mI (1026304) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=6905[0m
+[0;32mI (1026304) MAIN: MQTT message sent![0m
+[0;32mI (1026784) mqtts: MQTT_EVENT_PUBLISHED, msg_id=6905[0m
+[0;32mI (1037124) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (1037344) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.24 mV (attenuated by the sensor), Noise floor: 0.47, SNR: 85.23[0m
+[0;32mI (1037344) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=8400[0m
+[0;32mI (1037344) MAIN: MQTT message sent![0m
+[0;32mI (1038344) mqtts: MQTT_EVENT_PUBLISHED, msg_id=8400[0m
+[0;32mI (1048164) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (1048384) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.49 mV (attenuated by the sensor), Noise floor: 0.49, SNR: 83.33[0m
+[0;32mI (1048384) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=50336[0m
+[0;32mI (1048384) MAIN: MQTT message sent![0m
+[0;32mI (1048784) mqtts: MQTT_EVENT_PUBLISHED, msg_id=50336[0m
+[0;32mI (1059204) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (1059424) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.87 mV (attenuated by the sensor), Noise floor: 0.46, SNR: 88.20[0m
+[0;32mI (1059424) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=18826[0m
+[0;32mI (1059424) MAIN: MQTT message sent![0m
+[0;32mI (1060254) mqtts: MQTT_EVENT_PUBLISHED, msg_id=18826[0m
+[0;32mI (1070244) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (1070464) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.34 mV (attenuated by the sensor), Noise floor: 0.40, SNR: 103.07[0m
+[0;32mI (1070464) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=44561[0m
+[0;32mI (1070464) MAIN: MQTT message sent![0m
+[0;32mI (1071724) mqtts: MQTT_EVENT_PUBLISHED, msg_id=44561[0m
+[0;32mI (1081284) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (1081504) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.25 mV (attenuated by the sensor), Noise floor: 0.39, SNR: 104.77[0m
+[0;32mI (1081504) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=55166[0m
+[0;32mI (1081504) MAIN: MQTT message sent![0m
+[0;32mI (1082174) mqtts: MQTT_EVENT_PUBLISHED, msg_id=55166[0m
+[0;32mI (1092324) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (1092544) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 39.30 mV (attenuated by the sensor), Noise floor: 0.46, SNR: 84.71[0m
+[0;32mI (1092544) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=5722[0m
+[0;32mI (1092544) MAIN: MQTT message sent![0m
+[0;32mI (1093744) mqtts: MQTT_EVENT_PUBLISHED, msg_id=5722[0m
+[0;32mI (1103364) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1103584) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 39.66 mV (attenuated by the sensor), Noise floor: 0.44, SNR: 89.65[0m
+[0;32mI (1103584) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=61527[0m
+[0;32mI (1103584) MAIN: MQTT message sent![0m
+[0;32mI (1104294) mqtts: MQTT_EVENT_PUBLISHED, msg_id=61527[0m
+[0;32mI (1114404) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (1114624) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 35.68 mV (attenuated by the sensor), Noise floor: 0.47, SNR: 75.39[0m
+[0;32mI (1114624) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=21892[0m
+[0;32mI (1114624) MAIN: MQTT message sent![0m
+[0;32mI (1115764) mqtts: MQTT_EVENT_PUBLISHED, msg_id=21892[0m
+[0;32mI (1125444) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1125664) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.24 mV (attenuated by the sensor), Noise floor: 0.43, SNR: 93.36[0m
+[0;32mI (1125664) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=63447[0m
+[0;32mI (1125664) MAIN: MQTT message sent![0m
+[0;32mI (1126204) mqtts: MQTT_EVENT_PUBLISHED, msg_id=63447[0m
+[0;32mI (1136484) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (1136704) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 39.81 mV (attenuated by the sensor), Noise floor: 0.50, SNR: 80.40[0m
+[0;32mI (1136704) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=19583[0m
+[0;32mI (1136704) MAIN: MQTT message sent![0m
+[0;32mI (1137674) mqtts: MQTT_EVENT_PUBLISHED, msg_id=19583[0m
+[0;32mI (1147524) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (1147744) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.97 mV (attenuated by the sensor), Noise floor: 0.45, SNR: 91.35[0m
+[0;32mI (1147744) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=21167[0m
+[0;32mI (1147744) MAIN: MQTT message sent![0m
+[0;32mI (1147914) mqtts: MQTT_EVENT_PUBLISHED, msg_id=21167[0m
+[0;32mI (1158564) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (1158784) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 38.24 mV (attenuated by the sensor), Noise floor: 0.46, SNR: 82.62[0m
+[0;32mI (1158784) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=57953[0m
+[0;32mI (1158784) MAIN: MQTT message sent![0m
+[0;32mI (1159374) mqtts: MQTT_EVENT_PUBLISHED, msg_id=57953[0m
+[0;32mI (1169604) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (1169824) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.15 mV (attenuated by the sensor), Noise floor: 0.42, SNR: 98.27[0m
+[0;32mI (1169824) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=48106[0m
+[0;32mI (1169824) MAIN: MQTT message sent![0m
+[0;32mI (1170844) mqtts: MQTT_EVENT_PUBLISHED, msg_id=48106[0m
+[0;32mI (1180644) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (1180864) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.92 mV (attenuated by the sensor), Noise floor: 0.41, SNR: 100.52[0m
+[0;32mI (1180864) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=36331[0m
+[0;32mI (1180864) MAIN: MQTT message sent![0m
+[0;32mI (1181294) mqtts: MQTT_EVENT_PUBLISHED, msg_id=36331[0m
+[0;32mI (1191684) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (1191904) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.55 mV (attenuated by the sensor), Noise floor: 0.44, SNR: 92.48[0m
+[0;32mI (1191904) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=40287[0m
+[0;32mI (1191904) MAIN: MQTT message sent![0m
+[0;32mI (1192554) mqtts: MQTT_EVENT_PUBLISHED, msg_id=40287[0m
+[0;32mI (1202724) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (1202944) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 38.41 mV (attenuated by the sensor), Noise floor: 0.48, SNR: 80.68[0m
+[0;32mI (1202944) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=24587[0m
+[0;32mI (1202944) MAIN: MQTT message sent![0m
+[0;32mI (1204024) mqtts: MQTT_EVENT_PUBLISHED, msg_id=24587[0m
+[0;32mI (1213764) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (1213984) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 39.83 mV (attenuated by the sensor), Noise floor: 0.46, SNR: 87.00[0m
+[0;32mI (1213984) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=57565[0m
+[0;32mI (1213984) MAIN: MQTT message sent![0m
+[0;32mI (1214474) mqtts: MQTT_EVENT_PUBLISHED, msg_id=57565[0m
+[0;32mI (1224804) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (1225024) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 37.55 mV (attenuated by the sensor), Noise floor: 0.49, SNR: 77.40[0m
+[0;32mI (1225024) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=37659[0m
+[0;32mI (1225024) MAIN: MQTT message sent![0m
+[0;32mI (1226144) mqtts: MQTT_EVENT_PUBLISHED, msg_id=37659[0m
+[0;32mI (1235844) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (1236064) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 39.85 mV (attenuated by the sensor), Noise floor: 0.44, SNR: 91.09[0m
+[0;32mI (1236064) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=17815[0m
+[0;32mI (1236064) MAIN: MQTT message sent![0m
+[0;32mI (1236384) mqtts: MQTT_EVENT_PUBLISHED, msg_id=17815[0m
+[0;32mI (1246884) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1247104) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.56 mV (attenuated by the sensor), Noise floor: 0.45, SNR: 89.22[0m
+[0;32mI (1247104) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=62957[0m
+[0;32mI (1247104) MAIN: MQTT message sent![0m
+[0;32mI (1247854) mqtts: MQTT_EVENT_PUBLISHED, msg_id=62957[0m
+[0;32mI (1257924) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (1258144) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.75 mV (attenuated by the sensor), Noise floor: 0.50, SNR: 81.61[0m
+[0;32mI (1258144) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=35393[0m
+[0;32mI (1258144) MAIN: MQTT message sent![0m
+[0;32mI (1259324) mqtts: MQTT_EVENT_PUBLISHED, msg_id=35393[0m
+[0;32mI (1268964) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (1269184) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.64 mV (attenuated by the sensor), Noise floor: 0.44, SNR: 93.35[0m
+[0;32mI (1269184) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=61627[0m
+[0;32mI (1269184) MAIN: MQTT message sent![0m
+[0;32mI (1269554) mqtts: MQTT_EVENT_PUBLISHED, msg_id=61627[0m
+[0;32mI (1280004) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (1280224) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 38.39 mV (attenuated by the sensor), Noise floor: 0.46, SNR: 82.80[0m
+[0;32mI (1280224) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=4094[0m
+[0;32mI (1280224) MAIN: MQTT message sent![0m
+[0;32mI (1281034) mqtts: MQTT_EVENT_PUBLISHED, msg_id=4094[0m
+[0;32mI (1291044) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1291264) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 35.84 mV (attenuated by the sensor), Noise floor: 0.49, SNR: 73.60[0m
+[0;32mI (1291264) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=59249[0m
+[0;32mI (1291264) MAIN: MQTT message sent![0m
+[0;32mI (1291684) mqtts: MQTT_EVENT_PUBLISHED, msg_id=59249[0m
+[0;32mI (1302084) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1302304) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.57 mV (attenuated by the sensor), Noise floor: 0.46, SNR: 87.91[0m
+[0;32mI (1302304) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=12858[0m
+[0;32mI (1302304) MAIN: MQTT message sent![0m
+[0;32mI (1303144) mqtts: MQTT_EVENT_PUBLISHED, msg_id=12858[0m
+[0;32mI (1313124) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1313344) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.64 mV (attenuated by the sensor), Noise floor: 0.39, SNR: 107.38[0m
+[0;32mI (1313344) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=58268[0m
+[0;32mI (1313344) MAIN: MQTT message sent![0m
+[0;32mI (1314614) mqtts: MQTT_EVENT_PUBLISHED, msg_id=58268[0m
+[0;32mI (1324164) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1324384) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.12 mV (attenuated by the sensor), Noise floor: 0.39, SNR: 106.12[0m
+[0;32mI (1324384) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=54728[0m
+[0;32mI (1324384) MAIN: MQTT message sent![0m
+[0;32mI (1325064) mqtts: MQTT_EVENT_PUBLISHED, msg_id=54728[0m
+[0;32mI (1335204) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1335424) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.28 mV (attenuated by the sensor), Noise floor: 0.44, SNR: 94.40[0m
+[0;32mI (1335424) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=2312[0m
+[0;32mI (1335424) MAIN: MQTT message sent![0m
+[0;32mI (1336324) mqtts: MQTT_EVENT_PUBLISHED, msg_id=2312[0m
+[0;32mI (1346244) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (1346464) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 39.99 mV (attenuated by the sensor), Noise floor: 0.48, SNR: 82.62[0m
+[0;32mI (1346464) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=24302[0m
+[0;32mI (1346464) MAIN: MQTT message sent![0m
+[0;32mI (1346874) mqtts: MQTT_EVENT_PUBLISHED, msg_id=24302[0m
+[0;32mI (1357284) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1357504) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 35.12 mV (attenuated by the sensor), Noise floor: 0.50, SNR: 69.84[0m
+[0;32mI (1357504) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=5539[0m
+[0;32mI (1357504) MAIN: MQTT message sent![0m
+[0;32mI (1358444) mqtts: MQTT_EVENT_PUBLISHED, msg_id=5539[0m
+[0;32mI (1368324) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1368544) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.88 mV (attenuated by the sensor), Noise floor: 0.44, SNR: 93.96[0m
+[0;32mI (1368544) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=4069[0m
+[0;32mI (1368544) MAIN: MQTT message sent![0m
+[0;32mI (1369914) mqtts: MQTT_EVENT_PUBLISHED, msg_id=4069[0m
+[0;32mI (1379364) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1379584) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 38.00 mV (attenuated by the sensor), Noise floor: 0.48, SNR: 78.90[0m
+[0;32mI (1379584) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=15165[0m
+[0;32mI (1379584) MAIN: MQTT message sent![0m
+[0;32mI (1380364) mqtts: MQTT_EVENT_PUBLISHED, msg_id=15165[0m
+[0;32mI (1390404) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1390624) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 37.37 mV (attenuated by the sensor), Noise floor: 0.49, SNR: 76.39[0m
+[0;32mI (1390624) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=17124[0m
+[0;32mI (1390624) MAIN: MQTT message sent![0m
+[0;32mI (1391834) mqtts: MQTT_EVENT_PUBLISHED, msg_id=17124[0m
+[0;32mI (1401444) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1401664) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 36.97 mV (attenuated by the sensor), Noise floor: 0.49, SNR: 75.49[0m
+[0;32mI (1401664) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=49337[0m
+[0;32mI (1401664) MAIN: MQTT message sent![0m
+[0;32mI (1402274) mqtts: MQTT_EVENT_PUBLISHED, msg_id=49337[0m
+[0;32mI (1412484) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1412704) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.98 mV (attenuated by the sensor), Noise floor: 0.43, SNR: 94.49[0m
+[0;32mI (1412704) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=54619[0m
+[0;32mI (1412704) MAIN: MQTT message sent![0m
+[0;32mI (1413734) mqtts: MQTT_EVENT_PUBLISHED, msg_id=54619[0m
+[0;32mI (1423524) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1423744) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.83 mV (attenuated by the sensor), Noise floor: 0.44, SNR: 93.32[0m
+[0;32mI (1423744) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=49137[0m
+[0;32mI (1423744) MAIN: MQTT message sent![0m
+[0;32mI (1424384) mqtts: MQTT_EVENT_PUBLISHED, msg_id=49137[0m
+[0;32mI (1434564) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (1434784) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 20.86 mV (attenuated by the sensor), Noise floor: 0.50, SNR: 41.62[0m
+[0;32mI (1434784) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=23420[0m
+[0;32mI (1434784) MAIN: MQTT message sent![0m
+[0;32mI (1435864) mqtts: MQTT_EVENT_PUBLISHED, msg_id=23420[0m
+[0;32mI (1445604) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1445824) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 37.35 mV (attenuated by the sensor), Noise floor: 0.51, SNR: 73.68[0m
+[0;32mI (1445824) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=23860[0m
+[0;32mI (1445824) MAIN: MQTT message sent![0m
+[0;32mI (1446094) mqtts: MQTT_EVENT_PUBLISHED, msg_id=23860[0m
+[0;32mI (1456644) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1456864) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 38.20 mV (attenuated by the sensor), Noise floor: 0.46, SNR: 82.27[0m
+[0;32mI (1456864) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=30758[0m
+[0;32mI (1456864) MAIN: MQTT message sent![0m
+[0;32mI (1457664) mqtts: MQTT_EVENT_PUBLISHED, msg_id=30758[0m
+[0;32mI (1467684) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1467904) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.97 mV (attenuated by the sensor), Noise floor: 0.37, SNR: 111.54[0m
+[0;32mI (1467904) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=58522[0m
+[0;32mI (1467904) MAIN: MQTT message sent![0m
+[0;32mI (1468214) mqtts: MQTT_EVENT_PUBLISHED, msg_id=58522[0m
+[0;32mI (1478724) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1478944) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 39.88 mV (attenuated by the sensor), Noise floor: 0.46, SNR: 86.61[0m
+[0;32mI (1478944) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=42658[0m
+[0;32mI (1478944) MAIN: MQTT message sent![0m
+[0;32mI (1479684) mqtts: MQTT_EVENT_PUBLISHED, msg_id=42658[0m
+[0;32mI (1489764) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1489984) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.24 mV (attenuated by the sensor), Noise floor: 0.43, SNR: 92.79[0m
+[0;32mI (1489984) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=10458[0m
+[0;32mI (1489984) MAIN: MQTT message sent![0m
+[0;32mI (1491154) mqtts: MQTT_EVENT_PUBLISHED, msg_id=10458[0m
+[0;32mI (1500804) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1501024) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 37.61 mV (attenuated by the sensor), Noise floor: 0.48, SNR: 77.75[0m
+[0;32mI (1501024) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=2120[0m
+[0;32mI (1501024) MAIN: MQTT message sent![0m
+[0;32mI (1501594) mqtts: MQTT_EVENT_PUBLISHED, msg_id=2120[0m
+[0;32mI (1511844) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1512064) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.87 mV (attenuated by the sensor), Noise floor: 0.43, SNR: 95.04[0m
+[0;32mI (1512064) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=29951[0m
+[0;32mI (1512064) MAIN: MQTT message sent![0m
+[0;32mI (1513064) mqtts: MQTT_EVENT_PUBLISHED, msg_id=29951[0m
+[0;32mI (1522884) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (1523104) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.92 mV (attenuated by the sensor), Noise floor: 0.45, SNR: 90.94[0m
+[0;32mI (1523104) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=49344[0m
+[0;32mI (1523104) MAIN: MQTT message sent![0m
+[0;32mI (1523304) mqtts: MQTT_EVENT_PUBLISHED, msg_id=49344[0m
+[0;32mI (1533924) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (1534144) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 37.74 mV (attenuated by the sensor), Noise floor: 0.48, SNR: 78.11[0m
+[0;32mI (1534144) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=49890[0m
+[0;32mI (1534144) MAIN: MQTT message sent![0m
+[0;32mI (1534984) mqtts: MQTT_EVENT_PUBLISHED, msg_id=49890[0m
+[0;32mI (1544964) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1545184) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.51 mV (attenuated by the sensor), Noise floor: 0.42, SNR: 98.17[0m
+[0;32mI (1545184) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=27193[0m
+[0;32mI (1545184) MAIN: MQTT message sent![0m
+[0;32mI (1546244) mqtts: MQTT_EVENT_PUBLISHED, msg_id=27193[0m
+[0;32mI (1556004) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1556224) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 39.49 mV (attenuated by the sensor), Noise floor: 0.48, SNR: 81.99[0m
+[0;32mI (1556224) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=5659[0m
+[0;32mI (1556224) MAIN: MQTT message sent![0m
+[0;32mI (1556894) mqtts: MQTT_EVENT_PUBLISHED, msg_id=5659[0m
+[0;32mI (1567044) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1567264) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 34.51 mV (attenuated by the sensor), Noise floor: 0.51, SNR: 67.94[0m
+[0;32mI (1567264) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=26163[0m
+[0;32mI (1567264) MAIN: MQTT message sent![0m
+[0;32mI (1568154) mqtts: MQTT_EVENT_PUBLISHED, msg_id=26163[0m
+[0;32mI (1578084) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1578304) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.06 mV (attenuated by the sensor), Noise floor: 0.42, SNR: 98.32[0m
+[0;32mI (1578304) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=53677[0m
+[0;32mI (1578304) MAIN: MQTT message sent![0m
+[0;32mI (1579424) mqtts: MQTT_EVENT_PUBLISHED, msg_id=53677[0m
+[0;32mI (1589124) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1589344) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 34.83 mV (attenuated by the sensor), Noise floor: 0.51, SNR: 68.03[0m
+[0;32mI (1589344) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=30265[0m
+[0;32mI (1589344) MAIN: MQTT message sent![0m
+[0;32mI (1590074) mqtts: MQTT_EVENT_PUBLISHED, msg_id=30265[0m
+[0;32mI (1600164) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1600384) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.09 mV (attenuated by the sensor), Noise floor: 0.40, SNR: 101.61[0m
+[0;32mI (1600384) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=60934[0m
+[0;32mI (1600384) MAIN: MQTT message sent![0m
+[0;32mI (1601544) mqtts: MQTT_EVENT_PUBLISHED, msg_id=60934[0m
+[0;32mI (1611204) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1611424) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.34 mV (attenuated by the sensor), Noise floor: 0.40, SNR: 103.86[0m
+[0;32mI (1611424) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=21126[0m
+[0;32mI (1611424) MAIN: MQTT message sent![0m
+[0;32mI (1611694) mqtts: MQTT_EVENT_PUBLISHED, msg_id=21126[0m
+[0;32mI (1622244) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1622464) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.35 mV (attenuated by the sensor), Noise floor: 0.40, SNR: 103.90[0m
+[0;32mI (1622464) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=54145[0m
+[0;32mI (1622464) MAIN: MQTT message sent![0m
+[0;32mI (1623044) mqtts: MQTT_EVENT_PUBLISHED, msg_id=54145[0m
+[0;32mI (1633284) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1633504) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.85 mV (attenuated by the sensor), Noise floor: 0.43, SNR: 94.60[0m
+[0;32mI (1633504) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=65181[0m
+[0;32mI (1633504) MAIN: MQTT message sent![0m
+[0;32mI (1634304) mqtts: MQTT_EVENT_PUBLISHED, msg_id=65181[0m
+[0;32mI (1644324) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1644544) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.29 mV (attenuated by the sensor), Noise floor: 0.43, SNR: 92.84[0m
+[0;32mI (1644544) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=24155[0m
+[0;32mI (1644544) MAIN: MQTT message sent![0m
+[0;32mI (1645574) mqtts: MQTT_EVENT_PUBLISHED, msg_id=24155[0m
+[0;32mI (1655364) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1655584) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.52 mV (attenuated by the sensor), Noise floor: 0.39, SNR: 105.82[0m
+[0;32mI (1655584) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=56821[0m
+[0;32mI (1655584) MAIN: MQTT message sent![0m
+[0;32mI (1655814) mqtts: MQTT_EVENT_PUBLISHED, msg_id=56821[0m
+[0;32mI (1666404) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1666624) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 35.64 mV (attenuated by the sensor), Noise floor: 0.48, SNR: 74.78[0m
+[0;32mI (1666624) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=5315[0m
+[0;32mI (1666624) MAIN: MQTT message sent![0m
+[0;32mI (1667284) mqtts: MQTT_EVENT_PUBLISHED, msg_id=5315[0m
+[0;32mI (1677444) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1677664) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.42 mV (attenuated by the sensor), Noise floor: 0.41, SNR: 99.81[0m
+[0;32mI (1677664) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=41917[0m
+[0;32mI (1677664) MAIN: MQTT message sent![0m
+[0;32mI (1678754) mqtts: MQTT_EVENT_PUBLISHED, msg_id=41917[0m
+[0;32mI (1688484) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1688704) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.70 mV (attenuated by the sensor), Noise floor: 0.44, SNR: 92.16[0m
+[0;32mI (1688704) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=6988[0m
+[0;32mI (1688704) MAIN: MQTT message sent![0m
+[0;32mI (1688894) mqtts: MQTT_EVENT_PUBLISHED, msg_id=6988[0m
+[0;32mI (1699524) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1699744) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 36.58 mV (attenuated by the sensor), Noise floor: 0.45, SNR: 81.28[0m
+[0;32mI (1699744) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=39128[0m
+[0;32mI (1699744) MAIN: MQTT message sent![0m
+[0;32mI (1700454) mqtts: MQTT_EVENT_PUBLISHED, msg_id=39128[0m
+[0;32mI (1710564) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1710784) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 38.91 mV (attenuated by the sensor), Noise floor: 0.48, SNR: 80.93[0m
+[0;32mI (1710784) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=9669[0m
+[0;32mI (1710784) MAIN: MQTT message sent![0m
+[0;32mI (1711924) mqtts: MQTT_EVENT_PUBLISHED, msg_id=9669[0m
+[0;32mI (1721604) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1721824) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.25 mV (attenuated by the sensor), Noise floor: 0.38, SNR: 108.51[0m
+[0;32mI (1721824) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=8134[0m
+[0;32mI (1721824) MAIN: MQTT message sent![0m
+[0;32mI (1722374) mqtts: MQTT_EVENT_PUBLISHED, msg_id=8134[0m
+[0;32mI (1732644) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1732864) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.30 mV (attenuated by the sensor), Noise floor: 0.41, SNR: 101.70[0m
+[0;32mI (1732864) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=41082[0m
+[0;32mI (1732864) MAIN: MQTT message sent![0m
+[0;32mI (1733844) mqtts: MQTT_EVENT_PUBLISHED, msg_id=41082[0m
+[0;32mI (1743684) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1743904) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.63 mV (attenuated by the sensor), Noise floor: 0.42, SNR: 96.08[0m
+[0;32mI (1743904) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=28680[0m
+[0;32mI (1743904) MAIN: MQTT message sent![0m
+[0;32mI (1744284) mqtts: MQTT_EVENT_PUBLISHED, msg_id=28680[0m
+[0;32mI (1754724) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1754944) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.12 mV (attenuated by the sensor), Noise floor: 0.44, SNR: 93.72[0m
+[0;32mI (1754944) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=5197[0m
+[0;32mI (1754944) MAIN: MQTT message sent![0m
+[0;32mI (1755444) mqtts: MQTT_EVENT_PUBLISHED, msg_id=5197[0m
+[0;32mI (1765764) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1765984) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 34.93 mV (attenuated by the sensor), Noise floor: 0.48, SNR: 72.10[0m
+[0;32mI (1765984) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=47988[0m
+[0;32mI (1765984) MAIN: MQTT message sent![0m
+[0;32mI (1766814) mqtts: MQTT_EVENT_PUBLISHED, msg_id=47988[0m
+[0;32mI (1776804) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1777024) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 31.74 mV (attenuated by the sensor), Noise floor: 0.45, SNR: 71.32[0m
+[0;32mI (1777024) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=55619[0m
+[0;32mI (1777024) MAIN: MQTT message sent![0m
+[0;32mI (1777184) mqtts: MQTT_EVENT_PUBLISHED, msg_id=55619[0m
+[0;32mI (1787844) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1788064) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.26 mV (attenuated by the sensor), Noise floor: 0.44, SNR: 94.30[0m
+[0;32mI (1788064) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=16282[0m
+[0;32mI (1788064) MAIN: MQTT message sent![0m
+[0;32mI (1788524) mqtts: MQTT_EVENT_PUBLISHED, msg_id=16282[0m
+[0;32mI (1798884) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1799104) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 22.62 mV (attenuated by the sensor), Noise floor: 0.48, SNR: 47.01[0m
+[0;32mI (1799104) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=30463[0m
+[0;32mI (1799104) MAIN: MQTT message sent![0m
+[0;32mI (1799994) mqtts: MQTT_EVENT_PUBLISHED, msg_id=30463[0m
+[0;32mI (1809924) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1810144) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 32.91 mV (attenuated by the sensor), Noise floor: 0.47, SNR: 70.32[0m
+[0;32mI (1810144) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=13636[0m
+[0;32mI (1810144) MAIN: MQTT message sent![0m
+[0;32mI (1811254) mqtts: MQTT_EVENT_PUBLISHED, msg_id=13636[0m
+[0;32mI (1820964) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1821184) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.89 mV (attenuated by the sensor), Noise floor: 0.43, SNR: 95.02[0m
+[0;32mI (1821184) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=53221[0m
+[0;32mI (1821184) MAIN: MQTT message sent![0m
+[0;32mI (1821704) mqtts: MQTT_EVENT_PUBLISHED, msg_id=53221[0m
+[0;32mI (1832004) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1832224) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.18 mV (attenuated by the sensor), Noise floor: 0.44, SNR: 91.04[0m
+[0;32mI (1832224) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=33728[0m
+[0;32mI (1832224) MAIN: MQTT message sent![0m
+[0;32mI (1833164) mqtts: MQTT_EVENT_PUBLISHED, msg_id=33728[0m
+[0;32mI (1843044) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1843264) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.42 mV (attenuated by the sensor), Noise floor: 0.48, SNR: 84.56[0m
+[0;32mI (1843264) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=60352[0m
+[0;32mI (1843264) MAIN: MQTT message sent![0m
+[0;32mI (1843614) mqtts: MQTT_EVENT_PUBLISHED, msg_id=60352[0m
+[0;32mI (1854084) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1854304) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 38.71 mV (attenuated by the sensor), Noise floor: 0.49, SNR: 79.26[0m
+[0;32mI (1854304) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=14030[0m
+[0;32mI (1854304) MAIN: MQTT message sent![0m
+[0;32mI (1855084) mqtts: MQTT_EVENT_PUBLISHED, msg_id=14030[0m
+[0;32mI (1865124) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1865344) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.43 mV (attenuated by the sensor), Noise floor: 0.43, SNR: 96.33[0m
+[0;32mI (1865344) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=46581[0m
+[0;32mI (1865344) MAIN: MQTT message sent![0m
+[0;32mI (1866554) mqtts: MQTT_EVENT_PUBLISHED, msg_id=46581[0m
+[0;32mI (1876164) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1876384) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.48 mV (attenuated by the sensor), Noise floor: 0.42, SNR: 99.53[0m
+[0;32mI (1876384) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=40397[0m
+[0;32mI (1876384) MAIN: MQTT message sent![0m
+[0;32mI (1877094) mqtts: MQTT_EVENT_PUBLISHED, msg_id=40397[0m
+[0;32mI (1887204) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1887424) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.74 mV (attenuated by the sensor), Noise floor: 0.44, SNR: 92.36[0m
+[0;32mI (1887424) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=36462[0m
+[0;32mI (1887424) MAIN: MQTT message sent![0m
+[0;32mI (1888464) mqtts: MQTT_EVENT_PUBLISHED, msg_id=36462[0m
+[0;32mI (1898244) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1898464) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.88 mV (attenuated by the sensor), Noise floor: 0.47, SNR: 87.43[0m
+[0;32mI (1898464) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=30994[0m
+[0;32mI (1898464) MAIN: MQTT message sent![0m
+[0;32mI (1899114) mqtts: MQTT_EVENT_PUBLISHED, msg_id=30994[0m
+[0;32mI (1909284) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (1909504) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 38.94 mV (attenuated by the sensor), Noise floor: 0.48, SNR: 81.09[0m
+[0;32mI (1909504) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=56803[0m
+[0;32mI (1909504) MAIN: MQTT message sent![0m
+[0;32mI (1910584) mqtts: MQTT_EVENT_PUBLISHED, msg_id=56803[0m
+[0;32mI (1920324) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (1920544) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.31 mV (attenuated by the sensor), Noise floor: 0.45, SNR: 92.23[0m
+[0;32mI (1920544) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=16722[0m
+[0;32mI (1920544) MAIN: MQTT message sent![0m
+[0;32mI (1921234) mqtts: MQTT_EVENT_PUBLISHED, msg_id=16722[0m
+[0;32mI (1931364) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1931584) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 37.36 mV (attenuated by the sensor), Noise floor: 0.52, SNR: 72.09[0m
+[0;32mI (1931584) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=26126[0m
+[0;32mI (1931584) MAIN: MQTT message sent![0m
+[0;32mI (1932704) mqtts: MQTT_EVENT_PUBLISHED, msg_id=26126[0m
+[0;32mI (1942404) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (1942624) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 37.62 mV (attenuated by the sensor), Noise floor: 0.47, SNR: 79.96[0m
+[0;32mI (1942624) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=37160[0m
+[0;32mI (1942624) MAIN: MQTT message sent![0m
+[0;32mI (1943144) mqtts: MQTT_EVENT_PUBLISHED, msg_id=37160[0m
+[0;32mI (1953444) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (1953664) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 27.81 mV (attenuated by the sensor), Noise floor: 0.46, SNR: 60.55[0m
+[0;32mI (1953664) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=61085[0m
+[0;32mI (1953664) MAIN: MQTT message sent![0m
+[0;32mI (1954814) mqtts: MQTT_EVENT_PUBLISHED, msg_id=61085[0m
+[0;32mI (1964484) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (1964704) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.35 mV (attenuated by the sensor), Noise floor: 0.42, SNR: 97.35[0m
+[0;32mI (1964704) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=20595[0m
+[0;32mI (1964704) MAIN: MQTT message sent![0m
+[0;32mI (1965264) mqtts: MQTT_EVENT_PUBLISHED, msg_id=20595[0m
+[0;32mI (1975524) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (1975744) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 30.21 mV (attenuated by the sensor), Noise floor: 0.47, SNR: 64.74[0m
+[0;32mI (1975744) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=4667[0m
+[0;32mI (1975744) MAIN: MQTT message sent![0m
+[0;32mI (1976734) mqtts: MQTT_EVENT_PUBLISHED, msg_id=4667[0m
+[0;32mI (1986564) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (1986784) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 39.73 mV (attenuated by the sensor), Noise floor: 0.47, SNR: 84.65[0m
+[0;32mI (1986784) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=36148[0m
+[0;32mI (1986784) MAIN: MQTT message sent![0m
+[0;32mI (1987174) mqtts: MQTT_EVENT_PUBLISHED, msg_id=36148[0m
+[0;32mI (1997604) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (1997824) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 38.03 mV (attenuated by the sensor), Noise floor: 0.47, SNR: 80.67[0m
+[0;32mI (1997824) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=58171[0m
+[0;32mI (1997824) MAIN: MQTT message sent![0m
+[0;32mI (1998324) mqtts: MQTT_EVENT_PUBLISHED, msg_id=58171[0m
+[0;32mI (2008644) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (2008864) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.76 mV (attenuated by the sensor), Noise floor: 0.43, SNR: 94.49[0m
+[0;32mI (2008864) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=2534[0m
+[0;32mI (2008864) MAIN: MQTT message sent![0m
+[0;32mI (2009704) mqtts: MQTT_EVENT_PUBLISHED, msg_id=2534[0m
+[0;32mI (2019684) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (2019904) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.37 mV (attenuated by the sensor), Noise floor: 0.45, SNR: 89.93[0m
+[0;32mI (2019904) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=44942[0m
+[0;32mI (2019904) MAIN: MQTT message sent![0m
+[0;32mI (2020454) mqtts: MQTT_EVENT_PUBLISHED, msg_id=44942[0m
+[0;32mI (2030724) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (2030944) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 37.37 mV (attenuated by the sensor), Noise floor: 0.47, SNR: 79.21[0m
+[0;32mI (2030944) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=11261[0m
+[0;32mI (2030944) MAIN: MQTT message sent![0m
+[0;32mI (2031824) mqtts: MQTT_EVENT_PUBLISHED, msg_id=11261[0m
+[0;32mI (2041764) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (2041984) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 34.15 mV (attenuated by the sensor), Noise floor: 0.49, SNR: 69.56[0m
+[0;32mI (2041984) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=7007[0m
+[0;32mI (2041984) MAIN: MQTT message sent![0m
+[0;32mI (2043294) mqtts: MQTT_EVENT_PUBLISHED, msg_id=7007[0m
+[0;32mI (2052804) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (2053024) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 39.74 mV (attenuated by the sensor), Noise floor: 0.47, SNR: 84.56[0m
+[0;32mI (2053024) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=25846[0m
+[0;32mI (2053024) MAIN: MQTT message sent![0m
+[0;32mI (2053944) mqtts: MQTT_EVENT_PUBLISHED, msg_id=25846[0m
+[0;32mI (2063844) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (2064064) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.99 mV (attenuated by the sensor), Noise floor: 0.43, SNR: 95.25[0m
+[0;32mI (2064064) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=64630[0m
+[0;32mI (2064064) MAIN: MQTT message sent![0m
+[0;32mI (2065414) mqtts: MQTT_EVENT_PUBLISHED, msg_id=64630[0m
+[0;32mI (2074884) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (2075104) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.52 mV (attenuated by the sensor), Noise floor: 0.47, SNR: 86.35[0m
+[0;32mI (2075104) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=54887[0m
+[0;32mI (2075104) MAIN: MQTT message sent![0m
+[0;32mI (2076064) mqtts: MQTT_EVENT_PUBLISHED, msg_id=54887[0m
+[0;32mI (2085924) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (2086144) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.23 mV (attenuated by the sensor), Noise floor: 0.46, SNR: 86.97[0m
+[0;32mI (2086144) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=62652[0m
+[0;32mI (2086144) MAIN: MQTT message sent![0m
+[0;32mI (2086504) mqtts: MQTT_EVENT_PUBLISHED, msg_id=62652[0m
+[0;32mI (2096964) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (2097184) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.98 mV (attenuated by the sensor), Noise floor: 0.43, SNR: 95.94[0m
+[0;32mI (2097184) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=15650[0m
+[0;32mI (2097184) MAIN: MQTT message sent![0m
+[0;32mI (2097654) mqtts: MQTT_EVENT_PUBLISHED, msg_id=15650[0m
+[0;32mI (2108004) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (2108224) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.32 mV (attenuated by the sensor), Noise floor: 0.44, SNR: 94.64[0m
+[0;32mI (2108224) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=15575[0m
+[0;32mI (2108224) MAIN: MQTT message sent![0m
+[0;32mI (2108814) mqtts: MQTT_EVENT_PUBLISHED, msg_id=15575[0m
+[0;32mI (2119044) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (2119264) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.27 mV (attenuated by the sensor), Noise floor: 0.42, SNR: 97.44[0m
+[0;32mI (2119264) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=37498[0m
+[0;32mI (2119264) MAIN: MQTT message sent![0m
+[0;32mI (2120294) mqtts: MQTT_EVENT_PUBLISHED, msg_id=37498[0m
+[0;32mI (2130084) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (2130304) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.54 mV (attenuated by the sensor), Noise floor: 0.48, SNR: 83.65[0m
+[0;32mI (2130304) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=20044[0m
+[0;32mI (2130304) MAIN: MQTT message sent![0m
+[0;32mI (2130744) mqtts: MQTT_EVENT_PUBLISHED, msg_id=20044[0m
+[0;32mI (2141124) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (2141344) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 37.87 mV (attenuated by the sensor), Noise floor: 0.47, SNR: 80.33[0m
+[0;32mI (2141344) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=10621[0m
+[0;32mI (2141344) MAIN: MQTT message sent![0m
+[0;32mI (2142204) mqtts: MQTT_EVENT_PUBLISHED, msg_id=10621[0m
+[0;32mI (2152164) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2152384) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.18 mV (attenuated by the sensor), Noise floor: 0.44, SNR: 93.18[0m
+[0;32mI (2152384) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=57492[0m
+[0;32mI (2152384) MAIN: MQTT message sent![0m
+[0;32mI (2153674) mqtts: MQTT_EVENT_PUBLISHED, msg_id=57492[0m
+[0;32mI (2163204) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (2163424) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 39.66 mV (attenuated by the sensor), Noise floor: 0.48, SNR: 83.15[0m
+[0;32mI (2163424) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=38823[0m
+[0;32mI (2163424) MAIN: MQTT message sent![0m
+[0;32mI (2163914) mqtts: MQTT_EVENT_PUBLISHED, msg_id=38823[0m
+[0;32mI (2174244) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2174464) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 39.54 mV (attenuated by the sensor), Noise floor: 0.47, SNR: 83.54[0m
+[0;32mI (2174464) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=11347[0m
+[0;32mI (2174464) MAIN: MQTT message sent![0m
+[0;32mI (2175184) mqtts: MQTT_EVENT_PUBLISHED, msg_id=11347[0m
+[0;32mI (2185284) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2185504) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.04 mV (attenuated by the sensor), Noise floor: 0.45, SNR: 91.69[0m
+[0;32mI (2185504) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=37414[0m
+[0;32mI (2185504) MAIN: MQTT message sent![0m
+[0;32mI (2186654) mqtts: MQTT_EVENT_PUBLISHED, msg_id=37414[0m
+[0;32mI (2196324) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2196544) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 39.85 mV (attenuated by the sensor), Noise floor: 0.44, SNR: 91.48[0m
+[0;32mI (2196544) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=41787[0m
+[0;32mI (2196544) MAIN: MQTT message sent![0m
+[0;32mI (2196884) mqtts: MQTT_EVENT_PUBLISHED, msg_id=41787[0m
+[0;32mI (2207364) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2207584) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.95 mV (attenuated by the sensor), Noise floor: 0.42, SNR: 98.49[0m
+[0;32mI (2207584) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=48418[0m
+[0;32mI (2207584) MAIN: MQTT message sent![0m
+[0;32mI (2208364) mqtts: MQTT_EVENT_PUBLISHED, msg_id=48418[0m
+[0;32mI (2218404) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2218624) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.55 mV (attenuated by the sensor), Noise floor: 0.43, SNR: 94.35[0m
+[0;32mI (2218624) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=43683[0m
+[0;32mI (2218624) MAIN: MQTT message sent![0m
+[0;32mI (2219624) mqtts: MQTT_EVENT_PUBLISHED, msg_id=43683[0m
+[0;32mI (2229444) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2229664) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 34.39 mV (attenuated by the sensor), Noise floor: 0.48, SNR: 71.83[0m
+[0;32mI (2229664) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=41456[0m
+[0;32mI (2229664) MAIN: MQTT message sent![0m
+[0;32mI (2229774) mqtts: MQTT_EVENT_PUBLISHED, msg_id=41456[0m
+[0;32mI (2240484) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2240704) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 39.71 mV (attenuated by the sensor), Noise floor: 0.47, SNR: 84.13[0m
+[0;32mI (2240704) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=18646[0m
+[0;32mI (2240704) MAIN: MQTT message sent![0m
+[0;32mI (2241134) mqtts: MQTT_EVENT_PUBLISHED, msg_id=18646[0m
+[0;32mI (2251524) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2251744) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 39.24 mV (attenuated by the sensor), Noise floor: 0.48, SNR: 81.27[0m
+[0;32mI (2251744) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=39628[0m
+[0;32mI (2251744) MAIN: MQTT message sent![0m
+[0;32mI (2252294) mqtts: MQTT_EVENT_PUBLISHED, msg_id=39628[0m
+[0;32mI (2262564) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2262784) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.32 mV (attenuated by the sensor), Noise floor: 0.37, SNR: 111.00[0m
+[0;32mI (2262784) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=12936[0m
+[0;32mI (2262784) MAIN: MQTT message sent![0m
+[0;32mI (2263764) mqtts: MQTT_EVENT_PUBLISHED, msg_id=12936[0m
+[0;32mI (2273604) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2273824) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.41 mV (attenuated by the sensor), Noise floor: 0.39, SNR: 106.03[0m
+[0;32mI (2273824) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=57458[0m
+[0;32mI (2273824) MAIN: MQTT message sent![0m
+[0;32mI (2274304) mqtts: MQTT_EVENT_PUBLISHED, msg_id=57458[0m
+[0;32mI (2284644) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2284864) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 38.96 mV (attenuated by the sensor), Noise floor: 0.47, SNR: 82.71[0m
+[0;32mI (2284864) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=3094[0m
+[0;32mI (2284864) MAIN: MQTT message sent![0m
+[0;32mI (2285774) mqtts: MQTT_EVENT_PUBLISHED, msg_id=3094[0m
+[0;32mI (2295684) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2295904) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.25 mV (attenuated by the sensor), Noise floor: 0.41, SNR: 99.73[0m
+[0;32mI (2295904) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=15110[0m
+[0;32mI (2295904) MAIN: MQTT message sent![0m
+[0;32mI (2297034) mqtts: MQTT_EVENT_PUBLISHED, msg_id=15110[0m
+[0;32mI (2306724) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2306944) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.53 mV (attenuated by the sensor), Noise floor: 0.46, SNR: 88.22[0m
+[0;32mI (2306944) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=64280[0m
+[0;32mI (2306944) MAIN: MQTT message sent![0m
+[0;32mI (2307374) mqtts: MQTT_EVENT_PUBLISHED, msg_id=64280[0m
+[0;32mI (2317764) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2317984) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 33.66 mV (attenuated by the sensor), Noise floor: 0.46, SNR: 73.78[0m
+[0;32mI (2317984) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=57047[0m
+[0;32mI (2317984) MAIN: MQTT message sent![0m
+[0;32mI (2318844) mqtts: MQTT_EVENT_PUBLISHED, msg_id=57047[0m
+[0;32mI (2328804) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2329024) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.33 mV (attenuated by the sensor), Noise floor: 0.38, SNR: 109.18[0m
+[0;32mI (2329024) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=29850[0m
+[0;32mI (2329024) MAIN: MQTT message sent![0m
+[0;32mI (2330314) mqtts: MQTT_EVENT_PUBLISHED, msg_id=29850[0m
+[0;32mI (2339844) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2340064) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.00 mV (attenuated by the sensor), Noise floor: 0.43, SNR: 95.79[0m
+[0;32mI (2340064) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=42248[0m
+[0;32mI (2340064) MAIN: MQTT message sent![0m
+[0;32mI (2340864) mqtts: MQTT_EVENT_PUBLISHED, msg_id=42248[0m
+[0;32mI (2350884) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2351104) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.33 mV (attenuated by the sensor), Noise floor: 0.44, SNR: 94.40[0m
+[0;32mI (2351104) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=18138[0m
+[0;32mI (2351104) MAIN: MQTT message sent![0m
+[0;32mI (2352234) mqtts: MQTT_EVENT_PUBLISHED, msg_id=18138[0m
+[0;32mI (2361924) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2362144) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 36.72 mV (attenuated by the sensor), Noise floor: 0.51, SNR: 72.48[0m
+[0;32mI (2362144) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=15586[0m
+[0;32mI (2362144) MAIN: MQTT message sent![0m
+[0;32mI (2362674) mqtts: MQTT_EVENT_PUBLISHED, msg_id=15586[0m
+[0;32mI (2372964) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2373194) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.16 mV (attenuated by the sensor), Noise floor: 0.37, SNR: 110.37[0m
+[0;32mI (2373194) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=52836[0m
+[0;32mI (2373194) MAIN: MQTT message sent![0m
+[0;32mI (2374184) mqtts: MQTT_EVENT_PUBLISHED, msg_id=52836[0m
+[0;32mI (2384014) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2384234) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.03 mV (attenuated by the sensor), Noise floor: 0.44, SNR: 93.12[0m
+[0;32mI (2384234) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=20050[0m
+[0;32mI (2384234) MAIN: MQTT message sent![0m
+[0;32mI (2384384) mqtts: MQTT_EVENT_PUBLISHED, msg_id=20050[0m
+[0;32mI (2395054) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2395274) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.40 mV (attenuated by the sensor), Noise floor: 0.43, SNR: 96.12[0m
+[0;32mI (2395274) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=29070[0m
+[0;32mI (2395274) MAIN: MQTT message sent![0m
+[0;32mI (2395644) mqtts: MQTT_EVENT_PUBLISHED, msg_id=29070[0m
+[0;32mI (2406094) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2406314) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.04 mV (attenuated by the sensor), Noise floor: 0.43, SNR: 94.66[0m
+[0;32mI (2406314) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=57556[0m
+[0;32mI (2406314) MAIN: MQTT message sent![0m
+[0;32mI (2407124) mqtts: MQTT_EVENT_PUBLISHED, msg_id=57556[0m
+[0;32mI (2417134) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (2417354) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 39.94 mV (attenuated by the sensor), Noise floor: 0.45, SNR: 88.79[0m
+[0;32mI (2417354) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=36228[0m
+[0;32mI (2417354) MAIN: MQTT message sent![0m
+[0;32mI (2418584) mqtts: MQTT_EVENT_PUBLISHED, msg_id=36228[0m
+[0;32mI (2428174) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2428394) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.82 mV (attenuated by the sensor), Noise floor: 0.43, SNR: 95.88[0m
+[0;32mI (2428394) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=47282[0m
+[0;32mI (2428394) MAIN: MQTT message sent![0m
+[0;32mI (2429234) mqtts: MQTT_EVENT_PUBLISHED, msg_id=47282[0m
+[0;32mI (2439214) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (2439434) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.13 mV (attenuated by the sensor), Noise floor: 0.48, SNR: 83.04[0m
+[0;32mI (2439434) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=10423[0m
+[0;32mI (2439434) MAIN: MQTT message sent![0m
+[0;32mI (2439884) mqtts: MQTT_EVENT_PUBLISHED, msg_id=10423[0m
+[0;32mI (2450254) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2450474) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 39.89 mV (attenuated by the sensor), Noise floor: 0.45, SNR: 87.80[0m
+[0;32mI (2450474) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=1783[0m
+[0;32mI (2450474) MAIN: MQTT message sent![0m
+[0;32mI (2451354) mqtts: MQTT_EVENT_PUBLISHED, msg_id=1783[0m
+[0;32mI (2461294) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2461514) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.38 mV (attenuated by the sensor), Noise floor: 0.41, SNR: 102.04[0m
+[0;32mI (2461514) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=15244[0m
+[0;32mI (2461514) MAIN: MQTT message sent![0m
+[0;32mI (2462824) mqtts: MQTT_EVENT_PUBLISHED, msg_id=15244[0m
+[0;32mI (2472334) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2472554) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.32 mV (attenuated by the sensor), Noise floor: 0.41, SNR: 100.37[0m
+[0;32mI (2472554) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=22081[0m
+[0;32mI (2472554) MAIN: MQTT message sent![0m
+[0;32mI (2473264) mqtts: MQTT_EVENT_PUBLISHED, msg_id=22081[0m
+[0;32mI (2483374) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2483594) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 39.96 mV (attenuated by the sensor), Noise floor: 0.45, SNR: 89.47[0m
+[0;32mI (2483594) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=43190[0m
+[0;32mI (2483594) MAIN: MQTT message sent![0m
+[0;32mI (2484734) mqtts: MQTT_EVENT_PUBLISHED, msg_id=43190[0m
+[0;32mI (2494414) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2494634) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.42 mV (attenuated by the sensor), Noise floor: 0.46, SNR: 87.00[0m
+[0;32mI (2494634) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=4314[0m
+[0;32mI (2494634) MAIN: MQTT message sent![0m
+[0;32mI (2495384) mqtts: MQTT_EVENT_PUBLISHED, msg_id=4314[0m
+[0;32mI (2505454) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2505674) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 38.96 mV (attenuated by the sensor), Noise floor: 0.49, SNR: 79.06[0m
+[0;32mI (2505674) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=34943[0m
+[0;32mI (2505674) MAIN: MQTT message sent![0m
+[0;32mI (2506854) mqtts: MQTT_EVENT_PUBLISHED, msg_id=34943[0m
+[0;32mI (2516494) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2516714) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 38.28 mV (attenuated by the sensor), Noise floor: 0.47, SNR: 81.99[0m
+[0;32mI (2516714) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=64549[0m
+[0;32mI (2516714) MAIN: MQTT message sent![0m
+[0;32mI (2517304) mqtts: MQTT_EVENT_PUBLISHED, msg_id=64549[0m
+[0;32mI (2527534) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2527754) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.28 mV (attenuated by the sensor), Noise floor: 0.47, SNR: 84.93[0m
+[0;32mI (2527754) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=55020[0m
+[0;32mI (2527754) MAIN: MQTT message sent![0m
+[0;32mI (2528764) mqtts: MQTT_EVENT_PUBLISHED, msg_id=55020[0m
+[0;32mI (2538574) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (2538794) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.65 mV (attenuated by the sensor), Noise floor: 0.46, SNR: 89.08[0m
+[0;32mI (2538794) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=54297[0m
+[0;32mI (2538794) MAIN: MQTT message sent![0m
+[0;32mI (2539214) mqtts: MQTT_EVENT_PUBLISHED, msg_id=54297[0m
+[0;32mI (2549614) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2549834) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.44 mV (attenuated by the sensor), Noise floor: 0.44, SNR: 91.50[0m
+[0;32mI (2549834) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=34408[0m
+[0;32mI (2549834) MAIN: MQTT message sent![0m
+[0;32mI (2550684) mqtts: MQTT_EVENT_PUBLISHED, msg_id=34408[0m
+[0;32mI (2560654) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (2560874) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 38.07 mV (attenuated by the sensor), Noise floor: 0.46, SNR: 83.41[0m
+[0;32mI (2560874) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=12818[0m
+[0;32mI (2560874) MAIN: MQTT message sent![0m
+[0;32mI (2561334) mqtts: MQTT_EVENT_PUBLISHED, msg_id=12818[0m
+[0;32mI (2571694) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (2571914) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.42 mV (attenuated by the sensor), Noise floor: 0.42, SNR: 96.46[0m
+[0;32mI (2571914) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=49312[0m
+[0;32mI (2571914) MAIN: MQTT message sent![0m
+[0;32mI (2572804) mqtts: MQTT_EVENT_PUBLISHED, msg_id=49312[0m
+[0;32mI (2582734) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (2582954) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.01 mV (attenuated by the sensor), Noise floor: 0.46, SNR: 89.30[0m
+[0;32mI (2582954) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=16103[0m
+[0;32mI (2582954) MAIN: MQTT message sent![0m
+[0;32mI (2584274) mqtts: MQTT_EVENT_PUBLISHED, msg_id=16103[0m
+[0;32mI (2593774) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2593994) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.36 mV (attenuated by the sensor), Noise floor: 0.43, SNR: 96.76[0m
+[0;32mI (2593994) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=61448[0m
+[0;32mI (2593994) MAIN: MQTT message sent![0m
+[0;32mI (2594914) mqtts: MQTT_EVENT_PUBLISHED, msg_id=61448[0m
+[0;32mI (2604814) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2605034) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.29 mV (attenuated by the sensor), Noise floor: 0.40, SNR: 104.08[0m
+[0;32mI (2605034) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=31763[0m
+[0;32mI (2605034) MAIN: MQTT message sent![0m
+[0;32mI (2606174) mqtts: MQTT_EVENT_PUBLISHED, msg_id=31763[0m
+[0;32mI (2615854) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (2616074) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 37.22 mV (attenuated by the sensor), Noise floor: 0.47, SNR: 79.64[0m
+[0;32mI (2616074) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=49336[0m
+[0;32mI (2616074) MAIN: MQTT message sent![0m
+[0;32mI (2616624) mqtts: MQTT_EVENT_PUBLISHED, msg_id=49336[0m
+[0;32mI (2626894) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2627114) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.90 mV (attenuated by the sensor), Noise floor: 0.47, SNR: 86.57[0m
+[0;32mI (2627114) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=49594[0m
+[0;32mI (2627114) MAIN: MQTT message sent![0m
+[0;32mI (2628094) mqtts: MQTT_EVENT_PUBLISHED, msg_id=49594[0m
+[0;32mI (2637934) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2638154) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 39.47 mV (attenuated by the sensor), Noise floor: 0.45, SNR: 87.42[0m
+[0;32mI (2638154) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=25175[0m
+[0;32mI (2638154) MAIN: MQTT message sent![0m
+[0;32mI (2638544) mqtts: MQTT_EVENT_PUBLISHED, msg_id=25175[0m
+[0;32mI (2648974) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2649194) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.85 mV (attenuated by the sensor), Noise floor: 0.44, SNR: 91.85[0m
+[0;32mI (2649194) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=8222[0m
+[0;32mI (2649194) MAIN: MQTT message sent![0m
+[0;32mI (2650014) mqtts: MQTT_EVENT_PUBLISHED, msg_id=8222[0m
+[0;32mI (2660014) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2660234) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.32 mV (attenuated by the sensor), Noise floor: 0.38, SNR: 109.87[0m
+[0;32mI (2660234) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=55864[0m
+[0;32mI (2660234) MAIN: MQTT message sent![0m
+[0;32mI (2661474) mqtts: MQTT_EVENT_PUBLISHED, msg_id=55864[0m
+[0;32mI (2671054) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (2671274) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 39.54 mV (attenuated by the sensor), Noise floor: 0.46, SNR: 86.10[0m
+[0;32mI (2671274) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=7748[0m
+[0;32mI (2671274) MAIN: MQTT message sent![0m
+[0;32mI (2671924) mqtts: MQTT_EVENT_PUBLISHED, msg_id=7748[0m
+[0;32mI (2682094) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2682314) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.01 mV (attenuated by the sensor), Noise floor: 0.44, SNR: 92.75[0m
+[0;32mI (2682314) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=34440[0m
+[0;32mI (2682314) MAIN: MQTT message sent![0m
+[0;32mI (2683494) mqtts: MQTT_EVENT_PUBLISHED, msg_id=34440[0m
+[0;32mI (2693134) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (2693354) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.19 mV (attenuated by the sensor), Noise floor: 0.39, SNR: 104.75[0m
+[0;32mI (2693354) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=23072[0m
+[0;32mI (2693354) MAIN: MQTT message sent![0m
+[0;32mI (2694044) mqtts: MQTT_EVENT_PUBLISHED, msg_id=23072[0m
+[0;32mI (2704174) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2704394) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 38.89 mV (attenuated by the sensor), Noise floor: 0.49, SNR: 79.51[0m
+[0;32mI (2704394) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=44026[0m
+[0;32mI (2704394) MAIN: MQTT message sent![0m
+[0;32mI (2705514) mqtts: MQTT_EVENT_PUBLISHED, msg_id=44026[0m
+[0;32mI (2715214) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2715434) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 30.78 mV (attenuated by the sensor), Noise floor: 0.47, SNR: 65.86[0m
+[0;32mI (2715434) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=23811[0m
+[0;32mI (2715434) MAIN: MQTT message sent![0m
+[0;32mI (2715954) mqtts: MQTT_EVENT_PUBLISHED, msg_id=23811[0m
+[0;32mI (2726254) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2726474) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.70 mV (attenuated by the sensor), Noise floor: 0.41, SNR: 101.49[0m
+[0;32mI (2726474) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=46238[0m
+[0;32mI (2726474) MAIN: MQTT message sent![0m
+[0;32mI (2727424) mqtts: MQTT_EVENT_PUBLISHED, msg_id=46238[0m
+[0;32mI (2737294) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2737514) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.21 mV (attenuated by the sensor), Noise floor: 0.44, SNR: 93.14[0m
+[0;32mI (2737514) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=14134[0m
+[0;32mI (2737514) MAIN: MQTT message sent![0m
+[0;32mI (2737964) mqtts: MQTT_EVENT_PUBLISHED, msg_id=14134[0m
+[0;32mI (2748334) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2748554) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.17 mV (attenuated by the sensor), Noise floor: 0.47, SNR: 86.26[0m
+[0;32mI (2748554) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=13702[0m
+[0;32mI (2748554) MAIN: MQTT message sent![0m
+[0;32mI (2749344) mqtts: MQTT_EVENT_PUBLISHED, msg_id=13702[0m
+[0;32mI (2759374) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2759594) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 39.12 mV (attenuated by the sensor), Noise floor: 0.46, SNR: 84.13[0m
+[0;32mI (2759594) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=1374[0m
+[0;32mI (2759594) MAIN: MQTT message sent![0m
+[0;32mI (2760594) mqtts: MQTT_EVENT_PUBLISHED, msg_id=1374[0m
+[0;32mI (2770414) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2770634) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 28.66 mV (attenuated by the sensor), Noise floor: 0.47, SNR: 60.92[0m
+[0;32mI (2770634) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=44505[0m
+[0;32mI (2770634) MAIN: MQTT message sent![0m
+[0;32mI (2771044) mqtts: MQTT_EVENT_PUBLISHED, msg_id=44505[0m
+[0;32mI (2781454) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2781674) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.14 mV (attenuated by the sensor), Noise floor: 0.45, SNR: 89.55[0m
+[0;32mI (2781674) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=41149[0m
+[0;32mI (2781674) MAIN: MQTT message sent![0m
+[0;32mI (2782514) mqtts: MQTT_EVENT_PUBLISHED, msg_id=41149[0m
+[0;32mI (2792494) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2792714) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.24 mV (attenuated by the sensor), Noise floor: 0.42, SNR: 98.81[0m
+[0;32mI (2792714) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=2944[0m
+[0;32mI (2792714) MAIN: MQTT message sent![0m
+[0;32mI (2793774) mqtts: MQTT_EVENT_PUBLISHED, msg_id=2944[0m
+[0;32mI (2803534) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2803754) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.04 mV (attenuated by the sensor), Noise floor: 0.45, SNR: 89.08[0m
+[0;32mI (2803754) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=12333[0m
+[0;32mI (2803754) MAIN: MQTT message sent![0m
+[0;32mI (2804434) mqtts: MQTT_EVENT_PUBLISHED, msg_id=12333[0m
+[0;32mI (2814574) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2814794) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.54 mV (attenuated by the sensor), Noise floor: 0.42, SNR: 98.31[0m
+[0;32mI (2814794) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=29120[0m
+[0;32mI (2814794) MAIN: MQTT message sent![0m
+[0;32mI (2815694) mqtts: MQTT_EVENT_PUBLISHED, msg_id=29120[0m
+[0;32mI (2825614) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2825834) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 34.76 mV (attenuated by the sensor), Noise floor: 0.47, SNR: 73.26[0m
+[0;32mI (2825834) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=7134[0m
+[0;32mI (2825834) MAIN: MQTT message sent![0m
+[0;32mI (2827164) mqtts: MQTT_EVENT_PUBLISHED, msg_id=7134[0m
+[0;32mI (2836654) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2836874) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.46 mV (attenuated by the sensor), Noise floor: 0.39, SNR: 106.16[0m
+[0;32mI (2836874) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=50372[0m
+[0;32mI (2836874) MAIN: MQTT message sent![0m
+[0;32mI (2837604) mqtts: MQTT_EVENT_PUBLISHED, msg_id=50372[0m
+[0;32mI (2847694) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2847914) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.48 mV (attenuated by the sensor), Noise floor: 0.42, SNR: 98.81[0m
+[0;32mI (2847914) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=23691[0m
+[0;32mI (2847914) MAIN: MQTT message sent![0m
+[0;32mI (2849274) mqtts: MQTT_EVENT_PUBLISHED, msg_id=23691[0m
+[0;32mI (2858734) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2858954) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 39.33 mV (attenuated by the sensor), Noise floor: 0.49, SNR: 80.75[0m
+[0;32mI (2858954) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=59892[0m
+[0;32mI (2858954) MAIN: MQTT message sent![0m
+[0;32mI (2860134) mqtts: MQTT_EVENT_PUBLISHED, msg_id=59892[0m
+[0;32mI (2869774) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2869994) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.92 mV (attenuated by the sensor), Noise floor: 0.45, SNR: 91.07[0m
+[0;32mI (2869994) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=20825[0m
+[0;32mI (2869994) MAIN: MQTT message sent![0m
+[0;32mI (2870374) mqtts: MQTT_EVENT_PUBLISHED, msg_id=20825[0m
+[0;32mI (2880814) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2881034) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.68 mV (attenuated by the sensor), Noise floor: 0.45, SNR: 89.93[0m
+[0;32mI (2881034) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=28444[0m
+[0;32mI (2881034) MAIN: MQTT message sent![0m
+[0;32mI (2881634) mqtts: MQTT_EVENT_PUBLISHED, msg_id=28444[0m
+[0;32mI (2891854) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2892074) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 36.71 mV (attenuated by the sensor), Noise floor: 0.48, SNR: 76.24[0m
+[0;32mI (2892074) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=16761[0m
+[0;32mI (2892074) MAIN: MQTT message sent![0m
+[0;32mI (2893104) mqtts: MQTT_EVENT_PUBLISHED, msg_id=16761[0m
+[0;32mI (2902894) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2903114) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 38.96 mV (attenuated by the sensor), Noise floor: 0.50, SNR: 77.92[0m
+[0;32mI (2903114) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=12109[0m
+[0;32mI (2903114) MAIN: MQTT message sent![0m
+[0;32mI (2903254) mqtts: MQTT_EVENT_PUBLISHED, msg_id=12109[0m
+[0;32mI (2913934) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2914154) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 36.66 mV (attenuated by the sensor), Noise floor: 0.46, SNR: 79.15[0m
+[0;32mI (2914154) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=27546[0m
+[0;32mI (2914154) MAIN: MQTT message sent![0m
+[0;32mI (2914624) mqtts: MQTT_EVENT_PUBLISHED, msg_id=27546[0m
+[0;32mI (2924974) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2925194) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.02 mV (attenuated by the sensor), Noise floor: 0.42, SNR: 96.86[0m
+[0;32mI (2925194) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=20919[0m
+[0;32mI (2925194) MAIN: MQTT message sent![0m
+[0;32mI (2926024) mqtts: MQTT_EVENT_PUBLISHED, msg_id=20919[0m
+[0;32mI (2936014) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2936234) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.36 mV (attenuated by the sensor), Noise floor: 0.41, SNR: 99.92[0m
+[0;32mI (2936234) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=41958[0m
+[0;32mI (2936234) MAIN: MQTT message sent![0m
+[0;32mI (2937194) mqtts: MQTT_EVENT_PUBLISHED, msg_id=41958[0m
+[0;32mI (2947054) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (2947274) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.37 mV (attenuated by the sensor), Noise floor: 0.44, SNR: 92.23[0m
+[0;32mI (2947274) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=60177[0m
+[0;32mI (2947274) MAIN: MQTT message sent![0m
+[0;32mI (2947374) mqtts: MQTT_EVENT_PUBLISHED, msg_id=60177[0m
+[0;32mI (2958094) Temperature sensor: Slot 0: 22.88 °C[0m
+[0;32mI (2958314) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.03 mV (attenuated by the sensor), Noise floor: 0.43, SNR: 95.78[0m
+[0;32mI (2958314) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=52750[0m
+[0;32mI (2958314) MAIN: MQTT message sent![0m
+[0;32mI (2958524) mqtts: MQTT_EVENT_PUBLISHED, msg_id=52750[0m
+[0;32mI (2969134) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (2969354) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.20 mV (attenuated by the sensor), Noise floor: 0.39, SNR: 106.05[0m
+[0;32mI (2969354) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=9392[0m
+[0;32mI (2969354) MAIN: MQTT message sent![0m
+[0;32mI (2969694) mqtts: MQTT_EVENT_PUBLISHED, msg_id=9392[0m
+[0;32mI (2980174) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (2980394) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 37.45 mV (attenuated by the sensor), Noise floor: 0.49, SNR: 76.65[0m
+[0;32mI (2980394) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=43531[0m
+[0;32mI (2980394) MAIN: MQTT message sent![0m
+[0;32mI (2980964) mqtts: MQTT_EVENT_PUBLISHED, msg_id=43531[0m
+[0;32mI (2991214) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (2991434) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.14 mV (attenuated by the sensor), Noise floor: 0.48, SNR: 83.76[0m
+[0;32mI (2991434) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=29721[0m
+[0;32mI (2991434) MAIN: MQTT message sent![0m
+[0;32mI (2992434) mqtts: MQTT_EVENT_PUBLISHED, msg_id=29721[0m
+[0;32mI (3002254) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (3002474) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 26.71 mV (attenuated by the sensor), Noise floor: 0.47, SNR: 57.31[0m
+[0;32mI (3002474) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=5692[0m
+[0;32mI (3002474) MAIN: MQTT message sent![0m
+[0;32mI (3002674) mqtts: MQTT_EVENT_PUBLISHED, msg_id=5692[0m
+[0;32mI (3013294) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (3013514) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.34 mV (attenuated by the sensor), Noise floor: 0.46, SNR: 89.89[0m
+[0;32mI (3013514) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=20143[0m
+[0;32mI (3013514) MAIN: MQTT message sent![0m
+[0;32mI (3013934) mqtts: MQTT_EVENT_PUBLISHED, msg_id=20143[0m
+[0;32mI (3024334) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (3024554) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.41 mV (attenuated by the sensor), Noise floor: 0.45, SNR: 90.29[0m
+[0;32mI (3024554) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=43829[0m
+[0;32mI (3024554) MAIN: MQTT message sent![0m
+[0;32mI (3025094) mqtts: MQTT_EVENT_PUBLISHED, msg_id=43829[0m
+[0;32mI (3035374) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (3035594) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.40 mV (attenuated by the sensor), Noise floor: 0.48, SNR: 85.02[0m
+[0;32mI (3035594) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=2428[0m
+[0;32mI (3035594) MAIN: MQTT message sent![0m
+[0;32mI (3036244) mqtts: MQTT_EVENT_PUBLISHED, msg_id=2428[0m
+[0;32mI (3046414) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (3046634) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.27 mV (attenuated by the sensor), Noise floor: 0.43, SNR: 94.99[0m
+[0;32mI (3046634) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=14185[0m
+[0;32mI (3046634) MAIN: MQTT message sent![0m
+[0;32mI (3047494) mqtts: MQTT_EVENT_PUBLISHED, msg_id=14185[0m
+[0;32mI (3057454) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (3057674) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 34.12 mV (attenuated by the sensor), Noise floor: 0.48, SNR: 71.36[0m
+[0;32mI (3057674) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=6456[0m
+[0;32mI (3057674) MAIN: MQTT message sent![0m
+[0;32mI (3058784) mqtts: MQTT_EVENT_PUBLISHED, msg_id=6456[0m
+[0;32mI (3068494) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (3068714) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.46 mV (attenuated by the sensor), Noise floor: 0.41, SNR: 101.42[0m
+[0;32mI (3068714) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=59549[0m
+[0;32mI (3068714) MAIN: MQTT message sent![0m
+[0;32mI (3069024) mqtts: MQTT_EVENT_PUBLISHED, msg_id=59549[0m
+[0;32mI (3079534) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (3079754) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.68 mV (attenuated by the sensor), Noise floor: 0.47, SNR: 87.17[0m
+[0;32mI (3079754) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=59663[0m
+[0;32mI (3079754) MAIN: MQTT message sent![0m
+[0;32mI (3080194) mqtts: MQTT_EVENT_PUBLISHED, msg_id=59663[0m
+[0;32mI (3090574) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (3090794) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 35.02 mV (attenuated by the sensor), Noise floor: 0.51, SNR: 69.20[0m
+[0;32mI (3090794) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=62178[0m
+[0;32mI (3090794) MAIN: MQTT message sent![0m
+[0;32mI (3091554) mqtts: MQTT_EVENT_PUBLISHED, msg_id=62178[0m
+[0;32mI (3101614) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (3101844) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.11 mV (attenuated by the sensor), Noise floor: 0.43, SNR: 96.09[0m
+[0;32mI (3101844) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=38880[0m
+[0;32mI (3101844) MAIN: MQTT message sent![0m
+[0;32mI (3102844) mqtts: MQTT_EVENT_PUBLISHED, msg_id=38880[0m
+[0;32mI (3112664) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (3112884) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 34.37 mV (attenuated by the sensor), Noise floor: 0.49, SNR: 70.07[0m
+[0;32mI (3112884) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=10278[0m
+[0;32mI (3112884) MAIN: MQTT message sent![0m
+[0;32mI (3113054) mqtts: MQTT_EVENT_PUBLISHED, msg_id=10278[0m
+[0;32mI (3123704) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (3123924) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 38.27 mV (attenuated by the sensor), Noise floor: 0.51, SNR: 75.02[0m
+[0;32mI (3123924) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=9319[0m
+[0;32mI (3123924) MAIN: MQTT message sent![0m
+[0;32mI (3124324) mqtts: MQTT_EVENT_PUBLISHED, msg_id=9319[0m
+[0;32mI (3134744) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (3134964) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.44 mV (attenuated by the sensor), Noise floor: 0.44, SNR: 91.19[0m
+[0;32mI (3134964) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=42122[0m
+[0;32mI (3134964) MAIN: MQTT message sent![0m
+[0;32mI (3135584) mqtts: MQTT_EVENT_PUBLISHED, msg_id=42122[0m
+[0;32mI (3145784) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (3146004) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.67 mV (attenuated by the sensor), Noise floor: 0.49, SNR: 83.71[0m
+[0;32mI (3146004) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=24305[0m
+[0;32mI (3146004) MAIN: MQTT message sent![0m
+[0;32mI (3146754) mqtts: MQTT_EVENT_PUBLISHED, msg_id=24305[0m
+[0;32mI (3156824) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (3157044) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 38.62 mV (attenuated by the sensor), Noise floor: 0.50, SNR: 77.02[0m
+[0;32mI (3157044) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=9975[0m
+[0;32mI (3157044) MAIN: MQTT message sent![0m
+[0;32mI (3157914) mqtts: MQTT_EVENT_PUBLISHED, msg_id=9975[0m
+[0;32mI (3167864) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (3168084) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 39.68 mV (attenuated by the sensor), Noise floor: 0.45, SNR: 87.48[0m
+[0;32mI (3168084) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=6626[0m
+[0;32mI (3168084) MAIN: MQTT message sent![0m
+[0;32mI (3168564) mqtts: MQTT_EVENT_PUBLISHED, msg_id=6626[0m
+[0;32mI (3178904) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (3179124) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 35.86 mV (attenuated by the sensor), Noise floor: 0.49, SNR: 72.89[0m
+[0;32mI (3179124) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=37973[0m
+[0;32mI (3179124) MAIN: MQTT message sent![0m
+[0;32mI (3180044) mqtts: MQTT_EVENT_PUBLISHED, msg_id=37973[0m
+[0;32mI (3189944) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (3190164) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 38.60 mV (attenuated by the sensor), Noise floor: 0.46, SNR: 84.82[0m
+[0;32mI (3190164) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=20780[0m
+[0;32mI (3190164) MAIN: MQTT message sent![0m
+[0;32mI (3191244) mqtts: MQTT_EVENT_PUBLISHED, msg_id=20780[0m
+[0;32mI (3200984) Temperature sensor: Slot 0: 22.81 °C[0m
+[0;32mI (3201204) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.46 mV (attenuated by the sensor), Noise floor: 0.41, SNR: 102.11[0m
+[0;32mI (3201204) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=21886[0m
+[0;32mI (3201204) MAIN: MQTT message sent![0m
+[0;32mI (3201744) mqtts: MQTT_EVENT_PUBLISHED, msg_id=21886[0m
+[0;32mI (3212024) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (3212244) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.44 mV (attenuated by the sensor), Noise floor: 0.39, SNR: 105.65[0m
+[0;32mI (3212244) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=11214[0m
+[0;32mI (3212244) MAIN: MQTT message sent![0m
+[0;32mI (3213204) mqtts: MQTT_EVENT_PUBLISHED, msg_id=11214[0m
+[0;32mI (3223064) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (3223284) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.36 mV (attenuated by the sensor), Noise floor: 0.42, SNR: 97.77[0m
+[0;32mI (3223284) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=54318[0m
+[0;32mI (3223284) MAIN: MQTT message sent![0m
+[0;32mI (3223854) mqtts: MQTT_EVENT_PUBLISHED, msg_id=54318[0m
+[0;32mI (3234104) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (3234324) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.29 mV (attenuated by the sensor), Noise floor: 0.41, SNR: 99.77[0m
+[0;32mI (3234324) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=23438[0m
+[0;32mI (3234324) MAIN: MQTT message sent![0m
+[0;32mI (3235334) mqtts: MQTT_EVENT_PUBLISHED, msg_id=23438[0m
+[0;32mI (3245144) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (3245364) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.12 mV (attenuated by the sensor), Noise floor: 0.38, SNR: 107.51[0m
+[0;32mI (3245364) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=22169[0m
+[0;32mI (3245364) MAIN: MQTT message sent![0m
+[0;32mI (3245774) mqtts: MQTT_EVENT_PUBLISHED, msg_id=22169[0m
+[0;32mI (3256184) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (3256404) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 41.35 mV (attenuated by the sensor), Noise floor: 0.40, SNR: 104.14[0m
+[0;32mI (3256404) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=61533[0m
+[0;32mI (3256404) MAIN: MQTT message sent![0m
+[0;32mI (3257034) mqtts: MQTT_EVENT_PUBLISHED, msg_id=61533[0m
+[0;32mI (3267224) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (3267444) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 40.99 mV (attenuated by the sensor), Noise floor: 0.40, SNR: 102.04[0m
+[0;32mI (3267444) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=13226[0m
+[0;32mI (3267444) MAIN: MQTT message sent![0m
+[0;32mI (3268294) mqtts: MQTT_EVENT_PUBLISHED, msg_id=13226[0m
+[0;32mI (3278264) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (3278484) FFT: Dominant Frequency: 18798.75 Hz, Magnitude: 39.67 mV (attenuated by the sensor), Noise floor: 0.47, SNR: 83.92[0m
+[0;32mI (3278484) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=58212[0m
+[0;32mI (3278484) MAIN: MQTT message sent![0m
+[0;32mI (3279764) mqtts: MQTT_EVENT_PUBLISHED, msg_id=58212[0m
+[0;32mI (3289304) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (3289524) FFT: Dominant Frequency: 3824.85 Hz, Magnitude: 78.82 mV (attenuated by the sensor), Noise floor: 0.66, SNR: 119.17[0m
+[0;32mI (3289524) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=3875[0m
+[0;32mI (3289524) MAIN: MQTT message sent![0m
+[0;32mI (3290624) mqtts: MQTT_EVENT_PUBLISHED, msg_id=3875[0m
+[0;32mI (3300344) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (3300564) FFT: Dominant Frequency: 3824.85 Hz, Magnitude: 42.38 mV (attenuated by the sensor), Noise floor: 0.80, SNR: 53.26[0m
+[0;32mI (3300564) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=41248[0m
+[0;32mI (3300564) MAIN: MQTT message sent![0m
+[0;32mI (3301064) mqtts: MQTT_EVENT_PUBLISHED, msg_id=41248[0m
+[0;32mI (3311384) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (3311604) FFT: Dominant Frequency: 3824.85 Hz, Magnitude: 79.48 mV (attenuated by the sensor), Noise floor: 0.63, SNR: 126.27[0m
+[0;32mI (3311604) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=53820[0m
+[0;32mI (3311604) MAIN: MQTT message sent![0m
+[0;32mI (3312534) mqtts: MQTT_EVENT_PUBLISHED, msg_id=53820[0m
+[0;32mI (3322424) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (3322644) FFT: Dominant Frequency: 3824.85 Hz, Magnitude: 42.37 mV (attenuated by the sensor), Noise floor: 0.78, SNR: 54.18[0m
+[0;32mI (3322644) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=21379[0m
+[0;32mI (3322644) MAIN: MQTT message sent![0m
+[0;32mI (3324004) mqtts: MQTT_EVENT_PUBLISHED, msg_id=21379[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d9c
+entry 0x403c9914
+[0;32mI (27) boot: ESP-IDF v5.2.2 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Oct 23 2025 14:43:50[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=35620h (218656) map[0m
+[0;32mI (138) esp_image: segment 1: paddr=00045648 vaddr=3fc9b300 size=04870h ( 18544) load[0m
+[0;32mI (143) esp_image: segment 2: paddr=00049ec0 vaddr=40374000 size=06158h ( 24920) load[0m
+[0;32mI (150) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=b5430h (742448) map[0m
+[0;32mI (286) esp_image: segment 4: paddr=00105458 vaddr=4037a158 size=11104h ( 69892) load[0m
+[0;32mI (311) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (311) boot: Disabling RNG early entropy source...[0m
+[0;32mI (322) cpu_start: Multicore app[0m
+[0;32mI (332) cpu_start: Pro cpu start user code[0m
+[0;32mI (332) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (332) cpu_start: Application information:[0m
+[0;32mI (335) cpu_start: Project name:     esp_node[0m
+[0;32mI (340) cpu_start: App version:      3a8e390-dirty[0m
+[0;32mI (346) cpu_start: Compile time:     Oct 28 2025 14:03:08[0m
+[0;32mI (352) cpu_start: ELF file SHA256:  d1a9da16a...[0m
+[0;32mI (357) cpu_start: ESP-IDF:          v5.2.2[0m
+[0;32mI (362) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (367) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (372) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (376) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (384) heap_init: At 3FCA3D50 len 000459C0 (278 KiB): RAM[0m
+[0;32mI (390) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (396) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (402) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (409) spi_flash: detected chip: gd[0m
+[0;32mI (412) spi_flash: flash io: dio[0m
+[0;33mW (416) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (430) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (436) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (444) main_task: Started on CPU0[0m
+[0;32mI (454) main_task: Calling app_main()[0m
+[0;32mI (454) PWM: Optimal risolution calculated: 8 bit per frequency 40000 Hz[0m
+[0;32mI (464) PWM: PWM inizializzato: GPIO 2, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (474) PWM: Optimal risolution calculated: 8 bit per frequency 40000 Hz[0m
+[0;32mI (474) PWM: PWM inizializzato: GPIO 3, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (484) PWM: Optimal risolution calculated: 8 bit per frequency 40000 Hz[0m
+[0;32mI (494) PWM: PWM inizializzato: GPIO 4, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (504) PWM: Optimal risolution calculated: 8 bit per frequency 40000 Hz[0m
+[0;32mI (504) PWM: PWM inizializzato: GPIO 1, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (514) PWM: Cambio frequenza: 40000 -> 150 Hz, risoluzione: 8 -> 14 bit[0m
+[0;32mI (524) PWM: Timer riconfigurato: 150 Hz, 14 bit (16384 livelli)[0m
+[0;32mI (534) PWM: Set the duty: 0 / 16384 (resolution: 14 bit)
+[0m
+[0;32mI (534) PWM: Hardware PWM duty: 0.00% requested -> 0.00% effective (0/16384)[0m
+[0;32mI (544) PWM: Cambio frequenza: 40000 -> 150 Hz, risoluzione: 8 -> 14 bit[0m
+[0;32mI (554) PWM: Timer riconfigurato: 150 Hz, 14 bit (16384 livelli)[0m
+[0;32mI (554) PWM: Set the duty: 0 / 16384 (resolution: 14 bit)
+[0m
+[0;32mI (564) PWM: Hardware PWM duty: 0.00% requested -> 0.00% effective (0/16384)[0m
+[0;32mI (574) PWM: Optimal risolution calculated: 8 bit per frequency 40000 Hz[0m
+[0;32mI (584) PWM: PWM inizializzato: GPIO 35, Freq 40000 Hz, Risoluzione 8 bit (256 livelli)[0m
+[0;32mI (594) PWM: Cambio frequenza: 40000 -> 200 Hz, risoluzione: 8 -> 14 bit[0m
+[0;32mI (594) PWM: Timer riconfigurato: 200 Hz, 14 bit (16384 livelli)[0m
+[0;32mI (604) PWM: Set the duty: 0 / 16384 (resolution: 14 bit)
+[0m
+[0;32mI (604) PWM: Hardware PWM duty: 0.00% requested -> 0.00% effective (0/16384)[0m
+[0;32mI (614) gpio: GPIO[26]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (624) gpio: GPIO[26]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (634) Temperature sensor: Bus initialized on GPIO 26[0m
+[0;32mI (744) Temperature sensor: Slot 0: BA00000046755428[0m
+[0;32mI (744) Temperature sensor: Found 1 new temperature sensors (total 1)[0m
+[0;32mI (754) MAIN: Initialized 1 sensors[0m
+[0;32mI (754) wifi: Passed a null ptr as pwm_led, the led will not be used[0m
+[0;32mI (784) wifi: ESP_WIFI_MODE_STA[0m
+[0;32mI (794) pp: pp rom version: e7ae62f[0m
+[0;32mI (794) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (804) wifi:wifi driver task: 3fcb15b0, prio:23, stack:6656, core=0[0m
+[0;32mI (814) wifi:wifi firmware version: 3e0076f[0m
+[0;32mI (814) wifi:wifi certification version: v7.0[0m
+[0;32mI (814) wifi:config NVS flash: enabled[0m
+[0;32mI (814) wifi:config nano formating: disabled[0m
+[0;32mI (814) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (824) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (824) wifi:Init management short buffer num: 32[0m
+[0;32mI (834) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (834) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (844) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (844) wifi:Init static rx buffer num: 10[0m
+[0;32mI (844) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (854) wifi_init: rx ba win: 6[0m
+[0;32mI (854) wifi_init: tcpip mbox: 32[0m
+[0;32mI (864) wifi_init: udp mbox: 6[0m
+[0;32mI (864) wifi_init: tcp mbox: 6[0m
+[0;32mI (864) wifi_init: tcp tx win: 5760[0m
+[0;32mI (874) wifi_init: tcp rx win: 5760[0m
+[0;32mI (874) wifi_init: tcp mss: 1440[0m
+[0;32mI (884) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (884) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (894) phy_init: phy_version 670,b7bc9b9,Apr 30 2024,10:54:13[0m
+[0;32mI (944) wifi:mode : sta (10:20:ba:66:2e:94)[0m
+[0;32mI (944) wifi:enable tsf[0m
+[0;32mI (944) wifi: wifi_init_sta finished.[0m
+[0;32mI (974) wifi:new:<1,1>, old:<1,0>, ap:<255,255>, sta:<1,1>, prof:1[0m
+[0;32mI (974) wifi:state: init -> auth (b0)[0m
+[0;32mI (1974) wifi:state: auth -> init (200)[0m
+[0;32mI (1974) wifi:new:<1,0>, old:<1,1>, ap:<255,255>, sta:<1,1>, prof:1[0m
+[0;32mI (1984) wifi: retry to connect to the AP[0m
+[0;32mI (1984) wifi: connect to the AP fail[0m
+[0;32mI (4394) wifi: retry to connect to the AP[0m
+[0;32mI (4394) wifi: connect to the AP fail[0m
+[0;32mI (4394) wifi:new:<1,1>, old:<1,0>, ap:<255,255>, sta:<1,1>, prof:1[0m
+[0;32mI (4394) wifi:state: init -> auth (b0)[0m
+[0;32mI (4444) wifi:state: auth -> assoc (0)[0m
+[0;32mI (4474) wifi:state: assoc -> run (10)[0m
+[0;32mI (4534) wifi:connected with Oneplus, aid = 8, channel 1, 40U, bssid = ba:7e:6d:57:2c:9d[0m
+[0;32mI (4534) wifi:security: WPA2-PSK, phy: bgn, rssi: -32[0m
+[0;32mI (4544) wifi:pm start, type: 1[0m
+
+[0;32mI (4544) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (4544) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (4564) wifi:<ba-add>idx:0 (ifx:0, ba:7e:6d:57:2c:9d), tid:0, ssn:0, winSize:64[0m
+[0;32mI (4594) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (4594) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (5554) esp_netif_handlers: sta ip: 10.94.143.18, mask: 255.255.255.0, gw: 10.94.143.195[0m
+[0;32mI (5554) wifi: got ip:10.94.143.18[0m
+[0;32mI (5554) wifi: DNS servers configured[0m
+[0;32mI (5554) DNS: DNS servers configured[0m
+[0;32mI (5564) wifi: connected to ap SSID:Oneplus[0m
+[0;32mI (5564) MAIN: WIFI connected![0m
+[0;32mI (5574) mqtts: MqttWrapper created with client_id: 1020BA662E94[0m
+[0;32mI (5574) mqtts: [APP] Free memory: 262628 bytes[0m
+[0;32mI (5584) mqtts: Other event id:7[0m
+[0;32mI (6764) mqtts: MQTT_EVENT_CONNECTED[0m
+[0;32mI (6764) PWM: Set the duty: 3277 / 16384 (resolution: 14 bit)
+[0m
+[0;32mI (6764) PWM: Hardware PWM duty: 20.00% requested -> 20.00% effective (3277/16384)[0m
+[0;32mI (6774) mqtts: Subscribed to 1020BA662E94/downlink, msg_id=57068[0m
+[0;32mI (6814) mqtts: MQTT_EVENT_SUBSCRIBED, msg_id=57068[0m
+[0;32mI (7084) MAIN: MQTT connected! System running in background...[0m
+[0;32mI (7084) MAIN: Initializing SNTP[0m
+[0;32mI (7084) MAIN: Waiting for time sync... (1/20)[0m
+[0;32mI (8084) MAIN: Waiting for time sync... (2/20)[0m
+[0;32mI (9084) MAIN: Waiting for time sync... (3/20)[0m
+[0;32mI (10084) MAIN: Waiting for time sync... (4/20)[0m
+[0;32mI (11084) MAIN: Waiting for time sync... (5/20)[0m
+[0;32mI (12084) MAIN: Waiting for time sync... (6/20)[0m
+[0;32mI (13084) MAIN: Time synchronized: Fri Oct 31 18:16:31 2025
+[0m
+[0;32mI (13084) FFT: sampling rate too high, the maximum sampling rate will be used: 83333[0m
+[0;32mI (13084) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (13914) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (14144) FFT: Dominant Frequency: 3824.85 Hz, Magnitude: 78.98 mV (attenuated by the sensor), Noise floor: 0.68, SNR: 115.97[0m
+[0;32mI (14144) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=7442[0m
+[0;32mI (14144) MAIN: MQTT message sent![0m
+[0;32mI (14944) mqtts: MQTT_EVENT_PUBLISHED, msg_id=7442[0m
+[0;32mI (24964) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (25184) FFT: Dominant Frequency: 3824.85 Hz, Magnitude: 78.73 mV (attenuated by the sensor), Noise floor: 0.70, SNR: 112.69[0m
+[0;32mI (25184) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=10029[0m
+[0;32mI (25184) MAIN: MQTT message sent![0m
+[0;32mI (26414) mqtts: MQTT_EVENT_PUBLISHED, msg_id=10029[0m
+[0;32mI (36004) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (36224) FFT: Dominant Frequency: 3824.85 Hz, Magnitude: 76.80 mV (attenuated by the sensor), Noise floor: 0.75, SNR: 102.01[0m
+[0;32mI (36224) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=39648[0m
+[0;32mI (36224) MAIN: MQTT message sent![0m
+[0;32mI (36864) mqtts: MQTT_EVENT_PUBLISHED, msg_id=39648[0m
+[0;32mI (47044) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (47264) FFT: Dominant Frequency: 3824.85 Hz, Magnitude: 78.19 mV (attenuated by the sensor), Noise floor: 0.76, SNR: 103.48[0m
+[0;32mI (47264) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=64073[0m
+[0;32mI (47264) MAIN: MQTT message sent![0m
+[0;32mI (48014) mqtts: MQTT_EVENT_PUBLISHED, msg_id=64073[0m
+[0;32mI (58084) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (58304) FFT: Dominant Frequency: 3824.85 Hz, Magnitude: 78.40 mV (attenuated by the sensor), Noise floor: 0.72, SNR: 108.42[0m
+[0;32mI (58304) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=3052[0m
+[0;32mI (58304) MAIN: MQTT message sent![0m
+[0;32mI (59384) mqtts: MQTT_EVENT_PUBLISHED, msg_id=3052[0m
+[0;32mI (69124) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (69344) FFT: Dominant Frequency: 3824.85 Hz, Magnitude: 78.10 mV (attenuated by the sensor), Noise floor: 0.71, SNR: 109.37[0m
+[0;32mI (69344) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=28711[0m
+[0;32mI (69344) MAIN: MQTT message sent![0m
+[0;32mI (70034) mqtts: MQTT_EVENT_PUBLISHED, msg_id=28711[0m
+[0;32mI (80164) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (80384) FFT: Dominant Frequency: 3824.85 Hz, Magnitude: 79.36 mV (attenuated by the sensor), Noise floor: 0.67, SNR: 117.62[0m
+[0;32mI (80384) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=36764[0m
+[0;32mI (80384) MAIN: MQTT message sent![0m
+[0;32mI (81504) mqtts: MQTT_EVENT_PUBLISHED, msg_id=36764[0m
+[0;32mI (91204) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (91424) FFT: Dominant Frequency: 3824.85 Hz, Magnitude: 79.28 mV (attenuated by the sensor), Noise floor: 0.67, SNR: 118.70[0m
+[0;32mI (91424) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=31752[0m
+[0;32mI (91424) MAIN: MQTT message sent![0m
+[0;32mI (91744) mqtts: MQTT_EVENT_PUBLISHED, msg_id=31752[0m
+[0;32mI (102244) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (102464) FFT: Dominant Frequency: 3824.85 Hz, Magnitude: 79.20 mV (attenuated by the sensor), Noise floor: 0.63, SNR: 124.74[0m
+[0;32mI (102464) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=12371[0m
+[0;32mI (102464) MAIN: MQTT message sent![0m
+[0;32mI (103424) mqtts: MQTT_EVENT_PUBLISHED, msg_id=12371[0m
+[0;32mI (113284) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (113504) FFT: Dominant Frequency: 3824.85 Hz, Magnitude: 79.21 mV (attenuated by the sensor), Noise floor: 0.63, SNR: 126.47[0m
+[0;32mI (113504) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=52387[0m
+[0;32mI (113504) MAIN: MQTT message sent![0m
+[0;32mI (113654) mqtts: MQTT_EVENT_PUBLISHED, msg_id=52387[0m
+[0;32mI (124324) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (124544) FFT: Dominant Frequency: 3824.85 Hz, Magnitude: 79.16 mV (attenuated by the sensor), Noise floor: 0.64, SNR: 123.15[0m
+[0;32mI (124544) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=62074[0m
+[0;32mI (124544) MAIN: MQTT message sent![0m
+[0;32mI (125134) mqtts: MQTT_EVENT_PUBLISHED, msg_id=62074[0m
+[0;32mI (135364) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (135584) FFT: Dominant Frequency: 3824.85 Hz, Magnitude: 79.37 mV (attenuated by the sensor), Noise floor: 0.64, SNR: 124.70[0m
+[0;32mI (135584) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=57568[0m
+[0;32mI (135584) MAIN: MQTT message sent![0m
+[0;32mI (138234) mqtts: MQTT_EVENT_PUBLISHED, msg_id=57568[0m
+[0;32mI (146404) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (146624) FFT: Dominant Frequency: 3824.85 Hz, Magnitude: 76.24 mV (attenuated by the sensor), Noise floor: 0.80, SNR: 95.45[0m
+[0;32mI (146624) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=50637[0m
+[0;32mI (146624) MAIN: MQTT message sent![0m
+[0;32mI (147654) mqtts: MQTT_EVENT_PUBLISHED, msg_id=50637[0m
+[0;32mI (157444) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (157664) FFT: Dominant Frequency: 3824.85 Hz, Magnitude: 76.92 mV (attenuated by the sensor), Noise floor: 0.77, SNR: 100.53[0m
+[0;32mI (157664) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=11508[0m
+[0;32mI (157664) MAIN: MQTT message sent![0m
+[0;32mI (158104) mqtts: MQTT_EVENT_PUBLISHED, msg_id=11508[0m
+[0;32mI (168484) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (168704) FFT: Dominant Frequency: 3824.85 Hz, Magnitude: 77.04 mV (attenuated by the sensor), Noise floor: 0.73, SNR: 105.85[0m
+[0;32mI (168704) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=37499[0m
+[0;32mI (168704) MAIN: MQTT message sent![0m
+[0;32mI (169574) mqtts: MQTT_EVENT_PUBLISHED, msg_id=37499[0m
+[0;32mI (179524) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (179744) FFT: Dominant Frequency: 3824.85 Hz, Magnitude: 78.45 mV (attenuated by the sensor), Noise floor: 0.72, SNR: 108.68[0m
+[0;32mI (179744) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=45329[0m
+[0;32mI (179744) MAIN: MQTT message sent![0m
+[0;32mI (180954) mqtts: MQTT_EVENT_PUBLISHED, msg_id=45329[0m
+[0;32mI (190564) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (190784) FFT: Dominant Frequency: 3824.85 Hz, Magnitude: 77.32 mV (attenuated by the sensor), Noise floor: 0.75, SNR: 103.28[0m
+[0;32mI (190784) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=55668[0m
+[0;32mI (190784) MAIN: MQTT message sent![0m
+[0;32mI (191694) mqtts: MQTT_EVENT_PUBLISHED, msg_id=55668[0m
+[0;32mI (201604) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (201824) FFT: Dominant Frequency: 3824.85 Hz, Magnitude: 78.73 mV (attenuated by the sensor), Noise floor: 0.73, SNR: 108.30[0m
+[0;32mI (201824) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=8260[0m
+[0;32mI (201824) MAIN: MQTT message sent![0m
+[0;32mI (203154) mqtts: MQTT_EVENT_PUBLISHED, msg_id=8260[0m
+[0;32mI (212644) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (212864) FFT: Dominant Frequency: 3824.85 Hz, Magnitude: 76.92 mV (attenuated by the sensor), Noise floor: 0.73, SNR: 104.94[0m
+[0;32mI (212864) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=51300[0m
+[0;32mI (212864) MAIN: MQTT message sent![0m
+[0;32mI (213604) mqtts: MQTT_EVENT_PUBLISHED, msg_id=51300[0m
+[0;32mI (223684) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (223904) FFT: Dominant Frequency: 3824.85 Hz, Magnitude: 77.60 mV (attenuated by the sensor), Noise floor: 0.72, SNR: 107.54[0m
+[0;32mI (223904) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=48392[0m
+[0;32mI (223904) MAIN: MQTT message sent![0m
+[0;32mI (225074) mqtts: MQTT_EVENT_PUBLISHED, msg_id=48392[0m
+[0;32mI (234724) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (234944) FFT: Dominant Frequency: 3824.85 Hz, Magnitude: 78.18 mV (attenuated by the sensor), Noise floor: 0.69, SNR: 112.67[0m
+[0;32mI (234944) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=3780[0m
+[0;32mI (234944) MAIN: MQTT message sent![0m
+[0;32mI (235304) mqtts: MQTT_EVENT_PUBLISHED, msg_id=3780[0m
+[0;32mI (245764) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (245984) FFT: Dominant Frequency: 3824.85 Hz, Magnitude: 77.06 mV (attenuated by the sensor), Noise floor: 0.75, SNR: 102.52[0m
+[0;32mI (245984) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=22527[0m
+[0;32mI (245984) MAIN: MQTT message sent![0m
+[0;32mI (246574) mqtts: MQTT_EVENT_PUBLISHED, msg_id=22527[0m
+[0;32mI (256804) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (257024) FFT: Dominant Frequency: 3824.85 Hz, Magnitude: 78.13 mV (attenuated by the sensor), Noise floor: 0.76, SNR: 102.87[0m
+[0;32mI (257024) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=4943[0m
+[0;32mI (257024) MAIN: MQTT message sent![0m
+[0;32mI (258044) mqtts: MQTT_EVENT_PUBLISHED, msg_id=4943[0m
+[0;32mI (267844) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (268064) FFT: Dominant Frequency: 3824.85 Hz, Magnitude: 77.63 mV (attenuated by the sensor), Noise floor: 0.77, SNR: 100.22[0m
+[0;32mI (268064) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=8629[0m
+[0;32mI (268064) MAIN: MQTT message sent![0m
+[0;32mI (268494) mqtts: MQTT_EVENT_PUBLISHED, msg_id=8629[0m
+[0;32mI (278884) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (279104) FFT: Dominant Frequency: 3824.85 Hz, Magnitude: 66.08 mV (attenuated by the sensor), Noise floor: 0.78, SNR: 85.03[0m
+[0;32mI (279104) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=11320[0m
+[0;32mI (279104) MAIN: MQTT message sent![0m
+[0;32mI (279954) mqtts: MQTT_EVENT_PUBLISHED, msg_id=11320[0m
+[0;32mI (289924) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (290144) FFT: Dominant Frequency: 3824.85 Hz, Magnitude: 74.74 mV (attenuated by the sensor), Noise floor: 0.76, SNR: 97.91[0m
+[0;32mI (290144) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=57845[0m
+[0;32mI (290144) MAIN: MQTT message sent![0m
+[0;32mI (291424) mqtts: MQTT_EVENT_PUBLISHED, msg_id=57845[0m
+[0;32mI (300964) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (301184) FFT: Dominant Frequency: 3824.85 Hz, Magnitude: 78.92 mV (attenuated by the sensor), Noise floor: 0.61, SNR: 130.42[0m
+[0;32mI (301184) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=13096[0m
+[0;32mI (301184) MAIN: MQTT message sent![0m
+[0;32mI (301874) mqtts: MQTT_EVENT_PUBLISHED, msg_id=13096[0m
+[0;32mI (312004) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (312224) FFT: Dominant Frequency: 3824.85 Hz, Magnitude: 66.01 mV (attenuated by the sensor), Noise floor: 0.79, SNR: 84.05[0m
+[0;32mI (312224) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=54208[0m
+[0;32mI (312224) MAIN: MQTT message sent![0m
+[0;32mI (312544) mqtts: MQTT_EVENT_PUBLISHED, msg_id=54208[0m
+[0;32mI (323044) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (323264) FFT: Dominant Frequency: 3824.85 Hz, Magnitude: 66.85 mV (attenuated by the sensor), Noise floor: 0.77, SNR: 87.16[0m
+[0;32mI (323264) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=34301[0m
+[0;32mI (323264) MAIN: MQTT message sent![0m
+[0;32mI (323784) mqtts: MQTT_EVENT_PUBLISHED, msg_id=34301[0m
+[0;32mI (334084) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (334304) FFT: Dominant Frequency: 3824.85 Hz, Magnitude: 78.54 mV (attenuated by the sensor), Noise floor: 0.71, SNR: 110.27[0m
+[0;32mI (334304) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=44100[0m
+[0;32mI (334304) MAIN: MQTT message sent![0m
+[0;32mI (335454) mqtts: MQTT_EVENT_PUBLISHED, msg_id=44100[0m
+[0;32mI (345124) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (345344) FFT: Dominant Frequency: 3824.85 Hz, Magnitude: 70.20 mV (attenuated by the sensor), Noise floor: 0.76, SNR: 92.25[0m
+[0;32mI (345344) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=8496[0m
+[0;32mI (345344) MAIN: MQTT message sent![0m
+[0;32mI (345904) mqtts: MQTT_EVENT_PUBLISHED, msg_id=8496[0m
+[0;32mI (356164) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (356384) FFT: Dominant Frequency: 3824.85 Hz, Magnitude: 58.15 mV (attenuated by the sensor), Noise floor: 0.80, SNR: 72.79[0m
+[0;32mI (356384) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=60613[0m
+[0;32mI (356384) MAIN: MQTT message sent![0m
+[0;32mI (357374) mqtts: MQTT_EVENT_PUBLISHED, msg_id=60613[0m
+[0;32mI (367204) Temperature sensor: Slot 0: 22.75 °C[0m
+[0;32mI (367424) FFT: Dominant Frequency: 3824.85 Hz, Magnitude: 79.06 mV (attenuated by the sensor), Noise floor: 0.64, SNR: 123.72[0m
+[0;32mI (367424) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=57676[0m
+[0;32mI (367424) MAIN: MQTT message sent![0m
+[0;32mI (367814) mqtts: MQTT_EVENT_PUBLISHED, msg_id=57676[0m
+[0;32mI (378244) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (378464) FFT: Dominant Frequency: 3824.85 Hz, Magnitude: 79.10 mV (attenuated by the sensor), Noise floor: 0.65, SNR: 120.92[0m
+[0;32mI (378464) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=15097[0m
+[0;32mI (378464) MAIN: MQTT message sent![0m
+[0;32mI (379284) mqtts: MQTT_EVENT_PUBLISHED, msg_id=15097[0m
+[0;32mI (389284) Temperature sensor: Slot 0: 22.69 °C[0m
+[0;32mI (389504) FFT: Dominant Frequency: 3824.85 Hz, Magnitude: 74.72 mV (attenuated by the sensor), Noise floor: 0.76, SNR: 98.71[0m
+[0;32mI (389504) mqtts: Enqueued to 1020BA662E94/uplink, msg_id=1238[0m
+[0;32mI (389504) MAIN: MQTT message sent![0m
+[0;32mI (390544) mqtts: MQTT_EVENT_PUBLISHED, msg_id=1238[0m
+[0;32mI (391164) wifi:state: run -> init (1a0)[0m
+[0;32mI (391164) wifi:pm stop, total sleep time: 362690328 us / 386621097 us[0m
+
+[0;32mI (391164) wifi:<ba-del>idx:0, tid:0[0m
+[0;32mI (391164) wifi:new:<1,0>, old:<1,1>, ap:<255,255>, sta:<1,1>, prof:1[0m
+[0;32mI (391174) wifi: retry to connect to the AP[0m
+[0;32mI (391174) wifi: connect to the AP fail[0m
+[0;32mI (391174) wifi:new:<1,1>, old:<1,0>, ap:<255,255>, sta:<1,1>, prof:1[0m
+[0;32mI (391184) wifi:state: init -> auth (b0)[0m
+[0;31mE (391184) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54[0m
+[0;32mI (391194) wifi:state: auth -> assoc (0)[0m
+[0;32mI (391204) wifi:state: assoc -> init (3a0)[0m
+[0;32mI (391204) wifi:new:<1,0>, old:<1,1>, ap:<255,255>, sta:<1,1>, prof:1[0m
+[0;31mE (391214) mqtt_client: Poll read error: 119, aborting connection[0m
+[0;32mI (391214) wifi: retry to connect to the AP[0m
+[0;32mI (391224) wifi: connect to the AP fail[0m
+[0;32mI (391234) mqtts: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (391234) PWM: Set the duty: 0 / 16384 (resolution: 14 bit)
+[0m
+[0;32mI (391244) PWM: Hardware PWM duty: 0.00% requested -> 0.00% effective (0/16384)[0m
+[0;32mI (393624) wifi: retry to connect to the AP[0m
+[0;32mI (393624) wifi: connect to the AP fail[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2d9c
+entry 0x403c9914
+[0;32mI (27) boot: ESP-IDF v5.2.2 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Oct 23 2025 14:43:50[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=35620h (218656) map[0m
+[0;32mI (138) esp_image: segment 1: paddr=00045648 vaddr=3fc9b300 size=04870h ( 18544) load[0m
+[0;32mI (143) esp_image: segment 2: paddr=00049ec0 vaddr=40374000 size=06158h ( 24920) load[0m
+[0;32mI (150) esp_image: segment 3: paddr=00050020 vaddr=42000020 size=b5430h (742448) map[0m
+[0;32mI (286) esp_image: segment 4: paddr=00105458 vaddr=4037a158 size=11104h ( 69892) load[0m
+[0;32mI (311) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (311) boot: Disabling RNG early entropy source...[0m
+[0;32mI (322) cpu_start: Multicore app[0m
+[0;32mI (332) cpu_start: Pro cpu start user code[0m
+[0;32mI (332) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (332) cpu_start: Application information:[0m
+[0;32mI (335) cpu_start: Project name:     esp_node[0m
+[0;32mI (340) cpu_start: App version:      3a8e390-dirty[0m
+[0;32mI (346) cpu_start: Compile time:     Oct 28 2025 14:03:08[0m
+[0;32mI (352) cpu_start: ELF file SHA256:  d1a9da16a...[0m
+[0;32mI (357) cpu_start: ESP-IDF:          v5.2.2[0m
+[0;32mI (362) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (367) cpu_start: Max chip rev:     v0.9

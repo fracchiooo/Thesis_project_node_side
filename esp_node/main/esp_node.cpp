@@ -410,12 +410,4 @@ extern "C" void app_main(void)
         ESP_LOGI(TAG, "MQTT message sent!");
         vTaskDelay(pdMS_TO_TICKS(10000));
     }
-
-    //delete pwm_input_40;
-    //delete pwm_input_20;
-    //delete pwm_burst_20;
-    //delete pwm_burst_40;
-    //delete pwm_led;
-    //wifi->destroyInstance();
-    //vTaskDelete(NULL);
 }
