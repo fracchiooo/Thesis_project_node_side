@@ -60,7 +60,7 @@ Apply the following configuration changes:
 
 **MQTT Configuration** (`Example Configuration`):
 - Broker URL: Enter your Cloud broker URL
-- Username: `thesis_yeastime`
+- Username: Your MQTT authentication username
 - Password: Your MQTT authentication password
 
 **Wi-Fi Configuration** (`WiFi Configuration`):
