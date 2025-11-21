@@ -86,7 +86,7 @@ get_idf
 
 ### 2. Set Target Microcontroller
 ```bash
-idf.py set-target 
+idf.py set-target `<your_esp32_model>`
 ```
 
 Replace `<your_esp32_model>` with your specific ESP32 variant (e.g., `esp32`, `esp32s3`, `esp32c3`).
