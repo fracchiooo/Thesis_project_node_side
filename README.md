@@ -114,3 +114,22 @@ idf.py -p `<port>` monitor
 
 **Project**: Proof of Concept for a Digital Twin of an Ultrasonic Fermentation System  
 **Institution**: Sapienza University of Rome
+
+
+
+## License
+
+This project is licensed for **non-commercial use only**.
+
+You are free to:
+- use the code
+- study it
+- modify it
+- share it
+
+You are **NOT allowed** to:
+- sell the software
+- use it in paid products or services
+- monetize it in any form
+
+For commercial use, contact the author.
